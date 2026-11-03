@@ -261,7 +261,7 @@
 | 布局审计 | 7 宽度 × 8 页 = **56/56 场景 0 问题**（新增首屏内容/hero/轮播/热榜指标） |
 | 浏览器 | 8 页 zh/en CDP 无 console error、CSP 无违规；5 主题可读 |
 | 体积 | index CSS 118.7KB/23.8 gzip、skills 111.6/22.5、models 112.2/22.6、一般页 105.3/20.7（≤120/≤26）；dashboard.js 34.5KB（≤34KB 记录）、compare.js 12.1KB、data-match.js 7.9KB |
-| 发布 | v1.4.0：历史重建 + Actions 绿 + 线上验收 + tag/release（记录见 RELEASE.md） |
+| 发布 | v1.4.0 ✅：历史重建（干净单一起点）+ CI/Deploy success + tag/release；site-mvp 独立线上复验 **77/77**、33/33 文件字节一致（记录见 RELEASE.md） |
 
 ### D. v1.4 已知限制
 1. 斩杀线样本为「有 AA 评分且能匹配到价格」的模型（本地 52 / CI 契约约 83），页面动态显示样本数；未匹配模型不绘制，不编造评分。

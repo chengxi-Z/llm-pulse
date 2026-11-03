@@ -27,6 +27,13 @@
 | 引导页瘦身 | 9 页 compact hero；index hero 413px；首内容 index 621 / rankings 572 / about 388（≤620） |
 | 数据 | 新增 `data/topics.json`（HN 热榜，双模式/快照降级）；http→https 链接升级；fetch 5MB 上限/实体解码防护 |
 
+### 发布记录
+
+- Commit：`edfe668`（最终内容，历史重建后的干净提交链）｜ tag/release：**v1.4.0**（tag 已指向最终 commit）
+- CI：success — <https://github.com/chengxi-Z/llm-pulse/actions/runs/41682528927>
+- Deploy to GitHub Pages：success — <https://github.com/chengxi-Z/llm-pulse/actions/runs/41682528844>
+- 线上验证：9 页 200 + CSP/referrer；dashboard/carousel/topics/compare/rank-dist 标记在线；zh 词典 829 keys（`{count} 热度`）；topics.json 10 条；site-mvp 独立线上复验 **77/77**，33/33 站点文件与本地字节一致；Lead 布局审计 **56/56 场景 0 issues**（audit-report.json 1:12）。
+
 ### Verification
 
 - `node --test` **94/94**；`validate --strict` **0/0**；`check-i18n --strict` **0 error / 819 used**；`check-comments` **0 hit**
