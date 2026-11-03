@@ -1,0 +1,45 @@
+name: CodeQL
+
+# Static application security testing (SAST) for the site scripts and assistant.
+# All actions are pinned to full commit SHAs; Dependabot keeps them up to date.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 3 * * 1" # weekly, Monday 11:23 Beijing time
+  workflow_dispatch:
+
+# Least privilege by default; only the analysis job may upload results.
+permissions:
+  contents: read
+
+concurrency:
+  group: "codeql-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Analyze JavaScript
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@a3d1b77a1ba1550fbb5c74db1dc3a11f4a481126 # v3
+        with:
+          languages: javascript-typescript
+          build-mode: none # plain ESM site: no build step to trace
+          queries: security-extended
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@a3d1b77a1ba1550fbb5c74db1dc3a11f4a481126 # v3
+        with:
+          category: "/language:javascript-typescript"

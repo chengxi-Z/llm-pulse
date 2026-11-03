@@ -1,0 +1,376 @@
+/* ===== AI Pulse — Design Tokens (v1.1: five themes + system auto) ===== */
+:root {
+  color-scheme: light;
+
+  
+  --font-serif: "Cormorant Garamond", "Noto Serif SC", "Songti SC", Georgia, serif;
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --fs-display: clamp(2.4rem, 5vw, 4.2rem);
+  --fs-h1: clamp(2.2rem, 4.2vw, 3.4rem);
+  --fs-h2: clamp(1.7rem, 2.6vw, 2.3rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+  --fs-label: 0.6875rem;
+  --lh-body: 1.75;
+  --lh-tight: 1.16;
+  --ls-label: 0.14em;
+
+  
+  --container: 1180px;
+  --gutter: clamp(20px, 5vw, 56px);
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --section-y: clamp(44px, 6vw, 84px);
+  --header-h: 76px;
+
+  
+  --r-1: 2px;
+  --r-2: 8px;
+  --r-3: 14px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 300ms;
+
+  
+  --highlight: var(--gold-deep); /* themed emphasis text: hero accent, labels, links */
+  --focus-ring: 2px solid var(--highlight);
+  --focus-ring-offset: 3px;
+  --header-bg: rgb(var(--rgb-bg) / 0.86);
+  --overlay: rgb(var(--rgb-shadow) / 0.42);
+  --selection-bg: var(--gold-soft);
+  --selection-fg: var(--ink);
+  --icon-hover-bg: rgb(var(--rgb-gold) / 0.12);
+  /* Ambient section glows: softer on dark backgrounds to avoid a muddy wash. */
+  --glow-gold: rgb(var(--rgb-gold) / 0.11);
+  --glow-accent: rgb(var(--rgb-accent) / 0.05);
+  /* v1.2: data-viz + modal helpers (highlight RGB follows --highlight) */
+  --rgb-highlight: var(--rgb-gold);
+  --code-bg: rgb(var(--rgb-ink) / 0.045);
+  --qr-surface: #ffffff;
+  /* v1.3 chart palette (token-derived) */
+  --donut-1: var(--highlight);
+  --donut-2: rgb(var(--rgb-highlight) / 0.72);
+  --donut-3: var(--gold);
+  --donut-4: rgb(var(--rgb-highlight) / 0.45);
+  --donut-5: var(--line-strong);
+
+  
+  --shadow-card: 0 1px 2px rgb(var(--rgb-shadow) / 0.04);
+  --shadow-float: 0 1px 1px rgb(var(--rgb-shadow) / 0.04),
+    0 18px 44px -26px rgb(var(--rgb-shadow) / 0.28);
+  --shadow-menu: 0 16px 44px -22px rgb(var(--rgb-shadow) / 0.3),
+    0 2px 8px rgb(var(--rgb-shadow) / 0.06);
+  --shadow-panel: 0 24px 70px -30px rgb(var(--rgb-shadow) / 0.34),
+    0 2px 10px rgb(var(--rgb-shadow) / 0.06);
+
+  
+  --btn-primary-bg: var(--gold);
+  --btn-primary-fg: var(--ink);
+  --btn-primary-border: var(--gold);
+  --btn-primary-bg-hover: var(--gold-deep);
+  --btn-primary-bg-active: var(--gold-deep);
+  --btn-primary-sheen: linear-gradient(180deg, rgb(255 255 255 / 0.18), transparent 62%);
+  --btn-secondary-bg: transparent;
+  --btn-secondary-bg-hover: rgb(var(--rgb-gold) / 0.1);
+  --btn-secondary-fg: var(--ink);
+  --btn-secondary-fg-hover: var(--highlight);
+  --btn-secondary-border: var(--line-strong);
+  --btn-secondary-border-hover: var(--gold);
+  --btn-active-shadow: inset 0 1px 2px rgb(var(--rgb-shadow) / 0.22);
+  --btn-disabled-opacity: 0.45;
+
+  
+  --menu-bg: var(--surface);
+  --menu-border: var(--line);
+  --menu-shadow: var(--shadow-menu);
+  --menu-hover-bg: rgb(var(--rgb-gold) / 0.1);
+  --menu-selected-bg: rgb(var(--rgb-gold) / 0.16);
+  --menu-selected-fg: var(--highlight);
+  --menu-radius: var(--r-2);
+  --menu-min-width: 248px;
+
+  
+  --to-top-size: 44px;
+  --to-top-bg: var(--surface);
+  --to-top-bg-hover: var(--surface-2);
+  --to-top-fg: var(--highlight);
+  --to-top-border: var(--gold-soft);
+  --to-top-border-hover: var(--gold);
+  --to-top-shadow: var(--shadow-card);
+  --to-top-shadow-hover: var(--shadow-float);
+  --to-top-ring: 0 0 0 4px rgb(var(--rgb-gold) / 0.1);
+
+  
+  --scrollbar-size: 10px;
+  --scrollbar-thumb-color: var(--gold-soft);
+  --scrollbar-track-color: transparent;
+  --scrollbar-thumb: linear-gradient(180deg, var(--gold-soft), var(--gold));
+  --scrollbar-thumb-hover: linear-gradient(180deg, var(--gold), var(--gold-deep));
+  --scrollbar-table-size: 8px;
+  --scrollbar-table-thumb: var(--line-strong);
+
+  
+  --swatch-ivory: linear-gradient(135deg, #f6f1e9 0 46%, #b08a4f 46% 72%, #12312a 72%);
+  --swatch-noir: linear-gradient(135deg, #171411 0 46%, #c9a227 46% 72%, #5e8b74 72%);
+  --swatch-jade: linear-gradient(135deg, #fbfcf9 0 46%, #a98c55 46% 72%, #3f6b57 72%);
+  --swatch-rose: linear-gradient(135deg, #fffcfb 0 46%, #b08a4f 46% 72%, #9a6b74 72%);
+  --swatch-graphite: linear-gradient(135deg, #fafaf8 0 46%, #8c8a85 46% 72%, #2a2a28 72%);
+  --swatch-auto: linear-gradient(90deg, #f6f1e9 0 50%, #171411 50% 74%, #c9a227 74%);
+}
+
+:root,
+:root[data-theme="ivory"],
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f6f1e9;
+  --surface: #fffdf9;
+  --surface-2: #f1eade;
+  --ink: #14100c;
+  --ink-soft: #2f281f;
+  --muted: #6b6257;
+  --gold: #b08a4f;
+  --gold-soft: #d9c39a;
+  --gold-deep: #87652f; /* gold text on light surfaces: 4.75:1 on --bg */
+  --highlight: #87652f; /* ivory keeps the champagne-gold emphasis */
+  --line: #e4d9c6;
+  --line-strong: #d2c2a6;
+  --accent: #12312a;
+  --danger: #9c4a33;
+  --ok: #2f6b52;
+  --on-accent: #f6f1e9;
+
+  --rgb-bg: 246 241 233;
+  --rgb-ink: 20 16 12;
+  --rgb-gold: 176 138 79;
+  --rgb-highlight: 135 101 47;
+  --rgb-accent: 18 49 42;
+  --rgb-shadow: 20 16 12;
+  --rgb-ok: 47 107 82;
+  --rgb-danger: 156 74 51;
+
+  --paper-grain: 0.035;
+  --btn-primary-bg-hover: #a48049; /* 5.20:1 with --btn-primary-fg */
+  --btn-primary-bg-active: #9e7c47;
+}
+
+:root[data-theme="noir"],
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0e0d0b;
+  --surface: #171411;
+  --surface-2: #1d1916;
+  --ink: #f2ece2;
+  --ink-soft: #ddd4c6;
+  --muted: #a79b8a;
+  --gold: #c9a227;
+  --gold-soft: #8a743f;
+  --gold-deep: #d3b164; /* gold text on dark surfaces: 9.47:1 on --bg */
+  --highlight: #d3b164;
+  --line: #2a251e;
+  --line-strong: #3a332a;
+  --accent: #5e8b74;
+  --danger: #d08a74;
+  --ok: #7fae94;
+  --on-accent: #10100e;
+
+  --rgb-bg: 14 13 11;
+  --rgb-ink: 242 236 226;
+  --rgb-gold: 201 162 39;
+  --rgb-highlight: 211 177 100;
+  --rgb-accent: 94 139 116;
+  --rgb-shadow: 0 0 0;
+  --rgb-ok: 127 174 148;
+  --rgb-danger: 208 138 116;
+
+  --paper-grain: 0.05;
+  --overlay: rgb(0 0 0 / 0.62);
+  --selection-bg: #3a332a;
+  --selection-fg: var(--ink);
+  --glow-gold: rgb(var(--rgb-gold) / 0.07);
+  --glow-accent: rgb(var(--rgb-accent) / 0.04);
+  --btn-primary-fg: #14100c; /* keep the gold fill bright, text deep ink */
+  --btn-primary-bg-hover: #d0a92c;
+  --btn-primary-bg-active: #b59223;
+  --btn-active-shadow: inset 0 1px 2px rgb(0 0 0 / 0.4);
+  
+  --scrollbar-thumb-color: var(--gold);
+  --scrollbar-thumb: linear-gradient(180deg, var(--gold), var(--gold-deep));
+  --scrollbar-thumb-hover: linear-gradient(180deg, var(--gold-deep), var(--gold));
+}
+
+:root[data-theme="jade"] {
+  color-scheme: light;
+
+  --bg: #eef2ec;
+  --surface: #fbfcf9;
+  --surface-2: #e6ebe3;
+  --ink: #17211b;
+  --ink-soft: #2a3830;
+  --muted: #5c665f;
+  --gold: #a98c55;
+  --gold-soft: #d5c8a9;
+  --gold-deep: #6f5a31; /* 5.83:1 on --bg */
+  --highlight: #3f6b57; /* celadon-jade emphasis: 5.37:1 on --bg */
+  --line: #dae0d5;
+  --line-strong: #c8d1c3;
+  --accent: #3f6b57;
+  --danger: #8f4b3a;
+  --ok: #2f6b52;
+  --on-accent: #fbfcf9;
+
+  --rgb-bg: 238 242 236;
+  --rgb-ink: 23 33 27;
+  --rgb-gold: 169 140 85;
+  --rgb-highlight: 63 107 87;
+  --rgb-accent: 63 107 87;
+  --rgb-shadow: 23 33 27;
+  --rgb-ok: 47 107 82;
+  --rgb-danger: 143 75 58;
+
+  --paper-grain: 0.028;
+  /* Jade primary button uses the celadon ink instead of gold. */
+  --btn-primary-bg: #3f6b57;
+  --btn-primary-fg: #fbfcf9; /* 5.91:1 on the jade fill */
+  --btn-primary-border: #3f6b57;
+  --btn-primary-bg-hover: #355a49;
+  --btn-primary-bg-active: #2c4c3e;
+}
+
+:root[data-theme="rose"] {
+  color-scheme: light;
+
+  --bg: #f6edea;
+  --surface: #fffcfb;
+  --surface-2: #f0e2de;
+  --ink: #1d1517;
+  --ink-soft: #3a2c2f;
+  --muted: #6e5f63;
+  --gold: #b08a4f;
+  --gold-soft: #dfcbb4;
+  --gold-deep: #85653b; /* 4.65:1 on --bg */
+  --highlight: #8a5d67; /* dusty-mauve emphasis: 4.74:1 on --bg */
+  --line: #e8d5d1;
+  --line-strong: #d9bfba;
+  --accent: #8a5d67;
+  --danger: #9c4a33;
+  --ok: #2f6b52;
+  --on-accent: #fffcfb;
+
+  --rgb-bg: 246 237 234;
+  --rgb-ink: 29 21 23;
+  --rgb-gold: 176 138 79;
+  --rgb-highlight: 138 93 103;
+  --rgb-accent: 138 93 103;
+  --rgb-shadow: 29 21 23;
+  --rgb-ok: 47 107 82;
+  --rgb-danger: 156 74 51;
+
+  --paper-grain: 0.03;
+  /* Rose primary button uses the dusty-mauve accent. */
+  --btn-primary-bg: #8a5d67;
+  --btn-primary-fg: #fffcfb; /* 5.35:1 on the mauve fill */
+  --btn-primary-border: #8a5d67;
+  --btn-primary-bg-hover: #7a5160;
+  --btn-primary-bg-active: #6b4553;
+}
+
+:root[data-theme="graphite"] {
+  color-scheme: light;
+
+  --bg: #f3f2ef;
+  --surface: #fafaf8;
+  --surface-2: #eae9e5;
+  --ink: #171717;
+  --ink-soft: #2a2a28;
+  --muted: #66655f;
+  --gold: #8c8a85; /* metallic silver replaces gold in this theme */
+  --gold-soft: #c9c7c1;
+  --gold-deep: #4a4844; /* 8.15:1 on --bg */
+  --highlight: #55534e; /* graphite emphasis: 6.86:1 on --bg */
+  --line: #e3e1dc;
+  --line-strong: #cfcdc7;
+  --accent: #2a2a28;
+  --danger: #9c4a33;
+  --ok: #2f6b52;
+  --on-accent: #fafaf8;
+
+  --rgb-bg: 243 242 239;
+  --rgb-ink: 23 23 23;
+  --rgb-gold: 140 138 133;
+  --rgb-highlight: 85 83 78;
+  --rgb-accent: 42 42 40;
+  --rgb-shadow: 23 23 23;
+  --rgb-ok: 47 107 82;
+  --rgb-danger: 156 74 51;
+
+  --paper-grain: 0.03;
+  /* Graphite primary button uses architectural graphite, not black. */
+  --btn-primary-bg: #4a4844;
+  --btn-primary-fg: #fafaf8; /* 8.16:1 on the graphite fill */
+  --btn-primary-border: #4a4844;
+  --btn-primary-bg-hover: #3d3b38;
+  --btn-primary-bg-active: #33312f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"],
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --bg: #0e0d0b;
+    --surface: #171411;
+    --surface-2: #1d1916;
+    --ink: #f2ece2;
+    --ink-soft: #ddd4c6;
+    --muted: #a79b8a;
+    --gold: #c9a227;
+    --gold-soft: #8a743f;
+    --gold-deep: #d3b164;
+    --highlight: #d3b164;
+    --line: #2a251e;
+    --line-strong: #3a332a;
+    --accent: #5e8b74;
+    --danger: #d08a74;
+    --ok: #7fae94;
+    --on-accent: #10100e;
+
+    --rgb-bg: 14 13 11;
+    --rgb-ink: 242 236 226;
+    --rgb-gold: 201 162 39;
+    --rgb-highlight: 211 177 100;
+    --rgb-accent: 94 139 116;
+    --rgb-shadow: 0 0 0;
+    --rgb-ok: 127 174 148;
+    --rgb-danger: 208 138 116;
+
+    --paper-grain: 0.05;
+    --overlay: rgb(0 0 0 / 0.62);
+    --selection-bg: #3a332a;
+    --selection-fg: var(--ink);
+    --glow-gold: rgb(var(--rgb-gold) / 0.07);
+    --glow-accent: rgb(var(--rgb-accent) / 0.04);
+    --btn-primary-fg: #14100c;
+    --btn-primary-bg-hover: #d0a92c;
+    --btn-primary-bg-active: #b59223;
+    --btn-active-shadow: inset 0 1px 2px rgb(0 0 0 / 0.4);
+    --scrollbar-thumb-color: var(--gold);
+    --scrollbar-thumb: linear-gradient(180deg, var(--gold), var(--gold-deep));
+    --scrollbar-thumb-hover: linear-gradient(180deg, var(--gold-deep), var(--gold));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 0.01ms;
+  }
+}

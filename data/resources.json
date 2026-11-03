@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T16:50:38.301Z",
+  "source": "curated",
+  "items": [
+    {
+      "id": "awesome-llm-apps",
+      "title": "Awesome LLM Apps",
+      "type": "awesome",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "author": "Shubham Saboo",
+      "description": "可直接运行的 LLM 应用合集（RAG/Agent/多模态），适合找项目灵感。",
+      "tags": [
+        "apps",
+        "RAG",
+        "Agent"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "huggingface-agents-course",
+      "title": "Hugging Face Agents Course",
+      "type": "course",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://huggingface.co/learn/agents-course",
+      "author": "Hugging Face",
+      "description": "系统学习 AI Agent：工具调用、推理框架与多智能体，含实战项目。",
+      "tags": [
+        "Agent",
+        "tool-use",
+        "LLM"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "huggingface-llm-course",
+      "title": "Hugging Face LLM Course",
+      "type": "course",
+      "level": "beginner",
+      "lang": "en",
+      "url": "https://huggingface.co/learn/llm-course",
+      "author": "Hugging Face",
+      "description": "从 Transformer 基础到微调、部署的完整免费课程，含 Notebook 实战。",
+      "tags": [
+        "LLM",
+        "Transformers",
+        "fine-tuning"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "mcp-docs",
+      "title": "Model Context Protocol 文档",
+      "type": "tool",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://modelcontextprotocol.io/",
+      "author": "Anthropic / MCP",
+      "description": "MCP 开放协议：让模型安全连接外部工具与数据，Agent 工具生态基础。",
+      "tags": [
+        "MCP",
+        "Agent",
+        "protocol"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "karpathy-zero-to-hero",
+      "title": "Neural Networks: Zero to Hero",
+      "type": "course",
+      "level": "beginner",
+      "lang": "en",
+      "url": "https://karpathy.ai/zero-to-hero.html",
+      "author": "Andrej Karpathy",
+      "description": "从反向传播手写实现到 GPT，最适合建立大模型底层直觉的课程。",
+      "tags": [
+        "from-scratch",
+        "GPT",
+        "PyTorch"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "datawhale-self-llm",
+      "title": "Self-LLM 开源大模型食用指南",
+      "type": "tutorial",
+      "level": "intermediate",
+      "lang": "zh",
+      "url": "https://github.com/datawhalechina/self-llm",
+      "author": "Datawhale",
+      "description": "面向国内开源大模型的部署、微调实战教程（Qwen/GLM/InternLM 等）。",
+      "tags": [
+        "微调",
+        "开源模型",
+        "中文"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "d2l-zh",
+      "title": "动手学深度学习（D2L）",
+      "type": "book",
+      "level": "beginner",
+      "lang": "zh",
+      "url": "https://zh.d2l.ai/",
+      "author": "李沐 等",
+      "description": "中文深度学习经典教材，代码可运行，覆盖基础到注意力机制。",
+      "tags": [
+        "深度学习",
+        "PyTorch",
+        "中文"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "ml-2024-hylee",
+      "title": "李宏毅机器学习课程",
+      "type": "course",
+      "level": "beginner",
+      "lang": "zh",
+      "url": "https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php",
+      "author": "李宏毅 (NTU)",
+      "description": "中文机器学习/生成式 AI 入门课，讲解生动，适合零基础入门。",
+      "tags": [
+        "机器学习",
+        "生成式AI",
+        "中文"
+      ],
+      "free": true,
+      "featured": true,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "anthropic-prompt-eng",
+      "title": "Anthropic Prompt Engineering",
+      "type": "tutorial",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+      "author": "Anthropic",
+      "description": "Claude 官方提示工程文档，含系统提示、工具调用最佳实践。",
+      "tags": [
+        "Prompt",
+        "Claude",
+        "API"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "awesome-llm",
+      "title": "Awesome-LLM",
+      "type": "awesome",
+      "level": "beginner",
+      "lang": "en",
+      "url": "https://github.com/Hannibal046/Awesome-LLM",
+      "author": "Hannibal046",
+      "description": "大模型论文与资源精选列表，涵盖预训练、微调、评测、应用。",
+      "tags": [
+        "awesome",
+        "papers",
+        "LLM"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "rasbt-llms-from-scratch",
+      "title": "Build an LLM from Scratch",
+      "type": "book",
+      "level": "advanced",
+      "lang": "en",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "author": "Sebastian Raschka",
+      "description": "逐步手写实现类 GPT 模型，配套书籍与代码，理解训练全流程。",
+      "tags": [
+        "from-scratch",
+        "GPT",
+        "book"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "datawhale-llm-cookbook",
+      "title": "LLM Cookbook 面向开发者的大模型手册",
+      "type": "tutorial",
+      "level": "intermediate",
+      "lang": "zh",
+      "url": "https://github.com/datawhalechina/llm-cookbook",
+      "author": "Datawhale + 吴恩达",
+      "description": "吴恩达课程的中文精读版，覆盖 Prompt/RAG/微调/Agent。",
+      "tags": [
+        "Prompt",
+        "RAG",
+        "中文"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "mlabonne-llm-course",
+      "title": "LLM Course by Maxime Labonne",
+      "type": "course",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://github.com/mlabonne/llm-course",
+      "author": "Maxime Labonne",
+      "description": "含路线图与 Colab Notebook：从基础到微调、量化、部署的实践路线。",
+      "tags": [
+        "fine-tuning",
+        "quantization",
+        "roadmap"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "datawhale-llm-universe",
+      "title": "LLM Universe 大模型应用开发",
+      "type": "tutorial",
+      "level": "beginner",
+      "lang": "zh",
+      "url": "https://github.com/datawhalechina/llm-universe",
+      "author": "Datawhale",
+      "description": "从 API 调用到 RAG 应用开发的中文实战课程，面向应用开发者。",
+      "tags": [
+        "RAG",
+        "应用开发",
+        "中文"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "karpathy-llm101n",
+      "title": "LLM101n: Let’s build a Storyteller",
+      "type": "course",
+      "level": "advanced",
+      "lang": "en",
+      "url": "https://github.com/karpathy/LLM101n",
+      "author": "Andrej Karpathy",
+      "description": "从零构建一个讲故事的大语言模型，覆盖训练/微调/部署全链路。",
+      "tags": [
+        "from-scratch",
+        "LLM",
+        "education"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "lilianweng-blog",
+      "title": "Lilian Weng Blog",
+      "type": "paper",
+      "level": "advanced",
+      "lang": "en",
+      "url": "https://lilianweng.github.io/",
+      "author": "Lilian Weng",
+      "description": "前 OpenAI 研究员的技术博客，系统讲解 Agent、RAG、扩散模型等。",
+      "tags": [
+        "Agent",
+        "RAG",
+        "深度长文"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "openai-cookbook",
+      "title": "OpenAI Cookbook",
+      "type": "tutorial",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://cookbook.openai.com/",
+      "author": "OpenAI",
+      "description": "官方示例集：API 用法、结构化输出、Agent、评测最佳实践。",
+      "tags": [
+        "API",
+        "examples",
+        "OpenAI"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "prompting-guide",
+      "title": "Prompt Engineering Guide",
+      "type": "tutorial",
+      "level": "beginner",
+      "lang": "multi",
+      "url": "https://www.promptingguide.ai/",
+      "author": "DAIR.AI",
+      "description": "最系统的提示工程指南，多语言（含中文），持续更新。",
+      "tags": [
+        "Prompt",
+        "LLM",
+        "guide"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "stanford-cs25",
+      "title": "Stanford CS25: Transformers United",
+      "type": "course",
+      "level": "intermediate",
+      "lang": "en",
+      "url": "https://web.stanford.edu/class/cs25/",
+      "author": "Stanford University",
+      "description": "Transformer 前沿讲座合集，邀请业界研究员讲最新模型与方向。",
+      "tags": [
+        "Transformer",
+        "research",
+        "lectures"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "illustrated-transformer",
+      "title": "The Illustrated Transformer",
+      "type": "tutorial",
+      "level": "beginner",
+      "lang": "en",
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+      "author": "Jay Alammar",
+      "description": "用可视化图解 Transformer 与注意力机制，经典入门读物。",
+      "tags": [
+        "Transformer",
+        "visualization",
+        "入门"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "arxiv-cs-cl",
+      "title": "arXiv cs.CL 最新论文",
+      "type": "paper",
+      "level": "advanced",
+      "lang": "en",
+      "url": "https://arxiv.org/list/cs.CL/recent",
+      "author": "arXiv",
+      "description": "计算语言学最新论文流，跟踪前沿研究进展的第一现场。",
+      "tags": [
+        "论文",
+        "research",
+        "NLP"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    },
+    {
+      "id": "internlm-tutorial",
+      "title": "书生大模型实战营",
+      "type": "tutorial",
+      "level": "intermediate",
+      "lang": "zh",
+      "url": "https://github.com/InternLM/Tutorial",
+      "author": "上海AI实验室 InternLM",
+      "description": "中文大模型全栈实战：部署、微调、RAG、评测与智能体。",
+      "tags": [
+        "实战营",
+        "InternLM",
+        "中文"
+      ],
+      "free": true,
+      "featured": false,
+      "addedAt": "2026-11-03T00:00:00.000Z"
+    }
+  ]
+}

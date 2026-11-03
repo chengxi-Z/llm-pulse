@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T16:50:38.301Z",
+  "source": "curated+github",
+  "items": [
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "owner": "ollama",
+      "url": "https://github.com/ollama/ollama",
+      "repo": "ollama/ollama",
+      "summary": "一条命令在本地运行主流开源大模型，内置模型管理与 API。",
+      "tags": [
+        "local-llm",
+        "inference",
+        "cli"
+      ],
+      "highlight": "本地跑模型的最简方式",
+      "sourceType": "community",
+      "license": "MIT",
+      "stars": 185792,
+      "updatedAt": "2026-11-03T15:09:06.000Z",
+      "why": "离线/隐私场景的 AI 助手底座。"
+    },
+    {
+      "id": "transformers",
+      "name": "Transformers",
+      "owner": "huggingface",
+      "url": "https://github.com/huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "summary": "Hugging Face 模型库与训练/推理 API，覆盖文本、视觉、音频、多模态。",
+      "tags": [
+        "models",
+        "inference",
+        "hub"
+      ],
+      "highlight": "开源模型生态的基石",
+      "sourceType": "community",
+      "license": "Apache-2.0",
+      "stars": 168492,
+      "updatedAt": "2026-11-03T16:41:49.000Z",
+      "why": "理解模型接口与生态标准。"
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "owner": "langgenius",
+      "url": "https://github.com/langgenius/dify",
+      "repo": "langgenius/dify",
+      "summary": "可视化 LLM 应用开发平台：工作流、Agent、RAG 与运营一体化。",
+      "tags": [
+        "LLMOps",
+        "workflow",
+        "RAG"
+      ],
+      "highlight": "低代码构建生产级 AI 应用",
+      "sourceType": "community",
+      "license": null,
+      "stars": 160316,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "企业级 AI 应用编排的最佳开源参考。"
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "owner": "open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "repo": "open-webui/open-webui",
+      "summary": "自托管、功能丰富的大模型 Web 交互界面，兼容 Ollama 与 OpenAI 兼容 API。",
+      "tags": [
+        "chat-ui",
+        "self-hosted",
+        "ollama"
+      ],
+      "highlight": "社区最活跃的自托管 LLM 前端之一",
+      "sourceType": "community",
+      "license": null,
+      "stars": 157636,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "适合作为 AI 助手与聊天 UI 的参考实现。"
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "owner": "langchain-ai",
+      "url": "https://github.com/langchain-ai/langchain",
+      "repo": "langchain-ai/langchain",
+      "summary": "构建 LLM 应用的开发框架，覆盖链式调用、工具、Agent、记忆。",
+      "tags": [
+        "framework",
+        "agents",
+        "ecosystem"
+      ],
+      "highlight": "LLM 应用框架的事实标准",
+      "sourceType": "community",
+      "license": "MIT",
+      "stars": 148937,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "学习 Agent/工具调用工程化。"
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "owner": "Comfy-Org",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "repo": "comfyanonymous/ComfyUI",
+      "summary": "节点式扩散模型图形界面，强大的图像/视频生成工作流引擎。",
+      "tags": [
+        "image-gen",
+        "workflow",
+        "diffusion"
+      ],
+      "highlight": "生成式视觉工作流标杆",
+      "sourceType": "community",
+      "license": "GPL-3.0",
+      "stars": 144787,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "研究多模态生成与节点编排。"
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "owner": "browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "repo": "browser-use/browser-use",
+      "summary": "让 AI Agent 直接操作浏览器完成网页任务，支持视觉与 DOM 交互。",
+      "tags": [
+        "agent",
+        "browser",
+        "automation"
+      ],
+      "highlight": "浏览器 Agent 代表项目",
+      "sourceType": "community",
+      "license": "MIT",
+      "stars": 119914,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "研究 Agent 与真实环境交互。"
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "owner": "vllm-project",
+      "url": "https://github.com/vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "summary": "高吞吐、低延迟的 LLM 推理与服务引擎，PagedAttention 等优化。",
+      "tags": [
+        "inference",
+        "serving",
+        "performance"
+      ],
+      "highlight": "生产级推理加速标配",
+      "sourceType": "community",
+      "license": "Apache-2.0",
+      "stars": 96207,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "研究推理性能与部署优化。"
+    },
+    {
+      "id": "ragflow",
+      "name": "RAGFlow",
+      "owner": "infiniflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "repo": "infiniflow/ragflow",
+      "summary": "基于深度文档理解的 RAG 引擎，支持复杂 PDF/表格解析与可溯源问答。",
+      "tags": [
+        "RAG",
+        "document-ai",
+        "retrieval"
+      ],
+      "highlight": "文档理解 + 可溯源引用",
+      "sourceType": "community",
+      "license": "Apache-2.0",
+      "stars": 93423,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "研究 RAG 工程质量标杆。"
+    },
+    {
+      "id": "mcp-servers",
+      "name": "MCP Servers",
+      "owner": "modelcontextprotocol",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "repo": "modelcontextprotocol/servers",
+      "summary": "Model Context Protocol 官方服务器集合，为模型接入工具与数据。",
+      "tags": [
+        "MCP",
+        "protocol",
+        "tools"
+      ],
+      "highlight": "Agent 工具生态标准化",
+      "sourceType": "community",
+      "license": null,
+      "stars": 91764,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "理解 MCP 生态与工具接入。"
+    },
+    {
+      "id": "lobe-chat",
+      "name": "LobeChat",
+      "owner": "lobehub",
+      "url": "https://github.com/lobehub/lobe-chat",
+      "repo": "lobehub/lobe-chat",
+      "summary": "现代设计的高性能开源聊天框架，支持多模型、插件与知识库。",
+      "tags": [
+        "chat-ui",
+        "design",
+        "plugins"
+      ],
+      "highlight": "设计出色的多模型聊天界面",
+      "sourceType": "community",
+      "license": null,
+      "stars": 83764,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "轻奢视觉与交互设计的参考。"
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "owner": "crewAIInc",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "repo": "crewAIInc/crewAI",
+      "summary": "多智能体协作框架：角色、任务、工具与流程编排。",
+      "tags": [
+        "agents",
+        "multi-agent",
+        "orchestration"
+      ],
+      "highlight": "多智能体协作的易用框架",
+      "sourceType": "community",
+      "license": "MIT",
+      "stars": 60444,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "学习多 Agent 协作范式。"
+    },
+    {
+      "id": "ai-pulse",
+      "name": "AI Pulse · 照胆云",
+      "owner": "chengxi-Z",
+      "url": "https://github.com/chengxi-Z/llm-pulse",
+      "repo": "chengxi-Z/llm-pulse",
+      "summary": "本仓库：公域轻量级大模型追踪站，聚合动态/排行/学习资源，内置 BYOK AI 助手与项目展示。",
+      "tags": [
+        "static-site",
+        "llm-tracking",
+        "github-pages"
+      ],
+      "highlight": "纯静态 + GitHub Actions 每日自动刷新",
+      "sourceType": "self",
+      "license": "MIT",
+      "stars": null,
+      "updatedAt": "2026-11-03T16:50:38.301Z",
+      "why": "个人 AI 项目成果展示位：把「持续跟踪 + 个人作品集」做成可持续运营的公域产品。"
+    }
+  ]
+}

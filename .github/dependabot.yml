@@ -1,0 +1,21 @@
+# Dependabot: the project has zero runtime dependencies (Node built-ins only),
+# so the only supply-chain surface is the GitHub Actions used by the workflows.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:17"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+      - "security"
+    groups:
+      github-actions:
+        patterns:
+          - "*"

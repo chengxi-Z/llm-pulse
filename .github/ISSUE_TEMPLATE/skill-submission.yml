@@ -1,0 +1,152 @@
+name: Skill Submission
+description: Submit a real, public Agent Skill to the AI Pulse index (official, community or your own).
+title: "[Skill] "
+labels:
+  - skill-submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an Agent Skill with the AI Pulse community.
+
+        This site has **no backend**: submissions are reviewed by a maintainer and then added to
+        `data/skills.json`, which renders on [the Skills page](https://chengxi-z.github.io/llm-pulse/skills.html).
+
+        Before submitting, please make sure the skill is real, public and legal to index:
+        a reachable source link, a clear license (or explicitly "no license"), and a usable guide.
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill name (English) / 技能名（英文）
+      description: The public name of the skill, as it should appear on the card.
+      placeholder: e.g. One-Sentence Project
+    validations:
+      required: true
+
+  - type: input
+    id: skill-name-zh
+    attributes:
+      label: Chinese name / 中文名（可选）
+      description: Optional Chinese display name; leave empty to reuse the English name.
+      placeholder: e.g. 一句话交付项目
+    validations:
+      required: false
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / 作者
+      description: Maintainer name or GitHub account; the original author keeps all attribution.
+      placeholder: e.g. chengxi-Z
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category / 分类
+      description: Pick the closest category; maintainers may adjust it during review.
+      options:
+        - methodology
+        - data
+        - writing
+        - design
+        - dev
+        - research
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: one-liner
+    attributes:
+      label: One-sentence description (English) / 一句话描述（英文）
+      description: What the skill does and when to use it, in one sentence.
+      placeholder: e.g. Turn a one-sentence brief into a deployable public tracker.
+    validations:
+      required: true
+
+  - type: input
+    id: one-liner-zh
+    attributes:
+      label: One-sentence description (Chinese) / 一句话描述（中文）
+      description: Optional Chinese one-liner; used when the site is in Chinese mode.
+      placeholder: e.g. 把一句话需求变成可上线的公域数据站。
+    validations:
+      required: false
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Open-source link / 开源链接
+      description: Public URL of the skill directory, SKILL.md or repository. Must be reachable without login.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License / 许可证
+      description: SPDX name if declared (e.g. MIT, Apache-2.0); type "none declared" if the repository has no license file.
+      placeholder: e.g. MIT
+    validations:
+      required: true
+
+  - type: dropdown
+    id: originality
+    attributes:
+      label: Originality / 是否原创
+      description: How are you related to this skill?
+      options:
+        - I am the author or maintainer (原创作者/维护者)
+        - Third-party, authorized to submit (第三方，已获授权)
+        - Third-party, index only (第三方，仅建议收录)
+    validations:
+      required: true
+
+  - type: textarea
+    id: install-usage
+    attributes:
+      label: Install and usage / 安装与使用说明
+      description: How to install it (target directory + command) and how to trigger it (a short example).
+      placeholder: |
+        Install target: ~/.dsh/skills/my-skill
+        Command: git clone --depth 1 https://github.com/owner/repo.git ~/.dsh/skills/my-skill
+        Trigger: "..." (example user request)
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else / 补充说明
+      description: Screenshots, related links, known limitations, or special review notes.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations / 确认
+      description: All boxes must be checked before review starts.
+      options:
+        - label: The skill is real and the source link is publicly reachable. / 技能真实存在，链接可公开访问。
+          required: true
+        - label: It contains no malicious code, credential theft, data exfiltration or destructive commands. / 不含恶意代码、窃取凭据、外传数据或破坏性命令。
+          required: true
+        - label: No API keys, cookies, private URLs or personal data are included in the submission or the skill files. / 提交内容与技能文件中不含任何密钥、Cookie、内部地址或个人信息。
+          required: true
+        - label: The license is stated truthfully, or "none declared" is used when the repository has no license. / 许可证如实填写；仓库无许可证时填写 "none declared"。
+          required: true
+        - label: I agree that the metadata (not the skill content) is stored in this site's `data/skills.json` and published under the repository's MIT license. / 同意仅将元数据（非技能内容）收录到本站 data/skills.json，并按仓库 MIT 许可发布。
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **Review criteria**: real and reachable, clear license, no malicious content, includes install and
+        usage guidance, bilingual fields where possible, and no duplicate of an existing entry.
+        Third-party skills are indexed, never hosted; the original author keeps all rights.
+        The maintainer may edit metadata, category and tags during review.

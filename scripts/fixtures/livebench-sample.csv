@@ -1,0 +1,5 @@
+model,long_agentic,reasoning,coding,browser,data_analysis,research,design
+claude-fable-5.1,77.9,91.7,97.7,89.8,80.3,82.0,83.4
+gpt-6.1-terra,88.4,95.2,98.1,91.0,84.2,85.5,90.1
+glm-5.3-flashx,70.1,88.9,92.2,80.0,75.5,n/a,81.0
+claude-haiku-5.5,40.0,82.4,91.4,69.5,53.1,81.9,83.1

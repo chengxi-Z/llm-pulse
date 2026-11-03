@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T16:50:38.301Z",
+  "source": "fetch-pipeline:local",
+  "mode": "local",
+  "site": {
+    "name": "AI Pulse",
+    "brand": "照胆云",
+    "version": "1.0.0"
+  },
+  "stats": {
+    "models": 451,
+    "news": 89,
+    "boards": 9,
+    "resources": 22,
+    "projects": 13,
+    "topics": 10,
+    "orgs": 62,
+    "sourcesOk": 15,
+    "sourcesDegraded": 5
+  },
+  "sources": [
+    {
+      "id": "openrouter",
+      "name": "OpenRouter Models API",
+      "url": "https://openrouter.ai/api/v1/models",
+      "type": "api",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 451,
+      "note": "451 个模型 / 62 家厂商；派生动态 30 条、派生榜 2 个"
+    },
+    {
+      "id": "livebench",
+      "name": "LiveBench 2.0",
+      "url": "https://livebench.ai/",
+      "type": "dataset",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 32,
+      "note": "release 20261025；32 个模型，Overall 权重本地复算"
+    },
+    {
+      "id": "epoch-ai",
+      "name": "Epoch AI Benchmarking",
+      "url": "https://epoch.ai/data/ai-benchmarking-dashboard",
+      "type": "dataset",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 90,
+      "note": "benchmark_data.zip 解析：epoch-eci、epoch-swe-bench-verified、epoch-gpqa-diamond"
+    },
+    {
+      "id": "opencompass",
+      "name": "OpenCompass 司南",
+      "url": "https://rank.opencompass.org.cn/",
+      "type": "api",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 20,
+      "note": "官方 API POST /gw/opencompass-be：opencompass-arena 10 条，opencompass-arena-mm 10 条"
+    },
+    {
+      "id": "artificial-analysis",
+      "name": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "type": "html",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 91,
+      "note": "全量榜 /leaderboards/models initialModels 解析 91 款模型"
+    },
+    {
+      "id": "rss-openai",
+      "name": "OpenAI News RSS",
+      "url": "https://openai.com/news/rss.xml",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 8,
+      "note": "8 条（近 120 天）"
+    },
+    {
+      "id": "rss-gdm",
+      "name": "Google DeepMind Blog RSS",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 8,
+      "note": "8 条（近 120 天）"
+    },
+    {
+      "id": "rss-google-ai",
+      "name": "Google AI Blog RSS",
+      "url": "https://blog.google/technology/ai/rss/",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 8,
+      "note": "8 条（近 120 天）"
+    },
+    {
+      "id": "rss-qwen",
+      "name": "Qwen Blog RSS",
+      "url": "https://qwenlm.github.io/blog/index.xml",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 0,
+      "note": "feed 可达（20 条）但最新条目 2025-09-22 超出 120 天新鲜度窗口，未并入动态"
+    },
+    {
+      "id": "rss-aws-ml",
+      "name": "AWS Machine Learning Blog RSS",
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 8,
+      "note": "8 条（近 120 天）"
+    },
+    {
+      "id": "rss-mit-ai",
+      "name": "MIT News AI RSS",
+      "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 8,
+      "note": "8 条（近 120 天）"
+    },
+    {
+      "id": "rss-bair",
+      "name": "Berkeley BAIR Blog RSS",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "type": "rss",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 3,
+      "note": "3 条（近 120 天）"
+    },
+    {
+      "id": "github",
+      "name": "GitHub API（项目 stars）",
+      "url": "https://api.github.com",
+      "type": "api",
+      "status": "degraded",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 13,
+      "note": "实时抓取失败（GitHub 全部仓库刷新失败（ollama/ollama: HTTP 403; huggingface/transformers: HTTP 403））；已回退上次快照"
+    },
+    {
+      "id": "github-releases",
+      "name": "GitHub Releases（开源工具动态）",
+      "url": "https://api.github.com/repos/huggingface/transformers/releases",
+      "type": "api",
+      "status": "degraded",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 9,
+      "note": "实时抓取失败（GitHub Releases 全部失败（huggingface/transformers; vllm-project/vllm; ollama/ollama））；已回退上次快照"
+    },
+    {
+      "id": "hf-mirror",
+      "name": "Hugging Face 镜像",
+      "url": "https://hf-mirror.com/api/models",
+      "type": "api",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 20,
+      "note": "trending 20 条；POC 仅验证镜像可达（HF 官方被墙），MVP 用于开源权重/趋势补全"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face 官方 API",
+      "url": "https://huggingface.co/api",
+      "type": "api",
+      "status": "blocked",
+      "lastFetchedAt": null,
+      "items": null,
+      "note": "仅 CI（GitHub Actions）启用：本机 huggingface.co 被墙（fetch 超时）"
+    },
+    {
+      "id": "lmarena",
+      "name": "LMArena（HF 数据集）",
+      "url": "https://lmarena.ai/leaderboard",
+      "type": "dataset",
+      "status": "blocked",
+      "lastFetchedAt": null,
+      "items": null,
+      "note": "仅 CI 启用：lmarena.ai 与 datasets-server 本机被墙；CI 侧经 hf-mirror/HF 数据集获取"
+    },
+    {
+      "id": "superclue",
+      "name": "SuperCLUE",
+      "url": "https://www.superclueai.com/",
+      "type": "html",
+      "status": "blocked",
+      "lastFetchedAt": null,
+      "items": null,
+      "note": "无公开数据 API（Vue SPA + 微信文章），POC 不接入；如需可后续人工维护"
+    },
+    {
+      "id": "deepseek-news",
+      "name": "DeepSeek 官方 Change Log",
+      "url": "https://api-docs.deepseek.com/updates",
+      "type": "html",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 7,
+      "note": "官方 Change Log HTML 适配：7 条（近 240 天）"
+    },
+    {
+      "id": "hn-ai",
+      "name": "Hacker News AI 热榜",
+      "url": "https://hn.algolia.com/api/v1/search",
+      "type": "api",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-03T16:50:38.301Z",
+      "items": 10,
+      "note": "HN last 7d AI stories: 30 hits -> Top 10 topics; 10 with discussion summary"
+    }
+  ],
+  "latestHighlights": [
+    "OpenRouter 目录共 451 个模型，覆盖 62 家厂商",
+    "LiveBench 2.0 榜单已接入（2026-10-25），当前 Top1：Claude Fable 5.1",
+    "已收录 22 个学习资源与 13 个优秀项目"
+  ]
+}

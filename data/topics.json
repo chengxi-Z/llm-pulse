@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T16:50:38.301Z",
+  "source": "hn-ai",
+  "count": 10,
+  "items": [
+    {
+      "id": "hn-50305693",
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "hnUrl": "https://news.ycombinator.com/item?id=50305693",
+      "domain": "newsletter.signoz.io",
+      "points": 680,
+      "comments": 501,
+      "publishedAt": "2026-10-30T15:52:18.000Z",
+      "summary": "I wanted to use this post as a source to write on my web server project's blog on why debuggable web infrastructure matters even if AI SRE agents exists, but t…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50264853",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "url": "https://www.brangus.io/survival-llm",
+      "hnUrl": "https://news.ycombinator.com/item?id=50264853",
+      "domain": "brangus.io",
+      "points": 543,
+      "comments": 204,
+      "publishedAt": "2026-10-27T19:55:06.000Z",
+      "summary": "Nice idea! I wonder how the installed IBM Granite 4.2 8B LLM does on machines with \"modest\" RAM",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "LLM"
+      ]
+    },
+    {
+      "id": "hn-50273396",
+      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50273396",
+      "domain": "religionnews.com",
+      "points": 494,
+      "comments": 556,
+      "publishedAt": "2026-10-28T13:41:30.000Z",
+      "summary": "> “The process and work involved in thinking through situations, through my work, through my ethics, through the way I handle other people, is a key component…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50323088",
+      "title": "The AI cost of JavaScript frameworks",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50323088",
+      "domain": "nolanlawson.com",
+      "points": 474,
+      "comments": 389,
+      "publishedAt": "2026-11-01T06:06:19.000Z",
+      "summary": "Unfortunately the author is not only correct about front end development vibes, but due to this state of affairs, I ceased to recognize browser based UIs as be…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Policy",
+        "Economics"
+      ]
+    },
+    {
+      "id": "hn-50296486",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "hnUrl": "https://news.ycombinator.com/item?id=50296486",
+      "domain": "labs.ycombinator.com",
+      "points": 422,
+      "comments": 174,
+      "publishedAt": "2026-10-29T21:40:28.000Z",
+      "summary": "Interesting setups, I found the Minecraft agents to work in an almost turn-based manner, which makes me think that the three hours and open format did not real…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50339494",
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "hnUrl": "https://news.ycombinator.com/item?id=50339494",
+      "domain": "businessinsider.com",
+      "points": 341,
+      "comments": 265,
+      "publishedAt": "2026-11-02T16:40:29.000Z",
+      "summary": "all of that to hit two nines of uptime",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Economics"
+      ]
+    },
+    {
+      "id": "hn-50304122",
+      "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+      "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50304122",
+      "domain": "fortune.com",
+      "points": 316,
+      "comments": 391,
+      "publishedAt": "2026-10-30T14:08:20.000Z",
+      "summary": "There's no goal mentioned in this article as why 98% of the code needs rewriting.",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50307183",
+      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50307183",
+      "domain": "404media.co",
+      "points": 301,
+      "comments": 259,
+      "publishedAt": "2026-10-30T17:24:45.000Z",
+      "summary": "damn, this guy crashing out live in front of his company and the (tech) world. AI times are weird. Validates that truism I heard: money (and power and influenc…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50306008",
+      "title": "US tech stocks see sharp falls over AI cost fears",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "hnUrl": "https://news.ycombinator.com/item?id=50306008",
+      "domain": "bbc.co.uk",
+      "points": 270,
+      "comments": 304,
+      "publishedAt": "2026-10-30T16:13:02.000Z",
+      "summary": "Google's AI search is abysmal and is almost always, at least, 30% wrong (outdated, wrong info) ime. I find that I just use the chat interface to save tokens on…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Economics"
+      ]
+    },
+    {
+      "id": "hn-50275626",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "hnUrl": "https://news.ycombinator.com/item?id=50275626",
+      "domain": "surgehq.ai",
+      "points": 266,
+      "comments": 174,
+      "publishedAt": "2026-10-28T15:46:30.000Z",
+      "summary": "My tax accountant mis-filed my taxes a couple years ago, which cost me about $20K (which I learned after I switched to another accountant later). Don't know if…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    }
+  ]
+}

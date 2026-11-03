@@ -1,0 +1,28 @@
+{
+  "name": "llm-pulse",
+  "version": "0.1.0",
+  "description": "AI Pulse · 照胆云 — 公域轻量轻奢的大模型追踪站：动态、排行、学习资源、AI 助手与项目展示",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "fetch": "node scripts/fetch-data.mjs --mode=local",
+    "fetch:ci": "node scripts/fetch-data.mjs --mode=ci",
+    "feed": "node scripts/build-feed.mjs",
+    "stage": "node scripts/stage-site.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "leaderboard",
+    "ai-news",
+    "static-site",
+    "github-pages",
+    "ai-tracking"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,71 @@
+/* ===== AI Pulse — v1.3 skills page styles (skills.html only) ===== */
+.skills-toolbar{width:100%}
+.skills-toolbar .filter-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
+.skills-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.skills-filters+.skills-filters{padding-left:12px;border-left:1px solid var(--line)}
+.skills-toolbar .chips{flex:0 1 auto;min-width:0}
+.skills-toolbar .search-field{flex:1 1 220px;min-width:180px;max-width:340px}
+.skills-toolbar .result-count{flex:0 0 auto;margin-left:auto}
+
+.skill-modal{position:fixed;inset:0;z-index:140;display:flex;align-items:center;justify-content:center;padding:clamp(16px,4vw,40px)}
+.skill-modal[hidden]{display:none}
+.skill-modal-backdrop{position:absolute;inset:0;background:var(--overlay);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.skill-modal-panel{position:relative;z-index:1;width:min(720px,100%);max-height:min(86vh,860px);overflow-y:auto;overscroll-behavior:contain;padding:clamp(20px,3vw,32px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-3);box-shadow:var(--shadow-panel);animation:skill-modal-in 240ms var(--ease) both}
+@keyframes skill-modal-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.skill-modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.skill-modal-head h2{flex:1;min-width:0;margin-top:8px;font-size:clamp(1.5rem,2.4vw,1.9rem)}
+.skill-modal-body{display:grid;gap:18px;padding-top:18px;font-size:.875rem;line-height:1.75}
+.skill-modal-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.skill-modal-block h3{margin:0 0 8px;color:var(--highlight);font-family:var(--font-sans);font-size:.6875rem;font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase}
+.skill-modal-block p{margin:0;color:var(--muted);font-size:.8125rem;line-height:1.75}
+.skill-modal-block code,.skill-targets code{padding:1px 6px;border:1px solid var(--line);border-radius:4px;background:var(--code-bg);font-family:ui-monospace,"Cascadia Code",Consolas,monospace;font-size:.78rem;overflow-wrap:anywhere}
+.skill-install{display:flex;align-items:stretch;gap:8px}
+.skill-install code{flex:1 1 auto;min-width:0;padding:9px 12px;border:1px solid var(--line);border-radius:var(--r-2);background:var(--code-bg);font-family:ui-monospace,"Cascadia Code",Consolas,monospace;font-size:.72rem;line-height:1.7;overflow-wrap:anywhere;white-space:pre-wrap}
+.skill-targets{margin:0;color:var(--muted);font-size:.75rem;line-height:1.8}
+.skill-steps{display:grid;gap:8px;margin:0;padding:0;counter-reset:skill-step;list-style:none}
+.skill-steps li{display:flex;gap:10px;color:var(--muted);font-size:.8125rem;line-height:1.7;counter-increment:skill-step}
+.skill-steps li::before{content:counter(skill-step);flex:none;color:var(--gold-deep);font-family:var(--font-serif);font-size:1.125rem;line-height:1.35}
+.skill-modal-foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.skill-modal-foot .btn{margin-left:auto}
+
+.submit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:clamp(12px,1.6vw,20px);margin-top:clamp(20px,3vw,32px)}
+.submit-card{display:flex;flex-direction:column;gap:10px;min-width:0;height:100%;padding:clamp(18px,2vw,26px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-card)}
+.submit-card h3{margin:0;font-size:1.125rem;font-weight:600}
+.submit-card p{margin:0;color:var(--muted);font-size:.8125rem;line-height:1.7}
+.submit-card .btn{align-self:flex-start;margin-top:auto}
+.submit-form{display:grid;gap:8px;margin:0}
+.submit-form .field{display:grid;gap:4px;color:var(--muted);font-size:.6875rem;letter-spacing:.04em}
+.submit-form input{width:100%;padding:7px 10px;border:1px solid var(--line);border-radius:var(--r-2);background:var(--surface);color:var(--ink);font-size:.75rem}
+.submit-criteria{max-width:82ch;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.submit-criteria h3{font-size:1rem}
+.submit-criteria ul{display:grid;gap:6px;margin-top:10px}
+.submit-criteria li{position:relative;padding-left:16px;color:var(--muted);font-size:.8125rem;line-height:1.7}
+.submit-criteria li::before{content:"";position:absolute;top:.65em;left:2px;width:4px;height:4px;background:var(--gold-soft);transform:rotate(45deg)}
+.submit-note{max-width:82ch;margin-top:16px;color:var(--muted);font-size:.75rem;line-height:1.75}
+
+.code-block{position:relative;margin:0;padding:12px 14px;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-2);background:var(--code-bg);color:var(--ink);font-family:ui-monospace,"Cascadia Code",Consolas,monospace;font-size:.75rem;line-height:1.75;white-space:pre}
+.code-block code{font:inherit;white-space:pre}
+.code-block .code-copy{position:absolute;top:8px;right:8px}
+.code-block:has(.code-copy){padding-right:100px}
+.skill-install .code-block{flex:1 1 auto;min-width:0}
+.code-copy{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border:1px solid var(--line-strong);border-radius:999px;background:var(--surface);color:var(--muted);font-size:.6875rem;letter-spacing:.04em;line-height:1.5;cursor:pointer;transition:border-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+.code-copy:hover{border-color:var(--gold);color:var(--highlight)}
+.code-copy:focus-visible{outline:var(--focus-ring);outline-offset:2px}
+
+@media (max-width:1024px){
+  .submit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  .skills-toolbar .search-field{max-width:none}
+  .skills-filters+.skills-filters{padding-left:0;border-left:0}
+  .submit-grid{grid-template-columns:minmax(0,1fr)}
+  .skill-modal-cols{grid-template-columns:minmax(0,1fr)}
+  .skill-install{flex-direction:column;align-items:stretch}
+}
+@media (max-width:640px){
+  .skill-modal{align-items:flex-end;padding:0}
+  .skill-modal-panel{width:100%;max-height:min(88vh,760px);padding-bottom:calc(clamp(20px,3vw,32px) + env(safe-area-inset-bottom,0px));border-bottom:0;border-radius:var(--r-3) var(--r-3) 0 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .skill-modal-panel{animation:none}
+}

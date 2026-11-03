@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": "openai/gpt-6.1-terra-pro",
+      "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-6.1 Terra Pro",
+      "created": 1792992000,
+      "description": "OpenAI's flagship reasoning model with a 1.05M context window and tool support.",
+      "context_length": 1050000,
+      "architecture": { "modality": "text+image->text", "input_modalities": ["text", "image", "file"], "output_modalities": ["text"] },
+      "pricing": { "prompt": "0.000001", "completion": "0.000005" },
+      "top_provider": { "context_length": 1050000, "max_completion_tokens": 131072 },
+      "supported_parameters": ["tools", "tool_choice", "structured_outputs", "reasoning", "response_format", "temperature"],
+      "reasoning": true,
+      "links": { "details": "/api/v1/models/openai/gpt-6.1-terra-pro" }
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "hugging_face_id": "zai-org/GLM-5.3-FlashX",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "created": 1793520000,
+      "description": "Native multimodal model with 1M context.",
+      "context_length": 1048576,
+      "architecture": { "modality": "text+image+video->text", "input_modalities": ["text", "image", "video"], "output_modalities": ["text"] },
+      "pricing": { "prompt": "0.00000037", "completion": "0.00000125" },
+      "top_provider": { "context_length": 1048576, "max_completion_tokens": 131072 },
+      "supported_parameters": ["include_reasoning", "tools", "structured_outputs"],
+      "links": {}
+    },
+    {
+      "id": "meta-llama/llama-5-8b",
+      "name": "Meta: Llama 5 8B",
+      "created": 1790000000,
+      "description": "Small open model.",
+      "context_length": 131072,
+      "architecture": { "modality": "text->text", "input_modalities": ["text"], "output_modalities": ["text"] },
+      "pricing": { "prompt": "0", "completion": "0" },
+      "top_provider": { "context_length": 131072, "max_completion_tokens": 8192 },
+      "supported_parameters": ["temperature"],
+      "links": {}
+    }
+  ]
+}

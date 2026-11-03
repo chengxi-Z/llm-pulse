@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T16:52:05.542Z",
+  "source": "curated+github",
+  "count": 11,
+  "items": [
+    {
+      "id": "one-sentence-project",
+      "name": "One-Sentence Project",
+      "nameZh": "一句话交付项目",
+      "description": "Turn a one-sentence brief into a deployable public tracker: requirements, data contract, POC gate, MVP, GitHub Pages release and evidence-based acceptance, with an executable scaffold and checker.",
+      "descriptionZh": "把一句话需求变成可上线的公域追踪站：需求、数据合约、POC 门禁、MVP、GitHub Pages 发布与证据化验收，附可执行脚手架与校验器。",
+      "category": "methodology",
+      "author": "chengxi-Z",
+      "repo": "chengxi-Z/llm-pulse",
+      "url": "https://github.com/chengxi-Z/llm-pulse/tree/main/skills/one-sentence-project",
+      "license": "MIT",
+      "stars": null,
+      "updatedAt": "2026-11-03T15:13:52.218Z",
+      "sourceType": "mine",
+      "tags": [
+        "methodology",
+        "static-site",
+        "github-pages",
+        "agent-skill"
+      ],
+      "featured": true,
+      "lang": "en",
+      "whenToUse": "You have a one-sentence brief to track public information over time and want a runnable, publishable and verifiable project, not just a design document.",
+      "whenToUseZh": "你有一句话需求，要持续追踪某领域公开信息，并希望得到可运行、可上线、可验收的项目产物，而不只是一份设计文档。",
+      "whenNotToUse": "Generic web apps, backends, accounts, databases, real-time or high-frequency feeds, paywalled or private sources.",
+      "whenNotToUseZh": "通用 Web 应用、后端、账号、数据库、实时高频系统，以及付费墙或私有数据源。",
+      "install": {
+        "target": "~/.dsh/skills/one-sentence-project",
+        "command": "mkdir -p ~/.dsh/skills && cp -r skills/one-sentence-project ~/.dsh/skills/one-sentence-project"
+      },
+      "usageSteps": [
+        "Clone this repository (or use your local copy) and copy skills/one-sentence-project into your agent skills directory.",
+        "Describe the domain, tracking target, display form and publish target in one sentence.",
+        "Run the scaffold, then follow the SKILL.md POC -> MVP -> Release gates and keep the evidence."
+      ],
+      "usageStepsZh": [
+        "克隆本仓库（或使用已有副本），把 skills/one-sentence-project 复制到本机 Agent skills 目录。",
+        "对话中给出领域、追踪对象、展示形态与发布目标（一句话即可）。",
+        "运行脚手架，按 SKILL.md 的 POC → MVP → Release 门禁执行并留存证据。"
+      ],
+      "skillPath": "skills/one-sentence-project/SKILL.md"
+    },
+    {
+      "id": "anthropic-skills",
+      "name": "Anthropic Agent Skills",
+      "nameZh": "Anthropic 官方技能库",
+      "description": "Anthropic's public Agent Skills repository: document, design, MCP and skill-authoring skills maintained by the Anthropic team.",
+      "descriptionZh": "Anthropic 官方公开 Agent Skills 仓库：由 Anthropic 团队维护的文档、设计、MCP 与技能编写等技能。",
+      "category": "dev",
+      "author": "Anthropic",
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "license": null,
+      "stars": 187008,
+      "updatedAt": "2026-10-28T19:20:39Z",
+      "sourceType": "official",
+      "tags": [
+        "official",
+        "anthropic",
+        "documents",
+        "skill-creator"
+      ],
+      "featured": true,
+      "lang": "en",
+      "whenToUse": "You want production-ready document, design, MCP or API skills maintained by Anthropic, or a reference for how a well-structured SKILL.md looks.",
+      "whenToUseZh": "你需要 Anthropic 维护的文档、设计、MCP 或 API 技能，或想参考结构规范的 SKILL.md 写法。",
+      "whenNotToUse": "You need third-party or framework-specific skills, or a clearly licensed bundle to redistribute: the repository declares no license, so check upstream terms first.",
+      "whenNotToUseZh": "你需要第三方或特定框架技能，或需要可明确再分发的许可：该仓库未声明许可证，使用前请先确认上游条款。",
+      "install": {
+        "target": "~/.dsh/skills/anthropic-skills",
+        "command": "git clone --depth 1 https://github.com/anthropics/skills.git ~/.dsh/skills/anthropic-skills"
+      },
+      "usageSteps": [
+        "Clone the repository into your agent skills directory.",
+        "Pick the skill you need from skills/ and copy that folder to ~/.dsh/skills/<skill-name>/.",
+        "Reload your agent and describe the task; the skill is selected from its description."
+      ],
+      "usageStepsZh": [
+        "把仓库克隆到本机 Agent skills 目录。",
+        "从 skills/ 中选择需要的技能，把该文件夹复制到 ~/.dsh/skills/<技能名>/。",
+        "重新加载 Agent，描述任务，技能会按其 description 自动触发。"
+      ],
+      "skillPath": "skills/skill-creator/SKILL.md"
+    },
+    {
+      "id": "openai-skills",
+      "name": "OpenAI Skills Catalog",
+      "nameZh": "OpenAI 官方技能目录",
+      "description": "OpenAI's curated Codex skills for app building, Figma, Notion, deployment and common developer workflows.",
+      "descriptionZh": "OpenAI 官方整理的 Codex 技能目录，覆盖应用构建、Figma、Notion、部署与常见开发工作流。",
+      "category": "dev",
+      "author": "OpenAI",
+      "repo": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "license": null,
+      "stars": 28489,
+      "updatedAt": "2026-10-28T17:31:41Z",
+      "sourceType": "official",
+      "tags": [
+        "official",
+        "openai",
+        "codex",
+        "workflow"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You use Codex or another coding agent and want official, task-shaped skills for common developer workflows.",
+      "whenToUseZh": "你使用 Codex 或其它编码 Agent，需要面向常见开发工作流的官方任务型技能。",
+      "whenNotToUse": "You need vendor-neutral skills or a clearly licensed bundle: the catalog targets Codex workflows and declares no repository license.",
+      "whenNotToUseZh": "你需要厂商中立的技能或可明确再分发的许可：该目录面向 Codex 工作流且未声明仓库许可证。",
+      "install": {
+        "target": "~/.dsh/skills/openai-skills",
+        "command": "git clone --depth 1 https://github.com/openai/skills.git ~/.dsh/skills/openai-skills"
+      },
+      "usageSteps": [
+        "Clone the catalog into your agent skills directory.",
+        "Choose a skill under skills/.curated/ and copy it to ~/.dsh/skills/<skill-name>/.",
+        "Reload the agent and ask for the matching task."
+      ],
+      "usageStepsZh": [
+        "把技能目录克隆到本机 Agent skills 目录。",
+        "在 skills/.curated/ 下选择技能，复制到 ~/.dsh/skills/<技能名>/。",
+        "重新加载 Agent 并请求对应任务。"
+      ],
+      "skillPath": "skills/.curated/chatgpt-apps/SKILL.md"
+    },
+    {
+      "id": "vercel-agent-skills",
+      "name": "Vercel Agent Skills",
+      "nameZh": "Vercel 官方技能包",
+      "description": "Vercel's official agent skills for React and Next.js best practices, deployment, web design and CLI workflows.",
+      "descriptionZh": "Vercel 官方 Agent Skills：React/Next.js 最佳实践、部署、Web 设计与 CLI 工作流。",
+      "category": "dev",
+      "author": "Vercel Labs",
+      "repo": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "license": null,
+      "stars": 33468,
+      "updatedAt": "2026-10-28T19:17:28Z",
+      "sourceType": "official",
+      "tags": [
+        "official",
+        "vercel",
+        "react",
+        "deployment"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You build or deploy React / Next.js apps on Vercel and want official guidance packaged as agent skills.",
+      "whenToUseZh": "你在 Vercel 上构建或部署 React / Next.js 应用，希望以 Agent Skills 形式使用官方指导。",
+      "whenNotToUse": "Your stack is not React or Vercel: the collection is stack-specific and declares no repository license.",
+      "whenNotToUseZh": "你的技术栈不是 React 或 Vercel：该合集与栈强相关，且未声明仓库许可证。",
+      "install": {
+        "target": "~/.dsh/skills/vercel-agent-skills",
+        "command": "git clone --depth 1 https://github.com/vercel-labs/agent-skills.git ~/.dsh/skills/vercel-agent-skills"
+      },
+      "usageSteps": [
+        "Clone the repository into your agent skills directory.",
+        "Copy the skills you need from skills/ into ~/.dsh/skills/<skill-name>/.",
+        "Reload the agent and start the React or deployment task."
+      ],
+      "usageStepsZh": [
+        "把仓库克隆到本机 Agent skills 目录。",
+        "把 skills/ 中需要的技能复制到 ~/.dsh/skills/<技能名>/。",
+        "重新加载 Agent 后开始 React 或部署任务。"
+      ],
+      "skillPath": "skills/react-best-practices/SKILL.md"
+    },
+    {
+      "id": "github-awesome-copilot",
+      "name": "GitHub Awesome Copilot",
+      "nameZh": "GitHub Awesome Copilot 技能合集",
+      "description": "GitHub's MIT-licensed collection of hundreds of skills, instructions and agents for GitHub Copilot and compatible coding agents.",
+      "descriptionZh": "GitHub 官方 MIT 许可合集：面向 GitHub Copilot 及兼容编码 Agent 的数百个技能、指令与 Agent。",
+      "category": "dev",
+      "author": "GitHub",
+      "repo": "github/awesome-copilot",
+      "url": "https://github.com/github/awesome-copilot",
+      "license": "MIT",
+      "stars": 40754,
+      "updatedAt": "2026-11-03T05:38:59Z",
+      "sourceType": "official",
+      "tags": [
+        "official",
+        "github-copilot",
+        "skills",
+        "mit"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You use GitHub Copilot or a compatible agent and want a broad, MIT-licensed library of community-contributed skills to copy from.",
+      "whenToUseZh": "你使用 GitHub Copilot 或兼容 Agent，想要一个 MIT 许可、范围广、可直接取用的社区贡献技能库。",
+      "whenNotToUse": "You need one polished skill rather than a large collection; quality and ownership vary per entry.",
+      "whenNotToUseZh": "你需要单个精修技能而非大型合集：合集中各条目的质量与归属不一。",
+      "install": {
+        "target": "~/.dsh/skills/github-awesome-copilot",
+        "command": "git clone --depth 1 https://github.com/github/awesome-copilot.git ~/.dsh/skills/github-awesome-copilot"
+      },
+      "usageSteps": [
+        "Clone the collection into your agent skills directory.",
+        "Pick a skill from skills/ (or .github/skills/) and copy its folder into your skills directory.",
+        "Reload the agent and describe the task."
+      ],
+      "usageStepsZh": [
+        "把合集克隆到本机 Agent skills 目录。",
+        "从 skills/（或 .github/skills/）挑选技能，把文件夹复制到你的 skills 目录。",
+        "重新加载 Agent 并描述任务。"
+      ],
+      "skillPath": "skills/acquire-codebase-knowledge/SKILL.md"
+    },
+    {
+      "id": "microsoft-skills",
+      "name": "Microsoft Skills",
+      "nameZh": "Microsoft 官方技能库",
+      "description": "Microsoft's MIT-licensed skills for Azure, Microsoft Foundry, MCP servers and SDKs, packaged for coding agents.",
+      "descriptionZh": "Microsoft 官方 MIT 许可技能库：Azure、Microsoft Foundry、MCP Server 与 SDK，按编码 Agent 形态打包。",
+      "category": "dev",
+      "author": "Microsoft",
+      "repo": "microsoft/skills",
+      "url": "https://github.com/microsoft/skills",
+      "license": "MIT",
+      "stars": 3171,
+      "updatedAt": "2026-11-03T11:04:37Z",
+      "sourceType": "official",
+      "tags": [
+        "official",
+        "microsoft",
+        "azure",
+        "mcp"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You work with Azure, Microsoft Foundry, MCP servers or Microsoft SDKs and want official agent guidance and templates.",
+      "whenToUseZh": "你使用 Azure、Microsoft Foundry、MCP Server 或 Microsoft SDK，希望获得官方 Agent 指导与模板。",
+      "whenNotToUse": "You are not on the Microsoft / Azure stack: the skills assume specific SDKs, services and plugin layouts.",
+      "whenNotToUseZh": "你不在 Microsoft / Azure 技术栈上：这些技能依赖特定 SDK、服务与插件结构。",
+      "install": {
+        "target": "~/.dsh/skills/microsoft-skills",
+        "command": "git clone --depth 1 https://github.com/microsoft/skills.git ~/.dsh/skills/microsoft-skills"
+      },
+      "usageSteps": [
+        "Clone the repository into your agent skills directory.",
+        "Pick a plugin/skill under .github/plugins/ and copy the skill folder into your agent skills directory.",
+        "Reload the agent and start the Azure or SDK task."
+      ],
+      "usageStepsZh": [
+        "把仓库克隆到本机 Agent skills 目录。",
+        "在 .github/plugins/ 下选择插件/技能，把对应技能文件夹复制到 Agent skills 目录。",
+        "重新加载 Agent 后开始 Azure 或 SDK 任务。"
+      ],
+      "skillPath": ".github/plugins/azure-advisor/skills/azure-advisor/SKILL.md"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "nameZh": "Superpowers 技能框架",
+      "description": "A widely used MIT-licensed skills framework that packages a full software development methodology for coding agents: brainstorm, plan, TDD, review, verify.",
+      "descriptionZh": "广受欢迎的 MIT 许可技能框架，把完整软件开发方法论（头脑风暴、计划、TDD、评审、验证）打包给编码 Agent。",
+      "category": "methodology",
+      "author": "obra",
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "license": "MIT",
+      "stars": 311646,
+      "updatedAt": "2026-11-03T02:51:39Z",
+      "sourceType": "community",
+      "tags": [
+        "methodology",
+        "tdd",
+        "code-review",
+        "workflow"
+      ],
+      "featured": true,
+      "lang": "en",
+      "whenToUse": "You want a complete, opinionated development workflow available to your coding agent rather than isolated helper prompts.",
+      "whenToUseZh": "你希望编码 Agent 拥有一套完整、有主见的开发工作流，而不是零散的辅助提示词。",
+      "whenNotToUse": "You need a single narrow helper skill, or your agent does not support the plugin / skill-directory format.",
+      "whenNotToUseZh": "你只需要单个窄用途技能，或你的 Agent 不支持插件 / 技能目录形式。",
+      "install": {
+        "target": "~/.dsh/skills/superpowers",
+        "command": "git clone --depth 1 https://github.com/obra/superpowers.git ~/.dsh/skills/superpowers"
+      },
+      "usageSteps": [
+        "Clone the framework into your agent skills directory.",
+        "Follow its README to install the plugin or copy skills/* into your agent skills directory.",
+        "Start a coding task and let the workflow skills guide planning, TDD and review."
+      ],
+      "usageStepsZh": [
+        "把框架克隆到本机 Agent skills 目录。",
+        "按 README 安装插件，或把 skills/* 复制到 Agent skills 目录。",
+        "开始编码任务，由工作流技能引导计划、TDD 与评审。"
+      ],
+      "skillPath": "skills/brainstorming/SKILL.md"
+    },
+    {
+      "id": "marketingskills",
+      "name": "Marketing Skills",
+      "nameZh": "营销技能包",
+      "description": "MIT-licensed marketing skills for Claude Code and other agents: CRO, copywriting, SEO, analytics, ads and growth engineering.",
+      "descriptionZh": "面向 Claude Code 等 Agent 的 MIT 许可营销技能包：CRO、文案、SEO、分析、广告与增长工程。",
+      "category": "writing",
+      "author": "Corey Haines",
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT",
+      "stars": 58240,
+      "updatedAt": "2026-10-31T00:53:07Z",
+      "sourceType": "community",
+      "tags": [
+        "marketing",
+        "seo",
+        "copywriting",
+        "growth"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "Your agent needs marketing workflows: landing-page CRO, copywriting, SEO, ads, email or analytics tasks.",
+      "whenToUseZh": "你的 Agent 需要营销工作流：落地页 CRO、文案、SEO、广告、邮件或分析任务。",
+      "whenNotToUse": "You need engineering, data-analysis or research skills: the scope is intentionally marketing-specific.",
+      "whenNotToUseZh": "你需要工程、数据分析或研究类技能：该包刻意聚焦营销场景。",
+      "install": {
+        "target": "~/.dsh/skills/marketingskills",
+        "command": "git clone --depth 1 https://github.com/coreyhaines31/marketingskills.git ~/.dsh/skills/marketingskills"
+      },
+      "usageSteps": [
+        "Clone the collection into your agent skills directory.",
+        "Copy the skills you need from skills/ into ~/.dsh/skills/<skill-name>/.",
+        "Reload the agent and ask for the marketing task."
+      ],
+      "usageStepsZh": [
+        "把合集克隆到本机 Agent skills 目录。",
+        "把 skills/ 中需要的技能复制到 ~/.dsh/skills/<技能名>/。",
+        "重新加载 Agent 并请求对应营销任务。"
+      ],
+      "skillPath": "skills/ai-seo/SKILL.md"
+    },
+    {
+      "id": "voltagent-awesome-agent-skills",
+      "name": "Awesome Agent Skills (VoltAgent)",
+      "nameZh": "Agent Skills 精选合集（VoltAgent）",
+      "description": "A curated index of 1000+ agent skills from official teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor and more.",
+      "descriptionZh": "精选索引：1000+ 来自官方团队与社区的 Agent Skills，兼容 Claude Code、Codex、Gemini CLI、Cursor 等。",
+      "category": "other",
+      "author": "VoltAgent",
+      "repo": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "license": "MIT",
+      "stars": 36799,
+      "updatedAt": "2026-11-02T08:19:59Z",
+      "sourceType": "community",
+      "tags": [
+        "awesome-list",
+        "collection",
+        "cross-agent"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You want to discover skills by domain and compare options across vendors, harnesses and ecosystems.",
+      "whenToUseZh": "你想按领域发现技能，并在不同厂商、Agent 与生态之间横向比较。",
+      "whenNotToUse": "You need a ready-to-run skill inside this repository: it is a curated index, and each skill lives in its own upstream repo.",
+      "whenNotToUseZh": "你希望本仓库内就有可运行技能：它是精选索引，具体技能位于各自上游仓库。",
+      "install": {
+        "target": "~/.dsh/skills/awesome-agent-skills-voltagent",
+        "command": "git clone --depth 1 https://github.com/VoltAgent/awesome-agent-skills.git ~/.dsh/skills/awesome-agent-skills-voltagent"
+      },
+      "usageSteps": [
+        "Clone the index and browse its README by category.",
+        "Open the upstream repository of the skill you want.",
+        "Install that skill into your agent skills directory and reload the agent."
+      ],
+      "usageStepsZh": [
+        "克隆索引仓库，按分类浏览 README。",
+        "打开目标技能对应的上游仓库。",
+        "把该技能安装到 Agent skills 目录并重新加载 Agent。"
+      ],
+      "skillPath": "README.md"
+    },
+    {
+      "id": "heilcheng-awesome-agent-skills",
+      "name": "Awesome Agent Skills (heilcheng)",
+      "nameZh": "Agent Skills 教程与目录（heilcheng）",
+      "description": "MIT-licensed tutorials, guides and directories for Agent Skills across Claude, Codex, Copilot, Cursor and MCP.",
+      "descriptionZh": "MIT 许可的 Agent Skills 教程、指南与目录，覆盖 Claude、Codex、Copilot、Cursor 与 MCP。",
+      "category": "other",
+      "author": "heilcheng",
+      "repo": "heilcheng/awesome-agent-skills",
+      "url": "https://github.com/heilcheng/awesome-agent-skills",
+      "license": "MIT",
+      "stars": 6340,
+      "updatedAt": "2026-11-02T04:02:45Z",
+      "sourceType": "community",
+      "tags": [
+        "awesome-list",
+        "tutorials",
+        "directory"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You are new to Agent Skills and want tutorials, guides and a directory to understand the format before installing anything.",
+      "whenToUseZh": "你刚接触 Agent Skills，想先通过教程、指南与目录理解格式，再安装具体技能。",
+      "whenNotToUse": "You want a skill folder you can drop in and run immediately: this repository is learning material and a directory.",
+      "whenNotToUseZh": "你希望直接放入即可运行的技能目录：本仓库是学习资料与索引。",
+      "install": {
+        "target": "~/.dsh/skills/awesome-agent-skills-heilcheng",
+        "command": "git clone --depth 1 https://github.com/heilcheng/awesome-agent-skills.git ~/.dsh/skills/awesome-agent-skills-heilcheng"
+      },
+      "usageSteps": [
+        "Clone or browse the repository.",
+        "Read the tutorial that matches your agent and use the directory to find a skill.",
+        "Install the chosen upstream skill into your agent skills directory."
+      ],
+      "usageStepsZh": [
+        "克隆或浏览该仓库。",
+        "阅读与你的 Agent 匹配的教程，并用目录查找技能。",
+        "把选中的上游技能安装到 Agent skills 目录。"
+      ],
+      "skillPath": "README.md"
+    },
+    {
+      "id": "wshobson-agents",
+      "name": "Agentic Plugin Marketplace",
+      "nameZh": "Agentic 多平台插件市场（wshobson）",
+      "description": "A multi-harness MIT-licensed marketplace of 180+ agent skills and plugins for Claude Code, Codex, Cursor, GitHub Copilot and OpenCode.",
+      "descriptionZh": "MIT 许可的多平台 Agent 插件市场：180+ 技能与插件，支持 Claude Code、Codex、Cursor、GitHub Copilot 与 OpenCode。",
+      "category": "dev",
+      "author": "wshobson",
+      "repo": "wshobson/agents",
+      "url": "https://github.com/wshobson/agents",
+      "license": "MIT",
+      "stars": 42146,
+      "updatedAt": "2026-11-02T01:08:47Z",
+      "sourceType": "community",
+      "tags": [
+        "marketplace",
+        "multi-harness",
+        "plugins"
+      ],
+      "featured": false,
+      "lang": "en",
+      "whenToUse": "You want a plugin marketplace of skills and subagents that works across several coding-agent harnesses.",
+      "whenToUseZh": "你想要一个跨多个编码 Agent 平台可用的技能与子 Agent 插件市场。",
+      "whenNotToUse": "You want a single self-contained skill with no plugin or marketplace layer.",
+      "whenNotToUseZh": "你想要单个自包含技能，不想要插件 / 市场层。",
+      "install": {
+        "target": "~/.dsh/skills/wshobson-agents",
+        "command": "git clone --depth 1 https://github.com/wshobson/agents.git ~/.dsh/skills/wshobson-agents"
+      },
+      "usageSteps": [
+        "Clone the marketplace into your agent skills directory.",
+        "Follow its README to add the marketplace or copy a plugin's skills into your agent skills directory.",
+        "Reload the agent and start the task."
+      ],
+      "usageStepsZh": [
+        "把市场克隆到本机 Agent skills 目录。",
+        "按 README 添加市场，或把某个插件下的技能复制到 Agent skills 目录。",
+        "重新加载 Agent 后开始任务。"
+      ],
+      "skillPath": "plugins/agent-teams/skills/team-composition-patterns/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Browse the Agent Skills index
+    url: https://chengxi-z.github.io/llm-pulse/skills.html
+    about: See official and community Agent Skills with install commands, usage guides and share cards.
+  - name: Contribution guide
+    url: https://github.com/chengxi-Z/llm-pulse/blob/main/CONTRIBUTING.md
+    about: Read the review criteria, data schema and pull-request flow before submitting.

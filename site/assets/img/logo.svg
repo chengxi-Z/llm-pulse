@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI Pulse 标志">
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#B08A4F" stroke-width="1" opacity=".5"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#B08A4F" stroke-width=".6" opacity=".28"/>
+  <path d="M13 33.5h10.5l5.2-13.5 6.8 26 4.6-12.5H51" fill="none" stroke="#B08A4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="2.2" fill="#B08A4F" opacity=".85"/>
+</svg>

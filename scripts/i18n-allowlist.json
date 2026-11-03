@@ -1,0 +1,28 @@
+{
+  "$comment": "Allowlist for scripts/check-i18n.mjs. Only narrow, intentional exceptions belong here. Every entry must be justified: data-source names, Chinese brand names, or source news titles that may legitimately appear inside English UI strings. Do NOT add general Chinese words here to silence real residue — translate the string instead.",
+  "version": 1,
+  "allowedCjkSubstrings": [
+    "照胆云",
+    "量子位",
+    "机器之心",
+    "新智元",
+    "智东西",
+    "AI前线",
+    "夕小瑶",
+    "PaperWeekly",
+    "司南"
+  ],
+  "allowedCjkKeys": [
+    "brand.name",
+    "ui.lang.zh",
+    "data.lang.zh"
+  ],
+  "manualDynamicPrefixes": [],
+  "ignoredUnusedKeys": [],
+  "$notes": {
+    "allowedCjkSubstrings": "Substrings removed from an en.json value before the Chinese-residue check runs. Use for proper nouns only (e.g. the Chinese site name or data-source brands).",
+    "allowedCjkKeys": "Exact flat keys for which the English value may legitimately stay Chinese: brand.name (the 照胆云 brand mark shown in the logo lockup) and ui.lang.zh (language switcher option, shown in the target language's own script).",
+    "manualDynamicPrefixes": "Fallback dynamic key prefixes (e.g. \"board.\") for cases where the i18n key is assembled at runtime in a way the static scanner cannot infer. Prefer literal keys or explicit mapping constants in JS; use this only as a last resort.",
+    "ignoredUnusedKeys": "Keys intentionally kept in the dictionaries although nothing references them statically (e.g. keys consumed by an external build tool). Prefer deleting stale keys."
+  }
+}

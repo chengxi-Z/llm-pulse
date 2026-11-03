@@ -1,0 +1,16 @@
+{
+  "traceId": "test",
+  "msgCode": "10000",
+  "msg": "ok",
+  "data": {
+    "totalModels": 3,
+    "totalVotes": 40094,
+    "lastUpdate": "2026-06-12",
+    "rankBy": "Elo",
+    "rankings": [
+      { "model": "MiMo-V2.5-Pro", "org": "Xiaomi", "eloRating": 1062, "votes": 119, "rankingElo": 1, "rankingChanges": 2 },
+      { "model": "Qwen3.7 Max", "org": "Alibaba", "eloRating": 1055, "votes": 151, "rankingElo": 2, "rankingChanges": 0 },
+      { "model": "Kimi K2.6", "org": "Moonshot", "eloRating": 1047, "votes": 123, "rankingElo": 3, "rankingChanges": -1 }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "features": [
+    { "name": "rank", "type": { "dtype": "int64" } },
+    { "name": "model", "type": { "dtype": "string" } },
+    { "name": "organization", "type": { "dtype": "string" } },
+    { "name": "score", "type": { "dtype": "double" } },
+    { "name": "votes", "type": { "dtype": "int64" } }
+  ],
+  "rows": [
+    { "row_idx": 0, "row": { "rank": 1, "model": "GPT-6.1 Terra Pro", "organization": "OpenAI", "score": 1482.5, "votes": 31200 } },
+    { "row_idx": 1, "row": { "rank": 2, "model": "Claude Opus 5.5", "organization": "Anthropic", "score": 1479.2, "votes": 28900 } },
+    { "row_idx": 2, "row": { "rank": 3, "model": "Gemini 4 Carbon", "organization": "Google", "score": 1466.0, "votes": 25100 } }
+  ],
+  "num_rows_total": 3
+}

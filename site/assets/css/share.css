@@ -1,0 +1,255 @@
+/* ==========================================================================
+   AI Pulse — share menu + branded share card
+   Colors come from theme.css tokens only; local aliases keep the component
+   readable without duplicating palette values.
+   ========================================================================== */
+:root {
+  --share-surface: var(--surface);
+  --share-bg: var(--bg);
+  --share-ink: var(--ink);
+  --share-muted: var(--muted);
+  --share-gold: var(--gold);
+  --share-gold-deep: var(--highlight);
+  --share-line: var(--line);
+  --share-serif: var(--font-serif);
+  --share-sans: var(--font-sans);
+}
+
+.share-menu {
+  position: absolute;
+  z-index: 120;
+  min-width: 210px;
+  max-height: min(72vh, 600px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  border: 1px solid var(--share-line);
+  border-radius: 12px;
+  background: var(--share-surface);
+  color: var(--share-ink);
+  box-shadow: var(--shadow-menu);
+  font-family: var(--share-sans);
+  animation: share-menu-in 0.16s ease both;
+}
+
+@keyframes share-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.share-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--share-ink);
+  font-size: 0.82rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.share-menu-item:hover,
+.share-menu-item:focus-visible {
+  background: rgb(var(--rgb-gold) / 0.12);
+  outline: none;
+}
+
+.share-menu-item:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--share-gold-deep);
+}
+
+.share-menu-icon {
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  color: var(--share-gold);
+}
+
+.share-menu-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.share-menu-sep {
+  height: 1px;
+  margin: 4px 8px;
+  background: var(--share-line);
+}
+
+.share-card-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: var(--share-sans);
+  color: var(--share-ink);
+}
+
+.share-card-backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  backdrop-filter: blur(3px);
+}
+
+.share-card-panel {
+  position: relative;
+  z-index: 1;
+  width: min(960px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 22px 24px 20px;
+  border: 1px solid var(--share-line);
+  border-radius: 16px;
+  background: var(--share-surface);
+  box-shadow: var(--shadow-panel);
+}
+
+.share-card-panel h2 {
+  margin: 0 0 4px;
+  font-family: var(--share-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.share-card-hint {
+  margin: 0 0 16px;
+  color: var(--share-muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.share-card-preview {
+  border: 1px solid var(--share-line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--share-bg);
+}
+
+.share-card-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+}
+
+.share-card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.share-card-primary,
+.share-card-btn,
+.share-card-close {
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.share-card-primary {
+  border: 1px solid var(--btn-primary-border);
+  background-color: var(--btn-primary-bg);
+  background-image: var(--btn-primary-sheen);
+  color: var(--btn-primary-fg);
+}
+
+.share-card-primary:hover {
+  background-color: var(--btn-primary-bg-hover);
+}
+
+.share-card-primary:active {
+  background-color: var(--btn-primary-bg-active);
+  box-shadow: var(--btn-active-shadow);
+}
+
+.share-card-btn {
+  border: 1px solid var(--share-line);
+  background: transparent;
+  color: var(--share-ink);
+}
+
+.share-card-btn:hover,
+.share-card-close:hover {
+  border-color: var(--share-gold);
+}
+
+.share-card-close {
+  margin-left: auto;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--share-muted);
+}
+
+.share-card-primary:focus-visible,
+.share-card-btn:focus-visible,
+.share-card-close:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.share-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translate(-50%, 10px);
+  z-index: 140;
+  max-width: 86vw;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--share-ink);
+  color: var(--share-surface);
+  font-family: var(--share-sans);
+  font-size: 0.78rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.share-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 640px) {
+  .share-card-modal {
+    padding: 12px;
+  }
+
+  .share-card-panel {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .share-card-close {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-menu {
+    animation: none;
+  }
+
+  .share-toast {
+    transition: none;
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Sample AI Blog</title><link>https://example.com/blog</link>
+<item>
+  <title><![CDATA[Introducing GPT-6.1 Terra: our most capable model]]></title>
+  <link>https://example.com/blog/gpt-6-1-terra</link>
+  <pubDate>Mon, 02 Nov 2026 10:00:00 GMT</pubDate>
+  <description><![CDATA[<p>Today we launch GPT-6.1 Terra with a 1.05M context window and better tool use.</p>]]></description>
+</item>
+<item>
+  <title><![CDATA[New safety evaluation results &amp; policy notes]]></title>
+  <link>https://example.com/blog/safety-policy</link>
+  <pubDate>Sun, 28 Dec 2025 08:00:00 GMT</pubDate>
+  <description>Policy and safety evaluation details, older than the freshness window.</description>
+</item>
+<item>
+  <title>A research paper on agentic benchmarks</title>
+  <link>https://example.com/blog/agentic-bench</link>
+  <pubDate>Sat, 01 Nov 2026 09:30:00 GMT</pubDate>
+  <description>We study benchmark contamination in agent evaluations.</description>
+</item>
+</channel></rss>

@@ -1,0 +1,42 @@
+{
+  "id": 50305693,
+  "type": "story",
+  "title": "AI isn't replacing SREs, it's deskilling them",
+  "author": "someone",
+  "points": 680,
+  "children": [
+    {
+      "id": 50305700,
+      "type": "comment",
+      "author": "deleted_user",
+      "text": null,
+      "points": null,
+      "children": [
+        {
+          "id": 50305710,
+          "type": "comment",
+          "author": "nested_replier",
+          "text": "Nested reply that is long enough to be used as a fallback discussion summary when no top level comment has text at all.",
+          "points": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 50305750,
+      "type": "comment",
+      "author": "carol",
+      "text": "<p>I wanted to use this post as a source &amp; write about debuggable infrastructure. <a href=\"https://example.com/x\">related link</a></p><script>alert('xss')</script>",
+      "points": null,
+      "children": []
+    },
+    {
+      "id": 50305760,
+      "type": "comment",
+      "author": "dave",
+      "text": "too short",
+      "points": null,
+      "children": []
+    }
+  ]
+}
