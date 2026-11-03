@@ -305,9 +305,9 @@ Additional v1.3 rules:
 | 样本：N 个已匹配模型 | Sample: N matched models | Keep "matched" — not "sampled". |
 | 热搜话题 | hot topics | Real Hacker News discussions, not global search trends. |
 | Hacker News / HN | Hacker News, HN | First mention: "Hacker News (HN)"; use "HN" only inside compact labels. |
-| points / comments | points / comments | Lowercase units: `680 points · 501 comments`. |
+| points / comments | points / comments | Lowercase units: `680 points · 501 comments`. **zh UI**: `680 热度 · 501 条评论` — never mix the English word "points" into Chinese copy. |
 | 讨论摘要 | discussion summary | "a 1–2 line discussion summary". |
-| 按 points 排序 | sorted by points | Not "sorted by heat". |
+| 按 points 排序 | sorted by points | Not "sorted by heat". zh UI: 按热度排序. |
 | 非全网热搜 | not a global search trend | Required methodology disclaimer. |
 | 轮播 | carousel | "chart carousel"; "autoplay" one word. |
 | 上一张 / 下一张 | Previous / Next | |
