@@ -673,21 +673,21 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ### 30.1 图表轮播（dashboard.css，index）
 - 布局：`.dash-grid--carousel` 两栏（`1.55fr / 1fr`，≥1025px），右侧 `.dash-card--topics` 热榜卡；≤1024px 单列，热榜在轮播下方并两列排布（≤760px 单列）。
-- 容器：`.dash-carousel-viewport` 定高 **480px**（≤1024：`clamp(440px,56vw,580px)`；≤760：520px），1px line + `--r-1` + `--shadow-card`，overflow hidden 防跳动；`.dash-carousel-track` flex + `transform` 切换，`transition: transform 520ms --ease`（柔和，无弹跳）。`.dash-slide` 直接作为 flex column（padding 16–22px，内部 `.dash-card-head/.dash-card-body/.dash-card-note`，body flex 居中、note 贴底），slide 内容撑满高度。
+- 容器：`.dash-grid--carousel` 用 `--dash-ch`（轮播视口高，默认 480px；≤1024 `clamp(440px,56vw,580px)`；≤760 520px）与 `--dash-cc`（控件高 42px）统一控制；**≥1025px 时 grid 行高 = `calc(var(--dash-ch) + var(--dash-cc))`**，热榜卡同高封顶（§30.3），两栏底部对齐误差 0。视口本身 1px line + `--r-1` + `--shadow-card`，overflow hidden 防跳动；`.dash-carousel-track` flex + `transform` 切换，`transition: transform 520ms --ease`（柔和无弹跳）；`.dash-slide` 直接 flex column（padding 16–22px，内部 `.dash-card-head/.dash-card-body/.dash-card-note`，body flex 居中、note 贴底）。
 - 控件：`.dash-carousel-controls` 居中，左右 `.dash-carousel-arrow`（32px 圆形，hover 金边 + 10% 金底）+ `.dash-carousel-dots > .dash-dot`（22×3px 短条，选中 32px + `--highlight`，focus-visible 焦点环）；`hover/focus` 暂停时根加 `.is-paused`（选中 dot 透明度 65%）；≤640px 隐藏箭头、显示 `.dash-carousel-hint` 滑动提示。
 - 无 JS 回退：track 内 slide 横向排列，viewport 只显示第一张（不依赖 `is-ready`）；`prefers-reduced-motion` 关闭 track 过渡与 slide 内动画（JS 同时停止自动轮播）。
 
 ### 30.2 斩杀线 2.0（能力 × 成本散点）
 - SVG `.dash-scatter-svg`（viewBox 900×320 或 640×320，宽 100% 自适应）：底层 4 个 `.dash-quadrant`（is-survival/kill/highcost/lowability）浅底（highlight 7% / ink 4.5% / gold 5% / ink 3%），`.dash-quadrant-label` 10px uppercase muted，生存区标签用 `--highlight` 600 字重。
-- 轴：`.dash-axis-x/.dash-axis-y` 内 `.dash-axis-label`（10px muted，`--alt` 在 ≤640 隐藏奇数标签，移动端放大到 15 用户单位）；双 P50 线 `.dash-scatter-line--cap`（水平能力中位）/`--cost`（垂直价格中位），`--gold` 虚线；JS 传入的 4 个 `.dash-quadrant.is-survival/is-highcost/is-lowability/is-kill` rect 提供四象限浅底，`.dash-quadrant-label` 为象限标签（生存区用 `--highlight` 600 字重）。
+- 轴：`.dash-axis-x/.dash-axis-y` 内 `.dash-axis-label`（14 用户单位 muted，`--alt` 在 ≤640 隐藏奇数标签）；`.dash-scatter-axis-title` 13 单位（移动 22）/`.dash-scatter-line-label` 12 单位金色（移动 20）；`.dash-quadrant-label` 13 单位（**≤640 隐藏**，以象限浅底+底部规则说明代替，避免 SVG 缩放后过小）；双 P50 线 `.dash-scatter-line--cap`（水平能力中位）/`--cost`（垂直价格中位），`--gold` 虚线；JS 传入的 4 个 `.dash-quadrant.is-survival/is-highcost/is-lowability/is-kill` rect 提供四象限浅底，`.dash-quadrant-label` 为象限标签（生存区用 `--highlight` 600 字重）。
 - 点：`.dash-scatter-point` 默认 highlight 50% 透明；存活点 `.is-survive` 实心 `--highlight` + `--gold` 描边（r=6 由 JS 设置），其余 `.is-dead` 用 `--muted` 55%；hover/focus 完全不透明 + `--gold-deep` 描边；键盘可聚焦（tooltip 由 `.dash-tooltip` 显示「模型 · 分数 · $价格」）。
 - 注释：`.dash-scatter-meta`（样本数/规则，11px muted）+ `.dash-scatter-disclaimer`（免责，10px muted 85%）；无评分/未匹配时显示空态（不绘制假点）。
 - 入场：`.dash-slide.is-active` 时点 420ms stagger 4ms 淡入缩放；reduced-motion 直接终值。
 
 ### 30.3 真实热榜（Hacker News）
-- `.dash-card--topics` 右侧卡（≤1024 全宽）：`.dash-card-body` 内部滚动（max-height 由卡片撑满），底部 note 固定。
+- `.dash-card--topics` 右侧卡：**≥1025px 与轮播同高**（`max-height:calc(var(--dash-ch) + var(--dash-cc))`，10 条话题在卡内滚动，`scrollbar-width:thin`，底部 note 固定）——修正 v1.4 首屏两栏底部不齐；≤1024px 单列全宽，展示完整列表（body overflow 可见），≤760px 单列。
 - `.dash-topics > .dash-topic > a.dash-topic-link`：两列（排名 26px + 内容）；`.dash-topic-title` 2 行 clamp（13px 500 ink）、`.dash-topic-summary` 2 行 clamp（12px muted）、`.dash-topic-meta > .dash-topic-meta-item`（11px muted，points/comments/domain/date，单行省略）+ `.dash-topic-meta-sep`（·分隔）；空态 `.dash-topic-empty`；hover 行底 `--surface-2`、focus-visible 焦点环。
-- 桌面单列；≤1024 卡内 2 列；≤760 单列。
+- 桌面单列；≤1024 卡内 2 列；≤760 单列。≤640px 的 meta 精简为「points · comments」（隐藏 domain/date，避免挤成省略号；`>span:nth-child(n+4)` 隐藏）。
 - 安全：标题/摘要全部由 JS `esc()` 渲染，外链 `target="_blank" rel="noopener noreferrer"`；CSS 不引入任何资源。
 
 ## 31. v1.4 验收截图点与变更清单

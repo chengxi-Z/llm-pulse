@@ -10,7 +10,7 @@
 [data-kpi="capacity"] .dash-kpi-value{letter-spacing:-.01em}
 .dash-kpi-note{margin:auto 0 0;overflow:hidden;color:var(--muted);font-size:.75rem;line-height:1.6;text-overflow:ellipsis;white-space:nowrap}
 
-.dash-grid--carousel{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:stretch;gap:clamp(12px,1.6vw,20px);margin-top:clamp(12px,1.6vw,20px)}
+.dash-grid--carousel{--dash-ch:480px;--dash-cc:42px;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:stretch;gap:clamp(12px,1.6vw,20px);margin-top:clamp(12px,1.6vw,20px)}
 .dash-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:clamp(18px,2vw,26px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-card)}
 .dash-card-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .dash-card-head h3{margin:0;font-size:1.125rem;font-weight:600;line-height:1.25}
@@ -19,7 +19,7 @@
 .dash-card-note{margin:auto 0 0;padding-top:14px;color:var(--muted);font-size:.75rem;line-height:1.7}
 
 .dash-carousel{position:relative;display:flex;flex-direction:column;min-width:0}
-.dash-carousel-viewport{position:relative;overflow:hidden;height:480px;border:1px solid var(--line);border-radius:var(--r-1);background:var(--surface);box-shadow:var(--shadow-card)}
+.dash-carousel-viewport{position:relative;overflow:hidden;height:var(--dash-ch);border:1px solid var(--line);border-radius:var(--r-1);background:var(--surface);box-shadow:var(--shadow-card)}
 .dash-carousel-track{display:flex;height:100%;transition:transform 520ms var(--ease);will-change:transform}
 .dash-slide{display:flex;flex-direction:column;flex:0 0 100%;min-width:0;height:100%;padding:clamp(16px,1.8vw,22px);overflow:hidden}
 .dash-slide .dash-card-body{display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-height:0;padding-top:10px;overflow:hidden}
@@ -81,13 +81,15 @@
 
 .dash-scatter{width:100%;min-width:0}
 .dash-scatter-svg{display:block;width:100%;height:auto;overflow:visible}
-.dash-scatter-svg .dash-axis-label{fill:var(--muted);font-family:var(--font-sans);font-size:10px;letter-spacing:.03em}
+.dash-scatter-svg .dash-axis-label{fill:var(--muted);font-family:var(--font-sans);font-size:14px;letter-spacing:.03em}
+.dash-scatter-svg .dash-scatter-axis-title{fill:var(--muted);font-size:13px;letter-spacing:.04em}
+.dash-scatter-svg .dash-scatter-line-label{fill:var(--gold-deep);font-size:12px}
 .dash-quadrant{stroke:none}
 .dash-quadrant.is-survival{fill:rgb(var(--rgb-highlight)/.07)}
 .dash-quadrant.is-kill{fill:rgb(var(--rgb-shadow)/.045)}
 .dash-quadrant.is-highcost{fill:rgb(var(--rgb-gold)/.05)}
 .dash-quadrant.is-lowability{fill:rgb(var(--rgb-ink)/.03)}
-.dash-quadrant-label{fill:var(--muted);font-family:var(--font-sans);font-size:10px;letter-spacing:.06em}
+.dash-quadrant-label{fill:var(--muted);font-family:var(--font-sans);font-size:13px;letter-spacing:.06em}
 .dash-quadrant-label.is-survival{fill:var(--highlight);font-weight:600}
 .dash-scatter-line{stroke:var(--gold);stroke-width:1;stroke-dasharray:5 5;stroke-opacity:.9}
 .dash-scatter-point{fill:rgb(var(--rgb-highlight)/.5);opacity:.85;stroke:transparent;stroke-width:1.2;transform-box:fill-box;transform-origin:center;transition:opacity 180ms var(--ease),stroke 180ms var(--ease);cursor:default}
@@ -98,7 +100,13 @@
 .dash-scatter-disclaimer{margin:2px 0 0;color:var(--muted);font-size:.625rem;line-height:1.5;opacity:.85}
 
 .dash-card--topics{min-height:0}
-.dash-card--topics .dash-card-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding-top:10px}
+@media (min-width:1025px){
+  .dash-grid--carousel{grid-template-rows:calc(var(--dash-ch) + var(--dash-cc))}
+  .dash-card--topics{max-height:calc(var(--dash-ch) + var(--dash-cc));min-height:0}
+  .dash-card--topics .dash-card-body{overflow-y:auto;scrollbar-width:thin;overscroll-behavior:contain}
+}
+
+.dash-card--topics .dash-card-body{flex:1 1 auto;min-height:0;padding-top:10px}
 .dash-topics{display:grid;gap:2px;margin:0;padding:0;list-style:none}
 .dash-topic{min-width:0}
 .dash-topic-link{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px 10px;padding:7px 6px;border-radius:var(--r-2);color:inherit}
@@ -129,13 +137,13 @@
   .dash-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media (max-width:1024px){
-  .dash-grid--carousel{grid-template-columns:minmax(0,1fr)}
-  .dash-carousel-viewport{height:clamp(440px,56vw,580px)}
+  .dash-grid--carousel{--dash-ch:clamp(440px,56vw,580px);grid-template-columns:minmax(0,1fr)}
+  .dash-carousel-viewport{height:var(--dash-ch)}
   .dash-card--topics .dash-card-body{overflow:visible}
   .dash-topics{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 18px}
 }
 @media (max-width:760px){
-  .dash-carousel-viewport{height:520px}
+  .dash-grid--carousel{--dash-ch:520px}
   .dash-donut-wrap{grid-template-columns:minmax(0,1fr);gap:14px}
   .dash-slide .dash-card-body.dash-donut-wrap{grid-template-columns:minmax(0,1fr);gap:14px}
   .dash-donut-box{width:min(100%,200px)}
@@ -148,8 +156,11 @@
   .dash-barchart .dash-axis-label{font-size:17px}
   .dash-barchart .dash-bar-value{font-size:15px}
   .dash-barchart .dash-mean-label{font-size:15px}
-  .dash-scatter-svg .dash-axis-label{font-size:15px}
-  .dash-scatter-svg .dash-quadrant-label{font-size:15px}
+  .dash-scatter-svg .dash-axis-label{font-size:24px}
+  .dash-scatter-svg .dash-scatter-axis-title{font-size:22px}
+  .dash-scatter-svg .dash-scatter-line-label{font-size:20px}
+  .dash-scatter-svg .dash-quadrant-label{display:none}
+  .dash-topic-meta>span:nth-child(n+4){display:none}
   .dash-carousel-hint{display:block}
   .dash-carousel-arrow{display:none}
 }
@@ -161,3 +172,9 @@
 /* v1.4 content-first: pull the overview dashboard closer to the compact hero (<=620px first content card at 1440x900) */
 #overview-dashboard.section{padding-top:clamp(18px,2.2vw,26px)}
 #overview-dashboard .section-head{margin-bottom:18px}
+
+/* v1.4: keep the hot-topics card aligned with the chart carousel on desktop;
+   long list scrolls inside the card instead of stretching the whole row. */
+@media (min-width: 1025px) {
+  .dash-grid--carousel .dash-card--topics { max-height: 620px; }
+}
