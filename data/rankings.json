@@ -1320,7 +1320,7 @@
     {
       "id": "epoch-gpqa-diamond",
       "name": "GPQA Diamond（Epoch 收录）",
-      "description": "Epoch AI 复评的 GPQA Diamond 正确率（0-1），研究生级科学问答",
+      "description": "Epoch AI 复评的 GPQA Diamond 正确率（0–100，%），研究生级科学问答。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。",
       "sourceName": "Epoch AI",
       "sourceUrl": "https://epoch.ai/data/ai-benchmarking-dashboard",
       "updatedAt": "2026-11-03T16:50:38.301Z",
@@ -1560,7 +1560,7 @@
     {
       "id": "epoch-swe-bench-verified",
       "name": "SWE-bench Verified（Epoch 收录）",
-      "description": "Epoch AI 复评的 SWE-bench Verified 通过率（0-1），衡量真实代码修复能力",
+      "description": "Epoch AI 复评的 SWE-bench Verified 通过率（0–100，%），衡量真实代码修复能力。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。",
       "sourceName": "Epoch AI",
       "sourceUrl": "https://epoch.ai/data/ai-benchmarking-dashboard",
       "updatedAt": "2026-11-03T16:50:38.301Z",

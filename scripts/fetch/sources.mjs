@@ -158,8 +158,8 @@ async function collectOpenCompass(ctx) {
 }
 
 const EPOCH_BOARDS = [
-  { file: 'swe_bench_verified.csv', id: 'epoch-swe-bench-verified', name: 'SWE-bench Verified（Epoch 收录）', description: 'Epoch AI 复评的 SWE-bench Verified 通过率（0-1），衡量真实代码修复能力', metricName: 'pass rate' },
-  { file: 'gpqa_diamond.csv', id: 'epoch-gpqa-diamond', name: 'GPQA Diamond（Epoch 收录）', description: 'Epoch AI 复评的 GPQA Diamond 正确率（0-1），研究生级科学问答', metricName: 'accuracy' },
+  { file: 'swe_bench_verified.csv', id: 'epoch-swe-bench-verified', name: 'SWE-bench Verified（Epoch 收录）', description: 'Epoch AI 复评的 SWE-bench Verified 通过率（0–100，%），衡量真实代码修复能力。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。', metricName: 'pass rate' },
+  { file: 'gpqa_diamond.csv', id: 'epoch-gpqa-diamond', name: 'GPQA Diamond（Epoch 收录）', description: 'Epoch AI 复评的 GPQA Diamond 正确率（0–100，%），研究生级科学问答。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。', metricName: 'accuracy' },
 ];
 
 async function collectEpoch(ctx) {
