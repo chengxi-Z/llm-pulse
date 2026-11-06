@@ -72,7 +72,7 @@ if (meta) {
   }
   if (isIso(meta.generatedAt)) {
     const age = Date.now() - Date.parse(meta.generatedAt);
-    if (age > 72 * 3600 * 1000) warn(`[meta] 数据已 ${(age / 3600e3).toFixed(1)}h 未更新（>72h）`);
+    if (age > 8 * 24 * 3600 * 1000) warn(`[meta] 数据已 ${(age / 3600e3).toFixed(1)}h 未更新（>8 天，周度刷新 + 1 天缓冲）`);
     if (age < -5 * 60 * 1000) err(`[meta] generatedAt 晚于当前时间超过 5 分钟`);
   }
 }

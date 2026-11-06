@@ -283,5 +283,5 @@
 4. 数字字段类型正确、非负；pricing 可空但存在时结构完整。
 5. 引用一致性：news.models ⊆ models.id；rankings entries 数量 ≥1（若榜单存在）；projects.repo 存在时为 `owner/name` 格式。
 6. 数量保护：models ≥ 50（CI/local 真实数据时；seed 模式放宽）、resources ≥ 10、news ≥ 5。
-7. 生成时间不晚于当前时间 +5 分钟；警告：数据超过 72h 未更新。
+7. 生成时间不晚于当前时间 +5 分钟；警告：数据超过 8 天未更新（`refresh-data` 周度刷新 + 1 天缓冲）。
 8. 跨文件统计与 `meta.stats` 一致（模型数等）。

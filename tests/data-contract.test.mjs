@@ -50,7 +50,7 @@ test('meta：mode/site/sources/stats 合规且与产物数量一致', (t) => {
   assert.equal(m.stats.projects, data.projects?.items?.length);
   assert.ok(Array.isArray(m.latestHighlights) && m.latestHighlights.length <= 3);
   const ageMin = (Date.now() - Date.parse(m.generatedAt)) / 60000;
-  assert.ok(ageMin < 72 * 60, `数据超过 72h 未更新（${ageMin.toFixed(0)}min）`);
+  assert.ok(ageMin < 8 * 24 * 60, `数据超过 8 天未更新（${ageMin.toFixed(0)}min）`);
   assert.ok(ageMin > -5, 'generatedAt 不应晚于当前时间 5 分钟以上');
 });
 
