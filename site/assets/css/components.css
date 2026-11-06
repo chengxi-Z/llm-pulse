@@ -3365,3 +3365,25 @@ html[lang="en"] .eyebrow-en{display:none}
 @media (max-width: 1024px) {
   .to-top { display: none; }
 }
+
+/* v1.4.x: leaderboard coverage gaps (models scored on a reference board but not yet listed) */
+.rank-gaps{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.rank-gaps-head{margin:0 0 10px}
+.rank-gaps-title{margin:0;font-size:.98rem;font-weight:600;letter-spacing:.01em}
+.rank-gaps-desc{margin:4px 0 0;font-size:.8rem;line-height:1.6;color:var(--muted);max-width:78ch}
+.rank-gaps-list{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.rank-gap-item{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:10px 14px;width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:inherit;font:inherit;text-align:left;cursor:pointer;transition:border-color .2s ease,background .2s ease}
+.rank-gap-item:hover,.rank-gap-item:focus-visible{border-color:var(--gold);background:var(--icon-hover-bg);outline:none}
+.rank-gap-rank{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.rank-gap-main{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;min-width:0}
+.rank-gap-name{font-size:.9rem;font-weight:600}
+.rank-gap-org{font-size:.76rem;color:var(--muted)}
+.rank-gap-score{font-size:.78rem;color:var(--muted);white-space:nowrap}
+.rank-gap-go{font-size:.78rem;color:var(--highlight);white-space:nowrap}
+.rank-gaps-note{margin:8px 0 0;font-size:.74rem;color:var(--muted)}
+.rank-row.is-gap-target{animation:rankGapTarget 2.4s ease;box-shadow:inset 0 0 0 2px var(--gold)}
+@keyframes rankGapTarget{0%,100%{background:transparent}12%,70%{background:rgb(var(--rgb-highlight) / .12)}}
+@media (max-width:640px){
+  .rank-gap-item{grid-template-columns:auto minmax(0,1fr)}
+  .rank-gap-score,.rank-gap-go{grid-column:2;justify-self:start}
+}

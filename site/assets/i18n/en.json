@@ -868,5 +868,11 @@
   "ui.untitledProject": "Untitled project",
   "ui.untitledResource": "Untitled resource",
   "ui.updatedAtTitle": "Generated {time} (local time)",
-  "ui.updatedOn": "Updated {date}"
+  "ui.updatedOn": "Updated {date}",
+  "rankings.gaps.title": "Not listed yet, worth watching",
+  "rankings.gaps.aria": "Models not yet listed but worth watching",
+  "rankings.gaps.desc": "These models already have an Epoch ECI score but are not included in this leaderboard yet. Select one to jump to its ECI rank.",
+  "rankings.gaps.refScore": "ECI {score} · #{rank}",
+  "rankings.gaps.go": "View ECI board",
+  "rankings.gaps.note": "Not being listed does not mean low capability; models appear here once Epoch re-evaluates them."
 }

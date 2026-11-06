@@ -18,6 +18,7 @@ import {
 } from './data.js';
 import { t, getLang } from './i18n.js';
 import { createCompare } from './compare.js';
+import { findGapModels, matchesModelNames, modelKey } from './ranking-gaps.js';
 
 /* External-data links must pass the http(s) allowlist; internal links stay as-is. */
 const safeHref = safeHttpUrl;
@@ -983,7 +984,7 @@ export function initRankings(data) {
   const drawPanel = () => {
     const board = boards[active];
     panelEl.setAttribute('aria-labelledby', `ranking-tab-${active}`);
-    panelEl.innerHTML = rankingsBoardHtml(board, active, expandedBoards.has(board.id));
+    panelEl.innerHTML = rankingsBoardHtml(board, active, expandedBoards.has(board.id), boards);
   };
 
   const selectBoard = (index, focus = false) => {
@@ -1005,11 +1006,42 @@ export function initRankings(data) {
     }
   };
 
+  const jumpToReferenceModel = (modelName, referenceId) => {
+    const refIndex = boards.findIndex((board) => board.id === referenceId);
+    if (refIndex < 0) return;
+    const referenceBoard = boards[refIndex];
+    const referenceEntries = Array.isArray(referenceBoard.entries) ? referenceBoard.entries : [];
+    const targetRank = referenceEntries.findIndex((entry) => matchesModelNames(entry.model, modelName)) + 1;
+    /* The target may sit below the default Top10 fold; expand before drawing. */
+    if (targetRank > 10) expandedBoards.add(referenceBoard.id);
+    selectBoard(refIndex, false);
+    window.requestAnimationFrame(() => {
+      const rows = Array.from(panelEl.querySelectorAll('[data-model-key]'));
+      const target =
+        rows.find((row) => matchesModelNames(row.dataset.modelKey || '', modelName)) ||
+        (targetRank > 0 ? rows[targetRank - 1] : null);
+      if (!target) return;
+      target.classList.add('is-gap-target');
+      target.setAttribute('tabindex', '-1');
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      target.focus({ preventScroll: true });
+      window.setTimeout(() => {
+        target.classList.remove('is-gap-target');
+        target.removeAttribute('tabindex');
+      }, 2600);
+    });
+  };
+
   tabsEl.addEventListener('click', (event) => {
     const button = event.target.closest('[data-board-index]');
     if (button) selectBoard(Number(button.dataset.boardIndex), true);
   });
   panelEl.addEventListener('click', (event) => {
+    const gapButton = event.target.closest('[data-gap-model]');
+    if (gapButton) {
+      jumpToReferenceModel(gapButton.dataset.gapModel, gapButton.dataset.gapReference);
+      return;
+    }
     const button = event.target.closest('[data-rank-expand]');
     if (!button) return;
     const board = boards[active];
@@ -1067,9 +1099,10 @@ function boardShareButton(board, entries, metricName) {
   return `<button ${attrs}>${SHARE_ICON}</button>`;
 }
 
-function rankingsBoardHtml(board, index, expanded = false) {
+function rankingsBoardHtml(board, index, expanded = false, boards = []) {
   const entries = Array.isArray(board.entries) ? board.entries : [];
   const visibleEntries = expanded ? entries : entries.slice(0, 10);
+  const gaps = findGapModels(board, boards);
   const metric = board.metric || {};
   const metricName = boardMetricName(board) || t('ui.metricFallback');
   const higher = metric.higherIsBetter !== false;
@@ -1079,7 +1112,7 @@ function rankingsBoardHtml(board, index, expanded = false) {
     .map((entry) => {
       const rank = Number(entry.rank) || 1;
       const top3 = rank <= 3;
-      return `<tr class="rank-row${top3 ? ' rank-row--top3' : ''}">
+      return `<tr class="rank-row${top3 ? ' rank-row--top3' : ''}" data-model-key="${esc(modelKey(entry.model || ''))}">
       <td class="rank-no${top3 ? ` rank-no--${rank}` : ''}">${
         top3
           ? `<span class="rank-badge rank-badge--${rank} rank-medal" aria-label="${esc(
@@ -1154,6 +1187,38 @@ function rankingsBoardHtml(board, index, expanded = false) {
       }">${esc(
         expanded ? t('rankings.collapseTop') : t('rankings.expandAll', { n: intlNumber(entries.length) })
       )}</button>
+    </div>`
+        : ''
+    }
+    ${
+      gaps.length
+        ? `<div class="rank-gaps" role="region" aria-label="${esc(t('rankings.gaps.aria'))}">
+      <div class="rank-gaps-head">
+        <h3 class="rank-gaps-title">${esc(t('rankings.gaps.title'))}</h3>
+        <p class="rank-gaps-desc">${esc(t('rankings.gaps.desc'))}</p>
+      </div>
+      <ul class="rank-gaps-list">
+        ${gaps
+          .map(
+            (gap) => `<li><button type="button" class="rank-gap-item" data-gap-model="${esc(
+              gap.model
+            )}" data-gap-reference="${esc(gap.referenceId)}">
+          <span class="rank-gap-rank">${esc(gap.rank == null ? '—' : String(gap.rank).padStart(2, '0'))}</span>
+          <span class="rank-gap-main"><span class="rank-gap-name">${esc(gap.model)}</span><span class="rank-gap-org">${esc(
+            gap.org
+          )}</span></span>
+          <span class="rank-gap-score">${esc(
+            t('rankings.gaps.refScore', {
+              score: gap.scoreDisplay || intlNumber(gap.score),
+              rank: gap.rank == null ? '—' : intlNumber(gap.rank),
+            })
+          )}</span>
+          <span class="rank-gap-go">${esc(t('rankings.gaps.go'))} →</span>
+        </button></li>`
+          )
+          .join('')}
+      </ul>
+      <p class="rank-gaps-note">${esc(t('rankings.gaps.note'))}</p>
     </div>`
         : ''
     }

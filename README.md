@@ -20,7 +20,7 @@
 大模型领域信息密度高、变化快：新模型、新价格、新榜单、新工具几乎每天出现，但信息散落在各家官网、Twitter/X、榜单站和论文里。**AI Pulse** 把这些公开信息聚合为一页可读的「智能纪事」：
 
 - **动态（Dispatch）**：模型发布、版本迭代、定价与评测变化，按时间线阅读，逐条标注来源；
-- **排行（Rankings）**：LMArena / Artificial Analysis / LiveBench / Epoch AI / OpenCompass 等多榜聚合，每榜 **Top10 + 1/2/3 名内敛徽章**、可展开全部，标注口径/来源/更新时间，附极简分发信息条（站点 + GitHub + 二维码）；
+- **排行（Rankings）**：LMArena / Artificial Analysis / LiveBench / Epoch AI / OpenCompass 等多榜聚合，每榜 **Top10 + 1/2/3 名内敛徽章**、可展开全部，标注口径/来源/更新时间，附极简分发信息条（站点 + GitHub + 二维码）；Epoch 单项榜额外提供「**未收录但值得关注**」交叉提示——在 ECI 榜有成绩但尚未被该榜收录的模型（如 Claude Opus 5.5）会列出，点击直接跳到 ECI 对应行并高亮，避免把“未收录”误读为“排名低”；
 - **模型库（Models）**：451+ 模型的上下文、模态、价格、开源信息，可搜索筛选排序；支持**任意勾选 2–6 个模型对比**——真实榜单评分（AA / LMArena / LiveBench / Epoch / OpenCompass）+ 价格/上下文/模态/许可，未匹配评选显示「—」并注明匹配规则；
 - **学习资源（Learn）**：中英双语课程、教程、论文、Awesome 列表，按难度与类型筛选；
 - **项目（Build）**：个人 AI 项目 + 社区精选开源项目（实时 GitHub stars）；

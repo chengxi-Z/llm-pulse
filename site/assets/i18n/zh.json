@@ -868,5 +868,11 @@
   "ui.untitledProject": "未命名项目",
   "ui.untitledResource": "未命名资源",
   "ui.updatedAtTitle": "数据生成于 {time}（本地时区）",
-  "ui.updatedOn": "更新于 {date}"
+  "ui.updatedOn": "更新于 {date}",
+  "rankings.gaps.title": "未收录但值得关注",
+  "rankings.gaps.aria": "未收录但值得关注的模型",
+  "rankings.gaps.desc": "以下模型在 ECI 能力指数榜已有成绩，但尚未被 Epoch 收录进本榜。点击可跳转到 ECI 榜查看其排名。",
+  "rankings.gaps.refScore": "ECI {score} · 第 {rank} 名",
+  "rankings.gaps.go": "查看 ECI 榜",
+  "rankings.gaps.note": "未收录不代表能力低；Epoch 完成复评后会进入本榜。"
 }
