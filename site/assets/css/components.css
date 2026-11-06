@@ -616,7 +616,7 @@ body.nav-open .nav-toggle-lines::after {
     radial-gradient(48% 58% at 0% 96%, var(--glow-accent), transparent 62%);
 }
 
-.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.82fr);align-items:center;gap:clamp(24px,3.6vw,56px)}
+.hero-grid{--hero-gap:clamp(24px,3.6vw,56px);position:relative;display:grid;grid-template-columns:minmax(0,calc(66.6667% - var(--hero-gap))) minmax(0,33.3333%);align-items:center;gap:var(--hero-gap)}
 
 .hero-title{margin-top:14px;font-size:clamp(2.15rem,3.9vw,3.35rem);line-height:1.04;letter-spacing:.005em}
 

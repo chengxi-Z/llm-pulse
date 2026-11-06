@@ -63,7 +63,7 @@ test('normalizeSharePayload：legacy type 映射到 v1.2 kind', () => {
   assert.equal(normalizeSharePayload({ kind: 'board' }).kind, 'board');
 });
 
-test('normalizeSharePayload：board 提取 id / top3 / 指标 / 更新 / 来源', () => {
+test('normalizeSharePayload：board 提取 id / top10 / 指标 / 更新 / 来源', () => {
   const data = normalizeSharePayload({
     kind: 'board',
     title: 'LMArena 文本总榜',
@@ -75,12 +75,20 @@ test('normalizeSharePayload：board 提取 id / top3 / 指标 / 更新 / 来源'
   assert.equal(data.board.metric, 'Arena Score');
   assert.equal(data.board.updatedAt, BOARD.updatedAt);
   assert.equal(data.board.source, 'LMArena');
-  assert.equal(data.board.rows.length, 3); // top3 only
+  assert.equal(data.board.rows.length, 4); // fixture has 4 entries, capped at Top10
   assert.deepEqual(data.board.rows[0], { rank: 1, model: 'GPT-6.1 Terra Pro', score: '1482' });
   // Without a board object the id is inferred from the deep-link hash and desc is kept.
   const fallback = normalizeSharePayload({ kind: 'board', url: `${SITE}rankings.html#board-context-window`, desc: 'Top3: ...' });
   assert.equal(fallback.board.id, 'context-window');
   assert.equal(fallback.board.rows.length, 0);
+});
+
+test('normalizeSharePayload：board 最多保留 Top10', () => {
+  const entries = Array.from({ length: 12 }, (_, i) => ({ rank: i + 1, model: `Model ${i + 1}`, score: String(1500 - i) }));
+  const data = normalizeSharePayload({ kind: 'board', board: { id: 'many', entries } });
+  assert.equal(data.board.rows.length, 10);
+  assert.equal(data.board.rows[0].rank, 1);
+  assert.equal(data.board.rows[9].rank, 10);
 });
 
 test('boardDeepLink 生成 #board-<id> 绝对深链并编码', () => {

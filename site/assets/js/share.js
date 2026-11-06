@@ -1,5 +1,6 @@
 import { buildShareText } from './assistant-core.js';
 import { getLang, t } from './i18n.js';
+import { drawBoardSection } from './share-board.js';
 
 const CARD_W = 1200;
 const CARD_H = 630;
@@ -169,7 +170,7 @@ export function normalizeSharePayload(raw = {}, opts = {}) {
       updatedAt: String(board.updatedAt || ''),
       source: String(board.sourceName || board.source || ''),
       rows: (Array.isArray(board.top3) ? board.top3 : Array.isArray(board.entries) ? board.entries : Array.isArray(board.rows) ? board.rows : [])
-        .slice(0, 3)
+        .slice(0, 10)
         .map((entry, index) => ({
           rank: Number(entry?.rank) || index + 1,
           model: String(entry?.model || entry?.name || '').trim(),
@@ -451,25 +452,6 @@ function drawDistributionStrip(ctx, P, image) {
   }
 }
 
-/** Restrained 1/2/3 rank badge for board cards: gold-tinted #1, outlined #2/#3. */
-function drawRankBadge(ctx, P, rank, x, baseline) {
-  const w = 28;
-  const h = 26;
-  roundRect(ctx, x, baseline - 19, w, h, 6);
-  if (rank === 1) {
-    ctx.fillStyle = P.goldSoft;
-    ctx.fill();
-  }
-  ctx.strokeStyle = rank === 1 ? P.gold : P.goldSoft;
-  ctx.lineWidth = 1;
-  ctx.stroke();
-  ctx.fillStyle = P.ink;
-  ctx.font = `600 13px ${FONT_SANS}`;
-  ctx.textAlign = 'center';
-  ctx.fillText(String(rank), x + w / 2, baseline - 2);
-  ctx.textAlign = 'left';
-}
-
 export function drawShareCard(canvas, payload = {}, opts = {}) {
   const dark = typeof opts.dark === 'boolean' ? opts.dark : isDarkPreferred();
   const lang = opts.lang || getLang();
@@ -537,40 +519,10 @@ export function drawShareCard(canvas, payload = {}, opts = {}) {
   let bodyY = y + 8;
 
   if (data.kind === 'board') {
-    const rows = data.board?.rows || [];
-    rows.forEach((row, index) => {
-      const base = bodyY + index * 36;
-      if (base > 476) return;
-      drawRankBadge(ctx, P, row.rank || index + 1, padX, base);
-      ctx.fillStyle = P.ink;
-      ctx.font = `500 24px ${FONT_SANS}`;
-      ctx.fillText(fitOneLine(ctx, row.model, 840), padX + 42, base);
-      if (row.score) {
-        ctx.textAlign = 'right';
-        ctx.fillStyle = P.muted;
-        ctx.font = `600 21px ${FONT_SANS}`;
-        ctx.fillText(row.score, CARD_W - 68, base);
-        ctx.textAlign = 'left';
-      }
+    drawBoardSection(ctx, {
+      P, data, lang, padX, contentWidth, bodyY, cardW: CARD_W, fontSans: FONT_SANS,
+      helpers: { roundRect, wrapText, fitOneLine, truncateText, formatShareDate },
     });
-    if (rows.length) bodyY += rows.length * 36;
-    else if (data.desc) {
-      ctx.fillStyle = P.muted;
-      ctx.font = `400 24px ${FONT_SANS}`;
-      for (const line of wrapText(ctx, truncateText(data.desc, 120), contentWidth, 2)) {
-        if (bodyY > 476) break;
-        ctx.fillText(line, padX, bodyY);
-        bodyY += 31;
-      }
-    }
-    const meta = [data.board?.metric, data.board?.updatedAt ? formatShareDate(data.board.updatedAt, lang) : '', data.board?.source].filter(Boolean);
-    if (meta.length && bodyY + 18 <= 508) {
-      ctx.fillStyle = P.gold;
-      ctx.font = `500 15px ${FONT_SANS}`;
-      ctx.letterSpacing = '1.4px';
-      ctx.fillText(meta.join('  ·  '), padX, bodyY + 18);
-      ctx.letterSpacing = '0px';
-    }
   } else if (data.kind === 'skill') {
     const skillDesc = data.install && data.desc.includes(data.install) ? data.desc.replace(data.install, '').replace(/[·\s]+$/, '') : data.desc;
     if (skillDesc) {
