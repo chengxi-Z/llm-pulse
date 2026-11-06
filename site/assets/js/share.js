@@ -507,10 +507,11 @@ export function drawShareCard(canvas, payload = {}, opts = {}) {
   ctx.lineTo(CARD_W - 68, 104);
   ctx.stroke();
 
-  const titleSize = data.kind === 'news' ? 52 : 50;
+  const titleSize = data.kind === 'news' ? 52 : data.kind === 'board' ? 46 : 50;
   ctx.fillStyle = P.ink;
   ctx.font = `600 ${titleSize}px ${FONT_SERIF}`;
-  const titleLines = wrapText(ctx, data.title, contentWidth, data.kind === 'news' ? 3 : 2);
+  const maxTitleLines = data.kind === 'news' ? 3 : data.kind === 'board' ? 1 : 2;
+  const titleLines = wrapText(ctx, data.title, contentWidth, maxTitleLines);
   let y = 158;
   for (const line of titleLines) {
     ctx.fillText(line, padX, y);

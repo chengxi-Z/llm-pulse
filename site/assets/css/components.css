@@ -1,4 +1,9 @@
 /* ============================================================================= AI Pulse — Components Order: header / footer / buttons / layout / home / lists and cards / filters / states / responsive ============================================================================= */
+:root {
+  --rail: 25%;
+  --rail-gap: clamp(20px, 2.4vw, 32px);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -552,7 +557,8 @@ body.nav-open .nav-toggle-lines::after {
   height: 14px;
 }
 
-.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:clamp(18px,2.4vw,32px)}
+.section-head{display:grid;grid-template-columns:minmax(0,var(--rail)) minmax(0,1fr);align-items:end;gap:var(--rail-gap);margin-bottom:clamp(18px,2.4vw,32px)}
+.section-head > :last-child:not(:first-child){justify-self:end}
 
 .section-head h2 {
   margin-top: 14px;
@@ -587,11 +593,20 @@ body.nav-open .nav-toggle-lines::after {
 
 .page-masthead .container {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, var(--rail)) minmax(0, 1fr);
+  column-gap: var(--rail-gap);
+  align-items: start;
 }
 
-.page-masthead h1{max-width:26ch;margin-top:14px;font-size:clamp(1.95rem,3.6vw,3rem)}
+.page-masthead .container > .eyebrow{grid-column:1;grid-row:1}
+.page-masthead .container > h1{grid-column:1;grid-row:2}
+.page-masthead .container > .lede{grid-column:1;grid-row:3}
+.page-masthead .container > .masthead-meta{grid-column:2;grid-row:1 / span 3;align-self:end;justify-self:start}
 
-.page-masthead .lede{display:-webkit-box;overflow:hidden;max-width:72ch;margin-top:14px;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.page-masthead h1{max-width:26ch;margin-top:14px;font-size:clamp(1.5rem,2.2vw,2rem)}
+
+.page-masthead .lede{display:-webkit-box;overflow:hidden;max-width:72ch;margin-top:14px;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 
 .masthead-meta{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:18px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.8125rem}
 
@@ -616,9 +631,9 @@ body.nav-open .nav-toggle-lines::after {
     radial-gradient(48% 58% at 0% 96%, var(--glow-accent), transparent 62%);
 }
 
-.hero-grid{--hero-gap:clamp(24px,3.6vw,56px);position:relative;display:grid;grid-template-columns:minmax(0,calc(66.6667% - var(--hero-gap))) minmax(0,33.3333%);align-items:center;gap:var(--hero-gap)}
+.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(var(--rail) - var(--hero-gap))) minmax(0,calc(100% - var(--rail)));align-items:center;gap:var(--hero-gap)}
 
-.hero-title{margin-top:14px;font-size:clamp(2.15rem,3.9vw,3.35rem);line-height:1.04;letter-spacing:.005em}
+.hero-title{margin-top:14px;font-size:clamp(1.6rem,2.4vw,2.35rem);line-height:1.1;letter-spacing:.005em}
 
 .hero-title .accent {
   color: var(--highlight);
@@ -640,7 +655,7 @@ body.nav-open .nav-toggle-lines::after {
   opacity: 0.55;
 }
 
-.hero .lede{display:-webkit-box;overflow:hidden;max-width:48ch;margin-top:16px;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.hero .lede{display:-webkit-box;overflow:hidden;max-width:48ch;margin-top:16px;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:22px}
 
@@ -2593,6 +2608,21 @@ a.source-name:hover {
     grid-template-columns: minmax(0, 1fr);
     gap: clamp(32px, 6vw, 48px);
   }
+
+  .page-masthead .container,
+  .section-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-masthead .container > .eyebrow,
+  .page-masthead .container > h1,
+  .page-masthead .container > .lede,
+  .page-masthead .container > .masthead-meta {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .section-head > :last-child:not(:first-child){justify-self:start}
 
   .hero-panel {
     width: 100%;
