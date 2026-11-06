@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-06T00:00:00.000Z",
+  "updatedAt": "2026-11-06",
+  "source": "DeepSeek official newsroom, API changelog and transparency center; AI Pulse data/news.json and data/models.json",
+  "sourceLabel": {
+    "zh": "DeepSeek 官方 · 研究与动态 / API 更新日志 / 透明度中心",
+    "en": "DeepSeek newsroom / API changelog / transparency center"
+  },
+  "milestones": [
+    {
+      "date": "2026-10-17",
+      "kind": { "zh": "发布", "en": "RELEASE" },
+      "title": {
+        "zh": "V4.1-Flash-1017 更新，站内搜索 API 开放",
+        "en": "V4.1-Flash-1017 update and in-house search API"
+      },
+      "summary": {
+        "zh": "针对 DeepSeek Harness 做专项优化，引入基于自反馈强化学习的编程能力；同日开放自研搜索 Search 与网页读取 Fetch 两个 API，按成功请求计费。",
+        "en": "A targeted update for DeepSeek Harness with self-feedback RL for coding. The in-house Search and Fetch APIs opened the same day, billed per successful request."
+      },
+      "source": { "zh": "DeepSeek API 更新日志", "en": "DeepSeek API changelog" },
+      "url": "https://api-docs.deepseek.com/updates#2026-10-17",
+      "importance": 3
+    },
+    {
+      "date": "2026-09-10",
+      "kind": { "zh": "架构", "en": "ARCHITECTURE" },
+      "title": {
+        "zh": "V4.1 Flash：非对称架构，原生多模态",
+        "en": "V4.1 Flash: asymmetric architecture with native vision"
+      },
+      "summary": {
+        "zh": "552B 参数 MoE，全新 Causal Encoder–Decoder 结构，输入激活 8B、输出激活 16B；KV Cache 对 HBM 需求降至前代 1/4、SSD 1/8，API 同步降价，V4 Pro 逐步下线。",
+        "en": "A 552B MoE with a new Causal Encoder-Decoder design, 8B active on input and 16B on output. KV cache needs 1/4 the HBM and 1/8 the SSD storage; API prices dropped and V4 Pro was phased out."
+      },
+      "source": { "zh": "DeepSeek 官方新闻", "en": "DeepSeek newsroom" },
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash/",
+      "importance": 3
+    },
+    {
+      "date": "2026-04-24",
+      "kind": { "zh": "发布", "en": "RELEASE" },
+      "title": {
+        "zh": "V4 预览版：迈入百万上下文，同步开源",
+        "en": "V4 preview: million-token context, open-sourced"
+      },
+      "summary": {
+        "zh": "全新 V4 系列预览版上线并同步开源，带来百万字级超长上下文，Flash 与 Pro 两个尺寸同时进入模型目录。",
+        "en": "The V4 preview shipped with million-token context and open weights, adding Flash and Pro variants to the model catalog."
+      },
+      "source": { "zh": "DeepSeek 官方新闻", "en": "DeepSeek newsroom" },
+      "url": "https://www.deepseek.com/zh/news/",
+      "importance": 3
+    },
+    {
+      "date": "2025-12-01",
+      "kind": { "zh": "模型", "en": "MODEL" },
+      "title": {
+        "zh": "V3.2 正式版：思考融入工具使用",
+        "en": "V3.2: reasoning integrated into tool use"
+      },
+      "summary": {
+        "zh": "V3.2 与 V3.2-Speciale 发布，强化 Agent 能力，成为首个将思考融入工具使用的模型，并在 IMO、CMO、ICPC、IOI 取得金牌级成绩；网页端、App 与 API 全面上线。",
+        "en": "V3.2 and V3.2-Speciale strengthened agent capabilities as the first model to integrate reasoning into tool use, with gold-medal results in IMO, CMO, ICPC and IOI."
+      },
+      "source": { "zh": "DeepSeek 官方新闻", "en": "DeepSeek newsroom" },
+      "url": "https://www.deepseek.com/zh/news/",
+      "importance": 3
+    },
+    {
+      "date": "2025-09-29",
+      "kind": { "zh": "研究", "en": "RESEARCH" },
+      "title": {
+        "zh": "V3.2-Exp：稀疏注意力，API 降价过半",
+        "en": "V3.2-Exp: sparse attention and lower API prices"
+      },
+      "summary": {
+        "zh": "引入 DeepSeek Sparse Attention（DSA）稀疏注意力机制，提升长上下文训练与推理效率，API 价格下调 50% 以上。",
+        "en": "Introduced DeepSeek Sparse Attention (DSA) for more efficient long-context training and inference, cutting API prices by more than 50%."
+      },
+      "source": { "zh": "DeepSeek 官方新闻", "en": "DeepSeek newsroom" },
+      "url": "https://www.deepseek.com/zh/news/",
+      "importance": 3
+    },
+    {
+      "date": "2025-09-22",
+      "kind": { "zh": "更新", "en": "UPDATE" },
+      "title": {
+        "zh": "V3.1 Terminus",
+        "en": "V3.1 Terminus"
+      },
+      "summary": {
+        "zh": "V3.1 更新至 Terminus 版本，缓解中英文混杂问题，优化 Code Agent 与 Search Agent 表现。",
+        "en": "The Terminus update for V3.1 reduced mixed-language artifacts and improved Code Agent and Search Agent behaviour."
+      },
+      "source": { "zh": "DeepSeek 官方新闻", "en": "DeepSeek newsroom" },
+      "url": "https://www.deepseek.com/zh/news/",
+      "importance": 2
+    },
+    {
+      "date": "2025-08-21",
+      "kind": { "zh": "模型", "en": "MODEL" },
+      "title": {
+        "zh": "V3.1：混合思考与更长上下文",
+        "en": "V3.1: hybrid thinking and longer context"
+      },
+      "summary": {
+        "zh": "V3.1 进入模型目录，引入思考与非思考模式的切换，并扩展上下文长度，成为后续 Agent 系列的基础版本。",
+        "en": "V3.1 added switchable thinking and non-thinking modes with a longer context window, becoming the base for later agent-oriented releases."
+      },
+      "source": { "zh": "DeepSeek API 更新日志", "en": "DeepSeek API changelog" },
+      "url": "https://api-docs.deepseek.com/updates",
+      "importance": 2
+    },
+    {
+      "date": "2025-03-24",
+      "kind": { "zh": "更新", "en": "UPDATE" },
+      "title": {
+        "zh": "V3-0324",
+        "en": "V3-0324"
+      },
+      "summary": {
+        "zh": "V3 的一次重要迭代，提升推理与代码能力，保持开源权重分发。",
+        "en": "A notable V3 iteration improving reasoning and coding while keeping open-weight distribution."
+      },
+      "source": { "zh": "DeepSeek 透明度中心", "en": "DeepSeek transparency center" },
+      "url": "https://www.deepseek.com/transparency/",
+      "importance": 2
+    },
+    {
+      "date": "2025-01-20",
+      "kind": { "zh": "开源", "en": "OPEN SOURCE" },
+      "title": {
+        "zh": "R1：开源推理模型",
+        "en": "R1: open reasoning model"
+      },
+      "summary": {
+        "zh": "DeepSeek-R1 发布并开源权重与训练方法，让强化学习驱动的推理能力可被复现，成为当年最受关注的模型事件之一。",
+        "en": "DeepSeek-R1 shipped with open weights and published methodology, making RL-driven reasoning reproducible and becoming one of the year's most discussed releases."
+      },
+      "source": { "zh": "DeepSeek 透明度中心", "en": "DeepSeek transparency center" },
+      "url": "https://www.deepseek.com/transparency/",
+      "importance": 3
+    },
+    {
+      "date": "2024-12-26",
+      "kind": { "zh": "模型", "en": "MODEL" },
+      "title": {
+        "zh": "V3：671B MoE",
+        "en": "V3: a 671B MoE"
+      },
+      "summary": {
+        "zh": "DeepSeek-V3 发布，6710 亿总参数、每 token 激活 370 亿参数，以较低的训练成本达到前沿水平，并采用 MIT 许可证开源。",
+        "en": "DeepSeek-V3 arrived with 671B total and 37B active parameters per token, reaching frontier-level quality at low training cost under an MIT license."
+      },
+      "source": { "zh": "DeepSeek 透明度中心", "en": "DeepSeek transparency center" },
+      "url": "https://www.deepseek.com/transparency/",
+      "importance": 3
+    },
+    {
+      "date": "2024-05-06",
+      "kind": { "zh": "架构", "en": "ARCHITECTURE" },
+      "title": {
+        "zh": "V2：MLA 与 DeepSeekMoE",
+        "en": "V2: MLA and DeepSeekMoE"
+      },
+      "summary": {
+        "zh": "V2 引入多头潜在注意力（MLA）与 DeepSeekMoE 稀疏结构，大幅降低推理显存与成本，奠定后续系列的架构基础。",
+        "en": "V2 introduced Multi-head Latent Attention and the DeepSeekMoE sparse design, cutting inference memory and cost and setting the architecture for later generations."
+      },
+      "source": { "zh": "DeepSeek 透明度中心", "en": "DeepSeek transparency center" },
+      "url": "https://www.deepseek.com/transparency/",
+      "importance": 2
+    },
+    {
+      "date": "2023-11-02",
+      "kind": { "zh": "开源", "en": "OPEN SOURCE" },
+      "title": {
+        "zh": "DeepSeek Coder：首批开源模型",
+        "en": "DeepSeek Coder: the first open models"
+      },
+      "summary": {
+        "zh": "从代码模型起步，同年 11 月发布 DeepSeek LLM，开启以开源权重与技术报告为主的发布节奏。",
+        "en": "Starting with a code model, followed by DeepSeek LLM later that month, establishing a release cadence built on open weights and technical reports."
+      },
+      "source": { "zh": "DeepSeek 透明度中心", "en": "DeepSeek transparency center" },
+      "url": "https://www.deepseek.com/transparency/",
+      "importance": 2
+    }
+  ]
+}

@@ -37,6 +37,7 @@ export const PAGE_META = {
   news: { title: 'page.news.title', desc: 'page.news.desc' },
   rankings: { title: 'page.rankings.title', desc: 'page.rankings.desc' },
   models: { title: 'page.models.title', desc: 'page.models.desc' },
+  deepseek: { title: 'page.deepseek.title', desc: 'page.deepseek.desc' },
   resources: { title: 'page.resources.title', desc: 'page.resources.desc' },
   projects: { title: 'page.projects.title', desc: 'page.projects.desc' },
   about: { title: 'page.about.title', desc: 'page.about.desc' },
