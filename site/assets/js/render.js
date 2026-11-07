@@ -472,9 +472,8 @@ function renderStats(data) {
     const parts = [t('home.sources.count', { n: intlNumber(sources.length) })];
     if (counts.ok) parts.push(t('home.sources.ok', { n: intlNumber(counts.ok) }));
     if (counts.degraded) parts.push(t('home.sources.degraded', { n: intlNumber(counts.degraded) }));
-    if (counts.blocked) parts.push(t('home.sources.blocked', { n: intlNumber(counts.blocked) }));
-    return `<div class="source-dots" role="list" aria-label="${t('home.sources.aria', { n: intlNumber(sources.length) })}">${dots}</div>
-      <p class="source-summary">${esc(parts.join(' · '))} · ${t('home.sources.daily')}</p>`;
+      return `<div class="source-dots" role="list" aria-label="${t('home.sources.aria', { n: intlNumber(sources.length) })}">${dots}</div>
+      <p class="source-summary">${esc(parts.join(' · '))}</p>`;
   });
 
   const note = $('#data-mode-note');

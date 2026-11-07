@@ -83,6 +83,16 @@
 - 线上 22 个学习资源：全部 `lang != zh`，无中文站域名；19 个采集源全部英文站；
 - 线上榜单：OpenCompass 已移除；当前为 Artificial Analysis / Context Window / Epoch ECI / GPQA / SWE-bench / LiveBench / LMArena / Output Price。
 
+## 6.2 最终 UI 审查（发布门禁）
+
+- Playwright 真实渲染 9 个页面 × 1440×900 / 390×844：**横向溢出 0、控制台错误 0、容器左右边缘一致**；首页双卡底部差 **0.3px**。
+- 修正发布前发现的三处版面问题：
+  1. 英文 hero lede 过长导致省略号截断 → 改为完整两行英文文案；
+  2. 右上「本周速览」数据源摘要换行被裁切 → 摘要收敛为 source 数 + OK + degraded，完整落在卡片内；
+  3. 排名页 Source 行残留 OpenCompass（数据源已移除）→ 改为 Artificial Analysis + OpenRouter + Epoch AI + LiveBench。
+- Impeccable 最终检测：共 39 条，其中 **36 条为既存品牌层**（cream palette 18、Inter 字体 18），**3 条为设计性 advisory**（DeepSeek 长单列、排行 filter-bar 贴边 2 条）；**tiny-text、低对比、行宽、文本溢出、kicker、横向溢出均为 0**。
+- 结论：达到发布门禁，可作为 **v2.0.0（English-first）** 发布。
+
 ## 7. 剩余限制（明确说明）
 
 1. **中文版本仍保留**：用户切到 ZH 时才加载 `zh.json` 和中文数据；默认英文页不会请求中文词典。

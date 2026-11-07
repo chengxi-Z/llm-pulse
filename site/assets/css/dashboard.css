@@ -257,3 +257,11 @@
   .dash-card--killline{height:auto}
   .dash-grid--carousel .dash-card--topics{height:auto}
 }
+
+/* Final UI review: final small body text to 12px (dashboard CSS loads after components) */
+.dash-scatter-meta,.dash-scatter-disclaimer{font-size:0.75rem}
+.hero-panel .source-block .label{font-size:0.75rem}
+.dash-card--killline .dash-scatter-disclaimer{font-size:0.75rem}
+
+.dash-card-head-note,.dash-topic-meta-item,.dash-topic-meta-sep,.stat-label,.dash-quadrant-count,.dash-quadrant-legend li,.dash-scatter-metric,.dash-kpi-label{font-size:0.75rem}
+.dash-kpi-label{font-size:0.6875rem}

@@ -3480,3 +3480,13 @@ html,body{overflow-x:clip}
 
 /* English hero panel: keep the compact source summary to one line */
 .hero--compact .hero-panel .source-summary{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+
+/* Final UI: fit the full data-source summary in two lines inside the compact panel */
+.hero--compact .hero-panel .stat-item{padding:5px 0}
+.hero--compact .hero-panel .source-summary{-webkit-line-clamp:2}
+
+/* Final UI review: lift remaining body text to 12px */
+.hero--compact .hero-fineprint,.hero-fineprint{font-size:0.75rem}
+.rank-expand-note,.rank-dist-site,.rank-dist-repo{font-size:0.75rem}
+.hero--compact .hero-panel .source-summary{font-size:0.75rem}
+.dash-scatter-meta,.dash-scatter-disclaimer{font-size:0.75rem}
