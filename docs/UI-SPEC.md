@@ -647,6 +647,15 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ## 27. v1.4 首屏内容优先（hero / masthead 瘦身）
 
+### 27.0 v1.5 版式比例（2026-11-07 用户复核）
+
+- 首页 hero 网格：**左标题栏严格占 25%**（`var(--rail)`，不再减去 gap），**右侧「本周速览」面板严格占 33.3333%**（`1/3`），两栏之间为弹性留白；面板贴容器右缘。
+- 页头 masthead（news/rankings/models/resources/projects/skills/about/deepseek）：左标题栏统一 `var(--rail)=25%`，与首页 hero 一致。
+- ≤960px：hero/页头回落单列（左侧标题栏 + 面板/元信息纵向排列），面板 `width:100%`。
+- 回归原因记录：`9e46b7ff` 曾把 hero panel 锁到 1/3，`9ea140e3` 改为 `25% / 75%` 时把 panel 放大到 75%；本次恢复 25% 标题栏 + 33.33% 面板，并让所有 hero 标题栏严格 1/4。
+
+
+
 - 全局 `--section-y` 调为 `clamp(44px, 6vw, 84px)`；`.section-head` 底部间距 `clamp(18px,2.4vw,32px)`；`.section-desc` 2 行 clamp；`.filter-bar` 上下 padding 10px；`.board-tabs` 底距 12px；`.rank-panel` padding 收紧。
 - `.page-masthead`（基础）：上下 `clamp(26px,3.4vw,52px) / clamp(18px,2.4vw,30px)`；h1 `clamp(1.95rem,3.6vw,3rem)`、上边距 14px；lede 2 行 clamp、上边距 14px；`.masthead-meta` 上边距 18px/上 padding 12px。
 - `.page-masthead--compact`（各页启用）：上下 18–34 / 12–22px；h1 `clamp(1.75rem,3.2vw,2.6rem)`、上边距 10px；lede 上边距 10px；meta 收紧；其后首个 `.section` 上 padding `clamp(16px,2vw,28px)`。

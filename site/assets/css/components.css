@@ -631,7 +631,9 @@ body.nav-open .nav-toggle-lines::after {
     radial-gradient(48% 58% at 0% 96%, var(--glow-accent), transparent 62%);
 }
 
-.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(var(--rail) - var(--hero-gap))) minmax(0,calc(100% - var(--rail)));align-items:center;gap:var(--hero-gap)}
+.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,var(--rail)) minmax(0,1fr) minmax(0,33.3333%);column-gap:var(--hero-gap);align-items:center}
+.hero-copy{grid-column:1;min-width:0}
+.hero-panel{grid-column:3;width:100%}
 
 .hero-title{margin-top:14px;font-size:clamp(1.6rem,2.4vw,2.35rem);line-height:1.1;letter-spacing:.005em}
 
@@ -2607,6 +2609,11 @@ a.source-name:hover {
   .hero-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: clamp(32px, 6vw, 48px);
+  }
+
+  .hero-copy,
+  .hero-panel {
+    grid-column: auto;
   }
 
   .page-masthead .container,
