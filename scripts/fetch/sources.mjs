@@ -128,7 +128,7 @@ async function collectArtificialAnalysis(ctx) {
     used = 'homepage';
   }
   // The full /leaderboards/models payload omits release dates; the homepage featured
-  // initialData carries them. Merge by slug/name/shortName so ranking rows can show 上线时间.
+  // initialData carries them. Merge by slug/name/shortName so ranking rows can show release dates.
   if (used === 'leaderboards') {
     try {
       const home = await ctx.get(AA_URL, { key: 'artificialanalysis-home', ext: 'html', timeoutMs: 30000, retries: 1 });
