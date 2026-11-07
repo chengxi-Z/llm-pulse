@@ -425,7 +425,7 @@ function representativePoints(points, metrics, xFor, yFor) {
       const name = shortModelName(point.model);
       if (!name || seenNames.has(name)) continue;
       seenNames.add(name);
-      picked.push({ point, name });
+      picked.push({ point, name, index: points.indexOf(point) });
       break;
     }
   });
@@ -683,6 +683,8 @@ function renderScatter(metrics) {
         '</text>'
     )
     .join('');
+  const representative = representativePoints(points, metrics, xFor, yFor);
+  const representativeIndex = new Map(representative.map((item) => [item.index, item.name]));
   const pointHtml = points
     .map((point, index) => {
       const survival = point.score >= metrics.scoreMedian && point.price <= metrics.priceMedian;
@@ -691,10 +693,16 @@ function renderScatter(metrics) {
         score: point.scoreDisplay,
         price: formatPrice(point.price),
       });
-      const radius = survival ? 6 : 4;
+      const isRepresentative = representativeIndex.has(index);
+      const radius = isRepresentative ? 7 : survival ? 6 : 4;
+      const halo = isRepresentative
+        ? '<circle class="dash-scatter-halo" cx="' + xFor(point.price).toFixed(1) + '" cy="' + yFor(point.score).toFixed(1) + '" r="11" aria-hidden="true"></circle>'
+        : '';
       return (
+        halo +
         '<circle class="dash-scatter-point' +
         (survival ? ' is-survive' : ' is-dead') +
+        (isRepresentative ? ' is-representative' : '') +
         '" cx="' +
         xFor(point.price).toFixed(1) +
         '" cy="' +
@@ -713,44 +721,17 @@ function renderScatter(metrics) {
       );
     })
     .join('');
-  const representative = representativePoints(points, metrics, xFor, yFor);
-  const labelBoxes = [];
   const labelHtml = representative
     .map(({ point, name }) => {
       const x = xFor(point.price);
       const y = yFor(point.score);
-      const anchor = x > SCATTER_W - 180 ? 'end' : 'start';
-      const dx = anchor === 'end' ? -10 : 10;
-      const approxWidth = name.length * 7.2 + 10;
-      const x0 = anchor === 'end' ? x + dx - approxWidth : x + dx;
-      const x1 = x0 + approxWidth;
-      let ty = null;
-      for (const offset of [-10, 16, -28, 34, -46, 52, -64]) {
-        const candidate = y + offset;
-        if (candidate < pad.top + 14 || candidate > SCATTER_H - pad.bottom - 6) continue;
-        const box = { x0, x1, y0: candidate - 12, y1: candidate + 2 };
-        const overlap = labelBoxes.some(
-          (placed) =>
-            !(box.x1 < placed.x0 - 4 || box.x0 > placed.x1 + 4 || box.y1 < placed.y0 - 2 || box.y0 > placed.y1 + 2)
-        );
-        if (!overlap) {
-          ty = candidate;
-          labelBoxes.push(box);
-          break;
-        }
-      }
-      if (ty == null) {
-        ty = Math.min(SCATTER_H - pad.bottom - 6, Math.max(pad.top + 14, y + 16));
-        labelBoxes.push({ x0, x1, y0: ty - 12, y1: ty + 2 });
-      }
+      const ty = Math.max(pad.top + 12, y - 17);
       return (
-        '<text class="dash-scatter-label" x="' +
-        (x + dx).toFixed(1) +
+        '<text class="dash-scatter-label is-representative-label" x="' +
+        x.toFixed(1) +
         '" y="' +
         ty.toFixed(1) +
-        '" text-anchor="' +
-        anchor +
-        '">' +
+        '" text-anchor="middle">' +
         esc(name) +
         '</text>'
       );
