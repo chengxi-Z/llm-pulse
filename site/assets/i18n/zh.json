@@ -874,5 +874,6 @@
   "rankings.gaps.desc": "以下模型在 ECI 能力指数榜已有成绩，但尚未被 Epoch 收录进本榜。点击可跳转到 ECI 榜查看其排名。",
   "rankings.gaps.refScore": "ECI {score} · 第 {rank} 名",
   "rankings.gaps.go": "查看 ECI 榜",
-  "rankings.gaps.note": "未收录不代表能力低；Epoch 完成复评后会进入本榜。"
+  "rankings.gaps.note": "未收录不代表能力低；Epoch 完成复评后会进入本榜。",
+  "ui.pageOverview": "概览"
 }
