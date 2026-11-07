@@ -883,5 +883,14 @@
   "dashboard.scatter.searchAria": "搜索模型",
   "dashboard.scatter.searchClear": "清空搜索",
   "dashboard.scatter.searchEmpty": "没有匹配的已绘制模型",
-  "dashboard.scatter.searchStatus": "{model} · {quadrant} · 能力 {score} · {price}"
+  "dashboard.scatter.searchStatus": "{model} · {quadrant} · 能力 {score} · {price}",
+  "dashboard.scatter.metricLabel": "能力指标",
+  "dashboard.scatter.metricAria": "切换斩杀线的能力指标",
+  "dashboard.scatter.metricAA": "AA 智能指数",
+  "dashboard.scatter.metricEci": "Epoch ECI",
+  "dashboard.scatter.metricLivebench": "LiveBench 2.0",
+  "dashboard.scatter.metricGpqa": "GPQA Diamond",
+  "dashboard.scatter.metricSwe": "SWE-bench Verified",
+  "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
+  "dashboard.scatter.metricOpencompassMM": "OpenCompass 多模态"
 }

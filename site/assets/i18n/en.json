@@ -883,5 +883,14 @@
   "dashboard.scatter.searchAria": "Search models",
   "dashboard.scatter.searchClear": "Clear search",
   "dashboard.scatter.searchEmpty": "No matching plotted model",
-  "dashboard.scatter.searchStatus": "{model} · {quadrant} · score {score} · {price}"
+  "dashboard.scatter.searchStatus": "{model} · {quadrant} · score {score} · {price}",
+  "dashboard.scatter.metricLabel": "Capability metric",
+  "dashboard.scatter.metricAria": "Switch kill-line capability metric",
+  "dashboard.scatter.metricAA": "AA Intelligence Index",
+  "dashboard.scatter.metricEci": "Epoch ECI",
+  "dashboard.scatter.metricLivebench": "LiveBench 2.0",
+  "dashboard.scatter.metricGpqa": "GPQA Diamond",
+  "dashboard.scatter.metricSwe": "SWE-bench Verified",
+  "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
+  "dashboard.scatter.metricOpencompassMM": "OpenCompass Multimodal"
 }

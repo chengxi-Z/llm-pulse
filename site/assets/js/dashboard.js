@@ -1,7 +1,7 @@
-import { t } from './i18n.js';
+import { t, getLang } from './i18n.js';
 import { intlNumber, intlDateTime, intlShortDate } from './render.js';
 import { escapeHtml as esc, safeHttpUrl } from './data.js';
-import { buildRankingIndex, collectCapabilityCostPoints, median as medianOf } from './data-match.js';
+import { buildRankingIndex, collectCapabilityCostPointsForSource, median as medianOf } from './data-match.js';
 const COUNT_UP_MS = 900;
 const PRICE_TIERS = ['free', 'low', 'mid', 'high', 'premium'];
 const CAROUSEL_INTERVAL = 6500;
@@ -14,6 +14,17 @@ let carouselState = null;
 let dataset = null;
 let scatterPoints = [];
 let scatterSearchBound = false;
+let scatterMetricBound = false;
+let scatterMetricKey = 'aa';
+const SCATTER_SOURCES = [
+  { key: 'aa', boardId: 'artificial-analysis-intelligence', labelKey: 'dashboard.scatter.metricAA' },
+  { key: 'eci', boardId: 'epoch-eci', labelKey: 'dashboard.scatter.metricEci' },
+  { key: 'livebench', boardId: 'livebench-2.0', labelKey: 'dashboard.scatter.metricLivebench' },
+  { key: 'gpqa', boardId: 'epoch-gpqa-diamond', labelKey: 'dashboard.scatter.metricGpqa' },
+  { key: 'swe', boardId: 'epoch-swe-bench-verified', labelKey: 'dashboard.scatter.metricSwe' },
+  { key: 'opencompass', boardId: 'opencompass-arena', labelKey: 'dashboard.scatter.metricOpencompass' },
+  { key: 'opencompassMM', boardId: 'opencompass-arena-mm', labelKey: 'dashboard.scatter.metricOpencompassMM' },
+];
 let animated = false;
 let tooltipBound = false;
 let pieBound = false;
@@ -117,10 +128,28 @@ function computeMetrics(data) {
     else if (output < 15) tiers.high += 1;
     else tiers.premium += 1;
   });
-  const rankingIndex = buildRankingIndex(data.rankings);
-  const points = collectCapabilityCostPoints(models, rankingIndex);
-  const priceMedian = medianOf(points.map((point) => point.price));
-  const scoreMedian = medianOf(points.map((point) => point.score));
+  const rankingIndex = buildRankingIndex(data.rankings, SCATTER_SOURCES);
+  const capabilityOptions = SCATTER_SOURCES.map((source) => {
+    const points = collectCapabilityCostPointsForSource(models, rankingIndex, source.key);
+    if (points.length < 3) return null;
+    return {
+      key: source.key,
+      boardId: source.boardId,
+      label: t(source.labelKey),
+      points,
+      priceMedian: medianOf(points.map((point) => point.price)),
+      scoreMedian: medianOf(points.map((point) => point.score)),
+    };
+  }).filter(Boolean);
+  let activeOption = capabilityOptions.find((option) => option.key === scatterMetricKey);
+  if (!activeOption && capabilityOptions.length) {
+    scatterMetricKey = capabilityOptions[0].key;
+    activeOption = capabilityOptions[0];
+  }
+  const points = activeOption ? activeOption.points : [];
+  const priceMedian = activeOption ? activeOption.priceMedian : null;
+  const scoreMedian = activeOption ? activeOption.scoreMedian : null;
+  const scoreMetricLabel = activeOption ? activeOption.label : '';
   const quadrant = { survival: 0, highCost: 0, lowCapability: 0, kill: 0 };
   if (priceMedian != null && scoreMedian != null) {
     points.forEach((point) => {
@@ -157,6 +186,9 @@ function computeMetrics(data) {
     points,
     priceMedian,
     scoreMedian,
+    capabilityOptions,
+    scatterMetricKey,
+    scoreMetricLabel,
     quadrant,
     topics,
     topicsUpdatedAt: data.topics && data.topics.generatedAt,
@@ -600,6 +632,12 @@ function initScatterSearch(metrics) {
   lastMetrics = metrics;
   bindScatterSearch();
 }
+function formatScoreAxis(value) {
+  const locale = () => (getLang() === 'en' ? 'en-US' : 'zh-CN');
+  const number = Number(value);
+  if (!Number.isFinite(number)) return '—';
+  return new Intl.NumberFormat(locale(), { maximumFractionDigits: 1 }).format(number);
+}
 function renderScatter(metrics) {
   const container = $('#dash-scatter');
   if (!container) return;
@@ -618,11 +656,17 @@ function renderScatter(metrics) {
   const logMin = Math.log10(X_LOG_MIN);
   const logMax = Math.log10(maxPrice);
   const xFor = (price) => pad.left + ((Math.log10(Math.max(price, X_LOG_MIN)) - logMin) / (logMax - logMin)) * innerW;
-  const yFor = (score) => pad.top + innerH - (Math.min(Y_MAX, Math.max(0, score)) / Y_MAX) * innerH;
+  const rawScores = points.map((point) => Number(point.score) || 0);
+  const rawMin = Math.min(...rawScores);
+  const rawMax = Math.max(...rawScores);
+  const axisPad = (rawMax - rawMin || 1) * 0.08;
+  const yMin = Math.max(0, rawMin - axisPad);
+  const yMax = rawMax + axisPad;
+  const yFor = (score) => pad.top + innerH - ((Math.min(yMax, Math.max(yMin, score)) - yMin) / (yMax - yMin)) * innerH;
   const priceX = xFor(metrics.priceMedian);
   const scoreY = yFor(metrics.scoreMedian);
   const xTicks = [0.01, 0.1, 1, 10, 100].map((value) => ({ value, x: xFor(value), label: formatAxisPrice(value) }));
-  const yTicks = [0, 50, 100].map((value) => ({ value, y: yFor(value), label: String(value) }));
+  const yTicks = [yMin, (yMin + yMax) / 2, yMax].map((value) => ({ value, y: yFor(value), label: formatScoreAxis(value) }));
   const quadrants = [
     { key: 'survival', cls: 'is-survival', label: t('dashboard.scatter.quadSurvival'), x: pad.left, y: pad.top, w: priceX - pad.left, h: scoreY - pad.top },
     { key: 'highCost', cls: 'is-highcost', label: t('dashboard.scatter.quadHighCost'), x: priceX, y: pad.top, w: SCATTER_W - pad.right - priceX, h: scoreY - pad.top },
@@ -784,7 +828,7 @@ function renderScatter(metrics) {
     '" y="' +
     (pad.top - 6) +
     '" text-anchor="start">' +
-    esc(t('dashboard.scatter.yAxis')) +
+    esc(metrics.scoreMetricLabel || t('dashboard.scatter.yAxis')) +
     '</text>' +
     '<text class="dash-axis-label dash-scatter-line-label" x="' +
     (SCATTER_W - pad.right) +
@@ -1131,11 +1175,45 @@ function renderAll(metrics) {
   renderScatter(metrics);
   renderTopics(metrics);
 }
+function renderScatterMetricSelect(metrics) {
+  const select = $('#dash-scatter-metric');
+  if (!select) return;
+  const options = metrics.capabilityOptions || [];
+  select.innerHTML = options
+    .map(
+      (option) =>
+        `<option value="${esc(option.key)}"${option.key === metrics.scatterMetricKey ? ' selected' : ''}>${esc(
+          option.label
+        )} · ${intlNumber(option.points.length)}</option>`
+    )
+    .join('');
+  select.disabled = options.length < 2;
+}
+function initScatterMetric(metrics) {
+  renderScatterMetricSelect(metrics);
+  if (scatterMetricBound) return;
+  const select = $('#dash-scatter-metric');
+  if (!select) return;
+  scatterMetricBound = true;
+  select.addEventListener('change', () => {
+    scatterMetricKey = select.value;
+    const next = computeMetrics(dataset || {});
+    renderScatter(next);
+    lastMetrics = next;
+    const status = $('#dash-scatter-search-status');
+    if (status) status.textContent = '';
+    const input = $('#dash-scatter-search');
+    if (input) input.value = '';
+    closeScatterSuggest();
+  });
+}
+
 export function initDashboard(data) {
   dataset = data || {};
   const metrics = computeMetrics(dataset);
   renderAll(metrics);
   initScatterSearch(metrics);
+  initScatterMetric(metrics);
   initCarousel();
   bindTooltip();
   setupAnimation(metrics);

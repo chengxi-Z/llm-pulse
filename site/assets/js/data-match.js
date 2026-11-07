@@ -118,7 +118,7 @@ function exactCandidates(item) {
  * @param {object} rankings data/rankings.json payload
  * @returns {Map<string, Record<string, object>>}
  */
-export function buildRankingIndex(rankings) {
+export function buildRankingIndex(rankings, sources = SCORE_SOURCES) {
   const exact = new Map();
   const loose = new Map();
   const add = (map, key, sourceKey, record) => {
@@ -129,7 +129,7 @@ export function buildRankingIndex(rankings) {
   };
   const boards = Array.isArray(rankings && rankings.boards) ? rankings.boards : [];
   const byId = new Map(boards.map((board) => [board.id, board]));
-  for (const source of SCORE_SOURCES) {
+  for (const source of sources) {
     if (!source.boardId) continue;
     const board = byId.get(source.boardId);
     if (!board) continue;
@@ -160,19 +160,19 @@ export function buildRankingIndex(rankings) {
  * @returns {Record<string, object|null>}
  */
 export function matchModelScores(model, index) {
-  const result = { aa: null, lmarena: null, livebench: null, epoch: null, opencompass: null };
+  const result = {};
   if (!model || !index || !index.exact || !index.loose) return result;
   const fill = (map, candidates) => {
     for (const candidate of candidates) {
       const bucket = map.get(candidate);
       if (!bucket) continue;
-      for (const source of SCORE_SOURCES) {
-        if (!result[source.key] && bucket[source.key]) result[source.key] = bucket[source.key];
+      for (const key of Object.keys(bucket)) {
+        if (result[key] == null && bucket[key]) result[key] = bucket[key];
       }
     }
   };
   fill(index.exact, exactCandidates({ name: model.name, org: model.org }));
-  if (!result.aa) fill(index.loose, nameCandidates({ name: model.name, org: model.org }));
+  fill(index.loose, nameCandidates({ name: model.name, org: model.org }));
   return result;
 }
 
@@ -182,26 +182,34 @@ export function matchModelScores(model, index) {
  * @param {Map<string, Record<string, object>>} index
  * @returns {{model:object, score:number, scoreDisplay:string, price:number, org:string}[]}
  */
-export function collectCapabilityCostPoints(models, index) {
+export function collectCapabilityCostPointsForSource(models, index, sourceKey = 'aa') {
   const points = [];
   (Array.isArray(models) ? models : []).forEach((model) => {
     const output = model && model.pricing && Number(model.pricing.output);
     if (!Number.isFinite(output)) return;
     const scores = matchModelScores(model, index);
-    const aa = scores.aa;
-    const score = aa ? Number(aa.score) : NaN;
+    const record = scores[sourceKey];
+    if (!record) return;
+    const displayRaw = record.scoreDisplay != null ? record.scoreDisplay : record.score;
+    const displayNumber = Number(String(displayRaw).replace(/[^0-9.-]/g, ''));
+    const score = Number.isFinite(displayNumber) ? displayNumber : Number(record.score);
     if (!Number.isFinite(score)) return;
     points.push({
       model,
       score,
-      scoreDisplay: aa.scoreDisplay || String(Number(score.toFixed(1))),
+      scoreDisplay: record.scoreDisplay || String(Number(score.toFixed(1))),
       price: output,
       org: model.org || '—',
-      scoreSource: aa.source,
-      scoreMetric: aa.metric,
+      scoreSource: record.source,
+      scoreMetric: record.metric,
+      scoreKey: sourceKey,
     });
   });
   return points;
+}
+
+export function collectCapabilityCostPoints(models, index) {
+  return collectCapabilityCostPointsForSource(models, index, 'aa');
 }
 
 /**

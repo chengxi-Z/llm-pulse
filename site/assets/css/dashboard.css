@@ -245,3 +245,8 @@
 .dash-scatter-point.is-representative{fill:var(--highlight);stroke:var(--gold-deep);stroke-width:2.4;filter:drop-shadow(0 0 3px rgb(var(--rgb-gold)/.5))}
 .dash-scatter-label.is-representative-label{fill:var(--highlight);font-weight:600;font-size:13px}
 
+/* v1.5.8: capability metric selector for the kill line */
+.dash-scatter-metric{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.72rem;letter-spacing:.02em}
+#dash-scatter-metric{height:34px;max-width:260px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2,var(--surface));color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
+#dash-scatter-metric:focus-visible{outline:var(--focus-ring);outline-offset:2px}
+

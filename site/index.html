@@ -247,6 +247,10 @@
 					<span class="dash-card-head-note" data-i18n="dashboard.scatter.subtitle">能力 × 成本</span>
 				</header>
 				<div class="dash-scatter-tools">
+					<label class="dash-scatter-metric">
+						<span data-i18n="dashboard.scatter.metricLabel">能力指标</span>
+						<select id="dash-scatter-metric" data-i18n-attr="aria-label:dashboard.scatter.metricAria"></select>
+					</label>
 					<div class="dash-scatter-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="dash-scatter-suggest">
 						<input id="dash-scatter-search" type="search" autocomplete="off" spellcheck="false" placeholder="搜索模型，定位它在斩杀线中的位置" data-i18n-attr="placeholder:dashboard.scatter.searchPlaceholder,aria-label:dashboard.scatter.searchAria" aria-label="搜索模型" aria-autocomplete="list" aria-controls="dash-scatter-suggest" aria-expanded="false" />
 						<button type="button" class="dash-scatter-search-clear" id="dash-scatter-search-clear" hidden data-i18n-attr="aria-label:dashboard.scatter.searchClear" aria-label="清空搜索">×</button>
