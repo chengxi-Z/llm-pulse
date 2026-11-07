@@ -176,11 +176,11 @@
 /* v1.4: keep the hot-topics card aligned with the chart carousel on desktop;
    long list scrolls inside the card instead of stretching the whole row. */
 @media (min-width: 1025px) {
-  .dash-grid--carousel .dash-card--topics { max-height: 450px; }
+  .dash-grid--carousel .dash-card--topics { max-height: none; }
 }
 
 /* v1.5.2: kill line is the only chart (carousel removed) */
-.dash-card--killline{min-height:0}
+.dash-card--killline{min-height:0;height:auto;align-self:start}
 .dash-card--killline .dash-card-body{display:flex;flex-direction:column;padding-top:6px}
 .dash-card--killline .dash-scatter{display:flex;flex-direction:column;height:100%}
 .dash-card--killline .dash-scatter-svg{flex:0 0 auto;min-height:0;height:auto}
@@ -250,3 +250,10 @@
 #dash-scatter-metric{height:34px;max-width:260px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2,var(--surface));color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
 #dash-scatter-metric:focus-visible{outline:var(--focus-ring);outline-offset:2px}
 
+/* v1.5.9: make the two dashboard cards share one bottom edge */
+.dash-grid--carousel .dash-card--topics{height:100%;min-height:0}
+.dash-grid--carousel .dash-card--topics .dash-card-body{overflow-y:auto;scrollbar-width:thin}
+@media (max-width:1024px){
+  .dash-card--killline{height:auto}
+  .dash-grid--carousel .dash-card--topics{height:auto}
+}

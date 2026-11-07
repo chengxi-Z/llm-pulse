@@ -15,6 +15,7 @@ let dataset = null;
 let scatterPoints = [];
 let scatterSearchBound = false;
 let scatterMetricBound = false;
+let dashboardAlignBound = false;
 let scatterMetricKey = 'aa';
 const SCATTER_SOURCES = [
   { key: 'aa', boardId: 'artificial-analysis-intelligence', labelKey: 'dashboard.scatter.metricAA' },
@@ -1167,6 +1168,23 @@ function setupAnimation(metrics) {
   );
   observer.observe(section);
 }
+function alignDashboardCards() {
+  const left = $('#dash-killline-card');
+  const right = $('#dash-topics-card');
+  if (!left || !right) return;
+  if (window.innerWidth < 1025) {
+    right.style.height = '';
+    return;
+  }
+  right.style.height = 'auto';
+  const height = Math.round(left.getBoundingClientRect().height);
+  if (height > 0) right.style.height = height + 'px';
+}
+function bindDashboardAlign() {
+  if (dashboardAlignBound) return;
+  dashboardAlignBound = true;
+  window.addEventListener('resize', () => window.requestAnimationFrame(alignDashboardCards));
+}
 function renderAll(metrics) {
   renderUpdated(metrics);
   renderKpis(metrics);
@@ -1174,6 +1192,7 @@ function renderAll(metrics) {
   renderPricePie(metrics);
   renderScatter(metrics);
   renderTopics(metrics);
+  window.requestAnimationFrame(alignDashboardCards);
 }
 function renderScatterMetricSelect(metrics) {
   const select = $('#dash-scatter-metric');
@@ -1200,6 +1219,7 @@ function initScatterMetric(metrics) {
     const next = computeMetrics(dataset || {});
     renderScatter(next);
     lastMetrics = next;
+    window.requestAnimationFrame(alignDashboardCards);
     const status = $('#dash-scatter-search-status');
     if (status) status.textContent = '';
     const input = $('#dash-scatter-search');
@@ -1215,6 +1235,8 @@ export function initDashboard(data) {
   initScatterSearch(metrics);
   initScatterMetric(metrics);
   initCarousel();
+  bindDashboardAlign();
+  window.requestAnimationFrame(alignDashboardCards);
   bindTooltip();
   setupAnimation(metrics);
 }
