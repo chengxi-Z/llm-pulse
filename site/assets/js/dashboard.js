@@ -7,7 +7,7 @@ const PRICE_TIERS = ['free', 'low', 'mid', 'high', 'premium'];
 const CAROUSEL_INTERVAL = 6500;
 const MANUAL_PAUSE_MS = 12000;
 const SCATTER_W = 900;
-const SCATTER_H = 320;
+const SCATTER_H = 280;
 const X_LOG_MIN = 0.01;
 const Y_MAX = 100;
 let carouselState = null;
@@ -233,7 +233,7 @@ function renderReleases(metrics) {
       return `<text class="dash-axis-label${index % 2 ? ' dash-axis-label--alt' : ''}" x="${x.toFixed(1)}" y="${height - 12}" text-anchor="middle">${intlShortDate(point.date)}</text>`;
     })
     .join('');
-  container.innerHTML = `<svg class="dash-barchart${reduce ? ' is-reduced' : ''}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${esc(t('dashboard.releases.aria'))}">
+  container.innerHTML = `<svg class="dash-barchart${reduce ? ' is-reduced' : ''}" viewBox="0 0 ${width} ${height}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${esc(t('dashboard.releases.aria'))}">
     <g class="dash-grid-lines">${grid}</g>
     <g class="dash-axis-y">${yLabels}</g>
     <line class="dash-mean-line" x1="${pad.left}" y1="${meanY.toFixed(1)}" x2="${width - pad.right}" y2="${meanY.toFixed(1)}" />
@@ -354,23 +354,37 @@ function shortModelName(model) {
   return name.length > 22 ? name.slice(0, 21) + '\u2026' : name;
 }
 function representativePoints(points, metrics) {
-  const picked = [];
-  const seen = new Set();
-  const add = (point) => {
-    if (!point) return;
-    const key = String((point.model && (point.model.id || point.model.name)) || '');
-    if (!key || seen.has(key)) return;
-    seen.add(key);
-    picked.push(point);
+  const scoreMedian = metrics.scoreMedian;
+  const priceMedian = metrics.priceMedian;
+  const groups = {
+    survival: [],
+    highCost: [],
+    lowCapability: [],
+    kill: [],
   };
-  const byScore = points.slice().sort((a, b) => b.score - a.score);
-  byScore.slice(0, 3).forEach(add);
-  const survival = points
-    .filter((point) => point.score >= metrics.scoreMedian && point.price <= metrics.priceMedian)
-    .sort((a, b) => b.score - a.score);
-  survival.slice(0, 3).forEach(add);
-  add(points.slice().sort((a, b) => a.price - b.price)[0]);
-  return picked.slice(0, 6);
+  points.forEach((point) => {
+    const highCapability = point.score >= scoreMedian;
+    const lowCost = point.price <= priceMedian;
+    if (highCapability && lowCost) groups.survival.push(point);
+    else if (highCapability) groups.highCost.push(point);
+    else if (lowCost) groups.lowCapability.push(point);
+    else groups.kill.push(point);
+  });
+  const picked = [];
+  const seenNames = new Set();
+  ['survival', 'highCost', 'lowCapability', 'kill'].forEach((key) => {
+    const group = groups[key].slice().sort((a, b) => b.score - a.score);
+    let count = 0;
+    for (const point of group) {
+      const name = shortModelName(point.model);
+      if (!name || seenNames.has(name)) continue;
+      seenNames.add(name);
+      picked.push({ point, name });
+      count += 1;
+      if (count >= 2) break;
+    }
+  });
+  return picked;
 }
 function renderScatter(metrics) {
   const container = $('#dash-scatter');
@@ -482,22 +496,44 @@ function renderScatter(metrics) {
     })
     .join('');
   const representative = representativePoints(points, metrics);
+  const labelBoxes = [];
   const labelHtml = representative
-    .map((point, index) => {
+    .map(({ point, name }) => {
       const x = xFor(point.price);
       const y = yFor(point.score);
       const anchor = x > SCATTER_W - 180 ? 'end' : 'start';
-      const dx = anchor === 'end' ? -9 : 9;
-      const dy = index % 2 === 0 ? -7 : 16;
+      const dx = anchor === 'end' ? -10 : 10;
+      const approxWidth = name.length * 7.2 + 10;
+      const x0 = anchor === 'end' ? x + dx - approxWidth : x + dx;
+      const x1 = x0 + approxWidth;
+      let ty = null;
+      for (const offset of [-10, 16, -28, 34, -46, 52, -64]) {
+        const candidate = y + offset;
+        if (candidate < pad.top + 14 || candidate > SCATTER_H - pad.bottom - 6) continue;
+        const box = { x0, x1, y0: candidate - 12, y1: candidate + 2 };
+        const overlap = labelBoxes.some(
+          (placed) =>
+            !(box.x1 < placed.x0 - 4 || box.x0 > placed.x1 + 4 || box.y1 < placed.y0 - 2 || box.y0 > placed.y1 + 2)
+        );
+        if (!overlap) {
+          ty = candidate;
+          labelBoxes.push(box);
+          break;
+        }
+      }
+      if (ty == null) {
+        ty = Math.min(SCATTER_H - pad.bottom - 6, Math.max(pad.top + 14, y + 16));
+        labelBoxes.push({ x0, x1, y0: ty - 12, y1: ty + 2 });
+      }
       return (
         '<text class="dash-scatter-label" x="' +
         (x + dx).toFixed(1) +
         '" y="' +
-        (y + dy).toFixed(1) +
+        ty.toFixed(1) +
         '" text-anchor="' +
         anchor +
         '">' +
-        esc(shortModelName(point.model)) +
+        esc(name) +
         '</text>'
       );
     })
@@ -507,7 +543,7 @@ function renderScatter(metrics) {
     SCATTER_W +
     ' ' +
     SCATTER_H +
-    '" preserveAspectRatio="none" role="img" aria-label="' +
+    '" preserveAspectRatio="xMidYMid meet" role="img" aria-label="' +
     esc(t('dashboard.scatter.aria')) +
     '">' +
     '<g class="dash-quadrants">' +
