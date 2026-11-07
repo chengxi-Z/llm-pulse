@@ -25,7 +25,7 @@
 - **学习资源（Learn）**：中英双语课程、教程、论文、Awesome 列表，按难度与类型筛选；
 - **项目（Build）**：个人 AI 项目 + 社区精选开源项目（实时 GitHub stars）；
 - **我的技能（My Skills）**：Agent Skills / Playbooks 库——我的技能 + 官方/社区精选，提供使用引导（安装命令/触发示例/自检）、分享卡与 GitHub 提交入口（Issue 表单 / JSON 模板 / PR）；
-- **概览仪表盘（Overview）**：6 KPI 数字墙（count-up）+ **单图 AI 模型斩杀线**（能力×成本散点：AA 智能指数 × 输出价格 log 轴，能力/成本双 P50 斩杀线，象限说明放在图外；代表性大模型在点上直接标注名称，悬停/聚焦看详情）；另配独立 **AI 热搜话题** 卡片——**真实 Hacker News 近 7 天 AI 讨论 Top10**（标题 + 讨论摘要 + points/comments + 来源域 + 外链）。
+- **概览仪表盘（Overview）**：6 KPI 数字墙（count-up；含「近 4 周 Token 处理量」，悬停/聚焦显示近 12 周趋势折线）+ **单图 AI 模型斩杀线**（能力×成本散点：AA 智能指数 × 输出价格 log 轴，能力/成本双 P50 斩杀线，象限说明放在图外；代表性大模型在点上直接标注名称，悬停/聚焦看详情）；另配独立 **AI 热搜话题** 卡片——**真实 Hacker News 近 7 天 AI 讨论 Top10**（标题 + 讨论摘要 + points/comments + 来源域 + 外链）。
 - **AI 助手**：内置对话助手，支持 DeepSeek / OpenRouter / 任意 OpenAI 兼容 endpoint（BYOK，密钥**只存在浏览器 localStorage、不上传本站、不写日志**；仅接受 https 端点，本机 Ollama 等回环地址可用 http）；无 key 时自动降级为离线检索问答；
 - **分发（Distribution）**：分享卡内置 logo + 站点/GitHub 地址 + 二维码，榜单可一键生成专属分享图；RSS / JSON Feed、社交文案模板与渠道 playbook。
 

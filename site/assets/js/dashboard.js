@@ -21,6 +21,8 @@ function compactNumber(value) {
   const num = Number(value);
   if (!Number.isFinite(num) || num <= 0) return '—';
   const trim = (input) => String(Number(input));
+  if (num >= 1e15) return `${trim((num / 1e15).toPrecision(4))}Q`;
+  if (num >= 1e12) return `${trim((num / 1e12).toPrecision(4))}T`;
   if (num >= 1e9) return `${trim((num / 1e9).toPrecision(4))}B`;
   if (num >= 1e6) return `${trim((num / 1e6).toPrecision(4))}M`;
   if (num >= 1e3) return `${trim((num / 1e3).toPrecision(4))}K`;
@@ -60,7 +62,7 @@ function prefersReducedMotion() {
 const tierLabel = (tier) => t(`dashboard.price.${tier}`);
 function formatKpiNumber(kpi, value) {
   if (kpi.format === 'ratio') return `${intlNumber(Math.round(value))}/${kpi.total}`;
-  if (kpi.format === 'capacity') return compactNumber(value);
+  if (kpi.format === 'capacity' || kpi.format === 'tokens') return compactNumber(value);
   return intlNumber(Math.round(value));
 }
 function easeOutCubic(progress) {
@@ -77,6 +79,9 @@ function computeMetrics(data) {
   const orgCounts = new Map();
   models.forEach((model) => orgCounts.set(model.org || '—', (orgCounts.get(model.org || '—') || 0) + 1));
   const contextTotal = models.reduce((sum, model) => sum + (Number(model.contextWindow) || 0), 0);
+  const usageWeeks = (data.usage && Array.isArray(data.usage.weeks) ? data.usage.weeks : []).slice(-12);
+  const usageMonthly = Number(data.usage && data.usage.monthlyTokens) || usageWeeks.slice(-4).reduce((sum, point) => sum + Number(point.tokens || 0), 0);
+  const usageDays = Number(data.usage && data.usage.monthlyDays) || usageWeeks.slice(-4).length * 7;
   const since7 = addDays(generatedAt, -7);
   const newModels = models.filter((model) => {
     const date = new Date(model.releaseDate || '');
@@ -130,6 +135,9 @@ function computeMetrics(data) {
     modelsCount: models.length,
     orgsCount: new Set(models.map((model) => model.org).filter(Boolean)).size,
     contextTotal,
+    usageWeeks,
+    usageMonthly,
+    usageDays,
     newModels,
     newModelsDays: 7,
     boardsCount: boards.length,
@@ -155,12 +163,37 @@ function computeMetrics(data) {
 function kpiDefinitions(metrics) {
   return [
     { id: 'models', label: t('dashboard.kpi.models'), value: metrics.modelsCount, hint: t('dashboard.kpi.modelsHint', { n: intlNumber(metrics.orgsCount) }) },
-    { id: 'capacity', label: t('dashboard.kpi.capacity'), value: metrics.contextTotal, format: 'capacity', unit: 'tokens', hint: t('dashboard.kpi.capacityHint') },
+    { id: 'usage', label: t('dashboard.kpi.tokens'), value: metrics.usageMonthly, format: 'tokens', unit: 'tokens', hint: t('dashboard.kpi.tokensHint', { days: intlNumber(metrics.usageDays) }) },
     { id: 'newModels', label: t('dashboard.kpi.newModels'), value: metrics.newModels, hint: t('dashboard.kpi.newModelsHint', { n: intlNumber(metrics.newModelsDays) }) },
     { id: 'boards', label: t('dashboard.kpi.boards'), value: metrics.boardsCount, hint: t('dashboard.kpi.boardsHint', { n: intlNumber(metrics.boardSources) }) },
     { id: 'sources', label: t('dashboard.kpi.sources'), value: metrics.sourcesOk, total: metrics.sourcesTotal, format: 'ratio', hint: t('dashboard.kpi.sourcesHint') },
     { id: 'news', label: t('dashboard.kpi.news'), value: metrics.newsCount, hint: t('dashboard.kpi.newsHint', { n: intlNumber(metrics.newsSources) }) },
   ];
+}
+function usageTrendHtml(metrics) {
+  const weeks = metrics.usageWeeks || [];
+  if (weeks.length < 2) return '';
+  const width = 248;
+  const height = 78;
+  const pad = 8;
+  const max = Math.max(...weeks.map((point) => Number(point.tokens) || 0));
+  const min = Math.min(...weeks.map((point) => Number(point.tokens) || 0));
+  const span = max - min || 1;
+  const xFor = (index) => pad + (index / (weeks.length - 1)) * (width - pad * 2);
+  const yFor = (value) => height - pad - ((Number(value) - min) / span) * (height - pad * 2);
+  const points = weeks.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.tokens).toFixed(1)}`);
+  const area = `M${pad},${height - pad} L${points.join(' L')} L${width - pad},${height - pad} Z`;
+  const first = weeks[0];
+  const last = weeks[weeks.length - 1];
+  return `<div class="dash-kpi-trend" role="img" aria-label="${esc(t('dashboard.kpi.trendAria'))}">
+    <p class="dash-kpi-trend-title">${esc(t('dashboard.kpi.trendTitle'))}</p>
+    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="xMidYMid meet" focusable="false" aria-hidden="true">
+      <path class="dash-trend-area" d="${area}" />
+      <polyline class="dash-trend-line" points="${points.join(' ')}" />
+      <circle class="dash-trend-dot" cx="${xFor(weeks.length - 1).toFixed(1)}" cy="${yFor(last.tokens).toFixed(1)}" r="2.6" />
+    </svg>
+    <p class="dash-kpi-trend-note">${esc(t('dashboard.kpi.trendNote', { weeks: intlNumber(weeks.length), start: intlShortDate(first.weekStart), end: intlShortDate(last.weekStart) }))}</p>
+  </div>`;
 }
 function renderKpis(metrics) {
   const container = $('#dash-kpis');
@@ -170,10 +203,11 @@ function renderKpis(metrics) {
     .map((kpi) => {
       const display = metrics.modelsCount ? formatKpiNumber(kpi, animated ? kpi.value : 0) : t('dashboard.kpi.noData');
       const unit = kpi.unit ? `<span class="dash-kpi-unit">${kpi.unit}</span>` : '';
-      return `<div class="dash-kpi" data-kpi="${kpi.id}">
+      return `<div class="dash-kpi" data-kpi="${kpi.id}"${kpi.id === 'usage' ? ' tabindex="0"' : ''}>
         <p class="dash-kpi-label">${kpi.label}</p>
         <p class="dash-kpi-value"><span class="dash-kpi-number" data-countup-value="${kpi.value}" data-countup-format="${kpi.format || 'number'}" data-countup-total="${kpi.total || ''}">${display}</span>${unit}</p>
         <p class="dash-kpi-note" title="${esc(kpi.hint)}">${kpi.hint}</p>
+        ${kpi.id === 'usage' ? usageTrendHtml(metrics) : ''}
       </div>`;
     })
     .join('');

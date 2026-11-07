@@ -204,3 +204,21 @@
   .dash-grid--carousel .dash-card--topics{max-height:none}
 }
 
+/* v1.5.4: token-usage KPI hover trend */
+.dash-kpi{position:relative}
+.dash-kpi[data-kpi="usage"]{cursor:help}
+.dash-kpi[data-kpi="usage"]:focus-visible{outline:var(--focus-ring);outline-offset:2px}
+.dash-kpi-trend{position:absolute;top:calc(100% + 10px);left:0;z-index:30;width:min(282px,calc(100vw - 40px));padding:10px 12px 8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 160ms var(--ease),transform 160ms var(--ease),visibility 160ms;pointer-events:none}
+.dash-kpis .dash-kpi:last-child .dash-kpi-trend{left:auto;right:0}
+.dash-kpi[data-kpi="usage"]:hover .dash-kpi-trend,
+.dash-kpi[data-kpi="usage"]:focus-within .dash-kpi-trend{opacity:1;visibility:visible;transform:none}
+.dash-kpi-trend-title{margin:0 0 2px;font-size:.72rem;font-weight:600;color:var(--ink);letter-spacing:.02em}
+.dash-kpi-trend svg{display:block;width:100%;height:auto;margin:2px 0 4px;overflow:visible}
+.dash-trend-area{fill:rgb(var(--rgb-highlight)/.1)}
+.dash-trend-line{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.dash-trend-dot{fill:var(--highlight);stroke:var(--surface);stroke-width:1.2}
+.dash-kpi-trend-note{margin:0;color:var(--muted);font-size:.64rem;line-height:1.5}
+@media (max-width:640px){
+  .dash-kpi-trend{left:0;right:auto;width:min(260px,calc(100vw - 32px))}
+}
+

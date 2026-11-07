@@ -2,7 +2,7 @@
 
 const DATA_BASE = new URL('./data/', document.baseURI).href;
 const FETCH_TIMEOUT = 8000;
-const FILES = ['meta', 'models', 'news', 'rankings', 'resources', 'projects', 'skills', 'topics'];
+const FILES = ['meta', 'models', 'news', 'rankings', 'resources', 'projects', 'skills', 'topics', 'usage'];
 const cache = new Map();
 
 /* ---------- Loading ---------- */
@@ -45,6 +45,8 @@ function normalize(name, data) {
       return { ...data, items: asArray(data.items) };
     case 'topics':
       return { ...data, items: asArray(data.items) };
+    case 'usage':
+      return { ...data, weeks: asArray(data.weeks) };
     default:
       return data;
   }
@@ -312,6 +314,20 @@ export const STATUS_LABELS = {
 /* ---------- Built-in sample data (fallback when data/*.json is unavailable) ---------- */
 
 const FALLBACK = {
+  usage: {
+    schemaVersion: 1,
+    generatedAt: '2026-11-03T12:00:00.000Z',
+    source: 'openrouter-rankings',
+    sourceLabel: 'OpenRouter token volume',
+    granularity: 'week',
+    weeks: Array.from({ length: 12 }, (_, index) => ({
+      weekStart: new Date(Date.UTC(2026, 7, 17 + index * 7)).toISOString().slice(0, 10),
+      tokens: 8e13 + index * 1.2e13,
+    })),
+    monthlyTokens: 3.6e14,
+    monthlyDays: 28,
+    note: 'fallback sample',
+  },
   meta: {
     schemaVersion: 1,
     generatedAt: '2026-11-03T12:00:00.000Z',

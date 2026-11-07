@@ -17,13 +17,14 @@ import {
   normalizeOpenRouterModels, buildNewsFromModels, buildDerivedRankings,
   normalizeLiveBench, parseAaInitialData, normalizeAaRankings, parseAaLeaderboardModels, normalizeAaLeaderboard,
   normalizeLmarenaRows, normalizeRssNews, normalizeOpenCompassArena,
-  normalizeEpochEci, normalizeEpochBenchmark, unzip, normalizeGithubProjects, parseRssItems,
+  normalizeEpochEci, normalizeEpochBenchmark, normalizeOpenRouterUsage, unzip, normalizeGithubProjects, parseRssItems,
   normalizeDeepseekUpdates, normalizeGithubReleases,
   normalizeHnTopics, extractHnDiscussionSummary, HN_TOPIC_LIMIT,
 } from '../normalize.mjs';
 import { RESOURCES, PROJECTS } from './curated.mjs';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/models';
+const OPENROUTER_USAGE_URL = 'https://openrouter.ai/api/frontend/v1/rankings/model-rankings-chart';
 const LIVEBENCH_BASE = 'https://livebench.ai';
 const LIVEBENCH_FALLBACK_RELEASES = ['20261025', '20261014'];
 const AA_URL = 'https://artificialanalysis.ai/';
@@ -51,6 +52,17 @@ async function collectOpenRouter(ctx) {
     items: models.length,
     note: `${models.length} 个模型 / ${orgs} 家厂商；派生动态 ${news.length} 条、派生榜 ${boards.length} 个`,
     contributions: { models, news, boards },
+  };
+}
+
+async function collectOpenRouterUsage(ctx) {
+  const res = await ctx.get(OPENROUTER_USAGE_URL, { key: 'openrouter-usage', ext: 'json', timeoutMs: 30000, retries: 2 });
+  const usage = normalizeOpenRouterUsage(JSON.parse(res.text), { now: ctx.now });
+  if (!usage.weeks.length) throw new Error('OpenRouter usage chart returned no weekly points');
+  return {
+    items: usage.weeks.length,
+    note: `OpenRouter token volume: ${usage.weeks.length} weeks, last ${usage.monthlyDays} days = ${usage.monthlyTokens}`,
+    contributions: { usage },
   };
 }
 
@@ -424,6 +436,10 @@ export const SOURCES = [
   {
     id: 'openrouter', name: 'OpenRouter Models API', url: OPENROUTER_URL, type: 'api',
     enabledLocal: true, enabledCi: true, collect: collectOpenRouter,
+  },
+  {
+    id: 'openrouter-usage', name: 'OpenRouter Token Volume', url: OPENROUTER_USAGE_URL, type: 'dataset',
+    enabledLocal: true, enabledCi: true, collect: collectOpenRouterUsage,
   },
   {
     id: 'livebench', name: 'LiveBench 2.0', url: `${LIVEBENCH_BASE}/`, type: 'dataset',

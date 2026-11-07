@@ -22,7 +22,7 @@ const warnings = [];
 const err = (m) => errors.push(m);
 const warn = (m) => warnings.push(m);
 
-const files = ["meta", "models", "news", "rankings", "resources", "projects", "skills", "topics"];
+const files = ["meta", "models", "news", "rankings", "resources", "projects", "skills", "topics", "usage"];
 const data = {};
 
 function readJson(name) {
@@ -235,6 +235,24 @@ if (skills) {
       if (typeof s.featured !== "boolean") err(`${tag} featured 应为布尔`);
       if (ids.has(s.id)) err(`${tag} id 重复`); else ids.add(s.id);
     });
+  }
+}
+
+// ---------- usage (OpenRouter token volume) ----------
+const usage = data.usage;
+if (usage) {
+  if (!Array.isArray(usage.weeks)) err(`[usage] weeks 应为数组`);
+  else {
+    if (usage.granularity !== "week") warn(`[usage] granularity=${usage.granularity}（预期 week）`);
+    if (!(Number(usage.monthlyTokens) >= 0)) err(`[usage] monthlyTokens 非法`);
+    const weeks = usage.weeks;
+    weeks.forEach((w, i) => {
+      if (!w || typeof w.weekStart !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(w.weekStart)) err(`[usage[${i}]] weekStart 非法`);
+      if (!(Number(w.tokens) >= 0)) err(`[usage[${i}]] tokens 非法`);
+    });
+    for (let i = 1; i < weeks.length; i += 1) {
+      if (weeks[i].weekStart <= weeks[i - 1].weekStart) err(`[usage] weeks 未按时间升序`);
+    }
   }
 }
 

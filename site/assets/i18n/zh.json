@@ -196,8 +196,6 @@
   "dashboard.killLine2.tooltip": "{model} · 能力 {score} · 输出 {price}/1M",
   "dashboard.kpi.boards": "公开榜单",
   "dashboard.kpi.boardsHint": "含真实来源 {n} 个",
-  "dashboard.kpi.capacity": "累计上下文容量",
-  "dashboard.kpi.capacityHint": "所有模型窗口之和",
   "dashboard.kpi.models": "收录模型",
   "dashboard.kpi.modelsHint": "覆盖 {n} 家厂商",
   "dashboard.kpi.newModels": "近 7 天新增模型",
@@ -875,5 +873,10 @@
   "rankings.gaps.refScore": "ECI {score} · 第 {rank} 名",
   "rankings.gaps.go": "查看 ECI 榜",
   "rankings.gaps.note": "未收录不代表能力低；Epoch 完成复评后会进入本榜。",
-  "ui.pageOverview": "概览"
+  "ui.pageOverview": "概览",
+  "dashboard.kpi.tokens": "近 4 周 Token 处理量",
+  "dashboard.kpi.tokensHint": "OpenRouter 全站 · 近 {days} 天（公开数据为周粒度）",
+  "dashboard.kpi.trendTitle": "近 12 周 Token 处理量（OpenRouter）",
+  "dashboard.kpi.trendNote": "近 {weeks} 周：{start} → {end}；公开数据为周粒度",
+  "dashboard.kpi.trendAria": "近 12 周 Token 处理量趋势折线图"
 }

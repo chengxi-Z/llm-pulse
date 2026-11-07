@@ -57,7 +57,7 @@ await mkdir(snapshotDir, { recursive: true });
 const ctx = createFetchContext({ mode, now, fromSnapshot, snapshotDir, log: (m) => log(`  ${m}`) });
 
 const sourceMeta = new Map();
-const contributions = { models: null, news: [], boards: [], projects: null, topics: [] };
+const contributions = { models: null, news: [], boards: [], projects: null, topics: [], usage: null };
 const results = [];
 
 async function runSource(source) {
@@ -135,6 +135,7 @@ for (const r of results) {
   if (Array.isArray(r.contributions.boards)) contributions.boards.push(...r.contributions.boards);
   if (Array.isArray(r.contributions.projects)) contributions.projects = r.contributions.projects;
   if (Array.isArray(r.contributions.topics)) contributions.topics.push(...r.contributions.topics);
+  if (r.contributions.usage) contributions.usage = r.contributions.usage;
 }
 // Hot topics: keep the last known good topics.json when the HN source is unavailable.
 // Reusing previous real data is an explicit fallback; nothing is synthesized.

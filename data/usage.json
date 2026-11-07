@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-07T02:52:53.607Z",
+  "source": "openrouter-rankings",
+  "sourceLabel": "OpenRouter token volume",
+  "granularity": "week",
+  "weeks": [
+    {
+      "weekStart": "2026-08-17",
+      "tokens": 93377577206324
+    },
+    {
+      "weekStart": "2026-08-24",
+      "tokens": 112996824136069
+    },
+    {
+      "weekStart": "2026-08-31",
+      "tokens": 115463303706156
+    },
+    {
+      "weekStart": "2026-09-07",
+      "tokens": 126763022044183
+    },
+    {
+      "weekStart": "2026-09-14",
+      "tokens": 128895269979077
+    },
+    {
+      "weekStart": "2026-09-21",
+      "tokens": 145845105335054
+    },
+    {
+      "weekStart": "2026-09-28",
+      "tokens": 165856049857563
+    },
+    {
+      "weekStart": "2026-10-05",
+      "tokens": 171842501724714
+    },
+    {
+      "weekStart": "2026-10-12",
+      "tokens": 164043985914931
+    },
+    {
+      "weekStart": "2026-10-19",
+      "tokens": 188039304051712
+    },
+    {
+      "weekStart": "2026-10-26",
+      "tokens": 193593270018919
+    },
+    {
+      "weekStart": "2026-11-02",
+      "tokens": 160307374296538
+    }
+  ],
+  "monthlyTokens": 705983934282100,
+  "monthlyDays": 28,
+  "note": "OpenRouter public rankings chart: weekly tokens processed across its API."
+}

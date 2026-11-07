@@ -259,6 +259,28 @@
 
 ---
 
+## 6.3 `data/usage.json` — Token 处理量（v1.5 新增）
+
+```jsonc
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-07T00:00:00.000Z",
+  "source": "openrouter-rankings",
+  "sourceLabel": "OpenRouter token volume",
+  "granularity": "week",
+  "weeks": [
+    { "weekStart": "2026-08-17", "tokens": 93377577206324 }
+  ],
+  "monthlyTokens": 705983934282100,
+  "monthlyDays": 28,
+  "note": "OpenRouter public rankings chart: weekly tokens processed across its API."
+}
+```
+
+规则：`weeks` 按 `weekStart` 升序、最多 12 周；`tokens` 为该周 OpenRouter 全站处理 token 数（prompt+completion 等所有 series 求和）；`monthlyTokens` = 最近 4 个整周之和，`monthlyDays` 对应天数。数据来自 OpenRouter 公开 API（`/api/frontend/v1/rankings/model-rankings-chart`），**公开粒度是周，不是日**；首页 KPI 使用 `monthlyTokens`，悬停趋势图使用 `weeks`。
+
+---
+
 ## 7. 前端契约（DOM / 文件挂钩）
 - 所有页面共享 `<header>` 导航；导航项：首页/动态/排行/模型库/学习资源/项目/关于；右下角 `#assistant-root` 由 `assistant.js` 挂载。
 - 每页 `<body data-page="index|news|rankings|models|resources|projects|about">`。

@@ -1002,6 +1002,37 @@ export function normalizeHnTopics(searchPayload, { now, limit = HN_TOPIC_LIMIT, 
 }
 
 /**
+ * OpenRouter public token-volume chart -> weekly usage series.
+ * Endpoint: GET https://openrouter.ai/api/frontend/v1/rankings/model-rankings-chart
+ * Payload: { data: { data: [{ x: "YYYY-MM-DD", ys: { model: tokens, ... } }] } }
+ */
+export function normalizeOpenRouterUsage(payload, { now } = {}) {
+  const points = payload && payload.data && Array.isArray(payload.data.data) ? payload.data.data : [];
+  const weeks = points
+    .filter((point) => point && typeof point.x === 'string' && point.ys && typeof point.ys === 'object')
+    .map((point) => ({
+      weekStart: point.x,
+      tokens: Object.values(point.ys).reduce((sum, value) => sum + (Number(value) || 0), 0),
+    }))
+    .filter((point) => point.tokens > 0)
+    .sort((a, b) => (a.weekStart < b.weekStart ? -1 : a.weekStart > b.weekStart ? 1 : 0))
+    .slice(-12);
+  const last4 = weeks.slice(-4);
+  const monthlyTokens = last4.reduce((sum, point) => sum + point.tokens, 0);
+  return {
+    schemaVersion: 1,
+    generatedAt: toIsoDateTime(now) || new Date().toISOString(),
+    source: 'openrouter-rankings',
+    sourceLabel: 'OpenRouter token volume',
+    granularity: 'week',
+    weeks,
+    monthlyTokens,
+    monthlyDays: last4.length * 7,
+    note: 'OpenRouter public rankings chart: weekly tokens processed across its API.',
+  };
+}
+
+/**
  * Assembly: merge source contributions into the contract file objects.
  * sources: [{id,name,url,type,status,lastFetchedAt,items,note}]
  */
@@ -1047,6 +1078,7 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
       url: fixUrl(t.url, `topics.${t.id}.url`, t.hnUrl),
       hnUrl: fixUrl(t.hnUrl, `topics.${t.id}.hnUrl`),
     }));
+  const usage = collections.usage && Array.isArray(collections.usage.weeks) ? collections.usage : null;
   const orgs = new Set(models.map((m) => m.org).filter(Boolean)).size;
   const statusOk = sources.filter((s) => s.status === 'ok').length;
   const stats = {
@@ -1056,6 +1088,7 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
     resources: resources.length,
     projects: projects.length,
     topics: topics.length,
+    usageWeeks: usage ? usage.weeks.length : 0,
     orgs,
     sourcesOk: statusOk,
     sourcesDegraded: sources.length - statusOk,
@@ -1080,8 +1113,11 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
   const resourcesFile = { schemaVersion: 1, generatedAt: gen, source: 'curated', items: resources };
   const projectsFile = { schemaVersion: 1, generatedAt: gen, source: 'curated+github', items: projects };
   const topicsFile = { schemaVersion: 1, generatedAt: gen, source: 'hn-ai', count: topics.length, items: topics };
+  const usageFile = usage
+    ? { ...usage, generatedAt: gen }
+    : { schemaVersion: 1, generatedAt: gen, source: 'openrouter-rankings', sourceLabel: 'OpenRouter token volume', granularity: 'week', weeks: [], monthlyTokens: 0, monthlyDays: 0, note: 'unavailable' };
   return {
-    files: { meta, models: modelsFile, news: newsFile, rankings: rankingsFile, resources: resourcesFile, projects: projectsFile, topics: topicsFile },
+    files: { meta, models: modelsFile, news: newsFile, rankings: rankingsFile, resources: resourcesFile, projects: projectsFile, topics: topicsFile, usage: usageFile },
     stats,
     linkWarnings: warnings,
   };
