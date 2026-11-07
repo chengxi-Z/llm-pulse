@@ -6,6 +6,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
+import { CURATED } from "../scripts/fetch/sources.mjs";
+import { normalizeResources, normalizeGithubProjects } from "../scripts/normalize.mjs";
+
 const ROOT = new URL("../", import.meta.url);
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, ROOT), "utf8"));
 const CJK = /[\u3400-\u9fff]/;
@@ -34,4 +37,12 @@ test("generated English news fields contain no Chinese characters", () => {
   const news = readJson("data/news.json").items;
   const bad = news.filter((item) => [item.titleEn, item.summaryEn].some((value) => typeof value === "string" && CJK.test(value)));
   assert.deepEqual(bad.map((item) => item.id), []);
+});
+
+
+test("pipeline preserves curated English fields", () => {
+  const resources = normalizeResources(CURATED.resources, { now: new Date("2026-11-07T00:00:00Z") });
+  const projects = normalizeGithubProjects(CURATED.projects, {}, { now: new Date("2026-11-07T00:00:00Z") });
+  assert.deepEqual(resources.filter((item) => !item.descriptionEn).map((item) => item.id), []);
+  assert.deepEqual(projects.filter((item) => !item.summaryEn).map((item) => item.id), []);
 });
