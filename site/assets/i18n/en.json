@@ -878,5 +878,10 @@
   "dashboard.kpi.tokensHint": "OpenRouter-wide · last {days} days (weekly granularity)",
   "dashboard.kpi.trendTitle": "Weekly token volume, last 12 weeks (OpenRouter)",
   "dashboard.kpi.trendNote": "Last {weeks} weeks: {start} → {end}; public data is weekly",
-  "dashboard.kpi.trendAria": "Line chart: weekly token volume over the last 12 weeks"
+  "dashboard.kpi.trendAria": "Line chart: weekly token volume over the last 12 weeks",
+  "dashboard.scatter.searchPlaceholder": "Search a model to find its position on the kill line",
+  "dashboard.scatter.searchAria": "Search models",
+  "dashboard.scatter.searchClear": "Clear search",
+  "dashboard.scatter.searchEmpty": "No matching plotted model",
+  "dashboard.scatter.searchStatus": "{model} · {quadrant} · score {score} · {price}"
 }

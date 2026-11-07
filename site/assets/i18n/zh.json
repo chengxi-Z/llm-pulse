@@ -878,5 +878,10 @@
   "dashboard.kpi.tokensHint": "OpenRouter 全站 · 近 {days} 天（公开数据为周粒度）",
   "dashboard.kpi.trendTitle": "近 12 周 Token 处理量（OpenRouter）",
   "dashboard.kpi.trendNote": "近 {weeks} 周：{start} → {end}；公开数据为周粒度",
-  "dashboard.kpi.trendAria": "近 12 周 Token 处理量趋势折线图"
+  "dashboard.kpi.trendAria": "近 12 周 Token 处理量趋势折线图",
+  "dashboard.scatter.searchPlaceholder": "搜索模型，定位它在斩杀线中的位置",
+  "dashboard.scatter.searchAria": "搜索模型",
+  "dashboard.scatter.searchClear": "清空搜索",
+  "dashboard.scatter.searchEmpty": "没有匹配的已绘制模型",
+  "dashboard.scatter.searchStatus": "{model} · {quadrant} · 能力 {score} · {price}"
 }

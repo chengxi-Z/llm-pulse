@@ -12,6 +12,8 @@ const X_LOG_MIN = 0.01;
 const Y_MAX = 100;
 let carouselState = null;
 let dataset = null;
+let scatterPoints = [];
+let scatterSearchBound = false;
 let animated = false;
 let tooltipBound = false;
 let pieBound = false;
@@ -409,9 +411,14 @@ function representativePoints(points, metrics, xFor, yFor) {
   ['survival', 'highCost', 'lowCapability', 'kill'].forEach((key) => {
     const group = groups[key];
     if (!group.length) return;
+    const pool =
+      key === 'survival'
+        ? group.filter((point) => /deepseek/i.test(`${point.model.name || ''} ${point.model.org || ''}`)) || []
+        : [];
+    const candidates = pool.length ? pool : group;
     const cx = group.reduce((sum, point) => sum + xFor(point.price), 0) / group.length;
     const cy = group.reduce((sum, point) => sum + yFor(point.score), 0) / group.length;
-    const ranked = group.slice().sort(
+    const ranked = candidates.slice().sort(
       (a, b) => Math.hypot(xFor(a.price) - cx, yFor(a.score) - cy) - Math.hypot(xFor(b.price) - cx, yFor(b.score) - cy)
     );
     for (const point of ranked) {
@@ -424,10 +431,181 @@ function representativePoints(points, metrics, xFor, yFor) {
   });
   return picked;
 }
+const SEARCH_QUADRANT_KEYS = {
+  survival: 'dashboard.scatter.quadSurvival',
+  highCost: 'dashboard.scatter.quadHighCost',
+  lowCapability: 'dashboard.scatter.quadLowAbility',
+  kill: 'dashboard.scatter.quadKilled',
+};
+function normalizeSearch(value) {
+  return String(value == null ? '' : value)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^\p{L}\p{N}]+/gu, '');
+}
+function scatterQuadrant(point, metrics) {
+  const highCapability = point.score >= metrics.scoreMedian;
+  const lowCost = point.price <= metrics.priceMedian;
+  if (highCapability && lowCost) return 'survival';
+  if (highCapability) return 'highCost';
+  if (lowCost) return 'lowCapability';
+  return 'kill';
+}
+function scatterSearchMatches(query) {
+  const needle = normalizeSearch(query);
+  if (!needle) return [];
+  const scored = [];
+  scatterPoints.forEach((point) => {
+    const name = shortModelName(point.model);
+    const haystack = normalizeSearch(`${name} ${point.model.name || ''} ${point.model.id || ''} ${point.model.org || ''}`);
+    const index = haystack.indexOf(needle);
+    if (index < 0) return;
+    scored.push({ point, name, start: index, nameStarts: normalizeSearch(name).startsWith(needle), index: scatterPoints.indexOf(point) });
+  });
+  scored.sort((a, b) => (b.nameStarts - a.nameStarts) || (b.point.score - a.point.score) || (a.start - b.start) || a.name.length - b.name.length);
+  return scored.slice(0, 8);
+}
+function closeScatterSuggest() {
+  const list = $('#dash-scatter-suggest');
+  const wrap = $('.dash-scatter-search');
+  const input = $('#dash-scatter-search');
+  if (!list) return;
+  list.hidden = true;
+  list.innerHTML = '';
+  if (wrap) wrap.setAttribute('aria-expanded', 'false');
+  if (input) input.setAttribute('aria-expanded', 'false');
+}
+function selectScatterPoint(match) {
+  const input = $('#dash-scatter-search');
+  const clear = $('#dash-scatter-search-clear');
+  const status = $('#dash-scatter-search-status');
+  if (!input || !match) return;
+  $$('.dash-scatter-point.is-search-hit', $('#dash-scatter') || document).forEach((node) => {
+    node.classList.remove('is-search-hit');
+  });
+  input.value = match.name;
+  if (clear) clear.hidden = false;
+  const circle = $(`[data-point-index="${match.index}"]`);
+  const target = circle;
+  if (target) {
+    target.classList.add('is-search-hit');
+    const card = $('#dash-killline-card');
+    if (card && card.scrollIntoView) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  const quadrant = scatterQuadrant(match.point, lastMetrics);
+  if (status) {
+    status.textContent = t('dashboard.scatter.searchStatus', {
+      model: match.name,
+      quadrant: t(SEARCH_QUADRANT_KEYS[quadrant] || 'dashboard.scatter.quadKilled'),
+      score: match.point.scoreDisplay,
+      price: '$' + formatPrice(match.point.price),
+    });
+  }
+  closeScatterSuggest();
+}
+let lastMetrics = null;
+function renderScatterSearch(query) {
+  const list = $('#dash-scatter-suggest');
+  const wrap = $('.dash-scatter-search');
+  const input = $('#dash-scatter-search');
+  if (!list || !input) return;
+  const matches = scatterSearchMatches(query);
+  if (!matches.length) {
+    list.hidden = false;
+    list.innerHTML = `<li class="dash-scatter-suggest-empty">${esc(t('dashboard.scatter.searchEmpty'))}</li>`;
+    wrap?.setAttribute('aria-expanded', 'true');
+    input.setAttribute('aria-expanded', 'true');
+    return;
+  }
+  list.hidden = false;
+  list.innerHTML = matches
+    .map(
+      (match, index) =>
+        `<li role="option" id="dash-scatter-option-${index}" aria-selected="${index === 0 ? 'true' : 'false'}" class="${index === 0 ? 'is-active' : ''}"><button type="button" data-scatter-match="${index}">${esc(match.name)}<span>${esc(match.point.model.org || '')}</span></button></li>`
+    )
+    .join('');
+  list._matches = matches;
+  wrap?.setAttribute('aria-expanded', 'true');
+  input.setAttribute('aria-expanded', 'true');
+  input.setAttribute('aria-activedescendant', 'dash-scatter-option-0');
+}
+function bindScatterSearch() {
+  if (scatterSearchBound) return;
+  const input = $('#dash-scatter-search');
+  const list = $('#dash-scatter-suggest');
+  const clear = $('#dash-scatter-search-clear');
+  if (!input || !list) return;
+  scatterSearchBound = true;
+  input.addEventListener('input', () => {
+    if (clear) clear.hidden = input.value === '';
+    if (!$('#dash-scatter-search-status')) return;
+    $('#dash-scatter-search-status').textContent = '';
+    if (!input.value.trim()) {
+      closeScatterSuggest();
+      $$('.dash-scatter-point.is-search-hit').forEach((node) => node.classList.remove('is-search-hit'));
+      return;
+    }
+    renderScatterSearch(input.value);
+  });
+  input.addEventListener('keydown', (event) => {
+    const items = $$('#dash-scatter-suggest [role="option"]');
+    if (!items.length) return;
+    const activeIndex = items.findIndex((item) => item.classList.contains('is-active'));
+    if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+      event.preventDefault();
+      const nextIndex = event.key === 'ArrowDown' ? Math.min(items.length - 1, activeIndex + 1) : Math.max(0, activeIndex - 1);
+      items.forEach((item, index) => {
+        const on = index === nextIndex;
+        item.classList.toggle('is-active', on);
+        item.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      input.setAttribute('aria-activedescendant', items[nextIndex].id);
+      return;
+    }
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const matches = list._matches || [];
+      const active = items.findIndex((item) => item.classList.contains('is-active'));
+      if (matches[active >= 0 ? active : 0]) selectScatterPoint(matches[active >= 0 ? active : 0]);
+      return;
+    }
+    if (event.key === 'Escape') {
+      closeScatterSuggest();
+      input.blur();
+    }
+  });
+  list.addEventListener('mousedown', (event) => {
+    const button = event.target.closest('[data-scatter-match]');
+    if (!button) return;
+    event.preventDefault();
+    const matches = list._matches || [];
+    const match = matches[Number(button.getAttribute('data-scatter-match'))];
+    if (match) selectScatterPoint(match);
+  });
+  input.addEventListener('focus', () => {
+    if (input.value.trim()) renderScatterSearch(input.value);
+  });
+  input.addEventListener('blur', () => window.setTimeout(closeScatterSuggest, 120));
+  clear?.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    clear.hidden = true;
+    const status = $('#dash-scatter-search-status');
+    if (status) status.textContent = '';
+    $$('.dash-scatter-point.is-search-hit').forEach((node) => node.classList.remove('is-search-hit'));
+    closeScatterSuggest();
+  });
+}
+function initScatterSearch(metrics) {
+  lastMetrics = metrics;
+  bindScatterSearch();
+}
 function renderScatter(metrics) {
   const container = $('#dash-scatter');
   if (!container) return;
   const points = metrics.points || [];
+  scatterPoints = points;
+  lastMetrics = metrics;
   if (!points.length || metrics.priceMedian == null || metrics.scoreMedian == null) {
     container.innerHTML = '<p class="u-muted">' + t('dashboard.scatter.empty') + '</p>';
     return;
@@ -529,6 +707,8 @@ function renderScatter(metrics) {
         esc(tip) +
         '" data-dash-tip="' +
         esc(tip) +
+        '" data-point-index="' +
+        index +
         '"></circle>'
       );
     })
@@ -974,6 +1154,7 @@ export function initDashboard(data) {
   dataset = data || {};
   const metrics = computeMetrics(dataset);
   renderAll(metrics);
+  initScatterSearch(metrics);
   initCarousel();
   bindTooltip();
   setupAnimation(metrics);

@@ -224,3 +224,19 @@
   .dash-kpi-trend{left:0;right:auto;width:min(260px,calc(100vw - 32px))}
 }
 
+/* v1.5.6: scatter model search / autocomplete / highlight */
+.dash-card--killline .dash-scatter-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:10px}
+.dash-scatter-search{position:relative;display:flex;align-items:center;gap:6px;flex:1 1 250px;max-width:420px;height:34px;padding:0 6px 0 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2,var(--surface))}
+#dash-scatter-search{flex:1;min-width:0;height:100%;border:0;background:transparent;color:var(--ink);font:inherit;font-size:.8rem;outline:none}
+#dash-scatter-search::-webkit-search-cancel-button{display:none}
+.dash-scatter-search-clear{display:grid;place-items:center;width:22px;height:22px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:.95rem;line-height:1;cursor:pointer}
+.dash-scatter-search-clear:hover{background:var(--icon-hover-bg);color:var(--ink)}
+.dash-scatter-suggest{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:35;max-height:220px;margin:0;padding:4px;overflow:auto;list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu)}
+.dash-scatter-suggest li{margin:0;list-style:none}
+.dash-scatter-suggest li button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;width:100%;padding:7px 9px;border:0;border-radius:var(--r-2);background:transparent;color:var(--ink);font:inherit;font-size:.78rem;text-align:left;cursor:pointer}
+.dash-scatter-suggest li button span{color:var(--muted);font-size:.68rem;white-space:nowrap}
+.dash-scatter-suggest li.is-active button,.dash-scatter-suggest li button:hover{background:var(--icon-hover-bg)}
+.dash-scatter-suggest-empty{padding:8px 10px;color:var(--muted);font-size:.74rem}
+.dash-scatter-search-status{margin:0;color:var(--muted);font-size:.72rem;line-height:1.5}
+.dash-scatter-point.is-search-hit{fill:var(--highlight);stroke:var(--gold-deep);stroke-width:3;transform:scale(1.9);filter:drop-shadow(0 0 5px rgb(var(--rgb-gold)/.6))}
+

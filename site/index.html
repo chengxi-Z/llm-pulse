@@ -246,6 +246,14 @@
 					<h3 id="dash-killline-title" data-i18n="dashboard.scatter.title">AI 模型斩杀线</h3>
 					<span class="dash-card-head-note" data-i18n="dashboard.scatter.subtitle">能力 × 成本</span>
 				</header>
+				<div class="dash-scatter-tools">
+					<div class="dash-scatter-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="dash-scatter-suggest">
+						<input id="dash-scatter-search" type="search" autocomplete="off" spellcheck="false" placeholder="搜索模型，定位它在斩杀线中的位置" data-i18n-attr="placeholder:dashboard.scatter.searchPlaceholder,aria-label:dashboard.scatter.searchAria" aria-label="搜索模型" aria-autocomplete="list" aria-controls="dash-scatter-suggest" aria-expanded="false" />
+						<button type="button" class="dash-scatter-search-clear" id="dash-scatter-search-clear" hidden data-i18n-attr="aria-label:dashboard.scatter.searchClear" aria-label="清空搜索">×</button>
+						<ul id="dash-scatter-suggest" class="dash-scatter-suggest" role="listbox" hidden></ul>
+					</div>
+					<p class="dash-scatter-search-status" id="dash-scatter-search-status" aria-live="polite"></p>
+				</div>
 				<div class="dash-card-body">
 					<div class="dash-scatter" id="dash-scatter" data-i18n-attr="aria-label:dashboard.scatter.aria" role="group" aria-label="能力与成本散点图"></div>
 				</div>
