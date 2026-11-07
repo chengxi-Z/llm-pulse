@@ -74,21 +74,13 @@ export function drawBoardSection(ctx, opts) {
 
     if (rank <= 3) {
       medal(ctx, P, rank, padX, cy, fontSans);
-      const label = rank === 1
-        ? t('share.board.rank1')
-        : rank === 2
-          ? t('share.board.rank2')
-          : t('share.board.rank3');
-      ctx.fillStyle = rank === 1 ? P.gold : P.muted;
-      ctx.font = `600 12px ${fontSans}`;
-      ctx.fillText(label, padX + 30, cy + 4);
     } else {
       ctx.fillStyle = P.muted;
       ctx.font = `600 14px ${fontSans}`;
       ctx.fillText(String(rank).padStart(2, '0'), padX + 2, cy + 5);
     }
 
-    const nameX = padX + (rank <= 3 ? 96 : 44);
+    const nameX = padX + 44;
     ctx.fillStyle = P.ink;
     ctx.font = `500 19px ${fontSans}`;
     ctx.fillText(fitOneLine(ctx, row.model, right - nameX - 90), nameX, cy + 6);
