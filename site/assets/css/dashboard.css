@@ -207,8 +207,10 @@
 /* v1.5.4: token-usage KPI hover trend */
 .dash-kpi{position:relative}
 .dash-kpi[data-kpi="usage"]{cursor:help}
+.dash-kpi[data-kpi="usage"]:hover,
+.dash-kpi[data-kpi="usage"]:focus-within{z-index:40}
 .dash-kpi[data-kpi="usage"]:focus-visible{outline:var(--focus-ring);outline-offset:2px}
-.dash-kpi-trend{position:absolute;top:calc(100% + 10px);left:0;z-index:30;width:min(282px,calc(100vw - 40px));padding:10px 12px 8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 160ms var(--ease),transform 160ms var(--ease),visibility 160ms;pointer-events:none}
+.dash-kpi-trend{position:absolute;top:calc(100% + 10px);left:0;z-index:41;width:min(282px,calc(100vw - 40px));padding:10px 12px 8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 160ms var(--ease),transform 160ms var(--ease),visibility 160ms;pointer-events:none}
 .dash-kpis .dash-kpi:last-child .dash-kpi-trend{left:auto;right:0}
 .dash-kpi[data-kpi="usage"]:hover .dash-kpi-trend,
 .dash-kpi[data-kpi="usage"]:focus-within .dash-kpi-trend{opacity:1;visibility:visible;transform:none}
