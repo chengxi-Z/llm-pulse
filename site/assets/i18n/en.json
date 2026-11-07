@@ -890,5 +890,8 @@
   "dashboard.scatter.metricSwe": "SWE-bench Verified",
   "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
   "dashboard.scatter.metricOpencompassMM": "OpenCompass Multimodal",
-  "ui.siteNameShare": "AI Pulse"
+  "ui.siteNameShare": "AI Pulse",
+  "board.lmarena-text.name": "LMArena Text Leaderboard",
+  "board.lmarena-text.desc": "Human-preference Arena Elo for text models, from the LMArena dataset",
+  "board.lmarena-text.metric": "Arena Score"
 }

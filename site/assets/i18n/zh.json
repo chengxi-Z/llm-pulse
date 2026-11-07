@@ -890,5 +890,8 @@
   "dashboard.scatter.metricSwe": "SWE-bench Verified",
   "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
   "dashboard.scatter.metricOpencompassMM": "OpenCompass 多模态",
-  "ui.siteNameShare": "AI Pulse · 照胆云"
+  "ui.siteNameShare": "AI Pulse · 照胆云",
+  "board.lmarena-text.name": "LMArena 文本总榜",
+  "board.lmarena-text.desc": "LMArena 数据集的人类偏好对战 Elo 排名（文本模型）",
+  "board.lmarena-text.metric": "Arena 分数"
 }
