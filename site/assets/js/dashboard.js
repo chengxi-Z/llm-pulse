@@ -387,7 +387,7 @@ function shortModelName(model) {
   name = name.replace(/\s*\([^)]*\)\s*$/, '').trim();
   return name.length > 22 ? name.slice(0, 21) + '\u2026' : name;
 }
-function representativePoints(points, metrics) {
+function representativePoints(points, metrics, xFor, yFor) {
   const scoreMedian = metrics.scoreMedian;
   const priceMedian = metrics.priceMedian;
   const groups = {
@@ -407,15 +407,19 @@ function representativePoints(points, metrics) {
   const picked = [];
   const seenNames = new Set();
   ['survival', 'highCost', 'lowCapability', 'kill'].forEach((key) => {
-    const group = groups[key].slice().sort((a, b) => b.score - a.score);
-    let count = 0;
-    for (const point of group) {
+    const group = groups[key];
+    if (!group.length) return;
+    const cx = group.reduce((sum, point) => sum + xFor(point.price), 0) / group.length;
+    const cy = group.reduce((sum, point) => sum + yFor(point.score), 0) / group.length;
+    const ranked = group.slice().sort(
+      (a, b) => Math.hypot(xFor(a.price) - cx, yFor(a.score) - cy) - Math.hypot(xFor(b.price) - cx, yFor(b.score) - cy)
+    );
+    for (const point of ranked) {
       const name = shortModelName(point.model);
       if (!name || seenNames.has(name)) continue;
       seenNames.add(name);
       picked.push({ point, name });
-      count += 1;
-      if (count >= 1) break;
+      break;
     }
   });
   return picked;
@@ -529,7 +533,7 @@ function renderScatter(metrics) {
       );
     })
     .join('');
-  const representative = representativePoints(points, metrics);
+  const representative = representativePoints(points, metrics, xFor, yFor);
   const labelBoxes = [];
   const labelHtml = representative
     .map(({ point, name }) => {
