@@ -647,15 +647,13 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ## 27. v1.4 首屏内容优先（hero / masthead 瘦身）
 
-### 27.0 v1.5 版式比例（2026-11-07 用户复核）
+### 27.0 v1.5 版式比例（2026-11-07 用户复核，第二轮）
 
-- 首页 hero 网格：**左标题栏严格占 25%**（`var(--rail)`，不再减去 gap），**右侧「本周速览」面板严格占 33.3333%**（`1/3`），两栏之间为弹性留白；面板贴容器右缘。
-- 页头 masthead（news/rankings/models/resources/projects/skills/about/deepseek）：左标题栏统一 `var(--rail)=25%`，与首页 hero 一致。
-- ≤960px：hero/页头回落单列（左侧标题栏 + 面板/元信息纵向排列），面板 `width:100%`。
-- 回归原因记录：`9e46b7ff` 曾把 hero panel 锁到 1/3，`9ea140e3` 改为 `25% / 75%` 时把 panel 放大到 75%；本次恢复 25% 标题栏 + 33.33% 面板，并让所有 hero 标题栏严格 1/4。
-
-
-
+- 首页 hero：**左内容区占满剩余宽度**（`calc(66.6667% - gap)`），**右侧「本周速览」面板严格 1/3**（`33.3333%`），两栏只保留 `--rail-gap` 间距，**中间不再留空**；标题/导语/按钮/细排都在左栏内左对齐填满。
+- 页头 masthead：左内容区 `1fr` 占满剩余，右侧 `.masthead-meta` 固定 `33.3333%`；标题/导语不再被压进 25% 窄栏。
+- 模块 section-head：左标题区 `1fr` 占满剩余，右侧统计/更新时间 `auto` 贴右；避免标题在 25% 窄栏内换行。
+- ≤960px：hero / 页头 / 模块头统一回落单列，面板与 meta 全宽。
+- 口径更正：v1.5 首轮误做成「标题栏 1/4 + 面板 1/3 + 中间留白」；实际要求是「左侧占满剩余、右侧 1/3、无中间空档」。`--rail:25%` 保留给其它需要 1/4 栏的组件，但不再用于 hero / masthead / section-head 主栅格。
 - 全局 `--section-y` 调为 `clamp(44px, 6vw, 84px)`；`.section-head` 底部间距 `clamp(18px,2.4vw,32px)`；`.section-desc` 2 行 clamp；`.filter-bar` 上下 padding 10px；`.board-tabs` 底距 12px；`.rank-panel` padding 收紧。
 - `.page-masthead`（基础）：上下 `clamp(26px,3.4vw,52px) / clamp(18px,2.4vw,30px)`；h1 `clamp(1.95rem,3.6vw,3rem)`、上边距 14px；lede 2 行 clamp、上边距 14px；`.masthead-meta` 上边距 18px/上 padding 12px。
 - `.page-masthead--compact`（各页启用）：上下 18–34 / 12–22px；h1 `clamp(1.75rem,3.2vw,2.6rem)`、上边距 10px；lede 上边距 10px；meta 收紧；其后首个 `.section` 上 padding `clamp(16px,2vw,28px)`。
