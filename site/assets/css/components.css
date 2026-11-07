@@ -3453,3 +3453,8 @@ html[lang="en"] .eyebrow-en{display:none}
 .masthead-card-head{padding-bottom:8px;margin-bottom:2px;font-size:.62rem}
 .masthead-meta strong{font-size:.82rem}
 
+/* v1.5.5: curate weekly panel content to fit the 1/4-viewport header band (no clipped rows) */
+.hero--compact .hero-panel .panel-note{display:none}
+.hero--compact .hero-panel .source-block{margin-top:4px}
+.hero--compact .hero-panel .stat-list{flex:0 0 auto}
+.hero--compact .hero-panel .panel-head{padding-bottom:6px}
