@@ -76,7 +76,7 @@ test('normalizeSharePayload：board 提取 id / top10 / 指标 / 更新 / 来源
   assert.equal(data.board.updatedAt, BOARD.updatedAt);
   assert.equal(data.board.source, 'LMArena');
   assert.equal(data.board.rows.length, 4); // fixture has 4 entries, capped at Top10
-  assert.deepEqual(data.board.rows[0], { rank: 1, model: 'GPT-6.1 Terra Pro', score: '1482' });
+  assert.deepEqual(data.board.rows[0], { rank: 1, model: 'GPT-6.1 Terra Pro', score: '1482', releaseDate: '' });
   // Without a board object the id is inferred from the deep-link hash and desc is kept.
   const fallback = normalizeSharePayload({ kind: 'board', url: `${SITE}rankings.html#board-context-window`, desc: 'Top3: ...' });
   assert.equal(fallback.board.id, 'context-window');
@@ -103,7 +103,7 @@ test('boardPayloadFromData 从 rankings.json 构造榜单卡片 payload', () => 
   assert.equal(objectShape.title, 'LMArena 文本总榜');
   assert.equal(objectShape.url, `${SITE}rankings.html#board-lmarena-text`);
   assert.equal(objectShape.stats, 'Arena Score · LMArena');
-  assert.deepEqual(objectShape.board.rows[0], { rank: 1, model: 'GPT-6.1 Terra Pro', score: '1482' });
+  assert.deepEqual(objectShape.board.rows[0], { rank: 1, model: 'GPT-6.1 Terra Pro', score: '1482', releaseDate: '' });
   // Array form is supported too.
   assert.ok(boardPayloadFromData({ rankings: [BOARD] }, 'lmarena-text'));
   // Unknown board returns null so callers fall back to data-* copy.

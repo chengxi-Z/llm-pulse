@@ -234,6 +234,8 @@ test('Artificial Analysis：内嵌 flight 数据解析 + 智能指数榜', () =>
   const full = parseAaLeaderboardModels(fx('aa-leaderboards-sample.html'));
   assert.equal(full.length, 3);
   const fullBoard = normalizeAaLeaderboard(full, { updatedAt: NOW });
+  const dated = normalizeAaLeaderboard([{ name: 'Dated Model', intelligenceIndex: 50, releaseDate: '2026-10-28' }], { updatedAt: NOW });
+  assert.equal(dated.entries[0].releaseDate, '2026-10-28');
   assert.equal(fullBoard.entries.length, 2);
   assert.equal(fullBoard.entries[0].model, 'Claude Opus 5.5');
   assert.equal(fullBoard.entries[0].org, 'Anthropic');

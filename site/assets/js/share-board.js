@@ -81,9 +81,20 @@ export function drawBoardSection(ctx, opts) {
     }
 
     const nameX = padX + 44;
+    const showDates = rows.some((item) => item.releaseDate);
+    const dateX = right - 118;
+    const nameRight = showDates ? dateX - 24 : right - 90;
     ctx.fillStyle = P.ink;
     ctx.font = `500 19px ${fontSans}`;
-    ctx.fillText(fitOneLine(ctx, row.model, right - nameX - 90), nameX, cy + 6);
+    ctx.fillText(fitOneLine(ctx, row.model, nameRight - nameX), nameX, cy + 6);
+    if (showDates) {
+      const release = row.releaseDate ? String(row.releaseDate).slice(0, 10).replace(/-/g, '.') : '—';
+      ctx.textAlign = 'right';
+      ctx.fillStyle = P.muted;
+      ctx.font = `500 12px ${fontSans}`;
+      ctx.fillText(release, dateX, cy + 5);
+      ctx.textAlign = 'left';
+    }
     if (row.score) {
       ctx.textAlign = 'right';
       ctx.fillStyle = rank <= 3 ? P.gold : P.muted;

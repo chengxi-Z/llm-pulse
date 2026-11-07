@@ -127,6 +127,36 @@ async function collectArtificialAnalysis(ctx) {
     aaModels = parseAaInitialData(home.text);
     used = 'homepage';
   }
+  // The full /leaderboards/models payload omits release dates; the homepage featured
+  // initialData carries them. Merge by slug/name/shortName so ranking rows can show 上线时间.
+  if (used === 'leaderboards') {
+    try {
+      const home = await ctx.get(AA_URL, { key: 'artificialanalysis-home', ext: 'html', timeoutMs: 30000, retries: 1 });
+      const featured = parseAaInitialData(home.text);
+      const baseName = (value) => String(value || '').toLowerCase().replace(/\s*\([^)]*\).*$/, '').trim();
+      const releaseByKey = new Map();
+      for (const model of featured) {
+        if (!model || !model.releaseDate) continue;
+        for (const key of [model.slug, model.name, model.shortName, baseName(model.name), baseName(model.shortName)]) {
+          if (key && !releaseByKey.has(key)) releaseByKey.set(key, model.releaseDate);
+        }
+      }
+      if (releaseByKey.size) {
+        aaModels = aaModels.map((model) => ({
+          ...model,
+          releaseDate: model.releaseDate
+            || releaseByKey.get(model.slug)
+            || releaseByKey.get(model.name)
+            || releaseByKey.get(model.shortName)
+            || releaseByKey.get(baseName(model.name))
+            || releaseByKey.get(baseName(model.shortName))
+            || null,
+        }));
+      }
+    } catch (err) {
+      ctx.log(`[artificial-analysis] 首页上线时间合并失败：${err.message}`);
+    }
+  }
   const board = used === 'leaderboards'
     ? normalizeAaLeaderboard(aaModels, { updatedAt: ctx.now, sourceUrl: 'https://artificialanalysis.ai/leaderboards/models' })
     : normalizeAaRankings(aaModels, { updatedAt: ctx.now, sourceUrl: AA_URL });

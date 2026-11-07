@@ -562,6 +562,7 @@ export function normalizeAaLeaderboard(aaModels, { sourceUrl = 'https://artifici
       model: String(m.name || m.shortName || m.slug || '').trim(),
       org: String(m.creator?.name || m.modelCreatorName || m.creator?.slug || 'Other').trim(),
       score: Math.round(m.intelligenceIndex * 100) / 100,
+      releaseDate: toIsoDateOnly(m.releaseDate) || null,
     }))
     .filter((m) => m.model)
     .sort((a, b) => (b.score - a.score) || (a.model < b.model ? -1 : 1));
@@ -582,6 +583,7 @@ export function normalizeAaLeaderboard(aaModels, { sourceUrl = 'https://artifici
       org: s.org,
       score: s.score,
       scoreDisplay: s.score.toFixed(1),
+      releaseDate: s.releaseDate || null,
       votes: null,
       delta: null,
     })),

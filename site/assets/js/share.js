@@ -1,6 +1,7 @@
 import { buildShareText } from './assistant-core.js';
 import { getLang, t } from './i18n.js';
 import { drawBoardSection } from './share-board.js';
+import { nameCandidates } from './data-match.js';
 
 const CARD_W = 1200;
 const CARD_H = 630;
@@ -175,6 +176,7 @@ export function normalizeSharePayload(raw = {}, opts = {}) {
           rank: Number(entry?.rank) || index + 1,
           model: String(entry?.model || entry?.name || '').trim(),
           score: String(entry?.scoreDisplay ?? entry?.score ?? '').trim(),
+          releaseDate: String(entry?.releaseDate || entry?.release_date || '').trim(),
         }))
         .filter((entry) => entry.model),
     };
@@ -190,13 +192,21 @@ export function boardPayloadFromData(data, boardId, opts = {}) {
   const boards = Array.isArray(source) ? source : Array.isArray(source?.boards) ? source.boards : [];
   const board = boards.find((item) => item && item.id === boardId);
   if (!board) return null;
+  const dates = new Map();
+  (data?.models?.models || data?.models || []).forEach((m) => {
+    if (m?.releaseDate) nameCandidates({ name: m.name, org: m.org }).forEach((k) => k && !dates.has(k) && dates.set(k, m.releaseDate));
+  });
+  const entries = (board.entries || []).map((entry) => {
+    const hit = nameCandidates({ name: entry.model, org: entry.org }).find((k) => dates.has(k));
+    return { ...entry, releaseDate: entry.releaseDate || (hit ? dates.get(hit) : '') };
+  });
   return normalizeSharePayload({
     kind: 'board',
     title: board.name || board.id,
     desc: board.description || '',
     url: boardDeepLink(board.id, opts.baseUrl || `${SITE_URL}rankings.html`),
     stats: [board.metric?.name, board.sourceName].filter(Boolean).join(' · '),
-    board,
+    board: { ...board, entries },
   });
 }
 
