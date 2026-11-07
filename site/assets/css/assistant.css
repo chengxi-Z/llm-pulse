@@ -154,7 +154,7 @@
 }
 
 .as-mode {
-  font-size: 0.66rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 3px 8px;
@@ -238,7 +238,7 @@
 
 .as-welcome-kicker {
   margin: 0 0 8px;
-  font-size: 0.66rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--as-gold-text);
@@ -427,7 +427,7 @@
 }
 
 .as-badge {
-  font-size: 0.64rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.06em;
   padding: 2px 7px;
   border-radius: 999px;
@@ -454,7 +454,7 @@
   border-radius: 6px;
   background: transparent;
   color: var(--as-muted);
-  font-size: 0.68rem;
+  font-size: 0.6875rem;
 }
 
 .as-mini-btn:hover {
@@ -594,7 +594,7 @@
   align-items: center;
   gap: 7px;
   padding: 6px 16px 10px;
-  font-size: 0.66rem;
+  font-size: 0.6875rem;
   color: var(--as-muted);
 }
 
@@ -640,7 +640,7 @@
 
 .as-tag {
   font-family: var(--as-sans);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.12em;
   color: var(--as-gold-text);
   border: 1px solid var(--as-gold-soft);
@@ -771,7 +771,7 @@
   border-radius: 8px;
   background: var(--as-surface);
   font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
-  font-size: 0.68rem;
+  font-size: 0.6875rem;
   line-height: 1.55;
   white-space: pre-wrap;
   word-break: break-word;

@@ -55,7 +55,7 @@
 .brand-cn {
   margin-top: 5px;
   color: var(--highlight);
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.34em;
   line-height: 1;
 }
@@ -939,7 +939,7 @@ body.nav-open .nav-toggle-lines::after {
 
 .spec-label {
   color: var(--muted);
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1309,7 +1309,7 @@ body.nav-open .nav-toggle-lines::after {
   display: block;
   margin-top: 7px;
   color: var(--muted);
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -2818,7 +2818,7 @@ a.source-name:hover {
 
   .brand-cn {
     letter-spacing: 0.26em;
-    font-size: 0.5625rem;
+    font-size: 0.6875rem;
   }
 
   .header-inner {
@@ -2925,7 +2925,7 @@ a.source-name:hover {
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: var(--ls-label);
   line-height: 1.2;
@@ -3066,7 +3066,7 @@ a.source-name:hover {
 
 .lang-sep {
   color: var(--line-strong);
-  font-size: 0.625rem;
+  font-size: 0.6875rem;
 }
 
 .lang-toggle:hover .lang-code {
@@ -3195,7 +3195,7 @@ html {
 
   .lang-toggle {
     padding: 0 9px;
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     letter-spacing: 0.06em;
   }
 
@@ -3282,7 +3282,7 @@ html {
 
 .share-card-address{display:grid;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
 .share-card-address-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0;font-size:.75rem;line-height:1.6}
-.share-card-address-label{flex:none;min-width:64px;color:var(--muted);font-size:.625rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.share-card-address-label{flex:none;min-width:64px;color:var(--muted);font-size:0.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 .share-card-url{color:var(--highlight);overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:rgb(var(--rgb-highlight)/.4);text-underline-offset:3px}
 .share-card-url:hover{text-decoration-color:currentColor}
 
@@ -3306,7 +3306,7 @@ html[lang="en"] .eyebrow-en{display:none}
 .skill-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:clamp(18px,2vw,24px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-card);transition:transform var(--dur) var(--ease),border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease)}
 .skill-card:hover{transform:translateY(-2px);border-color:var(--gold-soft);box-shadow:var(--shadow-float)}
 .skill-card-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;color:var(--muted);font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase}
-.skill-badge{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border:1px solid var(--line-strong);border-radius:999px;color:var(--muted);font-size:.625rem;font-weight:600;letter-spacing:.1em;line-height:1.6;text-transform:uppercase}
+.skill-badge{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border:1px solid var(--line-strong);border-radius:999px;color:var(--muted);font-size:0.6875rem;font-weight:600;letter-spacing:.1em;line-height:1.6;text-transform:uppercase}
 .skill-badge::before{content:"";width:4px;height:4px;flex:none;background:currentColor;transform:rotate(45deg)}
 .skill-badge--mine{border-color:var(--highlight);background:rgb(var(--rgb-highlight) / .08);color:var(--highlight)}
 .skill-badge--official{border-color:var(--gold-soft);color:var(--gold-deep)}
@@ -3338,7 +3338,7 @@ html[lang="en"] .eyebrow-en{display:none}
 
 /* ===== v1.4 rankings: top3 medals, expand control, minimal distribution strip ===== */
 .rank-no--1,.rank-no--2,.rank-no--3{white-space:nowrap}
-.rank-medal{display:inline-grid;place-items:center;width:19px;height:19px;margin-right:6px;border:1px solid var(--line-strong);border-radius:50%;color:var(--muted);font-family:var(--font-serif);font-size:.625rem;line-height:1;vertical-align:1px}
+.rank-medal{display:inline-grid;place-items:center;width:19px;height:19px;margin-right:6px;border:1px solid var(--line-strong);border-radius:50%;color:var(--muted);font-family:var(--font-serif);font-size:0.6875rem;line-height:1;vertical-align:1px}
 .rank-no--1{color:var(--gold-deep)}
 .rank-no--1 .rank-medal{border-color:var(--gold);background:rgb(var(--rgb-gold)/.16);color:var(--gold-deep)}
 .rank-no--2{color:var(--gold-deep)}
@@ -3376,7 +3376,7 @@ html[lang="en"] .eyebrow-en{display:none}
   .rank-dist-qr{width:44px;height:44px}
 }
 .footer-address{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;flex-basis:100%;margin:0;max-width:100%;font-size:.6875rem;line-height:1.7}
-.footer-address .btn{padding:2px 8px;font-size:.625rem}
+.footer-address .btn{padding:2px 8px;font-size:0.6875rem}
 .filter-row--meta{align-items:center;gap:8px 14px}
 .filter-row--meta .result-count{margin-left:auto;color:var(--muted);font-size:.75rem}
 .tag--more{border-style:dashed;color:var(--muted)}
@@ -3438,19 +3438,19 @@ html[lang="en"] .eyebrow-en{display:none}
 
 /* compact right-side cards to fit the 1/4-viewport header band */
 .hero--compact .hero-panel{padding:clamp(10px,1.2vw,14px);overflow:hidden}
-.hero-panel .panel-head{padding-bottom:8px;font-size:.66rem;gap:8px}
+.hero-panel .panel-head{padding-bottom:8px;font-size:0.6875rem;gap:8px}
 .hero-panel .stat-item{padding:4px 0}
 .hero-panel .stat-label{font-size:.7rem}
 .hero-panel .stat-value{font-size:1.3rem}
 .hero-panel .stat-value--date{font-size:.88rem}
-.hero-panel .source-block .label{font-size:.62rem}
-.hero-panel .source-summary{margin-top:4px;font-size:.68rem;line-height:1.45}
+.hero-panel .source-block .label{font-size:0.6875rem}
+.hero-panel .source-summary{margin-top:4px;font-size:0.6875rem;line-height:1.45}
 .hero-panel .source-dots{gap:2px}
 .hero-panel .source-dot{width:6px;height:6px}
-.hero-panel .panel-note{margin-top:6px;font-size:.66rem;line-height:1.45;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden}
+.hero-panel .panel-note{margin-top:6px;font-size:0.6875rem;line-height:1.45;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden}
 
 .masthead-meta{padding:clamp(10px,1.2vw,14px);gap:6px 18px}
-.masthead-card-head{padding-bottom:8px;margin-bottom:2px;font-size:.62rem}
+.masthead-card-head{padding-bottom:8px;margin-bottom:2px;font-size:0.6875rem}
 .masthead-meta strong{font-size:.82rem}
 
 /* v1.5.5: curate weekly panel content to fit the 1/4-viewport header band (no clipped rows) */
@@ -3458,3 +3458,22 @@ html[lang="en"] .eyebrow-en{display:none}
 .hero--compact .hero-panel .source-block{margin-top:4px}
 .hero--compact .hero-panel .stat-list{flex:0 0 auto}
 .hero--compact .hero-panel .panel-head{padding-bottom:6px}
+
+/* v1.6.0: audit follow-ups — contrast, mobile overflow, reading measure, stat rhythm */
+::placeholder{color:var(--muted);opacity:1}
+.page-masthead .lede,.hero .lede{max-width:68ch}
+.dispatch-summary{max-width:68ch;overflow-wrap:anywhere;word-break:break-word}
+.masthead-meta,.masthead-meta *{min-width:0;overflow-wrap:anywhere}
+
+@media (max-width:700px){
+  .page-masthead .lede,.hero .lede{-webkit-line-clamp:5}
+  .about-facts .fact-item:last-child:nth-child(odd){grid-column:1 / -1}
+}
+html,body{overflow-x:clip}
+
+/* craft-floor: no kicker/eyebrow above headings */
+.eyebrow{display:none !important}
+
+/* audit: remaining 11px body summaries -> 12px */
+.source-summary,.dash-kpi-trend-note{font-size:0.75rem}
+.hero-panel .source-summary{font-size:0.75rem}
