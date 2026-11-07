@@ -647,13 +647,17 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ## 27. v1.4 首屏内容优先（hero / masthead 瘦身）
 
-### 27.0 v1.5 版式比例（2026-11-07 用户复核，第二轮）
+### 27.0 v1.5 版式比例（2026-11-07 用户复核，最终口径）
 
-- 首页 hero：**左内容区占满剩余宽度**（`calc(66.6667% - gap)`），**右侧「本周速览」面板严格 1/3**（`33.3333%`），两栏只保留 `--rail-gap` 间距，**中间不再留空**；标题/导语/按钮/细排都在左栏内左对齐填满。
-- 页头 masthead：左内容区 `1fr` 占满剩余，右侧 `.masthead-meta` 固定 `33.3333%`；标题/导语不再被压进 25% 窄栏。
-- 模块 section-head：左标题区 `1fr` 占满剩余，右侧统计/更新时间 `auto` 贴右；避免标题在 25% 窄栏内换行。
-- ≤960px：hero / 页头 / 模块头统一回落单列，面板与 meta 全宽。
-- 口径更正：v1.5 首轮误做成「标题栏 1/4 + 面板 1/3 + 中间留白」；实际要求是「左侧占满剩余、右侧 1/3、无中间空档」。`--rail:25%` 保留给其它需要 1/4 栏的组件，但不再用于 hero / masthead / section-head 主栅格。
+- **全局右侧栏 = 1/4，且跨页面像素对齐**：统一写成 `grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%)` + `gap: var(--rail-gap)`，右栏起点严格落在内容容器的 **75%** 位置：
+  - 首页 hero（`.hero-grid`）→ 左侧标题/导语填满 75%，右侧「本周速览」25%
+  - 首页仪表盘（`.dash-grid--carousel`）→ 左侧轮播 75%，右侧热榜 25%
+  - DeepSeek 页（`.focus-grid`）→ 左侧主线 75%，右侧 aside 25%
+  - 各页页头（`.page-masthead .container`）→ 左标题/导语 75%，右 meta 25%
+- **垂直对齐**：首页 hero 与 DeepSeek focus-grid 均 `align-items:start`，右侧组件顶边与左侧内容顶边对齐（不再垂直居中导致上下错位）。
+- 模块 `section-head`：左标题 `1fr` 占满，右侧更新时间/统计 `auto` 贴右。
+- ≤960px：以上双栏统一回落单列，面板与 meta 全宽。
+- 历史口径：v1.5 首轮误做「1/4 标题 + 1/3 面板 + 中间留白」；第二轮误做「2/3 + 1/3」；最终以 **右栏 1/4（75%/25% 精确公式）、左栏填满、跨页面起点对齐** 为准。
 - 全局 `--section-y` 调为 `clamp(44px, 6vw, 84px)`；`.section-head` 底部间距 `clamp(18px,2.4vw,32px)`；`.section-desc` 2 行 clamp；`.filter-bar` 上下 padding 10px；`.board-tabs` 底距 12px；`.rank-panel` padding 收紧。
 - `.page-masthead`（基础）：上下 `clamp(26px,3.4vw,52px) / clamp(18px,2.4vw,30px)`；h1 `clamp(1.95rem,3.6vw,3rem)`、上边距 14px；lede 2 行 clamp、上边距 14px；`.masthead-meta` 上边距 18px/上 padding 12px。
 - `.page-masthead--compact`（各页启用）：上下 18–34 / 12–22px；h1 `clamp(1.75rem,3.2vw,2.6rem)`、上边距 10px；lede 上边距 10px；meta 收紧；其后首个 `.section` 上 padding `clamp(16px,2vw,28px)`。

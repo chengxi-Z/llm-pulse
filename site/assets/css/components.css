@@ -594,7 +594,7 @@ body.nav-open .nav-toggle-lines::after {
 .page-masthead .container {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 33.3333%);
+  grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%);
   column-gap: var(--rail-gap);
   align-items: start;
 }
@@ -631,7 +631,7 @@ body.nav-open .nav-toggle-lines::after {
     radial-gradient(48% 58% at 0% 96%, var(--glow-accent), transparent 62%);
 }
 
-.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(66.6667% - var(--hero-gap))) minmax(0,33.3333%);column-gap:var(--hero-gap);align-items:center}
+.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(75% - var(--hero-gap))) minmax(0,25%);column-gap:var(--hero-gap);align-items:start}
 .hero-copy{grid-column:1;min-width:0}
 .hero-panel{grid-column:2;width:100%}
 
