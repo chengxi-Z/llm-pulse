@@ -492,7 +492,7 @@ export function renderDataBanner(data) {
   main.insertAdjacentHTML(
     'afterbegin',
     `<div class="container"><div class="data-banner" role="note"><strong>${esc(t('ui.fallback.title'))}</strong><span>${esc(
-      t('ui.fallback.body', { files: failed ? `（${failed}.json）` : '' })
+      t('ui.fallback.body', { files: failed ? (getLang() === 'en' ? ` (${failed.join(', ')}.json)` : `（${failed}.json）`) : '' })
     )}</span></div></div>`
   );
 }

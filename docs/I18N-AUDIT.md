@@ -46,7 +46,7 @@
 
 **已移除的非英文源**：OpenCompass、SuperCLUE。
 
-**当前 18 个采集源**全部为英文网站：OpenRouter、LiveBench、Epoch AI、Artificial Analysis、OpenAI / Google DeepMind / Google AI / Qwen / AWS ML / MIT News / Berkeley BAIR RSS、GitHub、Hugging Face（含镜像）、LMArena、DeepSeek Change Log、Hacker News。
+**当前 19 个采集源**全部为英文网站：OpenRouter、LiveBench、Epoch AI、Artificial Analysis、OpenAI / Google DeepMind / Google AI / Qwen / AWS ML / MIT News / Berkeley BAIR RSS、GitHub、Hugging Face（含镜像）、LMArena、DeepSeek Change Log、Hacker News。
 
 **学习资源**：删除 6 个中文站（Datawhale、D2L 中文版、李宏毅课程、LLM Cookbook、LLM Universe、书生实战营），替换为 6 个英文站（D2L 英文版、Stanford CS224N、DeepLearning.AI、Full Stack Deep Learning、Hugging Face Smol Course、Stanford CS324）。当前 22 个资源全部为英文站（`prompting-guide` 为英文多语站）。
 
@@ -67,11 +67,21 @@
 - 默认 URL（无 `?lang`）9 页 + 404：Playwright 实测可见中文 **0**、中文属性 **0**、中文 head **0**、横向溢出 **0**、JS 错误 **0**；
 - 默认英文页网络请求中 **无 `zh.json`**；
 - 移动端 390×844 页面与桌面一致（此前全站 UI 审计已覆盖）；
+- 数据加载失败容错状态同样为英文（fallback banner/空状态无中文和中文标点）；
 - 静态 HTML 源码扫描（10 个文件）CJK/全角标点 **0**；
 - `feed.xml` / `feed.json` CJK/全角标点 **0**；
 - 分享卡 `fillText`、分享文案、助手 context/system/brief/localAnswer：CJK/全角标点 **0**；
 - 英文词典 `en.json` 无 CJK/全角标点；
 - 测试：**111 通过**；`validate --strict`、`check-comments --strict`、`check-i18n --strict`、`security-check --strict` 全部通过。
+
+## 6.1 发布后线上复检（2026-11-07）
+
+- 线上 10 个页面（9 页 + 404）× 1440×900 / 390×844：默认英文，可见中文 **0**、中文属性 **0**、中文 head **0**、横向溢出 **0**、JS 错误 **0**、`zh.json` 请求 **0**；
+- 线上静态 HTML 源码（10 个页面）：CJK/全角标点 **0**，`html lang="en"`，`og:site_name = AI Pulse · Z Cloud`；
+- 线上 `feed.xml` / `feed.json`：CJK/全角标点 **0**；
+- 线上分享卡 Canvas / 分享文案：CJK/全角标点 **0**，品牌 `AI Pulse · Z Cloud`；
+- 线上 22 个学习资源：全部 `lang != zh`，无中文站域名；19 个采集源全部英文站；
+- 线上榜单：OpenCompass 已移除；当前为 Artificial Analysis / Context Window / Epoch ECI / GPQA / SWE-bench / LiveBench / LMArena / Output Price。
 
 ## 7. 剩余限制（明确说明）
 

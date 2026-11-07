@@ -3,6 +3,27 @@
 const DATA_BASE = new URL('./data/', document.baseURI).href;
 const FETCH_TIMEOUT = 8000;
 const FILES = ['meta', 'models', 'news', 'rankings', 'resources', 'projects', 'skills', 'topics', 'usage'];
+const EMPTY_FALLBACK = {
+  meta: {
+    schemaVersion: 1,
+    generatedAt: '2026-11-03T12:00:00.000Z',
+    mode: 'fallback',
+    site: { name: 'AI Pulse · Z Cloud', brand: 'Z Cloud', version: '0.1.0' },
+    stats: { models: 0, news: 0, boards: 0, resources: 0, projects: 0, orgs: 0, sourcesOk: 0, sourcesDegraded: 0 },
+    sources: [],
+    latestHighlights: [],
+    latestHighlightsEn: [],
+  },
+  models: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', count: 0, models: [] },
+  news: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
+  rankings: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', boards: [] },
+  resources: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
+  projects: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
+  skills: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
+  topics: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
+  usage: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'openrouter-rankings', granularity: 'week', weeks: [], monthlyTokens: 0, monthlyDays: 0 },
+};
+
 const cache = new Map();
 
 /* ---------- Loading ---------- */
@@ -64,7 +85,7 @@ export async function loadAll() {
       try {
         return { name, data: normalize(name, await fetchJson(name)), ok: true };
       } catch (error) {
-        return { name, data: FALLBACK[name], ok: false, error: String(error && error.message ? error.message : error) };
+        return { name, data: EMPTY_FALLBACK[name] || FALLBACK[name], ok: false, error: String(error && error.message ? error.message : error) };
       }
     })
   );
