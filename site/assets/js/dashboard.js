@@ -348,6 +348,30 @@ function formatAxisPrice(value) {
   if (value >= 0.1) return '$0.1';
   return '$0.01';
 }
+function shortModelName(model) {
+  let name = String((model && (model.name || model.id)) || '').replace(/^[^:]{1,40}:\s*/, '');
+  name = name.replace(/\s*\([^)]*\)\s*$/, '').trim();
+  return name.length > 22 ? name.slice(0, 21) + '\u2026' : name;
+}
+function representativePoints(points, metrics) {
+  const picked = [];
+  const seen = new Set();
+  const add = (point) => {
+    if (!point) return;
+    const key = String((point.model && (point.model.id || point.model.name)) || '');
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    picked.push(point);
+  };
+  const byScore = points.slice().sort((a, b) => b.score - a.score);
+  byScore.slice(0, 3).forEach(add);
+  const survival = points
+    .filter((point) => point.score >= metrics.scoreMedian && point.price <= metrics.priceMedian)
+    .sort((a, b) => b.score - a.score);
+  survival.slice(0, 3).forEach(add);
+  add(points.slice().sort((a, b) => a.price - b.price)[0]);
+  return picked.slice(0, 6);
+}
 function renderScatter(metrics) {
   const container = $('#dash-scatter');
   if (!container) return;
@@ -391,26 +415,17 @@ function renderScatter(metrics) {
         '"></rect>'
     )
     .join('');
-  const quadrantLabels = quadrants
-    .map((quadrant, index) => {
-      const count = metrics.quadrant[quadrant.key] || 0;
-      const label = t('dashboard.killLine2.quadrantAria', { name: quadrant.label, count: intlNumber(count) });
-      const x = quadrant.x + Math.max(12, quadrant.w / 2);
-      const y = quadrant.y + 18;
-      return (
-        '<text class="dash-quadrant-label ' +
+  const quadrantLegend = quadrants
+    .map(
+      (quadrant) =>
+        '<li><span class="dash-quadrant-swatch ' +
         quadrant.cls +
-        '" x="' +
-        x.toFixed(1) +
-        '" y="' +
-        y.toFixed(1) +
-        '" text-anchor="middle" aria-label="' +
-        esc(label) +
-        '">' +
+        '"></span>' +
         esc(quadrant.label) +
-        '</text>'
-      );
-    })
+        '<span class="dash-quadrant-count">' +
+        intlNumber(metrics.quadrant[quadrant.key] || 0) +
+        '</span></li>'
+    )
     .join('');
   const xLabels = xTicks
     .map(
@@ -466,6 +481,27 @@ function renderScatter(metrics) {
       );
     })
     .join('');
+  const representative = representativePoints(points, metrics);
+  const labelHtml = representative
+    .map((point, index) => {
+      const x = xFor(point.price);
+      const y = yFor(point.score);
+      const anchor = x > SCATTER_W - 180 ? 'end' : 'start';
+      const dx = anchor === 'end' ? -9 : 9;
+      const dy = index % 2 === 0 ? -7 : 16;
+      return (
+        '<text class="dash-scatter-label" x="' +
+        (x + dx).toFixed(1) +
+        '" y="' +
+        (y + dy).toFixed(1) +
+        '" text-anchor="' +
+        anchor +
+        '">' +
+        esc(shortModelName(point.model)) +
+        '</text>'
+      );
+    })
+    .join('');
   container.innerHTML =
     '<svg class="dash-scatter-svg" viewBox="0 0 ' +
     SCATTER_W +
@@ -476,7 +512,6 @@ function renderScatter(metrics) {
     '">' +
     '<g class="dash-quadrants">' +
     rects +
-    quadrantLabels +
     '</g>' +
     '<line class="dash-scatter-line dash-scatter-line--cap" x1="' +
     pad.left +
@@ -533,7 +568,13 @@ function renderScatter(metrics) {
     '<g class="dash-scatter-points">' +
     pointHtml +
     '</g>' +
+    '<g class="dash-scatter-labels">' +
+    labelHtml +
+    '</g>' +
     '</svg>' +
+    '<ul class="dash-quadrant-legend">' +
+    quadrantLegend +
+    '</ul>' +
     '<p class="dash-scatter-meta">' +
     esc(t('dashboard.scatter.sample', { count: intlNumber(points.length) })) +
     ' · ' +

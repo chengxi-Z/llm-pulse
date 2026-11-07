@@ -178,3 +178,20 @@
 @media (min-width: 1025px) {
   .dash-grid--carousel .dash-card--topics { max-height: 620px; }
 }
+
+/* v1.5.2: kill line is the only chart (carousel removed) */
+.dash-card--killline{min-height:0}
+.dash-card--killline .dash-card-body{display:flex;flex-direction:column;padding-top:10px}
+.dash-card--killline .dash-scatter{display:flex;flex-direction:column;height:100%}
+.dash-card--killline .dash-scatter-svg{flex:1 1 auto;min-height:240px;height:100%}
+.dash-scatter-label{fill:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
+.dash-quadrant-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 0 0;padding:0;list-style:none}
+.dash-quadrant-legend li{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.68rem;line-height:1.4}
+.dash-quadrant-swatch{width:10px;height:10px;flex:none;border:1px solid var(--line);background:transparent}
+.dash-quadrant-swatch.is-survival{background:rgb(var(--rgb-highlight)/.18);border-color:var(--gold)}
+.dash-quadrant-swatch.is-highcost{background:rgb(var(--rgb-gold)/.16)}
+.dash-quadrant-swatch.is-lowability{background:rgb(var(--rgb-ink)/.08)}
+.dash-quadrant-swatch.is-kill{background:rgb(var(--rgb-shadow)/.12)}
+.dash-quadrant-count{color:var(--ink);font-variant-numeric:tabular-nums}
+.dash-grid--carousel{grid-template-rows:auto}
+

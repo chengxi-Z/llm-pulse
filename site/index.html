@@ -241,45 +241,16 @@
         </div>
         <div class="dash-kpis" id="dash-kpis"></div>
         <div class="dash-grid dash-grid--carousel">
-          <div class="dash-carousel" id="dash-carousel" data-dash-carousel role="region" aria-roledescription="carousel" aria-label="图表轮播" data-i18n-attr="aria-label:dashboard.carousel.aria">
-            <div class="dash-carousel-viewport">
-              <div class="dash-carousel-track" id="dash-carousel-track">
-                <section class="dash-slide is-active" id="dash-slide-releases" role="group" aria-roledescription="slide" aria-label="模型发布" data-i18n-attr="aria-label:dashboard.carousel.viewReleases">
-                  <header class="dash-card-head">
-                    <h3 data-i18n="dashboard.releases.title">近 12 周模型发布</h3>
-                    <span class="dash-card-head-note" data-i18n="dashboard.releases.subtitle">每周新发布模型数量</span>
-                  </header>
-                  <div class="dash-card-body dash-chart" id="dash-releases"></div>
-                </section>
-                <section class="dash-slide" id="dash-slide-price" role="group" aria-roledescription="slide" aria-label="价格分层" data-i18n-attr="aria-label:dashboard.carousel.viewPrice">
-                  <header class="dash-card-head">
-                    <h3 data-i18n="dashboard.pricePie.title">输出价格分层</h3>
-                    <span class="dash-card-head-note" data-i18n="dashboard.pricePie.subtitle">USD / 1M output tokens</span>
-                  </header>
-                  <div class="dash-card-body dash-donut-wrap">
-                    <div class="dash-donut-box" id="dash-price-pie"></div>
-                    <ul class="dash-legend" id="dash-price-legend"></ul>
-                  </div>
-                  <p class="dash-card-note" data-i18n="dashboard.pricePie.footnote">未公开价格的模型不计入统计。</p>
-                </section>
-                <section class="dash-slide" id="dash-slide-kill" role="group" aria-roledescription="slide" aria-label="斩杀线" data-i18n-attr="aria-label:dashboard.carousel.viewKillLine">
-                  <header class="dash-card-head">
-                    <h3 data-i18n="dashboard.scatter.title">AI 模型斩杀线</h3>
-                    <span class="dash-card-head-note" data-i18n="dashboard.scatter.subtitle">能力 × 成本</span>
-                  </header>
-                  <div class="dash-card-body">
-                    <div class="dash-scatter" id="dash-scatter" data-i18n-attr="aria-label:dashboard.scatter.aria" role="group" aria-label="能力与成本散点图"></div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div class="dash-carousel-controls">
-              <button type="button" class="dash-carousel-arrow" data-carousel-prev aria-label="上一张" data-i18n-attr="aria-label:dashboard.carousel.prev">←</button>
-              <div class="dash-carousel-dots" id="dash-carousel-dots" role="tablist" aria-label="图表切换" data-i18n-attr="aria-label:dashboard.carousel.group"></div>
-              <button type="button" class="dash-carousel-arrow" data-carousel-next aria-label="下一张" data-i18n-attr="aria-label:dashboard.carousel.next">→</button>
-            </div>
-          </div>
-          <article class="dash-card dash-card--topics" id="dash-topics-card">
+          			<article class="dash-card dash-card--killline" id="dash-killline-card" aria-labelledby="dash-killline-title">
+				<header class="dash-card-head">
+					<h3 id="dash-killline-title" data-i18n="dashboard.scatter.title">AI 模型斩杀线</h3>
+					<span class="dash-card-head-note" data-i18n="dashboard.scatter.subtitle">能力 × 成本</span>
+				</header>
+				<div class="dash-card-body">
+					<div class="dash-scatter" id="dash-scatter" data-i18n-attr="aria-label:dashboard.scatter.aria" role="group" aria-label="能力与成本散点图"></div>
+				</div>
+			</article>
+			<article class="dash-card dash-card--topics" id="dash-topics-card">
             <header class="dash-card-head">
               <h3 data-i18n="dashboard.topics.title">AI 热搜话题</h3>
               <span class="dash-card-head-note" data-i18n="dashboard.topics.subtitle">Hacker News · 近 7 天</span>
