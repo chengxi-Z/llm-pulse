@@ -3490,3 +3490,24 @@ html,body{overflow-x:clip}
 .rank-expand-note,.rank-dist-site,.rank-dist-repo{font-size:0.75rem}
 .hero--compact .hero-panel .source-summary{font-size:0.75rem}
 .dash-scatter-meta,.dash-scatter-disclaimer{font-size:0.75rem}
+
+/* Desktop header: keep every nav label on a single line */
+@media (min-width: 961px){
+  .nav-list a{white-space:nowrap}
+  .nav-list{flex-wrap:nowrap;gap:clamp(10px,1.8vw,24px)}
+}
+
+/* Mid-desktop: keep the nav on one line without clipping actions */
+@media (min-width:961px) and (max-width:1100px){
+  .header-inner{gap:14px}
+  .nav-list{gap:10px}
+  .nav-list a{font-size:0.8125rem;letter-spacing:0}
+  .header-actions{gap:6px}
+}
+
+@media (min-width:961px) and (max-width:1000px){
+  .header-inner{gap:10px}
+  .nav-list{gap:8px}
+  .nav-list a{font-size:0.75rem}
+  .header-actions{gap:4px}
+}

@@ -91,6 +91,7 @@
   2. 右上「本周速览」数据源摘要换行被裁切 → 摘要收敛为 source 数 + OK + degraded，完整落在卡片内；
   3. 排名页 Source 行残留 OpenCompass（数据源已移除）→ 改为 Artificial Analysis + OpenRouter + Epoch AI + LiveBench。
 - Impeccable 最终检测：共 39 条，其中 **36 条为既存品牌层**（cream palette 18、Inter 字体 18），**3 条为设计性 advisory**（DeepSeek 长单列、排行 filter-bar 贴边 2 条）；**tiny-text、低对比、行宽、文本溢出、kicker、横向溢出均为 0**。
+- 头部导航保持单行：所有 nav 链接 `white-space:nowrap`；中桌面（961–1100px）缩小字号/间距，961–1000px 进一步收紧；已在 1902 / 1440 / 1280 / 1100 / 1025 / 1000 / 970 / 961px 实测无换行、无右侧裁切；≤960px 使用汉堡菜单。
 - 结论：达到发布门禁，可作为 **v2.0.0（English-first）** 发布。
 
 ## 7. 剩余限制（明确说明）
