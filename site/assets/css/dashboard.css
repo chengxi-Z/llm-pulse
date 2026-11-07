@@ -170,7 +170,7 @@
 }
 
 /* v1.4 content-first: pull the overview dashboard closer to the compact hero (<=620px first content card at 1440x900) */
-#overview-dashboard.section{padding-top:clamp(18px,2.2vw,26px)}
+#overview-dashboard.section{padding-top:clamp(16px,2vw,28px)}
 #overview-dashboard .section-head{margin-bottom:18px}
 
 /* v1.4: keep the hot-topics card aligned with the chart carousel on desktop;

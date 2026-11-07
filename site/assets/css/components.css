@@ -597,7 +597,8 @@ body.nav-open .nav-toggle-lines::after {
   grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%);
   column-gap: var(--rail-gap);
   align-items: stretch;
-  min-height: clamp(320px, 30vw, 400px);
+  height: clamp(400px, 30vw, 460px);
+  min-height: 0;
 }
 
 .page-masthead .container > .eyebrow{grid-column:1;grid-row:1}
@@ -609,7 +610,7 @@ body.nav-open .nav-toggle-lines::after {
 
 .page-masthead .lede{display:-webkit-box;overflow:hidden;max-width:72ch;margin-top:14px;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 
-.masthead-meta{position:relative;display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px 24px;margin-top:0;padding:clamp(16px,1.8vw,22px);color:var(--muted);font-size:.8125rem;background:var(--surface);border:1px solid var(--line);border-radius:0;box-shadow:var(--shadow-float);align-self:stretch;min-height:100%}
+.masthead-meta{position:relative;display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px 24px;margin-top:0;padding:clamp(16px,1.8vw,22px);color:var(--muted);font-size:.8125rem;background:var(--surface);border:1px solid var(--line);border-radius:0;box-shadow:var(--shadow-float);align-self:stretch;height:100%;min-height:0}
 .masthead-meta::before{content:"";position:absolute;inset:7px;border:1px solid var(--gold-soft);opacity:.45;pointer-events:none}
 .masthead-card-head{flex:0 0 100%;display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 4px;padding-bottom:10px;border-bottom:1px solid var(--line);color:var(--muted);font-size:var(--fs-label);font-weight:600;letter-spacing:var(--ls-label);text-transform:uppercase}
 .masthead-card-head .eyebrow-en{color:var(--highlight);letter-spacing:.12em}
@@ -635,9 +636,9 @@ body.nav-open .nav-toggle-lines::after {
     radial-gradient(48% 58% at 0% 96%, var(--glow-accent), transparent 62%);
 }
 
-.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(75% - var(--hero-gap))) minmax(0,25%);column-gap:var(--hero-gap);align-items:stretch;min-height:clamp(320px, 30vw, 400px)}
+.hero-grid{--hero-gap:var(--rail-gap);position:relative;display:grid;grid-template-columns:minmax(0,calc(75% - var(--hero-gap))) minmax(0,25%);column-gap:var(--hero-gap);align-items:stretch;height:clamp(400px,30vw,460px);min-height:0}
 .hero-copy{grid-column:1;min-width:0}
-.hero-panel{grid-column:2;width:100%}
+.hero-panel{grid-column:2;width:100%;height:100%;min-height:0}
 
 .hero-title{margin-top:14px;font-size:clamp(1.6rem,2.4vw,2.35rem);line-height:1.1;letter-spacing:.005em}
 
@@ -2613,6 +2614,8 @@ a.source-name:hover {
   .hero-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: clamp(32px, 6vw, 48px);
+    height: auto;
+    min-height: 0;
   }
 
   .hero-copy,
@@ -2623,6 +2626,7 @@ a.source-name:hover {
   .page-masthead .container,
   .section-head {
     grid-template-columns: minmax(0, 1fr);
+    height: auto;
     min-height: 0;
   }
 
@@ -3404,3 +3408,17 @@ html[lang="en"] .eyebrow-en{display:none}
   .rank-gap-item{grid-template-columns:auto minmax(0,1fr)}
   .rank-gap-score,.rank-gap-go{grid-column:2;justify-self:start}
 }
+
+/* ===== v1.5 unified header band: same outer padding + same fixed height on all pages ===== */
+.hero--compact,
+.page-masthead--compact{padding-block:clamp(16px,2vw,28px) clamp(12px,1.6vw,22px)}
+
+/* weekly panel must fit the fixed header height at 25% width */
+.hero-panel .stat-item{padding:8px 0}
+.hero-panel .stat-value{font-size:1.6rem}
+.hero-panel .stat-value--date{font-size:1rem}
+.hero-panel .panel-head{padding-bottom:12px}
+.hero-panel .source-summary{font-size:.72rem;line-height:1.55}
+.hero-panel .panel-note{font-size:.7rem;line-height:1.55;margin-top:10px}
+.hero-panel .source-dots{gap:3px}
+.hero-panel .source-dot{width:7px;height:7px}

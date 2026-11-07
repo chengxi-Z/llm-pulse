@@ -647,17 +647,13 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ## 27. v1.4 首屏内容优先（hero / masthead 瘦身）
 
-### 27.0 v1.5 版式比例（2026-11-07 用户复核，最终口径）
+### 27.0 v1.5 统一头部（2026-11-07，用户最终确认）
 
-- **全局右侧栏 = 1/4，且跨页面像素对齐**：统一写成 `grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%)` + `gap: var(--rail-gap)`，右栏起点严格落在内容容器的 **75%** 位置：
-  - 首页 hero（`.hero-grid`）→ 左侧标题/导语填满 75%，右侧「本周速览」25%
-  - 首页仪表盘（`.dash-grid--carousel`）→ 左侧轮播 75%，右侧热榜 25%
-  - DeepSeek 页（`.focus-grid`）→ 左侧主线 75%，右侧 aside 25%
-  - 各页页头（`.page-masthead .container`）→ 左标题/导语 75%，右 meta 25%
-- **垂直对齐**：首页 hero 与 DeepSeek focus-grid 均 `align-items:start`，右侧组件顶边与左侧内容顶边对齐（不再垂直居中导致上下错位）。
-- 模块 `section-head`：左标题 `1fr` 占满，右侧更新时间/统计 `auto` 贴右。
-- ≤960px：以上双栏统一回落单列，面板与 meta 全宽。
-- 历史口径：v1.5 首轮误做「1/4 标题 + 1/3 面板 + 中间留白」；第二轮误做「2/3 + 1/3」；最终以 **右栏 1/4（75%/25% 精确公式）、左栏填满、跨页面起点对齐** 为准。
+- **全站统一头部高度**：`.hero-grid` 与 `.page-masthead .container` 均 `height: clamp(400px, 30vw, 460px)`（≥961px），左右两栏 `align-items:stretch`，右侧卡片 `height:100%` 填满；≤960px 高度自动、单列。
+- **右侧卡片宽度严格 1/4**：`grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%)`；首页每周速览、各页「概览」卡、仪表盘热榜、DeepSeek aside 同一条 75% 起点。
+- **同一高度/同一边线**：所有页面头部带（padding + 固定高度）一致 → 右侧卡片顶边、底边、右缘对齐；下一区块从同一条线开始（首页 dashboard 与各页首个 section 的 padding-top 统一 `clamp(16px,2vw,28px)`）。
+- **卡片样式统一**：`surface` + 1px 边框 + `--shadow-float` + 内层金线（::before inset 7px）+ 卡头 `概览 / OVERVIEW`；与首页「本周速览」同款。
+- 行动按钮/导语/细排仍在左侧 75% 内；首页周报卡内部压缩（stat padding 8px、value 1.6rem、note/source 小字号）以适配固定高度。
 - 全局 `--section-y` 调为 `clamp(44px, 6vw, 84px)`；`.section-head` 底部间距 `clamp(18px,2.4vw,32px)`；`.section-desc` 2 行 clamp；`.filter-bar` 上下 padding 10px；`.board-tabs` 底距 12px；`.rank-panel` padding 收紧。
 - `.page-masthead`（基础）：上下 `clamp(26px,3.4vw,52px) / clamp(18px,2.4vw,30px)`；h1 `clamp(1.95rem,3.6vw,3rem)`、上边距 14px；lede 2 行 clamp、上边距 14px；`.masthead-meta` 上边距 18px/上 padding 12px。
 - `.page-masthead--compact`（各页启用）：上下 18–34 / 12–22px；h1 `clamp(1.75rem,3.2vw,2.6rem)`、上边距 10px；lede 上边距 10px；meta 收紧；其后首个 `.section` 上 padding `clamp(16px,2vw,28px)`。
