@@ -19,7 +19,8 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Runnable collection of LLM apps (RAG/Agent/multimodal) for project inspiration."
     },
     {
       "id": "huggingface-agents-course",
@@ -37,7 +38,8 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Hands-on AI Agent course: tool use, reasoning frameworks and multi-agent systems."
     },
     {
       "id": "huggingface-llm-course",
@@ -55,7 +57,8 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Complete free path from Transformers basics to fine-tuning and deployment, with notebooks."
     },
     {
       "id": "mcp-docs",
@@ -73,7 +76,9 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Open MCP protocol docs: connect models to external tools and data; the base of agent tooling.",
+      "titleEn": "Model Context Protocol Docs"
     },
     {
       "id": "karpathy-zero-to-hero",
@@ -91,7 +96,8 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "From backprop from scratch to GPT: the best course for building intuition about LLMs."
     },
     {
       "id": "datawhale-self-llm",
@@ -109,7 +115,9 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Practical deployment and fine-tuning guide for Chinese open models (Qwen/GLM/InternLM).",
+      "titleEn": "Self-LLM: Open LLM Guide"
     },
     {
       "id": "d2l-zh",
@@ -127,7 +135,10 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Classic Chinese deep-learning textbook with runnable code, from basics to attention.",
+      "authorEn": "Mu Li et al.",
+      "titleEn": "Dive into Deep Learning (D2L)"
     },
     {
       "id": "ml-2024-hylee",
@@ -145,7 +156,10 @@
       ],
       "free": true,
       "featured": true,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Chinese introduction to ML and generative AI; lively lectures for beginners.",
+      "authorEn": "Hung-yi Lee (NTU)",
+      "titleEn": "Hung-yi Lee Machine Learning Course"
     },
     {
       "id": "anthropic-prompt-eng",
@@ -163,7 +177,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Anthropic's official prompt-engineering docs: system prompts and tool-calling best practices."
     },
     {
       "id": "awesome-llm",
@@ -181,7 +196,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Curated list of LLM papers and resources across pretraining, fine-tuning, evaluation and apps."
     },
     {
       "id": "rasbt-llms-from-scratch",
@@ -199,7 +215,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Build a GPT-like model step by step, with a book and code for the full training pipeline."
     },
     {
       "id": "datawhale-llm-cookbook",
@@ -217,7 +234,10 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Chinese companion to Andrew Ng's LLM course: Prompt/RAG/fine-tuning/Agent.",
+      "authorEn": "Datawhale + Andrew Ng",
+      "titleEn": "LLM Cookbook for Developers"
     },
     {
       "id": "mlabonne-llm-course",
@@ -235,7 +255,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Roadmap and Colab notebooks from basics to fine-tuning, quantization and deployment."
     },
     {
       "id": "datawhale-llm-universe",
@@ -253,7 +274,9 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Chinese hands-on course for application developers: API calls to RAG apps.",
+      "titleEn": "LLM Universe: App Development"
     },
     {
       "id": "karpathy-llm101n",
@@ -271,7 +294,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Build a storyteller LLM from scratch: training, fine-tuning and deployment."
     },
     {
       "id": "lilianweng-blog",
@@ -289,7 +313,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Technical blog by a former OpenAI researcher on agents, RAG and diffusion models."
     },
     {
       "id": "openai-cookbook",
@@ -307,7 +332,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Official examples: API usage, structured outputs, agents and evaluation best practices."
     },
     {
       "id": "prompting-guide",
@@ -325,7 +351,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "The most systematic prompt-engineering guide, multilingual and continuously updated."
     },
     {
       "id": "stanford-cs25",
@@ -343,7 +370,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Stanford lecture series on Transformers with industry researchers on frontier models."
     },
     {
       "id": "illustrated-transformer",
@@ -361,7 +389,8 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Visual guide to Transformers and attention; a classic introduction."
     },
     {
       "id": "arxiv-cs-cl",
@@ -379,7 +408,9 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Latest computational-linguistics papers from arXiv; a frontline research feed.",
+      "titleEn": "arXiv cs.CL Latest Papers"
     },
     {
       "id": "internlm-tutorial",
@@ -397,7 +428,10 @@
       ],
       "free": true,
       "featured": false,
-      "addedAt": "2026-11-03T00:00:00.000Z"
+      "addedAt": "2026-11-03T00:00:00.000Z",
+      "descriptionEn": "Chinese full-stack LLM bootcamp: deployment, fine-tuning, RAG, evaluation and agents.",
+      "authorEn": "Shanghai AI Lab InternLM",
+      "titleEn": "InternLM LLM Bootcamp"
     }
   ]
 }

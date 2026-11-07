@@ -57,5 +57,113 @@ export const PROJECTS = [
   P('crewai', 'CrewAI', 'crewAIInc', 'crewAIInc/crewAI', '多智能体协作框架：角色、任务、工具与流程编排。', ['agents', 'multi-agent', 'orchestration'], '多智能体协作的易用框架', 'community', 'MIT', '学习多 Agent 协作范式。', 60444),
 ];
 
+
+/* English companions for the curated lists (used by the English edition). */
+const RESOURCE_EN = {
+  'awesome-llm-apps': { descriptionEn: 'Runnable collection of LLM apps (RAG/Agent/multimodal) for project inspiration.' },
+  'huggingface-agents-course': { descriptionEn: 'Hands-on AI Agent course: tool use, reasoning frameworks and multi-agent systems.' },
+  'huggingface-llm-course': { descriptionEn: 'Complete free path from Transformers basics to fine-tuning and deployment, with notebooks.' },
+  'mcp-docs': { descriptionEn: 'Open MCP protocol docs: connect models to external tools and data; the base of agent tooling.' },
+  'karpathy-zero-to-hero': { descriptionEn: 'From backprop from scratch to GPT: the best course for building intuition about LLMs.' },
+  'datawhale-self-llm': { descriptionEn: 'Practical deployment and fine-tuning guide for Chinese open models (Qwen/GLM/InternLM).' },
+  'd2l-zh': { descriptionEn: 'Classic Chinese deep-learning textbook with runnable code, from basics to attention.', authorEn: 'Mu Li et al.' },
+  'ml-2024-hylee': { descriptionEn: 'Chinese introduction to ML and generative AI; lively lectures for beginners.', authorEn: 'Hung-yi Lee (NTU)' },
+  'anthropic-prompt-eng': { descriptionEn: "Anthropic's official prompt-engineering docs: system prompts and tool-calling best practices." },
+  'awesome-llm': { descriptionEn: 'Curated list of LLM papers and resources across pretraining, fine-tuning, evaluation and apps.' },
+  'rasbt-llms-from-scratch': { descriptionEn: 'Build a GPT-like model step by step, with a book and code for the full training pipeline.' },
+  'datawhale-llm-cookbook': { descriptionEn: "Chinese companion to Andrew Ng's LLM course: Prompt/RAG/fine-tuning/Agent.", authorEn: 'Datawhale + Andrew Ng' },
+  'mlabonne-llm-course': { descriptionEn: 'Roadmap and Colab notebooks from basics to fine-tuning, quantization and deployment.' },
+  'datawhale-llm-universe': { descriptionEn: 'Chinese hands-on course for application developers: API calls to RAG apps.' },
+  'karpathy-llm101n': { descriptionEn: 'Build a storyteller LLM from scratch: training, fine-tuning and deployment.' },
+  'lilianweng-blog': { descriptionEn: 'Technical blog by a former OpenAI researcher on agents, RAG and diffusion models.' },
+  'openai-cookbook': { descriptionEn: 'Official examples: API usage, structured outputs, agents and evaluation best practices.' },
+  'prompting-guide': { descriptionEn: 'The most systematic prompt-engineering guide, multilingual and continuously updated.' },
+  'stanford-cs25': { descriptionEn: 'Stanford lecture series on Transformers with industry researchers on frontier models.' },
+  'illustrated-transformer': { descriptionEn: 'Visual guide to Transformers and attention; a classic introduction.' },
+  'arxiv-cs-cl': { descriptionEn: 'Latest computational-linguistics papers from arXiv; a frontline research feed.' },
+  'internlm-tutorial': { descriptionEn: 'Chinese full-stack LLM bootcamp: deployment, fine-tuning, RAG, evaluation and agents.', authorEn: 'Shanghai AI Lab InternLM' },
+};
+const PROJECT_EN = {
+  'ai-pulse': {
+    nameEn: 'AI Pulse',
+    summaryEn: 'This repo: a public, lightweight LLM tracker for updates, leaderboards and learning resources, with a BYOK assistant and project showcase.',
+    highlightEn: 'Static site + GitHub Actions daily refresh',
+    whyEn: 'A personal AI showcase: turn continuous tracking and a portfolio into a sustainable public product.',
+  },
+  ollama: {
+    summaryEn: 'Run mainstream open models locally with one command; built-in model management and API.',
+    highlightEn: 'The simplest way to run models locally',
+    whyEn: 'A foundation for offline and privacy-first AI assistants.',
+  },
+  transformers: {
+    summaryEn: 'Hugging Face model hub plus training/inference APIs across text, vision, audio and multimodal.',
+    highlightEn: 'The backbone of the open-model ecosystem',
+    whyEn: 'Understand model interfaces and ecosystem standards.',
+  },
+  dify: {
+    summaryEn: 'Visual LLM app platform: workflows, agents, RAG and operations in one place.',
+    highlightEn: 'Build production AI apps with low code',
+    whyEn: 'A leading open-source reference for enterprise AI orchestration.',
+  },
+  'open-webui': {
+    summaryEn: 'Self-hosted, feature-rich chat UI compatible with Ollama and OpenAI-compatible APIs.',
+    highlightEn: 'One of the most active self-hosted LLM frontends',
+    whyEn: 'A reference implementation for chat UIs and assistants.',
+  },
+  langchain: {
+    summaryEn: 'Framework for LLM apps: chains, tools, agents and memory.',
+    highlightEn: 'The de facto standard for LLM app frameworks',
+    whyEn: 'Learn production engineering for agents and tool use.',
+  },
+  comfyui: {
+    summaryEn: 'Node-based diffusion GUI and a powerful image/video generation workflow engine.',
+    highlightEn: 'The benchmark for generative visual workflows',
+    whyEn: 'Study multimodal generation and node orchestration.',
+  },
+  'browser-use': {
+    summaryEn: 'Lets AI agents operate browsers to complete web tasks with visual and DOM interaction.',
+    highlightEn: 'A leading browser-agent project',
+    whyEn: 'Study agents interacting with real environments.',
+  },
+  vllm: {
+    summaryEn: 'High-throughput, low-latency LLM inference and serving engine with PagedAttention.',
+    highlightEn: 'A production standard for inference acceleration',
+    whyEn: 'Study inference performance and deployment optimization.',
+  },
+  ragflow: {
+    summaryEn: 'RAG engine built on deep document understanding, with complex PDF/table parsing and traceable answers.',
+    highlightEn: 'Document understanding plus traceable citations',
+    whyEn: 'A quality benchmark for RAG engineering.',
+  },
+  'mcp-servers': {
+    summaryEn: 'Official MCP server collection connecting models to tools and data.',
+    highlightEn: 'Standardizing the agent tool ecosystem',
+    whyEn: 'Understand MCP and tool integration.',
+  },
+  'lobe-chat': {
+    summaryEn: 'Modern high-performance open-source chat framework with multi-model, plugins and knowledge base.',
+    highlightEn: 'A beautifully designed multi-model chat UI',
+    whyEn: 'A reference for light-luxury visual and interaction design.',
+  },
+  crewai: {
+    summaryEn: 'Multi-agent framework for roles, tasks, tools and workflow orchestration.',
+    highlightEn: 'An approachable multi-agent framework',
+    whyEn: 'Learn multi-agent collaboration patterns.',
+  },
+};
+const RESOURCE_TITLE_EN = {
+  'mcp-docs': "Model Context Protocol Docs",
+  'datawhale-self-llm': "Self-LLM: Open LLM Guide",
+  'd2l-zh': "Dive into Deep Learning (D2L)",
+  'ml-2024-hylee': "Hung-yi Lee Machine Learning Course",
+  'datawhale-llm-cookbook': "LLM Cookbook for Developers",
+  'datawhale-llm-universe': "LLM Universe: App Development",
+  'internlm-tutorial': "InternLM LLM Bootcamp",
+  'arxiv-cs-cl': "arXiv cs.CL Latest Papers",
+};
+for (const item of RESOURCES) if (RESOURCE_TITLE_EN[item.id]) item.titleEn = RESOURCE_TITLE_EN[item.id];
+for (const item of RESOURCES) Object.assign(item, RESOURCE_EN[item.id] || {});
+for (const item of PROJECTS) Object.assign(item, PROJECT_EN[item.id] || {});
+
 /** Spot-check resource links (used by --check-links): HEAD/GET probes only; records status without mutating data */
 export const LINK_PROBE_SKIP = new Set(['huggingface.co', 'www.anthropic.com']);

@@ -889,5 +889,6 @@
   "dashboard.scatter.metricGpqa": "GPQA Diamond",
   "dashboard.scatter.metricSwe": "SWE-bench Verified",
   "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
-  "dashboard.scatter.metricOpencompassMM": "OpenCompass 多模态"
+  "dashboard.scatter.metricOpencompassMM": "OpenCompass 多模态",
+  "ui.siteNameShare": "AI Pulse · 照胆云"
 }

@@ -23,6 +23,89 @@ import { findGapModels, matchesModelNames, modelKey } from './ranking-gaps.js';
 /* External-data links must pass the http(s) allowlist; internal links stay as-is. */
 const safeHref = safeHttpUrl;
 
+const SOURCE_NAME_EN = {
+  openrouter: 'OpenRouter Models API',
+  livebench: 'LiveBench 2.0',
+  'epoch-ai': 'Epoch AI Benchmarking',
+  opencompass: 'OpenCompass',
+  'artificial-analysis': 'Artificial Analysis',
+  'rss-openai': 'OpenAI News RSS',
+  'rss-gdm': 'Google DeepMind Blog RSS',
+  'rss-google-ai': 'Google AI Blog RSS',
+  'rss-qwen': 'Qwen Blog RSS',
+  'rss-aws-ml': 'AWS Machine Learning Blog RSS',
+  'rss-mit-ai': 'MIT News AI RSS',
+  'rss-bair': 'Berkeley BAIR Blog RSS',
+  github: 'GitHub API (project stars)',
+  'github-releases': 'GitHub Releases (OSS updates)',
+  'hf-mirror': 'Hugging Face Mirror',
+  huggingface: 'Hugging Face API',
+  lmarena: 'LMArena (HF dataset)',
+  superclue: 'SuperCLUE',
+  'deepseek-news': 'DeepSeek Change Log',
+  'hn-ai': 'Hacker News AI',
+};
+const SOURCE_NOTE_EN = {
+  openrouter: 'Models API · generated news and derived leaderboards',
+  livebench: 'Release parsed; overall score recomputed locally',
+  'epoch-ai': 'ECI, SWE-bench Verified and GPQA Diamond from benchmark_data.zip',
+  opencompass: 'Official API · text and multimodal arena boards',
+  'artificial-analysis': 'Full leaderboard parsed from initial models',
+  'rss-openai': 'Recent 120-day items',
+  'rss-gdm': 'Recent 120-day items',
+  'rss-google-ai': 'Recent 120-day items',
+  'rss-qwen': 'Feed reachable; latest items outside the freshness window',
+  'rss-aws-ml': 'Recent 120-day items',
+  'rss-mit-ai': 'Recent 120-day items',
+  'rss-bair': 'Recent 120-day items',
+  github: 'Live fetch failed; using the last snapshot',
+  'github-releases': 'Live fetch failed; using the last snapshot',
+  'hf-mirror': 'Mirror reachability and trending models',
+  huggingface: 'CI only; blocked locally',
+  lmarena: 'CI only; dataset fetched via mirror',
+  superclue: 'No public data API; not ingested',
+  'deepseek-news': 'Official changelog parsed',
+  'hn-ai': 'Top AI stories from the last 7 days',
+};
+const sourceNameText = (source) =>
+  getLang() === 'en'
+    ? SOURCE_NAME_EN[source.id] || (/[\u3400-\u9fff]/.test(String(source.name || '')) ? source.id : source.name || source.id)
+    : source.name || source.id;
+const sourceNoteText = (source) => (getLang() === 'en' ? SOURCE_NOTE_EN[source.id] || '' : source.note || '');
+const TAG_EN = {
+  '官方博客': 'Official blog',
+  '模型发布': 'Model release',
+  '开源': 'Open source',
+  '研究': 'Research',
+  '政策/安全': 'Policy & safety',
+  '定价': 'Pricing',
+  '评测': 'Evaluation',
+  '长上下文': 'Long context',
+  '多模态': 'Multimodal',
+  '推理': 'Reasoning',
+  '开源权重': 'Open weights',
+  '免费': 'Free',
+  '官方公告': 'Official update',
+  '微调': 'Fine-tuning',
+  '开源模型': 'Open models',
+  '中文': 'Chinese',
+  '深度学习': 'Deep learning',
+  '机器学习': 'Machine learning',
+  '生成式AI': 'Generative AI',
+  '应用开发': 'App development',
+  '深度长文': 'Long-form',
+  '入门': 'Beginner',
+  '论文': 'Papers',
+  '实战营': 'Bootcamp',
+};
+const tagLabel = (tag) => (getLang() === 'en' ? TAG_EN[tag] || tag : tag);
+const localizedItemField = (item, field) => {
+  if (!item) return '';
+  const en = item[`${field}En`];
+  return getLang() === 'en' && en ? en : item[field] || '';
+};
+
+
 /* ---------- Locale-aware number / date formatting ---------- */
 
 const locale = () => (getLang() === 'en' ? 'en-US' : 'zh-CN');
@@ -375,7 +458,7 @@ function renderStats(data) {
     const dots = sources
       .map((source) => {
         const label = t('home.sources.dotTitle', {
-          name: source.name || source.id,
+          name: sourceNameText(source),
           status: statusLabelOf(source.status),
         });
         return `<span class="source-dot source-dot--${esc(source.status || 'blocked')}" role="listitem" title="${esc(
@@ -746,7 +829,7 @@ export function initNews(data) {
     if (!tagEl) return;
     tagEl.innerHTML = [
       `<option value="">${esc(t('news.tagFilter.all'))}</option>`,
-      ...tags.map(([tag, count]) => `<option value="${esc(tag)}">${esc(tag)}（${count}）</option>`),
+      ...tags.map(([tag, count]) => `<option value="${esc(tag)}">${esc(tagLabel(tag))} (${count})</option>`),
     ].join('');
     try {
       tagEl.value = state.tag;
@@ -856,12 +939,12 @@ export function initNews(data) {
   }
 
   function dispatchHtml(item) {
-    const title = plainText(item.title || t('ui.untitledNews'), 180);
-    const summary = plainText(item.summary || '', 220);
+    const title = plainText(localizedItemField(item, 'title') || t('ui.untitledNews'), 180);
+    const summary = plainText(localizedItemField(item, 'summary') || '', 220);
     const link = safeHref(item.url) || safeHref(item.sourceUrl) || '#';
     const tags = (Array.isArray(item.tags) ? item.tags : [])
       .slice(0, 4)
-      .map((tag) => `<li class="tag">${esc(tag)}</li>`)
+      .map((tag) => `<li class="tag">${esc(tagLabel(tag))}</li>`)
       .join('');
     return `<li class="timeline-item" data-importance="${Number(item.importance) || 1}">
     <div class="timeline-date">
@@ -1224,7 +1307,7 @@ function rankingsBoardHtml(board, index, expanded = false, boards = []) {
     }
     <div class="rank-dist" role="group" aria-label="${esc(t('rankings.distAria'))}">
       <img class="rank-dist-qr" src="assets/img/qr-site.png" alt="" width="56" height="56" loading="lazy">
-      <span class="rank-dist-title">AI Pulse · 照胆云</span>
+      <span class="rank-dist-title">${esc(t('ui.siteNameShare'))}</span>
       <a class="rank-dist-site" href="https://chengxi-z.github.io/llm-pulse/" target="_blank" rel="noopener noreferrer">chengxi-z.github.io/llm-pulse</a>
       <a class="rank-dist-repo" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer">github.com/chengxi-Z/llm-pulse</a>
     </div>
@@ -1622,7 +1705,7 @@ export function initResources(data) {
         if (state.lang && item.lang !== state.lang) return false;
         if (state.free && !item.free) return false;
         if (!state.q) return true;
-        return [item.title, item.author, item.description, ...(Array.isArray(item.tags) ? item.tags : [])]
+        return [item.title, item.author, item.authorEn, item.description, item.descriptionEn, ...(Array.isArray(item.tags) ? item.tags : [])]
           .join(' ')
           .toLowerCase()
           .includes(state.q);
@@ -1637,7 +1720,7 @@ export function initResources(data) {
     const featured = Boolean(item.featured);
     const tags = (Array.isArray(item.tags) ? item.tags : [])
       .slice(0, 4)
-      .map((tag) => `<li class="tag">${esc(tag)}</li>`)
+      .map((tag) => `<li class="tag">${esc(tagLabel(tag))}</li>`)
       .join('');
     return `<article class="resource-card${featured ? ' resource-card--featured' : ''}">
       ${featured ? `<span class="resource-featured-mark">${esc(t('ui.featured'))}</span>` : ''}
@@ -1645,21 +1728,21 @@ export function initResources(data) {
         levelLabelOf(item.level)
       )}</p>
       <h2 class="resource-title"><a href="${esc(safeHref(item.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(
-        plainText(item.title || t('ui.untitledResource'), 120)
+        plainText((getLang() === 'en' && item.titleEn) || item.title || t('ui.untitledResource'), 120)
       )} ↗</a></h2>
-      <p class="resource-author">${esc(item.author || '')}${item.author && item.lang ? ' · ' : ''}${esc(
+      <p class="resource-author">${esc((getLang() === 'en' && item.authorEn) || item.author || '')}${(item.author || item.authorEn) && item.lang ? ' · ' : ''}${esc(
         langLabelOf(item.lang)
       )}${item.free ? ' · ' + esc(t('ui.free')) : ''}</p>
-      <p class="resource-desc">${esc(plainText(item.description || '', 150))}</p>
+      <p class="resource-desc">${esc(plainText(localizedItemField(item, 'description') || '', 150))}</p>
       ${tags ? `<ul class="resource-tags">${tags}</ul>` : ''}
       <div class="resource-foot">
         <span>${esc(levelLabelOf(item.level) || '—')} · ${esc(langLabelOf(item.lang) || '—')} · ${
           item.free ? t('ui.free') : t('ui.paid')
         }</span>
         ${shareButton({
-          title: item.title || t('nav.resources'),
+          title: (getLang() === 'en' && item.titleEn) || item.title || t('nav.resources'),
           url: safeHref(item.url),
-          desc: plainText(item.description || '', 120),
+          desc: plainText(localizedItemField(item, 'description') || '', 120),
         })}
       </div>
     </article>`;
@@ -1817,7 +1900,7 @@ export function initProjects(data) {
       .filter((item) => {
         if (state.tag !== 'all' && !(Array.isArray(item.tags) && item.tags.includes(state.tag))) return false;
         if (!state.q) return true;
-        return [item.name, item.owner, item.summary, item.highlight, ...(Array.isArray(item.tags) ? item.tags : [])]
+        return [item.name, item.nameEn, item.owner, item.summary, item.summaryEn, item.highlight, item.highlightEn, ...(Array.isArray(item.tags) ? item.tags : [])]
           .join(' ')
           .toLowerCase()
           .includes(state.q);
@@ -1864,14 +1947,14 @@ export function initProjects(data) {
 function projectCardHtml(item, { featured = false } = {}) {
   const tags = (Array.isArray(item.tags) ? item.tags : [])
     .slice(0, 4)
-    .map((tag) => `<li class="tag">${esc(tag)}</li>`)
+    .map((tag) => `<li class="tag">${esc(tagLabel(tag))}</li>`)
     .join('');
   const stars = item.stars == null ? null : `${intlNumber(item.stars)}`;
   return `<article class="project-card${featured ? ' project-card--self' : ''}">
     <div class="project-head">
       <div>
         <h2 class="project-name"><a href="${esc(safeHref(item.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(
-          item.name || t('ui.untitledProject')
+          (getLang() === 'en' && item.nameEn) || item.name || t('ui.untitledProject')
         )} ↗</a></h2>
         <p class="project-owner">${esc(item.owner || '')}${item.repo ? ` · ${esc(item.repo)}` : ''}${
           item.license ? ` · ${esc(item.license)}` : ''
@@ -1883,9 +1966,9 @@ function projectCardHtml(item, { featured = false } = {}) {
           : `<span class="project-stars" aria-label="Stars">★ ${esc(stars || '—')}</span>`
       }
     </div>
-    <p class="project-summary">${esc(plainText(item.summary || '', 180))}</p>
-    ${item.highlight ? `<p class="project-highlight">${esc(plainText(item.highlight, 100))}</p>` : ''}
-    ${item.why && featured ? `<p class="project-why">${esc(plainText(item.why, 160))}</p>` : ''}
+    <p class="project-summary">${esc(plainText(localizedItemField(item, 'summary') || '', 180))}</p>
+    ${localizedItemField(item, 'highlight') ? `<p class="project-highlight">${esc(plainText(localizedItemField(item, 'highlight'), 100))}</p>` : ''}
+    ${localizedItemField(item, 'why') && featured ? `<p class="project-why">${esc(plainText(localizedItemField(item, 'why'), 160))}</p>` : ''}
     ${tags ? `<ul class="project-tags">${tags}</ul>` : ''}
     <div class="project-foot">
       <span class="project-meta">${item.updatedAt ? t('ui.updatedOn', { date: intlDate(item.updatedAt) }) : ''}${
@@ -1894,9 +1977,9 @@ function projectCardHtml(item, { featured = false } = {}) {
       <span class="project-actions">
         <a class="link-arrow" href="${esc(safeHref(item.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(t('projects.viewProject'))}</a>
         ${shareButton({
-          title: item.name || t('nav.projects'),
+          title: (getLang() === 'en' && item.nameEn) || item.name || t('nav.projects'),
           url: safeHref(item.url),
-          desc: plainText(item.summary || item.highlight || '', 140),
+          desc: plainText(localizedItemField(item, 'summary') || localizedItemField(item, 'highlight') || '', 140),
         })}
       </span>
     </div>
@@ -1934,11 +2017,11 @@ export function initAbout(data) {
               ${
                 safeHref(source.url)
                   ? `<a class="source-name" href="${esc(safeHref(source.url))}" target="_blank" rel="noopener noreferrer">${esc(
-                      source.name || source.id
+                      sourceNameText(source)
                     )} ↗</a>`
-                  : `<span class="source-name">${esc(source.name || source.id)}</span>`
+                  : `<span class="source-name">${esc(sourceNameText(source))}</span>`
               }
-              ${source.note ? `<p class="source-note">${esc(source.note)}</p>` : ''}
+              ${sourceNoteText(source) ? `<p class="source-note">${esc(sourceNoteText(source))}</p>` : ''}
             </td>
             <td class="source-type"><span class="tag">${esc(sourceTypeLabelOf(source.type))}</span></td>
             <td><span class="source-status"><span class="status-dot status-dot--${esc(status)}"></span>${esc(

@@ -382,6 +382,11 @@ export function buildNewsFromModels(models, { now, days = LIMITS.modelNewsDays, 
     const priceText = m.pricing ? `${fmtMoney(m.pricing.input)}/${fmtMoney(m.pricing.output)} 每百万 tokens` : '定价未公开';
     const capText = m.capabilities.length ? `，支持 ${m.capabilities.join('/')}` : '';
     return {
+      titleEn: `${m.org} launches ${short} (${fmtTokens(m.contextWindow)} context, ${m.pricing ? `${Number(m.pricing.input) === 0 ? 'free' : fmtMoney(m.pricing.input)}/${Number(m.pricing.output) === 0 ? 'free' : fmtMoney(m.pricing.output)}` : 'pricing TBA'})`,
+      summaryEn: clampText(
+        `${m.name} is now on OpenRouter: ${fmtTokens(m.contextWindow)} context, ${m.pricing ? `${Number(m.pricing.input) === 0 ? 'free' : fmtMoney(m.pricing.input)}/${Number(m.pricing.output) === 0 ? 'free' : fmtMoney(m.pricing.output)} per 1M tokens` : 'pricing not published'}${m.capabilities.length ? `, supports ${m.capabilities.join('/')}` : ''}.`,
+        LIMITS.summary
+      ),
       id: `release-${slugify(m.id)}`,
       title: `${m.org} 上新：${short}（上下文 ${fmtTokens(m.contextWindow)}，${m.pricing ? `${fmtMoney(m.pricing.input)}/${fmtMoney(m.pricing.output)}` : '价格未公开'}）`,
       summary: clampText(
@@ -772,17 +777,21 @@ export function normalizeGithubProjects(curatedProjects, repoDataByRepo, { now }
     items.push({
       id: c.id,
       name: c.name,
+      nameEn: c.nameEn || null,
       owner: c.owner,
       url: repoData?.html_url || c.url || (c.repo ? `https://github.com/${c.repo}` : ''),
       repo: c.repo ?? null,
       summary: c.summary,
+      summaryEn: c.summaryEn || null,
       tags: Array.isArray(c.tags) ? c.tags : [],
       highlight: c.highlight ?? null,
+      highlightEn: c.highlightEn || null,
       sourceType: c.sourceType || 'community',
       license,
       stars,
       updatedAt,
       why: c.why ?? null,
+      whyEn: c.whyEn || null,
     });
   }
   items.sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1) || (a.id < b.id ? -1 : 1));
@@ -1274,6 +1283,8 @@ export function normalizeDeepseekUpdates(html, { now, maxItems = 8, sourceUrl = 
     const titles = h3s.length ? h3s.slice(0, 3) : (strongs.length ? strongs.slice(0, 2) : [bodyText.split(/(?<=[.!?。！？])\s/)[0]?.slice(0, 80) || '更新公告']);
     for (const title of titles) {
       items.push({
+      titleEn: clampText(`DeepSeek official update (${date}): ${title}`, 160),
+      summaryEn: clampText(`DeepSeek Change Log ${date}: ${bodyText}`, LIMITS.summary),
         id: `release-deepseek-${date}-${shortHash(title)}`,
         title: clampText(`DeepSeek 官方更新（${date}）：${title}`, 160),
         summary: clampText(`DeepSeek Change Log ${date}：${bodyText}`, LIMITS.summary),
@@ -1315,6 +1326,8 @@ export function normalizeGithubReleases(releasesByRepo, { now, maxPerRepo = 3 } 
       if (ageDays > 90) continue;
       const title = rel.name && rel.name.trim() ? String(rel.name).trim() : tag;
       items.push({
+      titleEn: clampText(`${repo} released ${title}`, 160),
+      summaryEn: clampText(plainText(rel.body || '', LIMITS.summary) || `${repo} released ${tag} (GitHub Releases)`, LIMITS.summary),
         id: `github-release-${slugify(repo)}-${slugify(tag)}`,
         title: clampText(`${repo} 发布 ${title}`, 160),
         summary: clampText(plainText(rel.body || '', LIMITS.summary) || `${repo} 新版本 ${tag}（GitHub Releases）`, LIMITS.summary),

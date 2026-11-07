@@ -20,7 +20,10 @@
       "license": "MIT",
       "stars": 185792,
       "updatedAt": "2026-11-03T15:09:06.000Z",
-      "why": "离线/隐私场景的 AI 助手底座。"
+      "why": "离线/隐私场景的 AI 助手底座。",
+      "summaryEn": "Run mainstream open models locally with one command; built-in model management and API.",
+      "highlightEn": "The simplest way to run models locally",
+      "whyEn": "A foundation for offline and privacy-first AI assistants."
     },
     {
       "id": "transformers",
@@ -39,7 +42,10 @@
       "license": "Apache-2.0",
       "stars": 168492,
       "updatedAt": "2026-11-03T16:41:49.000Z",
-      "why": "理解模型接口与生态标准。"
+      "why": "理解模型接口与生态标准。",
+      "summaryEn": "Hugging Face model hub plus training/inference APIs across text, vision, audio and multimodal.",
+      "highlightEn": "The backbone of the open-model ecosystem",
+      "whyEn": "Understand model interfaces and ecosystem standards."
     },
     {
       "id": "dify",
@@ -58,7 +64,10 @@
       "license": null,
       "stars": 160316,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "企业级 AI 应用编排的最佳开源参考。"
+      "why": "企业级 AI 应用编排的最佳开源参考。",
+      "summaryEn": "Visual LLM app platform: workflows, agents, RAG and operations in one place.",
+      "highlightEn": "Build production AI apps with low code",
+      "whyEn": "A leading open-source reference for enterprise AI orchestration."
     },
     {
       "id": "open-webui",
@@ -77,7 +86,10 @@
       "license": null,
       "stars": 157636,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "适合作为 AI 助手与聊天 UI 的参考实现。"
+      "why": "适合作为 AI 助手与聊天 UI 的参考实现。",
+      "summaryEn": "Self-hosted, feature-rich chat UI compatible with Ollama and OpenAI-compatible APIs.",
+      "highlightEn": "One of the most active self-hosted LLM frontends",
+      "whyEn": "A reference implementation for chat UIs and assistants."
     },
     {
       "id": "langchain",
@@ -96,7 +108,10 @@
       "license": "MIT",
       "stars": 148937,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "学习 Agent/工具调用工程化。"
+      "why": "学习 Agent/工具调用工程化。",
+      "summaryEn": "Framework for LLM apps: chains, tools, agents and memory.",
+      "highlightEn": "The de facto standard for LLM app frameworks",
+      "whyEn": "Learn production engineering for agents and tool use."
     },
     {
       "id": "comfyui",
@@ -115,7 +130,10 @@
       "license": "GPL-3.0",
       "stars": 144787,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "研究多模态生成与节点编排。"
+      "why": "研究多模态生成与节点编排。",
+      "summaryEn": "Node-based diffusion GUI and a powerful image/video generation workflow engine.",
+      "highlightEn": "The benchmark for generative visual workflows",
+      "whyEn": "Study multimodal generation and node orchestration."
     },
     {
       "id": "browser-use",
@@ -134,7 +152,10 @@
       "license": "MIT",
       "stars": 119914,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "研究 Agent 与真实环境交互。"
+      "why": "研究 Agent 与真实环境交互。",
+      "summaryEn": "Lets AI agents operate browsers to complete web tasks with visual and DOM interaction.",
+      "highlightEn": "A leading browser-agent project",
+      "whyEn": "Study agents interacting with real environments."
     },
     {
       "id": "vllm",
@@ -153,7 +174,10 @@
       "license": "Apache-2.0",
       "stars": 96207,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "研究推理性能与部署优化。"
+      "why": "研究推理性能与部署优化。",
+      "summaryEn": "High-throughput, low-latency LLM inference and serving engine with PagedAttention.",
+      "highlightEn": "A production standard for inference acceleration",
+      "whyEn": "Study inference performance and deployment optimization."
     },
     {
       "id": "ragflow",
@@ -172,7 +196,10 @@
       "license": "Apache-2.0",
       "stars": 93423,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "研究 RAG 工程质量标杆。"
+      "why": "研究 RAG 工程质量标杆。",
+      "summaryEn": "RAG engine built on deep document understanding, with complex PDF/table parsing and traceable answers.",
+      "highlightEn": "Document understanding plus traceable citations",
+      "whyEn": "A quality benchmark for RAG engineering."
     },
     {
       "id": "mcp-servers",
@@ -191,7 +218,10 @@
       "license": null,
       "stars": 91764,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "理解 MCP 生态与工具接入。"
+      "why": "理解 MCP 生态与工具接入。",
+      "summaryEn": "Official MCP server collection connecting models to tools and data.",
+      "highlightEn": "Standardizing the agent tool ecosystem",
+      "whyEn": "Understand MCP and tool integration."
     },
     {
       "id": "lobe-chat",
@@ -210,7 +240,10 @@
       "license": null,
       "stars": 83764,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "轻奢视觉与交互设计的参考。"
+      "why": "轻奢视觉与交互设计的参考。",
+      "summaryEn": "Modern high-performance open-source chat framework with multi-model, plugins and knowledge base.",
+      "highlightEn": "A beautifully designed multi-model chat UI",
+      "whyEn": "A reference for light-luxury visual and interaction design."
     },
     {
       "id": "crewai",
@@ -229,7 +262,10 @@
       "license": "MIT",
       "stars": 60444,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "学习多 Agent 协作范式。"
+      "why": "学习多 Agent 协作范式。",
+      "summaryEn": "Multi-agent framework for roles, tasks, tools and workflow orchestration.",
+      "highlightEn": "An approachable multi-agent framework",
+      "whyEn": "Learn multi-agent collaboration patterns."
     },
     {
       "id": "ai-pulse",
@@ -248,7 +284,11 @@
       "license": "MIT",
       "stars": null,
       "updatedAt": "2026-11-03T16:50:38.301Z",
-      "why": "个人 AI 项目成果展示位：把「持续跟踪 + 个人作品集」做成可持续运营的公域产品。"
+      "why": "个人 AI 项目成果展示位：把「持续跟踪 + 个人作品集」做成可持续运营的公域产品。",
+      "nameEn": "AI Pulse",
+      "summaryEn": "This repo: a public, lightweight LLM tracker for updates, leaderboards and learning resources, with a BYOK assistant and project showcase.",
+      "highlightEn": "Static site + GitHub Actions daily refresh",
+      "whyEn": "A personal AI showcase: turn continuous tracking and a portfolio into a sustainable public product."
     }
   ]
 }

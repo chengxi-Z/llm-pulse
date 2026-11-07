@@ -200,12 +200,13 @@ export function boardPayloadFromData(data, boardId, opts = {}) {
     const hit = nameCandidates({ name: entry.model, org: entry.org }).find((k) => dates.has(k));
     return { ...entry, releaseDate: entry.releaseDate || (hit ? dates.get(hit) : '') };
   });
+  const tr=(k,f)=>{const v=t(k);return v===k?f:v};
   return normalizeSharePayload({
     kind: 'board',
-    title: board.name || board.id,
-    desc: board.description || '',
+    title: tr(`board.${board.id}.name`, board.name || board.id),
+    desc: tr(`board.${board.id}.desc`, board.description || ''),
     url: boardDeepLink(board.id, opts.baseUrl || `${SITE_URL}rankings.html`),
-    stats: [board.metric?.name, board.sourceName].filter(Boolean).join(' · '),
+    stats: [tr(`board.${board.id}.metric`, (board.metric && board.metric.name) || ''), board.sourceName].filter(Boolean).join(' · '),
     board: { ...board, entries },
   });
 }

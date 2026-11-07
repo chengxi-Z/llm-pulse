@@ -19,6 +19,22 @@ let siteData = null;
 
 /* ---------- Formatting helpers ---------- */
 
+const DEEPSEEK_TAG_EN = {
+  '官方公告': 'Official update',
+  '模型发布': 'Model release',
+  '官方博客': 'Official blog',
+  '开源': 'Open source',
+  '多模态': 'Multimodal',
+  '推理': 'Reasoning',
+  '长上下文': 'Long context',
+  '评测': 'Evaluation',
+  '定价': 'Pricing',
+  '研究': 'Research',
+  '政策/安全': 'Policy & safety',
+  '开源权重': 'Open weights',
+  '免费': 'Free',
+};
+const deepseekTag = (tag) => (getLang() === 'en' ? DEEPSEEK_TAG_EN[tag] || tag : tag);
 function localized(value, lang) {
   if (value && typeof value === 'object') return String(value[lang] ?? value.zh ?? value.en ?? '');
   return String(value ?? '');
@@ -75,7 +91,7 @@ function dispatchItem({ dateValue, kind, title, summary, url, source, tags = [],
   const heading = link
     ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a>`
     : esc(title);
-  const tagList = tags.slice(0, 4).map((tag) => `<li class="tag">${esc(tag)}</li>`).join('');
+  const tagList = tags.slice(0, 4).map((tag) => `<li class="tag">${esc(deepseekTag(tag))}</li>`).join('');
   const sourceLine = link
     ? `<a class="source-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${esc(t('ui.source'))} - ${esc(source)}</a>`
     : `<span>${esc(t('ui.source'))} - ${esc(source)}</span>`;
@@ -137,8 +153,8 @@ function renderNews() {
           dispatchItem({
             dateValue: item.publishedAt,
             kind: lang === 'en' ? 'DISPATCH' : '动态',
-            title: item.title || t('ui.untitledNews'),
-            summary: item.summary,
+            title: (lang === 'en' && item.titleEn) || item.title || t('ui.untitledNews'),
+            summary: (lang === 'en' && item.summaryEn) || item.summary,
             url: item.url || item.sourceUrl,
             source: item.sourceName || t('ui.publicSource'),
             tags: item.tags,

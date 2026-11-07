@@ -262,7 +262,7 @@
   "data.kind.research": "Research",
   "data.lang.en": "English",
   "data.lang.multi": "Multilingual",
-  "data.lang.zh": "中文",
+  "data.lang.zh": "Chinese",
   "data.level.advanced": "Advanced",
   "data.level.beginner": "Beginner",
   "data.level.intermediate": "Intermediate",
@@ -889,5 +889,6 @@
   "dashboard.scatter.metricGpqa": "GPQA Diamond",
   "dashboard.scatter.metricSwe": "SWE-bench Verified",
   "dashboard.scatter.metricOpencompass": "OpenCompass Arena",
-  "dashboard.scatter.metricOpencompassMM": "OpenCompass Multimodal"
+  "dashboard.scatter.metricOpencompassMM": "OpenCompass Multimodal",
+  "ui.siteNameShare": "AI Pulse"
 }

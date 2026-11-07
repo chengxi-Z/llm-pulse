@@ -310,7 +310,9 @@ function syncLanguageToggle() {
   if (!toggle) return;
   const current = getLang();
   toggle.querySelectorAll('[data-lang-code]').forEach((element) => {
-    element.classList.toggle('is-active', element.getAttribute('data-lang-code') === current);
+    const code = element.getAttribute('data-lang-code');
+    element.classList.toggle('is-active', code === current);
+    if (code === 'zh') element.textContent = current === 'en' ? 'ZH' : '中';
   });
   const label = t('ui.lang.toggle');
   toggle.setAttribute('aria-label', label);

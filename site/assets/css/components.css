@@ -3477,3 +3477,6 @@ html,body{overflow-x:clip}
 /* audit: remaining 11px body summaries -> 12px */
 .source-summary,.dash-kpi-trend-note{font-size:0.75rem}
 .hero-panel .source-summary{font-size:0.75rem}
+
+/* English edition: brand wordmark only */
+html[lang="en"] .brand-cn{display:none}
