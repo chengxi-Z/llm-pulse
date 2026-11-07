@@ -12,7 +12,6 @@ export const SCORE_SOURCES = [
   { key: 'lmarena', boardId: '', source: 'LMArena', metric: 'LMArena Arena' },
   { key: 'livebench', boardId: 'livebench-2.0', source: 'LiveBench', metric: 'LiveBench 2.0' },
   { key: 'epoch', boardId: 'epoch-eci', source: 'Epoch AI', metric: 'ECI' },
-  { key: 'opencompass', boardId: 'opencompass-arena', source: 'OpenCompass', metric: 'OpenCompass Arena' },
 ];
 
 const VARIANT_TOKENS = new Set(['high', 'low', 'medium', 'thinking', 'reasoning', 'instruct', 'base', 'preview']);

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>技能 · AI Pulse 照胆云 — 我的技能与 Agent Playbooks</title>
-  <meta name="description" content="AI Pulse 的技能库：可复用的 Agent Skills 与 Playbooks，含一句话价值、适用与不适用场景、安装命令、使用步骤与源码链接。">
+  <title>Skills · AI Pulse — my skills and Agent Playbooks</title>
+  <meta name="description" content="The AI Pulse skill library: reusable Agent Skills and playbooks with one-line value, when to use (and not use), install commands, usage steps and source links.">
   <meta name="theme-color" content="#F6F1E9">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AI Pulse · 照胆云">
-  <meta property="og:title" content="技能 · AI Pulse 照胆云 — 我的技能与 Agent Playbooks">
-  <meta property="og:description" content="AI Pulse 的技能库：可复用的 Agent Skills 与 Playbooks，含一句话价值、适用与不适用场景、安装命令、使用步骤与源码链接。">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="AI Pulse · Z Cloud">
+  <meta property="og:title" content="Skills · AI Pulse — my skills and Agent Playbooks">
+  <meta property="og:description" content="The AI Pulse skill library: reusable Agent Skills and playbooks with one-line value, when to use (and not use), install commands, usage steps and source links.">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://chengxi-z.github.io/llm-pulse/skills.html">
   <meta property="og:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="技能 · AI Pulse 照胆云 — 我的技能与 Agent Playbooks">
-  <meta name="twitter:description" content="AI Pulse 的技能库：可复用的 Agent Skills 与 Playbooks，含一句话价值、适用与不适用场景、安装命令、使用步骤与源码链接。">
+  <meta name="twitter:title" content="Skills · AI Pulse — my skills and Agent Playbooks">
+  <meta name="twitter:description" content="The AI Pulse skill library: reusable Agent Skills and playbooks with one-line value, when to use (and not use), install commands, usage steps and source links.">
   <meta name="twitter:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
   <link rel="canonical" href="https://chengxi-z.github.io/llm-pulse/skills.html">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -104,76 +104,76 @@
   <link rel="stylesheet" href="assets/css/share.css">
 </head>
 <body data-page="skills">
-  <a class="skip-link" href="#main" data-i18n="ui.skipLink">跳到主要内容</a>
+  <a class="skip-link" href="#main" data-i18n="ui.skipLink">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · 照胆云 首页">
+      <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
         <img class="brand-mark" src="assets/img/logo.svg" alt="" width="34" height="34">
         <span class="brand-text">
-          <span class="brand-name">AI&nbsp;PULSE</span>
-          <span class="brand-cn">照胆云</span>
+          <span class="brand-name">AI PULSE</span>
+          <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
         </span>
       </a>
-      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:ui.nav.aria" aria-label="主导航">
+      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:ui.nav.aria" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
-          <li><a href="news.html" data-i18n="nav.news">动态</a></li>
-          <li><a href="rankings.html" data-i18n="nav.rankings">排行</a></li>
-          <li><a href="models.html" data-i18n="nav.models">模型库</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
-          <li><a href="resources.html" data-i18n="nav.resources">学习资源</a></li>
-          <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
-          <li><a href="skills.html" aria-current="page" data-i18n="nav.skills">技能</a></li>
-          <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" aria-current="page" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
       </nav>
       <div class="header-actions">
         <div class="theme-picker-wrap">
-          <button class="icon-btn theme-picker" type="button" data-theme-picker aria-haspopup="menu" aria-expanded="false" aria-label="切换主题" title="切换主题" data-i18n-attr="aria-label:ui.theme.picker,title:ui.theme.picker">
-            <svg class="icon theme-picker-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.2 0-1 .9-1.8 1.9-1.8H16a5 5 0 0 0 5-5C21 6.6 17 3 12 3Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="8" r="1"/><circle cx="17" cy="12" r="1"/></svg>
+          <button class="icon-btn theme-picker" type="button" data-theme-picker aria-haspopup="menu" aria-expanded="false" aria-label="Switch theme" title="Switch theme" data-i18n-attr="aria-label:ui.theme.picker,title:ui.theme.picker">
+            <svg class="icon theme-picker-icon" viewbox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.2 0-1 .9-1.8 1.9-1.8H16a5 5 0 0 0 5-5C21 6.6 17 3 12 3Z"></path><circle cx="7.5" cy="11" r="1"></circle><circle cx="10.5" cy="7.5" r="1"></circle><circle cx="15" cy="8" r="1"></circle><circle cx="17" cy="12" r="1"></circle></svg>
           </button>
-          <div class="theme-menu" data-theme-menu role="menu" aria-label="主题选择" data-i18n-attr="aria-label:ui.theme.menu" hidden>
-            <p class="theme-menu-title" data-i18n="ui.theme.title">主题</p>
+          <div class="theme-menu" data-theme-menu role="menu" aria-label="Theme selection" data-i18n-attr="aria-label:ui.theme.menu" hidden>
+            <p class="theme-menu-title" data-i18n="ui.theme.title">Theme</p>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="ivory">
               <span class="theme-swatch" data-theme-swatch="ivory" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.ivory.label">纸墨雅金</span>
+              <span class="theme-option-label" data-i18n="theme.ivory.label">Ivory &amp; Gold</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="noir">
               <span class="theme-swatch" data-theme-swatch="noir" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.noir.label">深夜鎏金</span>
+              <span class="theme-option-label" data-i18n="theme.noir.label">Midnight Noir</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="jade">
               <span class="theme-swatch" data-theme-swatch="jade" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.jade.label">青瓷墨绿</span>
+              <span class="theme-option-label" data-i18n="theme.jade.label">Celadon Jade</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="rose">
               <span class="theme-swatch" data-theme-swatch="rose" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.rose.label">暮云玫瑰</span>
+              <span class="theme-option-label" data-i18n="theme.rose.label">Dusk Rose</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="graphite">
               <span class="theme-swatch" data-theme-swatch="graphite" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.graphite.label">极简石墨</span>
+              <span class="theme-option-label" data-i18n="theme.graphite.label">Graphite</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="auto">
               <span class="theme-swatch" data-theme-swatch="auto" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.auto.label">跟随系统</span>
+              <span class="theme-option-label" data-i18n="theme.auto.label">System</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
           </div>
         </div>
-        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="切换语言" title="切换语言" data-i18n-attr="aria-label:ui.lang.toggle,title:ui.lang.toggle">
-          <span class="lang-code" data-lang-code="zh">中</span>
+        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="Switch language" title="Switch language" data-i18n-attr="aria-label:ui.lang.toggle,title:ui.lang.toggle">
+          <span class="lang-code" data-lang-code="zh">ZH</span>
           <span class="lang-sep" aria-hidden="true">/</span>
-          <span class="lang-code" data-lang-code="en">EN</span>
+          <span class="lang-code is-active" data-lang-code="en">EN</span>
         </button>
 
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle data-i18n-attr="aria-label:ui.nav.openAria" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav">
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle data-i18n-attr="aria-label:ui.nav.openAria" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
           <span class="nav-toggle-lines" aria-hidden="true"></span>
         </button>
       </div>
@@ -183,127 +183,127 @@
     <!-- ============ Masthead ============ -->
     <header class="page-masthead page-masthead--compact">
       <div class="container">
-        <p class="eyebrow"><span data-i18n="skills.eyebrow">我的技能</span> <span class="eyebrow-en">MY SKILLS</span></p>
-        <h1><span data-i18n="skills.masthead.line1">把方法论，</span><br><span data-i18n="skills.masthead.line2">变成可复用的技能。</span></h1>
-        <p class="lede" data-i18n="skills.masthead.lede">AI Pulse 的技能库：整理我自己在用的 Agent Skills 与 Playbooks，也收录官方与社区的优质技能。每一条都提供一句话价值、适用边界、安装命令与使用步骤——复制即可用，源码可追溯。</p>
+        <p class="eyebrow"><span data-i18n="skills.eyebrow">My Skills</span> <span class="eyebrow-en">MY SKILLS</span></p>
+        <h1><span data-i18n="skills.masthead.line1">Turning hard-won methods</span><br><span data-i18n="skills.masthead.line2">into reusable skills.</span></h1>
+        <p class="lede" data-i18n="skills.masthead.lede">The AI Pulse skill library collects the Agent Skills and playbooks I use myself, plus solid official and community skills. Every entry states its one-line value, boundaries, install command and usage steps — copy it and go, with source links intact.</p>
         <div class="masthead-meta">
-            <p class="masthead-card-head"><span data-i18n="ui.pageOverview">概览</span> <span class="eyebrow-en">/ OVERVIEW</span></p>
-          <span id="skills-meta" data-i18n="skills.loading">正在载入技能…</span>
+            <p class="masthead-card-head"><span data-i18n="ui.pageOverview">Overview</span> <span class="eyebrow-en">/ OVERVIEW</span></p>
+          <span id="skills-meta" data-i18n="skills.loading">Loading skills…</span>
         </div>
       </div>
     </header>
 
-    <!-- ============ 技能列表 ============ -->
+    <!-- ============ Skills list ============ -->
     <section class="section section--flush" aria-labelledby="skills-list-title">
       <div class="container">
-        <h2 class="u-visually-hidden" id="skills-list-title" data-i18n="skills.list.aria">技能列表</h2>
-        <form class="filter-bar skills-toolbar" id="skills-filters" role="search" data-i18n-attr="aria-label:skills.filters.aria" aria-label="技能筛选">
+        <h2 class="u-visually-hidden" id="skills-list-title" data-i18n="skills.list.aria">Skill list</h2>
+        <form class="filter-bar skills-toolbar" id="skills-filters" role="search" data-i18n-attr="aria-label:skills.filters.aria" aria-label="Skill filters">
           <div class="filter-row">
-            <div class="chips skills-filters" id="skill-source-chips" role="group" data-i18n-attr="aria-label:skills.filter.sourceAria" aria-label="按来源筛选"></div>
-            <div class="chips skills-filters" id="skill-category-chips" role="group" data-i18n-attr="aria-label:skills.filter.categoryAria" aria-label="按分类筛选"></div>
+            <div class="chips skills-filters" id="skill-source-chips" role="group" data-i18n-attr="aria-label:skills.filter.sourceAria" aria-label="Filter by source"></div>
+            <div class="chips skills-filters" id="skill-category-chips" role="group" data-i18n-attr="aria-label:skills.filter.categoryAria" aria-label="Filter by category"></div>
             <label class="field search-field">
-              <span class="u-visually-hidden" data-i18n="skills.search.label">搜索技能</span>
-              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 2.6 2.6"/></svg>
-              <input type="search" id="skills-search" data-i18n-attr="placeholder:skills.search.placeholder" placeholder="搜索技能、作者或标签…" autocomplete="off">
+              <span class="u-visually-hidden" data-i18n="skills.search.label">Search skills</span>
+              <svg class="icon" viewbox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="m10.5 10.5 2.6 2.6"></path></svg>
+              <input type="search" id="skills-search" data-i18n-attr="placeholder:skills.search.placeholder" placeholder="Search skills, authors, or tags…" autocomplete="off">
             </label>
-            <p class="result-count" id="skills-result-count" role="status" aria-live="polite" data-i18n="skills.loading">正在载入技能…</p>
+            <p class="result-count" id="skills-result-count" role="status" aria-live="polite" data-i18n="skills.loading">Loading skills…</p>
           </div>
         </form>
         <div class="skills-grid" id="skills-grid">
-          <div class="empty-state" role="status"><p class="empty-title" data-i18n="skills.loading">正在载入技能…</p></div>
+          <div class="empty-state" role="status"><p class="empty-title" data-i18n="skills.loading">Loading skills…</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 安装与使用 ============ -->
+    <!-- ============ Install and usage ============ -->
     <section class="section section--rule" aria-labelledby="skills-install-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow"><span class="eyebrow-idx">02</span> <span data-i18n="skills.install.title">安装与使用</span> <span class="eyebrow-en">INSTALL</span></p>
-            <h2 id="skills-install-title" data-i18n="skills.install.title">安装与使用</h2>
-            <p class="section-desc" data-i18n="skills.install.desc">Agent Skills 是纯文本目录：复制到本机 skills 目录，Agent 会在合适的时候自动加载；也可以在对话里直接点名调用。</p>
+            <p class="eyebrow"><span class="eyebrow-idx">02</span> <span data-i18n="skills.install.title">Install and use</span> <span class="eyebrow-en">INSTALL</span></p>
+            <h2 id="skills-install-title" data-i18n="skills.install.title">Install and use</h2>
+            <p class="section-desc" data-i18n="skills.install.desc">Agent Skills are plain-text folders: copy one into your local skills folder and your agent loads it when relevant — or invoke it by name in chat.</p>
           </div>
         </div>
         <div class="submit-grid">
           <article class="submit-card">
             <h3>01</h3>
-            <p data-i18n="skills.install.step1">复制技能目录到本机 Agent skills 目录</p>
-            <p class="skill-targets"><span data-i18n="skills.guide.targets">常见 Agent skills 目录</span><br><code data-i18n="skills.guide.targetDsh">~/.dsh/skills/</code> · <code data-i18n="skills.guide.targetClaude">~/.claude/skills/</code> · <span data-i18n="skills.guide.targetGeneric">你的 Agent 的 skills 目录</span></p>
+            <p data-i18n="skills.install.step1">Copy the skill folder into your agent's skills directory</p>
+            <p class="skill-targets"><span data-i18n="skills.guide.targets">Common Agent skills folders</span><br><code data-i18n="skills.guide.targetDsh">~/.dsh/skills/</code> · <code data-i18n="skills.guide.targetClaude">~/.claude/skills/</code> · <span data-i18n="skills.guide.targetGeneric">Your agent's skills folder</span></p>
           </article>
           <article class="submit-card">
             <h3>02</h3>
-            <p data-i18n="skills.install.step2">在对话中描述你的任务，或直接点名使用该技能</p>
-            <p class="u-muted" data-i18n="skills.install.step3">按技能内的流程执行，并用自检命令验证结果</p>
+            <p data-i18n="skills.install.step2">Describe your task in chat, or name the skill explicitly</p>
+            <p class="u-muted" data-i18n="skills.install.step3">Follow the steps inside the skill and verify with its self-check command</p>
           </article>
           <article class="submit-card">
-            <h3 data-i18n="skills.install.selfCheck">自检命令</h3>
-            <pre class="code-block"><code id="skills-selfcheck">node skills/one-sentence-project/scripts/check-project.mjs --self</code><button type="button" class="btn btn--ghost btn--sm code-copy" data-copy-target="#skills-selfcheck" data-i18n="skills.guide.copy">复制</button></pre>
+            <h3 data-i18n="skills.install.selfCheck">Self-check command</h3>
+            <pre class="code-block"><code id="skills-selfcheck">node skills/one-sentence-project/scripts/check-project.mjs --self</code><button type="button" class="btn btn--ghost btn--sm code-copy" data-copy-target="#skills-selfcheck" data-i18n="skills.guide.copy">Copy</button></pre>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ 提交你的技能 ============ -->
+    <!-- ============ Submit your skill ============ -->
     <section class="section section--rule" aria-labelledby="skills-submit-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow"><span class="eyebrow-idx">03</span> <span data-i18n="skills.submit.eyebrow">提交你的技能</span> <span class="eyebrow-en">SUBMIT</span></p>
-            <h2 id="skills-submit-title" data-i18n="skills.submit.title">让更多人用上它</h2>
-            <p class="section-desc" data-i18n="skills.submit.desc">本站无后端：技能通过 GitHub Issue 或 Pull Request 提交，维护者审核后合入 data/skills.json 并上线。</p>
+            <p class="eyebrow"><span class="eyebrow-idx">03</span> <span data-i18n="skills.submit.eyebrow">Submit your skill</span> <span class="eyebrow-en">SUBMIT</span></p>
+            <h2 id="skills-submit-title" data-i18n="skills.submit.title">Put it in more hands</h2>
+            <p class="section-desc" data-i18n="skills.submit.desc">This site has no backend: submit a skill through a GitHub Issue or Pull Request; after review it is merged into data/skills.json and published.</p>
           </div>
         </div>
         <div class="submit-grid">
           <article class="submit-card">
-            <h3 data-i18n="skills.submit.issue.title">路径一 · GitHub Issue</h3>
-            <p data-i18n="skills.submit.issue.desc">打开技能提交表单，填写名称、作者、分类、链接与使用说明。</p>
-            <a class="btn btn--ghost btn--sm" href="https://github.com/chengxi-Z/llm-pulse/issues/new?template=skill-submission.yml" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.issue.cta">打开 Issue 表单</a>
+            <h3 data-i18n="skills.submit.issue.title">Option 1 · GitHub Issue</h3>
+            <p data-i18n="skills.submit.issue.desc">Open the skill submission form and fill in the name, author, category, links and usage notes.</p>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/chengxi-Z/llm-pulse/issues/new?template=skill-submission.yml" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.issue.cta">Open the Issue form</a>
           </article>
           <article class="submit-card">
-            <h3 data-i18n="skills.submit.json.title">路径二 · 下载 JSON 模板</h3>
-            <p data-i18n="skills.submit.json.desc">生成一份 skill.json 模板，填写后随 PR 提交。</p>
+            <h3 data-i18n="skills.submit.json.title">Option 2 · Download the JSON template</h3>
+            <p data-i18n="skills.submit.json.desc">Generate a skill.json template, fill it in, and include it in your PR.</p>
             <form class="submit-form" id="skill-template-form">
-              <label class="field"><span data-i18n="skills.submit.form.name">技能名</span><input type="text" name="name" placeholder="My Skill"></label>
-              <label class="field"><span data-i18n="skills.submit.form.author">作者</span><input type="text" name="author" placeholder="your-github-id"></label>
-              <label class="field"><span data-i18n="skills.submit.form.category">分类</span><input type="text" name="category" placeholder="methodology"></label>
-              <label class="field"><span data-i18n="skills.submit.form.description">一句话描述</span><input type="text" name="description" placeholder="What it does in one sentence."></label>
-              <label class="field"><span data-i18n="skills.submit.form.url">链接</span><input type="url" name="url" placeholder="https://github.com/..."></label>
-              <label class="field"><span data-i18n="skills.submit.form.license">许可证</span><input type="text" name="license" placeholder="MIT"></label>
+              <label class="field"><span data-i18n="skills.submit.form.name">Skill name</span><input type="text" name="name" placeholder="My Skill"></label>
+              <label class="field"><span data-i18n="skills.submit.form.author">Author</span><input type="text" name="author" placeholder="your-github-id"></label>
+              <label class="field"><span data-i18n="skills.submit.form.category">Category</span><input type="text" name="category" placeholder="methodology"></label>
+              <label class="field"><span data-i18n="skills.submit.form.description">One-line description</span><input type="text" name="description" placeholder="What it does in one sentence."></label>
+              <label class="field"><span data-i18n="skills.submit.form.url">URL</span><input type="url" name="url" placeholder="https://github.com/..."></label>
+              <label class="field"><span data-i18n="skills.submit.form.license">License</span><input type="text" name="license" placeholder="MIT"></label>
             </form>
-            <button type="button" class="btn btn--ghost btn--sm" id="skill-json-download" data-i18n="skills.submit.json.cta">下载 JSON 模板</button>
+            <button type="button" class="btn btn--ghost btn--sm" id="skill-json-download" data-i18n="skills.submit.json.cta">Download JSON template</button>
           </article>
           <article class="submit-card">
-            <h3 data-i18n="skills.submit.pr.title">路径三 · Fork &amp; PR</h3>
-            <p data-i18n="skills.submit.pr.desc">Fork 仓库，按数据 schema 修改 data/skills.json，然后提交 PR。</p>
+            <h3 data-i18n="skills.submit.pr.title">Option 3 · Fork &amp; PR</h3>
+            <p data-i18n="skills.submit.pr.desc">Fork the repository, add your entry to data/skills.json following the schema, then open a PR.</p>
             <ol class="skill-steps">
-              <li data-i18n="skills.submit.pr.step1">Fork 本仓库并创建分支</li>
-              <li data-i18n="skills.submit.pr.step2">按 data/skills.json 的 schema 添加条目</li>
-              <li data-i18n="skills.submit.pr.step3">提交 PR，等待维护者审核</li>
+              <li data-i18n="skills.submit.pr.step1">Fork this repository and create a branch</li>
+              <li data-i18n="skills.submit.pr.step2">Add an entry that follows the data/skills.json schema</li>
+              <li data-i18n="skills.submit.pr.step3">Open the PR and wait for maintainer review</li>
             </ol>
-            <a class="btn btn--ghost btn--sm" href="https://github.com/chengxi-Z/llm-pulse/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.pr.cta">阅读贡献指南</a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/chengxi-Z/llm-pulse/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.pr.cta">Read the contribution guide</a>
           </article>
         </div>
-        <p class="submit-note" data-i18n="skills.submit.note">本站无后端，技能经由 GitHub 审核后上线。</p>
-        <p class="submit-note"><a class="text-link" href="https://github.com/chengxi-Z/llm-pulse/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.guidelines">贡献指南</a></p>
+        <p class="submit-note" data-i18n="skills.submit.note">No backend here — skills go live after GitHub review.</p>
+        <p class="submit-note"><a class="text-link" href="https://github.com/chengxi-Z/llm-pulse/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" data-i18n="skills.submit.guidelines">Contribution guide</a></p>
         <div class="submit-criteria">
-          <h3 data-i18n="skills.submit.criteria.title">审核标准</h3>
+          <h3 data-i18n="skills.submit.criteria.title">Review criteria</h3>
           <ul>
-            <li data-i18n="skills.submit.criteria.1">真实可用：有可访问的源码或文档链接</li>
-            <li data-i18n="skills.submit.criteria.2">许可证明确（MIT / Apache-2.0 等）</li>
-            <li data-i18n="skills.submit.criteria.3">无恶意内容，不收集用户数据</li>
-            <li data-i18n="skills.submit.criteria.4">包含使用引导（适用 / 不适用 / 使用步骤）</li>
+            <li data-i18n="skills.submit.criteria.1">Real and usable: an accessible source or documentation link</li>
+            <li data-i18n="skills.submit.criteria.2">A clear license (MIT / Apache-2.0, etc.)</li>
+            <li data-i18n="skills.submit.criteria.3">No malicious content and no user-data collection</li>
+            <li data-i18n="skills.submit.criteria.4">Includes a usage guide (when to use / when not to use / steps)</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ 订阅 ============ -->
+    <!-- ============ Subscribe ============ -->
     <section class="section section--rule subscribe" aria-labelledby="skills-subscribe-title">
       <div class="container container--narrow">
-        <p class="eyebrow eyebrow--center" data-i18n="subscribe.eyebrow">订阅 / SUBSCRIBE</p>
-        <h2 id="skills-subscribe-title" data-i18n="projects.skills.title">值得关注的 Skills</h2>
-        <p class="lede" data-i18n="projects.skills.desc">来自官方与社区的真实 Agent Skills，按来源与热度挑选，可查看完整使用引导。</p>
+        <p class="eyebrow eyebrow--center" data-i18n="subscribe.eyebrow">Subscribe</p>
+        <h2 id="skills-subscribe-title" data-i18n="projects.skills.title">Skills worth following</h2>
+        <p class="lede" data-i18n="projects.skills.desc">Real Agent Skills from official and community sources, picked by source and momentum, each with a full usage guide.</p>
         <div class="subscribe-actions">
           <a class="btn btn--ink" href="feed.xml" data-i18n="subscribe.rss">RSS / Atom</a>
           <a class="btn btn--ghost" href="feed.json" data-i18n="subscribe.json">JSON Feed</a>
@@ -316,35 +316,35 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · 照胆云 首页">
+        <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
           <img class="brand-mark" src="assets/img/logo.svg" alt="" width="30" height="30">
           <span class="brand-text">
-            <span class="brand-name">AI&nbsp;PULSE</span>
-            <span class="brand-cn">照胆云</span>
+            <span class="brand-name">AI PULSE</span>
+            <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
           </span>
         </a>
-        <p class="footer-tagline" data-i18n="footer.tagline">公域、轻量的大模型追踪站。每日聚合发布、评测与学习资源，克制呈现，逐条可溯源。</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">An open, lightweight LLM tracker. Every day it gathers releases, evaluations, and learning resources — restrained, sourced, and traceable line by line.</p>
       </div>
       <nav class="footer-col" aria-labelledby="footer-explore">
-        <h4 id="footer-explore" data-i18n="footer.explore">探索</h4>
+        <h4 id="footer-explore" data-i18n="footer.explore">Explore</h4>
         <ul class="footer-links">
-          <li><a href="news.html" data-i18n="nav.news">动态</a></li>
-          <li><a href="rankings.html" data-i18n="nav.rankings">排行</a></li>
-          <li><a href="models.html" data-i18n="nav.models">模型库</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
         </ul>
       </nav>
       <nav class="footer-col" aria-labelledby="footer-more">
-        <h4 id="footer-more" data-i18n="footer.more">更多</h4>
+        <h4 id="footer-more" data-i18n="footer.more">More</h4>
         <ul class="footer-links">
-          <li><a href="resources.html" data-i18n="nav.resources">学习资源</a></li>
-          <li><a href="projects.html" aria-current="page" data-i18n="nav.projects">项目</a></li>
-          <li><a href="skills.html" data-i18n="nav.skills">技能</a></li>
-          <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" aria-current="page" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
       </nav>
       <div class="footer-col" aria-labelledby="footer-subscribe">
-        <h4 id="footer-subscribe" data-i18n="footer.subscribe">订阅与源码</h4>
+        <h4 id="footer-subscribe" data-i18n="footer.subscribe">Subscribe &amp; source</h4>
         <ul class="footer-links">
           <li><a class="external" href="feed.xml" data-i18n="subscribe.rss">RSS / Atom</a></li>
           <li><a class="external" href="feed.json" data-i18n="subscribe.json">JSON Feed</a></li>
@@ -353,62 +353,62 @@
       </div>
     </div>
     <div class="container footer-base">
-      <p>© <span data-current-year>2026</span> <span data-i18n="footer.copyrightBrand">AI Pulse · 照胆云 · MIT License</span></p>
-      <p><span data-footer-updated data-i18n="footer.updated">数据每日自动更新</span> · <span data-i18n="footer.usageNote">仅作学习与研究用途</span></p>
-      <p class="footer-address"><span data-i18n="footer.addressLabel">本站地址</span> <a class="text-link" href="https://chengxi-z.github.io/llm-pulse/" data-i18n="footer.addressSite">chengxi-z.github.io/llm-pulse</a> <button type="button" class="btn btn--ghost btn--sm" data-copy-text="https://chengxi-z.github.io/llm-pulse/" data-copy-label-key="footer.siteCopied" data-copy-fail-key="footer.copyFailed" data-i18n="footer.copySite">复制站点地址</button> · <a class="text-link external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer" data-i18n="footer.addressGithub">GitHub</a> · <a class="text-link" href="feed.xml" data-i18n="footer.addressRss">RSS</a></p>
+      <p>© <span data-current-year>2026</span> <span data-i18n="footer.copyrightBrand">AI Pulse · Z Cloud · MIT License</span></p>
+      <p><span data-footer-updated data-i18n="footer.updated">Data refreshed daily</span> · <span data-i18n="footer.usageNote">For learning and research only</span></p>
+      <p class="footer-address"><span data-i18n="footer.addressLabel">Site address</span> <a class="text-link" href="https://chengxi-z.github.io/llm-pulse/" data-i18n="footer.addressSite">chengxi-z.github.io/llm-pulse</a> <button type="button" class="btn btn--ghost btn--sm" data-copy-text="https://chengxi-z.github.io/llm-pulse/" data-copy-label-key="footer.siteCopied" data-copy-fail-key="footer.copyFailed" data-i18n="footer.copySite">Copy site address</button> · <a class="text-link external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer" data-i18n="footer.addressGithub">GitHub</a> · <a class="text-link" href="feed.xml" data-i18n="footer.addressRss">RSS</a></p>
     </div>
   </footer>
 
 
-  <div class="skill-modal" id="skill-modal" role="dialog" aria-modal="true" aria-labelledby="skill-modal-title" aria-label="技能使用引导" data-i18n-attr="aria-label:skills.guide.aria" hidden>
+  <div class="skill-modal" id="skill-modal" role="dialog" aria-modal="true" aria-labelledby="skill-modal-title" aria-label="Skill usage guide" data-i18n-attr="aria-label:skills.guide.aria" hidden>
     <div class="skill-modal-backdrop" data-skill-modal-close></div>
     <div class="skill-modal-panel" role="document">
       <header class="skill-modal-head">
         <span class="skill-badge" id="skill-modal-badge">—</span>
         <h2 id="skill-modal-title">—</h2>
-        <button type="button" class="icon-btn" data-skill-modal-close aria-label="关闭使用引导" title="关闭使用引导" data-i18n-attr="aria-label:skills.guide.close,title:skills.guide.close">✕</button>
+        <button type="button" class="icon-btn" data-skill-modal-close aria-label="Close usage guide" title="Close usage guide" data-i18n-attr="aria-label:skills.guide.close,title:skills.guide.close">✕</button>
       </header>
       <div class="skill-modal-body">
         <section class="skill-modal-block">
-          <h3 data-i18n="skills.guide.value">一句话价值</h3>
+          <h3 data-i18n="skills.guide.value">In one sentence</h3>
           <p id="skill-modal-value">—</p>
         </section>
         <div class="skill-modal-cols">
           <section class="skill-modal-block">
-            <h3 data-i18n="skills.guide.whenToUse">适合</h3>
+            <h3 data-i18n="skills.guide.whenToUse">When to use</h3>
             <p id="skill-modal-when">—</p>
           </section>
           <section class="skill-modal-block">
-            <h3 data-i18n="skills.guide.whenNotToUse">不适合</h3>
+            <h3 data-i18n="skills.guide.whenNotToUse">When not to use</h3>
             <p id="skill-modal-not-when">—</p>
           </section>
         </div>
         <section class="skill-modal-block">
-          <h3 data-i18n="skills.guide.install">安装</h3>
+          <h3 data-i18n="skills.guide.install">Install</h3>
           <div class="skill-install">
             <code id="skill-modal-command">—</code>
-            <button type="button" class="btn btn--ghost btn--sm" data-copy-target="#skill-modal-command" data-i18n="skills.guide.copyCommand">复制安装命令</button>
+            <button type="button" class="btn btn--ghost btn--sm" data-copy-target="#skill-modal-command" data-i18n="skills.guide.copyCommand">Copy install command</button>
           </div>
-          <p class="u-muted" data-i18n="skills.guide.installHint">把整个技能目录复制到本机 Agent skills 目录，即可在对话中触发。</p>
-          <p class="skill-targets"><span data-i18n="skills.guide.installTarget">安装目录</span> <code id="skill-modal-target">—</code> <button type="button" class="btn btn--ghost btn--sm" data-copy-target="#skill-modal-target" data-copy-label-key="skills.guide.targetCopied" data-copy-fail-key="skills.guide.copyFailed" data-i18n="skills.guide.copyTarget">复制目录</button></p>
-          <p class="skill-targets"><span data-i18n="skills.guide.targets">常见 Agent skills 目录</span> <code data-i18n="skills.guide.targetDsh">~/.dsh/skills/</code> · <code data-i18n="skills.guide.targetClaude">~/.claude/skills/</code> · <span data-i18n="skills.guide.targetGeneric">你的 Agent 的 skills 目录</span></p>
+          <p class="u-muted" data-i18n="skills.guide.installHint">Copy the whole skill directory into your local Agent skills folder and trigger it in chat.</p>
+          <p class="skill-targets"><span data-i18n="skills.guide.installTarget">Install target</span> <code id="skill-modal-target">—</code> <button type="button" class="btn btn--ghost btn--sm" data-copy-target="#skill-modal-target" data-copy-label-key="skills.guide.targetCopied" data-copy-fail-key="skills.guide.copyFailed" data-i18n="skills.guide.copyTarget">Copy path</button></p>
+          <p class="skill-targets"><span data-i18n="skills.guide.targets">Common Agent skills folders</span> <code data-i18n="skills.guide.targetDsh">~/.dsh/skills/</code> · <code data-i18n="skills.guide.targetClaude">~/.claude/skills/</code> · <span data-i18n="skills.guide.targetGeneric">Your agent's skills folder</span></p>
         </section>
         <section class="skill-modal-block">
-          <h3 data-i18n="skills.guide.usage">使用步骤</h3>
+          <h3 data-i18n="skills.guide.usage">How to use</h3>
           <ol class="skill-steps" id="skill-modal-steps"></ol>
         </section>
         <section class="skill-modal-block">
-          <h3 data-i18n="skills.guide.check">自检命令</h3>
-          <pre class="code-block"><code id="skill-modal-selfcheck">node skills/&lt;id&gt;/scripts/check-project.mjs --self</code><button type="button" class="btn btn--ghost btn--sm code-copy" data-copy-target="#skill-modal-selfcheck" data-copy-label-key="skills.guide.copied" data-copy-fail-key="skills.guide.copyFailed" data-i18n="skills.guide.copy">复制</button></pre>
+          <h3 data-i18n="skills.guide.check">Self-check command</h3>
+          <pre class="code-block"><code id="skill-modal-selfcheck">node skills/&lt;id&gt;/scripts/check-project.mjs --self</code><button type="button" class="btn btn--ghost btn--sm code-copy" data-copy-target="#skill-modal-selfcheck" data-copy-label-key="skills.guide.copied" data-copy-fail-key="skills.guide.copyFailed" data-i18n="skills.guide.copy">Copy</button></pre>
         </section>
         <section class="skill-modal-block">
-          <h3 data-i18n="skills.guide.structure">文件结构</h3>
+          <h3 data-i18n="skills.guide.structure">File structure</h3>
           <pre class="code-block"><code>SKILL.md · references/ · scripts/ · examples/</code></pre>
         </section>
       </div>
       <footer class="skill-modal-foot">
-        <a class="link-arrow" id="skill-modal-source" href="#" target="_blank" rel="noopener noreferrer" data-i18n="skills.guide.source">查看源码</a>
-        <button type="button" class="btn btn--ghost btn--sm" id="skill-modal-share" data-share data-share-kind="skill" data-share-type="skill" data-i18n="skills.guide.share">分享技能</button>
+        <a class="link-arrow" id="skill-modal-source" href="#" target="_blank" rel="noopener noreferrer" data-i18n="skills.guide.source">View source</a>
+        <button type="button" class="btn btn--ghost btn--sm" id="skill-modal-share" data-share data-share-kind="skill" data-share-type="skill" data-i18n="skills.guide.share">Share skill</button>
       </footer>
     </div>
   </div>

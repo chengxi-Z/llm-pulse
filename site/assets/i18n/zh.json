@@ -177,7 +177,7 @@
   "compare.remove": "移除 {name}",
   "compare.rule": "评分按模型名归一化匹配，未匹配显示 —，不编造。",
   "compare.selectAria": "选择 {name} 进行对比",
-  "compare.sourceNote": "评分来源：Artificial Analysis / LMArena / LiveBench / Epoch AI / OpenCompass",
+  "compare.sourceNote": "评分来源：Artificial Analysis / LMArena / LiveBench / Epoch AI",
   "compare.start": "开始对比",
   "compare.title": "模型对比",
   "dashboard.aria": "概览仪表盘",
@@ -529,7 +529,7 @@
   "page.projects.h1Line1": "把想法，",
   "page.projects.h1Line2": "做成可以被使用的作品。",
   "page.projects.title": "项目 · AI Pulse 照胆云 — 自研与社区精选",
-  "page.rankings.desc": "聚合 LMArena、Artificial Analysis、LiveBench、Epoch、OpenCompass 等公开榜单，标注指标口径、来源与更新时间，不伪造分数。",
+  "page.rankings.desc": "聚合 LMArena、Artificial Analysis、LiveBench、Epoch 等公开榜单，标注指标口径、来源与更新时间，不伪造分数。",
   "page.rankings.eyebrowSuffix": "/ 榜单观察",
   "page.rankings.h1Line1": "用公开数据，",
   "page.rankings.h1Line2": "校准认知。",
@@ -596,7 +596,7 @@
   "rankings.explainer.sourceTitle": "每条都标注来源",
   "rankings.explainer.title": "榜单的口径",
   "rankings.higher": "越高越好",
-  "rankings.lede": "聚合 LMArena、Artificial Analysis、LiveBench、Epoch、OpenCompass 等公开榜单与派生指标。我们只做聚合与标注，不评测、不臆造、不伪造分数。",
+  "rankings.lede": "聚合 LMArena、Artificial Analysis、LiveBench、Epoch 等公开榜单与派生指标。我们只做聚合与标注，不评测、不臆造、不伪造分数。",
   "rankings.lower": "越低越好",
   "rankings.meta.sourceBefore": "来源",
   "rankings.meta.totalAfter": "个榜单",
@@ -893,5 +893,6 @@
   "ui.siteNameShare": "AI Pulse · 照胆云",
   "board.lmarena-text.name": "LMArena 文本总榜",
   "board.lmarena-text.desc": "LMArena 数据集的人类偏好对战 Elo 排名（文本模型）",
-  "board.lmarena-text.metric": "Arena 分数"
+  "board.lmarena-text.metric": "Arena 分数",
+  "ui.brandSub": "照胆云"
 }

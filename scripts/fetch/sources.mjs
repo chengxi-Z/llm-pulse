@@ -481,10 +481,6 @@ export const SOURCES = [
     enabledLocal: true, enabledCi: true, collect: collectEpoch,
   },
   {
-    id: 'opencompass', name: 'OpenCompass 司南', url: 'https://rank.opencompass.org.cn/', type: 'api',
-    enabledLocal: true, enabledCi: true, collect: collectOpenCompass,
-  },
-  {
     id: 'artificial-analysis', name: 'Artificial Analysis', url: AA_URL, type: 'html',
     enabledLocal: true, enabledCi: true, collect: collectArtificialAnalysis,
   },
@@ -510,11 +506,6 @@ export const SOURCES = [
     id: 'lmarena', name: 'LMArena（HF 数据集）', url: 'https://lmarena.ai/leaderboard', type: 'dataset',
     enabledLocal: false, enabledCi: true, collect: collectLmarena,
     modeNoteLocal: '仅 CI 启用：lmarena.ai 与 datasets-server 本机被墙；CI 侧经 hf-mirror/HF 数据集获取',
-  },
-  {
-    id: 'superclue', name: 'SuperCLUE', url: 'https://www.superclueai.com/', type: 'html',
-    enabledLocal: false, enabledCi: false, collect: async () => { throw new Error('SuperCLUE 为 SPA，数据未在 bundle 暴露公开 API（仅微信文章链接），POC 未接入'); },
-    modeNoteLocal: '无公开数据 API（Vue SPA + 微信文章），POC 不接入；如需可后续人工维护',
   },
   {
     id: 'deepseek-news', name: 'DeepSeek 官方 Change Log', url: 'https://api-docs.deepseek.com/updates', type: 'html',

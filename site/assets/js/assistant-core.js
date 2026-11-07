@@ -381,6 +381,60 @@ function tr(lang, key, vars = {}) {
 }
 
 
+const hasCjk = (value) => /[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/.test(String(value || ''));
+const contentField = (obj, field, lang) => {
+  if (!obj) return '';
+  if (lang === 'en') {
+    const en = obj[`${field}En`];
+    return en || (hasCjk(obj[field]) ? '' : obj[field] || '');
+  }
+  return obj[field] || obj[`${field}En`] || '';
+};
+const BOARD_NAME_EN = {
+  'artificial-analysis-intelligence': 'Artificial Analysis Intelligence Index',
+  'context-window': 'Context Window Leaderboard',
+  'epoch-eci': 'Epoch AI ECI Capability Index',
+  'epoch-gpqa-diamond': 'GPQA Diamond (Epoch)',
+  'epoch-swe-bench-verified': 'SWE-bench Verified (Epoch)',
+  'livebench-2.0': 'LiveBench 2.0 Overall',
+  'lmarena-text': 'LMArena Text Leaderboard',
+  'opencompass-arena': 'OpenCompass Chinese Arena',
+  'opencompass-arena-mm': 'OpenCompass Multimodal Arena',
+  'output-price': 'Output Price Leaderboard (cheapest first)',
+};
+const boardDisplayName = (board, lang) => {
+  if (!board) return '';
+  if (lang === 'en') return BOARD_NAME_EN[board.id] || (hasCjk(board.name) ? String(board.id || '') : board.name || String(board.id || ''));
+  return board.name || board.id || '';
+};
+const SOURCE_NAME_EN = {
+  openrouter: 'OpenRouter Models API',
+  livebench: 'LiveBench 2.0',
+  'epoch-ai': 'Epoch AI Benchmarking',
+  opencompass: 'OpenCompass',
+  'artificial-analysis': 'Artificial Analysis',
+  'rss-openai': 'OpenAI News RSS',
+  'rss-gdm': 'Google DeepMind Blog RSS',
+  'rss-google-ai': 'Google AI Blog RSS',
+  'rss-qwen': 'Qwen Blog RSS',
+  'rss-aws-ml': 'AWS Machine Learning Blog RSS',
+  'rss-mit-ai': 'MIT News AI RSS',
+  'rss-bair': 'Berkeley BAIR Blog RSS',
+  github: 'GitHub API (project stars)',
+  'github-releases': 'GitHub Releases (OSS updates)',
+  'hf-mirror': 'Hugging Face Mirror',
+  huggingface: 'Hugging Face API',
+  lmarena: 'LMArena (HF dataset)',
+  superclue: 'SuperCLUE',
+  'deepseek-news': 'DeepSeek Change Log',
+  'hn-ai': 'Hacker News AI',
+};
+const sourceDisplayName = (source, lang) => {
+  if (!source) return '';
+  if (lang === 'en') return SOURCE_NAME_EN[source.id] || (hasCjk(source.name) ? String(source.id || '') : source.name || String(source.id || ''));
+  return source.name || source.id || '';
+};
+
 /* ------------------------------------------------------------------ *
  * 1. Text / byte helpers
  * ------------------------------------------------------------------ **/
@@ -636,12 +690,12 @@ export function buildContext(data, opts = {}) {
       tr(lang, 'contextSources', { ok, total: sources.length }) +
         (degraded.length
           ? tr(lang, 'contextSourcesDegraded', {
-              names: degraded.map((s) => s.name || s.id).filter(Boolean).join('、'),
+              names: degraded.map((s) => sourceDisplayName(s, lang)).filter(Boolean).join(lang === 'en' ? ', ' : '、'),
             })
           : ''),
     );
   }
-  const highlights = asArray(meta.latestHighlights).filter(Boolean).slice(0, 3);
+  const highlights = asArray(lang === 'en' ? meta.latestHighlightsEn : meta.latestHighlights).filter(Boolean).slice(0, 3);
   if (highlights.length) lines.push(tr(lang, 'contextHighlights', { items: highlights.join('；') }));
 
   if (!hasAny) {
@@ -689,7 +743,7 @@ export function buildContext(data, opts = {}) {
     lines.push('', tr(lang, 'contextNewsHeading'));
     for (const n of items) {
       const date = shortDate(n.publishedAt);
-      const label = `${n.importance === 3 ? tr(lang, 'newsImportant') : ''}${date ? date + ' · ' : ''}${n.title || ''}`;
+      const label = `${n.importance === 3 ? tr(lang, 'newsImportant') : ''}${date ? date + ' · ' : ''}${contentField(n, 'title', lang)}`;
       lines.push(`- [${label}](${n.url || n.sourceUrl || ''})`.replace(/\]\(\)$/, ']'));
     }
   }
@@ -708,7 +762,7 @@ export function buildContext(data, opts = {}) {
             }`,
         )
         .join(' / ');
-      lines.push(tr(lang, 'contextBoardLine', { name: board.name || board.id || tr(lang, 'boardFallback'), top }));
+      lines.push(tr(lang, 'contextBoardLine', { name: boardDisplayName(board, lang) || tr(lang, 'boardFallback'), top }));
     }
   }
 
@@ -722,7 +776,7 @@ export function buildContext(data, opts = {}) {
     for (const r of picks) {
       lines.push(
         tr(lang, 'resourceLine', {
-          title: linkOrText(r.title || r.id || '', r.url),
+          title: linkOrText(contentField(r, 'title', lang) || r.id || '', r.url),
           type: r.type || 'resource',
           level: r.level || '-',
           lang: r.lang || '-',
@@ -742,8 +796,8 @@ export function buildContext(data, opts = {}) {
     for (const p of picks) {
       lines.push(
         tr(lang, 'projectLine', {
-          name: linkOrText(p.name || p.id || '', p.url),
-          summary: String(p.summary || p.highlight || '').slice(0, 80),
+          name: linkOrText(contentField(p, 'name', lang) || p.id || '', p.url),
+          summary: String(contentField(p, 'summary', lang) || contentField(p, 'highlight', lang) || '').slice(0, 80),
         }),
       );
     }
@@ -755,7 +809,7 @@ export function buildContext(data, opts = {}) {
 /** Build the system prompt; the site summary is the "fact context". */
 export function buildSystemPrompt(context = '', opts = {}) {
   const lang = langOf(opts);
-  const site = opts.siteName || pick(lang, 'AI Pulse · 照胆云', 'AI Pulse');
+  const site = opts.siteName || pick(lang, 'AI Pulse · 照胆云', 'AI Pulse · Z Cloud');
   const siteUrl = opts.siteUrl || 'https://chengxi-z.github.io/llm-pulse/';
   return [
     tr(lang, 'promptPersona', { site }),
@@ -1220,7 +1274,7 @@ function answerRanking(boards, lang = 'zh') {
     if (!entries.length) continue;
     lines.push(
       tr(lang, 'rankingAnswerBoard', {
-        name: board.name || board.id,
+        name: boardDisplayName(board, lang),
         updated: board.updatedAt ? tr(lang, 'rankingAnswerUpdated', { date: shortDate(board.updatedAt) }) : '',
       }),
     );
@@ -1249,7 +1303,7 @@ function answerNews(news, limit = 5, lang = 'zh') {
       tr(lang, 'newsAnswerItem', {
         important: n.importance === 3 ? `**${tr(lang, 'newsImportant').trim()}** ` : '',
         date: shortDate(n.publishedAt),
-        title: n.title || '',
+        title: contentField(n, 'title', lang),
         source: n.url ? tr(lang, 'newsAnswerSource', { url: n.url }) : '',
       }),
     ),
@@ -1267,12 +1321,12 @@ function answerLearn(resources, lang = 'zh') {
     '',
     ...pool.map((r) =>
       tr(lang, 'learnAnswerItem', {
-        title: linkOrText(`${r.title || r.id}`, r.url),
+        title: linkOrText(`${contentField(r, 'title', lang) || r.id}`, r.url),
         type: r.type || 'resource',
         level: r.level || '-',
         lang: r.lang || '-',
         free: r.free ? tr(lang, 'resourceFree') : '',
-        desc: r.description ? tr(lang, 'learnAnswerDesc', { text: String(r.description).slice(0, 60) }) : '',
+        desc: contentField(r, 'description', lang) ? tr(lang, 'learnAnswerDesc', { text: String(contentField(r, 'description', lang)).slice(0, 60) }) : '',
       }),
     ),
     '',
@@ -1288,9 +1342,9 @@ function answerProjects(projects, lang = 'zh') {
     '',
     ...picks.map((p) =>
       tr(lang, 'projectAnswerItem', {
-        name: linkOrText(p.name || p.id, p.url),
+        name: linkOrText(contentField(p, 'name', lang) || p.id, p.url),
         owner: p.owner ? pick(lang, `（@${p.owner}）`, ` (@${p.owner})`) : '',
-        summary: String(p.summary || p.highlight || '').slice(0, 70),
+        summary: String(contentField(p, 'summary', lang) || contentField(p, 'highlight', lang) || '').slice(0, 70),
       }),
     ),
     '',
@@ -1324,8 +1378,8 @@ function answerAbout(meta, data, lang = 'zh') {
   if (meta.site) {
     lines.push(
       tr(lang, 'aboutAnswerSite', {
-        name: meta.site.name || 'AI Pulse',
-        brand: meta.site.brand ? ` · ${meta.site.brand}` : '',
+        name: lang === 'en' ? 'AI Pulse · Z Cloud' : meta.site.name || 'AI Pulse',
+        brand: lang === 'en' ? '' : meta.site.brand ? ` · ${meta.site.brand}` : '',
       }),
     );
   }
@@ -1336,7 +1390,7 @@ function answerAbout(meta, data, lang = 'zh') {
     for (const s of sources.slice(0, 10)) {
       lines.push(
         tr(lang, 'aboutAnswerSourceLine', {
-          name: s.name || s.id,
+          name: sourceDisplayName(s, lang),
           type: s.type || '-',
           status: s.status || tr(lang, 'unknownContext'),
           items: s.items != null ? tr(lang, 'aboutAnswerSourceItems', { n: s.items }) : '',
@@ -1376,7 +1430,7 @@ function answerFallback(question, data, lang = 'zh') {
   for (const n of news) {
     const text = `${n.title || ''} ${n.summary || ''} ${asArray(n.tags).join(' ')}`;
     if (matchesAny(text, words)) {
-      hits.push(tr(lang, 'fallbackNewsHit', { date: shortDate(n.publishedAt), title: n.title || '' }));
+      hits.push(tr(lang, 'fallbackNewsHit', { date: shortDate(n.publishedAt), title: contentField(n, 'title', lang) }));
     }
     if (hits.length >= 6) break;
   }
@@ -1385,7 +1439,7 @@ function answerFallback(question, data, lang = 'zh') {
     if (matchesAny(text, words)) {
       hits.push(
         tr(lang, 'fallbackResourceHit', {
-          title: linkOrText(r.title || '', r.url),
+          title: linkOrText(contentField(r, 'title', lang), r.url),
           type: r.type || '-',
           level: r.level || '-',
         }),
@@ -1398,8 +1452,8 @@ function answerFallback(question, data, lang = 'zh') {
     if (matchesAny(text, words)) {
       hits.push(
         tr(lang, 'fallbackProjectHit', {
-          name: linkOrText(p.name || '', p.url),
-          summary: String(p.summary || '').slice(0, 60),
+          name: linkOrText(contentField(p, 'name', lang), p.url),
+          summary: String(contentField(p, 'summary', lang) || '').slice(0, 60),
         }),
       );
     }
@@ -1574,7 +1628,7 @@ export function buildBrief(data, opts = {}) {
     if (!entries.length) continue;
     boardLines.push(
       tr(lang, 'briefBoardLine', {
-        name: board.name || board.id,
+        name: boardDisplayName(board, lang),
         entries: entries.map((e) => `${e.rank || '-'}. ${e.model || ''}`).join(' / '),
       }),
     );
@@ -1590,7 +1644,7 @@ export function buildBrief(data, opts = {}) {
     for (const n of topNews) {
       lines.push(
         tr(lang, 'briefNewsLine', {
-          title: n.title || '',
+          title: contentField(n, 'title', lang),
           summary: n.summary ? tr(lang, 'briefNewsSummary', { text: String(n.summary).slice(0, 100) }) : '',
           link: n.url ? tr(lang, 'briefNewsLink', { url: n.url }) : '',
         }),
@@ -1607,7 +1661,7 @@ export function buildBrief(data, opts = {}) {
   for (const r of learnPool) {
     lines.push(
       tr(lang, 'briefLearnLine', {
-        title: linkOrText(r.title || '', r.url),
+        title: linkOrText(contentField(r, 'title', lang), r.url),
         type: r.type || '-',
         level: r.level || '-',
       }),
@@ -1616,8 +1670,8 @@ export function buildBrief(data, opts = {}) {
   const proj = [...projects].sort((a, b) => (Number(b.stars) || 0) - (Number(a.stars) || 0)).slice(0, 2);
   for (const p of proj) {
     // Project summaries are source data (often Chinese); keep the English brief clean.
-    const summary = lang === 'en' ? '' : String(p.summary || '').slice(0, 60);
-    lines.push(tr(lang, 'briefProjectLine', { title: linkOrText(p.name || '', p.url), summary }));
+    const summary = lang === 'en' ? (contentField(p, 'summary', lang) ? String(contentField(p, 'summary', lang)).slice(0, 60) : '') : String(p.summary || '').slice(0, 60);
+    lines.push(tr(lang, 'briefProjectLine', { title: linkOrText(contentField(p, 'name', lang), p.url), summary }));
   }
   if (!learnPool.length && !proj.length) lines.push(tr(lang, 'briefNoLearn'));
   lines.push('');

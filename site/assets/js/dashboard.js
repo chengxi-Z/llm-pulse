@@ -23,8 +23,6 @@ const SCATTER_SOURCES = [
   { key: 'livebench', boardId: 'livebench-2.0', labelKey: 'dashboard.scatter.metricLivebench' },
   { key: 'gpqa', boardId: 'epoch-gpqa-diamond', labelKey: 'dashboard.scatter.metricGpqa' },
   { key: 'swe', boardId: 'epoch-swe-bench-verified', labelKey: 'dashboard.scatter.metricSwe' },
-  { key: 'opencompass', boardId: 'opencompass-arena', labelKey: 'dashboard.scatter.metricOpencompass' },
-  { key: 'opencompassMM', boardId: 'opencompass-arena-mm', labelKey: 'dashboard.scatter.metricOpencompassMM' },
 ];
 let animated = false;
 let tooltipBound = false;

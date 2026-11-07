@@ -17,11 +17,6 @@ export const RESOURCES = [
   R('karpathy-zero-to-hero', 'Neural Networks: Zero to Hero', 'course', 'beginner', 'en', 'https://karpathy.ai/zero-to-hero.html', 'Andrej Karpathy', '从反向传播手写实现到 GPT，最适合建立大模型底层直觉的课程。', ['from-scratch', 'GPT', 'PyTorch'], true, true),
   R('karpathy-llm101n', 'LLM101n: Let’s build a Storyteller', 'course', 'advanced', 'en', 'https://github.com/karpathy/LLM101n', 'Andrej Karpathy', '从零构建一个讲故事的大语言模型，覆盖训练/微调/部署全链路。', ['from-scratch', 'LLM', 'education']),
   R('stanford-cs25', 'Stanford CS25: Transformers United', 'course', 'intermediate', 'en', 'https://web.stanford.edu/class/cs25/', 'Stanford University', 'Transformer 前沿讲座合集，邀请业界研究员讲最新模型与方向。', ['Transformer', 'research', 'lectures']),
-  R('d2l-zh', '动手学深度学习（D2L）', 'book', 'beginner', 'zh', 'https://zh.d2l.ai/', '李沐 等', '中文深度学习经典教材，代码可运行，覆盖基础到注意力机制。', ['深度学习', 'PyTorch', '中文'], true, true),
-  R('ml-2024-hylee', '李宏毅机器学习课程', 'course', 'beginner', 'zh', 'https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php', '李宏毅 (NTU)', '中文机器学习/生成式 AI 入门课，讲解生动，适合零基础入门。', ['机器学习', '生成式AI', '中文'], true, true),
-  R('datawhale-self-llm', 'Self-LLM 开源大模型食用指南', 'tutorial', 'intermediate', 'zh', 'https://github.com/datawhalechina/self-llm', 'Datawhale', '面向国内开源大模型的部署、微调实战教程（Qwen/GLM/InternLM 等）。', ['微调', '开源模型', '中文'], true, true),
-  R('datawhale-llm-universe', 'LLM Universe 大模型应用开发', 'tutorial', 'beginner', 'zh', 'https://github.com/datawhalechina/llm-universe', 'Datawhale', '从 API 调用到 RAG 应用开发的中文实战课程，面向应用开发者。', ['RAG', '应用开发', '中文']),
-  R('datawhale-llm-cookbook', 'LLM Cookbook 面向开发者的大模型手册', 'tutorial', 'intermediate', 'zh', 'https://github.com/datawhalechina/llm-cookbook', 'Datawhale + 吴恩达', '吴恩达课程的中文精读版，覆盖 Prompt/RAG/微调/Agent。', ['Prompt', 'RAG', '中文']),
   R('prompting-guide', 'Prompt Engineering Guide', 'tutorial', 'beginner', 'multi', 'https://www.promptingguide.ai/', 'DAIR.AI', '最系统的提示工程指南，多语言（含中文），持续更新。', ['Prompt', 'LLM', 'guide']),
   R('openai-cookbook', 'OpenAI Cookbook', 'tutorial', 'intermediate', 'en', 'https://cookbook.openai.com/', 'OpenAI', '官方示例集：API 用法、结构化输出、Agent、评测最佳实践。', ['API', 'examples', 'OpenAI']),
   R('anthropic-prompt-eng', 'Anthropic Prompt Engineering', 'tutorial', 'intermediate', 'en', 'https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview', 'Anthropic', 'Claude 官方提示工程文档，含系统提示、工具调用最佳实践。', ['Prompt', 'Claude', 'API']),
@@ -32,8 +27,13 @@ export const RESOURCES = [
   R('awesome-llm-apps', 'Awesome LLM Apps', 'awesome', 'intermediate', 'en', 'https://github.com/Shubhamsaboo/awesome-llm-apps', 'Shubham Saboo', '可直接运行的 LLM 应用合集（RAG/Agent/多模态），适合找项目灵感。', ['apps', 'RAG', 'Agent'], true, true),
   R('lilianweng-blog', 'Lilian Weng Blog', 'paper', 'advanced', 'en', 'https://lilianweng.github.io/', 'Lilian Weng', '前 OpenAI 研究员的技术博客，系统讲解 Agent、RAG、扩散模型等。', ['Agent', 'RAG', '深度长文']),
   R('mcp-docs', 'Model Context Protocol 文档', 'tool', 'intermediate', 'en', 'https://modelcontextprotocol.io/', 'Anthropic / MCP', 'MCP 开放协议：让模型安全连接外部工具与数据，Agent 工具生态基础。', ['MCP', 'Agent', 'protocol'], true, true),
-  R('internlm-tutorial', '书生大模型实战营', 'tutorial', 'intermediate', 'zh', 'https://github.com/InternLM/Tutorial', '上海AI实验室 InternLM', '中文大模型全栈实战：部署、微调、RAG、评测与智能体。', ['实战营', 'InternLM', '中文']),
   R('arxiv-cs-cl', 'arXiv cs.CL 最新论文', 'paper', 'advanced', 'en', 'https://arxiv.org/list/cs.CL/recent', 'arXiv', '计算语言学最新论文流，跟踪前沿研究进展的第一现场。', ['论文', 'research', 'NLP']),
+R('d2l-en', 'Dive into Deep Learning', 'book', 'beginner', 'en', 'https://d2l.ai/', 'Aston Zhang, Zachary Lipton, Mu Li, Alex Smola', '交互式深度学习教材，代码可运行，覆盖从基础到注意力机制。', ['deep-learning', 'PyTorch', 'book'], true, true),
+R('stanford-cs224n', 'Stanford CS224N: NLP with Deep Learning', 'course', 'advanced', 'en', 'https://web.stanford.edu/class/cs224n/', 'Stanford University', '斯坦福 NLP 深度课程：词向量、Transformer 与大模型。', ['NLP', 'Transformers', 'LLM'], true),
+R('deeplearning-ai-courses', 'DeepLearning.AI Short Courses', 'course', 'beginner', 'en', 'https://www.deeplearning.ai/short-courses/', 'DeepLearning.AI', '吴恩达团队的 LLM 短期实战课程合集。', ['LLM', 'Prompt', 'RAG'], true),
+R('full-stack-deep-learning', 'Full Stack Deep Learning', 'course', 'intermediate', 'en', 'https://fullstackdeeplearning.com/', 'FSDL', '从原型到生产：ML 工程与部署全流程课程。', ['MLOps', 'deployment', 'production'], true),
+R('huggingface-smol-course', 'Hugging Face Smol Course', 'course', 'intermediate', 'en', 'https://github.com/huggingface/smol-course', 'Hugging Face', 'Hugging Face 小模型训练与对齐实战课程。', ['LLM', 'fine-tuning', 'alignment'], true),
+R('stanford-cs324', 'Stanford CS324: Large Language Models', 'course', 'advanced', 'en', 'https://stanford-cs324.github.io/winter2022/', 'Stanford University', '斯坦福大语言模型课程：能力、局限与社会影响。', ['LLM', 'research', 'ethics'], true),
 ];
 
 const P = (id, name, owner, repo, summary, tags, highlight, sourceType, license, why, stars = null) => ({
@@ -81,6 +81,12 @@ const RESOURCE_EN = {
   'stanford-cs25': { descriptionEn: 'Stanford lecture series on Transformers with industry researchers on frontier models.' },
   'illustrated-transformer': { descriptionEn: 'Visual guide to Transformers and attention; a classic introduction.' },
   'arxiv-cs-cl': { descriptionEn: 'Latest computational-linguistics papers from arXiv; a frontline research feed.' },
+  'd2l-en': { descriptionEn: 'Interactive deep learning book with runnable code, from basics to attention.' },
+  'stanford-cs224n': { descriptionEn: 'Stanford NLP course: word vectors, Transformers and large language models.' },
+  'deeplearning-ai-courses': { descriptionEn: "Short hands-on LLM courses from Andrew Ng's team." },
+  'full-stack-deep-learning': { descriptionEn: 'From prototype to production: ML engineering and deployment.' },
+  'huggingface-smol-course': { descriptionEn: 'Hugging Face course on training and aligning small language models.' },
+  'stanford-cs324': { descriptionEn: 'Stanford course on large language models: capabilities, limits and societal impact.' },
   'internlm-tutorial': { descriptionEn: 'Chinese full-stack LLM bootcamp: deployment, fine-tuning, RAG, evaluation and agents.', authorEn: 'Shanghai AI Lab InternLM' },
 };
 const PROJECT_EN = {

@@ -33,7 +33,7 @@ import {
 import { getLang, onLangChange, t } from './i18n.js';
 
 const SITE_URL = 'https://chengxi-z.github.io/llm-pulse/';
-const siteName = () => (getLang() === 'en' ? 'AI Pulse' : 'AI Pulse · 照胆云');
+const siteName = () => (getLang() === 'en' ? 'AI Pulse · Z Cloud' : 'AI Pulse · 照胆云');
 /**
  * Escape dictionary values before interpolating them into innerHTML templates.
  * Dictionary content is controlled, but defense in depth keeps HTML structure

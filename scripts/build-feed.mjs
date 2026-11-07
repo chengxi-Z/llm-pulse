@@ -20,9 +20,35 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 export const DEFAULT_BASE_URL = 'https://chengxi-z.github.io/llm-pulse/';
-export const SITE_TITLE = 'AI Pulse · 照胆云';
+export const SITE_TITLE = 'AI Pulse · Z Cloud';
 export const SITE_DESCRIPTION =
-  '跟踪国内外前沿大模型：模型目录、厂商动态、公开评测排行、学习资源与 AI 项目展示。数据由 GitHub Actions 定时刷新，提供 RSS / JSON Feed 订阅。';
+  'Tracking frontier LLMs: model catalog, vendor updates, public leaderboards, learning resources and AI projects. Refreshed by GitHub Actions; RSS / JSON Feed.';
+
+const TAG_EN = {
+  '官方博客': 'Official blog',
+  '模型发布': 'Model release',
+  '开源': 'Open source',
+  '研究': 'Research',
+  '政策/安全': 'Policy & safety',
+  '定价': 'Pricing',
+  '评测': 'Evaluation',
+  '长上下文': 'Long context',
+  '多模态': 'Multimodal',
+  '推理': 'Reasoning',
+  '开源权重': 'Open weights',
+  '免费': 'Free',
+  '官方公告': 'Official update',
+  '微调': 'Fine-tuning',
+  '中文': 'Chinese',
+  '深度学习': 'Deep learning',
+  '机器学习': 'Machine learning',
+  '生成式AI': 'Generative AI',
+  '应用开发': 'App development',
+  '入门': 'Beginner',
+  '论文': 'Papers',
+  '实战营': 'Bootcamp',
+};
+const hasCjk = (value) => /[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/.test(String(value || ''));
 
 /* ------------------------------ Utilities ------------------------------ */
 
@@ -92,23 +118,24 @@ export function buildFeedItems(data, opts = {}) {
       const id = textOf(item.id) || `news-${textOf(item.title).slice(0, 40)}`;
       const publishedAt = isoOrNull(item.publishedAt) || isoOrNull(data?.meta?.generatedAt) || null;
       const url = absoluteUrl(item.url || item.sourceUrl || `news.html#${encodeURIComponent(id)}`, baseUrl);
-      const summary = textOf(item.summary || '', '').slice(0, 240);
+      const summary = textOf(item.summaryEn || item.summary || '', '').slice(0, 240);
       const sourceName = textOf(item.sourceName, '');
       return {
         id,
-        title: textOf(item.title, '（无标题）'),
+        title: textOf(item.titleEn || item.title, 'Untitled'),
         summary,
         url,
         publishedAt,
         sourceName,
         sourceUrl: item.sourceUrl ? absoluteUrl(item.sourceUrl, baseUrl) : null,
-        tags: asArray(item.tags).map((tag) => textOf(tag)).filter(Boolean),
+        tags: asArray(item.tags).map((tag) => TAG_EN[textOf(tag)] || textOf(tag)).filter((tag) => tag && !hasCjk(tag)),
         kind: textOf(item.kind, ''),
-        lang: item.lang === 'en' ? 'en' : 'zh',
+        lang: 'en',
         importance: Number(item.importance) || 1,
       };
     })
-    .sort((a, b) => {
+  .filter((item) => !hasCjk(item.title) && !hasCjk(item.summary))
+  .sort((a, b) => {
       const ta = a.publishedAt ? Date.parse(a.publishedAt) : 0;
       const tb = b.publishedAt ? Date.parse(b.publishedAt) : 0;
       if (tb !== ta) return tb - ta;
@@ -122,7 +149,7 @@ export function buildFeedItems(data, opts = {}) {
 function itemDescription(item) {
   const parts = [];
   if (item.summary) parts.push(item.summary);
-  if (item.sourceName) parts.push(`来源：${item.sourceName}`);
+  if (item.sourceName) parts.push(`Source: ${item.sourceName}`);
   return parts.join(' — ').slice(0, 500);
 }
 
@@ -148,7 +175,7 @@ export function buildRss(data, opts = {}) {
   lines.push(`    <title>${escapeXml(SITE_TITLE)}</title>`);
   lines.push(`    <link>${escapeXml(homeUrl)}</link>`);
   lines.push(`    <description>${escapeXml(SITE_DESCRIPTION)}</description>`);
-  lines.push('    <language>zh-cn</language>');
+  lines.push('    <language>en-us</language>');
   lines.push(`    <lastBuildDate>${escapeXml(lastBuild)}</lastBuildDate>`);
   lines.push(`    <pubDate>${escapeXml(lastBuild)}</pubDate>`);
   lines.push('    <generator>AI Pulse build-feed.mjs</generator>');
@@ -161,7 +188,7 @@ export function buildRss(data, opts = {}) {
     lines.push('    </image>');
   }
   if (!items.length) {
-    lines.push('    <!-- 暂无动态条目：数据管道尚未产出 news 数据 -->');
+    lines.push('    <!-- No updates yet: the data pipeline has not produced news yet. -->');
   }
   for (const item of items) {
     lines.push('    <item>');
@@ -173,7 +200,7 @@ export function buildRss(data, opts = {}) {
     if (description) lines.push(`      <description>${escapeXml(description)}</description>`);
     for (const tag of item.tags.slice(0, 6)) lines.push(`      <category>${escapeXml(tag)}</category>`);
     if (item.sourceUrl) {
-      lines.push(`      <source url="${escapeXml(item.sourceUrl)}">${escapeXml(item.sourceName || '来源')}</source>`);
+      lines.push(`      <source url="${escapeXml(item.sourceUrl)}">${escapeXml(item.sourceName || 'Source')}</source>`);
     }
     lines.push('    </item>');
   }
@@ -197,11 +224,11 @@ export function buildJsonFeed(data, opts = {}) {
   const site = (meta && meta.site) || {};
   const feed = {
     version: 'https://jsonfeed.org/version/1.1',
-    title: textOf(site.name, 'AI Pulse') + (site.brand ? ` · ${textOf(site.brand)}` : ''),
+    title: SITE_TITLE,
     home_page_url: baseUrl,
     feed_url: absoluteUrl('feed.json', baseUrl),
     description: SITE_DESCRIPTION,
-    language: 'zh-CN',
+    language: 'en-US',
     authors: [{ name: SITE_TITLE, url: baseUrl }],
     items: items.map((item) => {
       const entry = {
@@ -211,7 +238,7 @@ export function buildJsonFeed(data, opts = {}) {
         content_text: itemDescription(item) || item.title,
         date_published: item.publishedAt || undefined,
         tags: item.tags,
-        language: item.lang === 'en' ? 'en' : 'zh-CN',
+        language: 'en',
       };
       if (item.summary) entry.summary = item.summary;
       if (item.sourceName) entry.authors = [{ name: item.sourceName, url: item.sourceUrl || baseUrl }];

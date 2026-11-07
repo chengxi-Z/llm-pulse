@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Pulse · 照胆云</title>
+    <title>AI Pulse · Z Cloud</title>
     <link>https://chengxi-z.github.io/llm-pulse/</link>
-    <description>跟踪国内外前沿大模型：模型目录、厂商动态、公开评测排行、学习资源与 AI 项目展示。数据由 GitHub Actions 定时刷新，提供 RSS / JSON Feed 订阅。</description>
-    <language>zh-cn</language>
+    <description>Tracking frontier LLMs: model catalog, vendor updates, public leaderboards, learning resources and AI projects. Refreshed by GitHub Actions; RSS / JSON Feed.</description>
+    <language>en-us</language>
     <lastBuildDate>Tue, 03 Nov 2026 16:50:38 GMT</lastBuildDate>
     <pubDate>Tue, 03 Nov 2026 16:50:38 GMT</pubDate>
     <generator>AI Pulse build-feed.mjs</generator>
     <atom:link href="https://chengxi-z.github.io/llm-pulse/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png</url>
-      <title>AI Pulse · 照胆云</title>
+      <title>AI Pulse · Z Cloud</title>
       <link>https://chengxi-z.github.io/llm-pulse/</link>
     </image>
     <item>
@@ -19,10 +19,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick/</link>
       <guid isPermaLink="false">rss-705579ba</guid>
       <pubDate>Tue, 03 Nov 2026 16:49:29 GMT</pubDate>
-      <description>Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business questions acros… — 来源：AWS ML Blog</description>
+      <description>Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business questions acros… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -30,10 +30,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/</link>
       <guid isPermaLink="false">rss-83e8af1b</guid>
       <pubDate>Tue, 03 Nov 2026 16:47:40 GMT</pubDate>
-      <description>Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user&apos;s identity. AgentCore Gateway perfo… — 来源：AWS ML Blog</description>
+      <description>Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user&apos;s identity. AgentCore Gateway perfo… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -41,10 +41,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/</link>
       <guid isPermaLink="false">rss-aabe99ed</guid>
       <pubDate>Tue, 03 Nov 2026 16:43:20 GMT</pubDate>
-      <description>Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cited content… — 来源：AWS ML Blog</description>
+      <description>Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cited content… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -52,10 +52,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/</link>
       <guid isPermaLink="false">rss-79d5bdbc</guid>
       <pubDate>Tue, 03 Nov 2026 16:41:13 GMT</pubDate>
-      <description>Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with GRANT and… — 来源：AWS ML Blog</description>
+      <description>Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with GRANT and… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -63,10 +63,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/</link>
       <guid isPermaLink="false">rss-32a9729e</guid>
       <pubDate>Tue, 03 Nov 2026 16:40:54 GMT</pubDate>
-      <description>Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or self-manag… — 来源：AWS ML Blog</description>
+      <description>Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or self-manag… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -74,10 +74,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/</link>
       <guid isPermaLink="false">rss-e66aa22d</guid>
       <pubDate>Tue, 03 Nov 2026 16:32:54 GMT</pubDate>
-      <description>Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code for readin… — 来源：AWS ML Blog</description>
+      <description>Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code for readin… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -85,21 +85,21 @@
       <link>https://openai.com/index/heimstaden</link>
       <guid isPermaLink="false">rss-3c610e6d</guid>
       <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <description>Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe. — 来源：OpenAI Blog</description>
+      <description>Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
-      <title>ollama/ollama 发布 v0.40.14</title>
+      <title>ollama/ollama released v0.40.14</title>
       <link>https://github.com/ollama/ollama/releases/tag/v0.40.14</link>
       <guid isPermaLink="false">github-release-ollama-ollama-v0-40-14</guid>
       <pubDate>Tue, 03 Nov 2026 01:40:40 GMT</pubDate>
-      <description>## What&apos;s Changed * `ollama launch claude` now applies the model&apos;s output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including… — 来源：GitHub Releases</description>
+      <description>## What&apos;s Changed * `ollama launch claude` now applies the model&apos;s output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including… — Source: GitHub Releases</description>
       <category>ollama</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/ollama/ollama/releases">GitHub Releases</source>
     </item>
     <item>
@@ -107,10 +107,10 @@
       <link>https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102</link>
       <guid isPermaLink="false">rss-42cc70ea</guid>
       <pubDate>Mon, 02 Nov 2026 19:55:00 GMT</pubDate>
-      <description>From a nuclear revival to qubits, the MIT Energy Initiative’s annual research conference tracked deployment of today’s technologies to discovery of tomorrow’s breakthroughs. — 来源：MIT News AI</description>
+      <description>From a nuclear revival to qubits, the MIT Energy Initiative’s annual research conference tracked deployment of today’s technologies to discovery of tomorrow’s breakthroughs. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>研究</category>
+      <category>Official blog</category>
+      <category>Research</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -118,10 +118,10 @@
       <link>https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai</link>
       <guid isPermaLink="false">rss-32b855ce</guid>
       <pubDate>Mon, 02 Nov 2026 18:00:00 GMT</pubDate>
-      <description>OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI. — 来源：OpenAI Blog</description>
+      <description>OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>政策/安全</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -129,10 +129,10 @@
       <link>https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties</link>
       <guid isPermaLink="false">rss-8ce678e2</guid>
       <pubDate>Mon, 02 Nov 2026 18:00:00 GMT</pubDate>
-      <description>OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers. — 来源：OpenAI Blog</description>
+      <description>OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>政策/安全</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -140,10 +140,10 @@
       <link>https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/</link>
       <guid isPermaLink="false">rss-2a884761</guid>
       <pubDate>Mon, 02 Nov 2026 17:45:00 GMT</pubDate>
-      <description>Here are Google’s latest AI updates from October 2026 — 来源：Google AI Blog</description>
+      <description>Here are Google’s latest AI updates from October 2026 — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
@@ -151,10 +151,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/</link>
       <guid isPermaLink="false">rss-482c6b58</guid>
       <pubDate>Mon, 02 Nov 2026 17:11:21 GMT</pubDate>
-      <description>This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web content reac… — 来源：AWS ML Blog</description>
+      <description>This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web content reac… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>开源</category>
+      <category>Official blog</category>
+      <category>Open source</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -162,10 +162,10 @@
       <link>https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/</link>
       <guid isPermaLink="false">rss-13ff67aa</guid>
       <pubDate>Mon, 02 Nov 2026 17:01:31 GMT</pubDate>
-      <description>Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to transfer a… — 来源：AWS ML Blog</description>
+      <description>Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to transfer a… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
-      <category>官方博客</category>
-      <category>定价</category>
+      <category>Official blog</category>
+      <category>Pricing</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
@@ -173,10 +173,10 @@
       <link>https://openai.com/index/scaling-git-at-openai</link>
       <guid isPermaLink="false">rss-bd19c0a8</guid>
       <pubDate>Mon, 02 Nov 2026 15:30:00 GMT</pubDate>
-      <description>How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible. — 来源：OpenAI Blog</description>
+      <description>How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -184,21 +184,21 @@
       <link>https://openai.com/index/grid-protectors-program</link>
       <guid isPermaLink="false">rss-46bb8b16</guid>
       <pubDate>Mon, 02 Nov 2026 15:00:00 GMT</pubDate>
-      <description>OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs. — 来源：OpenAI Blog</description>
+      <description>OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
-      <title>vllm-project/vllm 发布 v0.33.0</title>
+      <title>vllm-project/vllm released v0.33.0</title>
       <link>https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3</link>
       <guid isPermaLink="false">github-release-vllm-project-vllm-v0-33-0rc3</guid>
       <pubDate>Mon, 02 Nov 2026 10:10:05 GMT</pubDate>
-      <description># v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursiv… — 来源：GitHub Releases</description>
+      <description># v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursiv… — Source: GitHub Releases</description>
       <category>vllm</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
@@ -206,10 +206,10 @@
       <link>https://openai.com/index/lifeval</link>
       <guid isPermaLink="false">rss-8ac1aef2</guid>
       <pubDate>Mon, 02 Nov 2026 09:00:00 GMT</pubDate>
-      <description>Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork. — 来源：OpenAI Blog</description>
+      <description>Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>评测</category>
+      <category>Official blog</category>
+      <category>Evaluation</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -217,22 +217,22 @@
       <link>https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102</link>
       <guid isPermaLink="false">rss-50685d16</guid>
       <pubDate>Mon, 02 Nov 2026 05:35:00 GMT</pubDate>
-      <description>The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone in AI-driven drug discovery. — 来源：MIT News AI</description>
+      <description>The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone in AI-driven drug discovery. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>研究</category>
+      <category>Official blog</category>
+      <category>Research</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
-      <title>Z.ai 上新：GLM 5.3 FlashX Legal（上下文 1M，$0.37/$1.25）</title>
+      <title>Z.ai launches GLM 5.3 FlashX Legal (1M context, $0.37/$1.25)</title>
       <link>https://openrouter.ai/z-ai/glm-5.3-flashx-legal</link>
       <guid isPermaLink="false">release-z-ai-glm-5-3-flashx-legal</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Z.ai: GLM 5.3 FlashX Legal 进入 OpenRouter 目录：上下文 1M，$0.37/$1.25 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Z.ai: GLM 5.3 FlashX Legal is now on OpenRouter: 1M context, $0.37/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Z.ai</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -240,10 +240,10 @@
       <link>https://openai.com/index/qodo-codex-plugin</link>
       <guid isPermaLink="false">rss-5a46b5e6</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request. — 来源：OpenAI Blog</description>
+      <description>Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -251,10 +251,10 @@
       <link>https://openai.com/index/dan-driscoll-joins-openai</link>
       <guid isPermaLink="false">rss-74224be8</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies. — 来源：OpenAI Blog</description>
+      <description>OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
-      <category>官方博客</category>
-      <category>政策/安全</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -262,10 +262,10 @@
       <link>https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030</link>
       <guid isPermaLink="false">rss-f156b985</guid>
       <pubDate>Fri, 30 Oct 2026 20:15:00 GMT</pubDate>
-      <description>Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI. — 来源：MIT News AI</description>
+      <description>Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>研究</category>
+      <category>Official blog</category>
+      <category>Research</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -273,10 +273,10 @@
       <link>https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030</link>
       <guid isPermaLink="false">rss-bdae9243</guid>
       <pubDate>Fri, 30 Oct 2026 19:00:00 GMT</pubDate>
-      <description>MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections. — 来源：MIT News AI</description>
+      <description>MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -284,54 +284,54 @@
       <link>https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/</link>
       <guid isPermaLink="false">rss-ebfc0c15</guid>
       <pubDate>Fri, 30 Oct 2026 14:18:30 GMT</pubDate>
-      <description>Google DeepMind and UK government work together to reduce planning assessment times — 来源：Google DeepMind</description>
+      <description>Google DeepMind and UK government work together to reduce planning assessment times — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
-      <title>huggingface/transformers 发布 Patch release v5.22.1</title>
+      <title>huggingface/transformers released Patch release v5.22.1</title>
       <link>https://github.com/huggingface/transformers/releases/tag/v5.22.1</link>
       <guid isPermaLink="false">github-release-huggingface-transformers-v5-22-1</guid>
       <pubDate>Fri, 30 Oct 2026 09:36:03 GMT</pubDate>
-      <description># Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or — 来源：GitHub Releases</description>
+      <description># Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or — Source: GitHub Releases</description>
       <category>transformers</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>huggingface/transformers 发布 v5.22.0: Mistral Large 4 (Le Chonk)</title>
+      <title>huggingface/transformers released v5.22.0: Mistral Large 4 (Le Chonk)</title>
       <link>https://github.com/huggingface/transformers/releases/tag/v5.22.0</link>
       <guid isPermaLink="false">github-release-huggingface-transformers-v5-22-0</guid>
       <pubDate>Thu, 29 Oct 2026 14:15:39 GMT</pubDate>
-      <description>## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral&apos;s largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i… — 来源：GitHub Releases</description>
+      <description>## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral&apos;s largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i… — Source: GitHub Releases</description>
       <category>transformers</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>huggingface/transformers 发布 Patch release v5.21.1</title>
+      <title>huggingface/transformers released Patch release v5.21.1</title>
       <link>https://github.com/huggingface/transformers/releases/tag/v5.21.1</link>
       <guid isPermaLink="false">github-release-huggingface-transformers-v5-21-1</guid>
       <pubDate>Thu, 29 Oct 2026 08:35:02 GMT</pubDate>
-      <description># Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone! — 来源：GitHub Releases</description>
+      <description># Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone! — Source: GitHub Releases</description>
       <category>transformers</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>ollama/ollama 发布 v0.40.13</title>
+      <title>ollama/ollama released v0.40.13</title>
       <link>https://github.com/ollama/ollama/releases/tag/v0.40.13</link>
       <guid isPermaLink="false">github-release-ollama-ollama-v0-40-13</guid>
       <pubDate>Wed, 28 Oct 2026 19:55:04 GMT</pubDate>
-      <description>## LFM3 on Linux and Windows Liquid AI&apos;s [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu… — 来源：GitHub Releases</description>
+      <description>## LFM3 on Linux and Windows Liquid AI&apos;s [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu… — Source: GitHub Releases</description>
       <category>ollama</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/ollama/ollama/releases">GitHub Releases</source>
     </item>
     <item>
@@ -339,10 +339,10 @@
       <link>https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/</link>
       <guid isPermaLink="false">rss-05b7f987</guid>
       <pubDate>Wed, 28 Oct 2026 17:00:58 GMT</pubDate>
-      <description>Gemini 4 Carbon: Our next frontier model — 来源：Google DeepMind</description>
+      <description>Gemini 4 Carbon: Our next frontier model — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
@@ -350,10 +350,10 @@
       <link>https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028</link>
       <guid isPermaLink="false">rss-0eb397cd</guid>
       <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed. — 来源：MIT News AI</description>
+      <description>Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -361,22 +361,22 @@
       <link>https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028</link>
       <guid isPermaLink="false">rss-23ff9576</guid>
       <pubDate>Wed, 28 Oct 2026 04:00:00 GMT</pubDate>
-      <description>Professor Paris Smaragdis develops computers with superhuman hearing for applications like speech recognition, music understanding, and environmental monitoring. — 来源：MIT News AI</description>
+      <description>Professor Paris Smaragdis develops computers with superhuman hearing for applications like speech recognition, music understanding, and environmental monitoring. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
-      <title>Particle AI 上新：Particle-1（上下文 1M，$0.05/$0.5）</title>
+      <title>Particle AI launches Particle-1 (1M context, $0.05/$0.5)</title>
       <link>https://openrouter.ai/particle-ai/particle-1</link>
       <guid isPermaLink="false">release-particle-ai-particle-1</guid>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Particle AI: Particle-1 进入 OpenRouter 目录：上下文 1M，$0.05/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.05/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>Particle AI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -384,10 +384,10 @@
       <link>https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027</link>
       <guid isPermaLink="false">rss-a836cb2b</guid>
       <pubDate>Tue, 27 Oct 2026 20:55:00 GMT</pubDate>
-      <description>Prabha Jha used her experience with MIT Open Learning’s program for senior executives to develop AI solutions for her employer, Verizon, and to write a book. — 来源：MIT News AI</description>
+      <description>Prabha Jha used her experience with MIT Open Learning’s program for senior executives to develop AI solutions for her employer, Verizon, and to write a book. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -395,21 +395,21 @@
       <link>https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/</link>
       <guid isPermaLink="false">rss-96b27cb4</guid>
       <pubDate>Tue, 27 Oct 2026 16:01:38 GMT</pubDate>
-      <description>Genie 4: our new world model unlocking unprecedented realism in real-time simulation. — 来源：Google DeepMind</description>
+      <description>Genie 4: our new world model unlocking unprecedented realism in real-time simulation. — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
-      <title>ollama/ollama 发布 v0.40.12</title>
+      <title>ollama/ollama released v0.40.12</title>
       <link>https://github.com/ollama/ollama/releases/tag/v0.40.12</link>
       <guid isPermaLink="false">github-release-ollama-ollama-v0-40-12</guid>
       <pubDate>Tue, 27 Oct 2026 00:07:12 GMT</pubDate>
-      <description>## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI&apos;s new family of small models built for local agents, tool calling, and structured output, on Liquid&apos;s new tri-hybrid architecture. The family includes: - [lfm3](https:/… — 来源：GitHub Releases</description>
+      <description>## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI&apos;s new family of small models built for local agents, tool calling, and structured output, on Liquid&apos;s new tri-hybrid architecture. The family includes: - [lfm3](https:/… — Source: GitHub Releases</description>
       <category>ollama</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/ollama/ollama/releases">GitHub Releases</source>
     </item>
     <item>
@@ -417,10 +417,10 @@
       <link>https://news.mit.edu/2026/at-new-york-climate-week-mit-connects-global-network-1026</link>
       <guid isPermaLink="false">rss-08d0c012</guid>
       <pubDate>Mon, 26 Oct 2026 19:00:00 GMT</pubDate>
-      <description>A cross-section of the MIT community convened discussions on topics ranging from data centers and super pollutants to agriculture and education. — 来源：MIT News AI</description>
+      <description>A cross-section of the MIT community convened discussions on topics ranging from data centers and super pollutants to agriculture and education. — Source: MIT News AI</description>
       <category>MIT</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
@@ -428,70 +428,70 @@
       <link>https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/</link>
       <guid isPermaLink="false">rss-f0d55083</guid>
       <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.” — 来源：Google AI Blog</description>
+      <description>Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.” — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>OpenAI 上新：GPT-6.1 Terra（上下文 1.1M，$1/$5）</title>
+      <title>OpenAI launches GPT-6.1 Terra (1.1M context, $1/$5)</title>
       <link>https://openrouter.ai/openai/gpt-6.1-terra</link>
       <guid isPermaLink="false">release-openai-gpt-6-1-terra</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra 进入 OpenRouter 目录：上下文 1.1M，$1/$5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>OpenAI: GPT-6.1 Terra is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>OpenAI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>OpenAI 上新：GPT-6.1 Terra (batch)（上下文 1.1M，$0.5/$2.5）</title>
+      <title>OpenAI launches GPT-6.1 Terra (batch) (1.1M context, $0.5/$2.5)</title>
       <link>https://openrouter.ai/openai/gpt-6.1-terra:batch</link>
       <guid isPermaLink="false">release-openai-gpt-6-1-terra-batch</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra (batch) 进入 OpenRouter 目录：上下文 1.1M，$0.5/$2.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>OpenAI: GPT-6.1 Terra (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>OpenAI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>OpenAI 上新：GPT-6.1 Terra Pro（上下文 1.1M，$1/$5）</title>
+      <title>OpenAI launches GPT-6.1 Terra Pro (1.1M context, $1/$5)</title>
       <link>https://openrouter.ai/openai/gpt-6.1-terra-pro</link>
       <guid isPermaLink="false">release-openai-gpt-6-1-terra-pro</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra Pro 进入 OpenRouter 目录：上下文 1.1M，$1/$5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>OpenAI: GPT-6.1 Terra Pro is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>OpenAI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>OpenAI 上新：GPT-6.1 Terra Pro (batch)（上下文 1.1M，$0.5/$2.5）</title>
+      <title>OpenAI launches GPT-6.1 Terra Pro (batch) (1.1M context, $0.5/$2.5)</title>
       <link>https://openrouter.ai/openai/gpt-6.1-terra-pro:batch</link>
       <guid isPermaLink="false">release-openai-gpt-6-1-terra-pro-batch</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra Pro (batch) 进入 OpenRouter 目录：上下文 1.1M，$0.5/$2.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>OpenAI: GPT-6.1 Terra Pro (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>OpenAI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>MoonshotAI 上新：Kimi K3.1 Pro（上下文 1M，$2/$10）</title>
+      <title>MoonshotAI launches Kimi K3.1 Pro (1M context, $2/$10)</title>
       <link>https://openrouter.ai/moonshotai/kimi-k3.1-pro</link>
       <guid isPermaLink="false">release-moonshotai-kimi-k3-1-pro</guid>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description>MoonshotAI: Kimi K3.1 Pro 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>MoonshotAI: Kimi K3.1 Pro is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>MoonshotAI</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -499,10 +499,10 @@
       <link>https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/</link>
       <guid isPermaLink="false">rss-9e331ce5</guid>
       <pubDate>Thu, 22 Oct 2026 14:30:24 GMT</pubDate>
-      <description>A global map categorizing every 10-meter patch of land on Earth into distinct forest types. — 来源：Google DeepMind</description>
+      <description>A global map categorizing every 10-meter patch of land on Earth into distinct forest types. — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
@@ -510,143 +510,143 @@
       <link>https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/</link>
       <guid isPermaLink="false">rss-67f76622</guid>
       <pubDate>Wed, 21 Oct 2026 04:00:00 GMT</pubDate>
-      <description>Widespread AI adoption is propelling Southeast Asia&apos;s digital economy to a projected $368 billion in 2026 and $1 trillion by 2035. — 来源：Google AI Blog</description>
+      <description>Widespread AI adoption is propelling Southeast Asia&apos;s digital economy to a projected $368 billion in 2026 and $1 trillion by 2035. — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>Recursive 上新：Flint (free)（上下文 262K，免费/免费）</title>
+      <title>Recursive launches Flint (free) (262K context, free/free)</title>
       <link>https://openrouter.ai/recursive/flint-v1.0:free</link>
       <guid isPermaLink="false">release-recursive-flint-v1-0-free</guid>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Recursive: Flint (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。 — 来源：OpenRouter</description>
+      <description>Recursive: Flint (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
       <category>Recursive</category>
-      <category>长上下文</category>
-      <category>推理</category>
-      <category>开源权重</category>
-      <category>免费</category>
+      <category>Long context</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <category>Free</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>MiniMax 上新：MiniMax M3.1 Flash（上下文 1M，$0.075/$0.3）</title>
+      <title>MiniMax launches MiniMax M3.1 Flash (1M context, $0.075/$0.3)</title>
       <link>https://openrouter.ai/minimax/minimax-m3.1-flash</link>
       <guid isPermaLink="false">release-minimax-minimax-m3-1-flash</guid>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <description>MiniMax: MiniMax M3.1 Flash 进入 OpenRouter 目录：上下文 1M，$0.075/$0.3 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>MiniMax</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>vllm-project/vllm 发布 v0.32.0</title>
+      <title>vllm-project/vllm released v0.32.0</title>
       <link>https://github.com/vllm-project/vllm/releases/tag/v0.32.0</link>
       <guid isPermaLink="false">github-release-vllm-project-vllm-v0-32-0</guid>
       <pubDate>Sun, 18 Oct 2026 06:50:48 GMT</pubDate>
-      <description># v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur… — 来源：GitHub Releases</description>
+      <description># v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur… — Source: GitHub Releases</description>
       <category>vllm</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-10-17）：Opening up the in-house search API</title>
+      <title>DeepSeek official update (2026-10-17): Opening up the in-house search API</title>
       <link>https://api-docs.deepseek.com/updates#2026-10-17</link>
       <guid isPermaLink="false">release-deepseek-2026-10-17-a8222785</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-10-17：DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-10-17: DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-10-17）：DeepSeek-V4.1-Flash-1017 Update</title>
+      <title>DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update</title>
       <link>https://api-docs.deepseek.com/updates#2026-10-17</link>
       <guid isPermaLink="false">release-deepseek-2026-10-17-f84e3ffd</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-10-17：DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-10-17: DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
-      <title>DeepSeek 上新：DeepSeek V4.1 Flash 1017（上下文 1M，$0.15/$0.6）</title>
+      <title>DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.15/$0.6)</title>
       <link>https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017</link>
       <guid isPermaLink="false">release-deepseek-deepseek-v4-1-flash-1017</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek: DeepSeek V4.1 Flash 1017 进入 OpenRouter 目录：上下文 1M，$0.15/$0.6 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>DeepSeek</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Elorian 上新：Glimpse（上下文 262K，$0.6/$3）</title>
+      <title>Elorian launches Glimpse (262K context, $0.6/$3)</title>
       <link>https://openrouter.ai/elorian/glimpse</link>
       <guid isPermaLink="false">release-elorian-glimpse</guid>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Elorian: Glimpse 进入 OpenRouter 目录：上下文 262K，$0.6/$3 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Elorian: Glimpse is now on OpenRouter: 262K context, $0.6/$3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Elorian</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Inception 上新：Mercury 3（上下文 1M，$0.1/$0.35）</title>
+      <title>Inception launches Mercury 3 (1M context, $0.1/$0.35)</title>
       <link>https://openrouter.ai/inception/mercury-3</link>
       <guid isPermaLink="false">release-inception-mercury-3</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Inception: Mercury 3 进入 OpenRouter 目录：上下文 1M，$0.1/$0.35 每百万 tokens，支持 reasoning/structured-output/tool-calling。 — 来源：OpenRouter</description>
+      <description>Inception: Mercury 3 is now on OpenRouter: 1M context, $0.1/$0.35 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
       <category>Inception</category>
-      <category>长上下文</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>PrismML 上新：Ternary Bonsai 2 9B（上下文 262K，$0.08/$0.13）</title>
+      <title>PrismML launches Ternary Bonsai 2 9B (262K context, $0.08/$0.13)</title>
       <link>https://openrouter.ai/prism-ml/ternary-bonsai-2-9b</link>
       <guid isPermaLink="false">release-prism-ml-ternary-bonsai-2-9b</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>PrismML: Ternary Bonsai 2 9B 进入 OpenRouter 目录：上下文 262K，$0.08/$0.13 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>PrismML: Ternary Bonsai 2 9B is now on OpenRouter: 262K context, $0.08/$0.13 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>PrismML</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Reflection 上新：Beam 1.0 501B A23B（上下文 1M，$0.25/$1）</title>
+      <title>Reflection launches Beam 1.0 501B A23B (1M context, $0.25/$1)</title>
       <link>https://openrouter.ai/reflection/beam-1.0-501b-a23b</link>
       <guid isPermaLink="false">release-reflection-beam-1-0-501b-a23b</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Reflection: Beam 1.0 501B A23B 进入 OpenRouter 目录：上下文 1M，$0.25/$1 每百万 tokens，支持 reasoning/structured-output/tool-calling。 — 来源：OpenRouter</description>
+      <description>Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.25/$1 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
       <category>Reflection</category>
-      <category>长上下文</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>XingChen 上新：Xing4.0 29B A4B (free)（上下文 262K，免费/免费）</title>
+      <title>XingChen launches Xing4.0 29B A4B (free) (262K context, free/free)</title>
       <link>https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free</link>
       <guid isPermaLink="false">release-xingchen-agi-xing4-0-29b-a4b-free</guid>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>XingChen: Xing4.0 29B A4B (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。 — 来源：OpenRouter</description>
+      <description>XingChen: Xing4.0 29B A4B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
       <category>XingChen</category>
-      <category>长上下文</category>
-      <category>推理</category>
-      <category>开源权重</category>
-      <category>免费</category>
+      <category>Long context</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <category>Free</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -654,85 +654,85 @@
       <link>https://deepmind.google/blog/accelerating-antimicrobial-discovery/</link>
       <guid isPermaLink="false">rss-025b91b4</guid>
       <pubDate>Thu, 15 Oct 2026 16:08:03 GMT</pubDate>
-      <description>Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science. — 来源：Google DeepMind</description>
+      <description>Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science. — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
-      <title>Meta 上新：Muse Spark Open（上下文 1M，$1.25/$4.25）</title>
+      <title>Meta launches Muse Spark Open (1M context, $1.25/$4.25)</title>
       <link>https://openrouter.ai/meta/muse-spark-open</link>
       <guid isPermaLink="false">release-meta-muse-spark-open</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Meta: Muse Spark Open 进入 OpenRouter 目录：上下文 1M，$1.25/$4.25 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Meta: Muse Spark Open is now on OpenRouter: 1M context, $1.25/$4.25 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Meta</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Moondream 上新：Moondream 3.1（上下文 32K，$0.3/$2.5）</title>
+      <title>Moondream launches Moondream 3.1 (32K context, $0.3/$2.5)</title>
       <link>https://openrouter.ai/moondream/moondream3.1-9b-a2b</link>
       <guid isPermaLink="false">release-moondream-moondream3-1-9b-a2b</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Moondream: Moondream 3.1 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。 — 来源：OpenRouter</description>
+      <description>Moondream: Moondream 3.1 is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision. — Source: OpenRouter</description>
       <category>Moondream</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Moondream 上新：Moondream 3 Preview（上下文 32K，$0.3/$2.5）</title>
+      <title>Moondream launches Moondream 3 Preview (32K context, $0.3/$2.5)</title>
       <link>https://openrouter.ai/moondream/moondream3-preview</link>
       <guid isPermaLink="false">release-moondream-moondream3-preview</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Moondream: Moondream 3 Preview 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。 — 来源：OpenRouter</description>
+      <description>Moondream: Moondream 3 Preview is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision. — Source: OpenRouter</description>
       <category>Moondream</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>NVIDIA 上新：Nemotron 3.5 Super VL（上下文 1M，$0.15/$0.5）</title>
+      <title>NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)</title>
       <link>https://openrouter.ai/nvidia/nemotron-3.5-super-vl</link>
       <guid isPermaLink="false">release-nvidia-nemotron-3-5-super-vl</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>NVIDIA: Nemotron 3.5 Super VL 进入 OpenRouter 目录：上下文 1M，$0.15/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>NVIDIA</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>NVIDIA 上新：Nemotron 3.5 Super VL (free)（上下文 1M，免费/免费）</title>
+      <title>NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)</title>
       <link>https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free</link>
       <guid isPermaLink="false">release-nvidia-nemotron-3-5-super-vl-free</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>NVIDIA: Nemotron 3.5 Super VL (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>NVIDIA</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
-      <category>免费</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <category>Free</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Unbiased 上新：Pareto 26.10（上下文 1M，$0.8/$3.2）</title>
+      <title>Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)</title>
       <link>https://openrouter.ai/unbiased/pareto-26.10</link>
       <guid isPermaLink="false">release-unbiased-pareto-26-10</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Pareto 26.10 进入 OpenRouter 目录：上下文 1M，$0.8/$3.2 每百万 tokens，支持 tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision. — Source: OpenRouter</description>
       <category>Unbiased</category>
-      <category>长上下文</category>
-      <category>多模态</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -740,10 +740,10 @@
       <link>https://deepmind.google/blog/on-device-ai-scam-detection-mddi/</link>
       <guid isPermaLink="false">rss-84ad2e83</guid>
       <pubDate>Wed, 14 Oct 2026 02:00:14 GMT</pubDate>
-      <description>Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress. — 来源：Google DeepMind</description>
+      <description>Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress. — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
@@ -751,10 +751,10 @@
       <link>https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/</link>
       <guid isPermaLink="false">rss-be947196</guid>
       <pubDate>Tue, 13 Oct 2026 19:43:07 GMT</pubDate>
-      <description>Developing Gemini 4 Argon responsibly and safely — 来源：Google DeepMind</description>
+      <description>Developing Gemini 4 Argon responsibly and safely — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
@@ -762,10 +762,10 @@
       <link>https://deepmind.google/blog/gemini-4-argon-for-robotics/</link>
       <guid isPermaLink="false">rss-c2c7e340</guid>
       <pubDate>Tue, 13 Oct 2026 16:01:58 GMT</pubDate>
-      <description>Gemini 4 Argon for Robotics — 来源：Google DeepMind</description>
+      <description>Gemini 4 Argon for Robotics — Source: Google DeepMind</description>
       <category>Google DeepMind</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
@@ -773,114 +773,114 @@
       <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/</link>
       <guid isPermaLink="false">rss-d3dc22ab</guid>
       <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
-      <description>We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model. — 来源：Google AI Blog</description>
+      <description>We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model. — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>Google 上新：Gemini 4 Argon（上下文 1M，$2/$10）</title>
+      <title>Google launches Gemini 4 Argon (1M context, $2/$10)</title>
       <link>https://openrouter.ai/google/gemini-4-argon</link>
       <guid isPermaLink="false">release-google-gemini-4-argon</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Google: Gemini 4 Argon 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Google: Gemini 4 Argon is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Google</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Google 上新：Gemini 4 Argon (batch)（上下文 1M，$1/$5）</title>
+      <title>Google launches Gemini 4 Argon (batch) (1M context, $1/$5)</title>
       <link>https://openrouter.ai/google/gemini-4-argon:batch</link>
       <guid isPermaLink="false">release-google-gemini-4-argon-batch</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Google: Gemini 4 Argon (batch) 进入 OpenRouter 目录：上下文 1M，$1/$5 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Google: Gemini 4 Argon (batch) is now on OpenRouter: 1M context, $1/$5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Google</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>LiquidAI 上新：LFM2.5-24B-A2B（上下文 128K，$0.05/$0.7）</title>
+      <title>LiquidAI launches LFM2.5-24B-A2B (128K context, $0.05/$0.7)</title>
       <link>https://openrouter.ai/liquid/lfm-2.5-24b-a2b</link>
       <guid isPermaLink="false">release-liquid-lfm-2-5-24b-a2b</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>LiquidAI: LFM2.5-24B-A2B 进入 OpenRouter 目录：上下文 128K，$0.05/$0.7 每百万 tokens，支持 reasoning/structured-output/tool-calling。 — 来源：OpenRouter</description>
+      <description>LiquidAI: LFM2.5-24B-A2B is now on OpenRouter: 128K context, $0.05/$0.7 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
       <category>LiquidAI</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>ScaleDown 上新：Extract（上下文 1M，$0.04/免费）</title>
+      <title>ScaleDown launches Extract (1M context, $0.04/free)</title>
       <link>https://openrouter.ai/scaledown/extract</link>
       <guid isPermaLink="false">release-scaledown-extract</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>ScaleDown: Extract 进入 OpenRouter 目录：上下文 1M，$0.04/免费 每百万 tokens，支持 vision。 — 来源：OpenRouter</description>
+      <description>ScaleDown: Extract is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision. — Source: OpenRouter</description>
       <category>ScaleDown</category>
-      <category>长上下文</category>
-      <category>多模态</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>ScaleDown 上新：Summarize（上下文 1M，$0.04/免费）</title>
+      <title>ScaleDown launches Summarize (1M context, $0.04/free)</title>
       <link>https://openrouter.ai/scaledown/summarize</link>
       <guid isPermaLink="false">release-scaledown-summarize</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>ScaleDown: Summarize 进入 OpenRouter 目录：上下文 1M，$0.04/免费 每百万 tokens，支持 vision。 — 来源：OpenRouter</description>
+      <description>ScaleDown: Summarize is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision. — Source: OpenRouter</description>
       <category>ScaleDown</category>
-      <category>长上下文</category>
-      <category>多模态</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Unbiased 上新：Pareto 26.9（上下文 262K，$2.5/$7.5）</title>
+      <title>Unbiased launches Pareto 26.9 (262K context, $2.5/$7.5)</title>
       <link>https://openrouter.ai/unbiased/pareto-26.9</link>
       <guid isPermaLink="false">release-unbiased-pareto-26-9</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Pareto 26.9 进入 OpenRouter 目录：上下文 262K，$2.5/$7.5 每百万 tokens，支持 structured-output/tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>Pareto 26.9 is now on OpenRouter: 262K context, $2.5/$7.5 per 1M tokens, supports structured-output/tool-calling/vision. — Source: OpenRouter</description>
       <category>Unbiased</category>
-      <category>长上下文</category>
-      <category>多模态</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>~Unbiased 上新：Pareto Latest（上下文 1M，$0.8/$3.2）</title>
+      <title>~Unbiased launches Pareto Latest (1M context, $0.8/$3.2)</title>
       <link>https://openrouter.ai/~unbiased/pareto-latest</link>
       <guid isPermaLink="false">release-unbiased-pareto-latest</guid>
       <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Pareto Latest 进入 OpenRouter 目录：上下文 1M，$0.8/$3.2 每百万 tokens，支持 tool-calling/vision。 — 来源：OpenRouter</description>
+      <description>Pareto Latest is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision. — Source: OpenRouter</description>
       <category>~Unbiased</category>
-      <category>长上下文</category>
-      <category>多模态</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Meta 上新：Muse Wonder（上下文 1M，$4/$20）</title>
+      <title>Meta launches Muse Wonder (1M context, $4/$20)</title>
       <link>https://openrouter.ai/meta/muse-wonder</link>
       <guid isPermaLink="false">release-meta-muse-wonder</guid>
       <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Meta: Muse Wonder 进入 OpenRouter 目录：上下文 1M，$4/$20 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>Meta: Muse Wonder is now on OpenRouter: 1M context, $4/$20 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Meta</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>StepFun 上新：Step 5 Preview（上下文 1M，$1/$2.7）</title>
+      <title>StepFun launches Step 5 Preview (1M context, $1/$2.7)</title>
       <link>https://openrouter.ai/stepfun/step-5-preview</link>
       <guid isPermaLink="false">release-stepfun-step-5-preview</guid>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
-      <description>StepFun: Step 5 Preview 进入 OpenRouter 目录：上下文 1M，$1/$2.7 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。 — 来源：OpenRouter</description>
+      <description>StepFun: Step 5 Preview is now on OpenRouter: 1M context, $1/$2.7 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>StepFun</category>
-      <category>长上下文</category>
-      <category>多模态</category>
-      <category>推理</category>
-      <category>开源权重</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
@@ -888,21 +888,21 @@
       <link>https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/</link>
       <guid isPermaLink="false">rss-b7018172</guid>
       <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
-      <description>Playground is a new experimental gaming platform that lets you create, play, and share custom games. — 来源：Google AI Blog</description>
+      <description>Playground is a new experimental gaming platform that lets you create, play, and share custom games. — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>vllm-project/vllm 发布 v0.31.0</title>
+      <title>vllm-project/vllm released v0.31.0</title>
       <link>https://github.com/vllm-project/vllm/releases/tag/v0.31.0</link>
       <guid isPermaLink="false">github-release-vllm-project-vllm-v0-31-0</guid>
       <pubDate>Mon, 05 Oct 2026 06:44:55 GMT</pubDate>
-      <description># v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp… — 来源：GitHub Releases</description>
+      <description># v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp… — Source: GitHub Releases</description>
       <category>vllm</category>
       <category>GitHub Release</category>
-      <category>开源</category>
+      <category>Open source</category>
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
@@ -910,10 +910,10 @@
       <link>https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/</link>
       <guid isPermaLink="false">rss-3b38f89a</guid>
       <pubDate>Fri, 02 Oct 2026 15:00:00 GMT</pubDate>
-      <description>Here are Google’s latest AI updates from September 2026 — 来源：Google AI Blog</description>
+      <description>Here are Google’s latest AI updates from September 2026 — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
@@ -921,10 +921,10 @@
       <link>https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/</link>
       <guid isPermaLink="false">rss-f0293447</guid>
       <pubDate>Mon, 28 Sep 2026 19:00:00 GMT</pubDate>
-      <description>Watch the winning trailer from the Future Vision XPRIZE, The Gifted. — 来源：Google AI Blog</description>
+      <description>Watch the winning trailer from the Future Vision XPRIZE, The Gifted. — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
@@ -932,54 +932,54 @@
       <link>https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/</link>
       <guid isPermaLink="false">rss-a842098c</guid>
       <pubDate>Wed, 23 Sep 2026 18:00:00 GMT</pubDate>
-      <description>We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network. — 来源：Google AI Blog</description>
+      <description>We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network. — Source: Google AI Blog</description>
       <category>Google AI</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-09-10）：DeepSeek-V4.1-Flash Release</title>
+      <title>DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release</title>
       <link>https://api-docs.deepseek.com/updates#2026-09-10</link>
       <guid isPermaLink="false">release-deepseek-2026-09-10-36ec302b</guid>
       <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-09-10：Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-08-21）：DeepSeek-V4-Flash-Vision-Exp Release</title>
+      <title>DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release</title>
       <link>https://api-docs.deepseek.com/updates#2026-08-21</link>
       <guid isPermaLink="false">release-deepseek-2026-08-21-3fa111a9</guid>
       <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-21：Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model=&apos;deepseek-v… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model=&apos;deepseek-… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-08-13）：DeepSeek-V4-Pro Update</title>
+      <title>DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update</title>
       <link>https://api-docs.deepseek.com/updates#2026-08-13</link>
       <guid isPermaLink="false">release-deepseek-2026-08-13-7bb335ab</guid>
       <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-13：The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantly… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-07-31）：DeepSeek-V4-Flash Update</title>
+      <title>DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update</title>
       <link>https://api-docs.deepseek.com/updates#2026-07-31</link>
       <guid isPermaLink="false">release-deepseek-2026-07-31-c99ac55c</guid>
       <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-07-31：The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enha… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
     <item>
@@ -987,10 +987,10 @@
       <link>https://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/</link>
       <guid isPermaLink="false">rss-13684b5c</guid>
       <pubDate>Wed, 29 Jul 2026 09:00:00 GMT</pubDate>
-      <description>Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin… — 来源：Berkeley BAIR</description>
+      <description>Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin… — Source: Berkeley BAIR</description>
       <category>Berkeley BAIR</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
     </item>
     <item>
@@ -998,10 +998,10 @@
       <link>https://bair.berkeley.edu/blog/2026/07/26/abbel/</link>
       <guid isPermaLink="false">rss-83865e2b</guid>
       <pubDate>Sun, 26 Jul 2026 09:00:00 GMT</pubDate>
-      <description>Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — 来源：Berkeley BAIR</description>
+      <description>Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — Source: Berkeley BAIR</description>
       <category>Berkeley BAIR</category>
-      <category>官方博客</category>
-      <category>模型发布</category>
+      <category>Official blog</category>
+      <category>Model release</category>
       <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
     </item>
     <item>
@@ -1009,21 +1009,21 @@
       <link>https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/</link>
       <guid isPermaLink="false">rss-69ff72b3</guid>
       <pubDate>Tue, 07 Jul 2026 09:00:00 GMT</pubDate>
-      <description>... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million tokens in early 2023; today the same run… — 来源：Berkeley BAIR</description>
+      <description>... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million tokens in early 2023; today the same run… — Source: Berkeley BAIR</description>
       <category>Berkeley BAIR</category>
-      <category>官方博客</category>
-      <category>定价</category>
+      <category>Official blog</category>
+      <category>Pricing</category>
       <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
     </item>
     <item>
-      <title>DeepSeek 官方更新（2026-04-24）：DeepSeek-V4</title>
+      <title>DeepSeek official update (2026-04-24): DeepSeek-V4</title>
       <link>https://api-docs.deepseek.com/updates#2026-04-24</link>
       <guid isPermaLink="false">release-deepseek-2026-04-24-a1208998</guid>
       <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-04-24：The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — 来源：DeepSeek</description>
+      <description>DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — Source: DeepSeek</description>
       <category>DeepSeek</category>
-      <category>官方公告</category>
-      <category>模型发布</category>
+      <category>Official update</category>
+      <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
   </channel>

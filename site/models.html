@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>模型库 · AI Pulse 照胆云 — 上下文、价格与模态</title>
-  <meta name="description" content="收录 451 个模型的上下文窗口、模态、权重状态与输入/输出价格，支持搜索、厂商/模态/价格区间筛选与多维排序。">
+  <title>Model Catalog · AI Pulse — context, pricing, and modalities</title>
+  <meta name="description" content="Context windows, modalities, weight status, and input/output pricing from public model catalogs. Search, filter by provider, modality, or price range, and sort across multiple dimensions.">
   <meta name="theme-color" content="#F6F1E9">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="AI Pulse · 照胆云">
-  <meta property="og:title" content="模型库 · AI Pulse 照胆云">
-  <meta property="og:description" content="收录 451 个模型的上下文窗口、模态、权重状态与输入/输出价格，支持搜索、厂商/模态/价格区间筛选与多维排序。">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="AI Pulse · Z Cloud">
+  <meta property="og:title" content="Model Catalog · AI Pulse — context, pricing, and modalities">
+  <meta property="og:description" content="Context windows, modalities, weight status, and input/output pricing from public model catalogs. Search, filter by provider, modality, or price range, and sort across multiple dimensions.">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://chengxi-z.github.io/llm-pulse/models.html">
   <meta property="og:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="模型库 · AI Pulse 照胆云">
-  <meta name="twitter:description" content="收录 451 个模型的上下文窗口、模态、权重状态与输入/输出价格，支持搜索、厂商/模态/价格区间筛选与多维排序。">
+  <meta name="twitter:title" content="Model Catalog · AI Pulse — context, pricing, and modalities">
+  <meta name="twitter:description" content="Context windows, modalities, weight status, and input/output pricing from public model catalogs. Search, filter by provider, modality, or price range, and sort across multiple dimensions.">
   <meta name="twitter:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
   <link rel="canonical" href="https://chengxi-z.github.io/llm-pulse/models.html">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -104,76 +104,76 @@
   <link rel="stylesheet" href="assets/css/share.css">
 </head>
 <body data-page="models">
-  <a class="skip-link" href="#main" data-i18n="ui.skipLink">跳到主要内容</a>
+  <a class="skip-link" href="#main" data-i18n="ui.skipLink">Skip to main content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · 照胆云 首页">
+      <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
         <img class="brand-mark" src="assets/img/logo.svg" alt="" width="34" height="34">
         <span class="brand-text">
-          <span class="brand-name">AI&nbsp;PULSE</span>
-          <span class="brand-cn">照胆云</span>
+          <span class="brand-name">AI PULSE</span>
+          <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
         </span>
       </a>
-      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:ui.nav.aria" aria-label="主导航">
+      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:ui.nav.aria" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
-          <li><a href="news.html" data-i18n="nav.news">动态</a></li>
-          <li><a href="rankings.html" data-i18n="nav.rankings">排行</a></li>
-          <li><a href="models.html" aria-current="page" data-i18n="nav.models">模型库</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" aria-current="page" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
-          <li><a href="resources.html" data-i18n="nav.resources">学习资源</a></li>
-          <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
-          <li><a href="skills.html" data-i18n="nav.skills">技能</a></li>
-          <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
       </nav>
       <div class="header-actions">
         <div class="theme-picker-wrap">
-          <button class="icon-btn theme-picker" type="button" data-theme-picker aria-haspopup="menu" aria-expanded="false" aria-label="切换主题" title="切换主题" data-i18n-attr="aria-label:ui.theme.picker,title:ui.theme.picker">
-            <svg class="icon theme-picker-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.2 0-1 .9-1.8 1.9-1.8H16a5 5 0 0 0 5-5C21 6.6 17 3 12 3Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="8" r="1"/><circle cx="17" cy="12" r="1"/></svg>
+          <button class="icon-btn theme-picker" type="button" data-theme-picker aria-haspopup="menu" aria-expanded="false" aria-label="Switch theme" title="Switch theme" data-i18n-attr="aria-label:ui.theme.picker,title:ui.theme.picker">
+            <svg class="icon theme-picker-icon" viewbox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.2 0-1 .9-1.8 1.9-1.8H16a5 5 0 0 0 5-5C21 6.6 17 3 12 3Z"></path><circle cx="7.5" cy="11" r="1"></circle><circle cx="10.5" cy="7.5" r="1"></circle><circle cx="15" cy="8" r="1"></circle><circle cx="17" cy="12" r="1"></circle></svg>
           </button>
-          <div class="theme-menu" data-theme-menu role="menu" aria-label="主题选择" data-i18n-attr="aria-label:ui.theme.menu" hidden>
-            <p class="theme-menu-title" data-i18n="ui.theme.title">主题</p>
+          <div class="theme-menu" data-theme-menu role="menu" aria-label="Theme selection" data-i18n-attr="aria-label:ui.theme.menu" hidden>
+            <p class="theme-menu-title" data-i18n="ui.theme.title">Theme</p>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="ivory">
               <span class="theme-swatch" data-theme-swatch="ivory" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.ivory.label">纸墨雅金</span>
+              <span class="theme-option-label" data-i18n="theme.ivory.label">Ivory &amp; Gold</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="noir">
               <span class="theme-swatch" data-theme-swatch="noir" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.noir.label">深夜鎏金</span>
+              <span class="theme-option-label" data-i18n="theme.noir.label">Midnight Noir</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="jade">
               <span class="theme-swatch" data-theme-swatch="jade" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.jade.label">青瓷墨绿</span>
+              <span class="theme-option-label" data-i18n="theme.jade.label">Celadon Jade</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="rose">
               <span class="theme-swatch" data-theme-swatch="rose" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.rose.label">暮云玫瑰</span>
+              <span class="theme-option-label" data-i18n="theme.rose.label">Dusk Rose</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="graphite">
               <span class="theme-swatch" data-theme-swatch="graphite" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.graphite.label">极简石墨</span>
+              <span class="theme-option-label" data-i18n="theme.graphite.label">Graphite</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
             <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="auto">
               <span class="theme-swatch" data-theme-swatch="auto" aria-hidden="true"></span>
-              <span class="theme-option-label" data-i18n="theme.auto.label">跟随系统</span>
+              <span class="theme-option-label" data-i18n="theme.auto.label">System</span>
               <span class="theme-option-check" aria-hidden="true">✓</span>
             </button>
           </div>
         </div>
-        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="切换语言" title="切换语言" data-i18n-attr="aria-label:ui.lang.toggle,title:ui.lang.toggle">
-          <span class="lang-code" data-lang-code="zh">中</span>
+        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="Switch language" title="Switch language" data-i18n-attr="aria-label:ui.lang.toggle,title:ui.lang.toggle">
+          <span class="lang-code" data-lang-code="zh">ZH</span>
           <span class="lang-sep" aria-hidden="true">/</span>
-          <span class="lang-code" data-lang-code="en">EN</span>
+          <span class="lang-code is-active" data-lang-code="en">EN</span>
         </button>
 
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle data-i18n-attr="aria-label:ui.nav.openAria" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav">
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle data-i18n-attr="aria-label:ui.nav.openAria" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
           <span class="nav-toggle-lines" aria-hidden="true"></span>
         </button>
       </div>
@@ -182,69 +182,69 @@
   <main id="main">
     <header class="page-masthead page-masthead--compact">
       <div class="container">
-        <p class="eyebrow">MODEL LIBRARY <span class="eyebrow-en"><span data-i18n="page.models.eyebrowSuffix">/ 模型库</span></span></p>
-        <h1><span data-i18n="page.models.h1Line1">模型的能力，</span><br><span data-i18n="page.models.h1Line2">与它的价格。</span></h1>
-        <p class="lede" data-i18n="models.lede">收录模型的上下文窗口、模态、权重状态与输入/输出价格。支持搜索、厂商与价格区间筛选，以及价格、上下文等多维排序。</p>
+        <p class="eyebrow">MODEL LIBRARY <span class="eyebrow-en"><span data-i18n="page.models.eyebrowSuffix">/ Model Catalog</span></span></p>
+        <h1><span data-i18n="page.models.h1Line1">What models can do,</span><br><span data-i18n="page.models.h1Line2">and what they cost.</span></h1>
+        <p class="lede" data-i18n="models.lede">Context windows, modalities, weight status, and input/output pricing for cataloged models. Search, filter by provider and price range, and sort by price, context, and more.</p>
         <div class="masthead-meta">
-            <p class="masthead-card-head"><span data-i18n="ui.pageOverview">概览</span> <span class="eyebrow-en">/ OVERVIEW</span></p>
-          <span><span data-i18n="models.meta.modelsBefore">收录</span> <strong id="models-total">—</strong> <span data-i18n="models.meta.modelsAfter">个模型</span></span>
+            <p class="masthead-card-head"><span data-i18n="ui.pageOverview">Overview</span> <span class="eyebrow-en">/ OVERVIEW</span></p>
+          <span><span data-i18n="models.meta.modelsBefore">Models:</span> <strong id="models-total">—</strong> <span data-i18n="models.meta.modelsAfter">cataloged</span></span>
           <span class="dot-sep" aria-hidden="true">·</span>
-          <span><span data-i18n="models.meta.orgsBefore">覆盖</span> <strong id="models-orgs">—</strong> <span data-i18n="models.meta.orgsAfter">家厂商</span></span>
+          <span><span data-i18n="models.meta.orgsBefore">Providers:</span> <strong id="models-orgs">—</strong> <span data-i18n="models.meta.orgsAfter">covered</span></span>
           <span class="dot-sep" aria-hidden="true">·</span>
-          <span><span data-i18n="models.meta.updatedBefore">更新于</span> <strong id="models-updated">—</strong></span>
+          <span><span data-i18n="models.meta.updatedBefore">Updated</span> <strong id="models-updated">—</strong></span>
           <span class="dot-sep" aria-hidden="true">·</span>
-          <span data-i18n="models.meta.sourceBefore">来源</span> <strong id="models-source">—</strong></span>
+          <span data-i18n="models.meta.sourceBefore">Source</span> <strong id="models-source">—</strong>
         </div>
       </div>
     </header>
 
     <section class="section section--flush" aria-labelledby="models-content-title">
       <div class="container">
-        <h2 class="u-visually-hidden" id="models-content-title" data-i18n="models.list.title">模型列表</h2>
-        <form class="filter-bar" id="models-filters" role="search" data-i18n-attr="aria-label:models.filters.aria" aria-label="模型筛选">
+        <h2 class="u-visually-hidden" id="models-content-title" data-i18n="models.list.title">Model list</h2>
+        <form class="filter-bar" id="models-filters" role="search" data-i18n-attr="aria-label:models.filters.aria" aria-label="Model filters">
           <div class="filter-row">
             <label class="field search-field">
-              <span class="u-visually-hidden" data-i18n="models.search.label">搜索模型</span>
-              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 2.6 2.6"/></svg>
-              <input type="search" id="models-search" data-i18n-attr="placeholder:models.search.placeholder" placeholder="搜索模型、厂商或描述…" autocomplete="off">
+              <span class="u-visually-hidden" data-i18n="models.search.label">Search models</span>
+              <svg class="icon" viewbox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="m10.5 10.5 2.6 2.6"></path></svg>
+              <input type="search" id="models-search" data-i18n-attr="placeholder:models.search.placeholder" placeholder="Search models, providers, or descriptions…" autocomplete="off">
             </label>
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.orgFilter.label">按厂商筛选</span>
-              <select id="models-org"><option value="" data-i18n="models.orgFilter.all">全部厂商</option></select>
+              <span class="u-visually-hidden" data-i18n="models.orgFilter.label">Filter by provider</span>
+              <select id="models-org"><option value="" data-i18n="models.orgFilter.all">All providers</option></select>
             </label>
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.modalityFilter.label">按模态筛选</span>
+              <span class="u-visually-hidden" data-i18n="models.modalityFilter.label">Filter by modality</span>
               <select id="models-modality">
-                <option value="" data-i18n="models.modalityFilter.all">全部模态</option>
-                <option value="text" data-i18n="data.modality.text">文本</option>
-                <option value="image" data-i18n="data.modality.image">视觉</option>
-                <option value="audio" data-i18n="data.modality.audio">音频</option>
-                <option value="video" data-i18n="data.modality.video">视频</option>
-                <option value="file" data-i18n="data.modality.file">文件</option>
+                <option value="" data-i18n="models.modalityFilter.all">All modalities</option>
+                <option value="text" data-i18n="data.modality.text">Text</option>
+                <option value="image" data-i18n="data.modality.image">Image</option>
+                <option value="audio" data-i18n="data.modality.audio">Audio</option>
+                <option value="video" data-i18n="data.modality.video">Video</option>
+                <option value="file" data-i18n="data.modality.file">File</option>
               </select>
             </label>
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.openFilter.label">按权重状态筛选</span>
+              <span class="u-visually-hidden" data-i18n="models.openFilter.label">Filter by weight status</span>
               <select id="models-open">
-                <option value="" data-i18n="models.openFilter.all">全部权重</option>
-                <option value="open" data-i18n="data.open.open">开源权重</option>
-                <option value="closed" data-i18n="data.open.closed">闭源</option>
+                <option value="" data-i18n="models.openFilter.all">All weights</option>
+                <option value="open" data-i18n="data.open.open">Open weights</option>
+                <option value="closed" data-i18n="data.open.closed">Proprietary</option>
               </select>
             </label>
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.priceFilter.label">按价格区间筛选</span>
+              <span class="u-visually-hidden" data-i18n="models.priceFilter.label">Filter by price range</span>
               <select id="models-price">
-                <option value="" data-i18n="models.priceFilter.all">全部价格</option>
-                <option value="free" data-i18n="models.priceFilter.free">免费</option>
-                <option value="low" data-i18n="models.priceFilter.low">输入 ≤ $1</option>
-                <option value="mid" data-i18n="models.priceFilter.mid">输入 $1 – $5</option>
-                <option value="high" data-i18n="models.priceFilter.high">输入 &gt; $5</option>
+                <option value="" data-i18n="models.priceFilter.all">All prices</option>
+                <option value="free" data-i18n="models.priceFilter.free">Free</option>
+                <option value="low" data-i18n="models.priceFilter.low">Input ≤ $1</option>
+                <option value="mid" data-i18n="models.priceFilter.mid">Input $1 – $5</option>
+                <option value="high" data-i18n="models.priceFilter.high">Input &gt; $5</option>
               </select>
             </label>
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.contextFilter.label">按上下文筛选</span>
+              <span class="u-visually-hidden" data-i18n="models.contextFilter.label">Filter by context</span>
               <select id="models-context">
-                <option value="" data-i18n="models.contextFilter.all">全部上下文</option>
+                <option value="" data-i18n="models.contextFilter.all">All context sizes</option>
                 <option value="128k">≥ 128K</option>
                 <option value="500k">≥ 500K</option>
                 <option value="1m">≥ 1M</option>
@@ -253,28 +253,28 @@
           </div>
           <div class="filter-row filter-row--meta">
             <label class="field select-field">
-              <span class="u-visually-hidden" data-i18n="models.sort.label">排序</span>
+              <span class="u-visually-hidden" data-i18n="models.sort.label">Sort</span>
               <select id="models-sort">
-                <option value="release" data-i18n="models.sort.release">最新发布</option>
-                <option value="price-asc" data-i18n="models.sort.priceAsc">价格从低到高</option>
-                <option value="price-desc" data-i18n="models.sort.priceDesc">价格从高到低</option>
-                <option value="context" data-i18n="models.sort.context">上下文从大到小</option>
-                <option value="name" data-i18n="models.sort.name">名称 A–Z</option>
+                <option value="release" data-i18n="models.sort.release">Newest</option>
+                <option value="price-asc" data-i18n="models.sort.priceAsc">Price: low to high</option>
+                <option value="price-desc" data-i18n="models.sort.priceDesc">Price: high to low</option>
+                <option value="context" data-i18n="models.sort.context">Context: largest first</option>
+                <option value="name" data-i18n="models.sort.name">Name A–Z</option>
               </select>
             </label>
-            <div class="toolbar-view" role="group" data-i18n-attr="aria-label:models.view.aria" aria-label="视图切换">
-              <button type="button" class="view-btn" data-models-view="table" aria-pressed="true" data-i18n="models.view.table">表格</button>
-              <button type="button" class="view-btn" data-models-view="cards" aria-pressed="false" data-i18n="models.view.cards">卡片</button>
+            <div class="toolbar-view" role="group" data-i18n-attr="aria-label:models.view.aria" aria-label="Switch view">
+              <button type="button" class="view-btn" data-models-view="table" aria-pressed="true" data-i18n="models.view.table">Table</button>
+              <button type="button" class="view-btn" data-models-view="cards" aria-pressed="false" data-i18n="models.view.cards">Cards</button>
             </div>
-            <p class="result-count" id="models-result-count" role="status" aria-live="polite" data-i18n="ui.loading">正在载入…</p>
+            <p class="result-count" id="models-result-count" role="status" aria-live="polite" data-i18n="ui.loading">Loading…</p>
           </div>
         </form>
 
         <div id="models-table" class="models-result">
-          <div class="empty-state" role="status"><p class="empty-title" data-i18n="ui.loadingModels">正在载入模型目录</p></div>
+          <div class="empty-state" role="status"><p class="empty-title" data-i18n="ui.loadingModels">Loading the model catalog</p></div>
         </div>
         <div class="show-more" id="models-more"></div>
-        <p class="page-note" data-i18n="models.note">价格单位：USD / 1M tokens；输入输出价均为来源公开标价。上下文与模态以来源目录为准，可能随厂商更新变化。</p>
+        <p class="page-note" data-i18n="models.note">Pricing is in USD / 1M tokens; input and output prices are the source's published list prices. Context and modality follow the source catalog and may change as providers update.</p>
       </div>
     </section>
 
@@ -283,24 +283,24 @@
       <div class="container compare-bar-inner">
         <div class="compare-bar-info">
           <p class="compare-bar-count" id="compare-bar-count" aria-live="polite"></p>
-          <p class="compare-bar-hint" data-i18n="models.compare.selectedHint">已选模型会显示在底部对比栏</p>
+          <p class="compare-bar-hint" data-i18n="models.compare.selectedHint">Selected models appear in the comparison bar below</p>
           <ul class="compare-chips" id="compare-chips"></ul>
         </div>
         <div class="compare-bar-actions">
-          <button type="button" class="btn btn--ghost btn--sm" data-compare-clear data-i18n="compare.clear">清空</button>
-          <button type="button" class="btn btn--ink btn--sm" data-compare-open disabled data-i18n="compare.start">开始对比</button>
+          <button type="button" class="btn btn--ghost btn--sm" data-compare-clear data-i18n="compare.clear">Clear</button>
+          <button type="button" class="btn btn--ink btn--sm" data-compare-open disabled data-i18n="compare.start">Compare</button>
         </div>
       </div>
     </div>
-    <div class="compare-modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="compare-title" aria-label="模型对比" data-i18n-attr="aria-label:compare.barAria" hidden>
+    <div class="compare-modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="compare-title" aria-label="Model comparison bar" data-i18n-attr="aria-label:compare.barAria" hidden>
       <div class="compare-backdrop" data-compare-close></div>
       <div class="compare-panel" role="document">
         <header class="compare-head">
           <div>
-            <h2 id="compare-title" data-i18n="compare.title">模型对比</h2>
-            <p class="compare-sub" data-i18n="compare.sourceNote">评分来源：Artificial Analysis / LMArena / LiveBench / Epoch AI / OpenCompass</p>
+            <h2 id="compare-title" data-i18n="compare.title">Model comparison</h2>
+            <p class="compare-sub" data-i18n="compare.sourceNote">Score sources: Artificial Analysis / LMArena / LiveBench / Epoch AI</p>
           </div>
-          <button type="button" class="icon-btn compare-close" data-compare-close aria-label="关闭对比" data-i18n-attr="aria-label:compare.close">✕</button>
+          <button type="button" class="icon-btn compare-close" data-compare-close aria-label="Close comparison" data-i18n-attr="aria-label:compare.close">✕</button>
         </header>
         <div class="compare-scroll" id="compare-scroll"></div>
       </div>
@@ -308,13 +308,13 @@
 
     <section class="section section--rule subscribe" aria-labelledby="models-subscribe-title">
       <div class="container container--narrow">
-        <p class="eyebrow eyebrow--center" data-i18n="subscribe.eyebrow">订阅 / SUBSCRIBE</p>
-        <h2 id="models-subscribe-title" data-i18n="models.subscribeTitle">订阅模型目录变化</h2>
-        <p class="lede" data-i18n="models.subscribeDesc">新增模型、价格调整与上下文变更，会随每日数据刷新出现在 RSS / JSON Feed 中。</p>
+        <p class="eyebrow eyebrow--center" data-i18n="subscribe.eyebrow">Subscribe</p>
+        <h2 id="models-subscribe-title" data-i18n="models.subscribeTitle">Subscribe to catalog changes</h2>
+        <p class="lede" data-i18n="models.subscribeDesc">New models, price changes, and context-window updates appear in the RSS / JSON Feed as the daily data refreshes.</p>
         <div class="subscribe-actions">
           <a class="btn btn--ink" href="feed.xml" data-i18n="subscribe.rss">RSS / Atom</a>
           <a class="btn btn--ghost" href="feed.json" data-i18n="subscribe.json">JSON Feed</a>
-          <a class="btn btn--ghost" href="about.html#subscribe" data-i18n="subscribe.guide">订阅说明</a>
+          <a class="btn btn--ghost" href="about.html#subscribe" data-i18n="subscribe.guide">Subscription guide</a>
         </div>
       </div>
     </section>
@@ -323,35 +323,35 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · 照胆云 首页">
+        <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
           <img class="brand-mark" src="assets/img/logo.svg" alt="" width="30" height="30">
           <span class="brand-text">
-            <span class="brand-name">AI&nbsp;PULSE</span>
-            <span class="brand-cn">照胆云</span>
+            <span class="brand-name">AI PULSE</span>
+            <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
           </span>
         </a>
-        <p class="footer-tagline" data-i18n="footer.tagline">公域、轻量的大模型追踪站。每日聚合发布、评测与学习资源，克制呈现，逐条可溯源。</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">An open, lightweight LLM tracker. Every day it gathers releases, evaluations, and learning resources — restrained, sourced, and traceable line by line.</p>
       </div>
       <nav class="footer-col" aria-labelledby="footer-explore">
-        <h4 id="footer-explore" data-i18n="footer.explore">探索</h4>
+        <h4 id="footer-explore" data-i18n="footer.explore">Explore</h4>
         <ul class="footer-links">
-          <li><a href="news.html" data-i18n="nav.news">动态</a></li>
-          <li><a href="rankings.html" data-i18n="nav.rankings">排行</a></li>
-          <li><a href="models.html" aria-current="page" data-i18n="nav.models">模型库</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" aria-current="page" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
         </ul>
       </nav>
       <nav class="footer-col" aria-labelledby="footer-more">
-        <h4 id="footer-more" data-i18n="footer.more">更多</h4>
+        <h4 id="footer-more" data-i18n="footer.more">More</h4>
         <ul class="footer-links">
-          <li><a href="resources.html" data-i18n="nav.resources">学习资源</a></li>
-          <li><a href="projects.html" data-i18n="nav.projects">项目</a></li>
-          <li><a href="skills.html" data-i18n="nav.skills">技能</a></li>
-          <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
         </ul>
       </nav>
       <div class="footer-col" aria-labelledby="footer-subscribe">
-        <h4 id="footer-subscribe" data-i18n="footer.subscribe">订阅与源码</h4>
+        <h4 id="footer-subscribe" data-i18n="footer.subscribe">Subscribe &amp; source</h4>
         <ul class="footer-links">
           <li><a class="external" href="feed.xml" data-i18n="subscribe.rss">RSS / Atom</a></li>
           <li><a class="external" href="feed.json" data-i18n="subscribe.json">JSON Feed</a></li>
@@ -360,9 +360,9 @@
       </div>
     </div>
     <div class="container footer-base">
-      <p>© <span data-current-year>2026</span> <span data-i18n="footer.copyrightBrand">AI Pulse · 照胆云 · MIT License</span></p>
-      <p><span data-footer-updated data-i18n="footer.updated">数据每日自动更新</span> · <span data-i18n="footer.usageNote">仅作学习与研究用途</span></p>
-      <p class="footer-address"><span data-i18n="footer.addressLabel">本站地址</span> <a class="text-link" href="https://chengxi-z.github.io/llm-pulse/" data-i18n="footer.addressSite">chengxi-z.github.io/llm-pulse</a> <button type="button" class="btn btn--ghost btn--sm" data-copy-text="https://chengxi-z.github.io/llm-pulse/" data-copy-label-key="footer.siteCopied" data-copy-fail-key="footer.copyFailed" data-i18n="footer.copySite">复制站点地址</button> · <a class="text-link external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer" data-i18n="footer.addressGithub">GitHub</a> · <a class="text-link" href="feed.xml" data-i18n="footer.addressRss">RSS</a></p>
+      <p>© <span data-current-year>2026</span> <span data-i18n="footer.copyrightBrand">AI Pulse · Z Cloud · MIT License</span></p>
+      <p><span data-footer-updated data-i18n="footer.updated">Data refreshed daily</span> · <span data-i18n="footer.usageNote">For learning and research only</span></p>
+      <p class="footer-address"><span data-i18n="footer.addressLabel">Site address</span> <a class="text-link" href="https://chengxi-z.github.io/llm-pulse/" data-i18n="footer.addressSite">chengxi-z.github.io/llm-pulse</a> <button type="button" class="btn btn--ghost btn--sm" data-copy-text="https://chengxi-z.github.io/llm-pulse/" data-copy-label-key="footer.siteCopied" data-copy-fail-key="footer.copyFailed" data-i18n="footer.copySite">Copy site address</button> · <a class="text-link external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer" data-i18n="footer.addressGithub">GitHub</a> · <a class="text-link" href="feed.xml" data-i18n="footer.addressRss">RSS</a></p>
     </div>
   </footer>
 

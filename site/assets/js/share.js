@@ -24,7 +24,7 @@ export const SHARE_LINKS = { siteUrl: SITE_URL, siteHost: SITE_HOST, githubUrl: 
 export const DISTRIBUTION_STRIP = { top: 532, height: 72, ratio: 72 / 630, qrSize: 58, siteFont: 15, repoFont: 12.5 };
 
 const state = { mounted: false, menu: null, modal: null, lastFocus: null, blob: null, toast: 0, qr: undefined };
-const siteName = () => (getLang() === 'en' ? 'AI Pulse' : 'AI Pulse · 照胆云');
+const siteName = () => (getLang() === 'en' ? 'AI Pulse · Z Cloud' : 'AI Pulse · 照胆云');
 
 function el(tag, attrs = {}, children = []) {
   const node = document.createElement(tag);
@@ -496,11 +496,9 @@ export function drawShareCard(canvas, payload = {}, opts = {}) {
   ctx.fillText('AI PULSE', padX + 24, 84);
   const brandWidth = ctx.measureText('AI PULSE').width;
   ctx.letterSpacing = '0px';
-  if (lang !== 'en') {
-    ctx.fillStyle = P.muted;
-    ctx.font = `400 14px ${FONT_SANS}`;
-    ctx.fillText('· 照胆云', padX + 30 + brandWidth, 84);
-  }
+  ctx.fillStyle = P.muted;
+  ctx.font = `400 14px ${FONT_SANS}`;
+  ctx.fillText(lang === 'en' ? '· Z Cloud' : '· 照胆云', padX + 30 + brandWidth, 84);
   ctx.textAlign = 'right';
   ctx.fillStyle = P.muted;
   ctx.font = `400 15px ${FONT_SANS}`;

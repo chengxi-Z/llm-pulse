@@ -3478,5 +3478,5 @@ html,body{overflow-x:clip}
 .source-summary,.dash-kpi-trend-note{font-size:0.75rem}
 .hero-panel .source-summary{font-size:0.75rem}
 
-/* English edition: brand wordmark only */
-html[lang="en"] .brand-cn{display:none}
+/* English hero panel: keep the compact source summary to one line */
+.hero--compact .hero-panel .source-summary{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}

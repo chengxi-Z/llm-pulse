@@ -1,8 +1,8 @@
-# AI Pulse · 照胆云
+# AI Pulse · Z Cloud
 
 **中文** ｜ [English](README.en.md)
 
-> 公域 · 轻量 · 轻奢的大模型观察站：**模型动态 / 评测排行 / 模型库 / 学习资源 / 项目展示 / 我的技能**，首页可视化仪表盘、5 套主题、中英双语，内置可 BYOK 的 AI 助手，每日自动更新。
+> 公域 · 轻量 · 轻奢的大模型观察站：**模型动态 / 评测排行 / 模型库 / 学习资源 / 项目展示 / 我的技能**，首页可视化仪表盘、5 套主题、**英文默认**（可切换中文）、内置可 BYOK 的 AI 助手，每日自动更新；采集源仅限英文资源站。
 
 [![CI](https://github.com/chengxi-Z/llm-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/chengxi-Z/llm-pulse/actions/workflows/ci.yml)
 [![Deploy](https://github.com/chengxi-Z/llm-pulse/actions/workflows/deploy.yml/badge.svg)](https://github.com/chengxi-Z/llm-pulse/actions/workflows/deploy.yml)
@@ -107,7 +107,7 @@
 - **数据驱动**：Node 脚本从公开 API / 公开榜单 / RSS 抓取并归一化为版本化 JSON（`schemaVersion: 1`），前端只读；
 - **每日自动更新**：GitHub Actions 定时抓取 → 校验 → 生成 Feed → 部署；数据源失败的自动降级并在页面标注；
 - **轻奢视觉**：纸感米白 / 墨色 / 香槟金 / 墨绿点缀，衬线标题 + 大留白 + 细线；**5 套主题**（纸墨雅金 / 深夜鎏金 / 青瓷墨绿 / 暮云玫瑰 / 极简石墨）+ 跟随系统，回顶按钮、美化滚动条，响应式，无障碍友好；
-- **中英双语**：中文默认，一键切换全英文 UI（含 AI 助手 / 分享 / 空态 / 404），`?lang=en` 深链，词典校验保证 zh/en 100% 对齐；
+- **English-first 双语**：英文为默认静态版本，一键切换中文；`?lang=zh` 深链，词典校验保证 en/zh 100% 对齐；
 - **AI 助手 BYOK**：OpenAI 兼容流式对话 + 站点数据上下文注入 + 离线降级 + 一键「本周简报」；
 - **可分享**：Web Share / 复制 / 社交意图链接 / Canvas 品牌分享卡（1200×630，含 logo + 站点地址 + GitHub + 二维码，榜单可专属生成）；
 - **可视化**：首页数据杂志风仪表盘——6 KPI（count-up）、12 周发布柱状图、输出价格环形饼图、**AI 模型斩杀线**（P50 输出价格为界，log 轴展示 444 个模型的价格分布）、**AI 话题热榜**（8 主题真实统计，点击跳动态页 `?tag=` 筛选）；纯 SVG/CSS/JS 无图表库，reduced-motion 降级；
@@ -144,7 +144,7 @@ node scripts/stage-site.mjs                # 组装 Pages 发布产物到 _artif
 | 类别 | 内容 | 来源 | 本机 | CI(Actions) |
 | --- | --- | --- | --- | --- |
 | 模型目录/价格 | 名称、厂商、上下文、模态、输入/输出价格、发布时间 | OpenRouter Models API | ✅ | ✅ |
-| 榜单 | 综合智能指数、推理、代码、中文、成本效率 | Artificial Analysis、LiveBench 2.0、Epoch AI（ECI/GPQA/SWE-bench）、OpenCompass Arena、LMArena（HF 数据集） | 部分✅ | 全量✅ |
+| 榜单 | 综合智能指数、推理、代码、中文、成本效率 | Artificial Analysis、LiveBench 2.0、Epoch AI（ECI/GPQA/SWE-bench）、LMArena（HF 数据集） | 部分✅ | 全量✅ |
 | 动态 | 新模型、版本、定价、安全、研究 | OpenRouter 新增 diff + OpenAI/Google/DeepSeek/Qwen 等官方 RSS | 部分✅ | 全量✅ |
 | 项目 | 社区精选开源项目 stars/更新时间 | GitHub API | ✅ | ✅ |
 | 技能 | Agent Skills / Playbooks（我的 + 官方/社区精选） | 人工精选 + GitHub API stars/更新时间 | ✅ | ✅ |
@@ -299,7 +299,7 @@ node skills/one-sentence-project/scripts/check-project.mjs --skeleton my-tracker
 - [ ] 模型价格/上下文历史曲线（基于每日快照 diff，仪表盘展示真实趋势）
 - [ ] AI 助手支持多轮上下文持久化与「对比模型」快捷指令
 - [ ] 每周自动生成「AI 周报」Issue + 分发素材（GitHub Actions）
-- [ ] 英文模式数据侧翻译（新闻摘要/资源/项目描述的 `*En` 字段）
+- [x] 英文默认静态版 + 数据侧英文 companion（新闻/资源/项目 `*En` 字段）
 - [ ] 技能库支持“我的技能”本地导入（JSON 上传预览后走 PR）与更多官方/社区源
 - [ ] PWA / 离线缓存
 

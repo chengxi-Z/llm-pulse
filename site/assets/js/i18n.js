@@ -17,7 +17,7 @@
    ============================================================================= */
 
 const SUPPORTED = ['zh', 'en'];
-const DEFAULT_LANG = 'zh';
+const DEFAULT_LANG = 'en';
 const STORAGE_KEY = 'aipulse.lang';
 const DICT_BASE = 'assets/i18n/';
 
@@ -230,7 +230,6 @@ export async function setLang(nextLang, { persist = true } = {}) {
     clearLangParamFromUrl();
   }
   await loadDictionary(code);
-  if (code === 'en') await loadDictionary('zh');
   applyDom();
   dispatchLangChange();
   return code;
@@ -243,7 +242,6 @@ export async function initI18n() {
     // harnesses reusing the same module instance).
     if (initial !== lang) {
       lang = initial;
-      await loadDictionary('zh');
       await loadDictionary(lang);
       applyDom();
       dispatchLangChange();
@@ -253,7 +251,6 @@ export async function initI18n() {
   lang = initial;
   setDocumentLang();
   ready = (async () => {
-    await loadDictionary('zh');
     await loadDictionary(lang);
     applyDom();
     dispatchLangChange();

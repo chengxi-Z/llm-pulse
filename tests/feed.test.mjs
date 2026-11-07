@@ -25,31 +25,31 @@ const NEWS = {
   items: [
     {
       id: 'release-gpt-terra',
-      title: 'OpenAI 发布 GPT-6.1 Terra Pro：1.05M 上下文',
-      summary: '旗舰线更新，价格 $1/$5。',
+      title: 'OpenAI releases GPT-6.1 Terra Pro: 1.05M context',
+      summary: 'Flagship update; pricing $1/$5.',
       kind: 'release',
       sourceName: 'OpenRouter',
       sourceUrl: 'https://openrouter.ai/api/v1/models',
       url: 'https://openrouter.ai/openai/gpt-6.1-terra-pro',
       publishedAt: '2026-10-26T00:00:00.000Z',
-      tags: ['OpenAI', '推理'],
+      tags: ['OpenAI', 'Reasoning'],
       importance: 3,
     },
     {
       id: 'pricing-deepseek-flash',
-      title: 'DeepSeek V4.1 Flash 降价 & 开源?',
-      summary: '输入价格下调 < 50%。',
+      title: 'DeepSeek V4.1 Flash price cut & open source',
+      summary: 'Input price down < 50%.',
       kind: 'pricing',
-      sourceName: '官方博客',
+      sourceName: 'Official Blog',
       sourceUrl: 'https://api-docs.deepseek.com/news',
       url: null,
       publishedAt: '2026-11-01T00:00:00.000Z',
-      tags: ['DeepSeek', '价格'],
+      tags: ['DeepSeek', 'Pricing'],
       importance: 2,
     },
     {
       id: 'same-day-a',
-      title: '同日条目 A',
+      title: 'Same-day item A',
       summary: null,
       kind: 'research',
       sourceName: 'arXiv',
@@ -61,8 +61,8 @@ const NEWS = {
     },
     {
       id: 'same-day-b',
-      title: '同日条目 B <script>alert(1)</script>',
-      summary: '转义测试',
+      title: 'Same-day item B <script>alert(1)</script>',
+      summary: 'Escaping test',
       kind: 'research',
       sourceName: 'arXiv',
       sourceUrl: 'https://arxiv.org/abs/2',
@@ -111,7 +111,7 @@ test('buildRss 生成合法结构且关键字段齐全', () => {
   const rss = buildRss(DATA, { baseUrl: 'https://example.com/llm-pulse/', imageUrl: 'assets/img/og-cover.png' });
   assert.ok(rss.startsWith('<?xml version="1.0" encoding="UTF-8"?>'));
   assert.ok(rss.includes('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">'));
-  assert.ok(rss.includes('<title>AI Pulse · 照胆云</title>'));
+  assert.ok(rss.includes('<title>AI Pulse · Z Cloud</title>'));
   assert.ok(rss.includes('<link>https://example.com/llm-pulse/</link>'));
   assert.ok(rss.includes('<atom:link href="https://example.com/llm-pulse/feed.xml" rel="self" type="application/rss+xml"/>'));
   assert.ok(rss.includes('<lastBuildDate>'));
@@ -134,7 +134,7 @@ test('buildRss 对空数据/缺失文件仍输出合法空频道', () => {
   const rss = buildRss({ meta: null, news: null }, { now: new Date('2026-11-03T12:00:00Z') });
   assert.ok(rss.includes('<channel>'));
   assert.ok(!rss.includes('<item>'));
-  assert.ok(rss.includes('<!-- 暂无动态条目'));
+  assert.ok(rss.includes('<!-- No updates yet'));
   const noNews = buildRss({ meta: META }, {});
   assert.ok(noNews.includes(`<lastBuildDate>${new Date('2026-11-03T12:00:00Z').toUTCString()}</lastBuildDate>`));
 });
@@ -144,19 +144,19 @@ test('buildJsonFeed 输出 JSON Feed 1.1 合规字段', () => {
   assert.equal(feed.version, 'https://jsonfeed.org/version/1.1');
   assert.equal(feed.home_page_url, 'https://example.com/llm-pulse/');
   assert.equal(feed.feed_url, 'https://example.com/llm-pulse/feed.json');
-  assert.equal(feed.language, 'zh-CN');
+  assert.equal(feed.language, 'en-US');
   assert.equal(feed.items.length, 4);
   const first = feed.items[0];
   assert.equal(first.id, 'pricing-deepseek-flash');
   assert.equal(first.url, 'https://api-docs.deepseek.com/news'); // Fall back to sourceUrl when url is missing
   assert.ok(first.date_published);
   assert.ok(!Number.isNaN(Date.parse(first.date_published)));
-  assert.ok(first.content_text.includes('来源：官方博客'));
+  assert.ok(first.content_text.includes('Source: Official Blog'));
   assert.ok(Array.isArray(first.tags));
   assert.equal(feed.items.filter((item) => item.authors).length, 4);
   // Entries without any url fall back to a site-baseUrl anchor
   const fallbackFeed = buildJsonFeed(
-    { meta: META, news: { items: [{ id: 'only-id', title: '无链接条目', publishedAt: '2026-11-02T00:00:00.000Z' }] } },
+    { meta: META, news: { items: [{ id: 'only-id', title: 'Unlinked entry', titleEn: 'Unlinked entry', publishedAt: '2026-11-02T00:00:00.000Z' }] } },
     { baseUrl: 'https://example.com/llm-pulse/' }
   );
   assert.equal(fallbackFeed.items[0].url, 'https://example.com/llm-pulse/news.html#only-id');
