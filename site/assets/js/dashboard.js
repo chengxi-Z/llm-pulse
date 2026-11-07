@@ -415,7 +415,7 @@ function representativePoints(points, metrics) {
       seenNames.add(name);
       picked.push({ point, name });
       count += 1;
-      if (count >= 2) break;
+      if (count >= 1) break;
     }
   });
   return picked;
