@@ -647,13 +647,13 @@ Canvas 内的地址区由 ai-share 绘制（背景 ≥4.5:1、字号 ≥22px）�
 
 ## 27. v1.4 首屏内容优先（hero / masthead 瘦身）
 
-### 27.0 v1.5 统一头部（2026-11-07，用户最终确认）
+### 27.0 v1.5.1 统一头部：≈1/4 视口 + 右栏 1/4（用户最终确认）
 
-- **全站统一头部高度**：`.hero-grid` 与 `.page-masthead .container` 均 `height: clamp(400px, 30vw, 460px)`（≥961px），左右两栏 `align-items:stretch`，右侧卡片 `height:100%` 填满；≤960px 高度自动、单列。
-- **右侧卡片宽度严格 1/4**：`grid-template-columns: minmax(0, calc(75% - var(--rail-gap))) minmax(0, 25%)`；首页每周速览、各页「概览」卡、仪表盘热榜、DeepSeek aside 同一条 75% 起点。
-- **同一高度/同一边线**：所有页面头部带（padding + 固定高度）一致 → 右侧卡片顶边、底边、右缘对齐；下一区块从同一条线开始（首页 dashboard 与各页首个 section 的 padding-top 统一 `clamp(16px,2vw,28px)`）。
-- **卡片样式统一**：`surface` + 1px 边框 + `--shadow-float` + 内层金线（::before inset 7px）+ 卡头 `概览 / OVERVIEW`；与首页「本周速览」同款。
-- 行动按钮/导语/细排仍在左侧 75% 内；首页周报卡内部压缩（stat padding 8px、value 1.6rem、note/source 小字号）以适配固定高度。
+- **头部内容带高度 ≈ 1/4 视口**：`.hero-grid` 与 `.page-masthead .container` 统一 `height: clamp(230px, 23vh, 260px)`；上下 padding 压缩到 `clamp(12px,1.4vw,18px) / clamp(10px,1.2vw,16px)` → 整条头部带约 230–280px（对应 900–1200 高视口的 1/4 左右）。
+- **右侧卡片严格 1/4 宽**：`calc(75% - gap)` + `25%`；首页「本周速览」、各页「概览」卡、仪表盘热榜、DeepSeek aside 同一 75% 起点，卡片 `height:100%` 填满头部带。
+- **所有页面同一高度/同一底线**：首页 hero 与 8 个页面 masthead 完全同高；下一区块起点对齐（首页 dashboard 与各页 section 的 padding-top 一致）。
+- **压缩规则**：hero 标题 ≤1.95rem、lede 2 行 clamp、actions/fineprint 缩小；周报卡 panel-head/stat/source/note 全部降档（overflow hidden 兜底），页头卡头 0.62rem。
+- ≤960px：高度自动、单列，卡片全宽。
 - 全局 `--section-y` 调为 `clamp(44px, 6vw, 84px)`；`.section-head` 底部间距 `clamp(18px,2.4vw,32px)`；`.section-desc` 2 行 clamp；`.filter-bar` 上下 padding 10px；`.board-tabs` 底距 12px；`.rank-panel` padding 收紧。
 - `.page-masthead`（基础）：上下 `clamp(26px,3.4vw,52px) / clamp(18px,2.4vw,30px)`；h1 `clamp(1.95rem,3.6vw,3rem)`、上边距 14px；lede 2 行 clamp、上边距 14px；`.masthead-meta` 上边距 18px/上 padding 12px。
 - `.page-masthead--compact`（各页启用）：上下 18–34 / 12–22px；h1 `clamp(1.75rem,3.2vw,2.6rem)`、上边距 10px；lede 上边距 10px；meta 收紧；其后首个 `.section` 上 padding `clamp(16px,2vw,28px)`。
