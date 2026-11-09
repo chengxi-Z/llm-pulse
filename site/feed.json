@@ -13,18 +13,78 @@
   ],
   "items": [
     {
-      "id": "rss-705579ba",
-      "url": "https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick/",
-      "title": "Bring structured and unstructured data together with Amazon Quick",
-      "content_text": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business questions acros… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:49:29.000Z",
+      "id": "rss-0882db37",
+      "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+      "title": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
+      "content_text": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more. — Source: MIT News AI",
+      "date_published": "2026-11-09T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-cf56baa8",
+      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
+      "content_text": "The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots. — Source: MIT News AI",
+      "date_published": "2026-11-09T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-b5d1e402",
+      "url": "https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106",
+      "title": "How to predict the behavior of molecules from scant data",
+      "content_text": "A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive experimentation. — Source: MIT News AI",
+      "date_published": "2026-11-06T19:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive experimentation.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-2c82bb18",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+      "content_text": "Amazon SageMaker Inference now supports GPU partitioning with NVIDIA Multi-Instance GPU (MIG), which divides one GPU into hardware-isolated partitions so you can run a different model in each or take a right-sized fraction of a newer accel… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T18:01:00.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business questions acros…",
+      "summary": "Amazon SageMaker Inference now supports GPU partitioning with NVIDIA Multi-Instance GPU (MIG), which divides one GPU into hardware-isolated partitions so you can run a different model in each or take a right-sized fraction of a newer accel…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -33,18 +93,18 @@
       ]
     },
     {
-      "id": "rss-83e8af1b",
-      "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/",
-      "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
-      "content_text": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gateway perfo… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:47:40.000Z",
+      "id": "rss-6ea69ea0",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/",
+      "title": "Taxonomy of agentic primitives in Amazon Quick",
+      "content_text": "As we built Amazon Quick, its agents grew from answering questions to taking actions, and the same primitives kept getting rebuilt under different names. This post shares the taxonomy we converged on — triggers, agents, capabilities, and l… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T17:34:45.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gateway perfo…",
+      "summary": "As we built Amazon Quick, its agents grew from answering questions to taking actions, and the same primitives kept getting rebuilt under different names. This post shares the taxonomy we converged on — triggers, agents, capabilities, and l…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -53,18 +113,18 @@
       ]
     },
     {
-      "id": "rss-aabe99ed",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/",
-      "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
-      "content_text": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cited content… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:43:20.000Z",
+      "id": "rss-d71f2017",
+      "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/",
+      "title": "Serverless MCP server for AI agent data lake access on Amazon ECS Fargate",
+      "content_text": "Learn how to build a serverless Model Context Protocol (MCP) server on Amazon ECS with AWS Fargate that gives AI agents secure, metadata-driven access to an enterprise data lake. Exposing a new dataset requires only a JSON file, with no pe… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T17:13:13.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cited content…",
+      "summary": "Learn how to build a serverless Model Context Protocol (MCP) server on Amazon ECS with AWS Fargate that gives AI agents secure, metadata-driven access to an enterprise data lake. Exposing a new dataset requires only a JSON file, with no pe…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -73,18 +133,18 @@
       ]
     },
     {
-      "id": "rss-79d5bdbc",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/",
-      "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
-      "content_text": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with GRANT and… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:41:13.000Z",
+      "id": "rss-be613715",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+      "content_text": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T17:09:23.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with GRANT and…",
+      "summary": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -93,18 +153,18 @@
       ]
     },
     {
-      "id": "rss-32a9729e",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/",
-      "title": "Building ultra-low-latency voice AI applications on AWS",
-      "content_text": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or self-manag… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:40:54.000Z",
+      "id": "rss-3e68bc5a",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 1",
+      "content_text": "An AI agent that acts for a user raises an identity question that per-app OAuth and service accounts leave open: which agent may act for which user, and how you stop it. In this first post of two, you build a task agent on Amazon Bedrock A… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T17:09:18.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or self-manag…",
+      "summary": "An AI agent that acts for a user raises an identity question that per-app OAuth and service accounts leave open: which agent may act for which user, and how you stop it. In this first post of two, you build a task agent on Amazon Bedrock A…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -113,18 +173,18 @@
       ]
     },
     {
-      "id": "rss-e66aa22d",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/",
-      "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
-      "content_text": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code for readin… — Source: AWS ML Blog",
-      "date_published": "2026-11-03T16:32:54.000Z",
+      "id": "rss-36495f66",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
+      "title": "How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
+      "content_text": "Greenlight Financial resolves more than 90% of up to 4,000 monthly security and risk cases without human intervention using Luna, a tiered multi-agent system on Amazon Bedrock AgentCore. This post covers the architecture, episodic memory f… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T16:55:05.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
-        "Model release"
+        "Policy & safety"
       ],
       "language": "en",
-      "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code for readin…",
+      "summary": "Greenlight Financial resolves more than 90% of up to 4,000 monthly security and risk cases without human intervention using Luna, a tiered multi-agent system on Amazon Bedrock AgentCore. This post covers the architecture, episodic memory f…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -133,22 +193,508 @@
       ]
     },
     {
-      "id": "rss-3c610e6d",
-      "url": "https://openai.com/index/heimstaden",
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "content_text": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe. — Source: OpenAI Blog",
-      "date_published": "2026-11-03T08:00:00.000Z",
+      "id": "rss-8e9e65da",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
+      "title": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
+      "content_text": "Taxbit built Taxbit Assist, a cited, permission-aware AI assistant embedded in its enterprise dashboard, on Amazon Bedrock AgentCore. This post shows how they grounded answers in a curated knowledge base, enforced role-aware and region-com… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T16:49:42.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Taxbit built Taxbit Assist, a cited, permission-aware AI assistant embedded in its enterprise dashboard, on Amazon Bedrock AgentCore. This post shows how they grounded answers in a curated knowledge base, enforced role-aware and region-com…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-82ab0a8d",
+      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+      "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+      "content_text": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you revi… — Source: AWS ML Blog",
+      "date_published": "2026-11-06T16:45:58.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Policy & safety"
+      ],
+      "language": "en",
+      "summary": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you revi…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "github-release-huggingface-transformers-v5-22-2",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
+      "title": "huggingface/transformers released Patch release v5.22.2",
+      "content_text": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431… — Source: GitHub Releases",
+      "date_published": "2026-11-06T15:43:27.000Z",
+      "tags": [
+        "transformers",
+        "GitHub Release",
+        "Open source"
+      ],
+      "language": "en",
+      "summary": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431…",
+      "authors": [
+        {
+          "name": "GitHub Releases",
+          "url": "https://github.com/huggingface/transformers/releases"
+        }
+      ]
+    },
+    {
+      "id": "rss-4f900307",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "content_text": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI. — Source: OpenAI Blog",
+      "date_published": "2026-11-06T08:00:00.000Z",
       "tags": [
         "OpenAI",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
       "authors": [
         {
           "name": "OpenAI Blog",
           "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "release-liquid-lfm-3-1-7b",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b",
+      "title": "LiquidAI launches LFM3-1.7B (262K context, $0.08/$0.2)",
+      "content_text": "LiquidAI: LFM3-1.7B is now on OpenRouter: 262K context, $0.08/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "LiquidAI",
+        "Long context",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "LiquidAI: LFM3-1.7B is now on OpenRouter: 262K context, $0.08/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-liquid-lfm-3-1-7b-free",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+      "title": "LiquidAI launches LFM3-1.7B (free) (262K context, free/free)",
+      "content_text": "LiquidAI: LFM3-1.7B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "LiquidAI",
+        "Long context",
+        "Reasoning",
+        "Open weights",
+        "Free"
+      ],
+      "language": "en",
+      "summary": "LiquidAI: LFM3-1.7B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "rss-81a0fd32",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "content_text": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science. — Source: OpenAI Blog",
+      "date_published": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Evaluation"
+      ],
+      "language": "en",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-06bc9743",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "content_text": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T20:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-36dcdf76",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "content_text": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips — Source: Google DeepMind",
+      "date_published": "2026-11-05T17:05:16.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Official blog",
+        "Pricing"
+      ],
+      "language": "en",
+      "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "authors": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-15ec7e98",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "title": "Australian universities are creating AI-native graduates",
+      "content_text": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T17:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-9732ff15",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "content_text": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing. — Source: Google AI Blog",
+      "date_published": "2026-11-05T17:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Official blog",
+        "Pricing"
+      ],
+      "language": "en",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "authors": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a175f1be",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "content_text": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T09:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-360a2b0f",
+      "url": "https://openai.com/index/merge-builds-with-openai",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "content_text": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T08:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-78667b0c",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
+      "title": "Clearing up a robot’s fuzzy memory",
+      "content_text": "A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its environment. — Source: MIT News AI",
+      "date_published": "2026-11-05T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its environment.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-2bc06518",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "content_text": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T02:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Policy & safety"
+      ],
+      "language": "en",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-bffb044c",
+      "url": "https://openai.com/ads/customers/flipsnack",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "content_text": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup. — Source: OpenAI Blog",
+      "date_published": "2026-11-05T00:45:15.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Pricing"
+      ],
+      "language": "en",
+      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "release-google-gemini-omni-1-2-flash",
+      "url": "https://openrouter.ai/google/gemini-omni-1.2-flash",
+      "title": "Google launches Gemini Omni 1.2 Flash (131K context, $1.5/$9)",
+      "content_text": "Google: Gemini Omni 1.2 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision. — Source: OpenRouter",
+      "date_published": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "Multimodal",
+        "Reasoning"
+      ],
+      "language": "en",
+      "summary": "Google: Gemini Omni 1.2 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-openrouter-auto",
+      "url": "https://openrouter.ai/openrouter/auto",
+      "title": "OpenRouter launches Auto Router (2M context, pricing TBA)",
+      "content_text": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "date_published": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "OpenRouter",
+        "Long context",
+        "Multimodal",
+        "Reasoning"
+      ],
+      "language": "en",
+      "summary": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-openrouter-auto-code",
+      "url": "https://openrouter.ai/openrouter/auto-code",
+      "title": "OpenRouter launches Auto Code (2M context, pricing TBA)",
+      "content_text": "Auto Code is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "date_published": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "OpenRouter",
+        "Long context",
+        "Multimodal",
+        "Reasoning"
+      ],
+      "language": "en",
+      "summary": "Auto Code is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-google-gemini-omni-1-1-flash",
+      "url": "https://openrouter.ai/google/gemini-omni-1.1-flash",
+      "title": "Google launches Gemini Omni 1.1 Flash (131K context, $1.5/$9)",
+      "content_text": "Google: Gemini Omni 1.1 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision. — Source: OpenRouter",
+      "date_published": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "Multimodal",
+        "Reasoning"
+      ],
+      "language": "en",
+      "summary": "Google: Gemini Omni 1.1 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-ricursiveai-ripple-65b-preview",
+      "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
+      "title": "Ricursive launches Ripple 65B Preview (1M context, $0.2/$0.6)",
+      "content_text": "Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.2/$0.6 per 1M tokens, supports structured-output/tool-calling. — Source: OpenRouter",
+      "date_published": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Ricursive",
+        "Long context"
+      ],
+      "language": "en",
+      "summary": "Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.2/$0.6 per 1M tokens, supports structured-output/tool-calling.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-tencent-hy4",
+      "url": "https://openrouter.ai/tencent/hy4",
+      "title": "Tencent launches Hy4 (1M context, $0.417/$1.25)",
+      "content_text": "Tencent: Hy4 is now on OpenRouter: 1M context, $0.417/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
+      "date_published": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Tencent",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "Tencent: Hy4 is now on OpenRouter: 1M context, $0.417/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "github-release-ollama-ollama-v0-40-15",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+      "title": "ollama/ollama released v0.40.15",
+      "content_text": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama… — Source: GitHub Releases",
+      "date_published": "2026-11-03T22:52:31.000Z",
+      "tags": [
+        "ollama",
+        "GitHub Release",
+        "Open source"
+      ],
+      "language": "en",
+      "summary": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama…",
+      "authors": [
+        {
+          "name": "GitHub Releases",
+          "url": "https://github.com/ollama/ollama/releases"
+        }
+      ]
+    },
+    {
+      "id": "rss-b65f9c17",
+      "url": "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
+      "title": "Building connections across the research infrastructure",
+      "content_text": "MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore ways to make shared-access facilities more connected. — Source: MIT News AI",
+      "date_published": "2026-11-03T19:30:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Research"
+      ],
+      "language": "en",
+      "summary": "MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore ways to make shared-access facilities more connected.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-1be868b2",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "content_text": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles. — Source: Google DeepMind",
+      "date_published": "2026-11-03T17:01:49.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "authors": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/rss.xml"
         }
       ]
     },
@@ -173,6 +719,28 @@
       ]
     },
     {
+      "id": "release-stealth-crouton-alpha",
+      "url": "https://openrouter.ai/stealth/crouton-alpha",
+      "title": "Stealth launches Crouton Alpha (1M context, free/free)",
+      "content_text": "Crouton Alpha is now on OpenRouter: 1M context, free/free per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "date_published": "2026-11-03T00:00:00.000Z",
+      "tags": [
+        "Stealth",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Free"
+      ],
+      "language": "en",
+      "summary": "Crouton Alpha is now on OpenRouter: 1M context, free/free per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
       "id": "rss-42cc70ea",
       "url": "https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102",
       "title": "Powering up for a pivotal moment",
@@ -189,46 +757,6 @@
         {
           "name": "MIT News AI",
           "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "rss-32b855ce",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "content_text": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T18:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-8ce678e2",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "title": "Rewarding defenders with bigger bug bounties",
-      "content_text": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T18:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
         }
       ]
     },
@@ -253,86 +781,6 @@
       ]
     },
     {
-      "id": "rss-482c6b58",
-      "url": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
-      "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
-      "content_text": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web content reac… — Source: AWS ML Blog",
-      "date_published": "2026-11-02T17:11:21.000Z",
-      "tags": [
-        "AWS ML",
-        "Official blog",
-        "Open source"
-      ],
-      "language": "en",
-      "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web content reac…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
-        }
-      ]
-    },
-    {
-      "id": "rss-13ff67aa",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/",
-      "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
-      "content_text": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to transfer a… — Source: AWS ML Blog",
-      "date_published": "2026-11-02T17:01:31.000Z",
-      "tags": [
-        "AWS ML",
-        "Official blog",
-        "Pricing"
-      ],
-      "language": "en",
-      "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to transfer a…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
-        }
-      ]
-    },
-    {
-      "id": "rss-bd19c0a8",
-      "url": "https://openai.com/index/scaling-git-at-openai",
-      "title": "Scaling Git at OpenAI",
-      "content_text": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T15:30:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-46bb8b16",
-      "url": "https://openai.com/index/grid-protectors-program",
-      "title": "Introducing the Grid Protectors Program",
-      "content_text": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T15:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
       "id": "github-release-vllm-project-vllm-v0-33-0rc3",
       "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
       "title": "vllm-project/vllm released v0.33.0",
@@ -349,26 +797,6 @@
         {
           "name": "GitHub Releases",
           "url": "https://github.com/vllm-project/vllm/releases"
-        }
-      ]
-    },
-    {
-      "id": "rss-8ac1aef2",
-      "url": "https://openai.com/index/lifeval",
-      "title": "LifeVal",
-      "content_text": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T09:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Evaluation"
-      ],
-      "language": "en",
-      "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
         }
       ]
     },
@@ -414,46 +842,6 @@
       ]
     },
     {
-      "id": "rss-5a46b5e6",
-      "url": "https://openai.com/index/qodo-codex-plugin",
-      "title": "Qodo builds context into AI code review with Codex",
-      "content_text": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-74224be8",
-      "url": "https://openai.com/index/dan-driscoll-joins-openai",
-      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "content_text": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies. — Source: OpenAI Blog",
-      "date_published": "2026-11-02T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
       "id": "rss-f156b985",
       "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
       "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
@@ -466,26 +854,6 @@
       ],
       "language": "en",
       "summary": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "rss-bdae9243",
-      "url": "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030",
-      "title": "Q&A: Hey AI, who should I vote for this year?",
-      "content_text": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections. — Source: MIT News AI",
-      "date_published": "2026-10-30T19:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections.",
       "authors": [
         {
           "name": "MIT News AI",
@@ -554,26 +922,6 @@
       ]
     },
     {
-      "id": "github-release-huggingface-transformers-v5-21-1",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
-      "title": "huggingface/transformers released Patch release v5.21.1",
-      "content_text": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone! — Source: GitHub Releases",
-      "date_published": "2026-10-29T08:35:02.000Z",
-      "tags": [
-        "transformers",
-        "GitHub Release",
-        "Open source"
-      ],
-      "language": "en",
-      "summary": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone!",
-      "authors": [
-        {
-          "name": "GitHub Releases",
-          "url": "https://github.com/huggingface/transformers/releases"
-        }
-      ]
-    },
-    {
       "id": "github-release-ollama-ollama-v0-40-13",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
       "title": "ollama/ollama released v0.40.13",
@@ -614,46 +962,6 @@
       ]
     },
     {
-      "id": "rss-0eb397cd",
-      "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
-      "title": "3 Questions: Why infrastructure is entering a defining era",
-      "content_text": "Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed. — Source: MIT News AI",
-      "date_published": "2026-10-28T16:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "rss-23ff9576",
-      "url": "https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028",
-      "title": "Making machines that can listen",
-      "content_text": "Professor Paris Smaragdis develops computers with superhuman hearing for applications like speech recognition, music understanding, and environmental monitoring. — Source: MIT News AI",
-      "date_published": "2026-10-28T04:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Professor Paris Smaragdis develops computers with superhuman hearing for applications like speech recognition, music understanding, and environmental monitoring.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
       "id": "release-particle-ai-particle-1",
       "url": "https://openrouter.ai/particle-ai/particle-1",
       "title": "Particle AI launches Particle-1 (1M context, $0.05/$0.5)",
@@ -675,26 +983,6 @@
       ]
     },
     {
-      "id": "rss-a836cb2b",
-      "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
-      "title": "Learner collaborates with MIT peers to develop book of AI insights",
-      "content_text": "Prabha Jha used her experience with MIT Open Learning’s program for senior executives to develop AI solutions for her employer, Verizon, and to write a book. — Source: MIT News AI",
-      "date_published": "2026-10-27T20:55:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Prabha Jha used her experience with MIT Open Learning’s program for senior executives to develop AI solutions for her employer, Verizon, and to write a book.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
       "id": "rss-96b27cb4",
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "title": "Genie 4: A new generation of world simulation",
@@ -711,46 +999,6 @@
         {
           "name": "Google DeepMind",
           "url": "https://deepmind.google/blog/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "github-release-ollama-ollama-v0-40-12",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
-      "title": "ollama/ollama released v0.40.12",
-      "content_text": "## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes: - [lfm3](https:/… — Source: GitHub Releases",
-      "date_published": "2026-10-27T00:07:12.000Z",
-      "tags": [
-        "ollama",
-        "GitHub Release",
-        "Open source"
-      ],
-      "language": "en",
-      "summary": "## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes: - [lfm3](https:/…",
-      "authors": [
-        {
-          "name": "GitHub Releases",
-          "url": "https://github.com/ollama/ollama/releases"
-        }
-      ]
-    },
-    {
-      "id": "rss-08d0c012",
-      "url": "https://news.mit.edu/2026/at-new-york-climate-week-mit-connects-global-network-1026",
-      "title": "At New York Climate Week 2026, MIT connects with a global network",
-      "content_text": "A cross-section of the MIT community convened discussions on topics ranging from data centers and super pollutants to agriculture and education. — Source: MIT News AI",
-      "date_published": "2026-10-26T19:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "A cross-section of the MIT community convened discussions on topics ranging from data centers and super pollutants to agriculture and education.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
         }
       ]
     },
@@ -868,7 +1116,8 @@
         "MoonshotAI",
         "Long context",
         "Multimodal",
-        "Reasoning"
+        "Reasoning",
+        "Open weights"
       ],
       "language": "en",
       "summary": "MoonshotAI: Kimi K3.1 Pro is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
@@ -944,8 +1193,8 @@
     {
       "id": "release-minimax-minimax-m3-1-flash",
       "url": "https://openrouter.ai/minimax/minimax-m3.1-flash",
-      "title": "MiniMax launches MiniMax M3.1 Flash (1M context, $0.075/$0.3)",
-      "content_text": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "title": "MiniMax launches MiniMax M3.1 Flash (1M context, $0.15/$0.6)",
+      "content_text": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
       "date_published": "2026-10-19T00:00:00.000Z",
       "tags": [
         "MiniMax",
@@ -955,7 +1204,7 @@
         "Open weights"
       ],
       "language": "en",
-      "summary": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
+      "summary": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "authors": [
         {
           "name": "OpenRouter",
@@ -1026,8 +1275,8 @@
     {
       "id": "release-deepseek-deepseek-v4-1-flash-1017",
       "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-      "title": "DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.15/$0.6)",
-      "content_text": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
+      "title": "DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.006/$0.5)",
+      "content_text": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.006/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
       "date_published": "2026-10-17T00:00:00.000Z",
       "tags": [
         "DeepSeek",
@@ -1037,7 +1286,29 @@
         "Open weights"
       ],
       "language": "en",
-      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.006/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-deepseek-v4-1-flash-1017-batch",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
+      "title": "DeepSeek launches DeepSeek V4.1 Flash 1017 (batch) (1M context, $0.011/$0.2)",
+      "content_text": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) is now on OpenRouter: 1M context, $0.011/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
+      "date_published": "2026-10-17T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) is now on OpenRouter: 1M context, $0.011/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "authors": [
         {
           "name": "OpenRouter",
@@ -1059,26 +1330,6 @@
       ],
       "language": "en",
       "summary": "Elorian: Glimpse is now on OpenRouter: 262K context, $0.6/$3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-inception-mercury-3",
-      "url": "https://openrouter.ai/inception/mercury-3",
-      "title": "Inception launches Mercury 3 (1M context, $0.1/$0.35)",
-      "content_text": "Inception: Mercury 3 is now on OpenRouter: 1M context, $0.1/$0.35 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
-      "date_published": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "Inception",
-        "Long context",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "Inception: Mercury 3 is now on OpenRouter: 1M context, $0.1/$0.35 per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "authors": [
         {
           "name": "OpenRouter",
@@ -1111,8 +1362,8 @@
     {
       "id": "release-reflection-beam-1-0-501b-a23b",
       "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
-      "title": "Reflection launches Beam 1.0 501B A23B (1M context, $0.25/$1)",
-      "content_text": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.25/$1 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
+      "title": "Reflection launches Beam 1.0 501B A23B (1M context, $0.3/$1)",
+      "content_text": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.3/$1 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
       "date_published": "2026-10-16T00:00:00.000Z",
       "tags": [
         "Reflection",
@@ -1121,7 +1372,7 @@
         "Open weights"
       ],
       "language": "en",
-      "summary": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.25/$1 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "summary": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.3/$1 per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "authors": [
         {
           "name": "OpenRouter",
@@ -1321,46 +1572,6 @@
       ]
     },
     {
-      "id": "rss-be947196",
-      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "title": "Developing Gemini 4 Argon responsibly and safely",
-      "content_text": "Developing Gemini 4 Argon responsibly and safely — Source: Google DeepMind",
-      "date_published": "2026-10-13T19:43:07.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Developing Gemini 4 Argon responsibly and safely",
-      "authors": [
-        {
-          "name": "Google DeepMind",
-          "url": "https://deepmind.google/blog/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-c2c7e340",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "title": "Gemini 4 Argon for Robotics",
-      "content_text": "Gemini 4 Argon for Robotics — Source: Google DeepMind",
-      "date_published": "2026-10-13T16:01:58.000Z",
-      "tags": [
-        "Google DeepMind",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Gemini 4 Argon for Robotics",
-      "authors": [
-        {
-          "name": "Google DeepMind",
-          "url": "https://deepmind.google/blog/rss.xml"
-        }
-      ]
-    },
-    {
       "id": "rss-d3dc22ab",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "title": "Gemini 4 Argon: Built to solve your hardest problems",
@@ -1377,191 +1588,6 @@
         {
           "name": "Google AI Blog",
           "url": "https://blog.google/technology/ai/rss/"
-        }
-      ]
-    },
-    {
-      "id": "release-google-gemini-4-argon",
-      "url": "https://openrouter.ai/google/gemini-4-argon",
-      "title": "Google launches Gemini 4 Argon (1M context, $2/$10)",
-      "content_text": "Google: Gemini 4 Argon is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Google",
-        "Long context",
-        "Multimodal",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "Google: Gemini 4 Argon is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-google-gemini-4-argon-batch",
-      "url": "https://openrouter.ai/google/gemini-4-argon:batch",
-      "title": "Google launches Gemini 4 Argon (batch) (1M context, $1/$5)",
-      "content_text": "Google: Gemini 4 Argon (batch) is now on OpenRouter: 1M context, $1/$5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Google",
-        "Long context",
-        "Multimodal",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "Google: Gemini 4 Argon (batch) is now on OpenRouter: 1M context, $1/$5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-liquid-lfm-2-5-24b-a2b",
-      "url": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
-      "title": "LiquidAI launches LFM2.5-24B-A2B (128K context, $0.05/$0.7)",
-      "content_text": "LiquidAI: LFM2.5-24B-A2B is now on OpenRouter: 128K context, $0.05/$0.7 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "LiquidAI",
-        "Reasoning",
-        "Open weights"
-      ],
-      "language": "en",
-      "summary": "LiquidAI: LFM2.5-24B-A2B is now on OpenRouter: 128K context, $0.05/$0.7 per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-scaledown-extract",
-      "url": "https://openrouter.ai/scaledown/extract",
-      "title": "ScaleDown launches Extract (1M context, $0.04/free)",
-      "content_text": "ScaleDown: Extract is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "ScaleDown",
-        "Long context",
-        "Multimodal"
-      ],
-      "language": "en",
-      "summary": "ScaleDown: Extract is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-scaledown-summarize",
-      "url": "https://openrouter.ai/scaledown/summarize",
-      "title": "ScaleDown launches Summarize (1M context, $0.04/free)",
-      "content_text": "ScaleDown: Summarize is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "ScaleDown",
-        "Long context",
-        "Multimodal"
-      ],
-      "language": "en",
-      "summary": "ScaleDown: Summarize is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-unbiased-pareto-26-9",
-      "url": "https://openrouter.ai/unbiased/pareto-26.9",
-      "title": "Unbiased launches Pareto 26.9 (262K context, $2.5/$7.5)",
-      "content_text": "Pareto 26.9 is now on OpenRouter: 262K context, $2.5/$7.5 per 1M tokens, supports structured-output/tool-calling/vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Unbiased",
-        "Long context",
-        "Multimodal"
-      ],
-      "language": "en",
-      "summary": "Pareto 26.9 is now on OpenRouter: 262K context, $2.5/$7.5 per 1M tokens, supports structured-output/tool-calling/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-unbiased-pareto-latest",
-      "url": "https://openrouter.ai/~unbiased/pareto-latest",
-      "title": "~Unbiased launches Pareto Latest (1M context, $0.8/$3.2)",
-      "content_text": "Pareto Latest is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision. — Source: OpenRouter",
-      "date_published": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "~Unbiased",
-        "Long context",
-        "Multimodal"
-      ],
-      "language": "en",
-      "summary": "Pareto Latest is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-meta-muse-wonder",
-      "url": "https://openrouter.ai/meta/muse-wonder",
-      "title": "Meta launches Muse Wonder (1M context, $4/$20)",
-      "content_text": "Meta: Muse Wonder is now on OpenRouter: 1M context, $4/$20 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
-      "date_published": "2026-10-12T00:00:00.000Z",
-      "tags": [
-        "Meta",
-        "Long context",
-        "Multimodal",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "Meta: Muse Wonder is now on OpenRouter: 1M context, $4/$20 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-stepfun-step-5-preview",
-      "url": "https://openrouter.ai/stepfun/step-5-preview",
-      "title": "StepFun launches Step 5 Preview (1M context, $1/$2.7)",
-      "content_text": "StepFun: Step 5 Preview is now on OpenRouter: 1M context, $1/$2.7 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
-      "date_published": "2026-10-08T00:00:00.000Z",
-      "tags": [
-        "StepFun",
-        "Long context",
-        "Multimodal",
-        "Reasoning",
-        "Open weights"
-      ],
-      "language": "en",
-      "summary": "StepFun: Step 5 Preview is now on OpenRouter: 1M context, $1/$2.7 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
         }
       ]
     },
@@ -1638,26 +1664,6 @@
       ],
       "language": "en",
       "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-      "authors": [
-        {
-          "name": "Google AI Blog",
-          "url": "https://blog.google/technology/ai/rss/"
-        }
-      ]
-    },
-    {
-      "id": "rss-a842098c",
-      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
-      "title": "Google Beam expands with new regions, partners, and customers",
-      "content_text": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network. — Source: Google AI Blog",
-      "date_published": "2026-09-23T18:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network.",
       "authors": [
         {
           "name": "Google AI Blog",
@@ -1778,26 +1784,6 @@
       ],
       "language": "en",
       "summary": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t…",
-      "authors": [
-        {
-          "name": "Berkeley BAIR",
-          "url": "https://bair.berkeley.edu/blog/feed.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-69ff72b3",
-      "url": "https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-      "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
-      "content_text": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million tokens in early 2023; today the same run… — Source: Berkeley BAIR",
-      "date_published": "2026-07-07T09:00:00.000Z",
-      "tags": [
-        "Berkeley BAIR",
-        "Official blog",
-        "Pricing"
-      ],
-      "language": "en",
-      "summary": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million tokens in early 2023; today the same run…",
       "authors": [
         {
           "name": "Berkeley BAIR",

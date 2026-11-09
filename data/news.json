@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T16:50:38.301Z",
-  "source": "AWS ML Blog+OpenAI Blog+GitHub Releases+MIT News AI+Google AI Blog+OpenRouter+Google DeepMind+DeepSeek+Berkeley BAIR",
+  "generatedAt": "2026-11-09T09:56:12.598Z",
+  "source": "MIT News AI+AWS ML Blog+GitHub Releases+OpenAI Blog+OpenRouter+Google DeepMind+Google AI Blog+DeepSeek+Berkeley BAIR",
   "items": [
     {
-      "id": "rss-705579ba",
-      "title": "Bring structured and unstructured data together with Amazon Quick",
-      "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business questions acros…",
+      "id": "rss-0882db37",
+      "title": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
+      "summary": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more.",
       "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick/",
-      "publishedAt": "2026-11-03T16:49:29.000Z",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
       "tags": [
-        "AWS ML",
+        "MIT",
         "官方博客",
         "模型发布"
       ],
@@ -22,16 +22,16 @@
       "lang": "en"
     },
     {
-      "id": "rss-83e8af1b",
-      "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
-      "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gateway perfo…",
+      "id": "rss-cf56baa8",
+      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
+      "summary": "The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots.",
       "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/",
-      "publishedAt": "2026-11-03T16:47:40.000Z",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
       "tags": [
-        "AWS ML",
+        "MIT",
         "官方博客",
         "模型发布"
       ],
@@ -40,96 +40,626 @@
       "lang": "en"
     },
     {
-      "id": "rss-aabe99ed",
-      "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
-      "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cited content…",
+      "id": "rss-b5d1e402",
+      "title": "How to predict the behavior of molecules from scant data",
+      "summary": "A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive experimentation.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106",
+      "publishedAt": "2026-11-06T19:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-2c82bb18",
+      "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+      "summary": "Amazon SageMaker Inference now supports GPU partitioning with NVIDIA Multi-Instance GPU (MIG), which divides one GPU into hardware-isolated partitions so you can run a different model in each or take a right-sized fraction of a newer accel…",
       "kind": "release",
       "sourceName": "AWS ML Blog",
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/",
-      "publishedAt": "2026-11-03T16:43:20.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "publishedAt": "2026-11-06T18:01:00.000Z",
       "tags": [
         "AWS ML",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
-      "id": "rss-79d5bdbc",
-      "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
-      "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with GRANT and…",
+      "id": "rss-6ea69ea0",
+      "title": "Taxonomy of agentic primitives in Amazon Quick",
+      "summary": "As we built Amazon Quick, its agents grew from answering questions to taking actions, and the same primitives kept getting rebuilt under different names. This post shares the taxonomy we converged on — triggers, agents, capabilities, and l…",
       "kind": "release",
       "sourceName": "AWS ML Blog",
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-11-03T16:41:13.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/",
+      "publishedAt": "2026-11-06T17:34:45.000Z",
       "tags": [
         "AWS ML",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
-      "id": "rss-32a9729e",
-      "title": "Building ultra-low-latency voice AI applications on AWS",
-      "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or self-manag…",
+      "id": "rss-d71f2017",
+      "title": "Serverless MCP server for AI agent data lake access on Amazon ECS Fargate",
+      "summary": "Learn how to build a serverless Model Context Protocol (MCP) server on Amazon ECS with AWS Fargate that gives AI agents secure, metadata-driven access to an enterprise data lake. Exposing a new dataset requires only a JSON file, with no pe…",
       "kind": "release",
       "sourceName": "AWS ML Blog",
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/",
-      "publishedAt": "2026-11-03T16:40:54.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/",
+      "publishedAt": "2026-11-06T17:13:13.000Z",
       "tags": [
         "AWS ML",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
-      "id": "rss-e66aa22d",
-      "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
-      "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code for readin…",
+      "id": "rss-be613715",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+      "summary": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on…",
       "kind": "release",
       "sourceName": "AWS ML Blog",
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/",
-      "publishedAt": "2026-11-03T16:32:54.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+      "publishedAt": "2026-11-06T17:09:23.000Z",
       "tags": [
         "AWS ML",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
-      "id": "rss-3c610e6d",
-      "title": "Heimstaden is changing residential real estate management with AI",
-      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "id": "rss-3e68bc5a",
+      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 1",
+      "summary": "An AI agent that acts for a user raises an identity question that per-app OAuth and service accounts leave open: which agent may act for which user, and how you stop it. In this first post of two, you build a task agent on Amazon Bedrock A…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/",
+      "publishedAt": "2026-11-06T17:09:18.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-36495f66",
+      "title": "How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
+      "summary": "Greenlight Financial resolves more than 90% of up to 4,000 monthly security and risk cases without human intervention using Luna, a tiered multi-agent system on Amazon Bedrock AgentCore. This post covers the architecture, episodic memory f…",
+      "kind": "policy",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-06T16:55:05.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-8e9e65da",
+      "title": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
+      "summary": "Taxbit built Taxbit Assist, a cited, permission-aware AI assistant embedded in its enterprise dashboard, on Amazon Bedrock AgentCore. This post shows how they grounded answers in a curated knowledge base, enforced role-aware and region-com…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-06T16:49:42.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-82ab0a8d",
+      "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+      "summary": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you revi…",
+      "kind": "policy",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+      "publishedAt": "2026-11-06T16:45:58.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "titleEn": "huggingface/transformers released Patch release v5.22.2",
+      "summaryEn": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431…",
+      "id": "github-release-huggingface-transformers-v5-22-2",
+      "title": "huggingface/transformers 发布 Patch release v5.22.2",
+      "summary": "# Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits :hugs: - [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun and @3outeille - Harden our Jinja sandboxing (#50431…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
+      "publishedAt": "2026-11-06T15:43:27.000Z",
+      "tags": [
+        "transformers",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-4f900307",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
       "kind": "release",
       "sourceName": "OpenAI Blog",
       "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/heimstaden",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "publishedAt": "2026-11-06T08:00:00.000Z",
       "tags": [
         "OpenAI",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
+      "titleEn": "LiquidAI launches LFM3-1.7B (262K context, $0.08/$0.2)",
+      "summaryEn": "LiquidAI: LFM3-1.7B is now on OpenRouter: 262K context, $0.08/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-liquid-lfm-3-1-7b",
+      "title": "LiquidAI 上新：LFM3-1.7B（上下文 262K，$0.08/$0.2）",
+      "summary": "LiquidAI: LFM3-1.7B 进入 OpenRouter 目录：上下文 262K，$0.08/$0.2 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "LiquidAI",
+        "长上下文",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "liquid/lfm-3-1.7b"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "LiquidAI launches LFM3-1.7B (free) (262K context, free/free)",
+      "summaryEn": "LiquidAI: LFM3-1.7B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-liquid-lfm-3-1-7b-free",
+      "title": "LiquidAI 上新：LFM3-1.7B (free)（上下文 262K，免费/免费）",
+      "summary": "LiquidAI: LFM3-1.7B (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "LiquidAI",
+        "长上下文",
+        "推理",
+        "开源权重",
+        "免费"
+      ],
+      "models": [
+        "liquid/lfm-3-1.7b:free"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-81a0fd32",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "kind": "benchmark",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "评测"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-06bc9743",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "publishedAt": "2026-11-05T20:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-36dcdf76",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "kind": "pricing",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-15ec7e98",
+      "title": "Australian universities are creating AI-native graduates",
+      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-9732ff15",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "kind": "pricing",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-a175f1be",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-360a2b0f",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/merge-builds-with-openai",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-78667b0c",
+      "title": "Clearing up a robot’s fuzzy memory",
+      "summary": "A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its environment.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-2bc06518",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "kind": "policy",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "publishedAt": "2026-11-05T02:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-bffb044c",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+      "kind": "pricing",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/ads/customers/flipsnack",
+      "publishedAt": "2026-11-05T00:45:15.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "titleEn": "Google launches Gemini Omni 1.2 Flash (131K context, $1.5/$9)",
+      "summaryEn": "Google: Gemini Omni 1.2 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision.",
+      "id": "release-google-gemini-omni-1-2-flash",
+      "title": "Google 上新：Gemini Omni 1.2 Flash（上下文 131K，$1.5/$9）",
+      "summary": "Google: Gemini Omni 1.2 Flash 进入 OpenRouter 目录：上下文 131K，$1.5/$9 每百万 tokens，支持 reasoning/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-omni-1.2-flash",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-omni-1.2-flash"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "OpenRouter launches Auto Router (2M context, pricing TBA)",
+      "summaryEn": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-openrouter-auto",
+      "title": "OpenRouter 上新：Auto Router（上下文 2M，价格未公开）",
+      "summary": "Auto Router 进入 OpenRouter 目录：上下文 2M，定价未公开，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/openrouter/auto",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "OpenRouter",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "openrouter/auto"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "OpenRouter launches Auto Code (2M context, pricing TBA)",
+      "summaryEn": "Auto Code is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-openrouter-auto-code",
+      "title": "OpenRouter 上新：Auto Code（上下文 2M，价格未公开）",
+      "summary": "Auto Code 进入 OpenRouter 目录：上下文 2M，定价未公开，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/openrouter/auto-code",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "OpenRouter",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "openrouter/auto-code"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Google launches Gemini Omni 1.1 Flash (131K context, $1.5/$9)",
+      "summaryEn": "Google: Gemini Omni 1.1 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision.",
+      "id": "release-google-gemini-omni-1-1-flash",
+      "title": "Google 上新：Gemini Omni 1.1 Flash（上下文 131K，$1.5/$9）",
+      "summary": "Google: Gemini Omni 1.1 Flash 进入 OpenRouter 目录：上下文 131K，$1.5/$9 每百万 tokens，支持 reasoning/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-omni-1.1-flash",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-omni-1.1-flash"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Ricursive launches Ripple 65B Preview (1M context, $0.2/$0.6)",
+      "summaryEn": "Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.2/$0.6 per 1M tokens, supports structured-output/tool-calling.",
+      "id": "release-ricursiveai-ripple-65b-preview",
+      "title": "Ricursive 上新：Ripple 65B Preview（上下文 1M，$0.2/$0.6）",
+      "summary": "Ricursive: Ripple 65B Preview 进入 OpenRouter 目录：上下文 1M，$0.2/$0.6 每百万 tokens，支持 structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Ricursive",
+        "长上下文"
+      ],
+      "models": [
+        "ricursiveai/ripple-65b-preview"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Tencent launches Hy4 (1M context, $0.417/$1.25)",
+      "summaryEn": "Tencent: Hy4 is now on OpenRouter: 1M context, $0.417/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-tencent-hy4",
+      "title": "Tencent 上新：Hy4（上下文 1M，$0.417/$1.25）",
+      "summary": "Tencent: Hy4 进入 OpenRouter 目录：上下文 1M，$0.417/$1.25 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/tencent/hy4",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "tags": [
+        "Tencent",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "tencent/hy4"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "ollama/ollama released v0.40.15",
+      "summaryEn": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama…",
+      "id": "github-release-ollama-ollama-v0-40-15",
+      "title": "ollama/ollama 发布 v0.40.15",
+      "summary": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+      "publishedAt": "2026-11-03T22:52:31.000Z",
+      "tags": [
+        "ollama",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-b65f9c17",
+      "title": "Building connections across the research infrastructure",
+      "summary": "MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore ways to make shared-access facilities more connected.",
+      "kind": "research",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
+      "publishedAt": "2026-11-03T19:30:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-1be868b2",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "titleEn": "ollama/ollama released v0.40.14",
+      "summaryEn": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including…",
       "id": "github-release-ollama-ollama-v0-40-14",
       "title": "ollama/ollama 发布 v0.40.14",
       "summary": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including…",
@@ -145,9 +675,31 @@
       ],
       "models": [],
       "importance": 2,
-      "lang": "en",
-      "titleEn": "ollama/ollama released v0.40.14",
-      "summaryEn": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including…"
+      "lang": "en"
+    },
+    {
+      "titleEn": "Stealth launches Crouton Alpha (1M context, free/free)",
+      "summaryEn": "Crouton Alpha is now on OpenRouter: 1M context, free/free per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-stealth-crouton-alpha",
+      "title": "Stealth 上新：Crouton Alpha（上下文 1M，免费/免费）",
+      "summary": "Crouton Alpha 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/stealth/crouton-alpha",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "tags": [
+        "Stealth",
+        "长上下文",
+        "多模态",
+        "推理",
+        "免费"
+      ],
+      "models": [
+        "stealth/crouton-alpha"
+      ],
+      "importance": 3,
+      "lang": "zh"
     },
     {
       "id": "rss-42cc70ea",
@@ -164,43 +716,7 @@
         "研究"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-32b855ce",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-      "kind": "policy",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "rss-8ce678e2",
-      "title": "Rewarding defenders with bigger bug bounties",
-      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-      "kind": "policy",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 3,
+      "importance": 1,
       "lang": "en"
     },
     {
@@ -218,82 +734,12 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
-      "id": "rss-482c6b58",
-      "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
-      "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web content reac…",
-      "kind": "oss",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
-      "publishedAt": "2026-11-02T17:11:21.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "开源"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-13ff67aa",
-      "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
-      "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to transfer a…",
-      "kind": "pricing",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-11-02T17:01:31.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "定价"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-bd19c0a8",
-      "title": "Scaling Git at OpenAI",
-      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/scaling-git-at-openai",
-      "publishedAt": "2026-11-02T15:30:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "rss-46bb8b16",
-      "title": "Introducing the Grid Protectors Program",
-      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/grid-protectors-program",
-      "publishedAt": "2026-11-02T15:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
+      "titleEn": "vllm-project/vllm released v0.33.0",
+      "summaryEn": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursiv…",
       "id": "github-release-vllm-project-vllm-v0-33-0rc3",
       "title": "vllm-project/vllm 发布 v0.33.0",
       "summary": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursiv…",
@@ -306,26 +752,6 @@
         "vllm",
         "GitHub Release",
         "开源"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en",
-      "titleEn": "vllm-project/vllm released v0.33.0",
-      "summaryEn": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#62074), Yandex AliceAI-Foundation-80B-A3B (#57963), Recursiv…"
-    },
-    {
-      "id": "rss-8ac1aef2",
-      "title": "LifeVal",
-      "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
-      "kind": "benchmark",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/lifeval",
-      "publishedAt": "2026-11-02T09:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "评测"
       ],
       "models": [],
       "importance": 2,
@@ -346,10 +772,12 @@
         "研究"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
+      "titleEn": "Z.ai launches GLM 5.3 FlashX Legal (1M context, $0.37/$1.25)",
+      "summaryEn": "Z.ai: GLM 5.3 FlashX Legal is now on OpenRouter: 1M context, $0.37/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-z-ai-glm-5-3-flashx-legal",
       "title": "Z.ai 上新：GLM 5.3 FlashX Legal（上下文 1M，$0.37/$1.25）",
       "summary": "Z.ai: GLM 5.3 FlashX Legal 进入 OpenRouter 目录：上下文 1M，$0.37/$1.25 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
@@ -367,46 +795,8 @@
       "models": [
         "z-ai/glm-5.3-flashx-legal"
       ],
-      "importance": 3,
-      "lang": "zh",
-      "titleEn": "Z.ai launches GLM 5.3 FlashX Legal (1M context, $0.37/$1.25)",
-      "summaryEn": "Z.ai: GLM 5.3 FlashX Legal is now on OpenRouter: 1M context, $0.37/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
-    },
-    {
-      "id": "rss-5a46b5e6",
-      "title": "Qodo builds context into AI code review with Codex",
-      "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/qodo-codex-plugin",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "rss-74224be8",
-      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-      "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-      "kind": "policy",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/dan-driscoll-joins-openai",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
+      "importance": 2,
+      "lang": "zh"
     },
     {
       "id": "rss-f156b985",
@@ -427,24 +817,6 @@
       "lang": "en"
     },
     {
-      "id": "rss-bdae9243",
-      "title": "Q&A: Hey AI, who should I vote for this year?",
-      "summary": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030",
-      "publishedAt": "2026-10-30T19:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
       "id": "rss-ebfc0c15",
       "title": "Speeding up planning decisions with AI",
       "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
@@ -459,10 +831,12 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
+      "titleEn": "huggingface/transformers released Patch release v5.22.1",
+      "summaryEn": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
       "id": "github-release-huggingface-transformers-v5-22-1",
       "title": "huggingface/transformers 发布 Patch release v5.22.1",
       "summary": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
@@ -477,12 +851,12 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en",
-      "titleEn": "huggingface/transformers released Patch release v5.22.1",
-      "summaryEn": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or"
+      "importance": 1,
+      "lang": "en"
     },
     {
+      "titleEn": "huggingface/transformers released v5.22.0: Mistral Large 4 (Le Chonk)",
+      "summaryEn": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i…",
       "id": "github-release-huggingface-transformers-v5-22-0",
       "title": "huggingface/transformers 发布 v5.22.0: Mistral Large 4 (Le Chonk)",
       "summary": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i…",
@@ -497,32 +871,12 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en",
-      "titleEn": "huggingface/transformers released v5.22.0: Mistral Large 4 (Le Chonk)",
-      "summaryEn": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i…"
+      "importance": 1,
+      "lang": "en"
     },
     {
-      "id": "github-release-huggingface-transformers-v5-21-1",
-      "title": "huggingface/transformers 发布 Patch release v5.21.1",
-      "summary": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone!",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/huggingface/transformers/releases",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
-      "publishedAt": "2026-10-29T08:35:02.000Z",
-      "tags": [
-        "transformers",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en",
-      "titleEn": "huggingface/transformers released Patch release v5.21.1",
-      "summaryEn": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm, this fixes it sorry everyone!"
-    },
-    {
+      "titleEn": "ollama/ollama released v0.40.13",
+      "summaryEn": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu…",
       "id": "github-release-ollama-ollama-v0-40-13",
       "title": "ollama/ollama 发布 v0.40.13",
       "summary": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu…",
@@ -537,10 +891,8 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en",
-      "titleEn": "ollama/ollama released v0.40.13",
-      "summaryEn": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu…"
+      "importance": 1,
+      "lang": "en"
     },
     {
       "id": "rss-05b7f987",
@@ -557,46 +909,12 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
-      "id": "rss-0eb397cd",
-      "title": "3 Questions: Why infrastructure is entering a defining era",
-      "summary": "Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
-      "publishedAt": "2026-10-28T16:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-23ff9576",
-      "title": "Making machines that can listen",
-      "summary": "Professor Paris Smaragdis develops computers with superhuman hearing for applications like speech recognition, music understanding, and environmental monitoring.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028",
-      "publishedAt": "2026-10-28T04:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
+      "titleEn": "Particle AI launches Particle-1 (1M context, $0.05/$0.5)",
+      "summaryEn": "Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.05/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-particle-ai-particle-1",
       "title": "Particle AI 上新：Particle-1（上下文 1M，$0.05/$0.5）",
       "summary": "Particle AI: Particle-1 进入 OpenRouter 目录：上下文 1M，$0.05/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -614,28 +932,8 @@
       "models": [
         "particle-ai/particle-1"
       ],
-      "importance": 3,
-      "lang": "zh",
-      "titleEn": "Particle AI launches Particle-1 (1M context, $0.05/$0.5)",
-      "summaryEn": "Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.05/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
-    },
-    {
-      "id": "rss-a836cb2b",
-      "title": "Learner collaborates with MIT peers to develop book of AI insights",
-      "summary": "Prabha Jha used her experience with MIT Open Learning’s program for senior executives to develop AI solutions for her employer, Verizon, and to write a book.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
-      "publishedAt": "2026-10-27T20:55:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
       "importance": 2,
-      "lang": "en"
+      "lang": "zh"
     },
     {
       "id": "rss-96b27cb4",
@@ -648,44 +946,6 @@
       "publishedAt": "2026-10-27T16:01:38.000Z",
       "tags": [
         "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "github-release-ollama-ollama-v0-40-12",
-      "title": "ollama/ollama 发布 v0.40.12",
-      "summary": "## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes: - [lfm3](https:/…",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/ollama/ollama/releases",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
-      "publishedAt": "2026-10-27T00:07:12.000Z",
-      "tags": [
-        "ollama",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en",
-      "titleEn": "ollama/ollama released v0.40.12",
-      "summaryEn": "## Liquid AI LFM3 [LFM3](https://ollama.com/library/lfm3) is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's new tri-hybrid architecture. The family includes: - [lfm3](https:/…"
-    },
-    {
-      "id": "rss-08d0c012",
-      "title": "At New York Climate Week 2026, MIT connects with a global network",
-      "summary": "A cross-section of the MIT community convened discussions on topics ranging from data centers and super pollutants to agriculture and education.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/at-new-york-climate-week-mit-connects-global-network-1026",
-      "publishedAt": "2026-10-26T19:00:00.000Z",
-      "tags": [
-        "MIT",
         "官方博客",
         "模型发布"
       ],
@@ -712,6 +972,8 @@
       "lang": "en"
     },
     {
+      "titleEn": "OpenAI launches GPT-6.1 Terra (1.1M context, $1/$5)",
+      "summaryEn": "OpenAI: GPT-6.1 Terra is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-openai-gpt-6-1-terra",
       "title": "OpenAI 上新：GPT-6.1 Terra（上下文 1.1M，$1/$5）",
       "summary": "OpenAI: GPT-6.1 Terra 进入 OpenRouter 目录：上下文 1.1M，$1/$5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -730,11 +992,11 @@
         "openai/gpt-6.1-terra"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "OpenAI launches GPT-6.1 Terra (1.1M context, $1/$5)",
-      "summaryEn": "OpenAI: GPT-6.1 Terra is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "lang": "zh"
     },
     {
+      "titleEn": "OpenAI launches GPT-6.1 Terra (batch) (1.1M context, $0.5/$2.5)",
+      "summaryEn": "OpenAI: GPT-6.1 Terra (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-openai-gpt-6-1-terra-batch",
       "title": "OpenAI 上新：GPT-6.1 Terra (batch)（上下文 1.1M，$0.5/$2.5）",
       "summary": "OpenAI: GPT-6.1 Terra (batch) 进入 OpenRouter 目录：上下文 1.1M，$0.5/$2.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -753,11 +1015,11 @@
         "openai/gpt-6.1-terra:batch"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "OpenAI launches GPT-6.1 Terra (batch) (1.1M context, $0.5/$2.5)",
-      "summaryEn": "OpenAI: GPT-6.1 Terra (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "lang": "zh"
     },
     {
+      "titleEn": "OpenAI launches GPT-6.1 Terra Pro (1.1M context, $1/$5)",
+      "summaryEn": "OpenAI: GPT-6.1 Terra Pro is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-openai-gpt-6-1-terra-pro",
       "title": "OpenAI 上新：GPT-6.1 Terra Pro（上下文 1.1M，$1/$5）",
       "summary": "OpenAI: GPT-6.1 Terra Pro 进入 OpenRouter 目录：上下文 1.1M，$1/$5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -776,11 +1038,11 @@
         "openai/gpt-6.1-terra-pro"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "OpenAI launches GPT-6.1 Terra Pro (1.1M context, $1/$5)",
-      "summaryEn": "OpenAI: GPT-6.1 Terra Pro is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "lang": "zh"
     },
     {
+      "titleEn": "OpenAI launches GPT-6.1 Terra Pro (batch) (1.1M context, $0.5/$2.5)",
+      "summaryEn": "OpenAI: GPT-6.1 Terra Pro (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-openai-gpt-6-1-terra-pro-batch",
       "title": "OpenAI 上新：GPT-6.1 Terra Pro (batch)（上下文 1.1M，$0.5/$2.5）",
       "summary": "OpenAI: GPT-6.1 Terra Pro (batch) 进入 OpenRouter 目录：上下文 1.1M，$0.5/$2.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -799,11 +1061,11 @@
         "openai/gpt-6.1-terra-pro:batch"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "OpenAI launches GPT-6.1 Terra Pro (batch) (1.1M context, $0.5/$2.5)",
-      "summaryEn": "OpenAI: GPT-6.1 Terra Pro (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "lang": "zh"
     },
     {
+      "titleEn": "MoonshotAI launches Kimi K3.1 Pro (1M context, $2/$10)",
+      "summaryEn": "MoonshotAI: Kimi K3.1 Pro is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-moonshotai-kimi-k3-1-pro",
       "title": "MoonshotAI 上新：Kimi K3.1 Pro（上下文 1M，$2/$10）",
       "summary": "MoonshotAI: Kimi K3.1 Pro 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
@@ -816,15 +1078,14 @@
         "MoonshotAI",
         "长上下文",
         "多模态",
-        "推理"
+        "推理",
+        "开源权重"
       ],
       "models": [
         "moonshotai/kimi-k3.1-pro"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "MoonshotAI launches Kimi K3.1 Pro (1M context, $2/$10)",
-      "summaryEn": "MoonshotAI: Kimi K3.1 Pro is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
+      "lang": "zh"
     },
     {
       "id": "rss-9e331ce5",
@@ -863,6 +1124,8 @@
       "lang": "en"
     },
     {
+      "titleEn": "Recursive launches Flint (free) (262K context, free/free)",
+      "summaryEn": "Recursive: Flint (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "id": "release-recursive-flint-v1-0-free",
       "title": "Recursive 上新：Flint (free)（上下文 262K，免费/免费）",
       "summary": "Recursive: Flint (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
@@ -882,14 +1145,14 @@
         "recursive/flint-v1.0:free"
       ],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "Recursive launches Flint (free) (262K context, free/free)",
-      "summaryEn": "Recursive: Flint (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling."
+      "lang": "zh"
     },
     {
+      "titleEn": "MiniMax launches MiniMax M3.1 Flash (1M context, $0.15/$0.6)",
+      "summaryEn": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-minimax-minimax-m3-1-flash",
-      "title": "MiniMax 上新：MiniMax M3.1 Flash（上下文 1M，$0.075/$0.3）",
-      "summary": "MiniMax: MiniMax M3.1 Flash 进入 OpenRouter 目录：上下文 1M，$0.075/$0.3 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
+      "title": "MiniMax 上新：MiniMax M3.1 Flash（上下文 1M，$0.15/$0.6）",
+      "summary": "MiniMax: MiniMax M3.1 Flash 进入 OpenRouter 目录：上下文 1M，$0.15/$0.6 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
       "kind": "release",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
@@ -905,12 +1168,12 @@
       "models": [
         "minimax/minimax-m3.1-flash"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "MiniMax launches MiniMax M3.1 Flash (1M context, $0.075/$0.3)",
-      "summaryEn": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "vllm-project/vllm released v0.32.0",
+      "summaryEn": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur…",
       "id": "github-release-vllm-project-vllm-v0-32-0",
       "title": "vllm-project/vllm 发布 v0.32.0",
       "summary": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur…",
@@ -926,11 +1189,11 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "en",
-      "titleEn": "vllm-project/vllm released v0.32.0",
-      "summaryEn": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur…"
+      "lang": "en"
     },
     {
+      "titleEn": "DeepSeek official update (2026-10-17): Opening up the in-house search API",
+      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
       "id": "release-deepseek-2026-10-17-a8222785",
       "title": "DeepSeek 官方更新（2026-10-17）：Opening up the in-house search API",
       "summary": "DeepSeek Change Log 2026-10-17：DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i…",
@@ -946,11 +1209,11 @@
       ],
       "models": [],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-10-17): Opening up the in-house search API",
-      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…"
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update",
+      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
       "id": "release-deepseek-2026-10-17-f84e3ffd",
       "title": "DeepSeek 官方更新（2026-10-17）：DeepSeek-V4.1-Flash-1017 Update",
       "summary": "DeepSeek Change Log 2026-10-17：DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i…",
@@ -966,14 +1229,14 @@
       ],
       "models": [],
       "importance": 2,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update",
-      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…"
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.006/$0.5)",
+      "summaryEn": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.006/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-deepseek-deepseek-v4-1-flash-1017",
-      "title": "DeepSeek 上新：DeepSeek V4.1 Flash 1017（上下文 1M，$0.15/$0.6）",
-      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 进入 OpenRouter 目录：上下文 1M，$0.15/$0.6 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "title": "DeepSeek 上新：DeepSeek V4.1 Flash 1017（上下文 1M，$0.006/$0.5）",
+      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 进入 OpenRouter 目录：上下文 1M，$0.006/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
       "kind": "release",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
@@ -989,12 +1252,36 @@
       "models": [
         "deepseek/deepseek-v4.1-flash-1017"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.15/$0.6)",
-      "summaryEn": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek launches DeepSeek V4.1 Flash 1017 (batch) (1M context, $0.011/$0.2)",
+      "summaryEn": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) is now on OpenRouter: 1M context, $0.011/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-deepseek-deepseek-v4-1-flash-1017-batch",
+      "title": "DeepSeek 上新：DeepSeek V4.1 Flash 1017 (batch)（上下文 1M，$0.011/$0.2）",
+      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) 进入 OpenRouter 目录：上下文 1M，$0.011/$0.2 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
+      "publishedAt": "2026-10-17T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "deepseek/deepseek-v4.1-flash-1017:batch"
+      ],
+      "importance": 1,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Elorian launches Glimpse (262K context, $0.6/$3)",
+      "summaryEn": "Elorian: Glimpse is now on OpenRouter: 262K context, $0.6/$3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-elorian-glimpse",
       "title": "Elorian 上新：Glimpse（上下文 262K，$0.6/$3）",
       "summary": "Elorian: Glimpse 进入 OpenRouter 目录：上下文 262K，$0.6/$3 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
@@ -1012,34 +1299,12 @@
       "models": [
         "elorian/glimpse"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Elorian launches Glimpse (262K context, $0.6/$3)",
-      "summaryEn": "Elorian: Glimpse is now on OpenRouter: 262K context, $0.6/$3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
-      "id": "release-inception-mercury-3",
-      "title": "Inception 上新：Mercury 3（上下文 1M，$0.1/$0.35）",
-      "summary": "Inception: Mercury 3 进入 OpenRouter 目录：上下文 1M，$0.1/$0.35 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/inception/mercury-3",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "Inception",
-        "长上下文",
-        "推理"
-      ],
-      "models": [
-        "inception/mercury-3"
-      ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Inception launches Mercury 3 (1M context, $0.1/$0.35)",
-      "summaryEn": "Inception: Mercury 3 is now on OpenRouter: 1M context, $0.1/$0.35 per 1M tokens, supports reasoning/structured-output/tool-calling."
-    },
-    {
+      "titleEn": "PrismML launches Ternary Bonsai 2 9B (262K context, $0.08/$0.13)",
+      "summaryEn": "PrismML: Ternary Bonsai 2 9B is now on OpenRouter: 262K context, $0.08/$0.13 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-prism-ml-ternary-bonsai-2-9b",
       "title": "PrismML 上新：Ternary Bonsai 2 9B（上下文 262K，$0.08/$0.13）",
       "summary": "PrismML: Ternary Bonsai 2 9B 进入 OpenRouter 目录：上下文 262K，$0.08/$0.13 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
@@ -1058,15 +1323,15 @@
       "models": [
         "prism-ml/ternary-bonsai-2-9b"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "PrismML launches Ternary Bonsai 2 9B (262K context, $0.08/$0.13)",
-      "summaryEn": "PrismML: Ternary Bonsai 2 9B is now on OpenRouter: 262K context, $0.08/$0.13 per 1M tokens, supports reasoning/structured-output/tool-calling/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "Reflection launches Beam 1.0 501B A23B (1M context, $0.3/$1)",
+      "summaryEn": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.3/$1 per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "id": "release-reflection-beam-1-0-501b-a23b",
-      "title": "Reflection 上新：Beam 1.0 501B A23B（上下文 1M，$0.25/$1）",
-      "summary": "Reflection: Beam 1.0 501B A23B 进入 OpenRouter 目录：上下文 1M，$0.25/$1 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "title": "Reflection 上新：Beam 1.0 501B A23B（上下文 1M，$0.3/$1）",
+      "summary": "Reflection: Beam 1.0 501B A23B 进入 OpenRouter 目录：上下文 1M，$0.3/$1 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
       "kind": "release",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
@@ -1081,12 +1346,12 @@
       "models": [
         "reflection/beam-1.0-501b-a23b"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Reflection launches Beam 1.0 501B A23B (1M context, $0.25/$1)",
-      "summaryEn": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.25/$1 per 1M tokens, supports reasoning/structured-output/tool-calling."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "XingChen launches Xing4.0 29B A4B (free) (262K context, free/free)",
+      "summaryEn": "XingChen: Xing4.0 29B A4B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "id": "release-xingchen-agi-xing4-0-29b-a4b-free",
       "title": "XingChen 上新：Xing4.0 29B A4B (free)（上下文 262K，免费/免费）",
       "summary": "XingChen: Xing4.0 29B A4B (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
@@ -1105,10 +1370,8 @@
       "models": [
         "xingchen-agi/xing4.0-29b-a4b:free"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "XingChen launches Xing4.0 29B A4B (free) (262K context, free/free)",
-      "summaryEn": "XingChen: Xing4.0 29B A4B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling."
+      "importance": 1,
+      "lang": "zh"
     },
     {
       "id": "rss-025b91b4",
@@ -1129,6 +1392,8 @@
       "lang": "en"
     },
     {
+      "titleEn": "Meta launches Muse Spark Open (1M context, $1.25/$4.25)",
+      "summaryEn": "Meta: Muse Spark Open is now on OpenRouter: 1M context, $1.25/$4.25 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-meta-muse-spark-open",
       "title": "Meta 上新：Muse Spark Open（上下文 1M，$1.25/$4.25）",
       "summary": "Meta: Muse Spark Open 进入 OpenRouter 目录：上下文 1M，$1.25/$4.25 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
@@ -1147,12 +1412,12 @@
       "models": [
         "meta/muse-spark-open"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Meta launches Muse Spark Open (1M context, $1.25/$4.25)",
-      "summaryEn": "Meta: Muse Spark Open is now on OpenRouter: 1M context, $1.25/$4.25 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "Moondream launches Moondream 3.1 (32K context, $0.3/$2.5)",
+      "summaryEn": "Moondream: Moondream 3.1 is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision.",
       "id": "release-moondream-moondream3-1-9b-a2b",
       "title": "Moondream 上新：Moondream 3.1（上下文 32K，$0.3/$2.5）",
       "summary": "Moondream: Moondream 3.1 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。",
@@ -1170,12 +1435,12 @@
       "models": [
         "moondream/moondream3.1-9b-a2b"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Moondream launches Moondream 3.1 (32K context, $0.3/$2.5)",
-      "summaryEn": "Moondream: Moondream 3.1 is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "Moondream launches Moondream 3 Preview (32K context, $0.3/$2.5)",
+      "summaryEn": "Moondream: Moondream 3 Preview is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision.",
       "id": "release-moondream-moondream3-preview",
       "title": "Moondream 上新：Moondream 3 Preview（上下文 32K，$0.3/$2.5）",
       "summary": "Moondream: Moondream 3 Preview 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。",
@@ -1193,12 +1458,12 @@
       "models": [
         "moondream/moondream3-preview"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Moondream launches Moondream 3 Preview (32K context, $0.3/$2.5)",
-      "summaryEn": "Moondream: Moondream 3 Preview is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)",
+      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-nvidia-nemotron-3-5-super-vl",
       "title": "NVIDIA 上新：Nemotron 3.5 Super VL（上下文 1M，$0.15/$0.5）",
       "summary": "NVIDIA: Nemotron 3.5 Super VL 进入 OpenRouter 目录：上下文 1M，$0.15/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
@@ -1217,12 +1482,12 @@
       "models": [
         "nvidia/nemotron-3.5-super-vl"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)",
-      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)",
+      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
       "id": "release-nvidia-nemotron-3-5-super-vl-free",
       "title": "NVIDIA 上新：Nemotron 3.5 Super VL (free)（上下文 1M，免费/免费）",
       "summary": "NVIDIA: Nemotron 3.5 Super VL (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
@@ -1242,12 +1507,12 @@
       "models": [
         "nvidia/nemotron-3.5-super-vl:free"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)",
-      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)",
+      "summaryEn": "Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision.",
       "id": "release-unbiased-pareto-26-10",
       "title": "Unbiased 上新：Pareto 26.10（上下文 1M，$0.8/$3.2）",
       "summary": "Pareto 26.10 进入 OpenRouter 目录：上下文 1M，$0.8/$3.2 每百万 tokens，支持 tool-calling/vision。",
@@ -1264,10 +1529,8 @@
       "models": [
         "unbiased/pareto-26.10"
       ],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)",
-      "summaryEn": "Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision."
+      "importance": 1,
+      "lang": "zh"
     },
     {
       "id": "rss-84ad2e83",
@@ -1278,42 +1541,6 @@
       "sourceUrl": "https://deepmind.google/blog/rss.xml",
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "publishedAt": "2026-10-14T02:00:14.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-be947196",
-      "title": "Developing Gemini 4 Argon responsibly and safely",
-      "summary": "Developing Gemini 4 Argon responsibly and safely",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "publishedAt": "2026-10-13T19:43:07.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-c2c7e340",
-      "title": "Gemini 4 Argon for Robotics",
-      "summary": "Gemini 4 Argon for Robotics",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
       "tags": [
         "Google DeepMind",
         "官方博客",
@@ -1342,209 +1569,6 @@
       "lang": "en"
     },
     {
-      "id": "release-google-gemini-4-argon",
-      "title": "Google 上新：Gemini 4 Argon（上下文 1M，$2/$10）",
-      "summary": "Google: Gemini 4 Argon 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/google/gemini-4-argon",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Google",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "google/gemini-4-argon"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "Google launches Gemini 4 Argon (1M context, $2/$10)",
-      "summaryEn": "Google: Gemini 4 Argon is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision."
-    },
-    {
-      "id": "release-google-gemini-4-argon-batch",
-      "title": "Google 上新：Gemini 4 Argon (batch)（上下文 1M，$1/$5）",
-      "summary": "Google: Gemini 4 Argon (batch) 进入 OpenRouter 目录：上下文 1M，$1/$5 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/google/gemini-4-argon:batch",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Google",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "google/gemini-4-argon:batch"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "Google launches Gemini 4 Argon (batch) (1M context, $1/$5)",
-      "summaryEn": "Google: Gemini 4 Argon (batch) is now on OpenRouter: 1M context, $1/$5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision."
-    },
-    {
-      "id": "release-liquid-lfm-2-5-24b-a2b",
-      "title": "LiquidAI 上新：LFM2.5-24B-A2B（上下文 128K，$0.05/$0.7）",
-      "summary": "LiquidAI: LFM2.5-24B-A2B 进入 OpenRouter 目录：上下文 128K，$0.05/$0.7 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "LiquidAI",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "liquid/lfm-2.5-24b-a2b"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "LiquidAI launches LFM2.5-24B-A2B (128K context, $0.05/$0.7)",
-      "summaryEn": "LiquidAI: LFM2.5-24B-A2B is now on OpenRouter: 128K context, $0.05/$0.7 per 1M tokens, supports reasoning/structured-output/tool-calling."
-    },
-    {
-      "id": "release-scaledown-extract",
-      "title": "ScaleDown 上新：Extract（上下文 1M，$0.04/免费）",
-      "summary": "ScaleDown: Extract 进入 OpenRouter 目录：上下文 1M，$0.04/免费 每百万 tokens，支持 vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/scaledown/extract",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "ScaleDown",
-        "长上下文",
-        "多模态"
-      ],
-      "models": [
-        "scaledown/extract"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "ScaleDown launches Extract (1M context, $0.04/free)",
-      "summaryEn": "ScaleDown: Extract is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision."
-    },
-    {
-      "id": "release-scaledown-summarize",
-      "title": "ScaleDown 上新：Summarize（上下文 1M，$0.04/免费）",
-      "summary": "ScaleDown: Summarize 进入 OpenRouter 目录：上下文 1M，$0.04/免费 每百万 tokens，支持 vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/scaledown/summarize",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "ScaleDown",
-        "长上下文",
-        "多模态"
-      ],
-      "models": [
-        "scaledown/summarize"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "ScaleDown launches Summarize (1M context, $0.04/free)",
-      "summaryEn": "ScaleDown: Summarize is now on OpenRouter: 1M context, $0.04/free per 1M tokens, supports vision."
-    },
-    {
-      "id": "release-unbiased-pareto-26-9",
-      "title": "Unbiased 上新：Pareto 26.9（上下文 262K，$2.5/$7.5）",
-      "summary": "Pareto 26.9 进入 OpenRouter 目录：上下文 262K，$2.5/$7.5 每百万 tokens，支持 structured-output/tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/unbiased/pareto-26.9",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "Unbiased",
-        "长上下文",
-        "多模态"
-      ],
-      "models": [
-        "unbiased/pareto-26.9"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "Unbiased launches Pareto 26.9 (262K context, $2.5/$7.5)",
-      "summaryEn": "Pareto 26.9 is now on OpenRouter: 262K context, $2.5/$7.5 per 1M tokens, supports structured-output/tool-calling/vision."
-    },
-    {
-      "id": "release-unbiased-pareto-latest",
-      "title": "~Unbiased 上新：Pareto Latest（上下文 1M，$0.8/$3.2）",
-      "summary": "Pareto Latest 进入 OpenRouter 目录：上下文 1M，$0.8/$3.2 每百万 tokens，支持 tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/~unbiased/pareto-latest",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "tags": [
-        "~Unbiased",
-        "长上下文",
-        "多模态"
-      ],
-      "models": [
-        "~unbiased/pareto-latest"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "~Unbiased launches Pareto Latest (1M context, $0.8/$3.2)",
-      "summaryEn": "Pareto Latest is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision."
-    },
-    {
-      "id": "release-meta-muse-wonder",
-      "title": "Meta 上新：Muse Wonder（上下文 1M，$4/$20）",
-      "summary": "Meta: Muse Wonder 进入 OpenRouter 目录：上下文 1M，$4/$20 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/meta/muse-wonder",
-      "publishedAt": "2026-10-12T00:00:00.000Z",
-      "tags": [
-        "Meta",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "meta/muse-wonder"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "Meta launches Muse Wonder (1M context, $4/$20)",
-      "summaryEn": "Meta: Muse Wonder is now on OpenRouter: 1M context, $4/$20 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision."
-    },
-    {
-      "id": "release-stepfun-step-5-preview",
-      "title": "StepFun 上新：Step 5 Preview（上下文 1M，$1/$2.7）",
-      "summary": "StepFun: Step 5 Preview 进入 OpenRouter 目录：上下文 1M，$1/$2.7 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/stepfun/step-5-preview",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "tags": [
-        "StepFun",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "stepfun/step-5-preview"
-      ],
-      "importance": 1,
-      "lang": "zh",
-      "titleEn": "StepFun launches Step 5 Preview (1M context, $1/$2.7)",
-      "summaryEn": "StepFun: Step 5 Preview is now on OpenRouter: 1M context, $1/$2.7 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision."
-    },
-    {
       "id": "rss-b7018172",
       "title": "Introducing Playground: Create and play custom games",
       "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games.",
@@ -1563,6 +1587,8 @@
       "lang": "en"
     },
     {
+      "titleEn": "vllm-project/vllm released v0.31.0",
+      "summaryEn": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp…",
       "id": "github-release-vllm-project-vllm-v0-31-0",
       "title": "vllm-project/vllm 发布 v0.31.0",
       "summary": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp…",
@@ -1578,9 +1604,7 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "en",
-      "titleEn": "vllm-project/vllm released v0.31.0",
-      "summaryEn": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp…"
+      "lang": "en"
     },
     {
       "id": "rss-3b38f89a",
@@ -1619,24 +1643,8 @@
       "lang": "en"
     },
     {
-      "id": "rss-a842098c",
-      "title": "Google Beam expands with new regions, partners, and customers",
-      "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network.",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
-      "publishedAt": "2026-09-23T18:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
+      "titleEn": "DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release",
+      "summaryEn": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
       "id": "release-deepseek-2026-09-10-36ec302b",
       "title": "DeepSeek 官方更新（2026-09-10）：DeepSeek-V4.1-Flash Release",
       "summary": "DeepSeek Change Log 2026-09-10：Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
@@ -1651,12 +1659,12 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release",
-      "summaryEn": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…"
+      "importance": 1,
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release",
+      "summaryEn": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-…",
       "id": "release-deepseek-2026-08-21-3fa111a9",
       "title": "DeepSeek 官方更新（2026-08-21）：DeepSeek-V4-Flash-Vision-Exp Release",
       "summary": "DeepSeek Change Log 2026-08-21：Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-v…",
@@ -1672,11 +1680,11 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release",
-      "summaryEn": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-…"
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update",
+      "summaryEn": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl…",
       "id": "release-deepseek-2026-08-13-7bb335ab",
       "title": "DeepSeek 官方更新（2026-08-13）：DeepSeek-V4-Pro Update",
       "summary": "DeepSeek Change Log 2026-08-13：The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantly…",
@@ -1692,11 +1700,11 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update",
-      "summaryEn": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl…"
+      "lang": "zh"
     },
     {
+      "titleEn": "DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update",
+      "summaryEn": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh…",
       "id": "release-deepseek-2026-07-31-c99ac55c",
       "title": "DeepSeek 官方更新（2026-07-31）：DeepSeek-V4-Flash Update",
       "summary": "DeepSeek Change Log 2026-07-31：The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enha…",
@@ -1712,9 +1720,7 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update",
-      "summaryEn": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh…"
+      "lang": "zh"
     },
     {
       "id": "rss-13684b5c",
@@ -1753,24 +1759,8 @@
       "lang": "en"
     },
     {
-      "id": "rss-69ff72b3",
-      "title": "Intelligence is Free, Now What? Data Systems for, of, and by Agents",
-      "summary": "... government of the people, by the people, for the people ... — Abraham Lincoln, Gettysburg Address (1863) The cost of AI is dropping rapidly. GPT-4-class capabilities cost roughly $30 per million tokens in early 2023; today the same run…",
-      "kind": "pricing",
-      "sourceName": "Berkeley BAIR",
-      "sourceUrl": "https://bair.berkeley.edu/blog/feed.xml",
-      "url": "https://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/",
-      "publishedAt": "2026-07-07T09:00:00.000Z",
-      "tags": [
-        "Berkeley BAIR",
-        "官方博客",
-        "定价"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
+      "titleEn": "DeepSeek official update (2026-04-24): DeepSeek-V4",
+      "summaryEn": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
       "id": "release-deepseek-2026-04-24-a1208998",
       "title": "DeepSeek 官方更新（2026-04-24）：DeepSeek-V4",
       "summary": "DeepSeek Change Log 2026-04-24：The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
@@ -1786,9 +1776,7 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "zh",
-      "titleEn": "DeepSeek official update (2026-04-24): DeepSeek-V4",
-      "summaryEn": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…"
+      "lang": "zh"
     }
   ]
 }

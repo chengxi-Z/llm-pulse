@@ -1,82 +1,66 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T16:50:38.301Z",
+  "generatedAt": "2026-11-09T09:56:12.598Z",
   "source": "hn-ai",
   "count": 10,
   "items": [
     {
-      "id": "hn-50305693",
-      "title": "AI isn't replacing SREs, it's deskilling them",
-      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-      "hnUrl": "https://news.ycombinator.com/item?id=50305693",
-      "domain": "newsletter.signoz.io",
-      "points": 680,
-      "comments": 501,
-      "publishedAt": "2026-10-30T15:52:18.000Z",
-      "summary": "I wanted to use this post as a source to write on my web server project's blog on why debuggable web infrastructure matters even if AI SRE agents exists, but t…",
+      "id": "hn-50354960",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "hnUrl": "https://news.ycombinator.com/item?id=50354960",
+      "domain": "github.com",
+      "points": 1526,
+      "comments": 496,
+      "publishedAt": "2026-11-03T17:22:37.000Z",
+      "summary": "Postman went from a great lightweight tool to a bloated up-selling mess.",
       "source": "Hacker News",
       "tags": [
         "AI"
       ]
     },
     {
-      "id": "hn-50264853",
-      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-      "url": "https://www.brangus.io/survival-llm",
-      "hnUrl": "https://news.ycombinator.com/item?id=50264853",
-      "domain": "brangus.io",
-      "points": 543,
-      "comments": 204,
-      "publishedAt": "2026-10-27T19:55:06.000Z",
-      "summary": "Nice idea! I wonder how the installed IBM Granite 4.2 8B LLM does on machines with \"modest\" RAM",
+      "id": "hn-50364336",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "hnUrl": "https://news.ycombinator.com/item?id=50364336",
+      "domain": "spectrum.ieee.org",
+      "points": 1305,
+      "comments": 749,
+      "publishedAt": "2026-11-04T11:52:17.000Z",
+      "summary": "Better sooner than later, to be honest.",
       "source": "Hacker News",
       "tags": [
         "AI",
-        "LLM"
+        "Security"
       ]
     },
     {
-      "id": "hn-50273396",
-      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
-      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50273396",
-      "domain": "religionnews.com",
-      "points": 494,
-      "comments": 556,
-      "publishedAt": "2026-10-28T13:41:30.000Z",
-      "summary": "> “The process and work involved in thinking through situations, through my work, through my ethics, through the way I handle other people, is a key component…",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "hn-50323088",
-      "title": "The AI cost of JavaScript frameworks",
-      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50323088",
-      "domain": "nolanlawson.com",
-      "points": 474,
-      "comments": 389,
-      "publishedAt": "2026-11-01T06:06:19.000Z",
-      "summary": "Unfortunately the author is not only correct about front end development vibes, but due to this state of affairs, I ceased to recognize browser based UIs as be…",
+      "id": "hn-50353192",
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "hnUrl": "https://news.ycombinator.com/item?id=50353192",
+      "domain": "nytimes.com",
+      "points": 674,
+      "comments": 470,
+      "publishedAt": "2026-11-03T15:25:47.000Z",
+      "summary": "I wonder if schools will manage to filter this. Probably on windows , but I'm less sure on chromebooks.",
       "source": "Hacker News",
       "tags": [
         "AI",
-        "Policy",
-        "Economics"
+        "Google"
       ]
     },
     {
-      "id": "hn-50296486",
-      "title": "We ran AI agent swarms in Minecraft and Mindustry",
-      "url": "https://labs.ycombinator.com/projects/games/index.html",
-      "hnUrl": "https://news.ycombinator.com/item?id=50296486",
-      "domain": "labs.ycombinator.com",
-      "points": 422,
-      "comments": 174,
-      "publishedAt": "2026-10-29T21:40:28.000Z",
-      "summary": "Interesting setups, I found the Minecraft agents to work in an almost turn-based manner, which makes me think that the three hours and open format did not real…",
+      "id": "hn-50366117",
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "url": null,
+      "hnUrl": "https://news.ycombinator.com/item?id=50366117",
+      "domain": null,
+      "points": 565,
+      "comments": 695,
+      "publishedAt": "2026-11-04T14:37:22.000Z",
+      "summary": "It used to be more interesting and elaborate, switching between different models. I used to use Cursor, then Codex, but since Opus 5.5 came out, I just use the…",
       "source": "Hacker News",
       "tags": [
         "AI",
@@ -84,82 +68,93 @@
       ]
     },
     {
-      "id": "hn-50339494",
-      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-      "hnUrl": "https://news.ycombinator.com/item?id=50339494",
-      "domain": "businessinsider.com",
-      "points": 341,
-      "comments": 265,
-      "publishedAt": "2026-11-02T16:40:29.000Z",
-      "summary": "all of that to hit two nines of uptime",
-      "source": "Hacker News",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "Economics"
-      ]
-    },
-    {
-      "id": "hn-50304122",
-      "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
-      "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50304122",
-      "domain": "fortune.com",
-      "points": 316,
-      "comments": 391,
-      "publishedAt": "2026-10-30T14:08:20.000Z",
-      "summary": "There's no goal mentioned in this article as why 98% of the code needs rewriting.",
+      "id": "hn-50336918",
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50336918",
+      "domain": "arstechnica.com",
+      "points": 537,
+      "comments": 232,
+      "publishedAt": "2026-11-02T14:02:42.000Z",
+      "summary": "Surely it’s AI, and not harvest-now-decrypt-later attacks, right?",
       "source": "Hacker News",
       "tags": [
         "AI"
       ]
     },
     {
-      "id": "hn-50307183",
-      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
-      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50307183",
-      "domain": "404media.co",
-      "points": 301,
-      "comments": 259,
-      "publishedAt": "2026-10-30T17:24:45.000Z",
-      "summary": "damn, this guy crashing out live in front of his company and the (tech) world. AI times are weird. Validates that truism I heard: money (and power and influenc…",
+      "id": "hn-50385870",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "hnUrl": "https://news.ycombinator.com/item?id=50385870",
+      "domain": "finance.yahoo.com",
+      "points": 520,
+      "comments": 232,
+      "publishedAt": "2026-11-05T23:09:57.000Z",
+      "summary": "Can we do YouTube next? Every YouTube ad these days is deception and fraud. We've completely normalised big tech pushing straight up scams on the population.",
       "source": "Hacker News",
       "tags": [
         "AI"
       ]
     },
     {
-      "id": "hn-50306008",
-      "title": "US tech stocks see sharp falls over AI cost fears",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
-      "hnUrl": "https://news.ycombinator.com/item?id=50306008",
-      "domain": "bbc.co.uk",
-      "points": 270,
-      "comments": 304,
-      "publishedAt": "2026-10-30T16:13:02.000Z",
-      "summary": "Google's AI search is abysmal and is almost always, at least, 30% wrong (outdated, wrong info) ime. I find that I just use the chat interface to save tokens on…",
+      "id": "hn-50406563",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "url": "https://hunch.net/?p=13764006",
+      "hnUrl": "https://news.ycombinator.com/item?id=50406563",
+      "domain": "hunch.net",
+      "points": 502,
+      "comments": 309,
+      "publishedAt": "2026-11-07T18:02:17.000Z",
+      "summary": "More here https://archive.is/AaY5O (Original https://hunch.net/?p=13764006 )",
       "source": "Hacker News",
       "tags": [
-        "AI",
-        "Economics"
+        "AI"
       ]
     },
     {
-      "id": "hn-50275626",
-      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
-      "url": "https://surgehq.ai/blog/dayjob-tax",
-      "hnUrl": "https://news.ycombinator.com/item?id=50275626",
-      "domain": "surgehq.ai",
-      "points": 266,
-      "comments": 174,
-      "publishedAt": "2026-10-28T15:46:30.000Z",
-      "summary": "My tax accountant mis-filed my taxes a couple years ago, which cost me about $20K (which I learned after I switched to another accountant later). Don't know if…",
+      "id": "hn-50358422",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "hnUrl": "https://news.ycombinator.com/item?id=50358422",
+      "domain": "asia.nikkei.com",
+      "points": 421,
+      "comments": 170,
+      "publishedAt": "2026-11-03T21:26:44.000Z",
+      "summary": "I very much hope this, and other threads on the financially insane behaviour of the tech sector get more surface. I don't think having this die in \"new\" is hel…",
       "source": "Hacker News",
       "tags": [
-        "AI",
-        "Agent"
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50358582",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "hnUrl": "https://news.ycombinator.com/item?id=50358582",
+      "domain": "arxiv.org",
+      "points": 394,
+      "comments": 60,
+      "publishedAt": "2026-11-03T21:40:53.000Z",
+      "summary": "My favorite little book is François Fleuret's: The Little Book of Deep Learning https://fleuret.org/francois/lbdl.html",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-50397994",
+      "title": "AI is dramatically accelerating AI research",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+      "hnUrl": "https://news.ycombinator.com/item?id=50397994",
+      "domain": "planned-obsolescence.org",
+      "points": 374,
+      "comments": 354,
+      "publishedAt": "2026-11-06T20:27:23.000Z",
+      "summary": "Not trying to discredit the premise but I do wonder how much this is from vertical scaling of model intelligence in weights vs the sheer amount of capital bein…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
       ]
     }
   ]
