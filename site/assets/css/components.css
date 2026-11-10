@@ -3512,5 +3512,7 @@ html,body{overflow-x:clip}
   .header-actions{gap:4px}
 }
 
-/* Ranking rows: official model release date next to the organization */
+/* Ranking rows: release date on the left, organization on the right */
+.rank-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:3px}
+.rank-meta .rank-org{display:block;margin-top:0;margin-left:auto;text-align:right}
 .rank-release{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}

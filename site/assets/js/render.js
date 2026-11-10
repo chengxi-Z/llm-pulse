@@ -629,7 +629,7 @@ function rankingReleaseTag(value) {
 
 function rankingOrgHtml(entry) {
   const tag = rankingReleaseTag(rankingReleaseDate(entry));
-  return `<span class="rank-org">${esc((entry && entry.org) || '')}${tag ? ` <span class="rank-release">${esc(tag)}</span>` : ''}</span>`;
+  return `<span class="rank-meta">${tag ? `<span class="rank-release">${esc(tag)}</span>` : ''}<span class="rank-org">${esc((entry && entry.org) || '')}</span></span>`;
 }
 
 function rankPanelHtml(board) {
