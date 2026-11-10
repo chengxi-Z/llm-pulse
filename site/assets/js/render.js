@@ -629,7 +629,13 @@ function rankingReleaseTag(value) {
 
 function rankingOrgHtml(entry) {
   const tag = rankingReleaseTag(rankingReleaseDate(entry));
-  return `<span class="rank-meta"><span class="rank-org">${esc((entry && entry.org) || '')}</span>${tag ? ` <span class="rank-release">${esc(tag)}</span>` : ''}</span>`;
+  const org = (entry && entry.org) || '';
+  return `<span class="rank-meta"><span class="rank-org" title="${esc(org)}">${esc(org)}</span>${tag ? ` <span class="rank-release">${esc(tag)}</span>` : ''}</span>`;
+}
+
+function rankOrgColumnCh(entries) {
+  const max = (Array.isArray(entries) ? entries : []).reduce((n, entry) => Math.max(n, String((entry && entry.org) || '').length), 0);
+  return Math.max(8, max + 1);
 }
 
 function rankPanelHtml(board) {
@@ -648,7 +654,7 @@ function rankPanelHtml(board) {
     )
     .join('');
 
-  return `<div class="rank-panel">
+  return `<div class="rank-panel" style="--rank-org-ch:${rankOrgColumnCh(visibleEntries)}">
   <table class="rank-table">
     <caption class="u-visually-hidden">${esc(boardName(board))} ${t('rankings.topN', { n: intlNumber(entries.length) })}</caption>
     <thead><tr><th scope="col">${esc(t('rankings.thRank'))}</th><th scope="col">${esc(t('rankings.thModel'))}</th><th scope="col">${esc(metricName)}</th></tr></thead>
@@ -1275,7 +1281,7 @@ function rankingsBoardHtml(board, index, expanded = false, boards = []) {
     })
     .join('');
 
-  return `<div class="rank-panel rank-panel--full">
+  return `<div class="rank-panel rank-panel--full" style="--rank-org-ch:${rankOrgColumnCh(visibleEntries)}">
     <header class="rank-panel-head">
       <div>
         <p class="eyebrow"><span class="eyebrow-idx">${String(index + 1).padStart(2, '0')}</span> ${esc(
