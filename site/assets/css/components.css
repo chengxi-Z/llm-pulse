@@ -3511,3 +3511,6 @@ html,body{overflow-x:clip}
   .nav-list a{font-size:0.75rem}
   .header-actions{gap:4px}
 }
+
+/* Ranking rows: official model release date next to the organization */
+.rank-release{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}

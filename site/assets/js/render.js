@@ -583,6 +583,55 @@ function modelCardHtml(model, { externalLink = false, compareCheckbox = '' } = {
 </article>`;
 }
 
+
+/* ---------- Ranking release dates ---------- */
+
+let rankingReleaseIndex = new Map();
+
+/** Build a release-date lookup from the model catalog (vendor-prefix aware). */
+function buildRankingReleaseIndex(modelsData) {
+  const index = new Map();
+  const list = Array.isArray(modelsData && modelsData.models) ? modelsData.models : [];
+  for (const model of list) {
+    if (!model || !model.releaseDate) continue;
+    const raw = String(model.name || '');
+    const keys = [modelKey(raw)];
+    if (raw.includes(':')) keys.push(modelKey(raw.split(':').slice(1).join(':')));
+    for (const key of keys) {
+      if (key && !index.has(key)) index.set(key, model.releaseDate);
+    }
+  }
+  return index;
+}
+
+/** Official release date for a leaderboard entry, never guessed. */
+function rankingReleaseDate(entry) {
+  if (!entry) return '';
+  if (entry.releaseDate) return String(entry.releaseDate);
+  const tokens = modelKey(entry.model || '').split(' ').filter(Boolean);
+  const candidates = [tokens.join(' ')];
+  // Trim a trailing YYYY MM DD date suffix (e.g. "GPT-5.4 Pro 2026.03.05").
+  if (tokens.length >= 4 && /^\d{4}$/.test(tokens[tokens.length - 3]) && /^\d{2}$/.test(tokens[tokens.length - 2]) && /^\d{2}$/.test(tokens[tokens.length - 1])) {
+    candidates.push(tokens.slice(0, -3).join(' '));
+  }
+  for (const key of candidates) {
+    const date = rankingReleaseIndex.get(key);
+    if (date) return date;
+  }
+  return '';
+}
+
+/** Format a date as [YYYY.MM.DD] for the org line. */
+function rankingReleaseTag(value) {
+  const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return match ? `[${match[1]}.${match[2]}.${match[3]}]` : '';
+}
+
+function rankingOrgHtml(entry) {
+  const tag = rankingReleaseTag(rankingReleaseDate(entry));
+  return `<span class="rank-org">${esc((entry && entry.org) || '')}${tag ? ` <span class="rank-release">${esc(tag)}</span>` : ''}</span>`;
+}
+
 function rankPanelHtml(board) {
   const entries = (Array.isArray(board.entries) ? board.entries : []).slice(0, 5);
   const metricName = boardMetricName(board) || t('ui.metricFallback');
@@ -591,7 +640,7 @@ function rankPanelHtml(board) {
     .map(
       (entry) => `<tr>
       <td class="rank-no">${esc(String(entry.rank).padStart(2, '0'))}</td>
-      <td><span class="rank-model">${esc(entry.model)}</span><span class="rank-org">${esc(entry.org || '')}</span></td>
+      <td><span class="rank-model">${esc(entry.model)}</span>${rankingOrgHtml(entry)}</td>
       <td class="rank-score">${esc(entry.scoreDisplay || intlNumber(entry.score))}${
         entry.delta ? `<span class="rank-delta">${entry.delta > 0 ? '↑' : '↓'} ${esc(Math.abs(entry.delta))}</span>` : ''
       }</td>
@@ -625,6 +674,7 @@ function rankPanelHtml(board) {
 }
 
 function renderHomeRankings(data) {
+  rankingReleaseIndex = buildRankingReleaseIndex(data.models);
   const tabsEl = $('#home-rankings-tabs');
   const panelEl = $('#home-rankings-board');
   if (!tabsEl || !panelEl) return;
@@ -1018,6 +1068,7 @@ export function initNews(data) {
 
 export function initRankings(data) {
   renderDataBanner(data);
+  rankingReleaseIndex = buildRankingReleaseIndex(data.models);
   const boards = Array.isArray(data.rankings && data.rankings.boards) ? data.rankings.boards : [];
   const meta = data.meta || {};
   setText('#rankings-total', intlNumber(boards.length));
@@ -1207,7 +1258,7 @@ function rankingsBoardHtml(board, index, expanded = false, boards = []) {
       }</td>
       <td>
         <span class="rank-model">${esc(entry.model || '—')}</span>
-        <span class="rank-org">${esc(entry.org || '')}</span>
+        ${rankingOrgHtml(entry)}
       </td>
       <td class="rank-score">${esc(entry.scoreDisplay || intlNumber(entry.score))}</td>
       ${hasVotes ? `<td class="rank-extra">${entry.votes == null ? '—' : esc(intlNumber(entry.votes))}</td>` : ''}
