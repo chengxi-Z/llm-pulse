@@ -1022,16 +1022,26 @@ export function normalizeHnTopics(searchPayload, { now, limit = HN_TOPIC_LIMIT, 
  */
 export function normalizeOpenRouterUsage(payload, { now } = {}) {
   const points = payload && payload.data && Array.isArray(payload.data.data) ? payload.data.data : [];
+  const nowDate = now == null ? new Date() : (now instanceof Date ? now : new Date(now));
+  const nowMs = Number.isFinite(nowDate.getTime()) ? nowDate.getTime() : Date.now();
+  const WEEK_MS = 7 * 86400000;
   const weeks = points
     .filter((point) => point && typeof point.x === 'string' && point.ys && typeof point.ys === 'object')
-    .map((point) => ({
-      weekStart: point.x,
-      tokens: Object.values(point.ys).reduce((sum, value) => sum + (Number(value) || 0), 0),
-    }))
+    .map((point) => {
+      // OpenRouter's chart is weekly (x = Monday). The most recent point is
+      // week-to-date and must not be compared against fully elapsed weeks.
+      const startMs = Date.parse(`${String(point.x).slice(0, 10)}T00:00:00Z`);
+      return {
+        weekStart: point.x,
+        tokens: Object.values(point.ys).reduce((sum, value) => sum + (Number(value) || 0), 0),
+        complete: Number.isFinite(startMs) && startMs + WEEK_MS <= nowMs,
+      };
+    })
     .filter((point) => point.tokens > 0)
     .sort((a, b) => (a.weekStart < b.weekStart ? -1 : a.weekStart > b.weekStart ? 1 : 0))
     .slice(-12);
-  const last4 = weeks.slice(-4);
+  const completeWeeks = weeks.filter((week) => week.complete);
+  const last4 = (completeWeeks.length ? completeWeeks : weeks).slice(-4);
   const monthlyTokens = last4.reduce((sum, point) => sum + point.tokens, 0);
   return {
     schemaVersion: 1,
@@ -1042,7 +1052,7 @@ export function normalizeOpenRouterUsage(payload, { now } = {}) {
     weeks,
     monthlyTokens,
     monthlyDays: last4.length * 7,
-    note: 'OpenRouter public rankings chart: weekly tokens processed across its API.',
+    note: 'OpenRouter public rankings chart: weekly tokens processed across its API. The in-progress week is flagged complete=false and excluded from totals.',
   };
 }
 

@@ -249,9 +249,17 @@ if (usage) {
     weeks.forEach((w, i) => {
       if (!w || typeof w.weekStart !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(w.weekStart)) err(`[usage[${i}]] weekStart 非法`);
       if (!(Number(w.tokens) >= 0)) err(`[usage[${i}]] tokens 非法`);
+      if (w.complete !== undefined && typeof w.complete !== "boolean") err(`[usage[${i}]] complete 应为布尔值`);
     });
     for (let i = 1; i < weeks.length; i += 1) {
       if (weeks[i].weekStart <= weeks[i - 1].weekStart) err(`[usage] weeks 未按时间升序`);
+    }
+    // Only the newest week may be in progress; a partial week in the middle
+    // would silently distort the trend line.
+    const partialIdx = weeks.findIndex((w) => w.complete === false);
+    if (partialIdx >= 0 && partialIdx !== weeks.length - 1) warn(`[usage] 未完成周不在末尾（index=${partialIdx}），趋势口径可能失真`);
+    if (partialIdx >= 0 && Number(usage.monthlyDays) !== weeks.filter((w) => w.complete !== false).slice(-4).length * 7) {
+      warn(`[usage] monthlyDays 与完整周数不一致`);
     }
   }
 }

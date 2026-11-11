@@ -219,7 +219,10 @@
 .dash-trend-area{fill:rgb(var(--rgb-highlight)/.1)}
 .dash-trend-line{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
 .dash-trend-dot{fill:var(--highlight);stroke:var(--surface);stroke-width:1.2}
+.dash-trend-partial-line{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-dasharray:3 3;stroke-linecap:round;opacity:.75}
+.dash-trend-partial-dot{fill:var(--surface);stroke:var(--muted);stroke-width:1.4}
 .dash-kpi-trend-note{margin:0;color:var(--muted);font-size:0.6875rem;line-height:1.5}
+.dash-kpi-trend-partial{margin:3px 0 0;color:var(--muted);font-size:0.6875rem;line-height:1.5;font-style:italic}
 @media (max-width:640px){
   .dash-kpi-trend{left:0;right:auto;width:min(260px,calc(100vw - 32px))}
 }

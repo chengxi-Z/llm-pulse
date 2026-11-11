@@ -92,8 +92,21 @@ function computeMetrics(data) {
   models.forEach((model) => orgCounts.set(model.org || '—', (orgCounts.get(model.org || '—') || 0) + 1));
   const contextTotal = models.reduce((sum, model) => sum + (Number(model.contextWindow) || 0), 0);
   const usageWeeks = (data.usage && Array.isArray(data.usage.weeks) ? data.usage.weeks : []).slice(-12);
-  const usageMonthly = Number(data.usage && data.usage.monthlyTokens) || usageWeeks.slice(-4).reduce((sum, point) => sum + Number(point.tokens || 0), 0);
-  const usageDays = Number(data.usage && data.usage.monthlyDays) || usageWeeks.slice(-4).length * 7;
+  // OpenRouter's public chart is weekly; its newest point is week-to-date and
+  // must never be compared against fully elapsed weeks. Prefer the normalizer's
+  // `complete` flag, but fall back to a calendar check for older snapshots.
+  const usageNowMs = generatedAt instanceof Date && Number.isFinite(generatedAt.getTime()) ? generatedAt.getTime() : Date.now();
+  const usageIsComplete = (week) => {
+    if (typeof week.complete === 'boolean') return week.complete;
+    const start = Date.parse(`${String(week.weekStart || '').slice(0, 10)}T00:00:00Z`);
+    return Number.isFinite(start) && start + 7 * 86400000 <= usageNowMs;
+  };
+  const usageCompleteWeeks = usageWeeks.filter(usageIsComplete);
+  const usagePartialWeek = usageWeeks.find((week) => !usageIsComplete(week)) || null;
+  const usageLast4 = usageCompleteWeeks.slice(-4);
+  const usageMonthly = usageLast4.reduce((sum, point) => sum + (Number(point.tokens) || 0), 0)
+    || (Number(data.usage && data.usage.monthlyTokens) || 0);
+  const usageDays = usageLast4.length * 7 || (Number(data.usage && data.usage.monthlyDays) || 0);
   const since7 = addDays(generatedAt, -7);
   const newModels = models.filter((model) => {
     const date = new Date(model.releaseDate || '');
@@ -166,6 +179,8 @@ function computeMetrics(data) {
     orgsCount: new Set(models.map((model) => model.org).filter(Boolean)).size,
     contextTotal,
     usageWeeks,
+    usageCompleteWeeks,
+    usagePartialWeek,
     usageMonthly,
     usageDays,
     newModels,
@@ -204,28 +219,45 @@ function kpiDefinitions(metrics) {
   ];
 }
 function usageTrendHtml(metrics) {
-  const weeks = metrics.usageWeeks || [];
-  if (weeks.length < 2) return '';
+  const complete = metrics.usageCompleteWeeks || [];
+  const partial = metrics.usagePartialWeek || null;
+  if (complete.length < 2) return '';
   const width = 248;
   const height = 78;
   const pad = 8;
-  const max = Math.max(...weeks.map((point) => Number(point.tokens) || 0));
-  const min = Math.min(...weeks.map((point) => Number(point.tokens) || 0));
+  // Scale from fully elapsed weeks only: a week-to-date point is not a full
+  // period and must not stretch the axis (that produced the false cliff).
+  const values = complete.map((point) => Number(point.tokens) || 0);
+  const max = Math.max(...values);
+  const min = Math.min(...values);
   const span = max - min || 1;
-  const xFor = (index) => pad + (index / (weeks.length - 1)) * (width - pad * 2);
+  const slots = complete.length + (partial ? 1 : 0);
+  const xFor = (index) => pad + (index / (slots - 1)) * (width - pad * 2);
   const yFor = (value) => height - pad - ((Number(value) - min) / span) * (height - pad * 2);
-  const points = weeks.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.tokens).toFixed(1)}`);
-  const area = `M${pad},${height - pad} L${points.join(' L')} L${width - pad},${height - pad} Z`;
-  const first = weeks[0];
-  const last = weeks[weeks.length - 1];
-  return `<div class="dash-kpi-trend" role="img" aria-label="${esc(t('dashboard.kpi.trendAria'))}">
+  const clampY = (value) => Math.max(pad, Math.min(height - pad, yFor(value)));
+  const points = complete.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.tokens).toFixed(1)}`);
+  const lastX = xFor(complete.length - 1);
+  const lastY = yFor(complete[complete.length - 1].tokens);
+  const area = `M${pad},${height - pad} L${points.join(' L')} L${lastX.toFixed(1)},${height - pad} Z`;
+  const first = complete[0];
+  const last = complete[complete.length - 1];
+  let partialMarkup = '';
+  if (partial) {
+    const px = xFor(complete.length);
+    const py = clampY(partial.tokens);
+    partialMarkup = `<line class="dash-trend-partial-line" x1="${lastX.toFixed(1)}" y1="${lastY.toFixed(1)}" x2="${px.toFixed(1)}" y2="${py.toFixed(1)}" />
+      <circle class="dash-trend-partial-dot" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="2.6" />`;
+  }
+  return `<div class="dash-kpi-trend" role="img" aria-label="${esc(t('dashboard.kpi.trendAria', { weeks: intlNumber(complete.length) }))}">
     <p class="dash-kpi-trend-title">${esc(t('dashboard.kpi.trendTitle'))}</p>
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="xMidYMid meet" focusable="false" aria-hidden="true">
       <path class="dash-trend-area" d="${area}" />
       <polyline class="dash-trend-line" points="${points.join(' ')}" />
-      <circle class="dash-trend-dot" cx="${xFor(weeks.length - 1).toFixed(1)}" cy="${yFor(last.tokens).toFixed(1)}" r="2.6" />
+      ${partialMarkup}
+      <circle class="dash-trend-dot" cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.6" />
     </svg>
-    <p class="dash-kpi-trend-note">${esc(t('dashboard.kpi.trendNote', { weeks: intlNumber(weeks.length), start: intlShortDate(first.weekStart), end: intlShortDate(last.weekStart) }))}</p>
+    <p class="dash-kpi-trend-note">${esc(t('dashboard.kpi.trendNote', { weeks: intlNumber(complete.length), start: intlShortDate(first.weekStart), end: intlShortDate(last.weekStart) }))}</p>
+    ${partial ? `<p class="dash-kpi-trend-partial">${esc(t('dashboard.kpi.trendPartial', { value: compactNumber(partial.tokens) }))}</p>` : ''}
   </div>`;
 }
 function renderKpis(metrics) {
