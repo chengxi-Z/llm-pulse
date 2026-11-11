@@ -150,6 +150,10 @@
   .dash-topics{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:640px){
+  /* dash-rise leaves a transform on .dash-kpi, which becomes the containing
+     block for the position:fixed trend popover and pushes it off-screen left.
+     Skip the entrance animation on small screens so fixed stays viewport-bound. */
+  .dashboard.is-in .dash-kpi{animation:none}
   .dash-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
   .dash-kpi-value{font-size:1.75rem}
   .dash-axis-label--alt{display:none}
