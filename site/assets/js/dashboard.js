@@ -210,8 +210,8 @@ function computeMetrics(data) {
 }
 function kpiDefinitions(metrics) {
   return [
-    { id: 'models', label: t('dashboard.kpi.models'), value: metrics.modelsCount, hint: t('dashboard.kpi.modelsHint', { n: intlNumber(metrics.orgsCount) }) },
     { id: 'usage', label: t('dashboard.kpi.tokens'), value: metrics.usageMonthly, format: 'tokens', unit: 'tokens', hint: t('dashboard.kpi.tokensHint', { days: intlNumber(metrics.usageDays) }) },
+    { id: 'models', label: t('dashboard.kpi.models'), value: metrics.modelsCount, hint: t('dashboard.kpi.modelsHint', { n: intlNumber(metrics.orgsCount) }) },
     { id: 'newModels', label: t('dashboard.kpi.newModels'), value: metrics.newModels, hint: t('dashboard.kpi.newModelsHint', { n: intlNumber(metrics.newModelsDays) }) },
     { id: 'boards', label: t('dashboard.kpi.boards'), value: metrics.boardsCount, hint: t('dashboard.kpi.boardsHint', { n: intlNumber(metrics.boardSources) }) },
     { id: 'sources', label: t('dashboard.kpi.sources'), value: metrics.sourcesOk, total: metrics.sourcesTotal, format: 'ratio', hint: t('dashboard.kpi.sourcesHint') },
