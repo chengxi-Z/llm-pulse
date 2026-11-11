@@ -654,7 +654,7 @@ function rankPanelHtml(board) {
     )
     .join('');
 
-  return `<div class="rank-panel" style="--rank-org-ch:${rankOrgColumnCh(visibleEntries)}">
+  return `<div class="rank-panel" style="--rank-org-ch:${rankOrgColumnCh(entries)}">
   <table class="rank-table">
     <caption class="u-visually-hidden">${esc(boardName(board))} ${t('rankings.topN', { n: intlNumber(entries.length) })}</caption>
     <thead><tr><th scope="col">${esc(t('rankings.thRank'))}</th><th scope="col">${esc(t('rankings.thModel'))}</th><th scope="col">${esc(metricName)}</th></tr></thead>
