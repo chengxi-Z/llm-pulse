@@ -224,7 +224,15 @@
 .dash-kpi-trend-note{margin:0;color:var(--muted);font-size:0.6875rem;line-height:1.5}
 .dash-kpi-trend-partial{margin:3px 0 0;color:var(--muted);font-size:0.6875rem;line-height:1.5;font-style:italic}
 @media (max-width:640px){
-  .dash-kpi-trend{left:0;right:auto;width:min(260px,calc(100vw - 32px))}
+  /* The usage KPI sits in the right column of the 2-column grid, so a
+     left-anchored popover overflows the viewport and its text gets clipped.
+     On small screens show it as a centered, viewport-bound card instead:
+     tap the KPI (focus-within) to open, tap elsewhere to dismiss. */
+  .dash-kpi[data-kpi="usage"] .dash-kpi-trend{position:fixed;top:50%;left:50%;right:auto;bottom:auto;width:min(340px,calc(100vw - 32px));padding:14px 16px 12px;transform:translate(-50%,-48%);z-index:90;box-shadow:0 18px 52px -14px rgb(var(--rgb-shadow)/.38)}
+  .dash-kpi[data-kpi="usage"]:hover .dash-kpi-trend,
+  .dash-kpi[data-kpi="usage"]:focus-within .dash-kpi-trend{transform:translate(-50%,-50%)}
+  .dash-kpi-trend-title{font-size:.82rem}
+  .dash-kpi-trend-note,.dash-kpi-trend-partial{font-size:.75rem}
 }
 
 /* v1.5.6: scatter model search / autocomplete / highlight */
