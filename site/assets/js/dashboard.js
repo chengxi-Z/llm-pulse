@@ -1,6 +1,7 @@
 import { t, getLang } from './i18n.js';
 import { intlNumber, intlDateTime, intlShortDate } from './render.js';
 import { escapeHtml as esc, safeHttpUrl } from './data.js';
+import { filterAihotNews, filterAihotSources, topicsForLang } from './aihot-scope.mjs';
 import { buildRankingIndex, collectCapabilityCostPointsForSource, median as medianOf } from './data-match.js';
 const COUNT_UP_MS = 900;
 const PRICE_TIERS = ['free', 'low', 'mid', 'high', 'premium'];
@@ -85,8 +86,8 @@ function computeMetrics(data) {
   const models = (data.models && data.models.models) || [];
   const meta = data.meta || {};
   const boards = (data.rankings && data.rankings.boards) || [];
-  const news = (data.news && data.news.items) || [];
-  const sources = Array.isArray(meta.sources) ? meta.sources : [];
+  const news = filterAihotNews(data.news && data.news.items, getLang());
+  const sources = filterAihotSources(meta.sources, getLang());
   const generatedAt = meta.generatedAt ? new Date(meta.generatedAt) : new Date();
   const orgCounts = new Map();
   models.forEach((model) => orgCounts.set(model.org || '—', (orgCounts.get(model.org || '—') || 0) + 1));
@@ -173,7 +174,7 @@ function computeMetrics(data) {
       else quadrant.kill += 1;
     });
   }
-  const topics = (data.topics && Array.isArray(data.topics.items) ? data.topics.items : []).slice(0, 10);
+  const topics = topicsForLang(data.topics, getLang()).slice(0, 10);
   return {
     modelsCount: models.length,
     orgsCount: new Set(models.map((model) => model.org).filter(Boolean)).size,

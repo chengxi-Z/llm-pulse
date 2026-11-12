@@ -17,11 +17,18 @@ import {
   debounce,
 } from './data.js';
 import { t, getLang } from './i18n.js';
+import { filterAihotNews, filterAihotSources } from './aihot-scope.mjs';
 import { createCompare } from './compare.js';
 import { findGapModels, matchesModelNames, modelKey } from './ranking-gaps.js';
 
 /* External-data links must pass the http(s) allowlist; internal links stay as-is. */
 const safeHref = safeHttpUrl;
+
+/* AI Hot is Chinese-only. The English edition sees neither AIHOT Updates
+   entries nor the AIHOT information source; every reader below uses these
+   helpers instead of touching data.news.items / meta.sources directly. */
+const newsItemsOf = (data) => filterAihotNews(data && data.news && data.news.items, getLang());
+const sourcesOf = (meta) => filterAihotSources(meta && meta.sources, getLang());
 
 const SOURCE_NAME_EN = {
   openrouter: 'OpenRouter Models API',
@@ -435,10 +442,11 @@ function renderStats(data) {
   const meta = data.meta || {};
   const stats = meta.stats || {};
   const models = (data.models && data.models.models) || [];
-  const news = (data.news && data.news.items) || [];
+  const news = newsItemsOf(data);
 
   setText('#stat-models', intlNumber(stats.models == null ? models.length : stats.models));
-  setText('#stat-news', intlNumber(stats.news == null ? news.length : stats.news));
+  const newsCount = getLang() === 'en' ? news.length : (stats.news == null ? news.length : stats.news);
+  setText('#stat-news', intlNumber(newsCount));
   const updatedEl = $('#stat-updated');
   if (updatedEl) {
     const full = intlDateTime(meta.generatedAt);
@@ -449,7 +457,7 @@ function renderStats(data) {
   }
 
   renderInto('#sources-status', () => {
-    const sources = Array.isArray(meta.sources) ? meta.sources : [];
+    const sources = sourcesOf(meta);
     if (!sources.length) return `<p class="source-summary">${t('home.sources.unavailable')}</p>`;
     const counts = sources.reduce(
       (acc, source) => {
@@ -766,14 +774,14 @@ function newsRowHtml(item) {
 
 function renderLatestNews(data) {
   renderInto('#latest-news', () => {
-    const items = Array.isArray(data.news && data.news.items) ? data.news.items.slice() : [];
+    const items = newsItemsOf(data);
     if (!items.length) {
       return emptyHtml({ title: t('home.news.empty.title'), desc: t('home.news.empty.desc') });
     }
     items.sort((a, b) => (Date.parse(b.publishedAt || '') || 0) - (Date.parse(a.publishedAt || '') || 0));
     return items.slice(0, 5).map((item) => newsRowHtml(item)).join('');
   });
-  const count = (data.news && data.news.items && data.news.items.length) || 0;
+  const count = newsItemsOf(data).length;
   setText('#latest-news-count', t('home.news.count', { n: intlNumber(count) }));
 }
 
@@ -788,7 +796,7 @@ function renderExploreCounts(data) {
 
 export function initNews(data) {
   renderDataBanner(data);
-  const items = Array.isArray(data.news && data.news.items) ? data.news.items.slice() : [];
+  const items = newsItemsOf(data);
   const meta = data.meta || {};
   const listEl = $('#news-list');
   const filtersEl = $('#news-filters');
@@ -2051,10 +2059,10 @@ export function initAbout(data) {
   renderDataBanner(data);
   const renderAbout = () => {
   const meta = data.meta || {};
-  const sources = Array.isArray(meta.sources) ? meta.sources : [];
+  const sources = sourcesOf(meta);
   const counts = {
     models: (data.models && data.models.models && data.models.models.length) || 0,
-    news: (data.news && data.news.items && data.news.items.length) || 0,
+    news: newsItemsOf(data).length,
     boards: (data.rankings && data.rankings.boards && data.rankings.boards.length) || 0,
     resources: (data.resources && data.resources.items && data.resources.items.length) || 0,
     projects: (data.projects && data.projects.items && data.projects.items.length) || 0,

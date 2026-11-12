@@ -22,7 +22,8 @@ import {
 import { initI18n, t, getLang, setLang, onLangChange, applyDom } from './i18n.js';
 import { initSkills, refreshSkills } from './skills.js';
 import { initDashboard, refreshDashboard } from './dashboard.js';
-import { initAiHot, initHomeAihot } from './aihot.js';
+import { initAiHot, initHomeAihot, applyAiHotGate } from './aihot.js';
+import { isAiHotEnabled } from './aihot-scope.mjs';
 
 const PAGE_INITS = {
   index: initHome,
@@ -563,6 +564,14 @@ async function boot() {
     }
   }
 
+  applyAiHotGate();
+
+  // AI Hot is Chinese-only: never let the English edition stay on that route.
+  if (document.body.dataset.page === 'aihot' && !isAiHotEnabled(getLang())) {
+    location.replace('index.html' + location.search + location.hash);
+    return;
+  }
+
   setupTheme();
   setupToTop();
   setupNav();
@@ -571,6 +580,11 @@ async function boot() {
   setupForms();
   setupCopyButtons();
   onLangChange(refreshStaticChrome);
+  onLangChange((lang) => {
+    if (document.body.dataset.page === 'aihot' && !isAiHotEnabled(lang)) {
+      location.replace('index.html' + location.search + location.hash);
+    }
+  });
 
   if (location.protocol === 'file:') {
     const main = document.querySelector('main');

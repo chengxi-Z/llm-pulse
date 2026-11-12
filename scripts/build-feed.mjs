@@ -18,6 +18,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { filterAihotNews } from '../site/assets/js/aihot-scope.mjs';
 
 export const DEFAULT_BASE_URL = 'https://chengxi-z.github.io/llm-pulse/';
 export const SITE_TITLE = 'AI Pulse · Z Cloud';
@@ -108,7 +109,9 @@ function textOf(value, fallback = '') {
  * @param {{baseUrl?:string, limit?:number}} [opts]
  */
 export function buildFeedItems(data, opts = {}) {
-  const news = data && data.news && Array.isArray(data.news.items) ? data.news.items : asArray(data && data.news);
+  // Feeds are English-only outputs, so AIHOT (a Chinese-only module) never enters them.
+  const rawNews = data && data.news && Array.isArray(data.news.items) ? data.news.items : asArray(data && data.news);
+  const news = filterAihotNews(rawNews, 'en');
   const baseUrl = normalizeBaseUrl(opts.baseUrl);
   const limit = Number.isFinite(opts.limit) && opts.limit > 0 ? opts.limit : 100;
 

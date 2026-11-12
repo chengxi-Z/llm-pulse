@@ -2,6 +2,23 @@
 <html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
+    <script>
+    /* AI Hot is Chinese-only. Resolve the language exactly like i18n.js
+       (URL > localStorage > default "en") and leave this route before any
+       module or content loads when the edition is English. */
+    (function () {
+      var lang = "en";
+      try {
+        var forced = new URLSearchParams(window.location.search).get("lang");
+        var stored = window.localStorage.getItem("aipulse.lang");
+        if (forced === "en" || forced === "zh") lang = forced;
+        else if (stored === "en" || stored === "zh") lang = stored;
+      } catch (error) {}
+      if (lang !== "zh") {
+        window.location.replace("index.html" + window.location.search + window.location.hash);
+      }
+    })();
+    </script>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,7 +136,7 @@
         <ul class="nav-list">
           <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
-          <li><a href="aihot.html" aria-current="page" data-i18n="nav.aihot">AI Hot</a></li>
+          <li data-aihot-only><a href="aihot.html" aria-current="page" data-i18n="nav.aihot">AI Hot</a></li>
           <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
           <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
@@ -181,7 +198,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" data-aihot-only hidden>
     <header class="page-masthead page-masthead--compact">
       <div class="container">
         <p class="eyebrow"><span data-i18n="aihot.eyebrow">AI Hot</span> <span class="eyebrow-en">AI HOT</span></p>
@@ -274,7 +291,7 @@
         <h4 id="footer-explore" data-i18n="footer.explore">Explore</h4>
         <ul class="footer-links">
           <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
-          <li><a href="aihot.html" data-i18n="nav.aihot">AI Hot</a></li>
+          <li data-aihot-only><a href="aihot.html" data-i18n="nav.aihot">AI Hot</a></li>
           <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
           <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>

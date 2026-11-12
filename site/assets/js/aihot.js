@@ -5,6 +5,7 @@
    All external text is escaped and treated as untrusted plain text.
    ========================================================================== */
 import { t, getLang, onLangChange } from './i18n.js';
+import { isAiHotEnabled } from './aihot-scope.mjs';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -36,6 +37,62 @@ const bundleOf = (data) => (data && data.aihot && typeof data.aihot === 'object'
 let homeData = null;
 let pageData = null;
 let activeReport = 'daily';
+
+/* ---------------- language gate ----------------
+   AI Hot is a Chinese-only module. In the English edition every AIHOT node is
+   detached from the DOM (not merely hidden), all generated content is cleared,
+   and the home section index is renumbered. Switching back to Chinese restores
+   the exact original nodes in their original order and re-renders them. */
+
+const AIHOT_SELECTOR = '[data-aihot-only]';
+const AIHOT_DYNAMIC_IDS = [
+  'home-aihot-hot', 'home-aihot-resets',
+  'aihot-meta', 'aihot-hot-list', 'aihot-report-panel', 'aihot-reset-grid',
+];
+const EXPLORE_IDX_ZH = '05';
+const EXPLORE_IDX_EN = '04';
+let detachedNodes = [];
+
+function clearDynamicBlocks() {
+  AIHOT_DYNAMIC_IDS.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '';
+  });
+}
+
+function restoreNodes() {
+  if (!detachedNodes.length) return;
+  detachedNodes.slice().reverse().forEach(({ node, parent, next }) => {
+    if (!parent || !parent.isConnected) return;
+    parent.insertBefore(node, next && next.parentNode === parent ? next : null);
+  });
+  detachedNodes = [];
+}
+
+function syncExploreIndex(enabled) {
+  const idx = document.getElementById('home-explore-idx');
+  if (idx) idx.textContent = enabled ? EXPLORE_IDX_ZH : EXPLORE_IDX_EN;
+}
+
+export function applyAiHotGate(lang = getLang()) {
+  const enabled = isAiHotEnabled(lang);
+  if (enabled) {
+    restoreNodes();
+    document.querySelectorAll(AIHOT_SELECTOR).forEach((el) => { el.hidden = false; });
+    document.documentElement.setAttribute('data-aihot', 'on');
+    syncExploreIndex(true);
+  } else {
+    document.querySelectorAll(AIHOT_SELECTOR).forEach((el) => {
+      el.hidden = true;
+      detachedNodes.push({ node: el, parent: el.parentNode, next: el.nextSibling });
+      el.remove();
+    });
+    clearDynamicBlocks();
+    document.documentElement.setAttribute('data-aihot', 'off');
+    syncExploreIndex(false);
+  }
+  return enabled;
+}
 
 /* ---------------- shared fragments ---------------- */
 
@@ -98,14 +155,16 @@ function resetEventHtml(event) {
 
 export function initHomeAihot(data) {
   homeData = data;
+  if (!isAiHotEnabled(getLang())) return;
   renderHome();
 }
 
 export function refreshHomeAihot() {
-  if (homeData) renderHome();
+  if (homeData && isAiHotEnabled(getLang())) renderHome();
 }
 
 function renderHome() {
+  if (!isAiHotEnabled(getLang())) return;
   const hotEl = $('#home-aihot-hot');
   const resetEl = $('#home-aihot-resets');
   if (!hotEl && !resetEl) return;
@@ -138,12 +197,13 @@ function renderHome() {
 
 export function initAiHot(data) {
   pageData = data;
+  if (!isAiHotEnabled(getLang())) return;
   bindTabs();
   renderPage();
 }
 
 export function refreshAiHot() {
-  if (pageData) renderPage();
+  if (pageData && isAiHotEnabled(getLang())) renderPage();
 }
 
 function bindTabs() {
@@ -159,6 +219,7 @@ function bindTabs() {
 }
 
 function renderPage() {
+  if (!isAiHotEnabled(getLang())) return;
   const bundle = bundleOf(pageData);
   const metaEl = $('#aihot-meta');
   const hotEl = $('#aihot-hot-list');
@@ -204,6 +265,7 @@ function resetCardHtml(reset) {
 }
 
 function renderReport() {
+  if (!isAiHotEnabled(getLang())) return;
   const panel = $('#aihot-report-panel');
   if (!panel) return;
   $$('#aihot-report-tabs [data-report]').forEach((button) => {
@@ -252,8 +314,12 @@ function renderReport() {
   `;
 }
 
-/* Language switch: re-render the dynamic blocks (static DOM is handled by app.js). */
-onLangChange(() => {
-  if (document.body.dataset.page === 'index' && homeData) renderHome();
-  if (document.body.dataset.page === 'aihot' && pageData) renderPage();
+/* Language switch: apply the gate first, then re-render the restored blocks
+   (static DOM translation is handled by app.js). */
+onLangChange((lang) => {
+  const enabled = applyAiHotGate(lang);
+  if (!enabled) return;
+  const page = document.body.dataset.page;
+  if (page === 'index' && homeData) renderHome();
+  if (page === 'aihot' && pageData) renderPage();
 });

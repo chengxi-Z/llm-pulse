@@ -122,6 +122,12 @@ table {
   display: none !important;
 }
 
+/* AI Hot is a Chinese-only module (see aihot-scope.mjs). The runtime gate
+   in aihot.js detaches these nodes; this covers the pre-JS first paint. */
+html[data-lang="en"] [data-aihot-only] {
+  display: none !important;
+}
+
 /* --- Layout --- */
 .container {
   width: 100%;

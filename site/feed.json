@@ -13,538 +13,6 @@
   ],
   "items": [
     {
-      "id": "aihot-vq9nwgwhtm31cgoliyb7ydyde",
-      "url": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
-      "title": "How to Stop an AI Agent Stuck in an Infinite Loop",
-      "content_text": "AIHOT editorial pick · Tutorial · score 72. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)",
-      "date_published": "2026-11-12T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Tutorial · score 72. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "OpenRouter: Announcements (RSS)",
-          "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde"
-        }
-      ]
-    },
-    {
-      "id": "aihot-aoxmmcsudy1gf9xmti7slu1wd",
-      "url": "https://x.com/rohanpaul_ai/status/2120663635479625930",
-      "title": "WSJ: Nvidia\"s board, which publicly backed Jensen Huang on Sunday, is now close to deciding whether to remove its founder CEO.",
-      "content_text": "AIHOT editorial pick · Industry · score 89. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)",
-      "date_published": "2026-11-11T23:43:05.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 89. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: Rohan Paul (@rohanpaul_ai)",
-          "url": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd"
-        }
-      ]
-    },
-    {
-      "id": "aihot-bx3sq4dxfqblyztkuiktiz0wv",
-      "url": "https://runwayml.com/news/company-news/praxis-1-is-now-available",
-      "title": "Praxis-1 Is Now Available",
-      "content_text": "AIHOT editorial pick · AI Models · score 67. Source: Runway: News ( ). Open the original report for the full summary. — Source: Runway: News ( )",
-      "date_published": "2026-11-11T23:25:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Models"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Models · score 67. Source: Runway: News ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Runway: News ( )",
-          "url": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv"
-        }
-      ]
-    },
-    {
-      "id": "aihot-r8hsm3m3munjwk1n3u885zszw",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "content_text": "AIHOT editorial pick · AI Products · score 69. Source: Google Blog: AI (RSS). Open the original report for the full summary. — Source: Google Blog: AI (RSS)",
-      "date_published": "2026-11-11T18:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 69. Source: Google Blog: AI (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Google Blog: AI (RSS)",
-          "url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw"
-        }
-      ]
-    },
-    {
-      "id": "aihot-ep5oqt7m4l7gn3tqieilznmuk",
-      "url": "https://www.youtube.com/watch?v=C33hJGt-ySg",
-      "title": "Fable 5.2 or Opus? When to use each model in Claude Code",
-      "content_text": "AIHOT editorial pick · Tutorial · score 67. Source: Claude: YouTube (RSS). Open the original report for the full summary. — Source: Claude: YouTube (RSS)",
-      "date_published": "2026-11-11T17:30:20.000Z",
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Tutorial · score 67. Source: Claude: YouTube (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Claude: YouTube (RSS)",
-          "url": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk"
-        }
-      ]
-    },
-    {
-      "id": "aihot-bisaluc0ii0f4s1gzi2zxbr1k",
-      "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy",
-      "title": "Welcome to the B2A Economy",
-      "content_text": "AIHOT editorial pick · Opinion · score 62. Source: a16z: News (RSS). Open the original report for the full summary. — Source: a16z: News (RSS)",
-      "date_published": "2026-11-11T15:02:38.000Z",
-      "tags": [
-        "AIHOT",
-        "Opinion"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Opinion · score 62. Source: a16z: News (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "a16z: News (RSS)",
-          "url": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k"
-        }
-      ]
-    },
-    {
-      "id": "aihot-r5kn7uexy6jx97qwxwvnpqrom",
-      "url": "https://x.com/rohanpaul_ai/status/2120526677247939001",
-      "title": "Bloomberg: Anthropic\"s IPO has drawn orders for several times the shares available, mostly from anchor-size indications of interest (i.e....",
-      "content_text": "AIHOT editorial pick · Industry · score 78. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)",
-      "date_published": "2026-11-11T14:38:51.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 78. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: Rohan Paul (@rohanpaul_ai)",
-          "url": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom"
-        }
-      ]
-    },
-    {
-      "id": "aihot-wlmgb3vb5ycgom7wq44felnin",
-      "url": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
-      "title": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
-      "content_text": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary. — Source: The Decoder: AI News (RSS)",
-      "date_published": "2026-11-11T12:53:07.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "The Decoder: AI News (RSS)",
-          "url": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin"
-        }
-      ]
-    },
-    {
-      "id": "aihot-mzxxannvi5wge7wz0c0jfdyz5",
-      "url": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
-      "title": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
-      "content_text": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary. — Source: The Decoder: AI News (RSS)",
-      "date_published": "2026-11-11T12:12:47.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "The Decoder: AI News (RSS)",
-          "url": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5"
-        }
-      ]
-    },
-    {
-      "id": "aihot-ajjv9abs8vd20j05emcig98ai",
-      "url": "https://x.com/rohanpaul_ai/status/2120392847505715324",
-      "title": "WSJ: Anthropic\"s 7 founders will each sell about $250M of stock in its IPO and keep roughly $18B apiece.",
-      "content_text": "AIHOT editorial pick · Industry · score 79. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)",
-      "date_published": "2026-11-11T05:47:04.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 79. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: Rohan Paul (@rohanpaul_ai)",
-          "url": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai"
-        }
-      ]
-    },
-    {
-      "id": "aihot-xshgfc1vcvgrdkvnomagmefwy",
-      "url": "https://x.com/rohanpaul_ai/status/2120369586096976098",
-      "title": "Anthropic reveals in its amended S1 filing today, more than $10 billion in new agreements with Microsoft and Google.",
-      "content_text": "AIHOT editorial pick · Industry · score 84. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)",
-      "date_published": "2026-11-11T04:14:38.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 84. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: Rohan Paul (@rohanpaul_ai)",
-          "url": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy"
-        }
-      ]
-    },
-    {
-      "id": "aihot-m7ul4psbkb5zyp0t254fr986o",
-      "url": "https://x.com/rohanpaul_ai/status/2120320127484969162",
-      "title": "FT: Anthropic\"s bankers plan to raise its IPO price after heavy investor demand, lifting the target valuation back to $1.5T or more.",
-      "content_text": "AIHOT editorial pick · Industry · score 85. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)",
-      "date_published": "2026-11-11T00:58:06.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 85. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: Rohan Paul (@rohanpaul_ai)",
-          "url": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o"
-        }
-      ]
-    },
-    {
-      "id": "aihot-i3gp1xj4j11gi4qoreya18izb",
-      "url": "https://openrouter.ai/blog/insights/llm-quantization/",
-      "title": "LLM Quantization: What fp8 and fp4 Do to Quality and Price",
-      "content_text": "AIHOT editorial pick · Tutorial · score 73. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)",
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Tutorial · score 73. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "OpenRouter: Announcements (RSS)",
-          "url": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb"
-        }
-      ]
-    },
-    {
-      "id": "aihot-wkpj021rmg6sgthgj9zwevei4",
-      "url": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/",
-      "title": "MCP vs CLI vs Skills: What Each Costs in Context",
-      "content_text": "AIHOT editorial pick · Tutorial · score 74. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)",
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Tutorial · score 74. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "OpenRouter: Announcements (RSS)",
-          "url": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4"
-        }
-      ]
-    },
-    {
-      "id": "aihot-xenhfme3azzcf8qpihr57fb93",
-      "url": "https://rdi.berkeley.edu/blog/cyberbingym",
-      "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
-      "content_text": "AIHOT editorial pick · Research · score 61. Source: Berkeley RDI: Blog (AI ). Open the original report for the full summary. — Source: Berkeley RDI: Blog (AI )",
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 61. Source: Berkeley RDI: Blog (AI ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Berkeley RDI: Blog (AI )",
-          "url": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93"
-        }
-      ]
-    },
-    {
-      "id": "aihot-z9u4n1e7zfapxjozcn97quhdp",
-      "url": "https://alignment.anthropic.com/2026/worse-together/",
-      "title": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
-      "content_text": "AIHOT editorial pick · Research · score 70. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary. — Source: Anthropic: Alignment Science Blog ( )",
-      "date_published": "2026-11-11T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 70. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Anthropic: Alignment Science Blog ( )",
-          "url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp"
-        }
-      ]
-    },
-    {
-      "id": "aihot-womexcn3n0ijhbehvhbsxxm4f",
-      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
-      "content_text": "AIHOT editorial pick · Research · score 72. Source: Microsoft Research (RSS). Open the original report for the full summary. — Source: Microsoft Research (RSS)",
-      "date_published": "2026-11-10T20:52:56.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 72. Source: Microsoft Research (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Microsoft Research (RSS)",
-          "url": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f"
-        }
-      ]
-    },
-    {
-      "id": "aihot-zycmiklep7i6dct58558jbp78",
-      "url": "https://x.com/OpenRouter/status/2120234542183395787",
-      "title": "OpenRouter is officially part of @stripe today!",
-      "content_text": "AIHOT editorial pick · Industry · score 72. Source: X: OpenRouter (@OpenRouter). Open the original report for the full summary. — Source: X: OpenRouter (@OpenRouter)",
-      "date_published": "2026-11-10T19:18:01.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 72. Source: X: OpenRouter (@OpenRouter). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: OpenRouter (@OpenRouter)",
-          "url": "https://aihot.news/items/zycmiklep7i6dct58558jbp78"
-        }
-      ]
-    },
-    {
-      "id": "aihot-y4pcrys3ewo3xnx1j45mbpbfy",
-      "url": "https://x.com/OpenAIDevs/status/2120212596850663712",
-      "title": "Now, you can use your ChatGPT Business plan in tools like @NotionHQ, @v0, @ampcode, @kilocode, @warpdotdev, Hermes from @NousResearch, @...",
-      "content_text": "AIHOT editorial pick · AI Products · score 67. Source: X: OpenAI Developers (@OpenAIDevs). Open the original report for the full summary. — Source: X: OpenAI Developers (@OpenAIDevs)",
-      "date_published": "2026-11-10T17:50:49.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 67. Source: X: OpenAI Developers (@OpenAIDevs). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "X: OpenAI Developers (@OpenAIDevs)",
-          "url": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy"
-        }
-      ]
-    },
-    {
-      "id": "aihot-gqzca7y2h3m9p0fxtj60m4i1t",
-      "url": "https://www.wheresyoured.at/jensens-bizarre-adventure/",
-      "title": "Jensen's Bizarre Adventure",
-      "content_text": "AIHOT editorial pick · Industry · score 84. Source: Ed Zitron / Where\"s Your Ed At (RSS). Open the original report for the full summary. — Source: Ed Zitron / Where\"s Your Ed At (RSS)",
-      "date_published": "2026-11-10T17:43:27.000Z",
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Industry · score 84. Source: Ed Zitron / Where\"s Your Ed At (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Ed Zitron / Where\"s Your Ed At (RSS)",
-          "url": "https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t"
-        }
-      ]
-    },
-    {
-      "id": "aihot-qd3f4j2hd0t98tqf28iv7pu2j",
-      "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/",
-      "title": "ERNIE 5.5 Flash Preview",
-      "content_text": "AIHOT editorial pick · AI Models · score 73. Source: ERNIE. Open the original report for the full summary. — Source: ERNIE",
-      "date_published": "2026-11-10T16:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Models"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Models · score 73. Source: ERNIE. Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "ERNIE",
-          "url": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j"
-        }
-      ]
-    },
-    {
-      "id": "aihot-vouc5yc5intvgg7311kekkhsi",
-      "url": "https://cursor.com/blog/projects-multiplayer",
-      "title": "Cursor Projects is now multiplayer",
-      "content_text": "AIHOT editorial pick · AI Products · score 67. Source: Cursor Blog. Open the original report for the full summary. — Source: Cursor Blog",
-      "date_published": "2026-11-10T12:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 67. Source: Cursor Blog. Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Cursor Blog",
-          "url": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi"
-        }
-      ]
-    },
-    {
-      "id": "aihot-uif827ayipylunwlh7gejgcbo",
-      "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
-      "title": "What Affects CoT Monitorability Across The Model Lifecycle?",
-      "content_text": "AIHOT editorial pick · Research · score 71. Source: OpenAI: Alignment (RSS). Open the original report for the full summary. — Source: OpenAI: Alignment (RSS)",
-      "date_published": "2026-11-10T08:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 71. Source: OpenAI: Alignment (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "OpenAI: Alignment (RSS)",
-          "url": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo"
-        }
-      ]
-    },
-    {
-      "id": "aihot-c1fodrvts3po1pprz70weooju",
-      "url": "https://claude.com/blog/sheets-whiteboards-data",
-      "title": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
-      "content_text": "AIHOT editorial pick · AI Products · score 76. Source: Claude: Blog ( ). Open the original report for the full summary. — Source: Claude: Blog ( )",
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 76. Source: Claude: Blog ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Claude: Blog ( )",
-          "url": "https://aihot.news/items/c1fodrvts3po1pprz70weooju"
-        }
-      ]
-    },
-    {
-      "id": "aihot-mx6m3dvh7s5zz7u91h4iqd5pt",
-      "url": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/",
-      "title": "Using peers\" work to gain unauthorized access to OpenAI research infrastructure",
-      "content_text": "AIHOT editorial pick · Research · score 80. Source: OpenAI: ( ). Open the original report for the full summary. — Source: OpenAI: ( )",
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 80. Source: OpenAI: ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "OpenAI: ( )",
-          "url": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt"
-        }
-      ]
-    },
-    {
-      "id": "aihot-s7ny0oaxr6q9e5677fmb2hqpf",
-      "url": "https://claude.com/blog/interactive-connectors-full-tool",
-      "title": "Your apps can now open in Claude, and Claude can work in them",
-      "content_text": "AIHOT editorial pick · AI Products · score 70. Source: Claude: Blog ( ). Open the original report for the full summary. — Source: Claude: Blog ( )",
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 70. Source: Claude: Blog ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Claude: Blog ( )",
-          "url": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf"
-        }
-      ]
-    },
-    {
-      "id": "aihot-xaj5t8sbv4qtc0n9ovus1nfl9",
-      "url": "https://alignment.anthropic.com/2026/homeopathic-learning/",
-      "title": "Diluting Poisoned Fine-Tuning Data Can Strengthen Its Effect",
-      "content_text": "AIHOT editorial pick · Research · score 69. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary. — Source: Anthropic: Alignment Science Blog ( )",
-      "date_published": "2026-11-10T00:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · Research · score 69. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Anthropic: Alignment Science Blog ( )",
-          "url": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9"
-        }
-      ]
-    },
-    {
-      "id": "aihot-hq666kd02bayn64cw702xm11w",
-      "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
-      "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-      "content_text": "AIHOT editorial pick · AI Products · score 71. Source: Google Developers Blog (RSS). Open the original report for the full summary. — Source: Google Developers Blog (RSS)",
-      "date_published": "2026-11-09T16:00:00.000Z",
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "language": "en",
-      "summary": "AIHOT editorial pick · AI Products · score 71. Source: Google Developers Blog (RSS). Open the original report for the full summary.",
-      "authors": [
-        {
-          "name": "Google Developers Blog (RSS)",
-          "url": "https://aihot.news/items/hq666kd02bayn64cw702xm11w"
-        }
-      ]
-    },
-    {
       "id": "rss-0882db37",
       "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
       "title": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
@@ -2015,6 +1483,331 @@
         {
           "name": "OpenRouter",
           "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-nvidia-nemotron-3-5-super-vl",
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
+      "title": "NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)",
+      "content_text": "NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "date_published": "2026-10-15T00:00:00.000Z",
+      "tags": [
+        "NVIDIA",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-nvidia-nemotron-3-5-super-vl-free",
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+      "title": "NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)",
+      "content_text": "NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
+      "date_published": "2026-10-15T00:00:00.000Z",
+      "tags": [
+        "NVIDIA",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights",
+        "Free"
+      ],
+      "language": "en",
+      "summary": "NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-unbiased-pareto-26-10",
+      "url": "https://openrouter.ai/unbiased/pareto-26.10",
+      "title": "Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)",
+      "content_text": "Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision. — Source: OpenRouter",
+      "date_published": "2026-10-15T00:00:00.000Z",
+      "tags": [
+        "Unbiased",
+        "Long context",
+        "Multimodal"
+      ],
+      "language": "en",
+      "summary": "Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "rss-84ad2e83",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "content_text": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress. — Source: Google DeepMind",
+      "date_published": "2026-10-14T02:00:14.000Z",
+      "tags": [
+        "Google DeepMind",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "authors": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/blog/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-d3dc22ab",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "content_text": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model. — Source: Google AI Blog",
+      "date_published": "2026-10-13T16:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+      "authors": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b7018172",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "title": "Introducing Playground: Create and play custom games",
+      "content_text": "Playground is a new experimental gaming platform that lets you create, play, and share custom games. — Source: Google AI Blog",
+      "date_published": "2026-10-07T12:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games.",
+      "authors": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    },
+    {
+      "id": "github-release-vllm-project-vllm-v0-31-0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+      "title": "vllm-project/vllm released v0.31.0",
+      "content_text": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp… — Source: GitHub Releases",
+      "date_published": "2026-10-05T06:44:55.000Z",
+      "tags": [
+        "vllm",
+        "GitHub Release",
+        "Open source"
+      ],
+      "language": "en",
+      "summary": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp…",
+      "authors": [
+        {
+          "name": "GitHub Releases",
+          "url": "https://github.com/vllm-project/vllm/releases"
+        }
+      ]
+    },
+    {
+      "id": "rss-3b38f89a",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "title": "The latest AI news we announced in September 2026",
+      "content_text": "Here are Google’s latest AI updates from September 2026 — Source: Google AI Blog",
+      "date_published": "2026-10-02T15:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Here are Google’s latest AI updates from September 2026",
+      "authors": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f0293447",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "content_text": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted. — Source: Google AI Blog",
+      "date_published": "2026-09-28T19:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "authors": [
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/ai/rss/"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-2026-09-10-36ec302b",
+      "url": "https://api-docs.deepseek.com/updates#2026-09-10",
+      "title": "DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release",
+      "content_text": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — Source: DeepSeek",
+      "date_published": "2026-09-10T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Official update",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
+      "authors": [
+        {
+          "name": "DeepSeek",
+          "url": "https://api-docs.deepseek.com/updates"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-2026-08-21-3fa111a9",
+      "url": "https://api-docs.deepseek.com/updates#2026-08-21",
+      "title": "DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release",
+      "content_text": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-… — Source: DeepSeek",
+      "date_published": "2026-08-21T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Official update",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-…",
+      "authors": [
+        {
+          "name": "DeepSeek",
+          "url": "https://api-docs.deepseek.com/updates"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-2026-08-13-7bb335ab",
+      "url": "https://api-docs.deepseek.com/updates#2026-08-13",
+      "title": "DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update",
+      "content_text": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl… — Source: DeepSeek",
+      "date_published": "2026-08-13T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Official update",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl…",
+      "authors": [
+        {
+          "name": "DeepSeek",
+          "url": "https://api-docs.deepseek.com/updates"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-2026-07-31-c99ac55c",
+      "url": "https://api-docs.deepseek.com/updates#2026-07-31",
+      "title": "DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update",
+      "content_text": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh… — Source: DeepSeek",
+      "date_published": "2026-07-31T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Official update",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh…",
+      "authors": [
+        {
+          "name": "DeepSeek",
+          "url": "https://api-docs.deepseek.com/updates"
+        }
+      ]
+    },
+    {
+      "id": "rss-13684b5c",
+      "url": "https://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
+      "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
+      "content_text": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin… — Source: Berkeley BAIR",
+      "date_published": "2026-07-29T09:00:00.000Z",
+      "tags": [
+        "Berkeley BAIR",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin…",
+      "authors": [
+        {
+          "name": "Berkeley BAIR",
+          "url": "https://bair.berkeley.edu/blog/feed.xml"
+        }
+      ]
+    },
+    {
+      "id": "rss-83865e2b",
+      "url": "https://bair.berkeley.edu/blog/2026/07/26/abbel/",
+      "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+      "content_text": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — Source: Berkeley BAIR",
+      "date_published": "2026-07-26T09:00:00.000Z",
+      "tags": [
+        "Berkeley BAIR",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t…",
+      "authors": [
+        {
+          "name": "Berkeley BAIR",
+          "url": "https://bair.berkeley.edu/blog/feed.xml"
+        }
+      ]
+    },
+    {
+      "id": "release-deepseek-2026-04-24-a1208998",
+      "url": "https://api-docs.deepseek.com/updates#2026-04-24",
+      "title": "DeepSeek official update (2026-04-24): DeepSeek-V4",
+      "content_text": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — Source: DeepSeek",
+      "date_published": "2026-04-24T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "Official update",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
+      "authors": [
+        {
+          "name": "DeepSeek",
+          "url": "https://api-docs.deepseek.com/updates"
         }
       ]
     }
