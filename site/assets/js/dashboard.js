@@ -912,7 +912,8 @@ function renderTopics(metrics) {
     return;
   }
   const topics = metrics.topics || [];
-  if (note) note.textContent = t('dashboard.topics.note');
+  const hotBoard = topics.some((item) => item.hot);
+  if (note) note.textContent = t(hotBoard ? 'dashboard.topics.noteHot' : 'dashboard.topics.note');
   if (!topics.length) {
     list.innerHTML = '<li class="dash-topic-empty u-muted">' + esc(t('dashboard.topics.empty')) + '</li>';
     return;
@@ -925,12 +926,19 @@ function renderTopics(metrics) {
       if (!url) return '';
       const domain = String(item.domain || '').trim() || safeHttpUrl(item.hnUrl) || '';
       const summary = String(item.summary || '').trim().slice(0, 160);
-      const meta = [
-        t('dashboard.topics.points', { count: intlNumber(item.points) }),
-        t('dashboard.topics.comments', { count: intlNumber(item.comments) }),
-        domain,
-        intlShortDate(item.publishedAt),
-      ]
+      const meta = item.hot
+        ? [
+            t('dashboard.topics.hotSources', { count: intlNumber(item.sourceCount ?? item.comments) }),
+            t('dashboard.topics.hotSignal', { count: intlNumber(item.signalCount ?? item.points) }),
+            'AIHOT',
+            intlShortDate(item.publishedAt),
+          ]
+        : [
+            t('dashboard.topics.points', { count: intlNumber(item.points) }),
+            t('dashboard.topics.comments', { count: intlNumber(item.comments) }),
+            domain,
+            intlShortDate(item.publishedAt),
+          ]
         .filter(Boolean)
         .map((part) => '<span class="dash-topic-meta-item">' + esc(part) + '</span>')
         .join('<span class="dash-topic-meta-sep" aria-hidden="true">·</span>');
@@ -940,7 +948,7 @@ function renderTopics(metrics) {
         '" target="_blank" rel="noopener noreferrer" aria-label="' +
         esc(t('dashboard.topics.openAria', { title })) +
         '"><span class="dash-topic-rank">' +
-        String(index + 1).padStart(2, '0') +
+        String(item.hot && item.rank ? item.rank : index + 1).padStart(2, '0') +
         '</span><span class="dash-topic-body"><span class="dash-topic-title">' +
         esc(title) +
         '</span>' +
