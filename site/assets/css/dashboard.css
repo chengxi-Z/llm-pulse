@@ -1,282 +1,256 @@
-.dashboard{position:relative;padding-block:clamp(36px,4.6vw,64px) clamp(32px,4vw,56px);border-top:1px solid var(--line)}
-.dashboard .section-head{margin-bottom:clamp(16px,2.2vw,28px)}
-.dash-kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow-card)}
-.dash-kpi{display:flex;flex-direction:column;gap:6px;min-width:0;height:100%;padding:clamp(14px,1.7vw,22px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background-color var(--dur) var(--ease)}
-.dash-kpi-label{color:var(--highlight);font-size:var(--fs-label);font-weight:600;letter-spacing:var(--ls-label);line-height:1.4;text-transform:uppercase}
-.dash-kpi-value{display:flex;align-items:baseline;gap:.18em;margin:0;min-height:1.1em;white-space:nowrap;color:var(--ink);font-family:var(--font-serif);font-size:clamp(1.55rem,2.2vw,2.1rem);font-variant-numeric:tabular-nums;line-height:1.1}
-.dash-kpi-number,.dash-kpi-unit{white-space:nowrap}
-.dash-kpi-unit{color:var(--muted);font-family:var(--font-sans);font-size:.42em;font-weight:400;letter-spacing:.06em;line-height:1}
-[data-kpi="capacity"] .dash-kpi-number{font-size:clamp(1.3rem,1.8vw,1.7rem)}
-[data-kpi="capacity"] .dash-kpi-value{letter-spacing:-.01em}
-.dash-kpi-note{margin:auto 0 0;overflow:hidden;color:var(--muted);font-size:.75rem;line-height:1.6;text-overflow:ellipsis;white-space:nowrap}
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · AI Pulse</title>
+  <meta name="description" content="The page you're looking for doesn't exist or has moved. Head back to the AI Pulse home page to keep reading today's model updates, leaderboards, and learning resources.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F6F1E9">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Pulse · Z Cloud">
+  <meta property="og:title" content="Page not found · AI Pulse">
+  <meta property="og:description" content="The page you're looking for doesn't exist or has moved. Head back to the AI Pulse home page to keep reading today's model updates, leaderboards, and learning resources.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://chengxi-z.github.io/llm-pulse/404.html">
+  <meta property="og:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Page not found · AI Pulse">
+  <meta name="twitter:description" content="The page you're looking for doesn't exist or has moved. Head back to the AI Pulse home page to keep reading today's model updates, leaderboards, and learning resources.">
+  <meta name="twitter:image" content="https://chengxi-z.github.io/llm-pulse/assets/img/og-cover.png">
+  <link rel="canonical" href="https://chengxi-z.github.io/llm-pulse/404.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <script>
+    (function () {
+      var root = document.documentElement;
+      var THEMES = ['ivory', 'noir', 'jade', 'rose', 'graphite'];
+      var COLORS = {
+        ivory: '#F6F1E9',
+        noir: '#0E0D0B',
+        jade: '#EEF2EC',
+        rose: '#F6EDEA',
+        graphite: '#F3F2EF'
+      };
+      var params = null;
+      try {
+        params = new URLSearchParams(window.location.search);
+      } catch (error) {}
+      var getParam = function (key) {
+        return params ? params.get(key) : null;
+      };
+      var prefersDark = function () {
+        try {
+          return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        } catch (error) {
+          return false;
+        }
+      };
+      var choice = 'auto';
+      var source = 'system';
+      try {
+        var forced = getParam('theme');
+        var stored = window.localStorage.getItem('aipulse.theme');
+        if (forced === 'dark') forced = 'noir';
+        if (forced === 'light') forced = 'ivory';
+        if (forced && (forced === 'auto' || THEMES.indexOf(forced) >= 0)) {
+          choice = forced;
+          source = 'url';
+        } else if (stored && (stored === 'auto' || THEMES.indexOf(stored) >= 0)) {
+          choice = stored;
+          source = stored === 'auto' ? 'system' : 'manual';
+        }
+      } catch (error) {}
+      var resolved = choice === 'auto' ? (prefersDark() ? 'noir' : 'ivory') : choice;
+      root.setAttribute('data-theme', resolved);
+      root.setAttribute('data-theme-choice', choice);
+      root.setAttribute('data-theme-source', source);
+      try {
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta && COLORS[resolved]) meta.setAttribute('content', COLORS[resolved]);
+      } catch (error) {}
+      var lang = 'zh';
+      try {
+        var forcedLang = getParam('lang');
+        var storedLang = window.localStorage.getItem('aipulse.lang');
+        if (forcedLang === 'en' || forcedLang === 'zh') lang = forcedLang;
+        else if (storedLang === 'en' || storedLang === 'zh') lang = storedLang;
+      } catch (error) {}
+      root.setAttribute('lang', lang === 'en' ? 'en' : 'zh-CN');
+      root.setAttribute('data-lang', lang);
+      window.__siteErrors = { js: [], resource: [], runtime: [] };
+      window.addEventListener('error', function (event) {
+        var errors = window.__siteErrors;
+        if (!errors) return;
+        var target = event && event.target;
+        if (target && target !== window && (target.tagName === 'SCRIPT' || target.tagName === 'LINK' || target.tagName === 'IMG')) {
+          errors.resource.push(target.tagName + ' ' + (target.getAttribute('src') || target.getAttribute('href')));
+        } else {
+          errors.js.push((event.message || 'error') + (event.filename ? ' @ ' + event.filename.split('/').pop() + ':' + event.lineno : ''));
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (event) {
+        if (window.__siteErrors) {
+          window.__siteErrors.js.push('unhandled: ' + ((event.reason && event.reason.message) || event.reason));
+        }
+      });
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/assistant.css">
+  <link rel="stylesheet" href="assets/css/share.css">
+<script data-preview-injected src="https://lf3-static.bytednsdoc.com/obj/eden-cn/lkpkbvsj/ljhwZthlaukjlkulzlp/previewer-tools/previewer-tools.2b49e356.umd.js"></script></head>
+<body data-page="404">
+  <a class="skip-link" href="#main" data-i18n="ui.skipLink">Skip to main content</a>
 
-.dash-grid--carousel{--dash-ch:480px;--dash-cc:42px;display:grid;grid-template-columns:minmax(0,calc(75% - var(--rail-gap))) minmax(0,25%);align-items:stretch;gap:var(--rail-gap);margin-top:clamp(12px,1.6vw,20px)}
-.dash-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:clamp(18px,2vw,26px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-card)}
-.dash-card-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
-.dash-card-head h3{margin:0;font-size:1.125rem;font-weight:600;line-height:1.25}
-.dash-card-head-note{color:var(--muted);font-size:var(--fs-label);letter-spacing:.1em;line-height:1.4;text-transform:uppercase}
-.dash-card-body{flex:1 1 auto;min-width:0;padding-top:16px}
-.dash-card-note{margin:auto 0 0;padding-top:14px;color:var(--muted);font-size:.75rem;line-height:1.7}
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
+        <img class="brand-mark" src="assets/img/logo.svg" alt="" width="34" height="34">
+        <span class="brand-text">
+          <span class="brand-name">AI PULSE</span>
+          <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" data-i18n-attr="aria-label:ui.nav.aria" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
+          <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="theme-picker-wrap">
+          <button class="icon-btn theme-picker" type="button" data-theme-picker aria-haspopup="menu" aria-expanded="false" aria-label="Switch theme" title="Switch theme" data-i18n-attr="aria-label:ui.theme.picker,title:ui.theme.picker">
+            <svg class="icon theme-picker-icon" viewbox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-.5-.2-1-.6-1.4-.3-.4-.5-.8-.5-1.2 0-1 .9-1.8 1.9-1.8H16a5 5 0 0 0 5-5C21 6.6 17 3 12 3Z"></path><circle cx="7.5" cy="11" r="1"></circle><circle cx="10.5" cy="7.5" r="1"></circle><circle cx="15" cy="8" r="1"></circle><circle cx="17" cy="12" r="1"></circle></svg>
+          </button>
+          <div class="theme-menu" data-theme-menu role="menu" aria-label="Theme selection" data-i18n-attr="aria-label:ui.theme.menu" hidden>
+            <p class="theme-menu-title" data-i18n="ui.theme.title">Theme</p>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="ivory">
+              <span class="theme-swatch" data-theme-swatch="ivory" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.ivory.label">Ivory &amp; Gold</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="noir">
+              <span class="theme-swatch" data-theme-swatch="noir" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.noir.label">Midnight Noir</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="jade">
+              <span class="theme-swatch" data-theme-swatch="jade" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.jade.label">Celadon Jade</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="rose">
+              <span class="theme-swatch" data-theme-swatch="rose" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.rose.label">Dusk Rose</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="graphite">
+              <span class="theme-swatch" data-theme-swatch="graphite" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.graphite.label">Graphite</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+            <button class="theme-option" type="button" role="menuitemradio" aria-checked="false" data-theme-value="auto">
+              <span class="theme-swatch" data-theme-swatch="auto" aria-hidden="true"></span>
+              <span class="theme-option-label" data-i18n="theme.auto.label">System</span>
+              <span class="theme-option-check" aria-hidden="true">✓</span>
+            </button>
+          </div>
+        </div>
+        <button class="icon-btn lang-toggle" type="button" data-lang-toggle aria-label="Switch language" title="Switch language" data-i18n-attr="aria-label:ui.lang.toggle,title:ui.lang.toggle">
+          <span class="lang-code" data-lang-code="zh">ZH</span>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <span class="lang-code is-active" data-lang-code="en">EN</span>
+        </button>
 
-.dash-carousel{position:relative;display:flex;flex-direction:column;min-width:0}
-.dash-carousel-viewport{position:relative;overflow:hidden;height:var(--dash-ch);border:1px solid var(--line);border-radius:var(--r-1);background:var(--surface);box-shadow:var(--shadow-card)}
-.dash-carousel-track{display:flex;height:100%;transition:transform 520ms var(--ease);will-change:transform}
-.dash-slide{display:flex;flex-direction:column;flex:0 0 100%;min-width:0;height:100%;padding:clamp(16px,1.8vw,22px);overflow:hidden}
-.dash-slide .dash-card-body{display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-height:0;padding-top:10px;overflow:hidden}
-.dash-slide .dash-card-note{flex:none;margin:10px 0 0;padding-top:10px}
-.dash-slide .dash-chart{width:100%}
-.dash-slide .dash-card-body.dash-donut-wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);align-items:center;gap:clamp(12px,2vw,24px);flex:1 1 auto;min-height:0;width:100%}
-.dash-carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:10px}
-.dash-carousel-arrow{display:inline-grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--muted);font-size:.875rem;line-height:1;transition:border-color var(--dur) var(--ease),color var(--dur) var(--ease),background-color var(--dur) var(--ease)}
-.dash-carousel-arrow:hover{border-color:var(--gold);background:var(--icon-hover-bg);color:var(--highlight)}
-.dash-carousel-arrow:focus-visible{outline:var(--focus-ring);outline-offset:2px}
-.dash-carousel-dots{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto}
-.dash-dot{width:22px;height:3px;padding:0;border:0;border-radius:999px;background:var(--line-strong);cursor:pointer;transition:background-color 200ms var(--ease),width 200ms var(--ease)}
-.dash-dot[aria-selected="true"]{width:32px;background:var(--highlight)}
-.dash-dot:hover{background:var(--gold)}
-.dash-dot:focus-visible{outline:var(--focus-ring);outline-offset:3px}
-.dash-carousel.is-paused .dash-dot[aria-selected="true"]{opacity:.65}
-.dash-carousel-hint{display:none;margin:8px 0 0;color:var(--muted);font-size:.6875rem;letter-spacing:.06em;text-align:center}
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle data-i18n-attr="aria-label:ui.nav.openAria" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="error-page" aria-labelledby="error-title">
+      <div class="container">
+        <p class="eyebrow">404 <span class="eyebrow-en">/ PAGE NOT FOUND</span></p>
+        <h1 class="error-title" id="error-title"><span data-i18n="notFound.h1Line1">This page</span><br><span data-i18n="notFound.h1Line2">hasn't been seen yet.</span></h1>
+        <p class="lede" data-i18n="notFound.lede">The link may be broken, or the address may have a typo. Head back home to keep browsing today's model updates, leaderboards, and learning resources.</p>
+        <div class="hero-actions">
+          <a class="btn btn--ink" href="index.html" data-i18n="notFound.home">Back to home</a>
+          <a class="link-arrow" href="news.html" data-i18n="notFound.news">Browse the latest updates</a>
+        </div>
+        <div class="error-links">
+          <span class="u-muted" data-i18n="notFound.common">Popular links</span>
+          <a class="text-link" href="rankings.html" data-i18n="nav.rankings">Leaderboards</a>
+          <a class="text-link" href="models.html" data-i18n="nav.models">Model Catalog</a>
+          <a class="text-link" href="resources.html" data-i18n="nav.resources">Learning Resources</a>
+          <a class="text-link" href="projects.html" data-i18n="nav.projects">Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.dash-chart{position:relative;display:flex;align-items:center;width:100%}
-.dash-barchart{display:block;width:100%;height:auto;overflow:visible}
-.dash-grid-line{stroke:var(--line);stroke-width:1;stroke-dasharray:3 5}
-.dash-axis-label{fill:var(--muted);font-family:var(--font-sans);font-size:11px;letter-spacing:.03em}
-.dash-axis-y .dash-axis-label{text-anchor:end}
-.dash-bar{fill:rgb(var(--rgb-highlight)/.78);transform-box:fill-box;transform-origin:bottom;transition:fill 160ms var(--ease),opacity 160ms var(--ease);cursor:default}
-.dash-bar:hover{fill:var(--highlight)}
-.dash-bar-value{fill:var(--gold-deep);font-family:var(--font-sans);font-size:0.6875rem;font-weight:600;letter-spacing:.02em}
-.dash-bar:focus-visible{fill:var(--highlight);outline:none;stroke:var(--ink);stroke-width:1.5}
-.dash-mean-line{stroke:var(--gold);stroke-width:1;stroke-dasharray:4 4}
-.dash-mean-label{fill:var(--gold-deep);font-family:var(--font-sans);font-size:0.6875rem;letter-spacing:.05em}
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" data-i18n-attr="aria-label:ui.brandHome.aria" aria-label="AI Pulse · Z Cloud home">
+          <img class="brand-mark" src="assets/img/logo.svg" alt="" width="30" height="30">
+          <span class="brand-text">
+            <span class="brand-name">AI PULSE</span>
+            <span class="brand-cn" data-i18n="ui.brandSub">Z Cloud</span>
+          </span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">An open, lightweight LLM tracker. Every day it gathers releases, evaluations, and learning resources — restrained, sourced, and traceable line by line.</p>
+      </div>
+      <nav class="footer-col" aria-labelledby="footer-explore">
+        <h4 id="footer-explore" data-i18n="footer.explore">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
+          <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
+          <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-labelledby="footer-more">
+        <h4 id="footer-more" data-i18n="footer.more">More</h4>
+        <ul class="footer-links">
+          <li><a href="resources.html" data-i18n="nav.resources">Learning Resources</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col" aria-labelledby="footer-subscribe">
+        <h4 id="footer-subscribe" data-i18n="footer.subscribe">Subscribe &amp; source</h4>
+        <ul class="footer-links">
+          <li><a class="external" href="feed.xml" data-i18n="subscribe.rss">RSS / Atom</a></li>
+          <li><a class="external" href="feed.json" data-i18n="subscribe.json">JSON Feed</a></li>
+          <li><a class="external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span data-current-year>2026</span> <span data-i18n="footer.copyrightBrand">AI Pulse · Z Cloud · MIT License</span></p>
+      <p><span data-footer-updated data-i18n="footer.updated">Data refreshed daily</span> · <span data-i18n="footer.usageNote">For learning and research only</span></p>
+      <p class="footer-address"><span data-i18n="footer.addressLabel">Site address</span> <a class="text-link" href="https://chengxi-z.github.io/llm-pulse/" data-i18n="footer.addressSite">chengxi-z.github.io/llm-pulse</a> <button type="button" class="btn btn--ghost btn--sm" data-copy-text="https://chengxi-z.github.io/llm-pulse/" data-copy-label-key="footer.siteCopied" data-copy-fail-key="footer.copyFailed" data-i18n="footer.copySite">Copy site address</button> · <a class="text-link external" href="https://github.com/chengxi-Z/llm-pulse" target="_blank" rel="noopener noreferrer" data-i18n="footer.addressGithub">GitHub</a> · <a class="text-link" href="feed.xml" data-i18n="footer.addressRss">RSS</a></p>
+    </div>
+  </footer>
 
-.dash-donut-wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);align-items:center;gap:clamp(12px,2vw,24px);width:100%}
-.dash-donut-box{position:relative;width:min(100%,224px);justify-self:center;aspect-ratio:1}
-.dash-donut{display:block;width:100%;height:100%}
-.dash-donut-seg{cursor:default}
-.dash-donut-seg:hover,.dash-donut-seg.is-active{opacity:.86;filter:brightness(1.06)}
-.dash-donut-seg:focus-visible{outline:none;stroke:var(--ink);stroke-width:1.5}
-.dash-donut [data-tier="free"]{fill:var(--donut-1)}
-.dash-donut [data-tier="low"]{fill:var(--donut-2)}
-.dash-donut [data-tier="mid"]{fill:var(--donut-3)}
-.dash-donut [data-tier="high"]{fill:var(--donut-4)}
-.dash-donut [data-tier="premium"]{fill:var(--donut-5)}
-.dash-legend-dot{width:8px;height:8px;border-radius:2px;background:currentColor}
-.dash-legend-row[data-tier="free"]{color:var(--donut-1)}
-.dash-legend-row[data-tier="low"]{color:var(--donut-2)}
-.dash-legend-row[data-tier="mid"]{color:var(--donut-3)}
-.dash-legend-row[data-tier="high"]{color:var(--donut-4)}
-.dash-legend-row[data-tier="premium"]{color:var(--donut-5)}
-.dash-donut-center{position:absolute;inset:0;display:grid;place-content:center;gap:2px;text-align:center;pointer-events:none}
-.dash-donut-center strong{font-family:var(--font-serif);font-size:clamp(1.6rem,2.2vw,1.95rem);font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
-.dash-donut-center span{color:var(--muted);font-size:.6875rem;letter-spacing:.04em}
-.dash-legend{display:grid;gap:2px;margin:0;padding:0;list-style:none}
-.dash-legend-row{display:grid;grid-template-columns:8px minmax(0,1fr) auto 46px;align-items:center;gap:8px;padding:4px 6px;border-radius:var(--r-2);color:var(--ink);font-size:.8125rem}
-.dash-legend-row:hover,.dash-legend-row.is-active{background:var(--surface-2)}
-.dash-legend-row.is-empty{opacity:.45}
-.dash-legend-row:focus-visible{outline:var(--focus-ring);outline-offset:-2px}
-.dash-legend-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.dash-legend-count{font-variant-numeric:tabular-nums;text-align:right}
-.dash-legend-pct{color:var(--muted);font-size:.75rem;font-variant-numeric:tabular-nums;text-align:right}
+  <div id="assistant-root"></div>
 
-.dash-scatter{width:100%;min-width:0}
-.dash-scatter-svg{display:block;width:100%;height:auto;overflow:visible}
-.dash-scatter-svg .dash-axis-label{fill:var(--muted);font-family:var(--font-sans);font-size:14px;letter-spacing:.03em}
-.dash-scatter-svg .dash-scatter-axis-title{fill:var(--muted);font-size:13px;letter-spacing:.04em}
-.dash-scatter-svg .dash-scatter-line-label{fill:var(--gold-deep);font-size:12px}
-.dash-quadrant{stroke:none}
-.dash-quadrant.is-survival{fill:rgb(var(--rgb-highlight)/.07)}
-.dash-quadrant.is-kill{fill:rgb(var(--rgb-shadow)/.045)}
-.dash-quadrant.is-highcost{fill:rgb(var(--rgb-gold)/.05)}
-.dash-quadrant.is-lowability{fill:rgb(var(--rgb-ink)/.03)}
-.dash-quadrant-label{fill:var(--muted);font-family:var(--font-sans);font-size:13px;letter-spacing:.06em}
-.dash-quadrant-label.is-survival{fill:var(--highlight);font-weight:600}
-.dash-scatter-line{stroke:var(--gold);stroke-width:1;stroke-dasharray:5 5;stroke-opacity:.9}
-.dash-scatter-point{fill:rgb(var(--rgb-highlight)/.5);opacity:.85;stroke:transparent;stroke-width:1.2;transform-box:fill-box;transform-origin:center;transition:opacity 180ms var(--ease),stroke 180ms var(--ease);cursor:default}
-.dash-scatter-point.is-survive{fill:var(--highlight);stroke:var(--gold);stroke-width:1.4}
-.dash-scatter-point.is-dead{fill:var(--muted);fill-opacity:.55}
-.dash-scatter-point:hover,.dash-scatter-point:focus-visible{opacity:1;stroke:var(--gold-deep);outline:none}
-.dash-scatter-meta{margin:6px 0 0;color:var(--muted);font-size:.6875rem;line-height:1.65}
-.dash-scatter-disclaimer{margin:2px 0 0;color:var(--muted);font-size:0.6875rem;line-height:1.5;opacity:.85}
-
-.dash-card--topics{min-height:0}
-@media (min-width:1025px){
-  .dash-grid--carousel{grid-template-rows:calc(var(--dash-ch) + var(--dash-cc))}
-  .dash-card--topics{max-height:calc(var(--dash-ch) + var(--dash-cc));min-height:0}
-  .dash-card--topics .dash-card-body{overflow-y:auto;scrollbar-width:thin;overscroll-behavior:contain}
-}
-
-.dash-card--topics .dash-card-body{flex:1 1 auto;min-height:0;padding-top:10px}
-.dash-topics{display:grid;gap:2px;margin:0;padding:0;list-style:none}
-.dash-topic{min-width:0}
-.dash-topic-link{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px 10px;padding:7px 6px;border-radius:var(--r-2);color:inherit}
-.dash-topic-link:hover{background:var(--surface-2);color:inherit}
-.dash-topic-link:focus-visible{outline:var(--focus-ring);outline-offset:-2px}
-.dash-topic-rank{color:var(--gold-deep);font-family:var(--font-serif);font-size:.9375rem;line-height:1.35;font-variant-numeric:tabular-nums}
-.dash-topic-body{display:grid;gap:3px;min-width:0}
-.dash-topic-title{display:-webkit-box;overflow:hidden;color:var(--ink);font-size:.8125rem;font-weight:500;line-height:1.5;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-.dash-topic-summary{display:-webkit-box;overflow:hidden;color:var(--muted);font-size:.75rem;line-height:1.6;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-.dash-topic-meta{display:flex;align-items:center;overflow:hidden;color:var(--muted);font-size:.6875rem;letter-spacing:.02em;white-space:nowrap}
-.dash-topic-meta-item{min-width:0;overflow:hidden;text-overflow:ellipsis}
-.dash-topic-meta-sep{margin:0 5px;opacity:.6}
-.dash-topic-empty{padding:14px 6px;color:var(--muted);font-size:.75rem}
-
-.dash-tooltip{position:absolute;z-index:5;padding:6px 10px;border:1px solid var(--line);border-radius:var(--r-2);background:var(--surface);box-shadow:var(--shadow-menu);color:var(--ink);font-size:.75rem;line-height:1.5;white-space:nowrap;opacity:0;pointer-events:none;transform:translateY(4px);transition:opacity 140ms var(--ease),transform 140ms var(--ease)}
-.dash-tooltip.is-visible{opacity:1;transform:translateY(0)}
-
-@keyframes dash-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes dash-bar-rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-@keyframes dash-donut-in{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
-@keyframes dash-point-in{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
-.dashboard.is-in .dash-kpi,.dashboard.is-in .dash-card{animation:dash-rise 480ms var(--ease) both}
-.dash-slide.is-active .dash-bar{animation:dash-bar-rise 700ms var(--ease) both;animation-delay:calc(var(--i,0) * 35ms)}
-.dash-slide.is-active .dash-donut{animation:dash-donut-in 680ms var(--ease) both}
-.dash-slide.is-active .dash-scatter-point{animation:dash-point-in 420ms var(--ease) both;animation-delay:calc(var(--i,0) * 4ms)}
-
-@media (max-width:1100px){
-  .dash-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
-}
-@media (max-width:1024px){
-  .dash-grid--carousel{--dash-ch:clamp(440px,56vw,580px);grid-template-columns:minmax(0,1fr)}
-  .dash-carousel-viewport{height:var(--dash-ch)}
-  .dash-card--topics .dash-card-body{overflow:visible}
-  .dash-topics{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 18px}
-}
-@media (max-width:760px){
-  .dash-grid--carousel{--dash-ch:520px}
-  .dash-donut-wrap{grid-template-columns:minmax(0,1fr);gap:14px}
-  .dash-slide .dash-card-body.dash-donut-wrap{grid-template-columns:minmax(0,1fr);gap:14px}
-  .dash-donut-box{width:min(100%,200px)}
-  .dash-topics{grid-template-columns:minmax(0,1fr)}
-}
-@media (max-width:640px){
-  /* dash-rise leaves a transform on .dash-kpi, which becomes the containing
-     block for the position:fixed trend popover and pushes it off-screen left.
-     Skip the entrance animation on small screens so fixed stays viewport-bound. */
-  .dashboard.is-in .dash-kpi{animation:none}
-  .dash-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .dash-kpi-value{font-size:1.75rem}
-  .dash-axis-label--alt{display:none}
-  .dash-barchart .dash-axis-label{font-size:17px}
-  .dash-barchart .dash-bar-value{font-size:15px}
-  .dash-barchart .dash-mean-label{font-size:15px}
-  .dash-scatter-svg .dash-axis-label{font-size:24px}
-  .dash-scatter-svg .dash-scatter-axis-title{font-size:22px}
-  .dash-scatter-svg .dash-scatter-line-label{font-size:20px}
-  .dash-scatter-svg .dash-quadrant-label{display:none}
-  .dash-topic-meta>span:nth-child(n+4){display:none}
-  .dash-carousel-hint{display:block}
-  .dash-carousel-arrow{display:none}
-}
-@media (prefers-reduced-motion:reduce){
-  .dashboard.is-in .dash-kpi,.dashboard.is-in .dash-card,.dash-slide.is-active .dash-bar,.dash-slide.is-active .dash-donut,.dash-slide.is-active .dash-scatter-point{animation:none}
-  .dash-carousel-track,.dash-tooltip{transition:none}
-}
-
-/* v1.4 content-first: pull the overview dashboard closer to the compact hero (<=620px first content card at 1440x900) */
-#overview-dashboard.section{padding-top:clamp(16px,2vw,28px)}
-#overview-dashboard .section-head{margin-bottom:18px}
-
-/* v1.4: keep the hot-topics card aligned with the chart carousel on desktop;
-   long list scrolls inside the card instead of stretching the whole row. */
-@media (min-width: 1025px) {
-  .dash-grid--carousel .dash-card--topics { max-height: none; }
-}
-
-/* v1.5.2: kill line is the only chart (carousel removed) */
-.dash-card--killline{min-height:0;height:auto;align-self:start}
-.dash-card--killline .dash-card-body{display:flex;flex-direction:column;padding-top:6px}
-.dash-card--killline .dash-scatter{display:flex;flex-direction:column;height:100%}
-.dash-card--killline .dash-scatter-svg{flex:0 0 auto;min-height:0;height:auto}
-.dash-scatter-label{fill:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
-.dash-quadrant-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 0 0;padding:0;list-style:none}
-.dash-quadrant-legend li{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:0.6875rem;line-height:1.4}
-.dash-quadrant-swatch{width:10px;height:10px;flex:none;border:1px solid var(--line);background:transparent}
-.dash-quadrant-swatch.is-survival{background:rgb(var(--rgb-highlight)/.18);border-color:var(--gold)}
-.dash-quadrant-swatch.is-highcost{background:rgb(var(--rgb-gold)/.16)}
-.dash-quadrant-swatch.is-lowability{background:rgb(var(--rgb-ink)/.08)}
-.dash-quadrant-swatch.is-kill{background:rgb(var(--rgb-shadow)/.12)}
-.dash-quadrant-count{color:var(--ink);font-variant-numeric:tabular-nums}
-.dash-grid--carousel{grid-template-rows:auto}
-
-/* v1.5.3: shorter kill-line card, compact notes */
-.dash-card--killline .dash-scatter-label,
-.dash-scatter-label{font-size:12.5px}
-.dash-card--killline .dash-quadrant-legend{margin:8px 0 0}
-.dash-card--killline .dash-scatter-disclaimer{font-size:0.6875rem}
-@media (max-width:1024px){
-  .dash-grid--carousel .dash-card--topics{max-height:none}
-}
-
-/* v1.5.4: token-usage KPI hover trend */
-.dash-kpi{position:relative}
-.dash-kpi[data-kpi="usage"]{cursor:help}
-.dash-kpi[data-kpi="usage"]:hover,
-.dash-kpi[data-kpi="usage"]:focus-within{z-index:40}
-.dash-kpi[data-kpi="usage"]:focus-visible{outline:var(--focus-ring);outline-offset:2px}
-.dash-kpi-trend{position:absolute;top:calc(100% + 10px);left:0;z-index:41;width:min(282px,calc(100vw - 40px));padding:10px 12px 8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu);display:none;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 160ms var(--ease),transform 160ms var(--ease),visibility 160ms;pointer-events:none}
-.dash-kpis .dash-kpi:last-child .dash-kpi-trend{left:auto;right:0}
-.dash-kpi[data-kpi="usage"]:hover .dash-kpi-trend,
-.dash-kpi[data-kpi="usage"]:focus-within .dash-kpi-trend{display:block;opacity:1;visibility:visible;transform:none}
-.dash-kpi-trend-title{margin:0 0 2px;font-size:.72rem;font-weight:600;color:var(--ink);letter-spacing:.02em}
-.dash-kpi-trend svg{display:block;width:100%;height:auto;margin:2px 0 4px;overflow:visible}
-.dash-trend-area{fill:rgb(var(--rgb-highlight)/.1)}
-.dash-trend-line{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
-.dash-trend-dot{fill:var(--highlight);stroke:var(--surface);stroke-width:1.2}
-.dash-trend-partial-line{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-dasharray:3 3;stroke-linecap:round;opacity:.75}
-.dash-trend-partial-dot{fill:var(--surface);stroke:var(--muted);stroke-width:1.4}
-.dash-kpi-trend-note{margin:0;color:var(--muted);font-size:0.6875rem;line-height:1.5}
-.dash-kpi-trend-partial{margin:3px 0 0;color:var(--muted);font-size:0.6875rem;line-height:1.5;font-style:italic}
-@media (max-width:640px){
-  /* The usage KPI sits in the right column of the 2-column grid, so a
-     left-anchored popover overflows the viewport and its text gets clipped.
-     On small screens show it as a centered, viewport-bound card instead:
-     tap the KPI (focus-within) to open, tap elsewhere to dismiss. */
-  .dash-kpi[data-kpi="usage"] .dash-kpi-trend{position:fixed;top:50%;left:50%;right:auto;bottom:auto;width:min(340px,calc(100vw - 32px));padding:14px 16px 12px;transform:translate(-50%,-48%);z-index:90;box-shadow:0 18px 52px -14px rgb(var(--rgb-shadow)/.38)}
-  .dash-kpi[data-kpi="usage"]:hover .dash-kpi-trend,
-  .dash-kpi[data-kpi="usage"]:focus-within .dash-kpi-trend{transform:translate(-50%,-50%)}
-  .dash-kpi-trend-title{font-size:.82rem}
-  .dash-kpi-trend-note,.dash-kpi-trend-partial{font-size:.75rem}
-}
-
-/* v1.5.6: scatter model search / autocomplete / highlight */
-.dash-card--killline .dash-scatter-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:10px}
-.dash-scatter-search{position:relative;display:flex;align-items:center;gap:6px;flex:1 1 250px;max-width:420px;height:34px;padding:0 6px 0 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2,var(--surface))}
-#dash-scatter-search{flex:1;min-width:0;height:100%;border:0;background:transparent;color:var(--ink);font:inherit;font-size:.8rem;outline:none}
-#dash-scatter-search::-webkit-search-cancel-button{display:none}
-.dash-scatter-search-clear{display:grid;place-items:center;width:22px;height:22px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:.95rem;line-height:1;cursor:pointer}
-.dash-scatter-search-clear:hover{background:var(--icon-hover-bg);color:var(--ink)}
-.dash-scatter-suggest{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:35;max-height:220px;margin:0;padding:4px;overflow:auto;list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-1);box-shadow:var(--shadow-menu)}
-.dash-scatter-suggest li{margin:0;list-style:none}
-.dash-scatter-suggest li button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;width:100%;padding:7px 9px;border:0;border-radius:var(--r-2);background:transparent;color:var(--ink);font:inherit;font-size:.78rem;text-align:left;cursor:pointer}
-.dash-scatter-suggest li button span{color:var(--muted);font-size:0.6875rem;white-space:nowrap}
-.dash-scatter-suggest li.is-active button,.dash-scatter-suggest li button:hover{background:var(--icon-hover-bg)}
-.dash-scatter-suggest-empty{padding:8px 10px;color:var(--muted);font-size:.74rem}
-.dash-scatter-search-status{margin:0;color:var(--muted);font-size:.72rem;line-height:1.5}
-.dash-scatter-point.is-search-hit{fill:var(--highlight);stroke:var(--gold-deep);stroke-width:3;transform:scale(1.9);filter:drop-shadow(0 0 5px rgb(var(--rgb-gold)/.6))}
-
-/* v1.5.7: representative quadrant dots + centered labels above the dot */
-.dash-scatter-halo{fill:none;stroke:rgb(var(--rgb-gold)/.55);stroke-width:1.4;stroke-dasharray:2 3;pointer-events:none}
-.dash-scatter-point.is-representative{fill:var(--highlight);stroke:var(--gold-deep);stroke-width:2.4;filter:drop-shadow(0 0 3px rgb(var(--rgb-gold)/.5))}
-.dash-scatter-label.is-representative-label{fill:var(--highlight);font-weight:600;font-size:13px}
-
-/* v1.5.8: capability metric selector for the kill line */
-.dash-scatter-metric{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.72rem;letter-spacing:.02em}
-#dash-scatter-metric{height:34px;max-width:260px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2,var(--surface));color:var(--ink);font:inherit;font-size:.78rem;cursor:pointer}
-#dash-scatter-metric:focus-visible{outline:var(--focus-ring);outline-offset:2px}
-
-/* v1.5.9: make the two dashboard cards share one bottom edge */
-.dash-grid--carousel .dash-card--topics{height:100%;min-height:0}
-.dash-grid--carousel .dash-card--topics .dash-card-body{overflow-y:auto;scrollbar-width:thin}
-@media (max-width:1024px){
-  .dash-card--killline{height:auto}
-  .dash-grid--carousel .dash-card--topics{height:auto}
-}
-
-/* Final UI review: final small body text to 12px (dashboard CSS loads after components) */
-.dash-scatter-meta,.dash-scatter-disclaimer{font-size:0.75rem}
-.hero-panel .source-block .label{font-size:0.75rem}
-.dash-card--killline .dash-scatter-disclaimer{font-size:0.75rem}
-
-.dash-card-head-note,.dash-topic-meta-item,.dash-topic-meta-sep,.stat-label,.dash-quadrant-count,.dash-quadrant-legend li,.dash-scatter-metric,.dash-kpi-label{font-size:0.75rem}
-.dash-kpi-label{font-size:0.6875rem}
+  <script type="module" src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/share.js"></script>
+  <script type="module" src="assets/js/assistant.js"></script>
+</body>
+</html>
