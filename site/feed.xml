@@ -5,8 +5,8 @@
     <link>https://chengxi-z.github.io/llm-pulse/</link>
     <description>Tracking frontier LLMs: model catalog, vendor updates, public leaderboards, learning resources and AI projects. Refreshed by GitHub Actions; RSS / JSON Feed.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 09:56:12 GMT</lastBuildDate>
-    <pubDate>Mon, 09 Nov 2026 09:56:12 GMT</pubDate>
+    <lastBuildDate>Thu, 12 Nov 2026 06:11:38 GMT</lastBuildDate>
+    <pubDate>Thu, 12 Nov 2026 06:11:38 GMT</pubDate>
     <generator>AI Pulse build-feed.mjs</generator>
     <atom:link href="https://chengxi-z.github.io/llm-pulse/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
@@ -14,6 +14,286 @@
       <title>AI Pulse · Z Cloud</title>
       <link>https://chengxi-z.github.io/llm-pulse/</link>
     </image>
+    <item>
+      <title>How to Stop an AI Agent Stuck in an Infinite Loop</title>
+      <link>https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/</link>
+      <guid isPermaLink="false">aihot-vq9nwgwhtm31cgoliyb7ydyde</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Tutorial · score 72. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)</description>
+      <category>AIHOT</category>
+      <category>Tutorial</category>
+      <source url="https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde">OpenRouter: Announcements (RSS)</source>
+    </item>
+    <item>
+      <title>WSJ: Nvidia&quot;s board, which publicly backed Jensen Huang on Sunday, is now close to deciding whether to remove its founder CEO.</title>
+      <link>https://x.com/rohanpaul_ai/status/2120663635479625930</link>
+      <guid isPermaLink="false">aihot-aoxmmcsudy1gf9xmti7slu1wd</guid>
+      <pubDate>Wed, 11 Nov 2026 23:43:05 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 89. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd">X: Rohan Paul (@rohanpaul_ai)</source>
+    </item>
+    <item>
+      <title>Praxis-1 Is Now Available</title>
+      <link>https://runwayml.com/news/company-news/praxis-1-is-now-available</link>
+      <guid isPermaLink="false">aihot-bx3sq4dxfqblyztkuiktiz0wv</guid>
+      <pubDate>Wed, 11 Nov 2026 23:25:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Models · score 67. Source: Runway: News ( ). Open the original report for the full summary. — Source: Runway: News ( )</description>
+      <category>AIHOT</category>
+      <category>AI Models</category>
+      <source url="https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv">Runway: News ( )</source>
+    </item>
+    <item>
+      <title>Gemini Decisions API: Fast, calibrated multimodal decisions</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/</link>
+      <guid isPermaLink="false">aihot-r8hsm3m3munjwk1n3u885zszw</guid>
+      <pubDate>Wed, 11 Nov 2026 18:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 69. Source: Google Blog: AI (RSS). Open the original report for the full summary. — Source: Google Blog: AI (RSS)</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw">Google Blog: AI (RSS)</source>
+    </item>
+    <item>
+      <title>Fable 5.2 or Opus? When to use each model in Claude Code</title>
+      <link>https://www.youtube.com/watch?v=C33hJGt-ySg</link>
+      <guid isPermaLink="false">aihot-ep5oqt7m4l7gn3tqieilznmuk</guid>
+      <pubDate>Wed, 11 Nov 2026 17:30:20 GMT</pubDate>
+      <description>AIHOT editorial pick · Tutorial · score 67. Source: Claude: YouTube (RSS). Open the original report for the full summary. — Source: Claude: YouTube (RSS)</description>
+      <category>AIHOT</category>
+      <category>Tutorial</category>
+      <source url="https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk">Claude: YouTube (RSS)</source>
+    </item>
+    <item>
+      <title>Welcome to the B2A Economy</title>
+      <link>https://www.a16z.news/p/welcome-to-the-b2a-economy</link>
+      <guid isPermaLink="false">aihot-bisaluc0ii0f4s1gzi2zxbr1k</guid>
+      <pubDate>Wed, 11 Nov 2026 15:02:38 GMT</pubDate>
+      <description>AIHOT editorial pick · Opinion · score 62. Source: a16z: News (RSS). Open the original report for the full summary. — Source: a16z: News (RSS)</description>
+      <category>AIHOT</category>
+      <category>Opinion</category>
+      <source url="https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k">a16z: News (RSS)</source>
+    </item>
+    <item>
+      <title>Bloomberg: Anthropic&quot;s IPO has drawn orders for several times the shares available, mostly from anchor-size indications of interest (i.e....</title>
+      <link>https://x.com/rohanpaul_ai/status/2120526677247939001</link>
+      <guid isPermaLink="false">aihot-r5kn7uexy6jx97qwxwvnpqrom</guid>
+      <pubDate>Wed, 11 Nov 2026 14:38:51 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 78. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom">X: Rohan Paul (@rohanpaul_ai)</source>
+    </item>
+    <item>
+      <title>Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI&apos;s own sales pipeline</title>
+      <link>https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/</link>
+      <guid isPermaLink="false">aihot-wlmgb3vb5ycgom7wq44felnin</guid>
+      <pubDate>Wed, 11 Nov 2026 12:53:07 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary. — Source: The Decoder: AI News (RSS)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin">The Decoder: AI News (RSS)</source>
+    </item>
+    <item>
+      <title>Enterprise sales push OpenAI&apos;s quarterly revenue to $10 billion, though it still trails Anthropic</title>
+      <link>https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/</link>
+      <guid isPermaLink="false">aihot-mzxxannvi5wge7wz0c0jfdyz5</guid>
+      <pubDate>Wed, 11 Nov 2026 12:12:47 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary. — Source: The Decoder: AI News (RSS)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5">The Decoder: AI News (RSS)</source>
+    </item>
+    <item>
+      <title>WSJ: Anthropic&quot;s 7 founders will each sell about $250M of stock in its IPO and keep roughly $18B apiece.</title>
+      <link>https://x.com/rohanpaul_ai/status/2120392847505715324</link>
+      <guid isPermaLink="false">aihot-ajjv9abs8vd20j05emcig98ai</guid>
+      <pubDate>Wed, 11 Nov 2026 05:47:04 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 79. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/ajjv9abs8vd20j05emcig98ai">X: Rohan Paul (@rohanpaul_ai)</source>
+    </item>
+    <item>
+      <title>Anthropic reveals in its amended S1 filing today, more than $10 billion in new agreements with Microsoft and Google.</title>
+      <link>https://x.com/rohanpaul_ai/status/2120369586096976098</link>
+      <guid isPermaLink="false">aihot-xshgfc1vcvgrdkvnomagmefwy</guid>
+      <pubDate>Wed, 11 Nov 2026 04:14:38 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 84. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy">X: Rohan Paul (@rohanpaul_ai)</source>
+    </item>
+    <item>
+      <title>FT: Anthropic&quot;s bankers plan to raise its IPO price after heavy investor demand, lifting the target valuation back to $1.5T or more.</title>
+      <link>https://x.com/rohanpaul_ai/status/2120320127484969162</link>
+      <guid isPermaLink="false">aihot-m7ul4psbkb5zyp0t254fr986o</guid>
+      <pubDate>Wed, 11 Nov 2026 00:58:06 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 85. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary. — Source: X: Rohan Paul (@rohanpaul_ai)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o">X: Rohan Paul (@rohanpaul_ai)</source>
+    </item>
+    <item>
+      <title>LLM Quantization: What fp8 and fp4 Do to Quality and Price</title>
+      <link>https://openrouter.ai/blog/insights/llm-quantization/</link>
+      <guid isPermaLink="false">aihot-i3gp1xj4j11gi4qoreya18izb</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Tutorial · score 73. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)</description>
+      <category>AIHOT</category>
+      <category>Tutorial</category>
+      <source url="https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb">OpenRouter: Announcements (RSS)</source>
+    </item>
+    <item>
+      <title>MCP vs CLI vs Skills: What Each Costs in Context</title>
+      <link>https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/</link>
+      <guid isPermaLink="false">aihot-wkpj021rmg6sgthgj9zwevei4</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Tutorial · score 74. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary. — Source: OpenRouter: Announcements (RSS)</description>
+      <category>AIHOT</category>
+      <category>Tutorial</category>
+      <source url="https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4">OpenRouter: Announcements (RSS)</source>
+    </item>
+    <item>
+      <title>CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?</title>
+      <link>https://rdi.berkeley.edu/blog/cyberbingym</link>
+      <guid isPermaLink="false">aihot-xenhfme3azzcf8qpihr57fb93</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 61. Source: Berkeley RDI: Blog (AI ). Open the original report for the full summary. — Source: Berkeley RDI: Blog (AI )</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/xenhfme3azzcf8qpihr57fb93">Berkeley RDI: Blog (AI )</source>
+    </item>
+    <item>
+      <title>Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams</title>
+      <link>https://alignment.anthropic.com/2026/worse-together/</link>
+      <guid isPermaLink="false">aihot-z9u4n1e7zfapxjozcn97quhdp</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 70. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary. — Source: Anthropic: Alignment Science Blog ( )</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp">Anthropic: Alignment Science Blog ( )</source>
+    </item>
+    <item>
+      <title>Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents</title>
+      <link>https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/</link>
+      <guid isPermaLink="false">aihot-womexcn3n0ijhbehvhbsxxm4f</guid>
+      <pubDate>Tue, 10 Nov 2026 20:52:56 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 72. Source: Microsoft Research (RSS). Open the original report for the full summary. — Source: Microsoft Research (RSS)</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f">Microsoft Research (RSS)</source>
+    </item>
+    <item>
+      <title>OpenRouter is officially part of @stripe today!</title>
+      <link>https://x.com/OpenRouter/status/2120234542183395787</link>
+      <guid isPermaLink="false">aihot-zycmiklep7i6dct58558jbp78</guid>
+      <pubDate>Tue, 10 Nov 2026 19:18:01 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 72. Source: X: OpenRouter (@OpenRouter). Open the original report for the full summary. — Source: X: OpenRouter (@OpenRouter)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/zycmiklep7i6dct58558jbp78">X: OpenRouter (@OpenRouter)</source>
+    </item>
+    <item>
+      <title>Now, you can use your ChatGPT Business plan in tools like @NotionHQ, @v0, @ampcode, @kilocode, @warpdotdev, Hermes from @NousResearch, @...</title>
+      <link>https://x.com/OpenAIDevs/status/2120212596850663712</link>
+      <guid isPermaLink="false">aihot-y4pcrys3ewo3xnx1j45mbpbfy</guid>
+      <pubDate>Tue, 10 Nov 2026 17:50:49 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 67. Source: X: OpenAI Developers (@OpenAIDevs). Open the original report for the full summary. — Source: X: OpenAI Developers (@OpenAIDevs)</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy">X: OpenAI Developers (@OpenAIDevs)</source>
+    </item>
+    <item>
+      <title>Jensen&apos;s Bizarre Adventure</title>
+      <link>https://www.wheresyoured.at/jensens-bizarre-adventure/</link>
+      <guid isPermaLink="false">aihot-gqzca7y2h3m9p0fxtj60m4i1t</guid>
+      <pubDate>Tue, 10 Nov 2026 17:43:27 GMT</pubDate>
+      <description>AIHOT editorial pick · Industry · score 84. Source: Ed Zitron / Where&quot;s Your Ed At (RSS). Open the original report for the full summary. — Source: Ed Zitron / Where&quot;s Your Ed At (RSS)</description>
+      <category>AIHOT</category>
+      <category>Industry</category>
+      <source url="https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t">Ed Zitron / Where&quot;s Your Ed At (RSS)</source>
+    </item>
+    <item>
+      <title>ERNIE 5.5 Flash Preview</title>
+      <link>https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/</link>
+      <guid isPermaLink="false">aihot-qd3f4j2hd0t98tqf28iv7pu2j</guid>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Models · score 73. Source: ERNIE. Open the original report for the full summary. — Source: ERNIE</description>
+      <category>AIHOT</category>
+      <category>AI Models</category>
+      <source url="https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j">ERNIE</source>
+    </item>
+    <item>
+      <title>Cursor Projects is now multiplayer</title>
+      <link>https://cursor.com/blog/projects-multiplayer</link>
+      <guid isPermaLink="false">aihot-vouc5yc5intvgg7311kekkhsi</guid>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 67. Source: Cursor Blog. Open the original report for the full summary. — Source: Cursor Blog</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/vouc5yc5intvgg7311kekkhsi">Cursor Blog</source>
+    </item>
+    <item>
+      <title>What Affects CoT Monitorability Across The Model Lifecycle?</title>
+      <link>https://alignment.openai.com/cot-monitorability-model-lifecycle/</link>
+      <guid isPermaLink="false">aihot-uif827ayipylunwlh7gejgcbo</guid>
+      <pubDate>Tue, 10 Nov 2026 08:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 71. Source: OpenAI: Alignment (RSS). Open the original report for the full summary. — Source: OpenAI: Alignment (RSS)</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/uif827ayipylunwlh7gejgcbo">OpenAI: Alignment (RSS)</source>
+    </item>
+    <item>
+      <title>Introducing Claude Whiteboards, Claude Sheets, and Claude Data</title>
+      <link>https://claude.com/blog/sheets-whiteboards-data</link>
+      <guid isPermaLink="false">aihot-c1fodrvts3po1pprz70weooju</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 76. Source: Claude: Blog ( ). Open the original report for the full summary. — Source: Claude: Blog ( )</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/c1fodrvts3po1pprz70weooju">Claude: Blog ( )</source>
+    </item>
+    <item>
+      <title>Using peers&quot; work to gain unauthorized access to OpenAI research infrastructure</title>
+      <link>https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/</link>
+      <guid isPermaLink="false">aihot-mx6m3dvh7s5zz7u91h4iqd5pt</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 80. Source: OpenAI: ( ). Open the original report for the full summary. — Source: OpenAI: ( )</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt">OpenAI: ( )</source>
+    </item>
+    <item>
+      <title>Your apps can now open in Claude, and Claude can work in them</title>
+      <link>https://claude.com/blog/interactive-connectors-full-tool</link>
+      <guid isPermaLink="false">aihot-s7ny0oaxr6q9e5677fmb2hqpf</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 70. Source: Claude: Blog ( ). Open the original report for the full summary. — Source: Claude: Blog ( )</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf">Claude: Blog ( )</source>
+    </item>
+    <item>
+      <title>Diluting Poisoned Fine-Tuning Data Can Strengthen Its Effect</title>
+      <link>https://alignment.anthropic.com/2026/homeopathic-learning/</link>
+      <guid isPermaLink="false">aihot-xaj5t8sbv4qtc0n9ovus1nfl9</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · Research · score 69. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary. — Source: Anthropic: Alignment Science Blog ( )</description>
+      <category>AIHOT</category>
+      <category>Research</category>
+      <source url="https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9">Anthropic: Alignment Science Blog ( )</source>
+    </item>
+    <item>
+      <title>On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery</title>
+      <link>https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/</link>
+      <guid isPermaLink="false">aihot-hq666kd02bayn64cw702xm11w</guid>
+      <pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate>
+      <description>AIHOT editorial pick · AI Products · score 71. Source: Google Developers Blog (RSS). Open the original report for the full summary. — Source: Google Developers Blog (RSS)</description>
+      <category>AIHOT</category>
+      <category>AI Products</category>
+      <source url="https://aihot.news/items/hq666kd02bayn64cw702xm11w">Google Developers Blog (RSS)</source>
+    </item>
     <item>
       <title>A single AI model simulates the behavior of many substances, from sliding sand to folding proteins</title>
       <link>https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109</link>
@@ -839,187 +1119,6 @@
       <category>Reasoning</category>
       <category>Open weights</category>
       <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)</title>
-      <link>https://openrouter.ai/nvidia/nemotron-3.5-super-vl</link>
-      <guid isPermaLink="false">release-nvidia-nemotron-3-5-super-vl</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
-      <category>NVIDIA</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)</title>
-      <link>https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free</link>
-      <guid isPermaLink="false">release-nvidia-nemotron-3-5-super-vl-free</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
-      <category>NVIDIA</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <category>Free</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)</title>
-      <link>https://openrouter.ai/unbiased/pareto-26.10</link>
-      <guid isPermaLink="false">release-unbiased-pareto-26-10</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision. — Source: OpenRouter</description>
-      <category>Unbiased</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection</title>
-      <link>https://deepmind.google/blog/on-device-ai-scam-detection-mddi/</link>
-      <guid isPermaLink="false">rss-84ad2e83</guid>
-      <pubDate>Wed, 14 Oct 2026 02:00:14 GMT</pubDate>
-      <description>Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress. — Source: Google DeepMind</description>
-      <category>Google DeepMind</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
-    </item>
-    <item>
-      <title>Gemini 4 Argon: Built to solve your hardest problems</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/</link>
-      <guid isPermaLink="false">rss-d3dc22ab</guid>
-      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
-      <description>We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>Introducing Playground: Create and play custom games</title>
-      <link>https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/</link>
-      <guid isPermaLink="false">rss-b7018172</guid>
-      <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
-      <description>Playground is a new experimental gaming platform that lets you create, play, and share custom games. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>vllm-project/vllm released v0.31.0</title>
-      <link>https://github.com/vllm-project/vllm/releases/tag/v0.31.0</link>
-      <guid isPermaLink="false">github-release-vllm-project-vllm-v0-31-0</guid>
-      <pubDate>Mon, 05 Oct 2026 06:44:55 GMT</pubDate>
-      <description># v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp… — Source: GitHub Releases</description>
-      <category>vllm</category>
-      <category>GitHub Release</category>
-      <category>Open source</category>
-      <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
-    </item>
-    <item>
-      <title>The latest AI news we announced in September 2026</title>
-      <link>https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/</link>
-      <guid isPermaLink="false">rss-3b38f89a</guid>
-      <pubDate>Fri, 02 Oct 2026 15:00:00 GMT</pubDate>
-      <description>Here are Google’s latest AI updates from September 2026 — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>Watch the winning trailer from the Future Vision XPRIZE, The Gifted.</title>
-      <link>https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/</link>
-      <guid isPermaLink="false">rss-f0293447</guid>
-      <pubDate>Mon, 28 Sep 2026 19:00:00 GMT</pubDate>
-      <description>Watch the winning trailer from the Future Vision XPRIZE, The Gifted. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release</title>
-      <link>https://api-docs.deepseek.com/updates#2026-09-10</link>
-      <guid isPermaLink="false">release-deepseek-2026-09-10-36ec302b</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release</title>
-      <link>https://api-docs.deepseek.com/updates#2026-08-21</link>
-      <guid isPermaLink="false">release-deepseek-2026-08-21-3fa111a9</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model=&apos;deepseek-… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update</title>
-      <link>https://api-docs.deepseek.com/updates#2026-08-13</link>
-      <guid isPermaLink="false">release-deepseek-2026-08-13-7bb335ab</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update</title>
-      <link>https://api-docs.deepseek.com/updates#2026-07-31</link>
-      <guid isPermaLink="false">release-deepseek-2026-07-31-c99ac55c</guid>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon</title>
-      <link>https://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/</link>
-      <guid isPermaLink="false">rss-13684b5c</guid>
-      <pubDate>Wed, 29 Jul 2026 09:00:00 GMT</pubDate>
-      <description>Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin… — Source: Berkeley BAIR</description>
-      <category>Berkeley BAIR</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
-    </item>
-    <item>
-      <title>Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction</title>
-      <link>https://bair.berkeley.edu/blog/2026/07/26/abbel/</link>
-      <guid isPermaLink="false">rss-83865e2b</guid>
-      <pubDate>Sun, 26 Jul 2026 09:00:00 GMT</pubDate>
-      <description>Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — Source: Berkeley BAIR</description>
-      <category>Berkeley BAIR</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-04-24): DeepSeek-V4</title>
-      <link>https://api-docs.deepseek.com/updates#2026-04-24</link>
-      <guid isPermaLink="false">release-deepseek-2026-04-24-a1208998</guid>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
   </channel>
 </rss>

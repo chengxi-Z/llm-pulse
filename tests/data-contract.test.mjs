@@ -210,13 +210,13 @@ test('topics：真实热榜 schema / count / 排序 / 纯文本摘要', (t) => {
     for (const k of ['id', 'title', 'source']) assert.ok(isStr(topic[k]), `${tag} ${k} 缺失`);
     assert.ok(!ids.has(topic.id), `${tag} id 重复`);
     ids.add(topic.id);
-    assert.match(topic.id, /^hn-\d+$/, `${tag} id 应为 hn-<objectID>`);
+    assert.match(topic.id, /^(hn-\d+|aihot-[A-Za-z0-9_-]+)$/, `${tag} id 应为 hn-<objectID> 或 aihot-<id>`);
     assert.ok(/^https?:\/\//.test(topic.url || topic.hnUrl || ''), `${tag} url/hnUrl 至少一个为 http(s)`);
     if (topic.url !== null && topic.url !== undefined) assert.match(topic.url, /^https?:\/\//, `${tag} url`);
     assert.ok(isIso(topic.publishedAt), `${tag} publishedAt`);
     assert.ok(Number.isInteger(topic.points) && topic.points >= 0, `${tag} points`);
     assert.ok(Number.isInteger(topic.comments) && topic.comments >= 0, `${tag} comments`);
-    assert.ok(topic.points >= 30, `${tag} points 应 ≥30（HN 近 7 天 AI 相关）`);
+    if (!topic.hot) assert.ok(topic.points >= 30, `${tag} points 应 ≥30（HN 近 7 天 AI 相关）`);
     if (topic.summary !== null && topic.summary !== undefined) {
       assert.ok(isStr(topic.summary) && topic.summary.length <= 240, `${tag} summary 长度/类型`);
       assert.ok(!hasHtml(topic.summary), `${tag} summary 含 HTML`);
@@ -224,10 +224,22 @@ test('topics：真实热榜 schema / count / 排序 / 纯文本摘要', (t) => {
     }
     assert.ok(Array.isArray(topic.tags), `${tag} tags 应为数组`);
   }
-  // stable ordering: points desc, then id asc
+  // Stable ordering: AIHOT keeps its editorial rank; HN stays points desc / id asc.
+  const aihotBoard = topics.items.some((topic) => topic.hot);
   for (let i = 1; i < topics.items.length; i++) {
     const prev = topics.items[i - 1];
     const cur = topics.items[i];
-    assert.ok(prev.points > cur.points || (prev.points === cur.points && prev.id < cur.id), `topics 排序应 points desc / id asc @${i}`);
+    if (aihotBoard) {
+      assert.ok(prev.rank <= cur.rank, `AIHOT topics 排序应 rank asc @${i}`);
+    } else {
+      assert.ok(prev.points > cur.points || (prev.points === cur.points && prev.id < cur.id), `topics 排序应 points desc / id asc @${i}`);
+    }
+  }
+  // The legacy HN list is still shipped for traceability and must stay valid.
+  if (Array.isArray(topics.hnItems)) {
+    for (const [i, topic] of topics.hnItems.entries()) {
+      assert.match(topic.id, /^hn-\d+$/, `[hnItems[${i}]] id 应为 hn-<objectID>`);
+      assert.ok(topic.points >= 30, `[hnItems[${i}]] points 应 ≥30`);
+    }
   }
 });

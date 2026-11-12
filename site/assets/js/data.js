@@ -2,7 +2,7 @@
 
 const DATA_BASE = new URL('./data/', document.baseURI).href;
 const FETCH_TIMEOUT = 8000;
-const FILES = ['meta', 'models', 'news', 'rankings', 'resources', 'projects', 'skills', 'topics', 'usage'];
+const FILES = ['meta', 'models', 'news', 'rankings', 'resources', 'projects', 'skills', 'topics', 'usage', 'aihot'];
 const EMPTY_FALLBACK = {
   meta: {
     schemaVersion: 1,
@@ -22,6 +22,7 @@ const EMPTY_FALLBACK = {
   skills: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
   topics: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'fallback', items: [] },
   usage: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'openrouter-rankings', granularity: 'week', weeks: [], monthlyTokens: 0, monthlyDays: 0 },
+  aihot: { schemaVersion: 1, generatedAt: '2026-11-03T12:00:00.000Z', source: 'aihot-v1', sourceLabel: 'AIHOT', sourceUrl: 'https://aihot.news/', hotTopics: [], latest: [], reports: {}, resets: {}, stats: { hotTopics: 0, latest: 0, resets: 0 } },
 };
 
 const cache = new Map();
@@ -68,6 +69,14 @@ function normalize(name, data) {
       return { ...data, items: asArray(data.items) };
     case 'usage':
       return { ...data, weeks: asArray(data.weeks) };
+    case 'aihot':
+      return {
+        ...data,
+        hotTopics: asArray(data.hotTopics),
+        latest: asArray(data.latest),
+        reports: data.reports && typeof data.reports === 'object' ? data.reports : {},
+        resets: data.resets && typeof data.resets === 'object' ? data.resets : {},
+      };
     default:
       return data;
   }

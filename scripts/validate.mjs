@@ -22,7 +22,7 @@ const warnings = [];
 const err = (m) => errors.push(m);
 const warn = (m) => warnings.push(m);
 
-const files = ["meta", "models", "news", "rankings", "resources", "projects", "skills", "topics", "usage"];
+const files = ["meta", "models", "news", "rankings", "resources", "projects", "skills", "topics", "usage", "aihot"];
 const data = {};
 
 function readJson(name) {
@@ -283,6 +283,38 @@ if (topics) {
       if (ids.has(t.id)) err(`${tag} id 重复`); else ids.add(t.id);
     });
   }
+}
+
+// ---------- aihot (AIHOT MCP / public API module) ----------
+const aihot = data.aihot;
+if (aihot) {
+  if (aihot.source !== "aihot-v1") err(`[aihot] source 非法: ${aihot.source}`);
+  if (!Array.isArray(aihot.hotTopics)) err(`[aihot] hotTopics 应为数组`);
+  else {
+    const hotIds = new Set();
+    aihot.hotTopics.forEach((t, i) => {
+      const tag = `[aihot.hotTopics[${i}] ${t.id ?? "?"}]`;
+      if (!isStr(t.id) || !isStr(t.title)) err(`${tag} id/title 缺失`);
+      if (!Number.isInteger(t.rank) || t.rank < 1) err(`${tag} rank 应为正整数`);
+      if (!/^https?:\/\//.test(t.url || "")) err(`${tag} url 应为 http(s)`);
+      if (!Number.isInteger(t.sourceCount) || t.sourceCount < 0) err(`${tag} sourceCount 非法`);
+      if (!Number.isInteger(t.signalCount) || t.signalCount < 0) err(`${tag} signalCount 非法`);
+      if (hotIds.has(t.id)) err(`${tag} id 重复`); else hotIds.add(t.id);
+    });
+  }
+  if (!Array.isArray(aihot.latest)) err(`[aihot] latest 应为数组`);
+  else aihot.latest.forEach((item, i) => {
+    const tag = `[aihot.latest[${i}] ${item.id ?? "?"}]`;
+    if (!isStr(item.id) || !isStr(item.title)) err(`${tag} id/title 缺失`);
+    if (!/^https?:\/\//.test(item.aihotUrl || item.originalUrl || "")) err(`${tag} 缺少可追溯链接`);
+  });
+  if (!aihot.reports || typeof aihot.reports !== "object") err(`[aihot] reports 缺失`);
+  if (!aihot.resets || typeof aihot.resets !== "object") err(`[aihot] resets 缺失`);
+  for (const [key, reset] of Object.entries(aihot.resets || {})) {
+    if (!isStr(reset.label)) err(`[aihot.resets.${key}] label 缺失`);
+    if (!Array.isArray(reset.events)) err(`[aihot.resets.${key}] events 应为数组`);
+  }
+  if (!isStr(aihot.attribution && aihot.attribution.url)) err(`[aihot] attribution.url 缺失`);
 }
 
 // ---------- stats consistency ----------

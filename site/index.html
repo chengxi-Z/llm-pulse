@@ -100,6 +100,7 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/aihot.css">
   <link rel="stylesheet" href="assets/css/assistant.css">
   <link rel="stylesheet" href="assets/css/share.css">
 </head>
@@ -119,6 +120,7 @@
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
           <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="aihot.html" data-i18n="nav.aihot">AI Hot</a></li>
           <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
           <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>
@@ -265,12 +267,12 @@
 			<article class="dash-card dash-card--topics" id="dash-topics-card">
             <header class="dash-card-head">
               <h3 data-i18n="dashboard.topics.title">AI hot topics</h3>
-              <span class="dash-card-head-note" data-i18n="dashboard.topics.subtitle">Hacker News · last 7 days</span>
+              <span class="dash-card-head-note" data-i18n="dashboard.topics.subtitle">AIHOT · live ranking</span>
             </header>
             <div class="dash-card-body">
               <ol class="dash-topics" id="dash-topics" data-i18n-attr="aria-label:dashboard.topics.aria" aria-label="Hacker News AI hot topics"></ol>
             </div>
-            <p class="dash-card-note" id="dash-topics-note" data-i18n="dashboard.topics.note">Source: AI-related Hacker News discussions from the last 7 days, sorted by points — not a global search trend.</p>
+            <p class="dash-card-note" id="dash-topics-note" data-i18n="dashboard.topics.noteHot">Source: AIHOT multi-source hot topics, ranked by the editor.</p>
           </article>
         </div>
         <div class="dash-tooltip" id="dash-tooltip" hidden></div>
@@ -348,11 +350,35 @@
     </section>
 
     <!-- ============ Explore ============ -->
+    <section class="section section--rule" id="home-aihot" aria-labelledby="home-aihot-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-idx">04</span> <span data-i18n="home.aihot.label">AI Hot</span> <span class="eyebrow-en">AI HOT</span></p>
+            <h2 id="home-aihot-title" data-i18n="home.aihot.title">What the AI world is watching</h2>
+            <p class="section-desc" data-i18n="home.aihot.desc">Ranked multi-source events and editorial briefings from AIHOT, refreshed with the rest of the data every day.</p>
+          </div>
+          <a class="link-arrow" href="aihot.html" data-i18n="home.aihot.link">Open AI Hot</a>
+        </div>
+        <div class="ah-home-grid">
+          <div class="ah-home-hot">
+            <h3 class="ah-sub" data-i18n="home.aihot.hotTitle">Ranked right now</h3>
+            <ol class="ah-hot-list" id="home-aihot-hot"><li class="ah-empty" data-i18n="home.aihot.empty">No hot topics available right now.</li></ol>
+          </div>
+          <aside class="ah-home-pulse">
+            <h3 class="ah-sub" data-i18n="home.aihot.resetsTitle">Usage-limit watch</h3>
+            <div id="home-aihot-resets"><p class="ah-empty" data-i18n="home.aihot.empty">No hot topics available right now.</p></div>
+          </aside>
+        </div>
+        <p class="ah-source-note" data-i18n="home.aihot.sourceNote">Source: AIHOT (aihot.news) · editorial picks and multi-source events · every item links back to its original source.</p>
+      </div>
+    </section>
+
     <section class="section section--rule" aria-labelledby="explore-title">
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow"><span class="eyebrow-idx">04</span> <span data-i18n="home.explore.label">Keep exploring</span> <span class="eyebrow-en">EXPLORE</span></p>
+            <p class="eyebrow"><span class="eyebrow-idx">05</span> <span data-i18n="home.explore.label">Keep exploring</span> <span class="eyebrow-en">EXPLORE</span></p>
             <h2 id="explore-title" data-i18n="home.explore.title">From information to action</h2>
             <p class="section-desc" data-i18n="home.explore.desc">Once you've read the changes: learn how to build, or see what others have already made.</p>
           </div>
@@ -428,6 +454,7 @@
         <h4 id="footer-explore" data-i18n="footer.explore">Explore</h4>
         <ul class="footer-links">
           <li><a href="news.html" data-i18n="nav.news">Updates</a></li>
+          <li><a href="aihot.html" data-i18n="nav.aihot">AI Hot</a></li>
           <li><a href="rankings.html" data-i18n="nav.rankings">Leaderboards</a></li>
           <li><a href="models.html" data-i18n="nav.models">Model Catalog</a></li>
           <li><a href="deepseek.html" data-i18n="nav.deepseek">DeepSeek</a></li>

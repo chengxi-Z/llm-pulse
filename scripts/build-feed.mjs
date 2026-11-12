@@ -119,7 +119,7 @@ export function buildFeedItems(data, opts = {}) {
       const publishedAt = isoOrNull(item.publishedAt) || isoOrNull(data?.meta?.generatedAt) || null;
       const url = absoluteUrl(item.url || item.sourceUrl || `news.html#${encodeURIComponent(id)}`, baseUrl);
       const summary = textOf(item.summaryEn || item.summary || '', '').slice(0, 240);
-      const sourceName = textOf(item.sourceName, '');
+      const sourceName = textOf(item.sourceNameEn || item.sourceName, '');
       return {
         id,
         title: textOf(item.titleEn || item.title, 'Untitled'),

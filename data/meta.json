@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T09:56:12.598Z",
+  "generatedAt": "2026-11-12T06:11:38.091Z",
   "source": "fetch-pipeline:ci",
   "mode": "ci",
   "site": {
@@ -10,15 +10,17 @@
   },
   "stats": {
     "models": 461,
-    "news": 88,
+    "news": 116,
     "boards": 8,
     "resources": 22,
     "projects": 13,
     "topics": 10,
     "usageWeeks": 12,
     "orgs": 63,
-    "sourcesOk": 19,
-    "sourcesDegraded": 0
+    "sourcesOk": 20,
+    "sourcesDegraded": 0,
+    "aihotTopics": 10,
+    "aihotLatest": 30
   },
   "sources": [
     {
@@ -210,11 +212,21 @@
       "lastFetchedAt": "2026-11-09T09:56:12.598Z",
       "items": 10,
       "note": "HN last 7d AI stories: 30 hits -> Top 10 topics; 10 with discussion summary"
+    },
+    {
+      "id": "aihot",
+      "name": "AIHOT 中文 AI 资讯（精选 / 热点 / 日报）",
+      "url": "https://aihot.news/api/v1",
+      "type": "api",
+      "status": "ok",
+      "lastFetchedAt": "2026-11-12T06:11:38.091Z",
+      "items": 30,
+      "note": "AIHOT 精选 30 条 / 热点 10 条 / 日报·周报·月报 / 额度重置 3 路"
     }
   ],
   "latestHighlights": [
-    "OpenRouter 目录共 461 个模型，覆盖 63 家厂商",
-    "LiveBench 2.0 榜单已接入（2026-10-25），当前 Top1：Claude Fable 5.1",
-    "已收录 22 个学习资源与 13 个优秀项目"
+    "当前最热：英伟达董事会调查黄仁勋涉外国情报事件",
+    "今日要点：Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+    "本周综述：本周 OpenAI 发布网络安全模型 GPT-6 Cyber，腾讯混元 Hy4 与 Moonshot AI 的 Kimi K3.…"
   ]
 }

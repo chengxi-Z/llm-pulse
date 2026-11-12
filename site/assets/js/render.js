@@ -745,7 +745,7 @@ function renderHomeRankings(data) {
 }
 
 function newsRowHtml(item) {
-  const title = plainText(item.title || t('ui.untitledNews'), 160);
+  const title = plainText(localizedItemField(item, 'title') || t('ui.untitledNews'), 160);
   const anchor = `news.html#news-${safeId(item.id)}`;
   return `<li>
   <div class="news-row">
@@ -758,7 +758,7 @@ function newsRowHtml(item) {
     ${shareButton({
       title,
       url: safeHref(item.url) || safeHref(item.sourceUrl),
-      desc: plainText(item.summary || title, 140),
+      desc: plainText(localizedItemField(item, 'summary') || title, 140),
     })}
   </div>
 </li>`;

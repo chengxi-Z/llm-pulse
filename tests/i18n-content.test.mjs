@@ -49,7 +49,7 @@ test("pipeline preserves curated English fields", () => {
 
 
 test("English default: static HTML is free of CJK and fullwidth punctuation", () => {
-  const files = ["index.html", "news.html", "rankings.html", "models.html", "resources.html", "projects.html", "skills.html", "about.html", "deepseek.html", "404.html"];
+  const files = ["index.html", "news.html", "rankings.html", "models.html", "resources.html", "projects.html", "skills.html", "about.html", "deepseek.html", "aihot.html", "404.html"];
   const bad = /[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/;
   for (const file of files) {
     const html = readFileSync(new URL(`site/${file}`, ROOT), "utf8");

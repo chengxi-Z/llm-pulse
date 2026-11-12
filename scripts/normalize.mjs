@@ -1096,7 +1096,13 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
     .map((p) => ({ ...p, url: fixUrl(p.url, `projects.${p.id}.url`) }));
   const topics = (Array.isArray(collections.topics) ? collections.topics : [])
     .slice()
-    .sort((a, b) => (b.points - a.points) || (a.id < b.id ? -1 : 1))
+    .sort((a, b) => {
+      // AIHOT ranked events keep their editorial order; HN items stay behind,
+      // sorted by points as before.
+      if (a.hot !== b.hot) return a.hot ? -1 : 1;
+      if (a.hot && b.hot) return (a.rank || 0) - (b.rank || 0);
+      return (b.points - a.points) || (a.id < b.id ? -1 : 1);
+    })
     .map((t) => ({
       ...t,
       url: fixUrl(t.url, `topics.${t.id}.url`, t.hnUrl),
@@ -1113,6 +1119,8 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
     projects: projects.length,
     topics: topics.length,
     usageWeeks: usage ? usage.weeks.length : 0,
+    aihotTopics: topics.filter((t) => t.hot).length,
+    aihotLatest: collections.aihot && Array.isArray(collections.aihot.latest) ? collections.aihot.latest.length : 0,
     orgs,
     sourcesOk: statusOk,
     sourcesDegraded: sources.length - statusOk,
@@ -1140,8 +1148,16 @@ export function assembleData({ mode, now, sources, collections, highlights }) {
   const usageFile = usage
     ? { ...usage, generatedAt: gen }
     : { schemaVersion: 1, generatedAt: gen, source: 'openrouter-rankings', sourceLabel: 'OpenRouter token volume', granularity: 'week', weeks: [], monthlyTokens: 0, monthlyDays: 0, note: 'unavailable' };
+  const aihotFile = collections.aihot && typeof collections.aihot === 'object'
+    ? { schemaVersion: 1, ...collections.aihot, generatedAt: gen }
+    : { schemaVersion: 1, generatedAt: gen, source: 'aihot-v1', sourceLabel: 'AIHOT', sourceUrl: 'https://aihot.news/', hotTopics: [], latest: [], reports: {}, resets: {}, stats: { hotTopics: 0, latest: 0, resets: 0 } };
+  // Keep the HN list available for traceability without mixing it into the
+  // ranked AIHOT board shown in the dashboard.
+  const hnTopics = topics.filter((t) => !t.hot).slice(0, 10);
+  topicsFile.hnItems = hnTopics;
+  topicsFile.hotSource = topics.some((t) => t.hot) ? 'aihot' : 'hn-ai';
   return {
-    files: { meta, models: modelsFile, news: newsFile, rankings: rankingsFile, resources: resourcesFile, projects: projectsFile, topics: topicsFile, usage: usageFile },
+    files: { meta, models: modelsFile, news: newsFile, rankings: rankingsFile, resources: resourcesFile, projects: projectsFile, topics: topicsFile, usage: usageFile, aihot: aihotFile },
     stats,
     linkWarnings: warnings,
   };
@@ -1363,8 +1379,10 @@ export function normalizeGithubReleases(releasesByRepo, { now, maxPerRepo = 3 } 
 }
 
 /** Build homepage highlights (max 3, pure function) */
-export function buildHighlights({ models, boards, news, resources, projects, now }) {
+export function buildHighlights({ models, boards, news, resources, projects, aihot, now }) {
   const out = [];
+  // AIHOT editorial picks are the most time-sensitive lines on the home page.
+  if (aihot) out.push(...buildAihotHighlights(aihot));
   const orgs = new Set((models || []).map((m) => m.org).filter(Boolean)).size;
   if (models?.length) out.push(`OpenRouter 目录共 ${models.length} 个模型，覆盖 ${orgs} 家厂商`);
   const board = (boards || []).find((b) => b.id === 'livebench-2.0');
@@ -1375,5 +1393,314 @@ export function buildHighlights({ models, boards, news, resources, projects, now
     out.push(`最新动态：${news[0].title}`);
   }
   if (resources?.length || projects?.length) out.push(`已收录 ${resources?.length ?? 0} 个学习资源与 ${projects?.length ?? 0} 个优秀项目`);
+  return out.slice(0, 3);
+}
+
+
+// ---------------------------------------------------------------------------
+// AIHOT (https://aihot.news) public API -> data/aihot.json + news/topics/highlights
+// Data is untrusted external content: titles/summaries are plain text only,
+// every item keeps both the AIHOT reading link and the original source link.
+// ---------------------------------------------------------------------------
+export const AIHOT_CATEGORY_LABELS = {
+  'ai-models': 'AI 模型',
+  'ai-products': 'AI 产品',
+  industry: '行业动态',
+  paper: '论文研究',
+  tip: '教程技巧',
+  opinion: '观点评论',
+};
+export const AIHOT_CATEGORY_KIND = {
+  'ai-models': 'release',
+  'ai-products': 'release',
+  industry: 'policy',
+  paper: 'research',
+  tip: 'oss',
+  opinion: 'research',
+};
+export const AIHOT_RESET_KEYS = ['codex', 'claude', 'antigravity'];
+export const AIHOT_HOT_LIMIT = 10;
+export const AIHOT_LATEST_LIMIT = 30;
+export const AIHOT_SECTION_ITEM_LIMIT = 6;
+
+const aihotStr = (v, max = 0) => {
+  const s = plainText(v, 0);
+  return max > 0 ? s.slice(0, max) : s;
+};
+const aihotUrl = (v) => (typeof v === 'string' && /^https?:\/\//i.test(v.trim()) ? v.trim() : null);
+const aihotInt = (v) => (Number.isFinite(Number(v)) ? Math.max(0, Math.trunc(Number(v))) : 0);
+/** Keep only ASCII-safe English text (official original titles / metadata labels). */
+const aihotEnglishText = (v) => {
+  let s = String(v == null ? '' : v)
+    .replace(/[：]/g, ': ').replace(/[，、]/g, ', ').replace(/[。；]/g, '. ')
+    .replace(/[（）]/g, (m) => (m === '（' ? ' (' : ')'))
+    .replace(/[“”‘’]/g, '"').replace(/[—–]/g, '-').replace(/…/g, '...')
+    .replace(/[\u3000-\u303f\u3400-\u9fff\uff00-\uffef]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return s;
+};
+const AIHOT_CATEGORY_EN = {
+  'ai-models': 'AI Models',
+  'ai-products': 'AI Products',
+  industry: 'Industry',
+  paper: 'Research',
+  tip: 'Tutorial',
+  opinion: 'Opinion',
+};
+
+function normalizeAihotHotTopic(entry, index) {
+  if (!entry || !aihotStr(entry.title)) return null;
+  const links = entry.links || {};
+  const aihot = aihotUrl(links.aihot);
+  const story = aihotUrl(links.story);
+  return {
+    rank: Number.isInteger(entry.rank) && entry.rank > 0 ? entry.rank : index + 1,
+    id: aihotStr(entry.id) || `hot-${index + 1}`,
+    title: aihotStr(entry.title, 200),
+    url: aihot,
+    originalUrl: aihotUrl(links.original),
+    storyUrl: story,
+    sourceName: aihotStr(entry.source && entry.source.name) || 'AIHOT',
+    sourceCount: aihotInt(entry.sourceCount),
+    signalCount: aihotInt(entry.signalCount),
+    participantCount: aihotInt(entry.participantCount),
+    sourceNames: Array.isArray(entry.sourceNames) ? entry.sourceNames.map((n) => aihotStr(n, 80)).filter(Boolean).slice(0, 8) : [],
+    latestAt: toIsoDateTime(entry.latestAt) || null,
+  };
+}
+
+function normalizeAihotItem(entry, index) {
+  if (!entry || !aihotStr(entry.title)) return null;
+  const links = entry.links || {};
+  return {
+    id: aihotStr(entry.id) || `item-${index + 1}`,
+    title: aihotStr(entry.title, 200),
+    originalTitle: aihotStr(entry.originalTitle, 200) || null,
+    summary: aihotStr(entry.summary, 400) || null,
+    reason: aihotStr(entry.reason, 300) || null,
+    category: AIHOT_CATEGORY_LABELS[entry.category] ? entry.category : null,
+    categoryLabel: AIHOT_CATEGORY_LABELS[entry.category] || '资讯',
+    score: aihotInt(entry.score),
+    selected: Boolean(entry.selected),
+    sourceName: aihotStr(entry.source && entry.source.name) || 'AIHOT',
+    aihotUrl: aihotUrl(links.aihot),
+    originalUrl: aihotUrl(links.original),
+    publishedAt: toIsoDateTime(entry.publishedAt) || null,
+    discoveredAt: toIsoDateTime(entry.discoveredAt) || null,
+  };
+}
+
+function normalizeAihotReportItem(entry, index) {
+  if (!entry || !aihotStr(entry.title)) return null;
+  const links = entry.links || {};
+  return {
+    id: aihotStr(entry.id) || `report-${index + 1}`,
+    title: aihotStr(entry.title, 200),
+    summary: aihotStr(entry.summary, 400) || null,
+    sourceName: aihotStr(entry.source && entry.source.name) || 'AIHOT',
+    aihotUrl: aihotUrl(links.aihot),
+    originalUrl: aihotUrl(links.original),
+  };
+}
+
+function normalizeAihotSection(entry, index) {
+  if (!entry) return null;
+  const items = (Array.isArray(entry.items) ? entry.items : [])
+    .map(normalizeAihotReportItem)
+    .filter(Boolean)
+    .slice(0, AIHOT_SECTION_ITEM_LIMIT);
+  return {
+    label: aihotStr(entry.label, 60) || `分节 ${index + 1}`,
+    summary: aihotStr(entry.summary, 400) || null,
+    items,
+  };
+}
+
+function normalizeAihotReport(report) {
+  if (!report || typeof report !== 'object') return null;
+  const links = report.links || {};
+  return {
+    key: aihotStr(report.date || report.week || report.month) || null,
+    periodStart: toIsoDateTime(report.periodStart) || null,
+    periodEnd: toIsoDateTime(report.periodEnd) || null,
+    generatedAt: toIsoDateTime(report.generatedAt) || null,
+    headline: aihotStr(report.headline, 300) || null,
+    overview: aihotStr(report.overview, 800) || null,
+    lead: report.lead
+      ? { title: aihotStr(report.lead.title, 200) || null, leadParagraph: aihotStr(report.lead.leadParagraph, 600) || null }
+      : null,
+    sections: (Array.isArray(report.sections) ? report.sections : []).map(normalizeAihotSection).filter(Boolean),
+    aihotUrl: aihotUrl(links.aihot || links.self) || 'https://aihot.news/',
+  };
+}
+
+function normalizeAihotReset(payload, key) {
+  if (!payload || typeof payload !== 'object') return null;
+  const events = (Array.isArray(payload.events) ? payload.events : []).slice(0, 6).map((event, i) => ({
+    id: aihotStr(event && event.id) || `${key}-event-${i + 1}`,
+    type: aihotStr(event && event.type, 40) || null,
+    displayLabel: aihotStr(event && event.displayLabel, 60) || aihotStr(event && event.label, 60) || null,
+    status: aihotStr(event && event.status, 40) || 'unknown',
+    title: aihotStr(event && event.title, 200) || null,
+    scope: aihotStr(event && event.scope, 120) || null,
+    audience: aihotStr(event && event.presentation && event.presentation.audienceZh, 160) || null,
+    estimateLabel: aihotStr(event && event.estimate && event.estimate.label, 120) || null,
+    createdAt: toIsoDateTime(event && event.createdAt) || null,
+    updatedAt: toIsoDateTime(event && event.updatedAt) || null,
+  }));
+  const monitor = payload.monitor || {};
+  return {
+    key,
+    label: { codex: 'Codex', claude: 'Claude', antigravity: 'Antigravity' }[key] || key,
+    checkedAt: toIsoDateTime(payload.checkedAt) || null,
+    today: aihotStr(payload.today, 20) || null,
+    status: aihotStr(monitor.status, 40) || 'unknown',
+    pendingCount: aihotInt(monitor.pendingCount),
+    count: aihotInt(payload.count),
+    events,
+  };
+}
+
+/** Raw /api/v1 responses -> the compact bundle stored in data/aihot.json. */
+export function normalizeAihotBundle(raw, { now } = {}) {
+  const payload = raw && typeof raw === 'object' ? raw : {};
+  const hotTopics = (Array.isArray(payload.hot && payload.hot.items) ? payload.hot.items : [])
+    .map(normalizeAihotHotTopic)
+    .filter(Boolean)
+    .sort((a, b) => a.rank - b.rank)
+    .slice(0, AIHOT_HOT_LIMIT);
+  const latest = (Array.isArray(payload.items && payload.items.items) ? payload.items.items : [])
+    .map(normalizeAihotItem)
+    .filter(Boolean)
+    .slice(0, AIHOT_LATEST_LIMIT);
+  const reports = {
+    daily: normalizeAihotReport(payload.daily && payload.daily.report),
+    weekly: normalizeAihotReport(payload.weekly && payload.weekly.report),
+    monthly: normalizeAihotReport(payload.monthly && payload.monthly.report),
+  };
+  const resets = {};
+  for (const key of AIHOT_RESET_KEYS) {
+    const normalized = normalizeAihotReset(payload[key], key);
+    if (normalized) resets[key] = normalized;
+  }
+  return {
+    generatedAt: toIsoDateTime(now) || new Date().toISOString(),
+    source: 'aihot-v1',
+    sourceLabel: 'AIHOT',
+    sourceUrl: 'https://aihot.news/',
+    agentUrl: 'https://aihot.news/agent',
+    attribution: {
+      name: 'AIHOT',
+      url: 'https://aihot.news/',
+      note: '内容来自 AIHOT 公开匿名接口，标题与摘要为第三方资料；重要事实请回原文核对。',
+    },
+    hotTopics,
+    latest,
+    reports,
+    resets,
+    stats: {
+      hotTopics: hotTopics.length,
+      latest: latest.length,
+      resets: Object.keys(resets).length,
+    },
+  };
+}
+
+/** AIHOT editorial picks -> data/news.json entries (keeps the existing contract). */
+export function aihotToNews(bundle, { now } = {}) {
+  const items = Array.isArray(bundle && bundle.latest) ? bundle.latest : [];
+  const fallback = toIsoDateTime(now) || new Date().toISOString();
+  return items.map((item) => {
+    const url = item.originalUrl || item.aihotUrl;
+    const kind = AIHOT_CATEGORY_KIND[item.category] || 'research';
+    // The English edition must stay CJK-free. AIHOT ships the official English
+    // original title for most picks; items without one stay in the AiHot module
+    // (which is bilingual by design) rather than leaking Chinese into Updates.
+    const original = String(item.originalTitle || '');
+    if (!original || /[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]/.test(original)) return null;
+    const titleEn = aihotEnglishText(original);
+    if (!titleEn || /[\u3400-\u9fff]/.test(titleEn)) return null;
+    const sourceEn = aihotEnglishText(item.sourceName) || 'AIHOT';
+    const categoryEn = AIHOT_CATEGORY_EN[item.category] || 'AI News';
+    const summaryEn = `AIHOT editorial pick · ${categoryEn} · score ${item.score}. Source: ${sourceEn}. Open the original report for the full summary.`;
+    return {
+      id: `aihot-${item.id}`,
+      title: item.title,
+      titleEn,
+      summary: item.summary || item.reason || item.title,
+      summaryEn,
+      url,
+      sourceUrl: item.aihotUrl || url,
+      sourceName: item.sourceName,
+      sourceNameEn: sourceEn,
+      publishedAt: item.publishedAt || fallback,
+      kind,
+      importance: item.score >= 85 ? 3 : item.score >= 70 ? 2 : 1,
+      tags: ['AIHOT', categoryEn],
+      models: [],
+      lang: 'zh',
+      aihot: {
+        id: item.id,
+        category: item.category,
+        categoryLabel: item.categoryLabel,
+        score: item.score,
+        selected: item.selected,
+        reason: item.reason,
+        aihotUrl: item.aihotUrl,
+        originalUrl: item.originalUrl,
+        originalTitle: item.originalTitle,
+        discoveredAt: item.discoveredAt,
+      },
+    };
+  }).filter((n) => n && n.url);
+}
+
+/** AIHOT ranked events -> data/topics.json entries (backward-compatible with HN fields). */
+export function aihotToTopics(bundle, { now } = {}) {
+  const items = Array.isArray(bundle && bundle.hotTopics) ? bundle.hotTopics : [];
+  const fallback = toIsoDateTime(now) || new Date().toISOString();
+  return items.map((topic) => {
+    const names = topic.sourceNames.slice(0, 3).join(' / ');
+    const summary = names
+      ? `多源事件：${names}${topic.sourceCount > 3 ? ` 等 ${topic.sourceCount} 家信源` : ''}`
+      : `AIHOT 当前热点 · 第 ${topic.rank} 位`;
+    return {
+      id: `aihot-${topic.id}`,
+      title: topic.title,
+      url: topic.url,
+      hnUrl: topic.storyUrl || topic.url,
+      domain: 'aihot.news',
+      points: topic.signalCount,
+      comments: topic.sourceCount,
+      publishedAt: topic.latestAt || fallback,
+      summary: summary.slice(0, 200),
+      source: 'AIHOT',
+      tags: ['AIHOT', 'Hot'],
+      hot: true,
+      rank: topic.rank,
+      sourceCount: topic.sourceCount,
+      signalCount: topic.signalCount,
+      participantCount: topic.participantCount,
+      storyUrl: topic.storyUrl,
+      sourceNames: topic.sourceNames,
+      originalUrl: topic.originalUrl,
+      sourceName: topic.sourceName,
+    };
+  }).filter((t) => t.url);
+}
+
+/** Editorial sentences for the home "In this issue" strip. */
+export function buildAihotHighlights(bundle) {
+  const out = [];
+  const hot = (bundle && bundle.hotTopics) || [];
+  const reports = (bundle && bundle.reports) || {};
+  if (hot[0]) out.push(`当前最热：${hot[0].title}`);
+  if (reports.daily && reports.daily.lead && reports.daily.lead.title) {
+    out.push(`今日要点：${reports.daily.lead.title}`);
+  }
+  if (reports.weekly && reports.weekly.overview) {
+    out.push(`本周综述：${reports.weekly.overview.slice(0, 64)}…`);
+  }
   return out.slice(0, 3);
 }

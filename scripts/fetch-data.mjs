@@ -57,7 +57,7 @@ await mkdir(snapshotDir, { recursive: true });
 const ctx = createFetchContext({ mode, now, fromSnapshot, snapshotDir, log: (m) => log(`  ${m}`) });
 
 const sourceMeta = new Map();
-const contributions = { models: null, news: [], boards: [], projects: null, topics: [], usage: null };
+const contributions = { models: null, news: [], boards: [], projects: null, topics: [], usage: null, aihot: null };
 const results = [];
 
 async function runSource(source) {
@@ -136,6 +136,7 @@ for (const r of results) {
   if (Array.isArray(r.contributions.projects)) contributions.projects = r.contributions.projects;
   if (Array.isArray(r.contributions.topics)) contributions.topics.push(...r.contributions.topics);
   if (r.contributions.usage) contributions.usage = r.contributions.usage;
+  if (r.contributions.aihot) contributions.aihot = r.contributions.aihot;
 }
 // Hot topics: keep the last known good topics.json when the HN source is unavailable.
 // Reusing previous real data is an explicit fallback; nothing is synthesized.
@@ -147,6 +148,17 @@ if (!contributions.topics.length) {
       log(`  ⚠ hn-ai 无新数据，沿用上次 data/topics.json（${prev.items.length} 条真实话题）`);
     }
   } catch { /* first run without topics.json: emit an empty list (front-end shows empty state) */ }
+}
+// AIHOT board: keep the last known good aihot.json when the source is down so
+// the dedicated module never renders an empty shell (real data only, no synthesis).
+if (!contributions.aihot) {
+  try {
+    const prev = JSON.parse(await readFile(join(DATA_DIR, 'aihot.json'), 'utf8'));
+    if (Array.isArray(prev.hotTopics) && prev.hotTopics.length) {
+      contributions.aihot = prev;
+      log(`  ⚠ aihot 无新数据，沿用上次 data/aihot.json（${prev.hotTopics.length} 条真实热点）`);
+    }
+  } catch { /* first run without aihot.json: assembleData emits an empty bundle */ }
 }
 if (!contributions.models || contributions.models.length === 0) {
   err('\n✗ 核心源 OpenRouter 无模型数据且无快照可回退，管道中止（不写空数据）。');
@@ -165,6 +177,7 @@ const highlights = buildHighlights({
   news: contributions.news,
   resources: contributions.resources,
   projects: contributions.projects,
+  aihot: contributions.aihot,
   now,
 });
 

@@ -22,6 +22,7 @@ import {
   normalizeHnTopics, extractHnDiscussionSummary, HN_TOPIC_LIMIT,
 } from '../normalize.mjs';
 import { RESOURCES, PROJECTS } from './curated.mjs';
+import { collectAihot } from './aihot.mjs';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/models';
 const OPENROUTER_USAGE_URL = 'https://openrouter.ai/api/frontend/v1/rankings/model-rankings-chart';
@@ -514,6 +515,10 @@ export const SOURCES = [
   {
     id: 'hn-ai', name: 'Hacker News AI 热榜', url: HN_SEARCH_URL, type: 'api',
     enabledLocal: true, enabledCi: true, collect: collectHnAi,
+  },
+  {
+    id: 'aihot', name: 'AIHOT 中文 AI 资讯（精选 / 热点 / 日报）', url: 'https://aihot.news/api/v1', type: 'api',
+    enabledLocal: true, enabledCi: true, collect: collectAihot,
   },
 ];
 

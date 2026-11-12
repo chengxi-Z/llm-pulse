@@ -22,6 +22,7 @@ import {
 import { initI18n, t, getLang, setLang, onLangChange, applyDom } from './i18n.js';
 import { initSkills, refreshSkills } from './skills.js';
 import { initDashboard, refreshDashboard } from './dashboard.js';
+import { initAiHot, initHomeAihot } from './aihot.js';
 
 const PAGE_INITS = {
   index: initHome,
@@ -32,6 +33,7 @@ const PAGE_INITS = {
   projects: initProjects,
   skills: initSkills,
   about: initAbout,
+  aihot: initAiHot,
 };
 
 let currentPage = '';
@@ -593,7 +595,7 @@ async function boot() {
     if (window.__siteErrors) {
       window.__siteErrors.runtime.push(`loadAll: ${error && error.message ? error.message : error}`);
     }
-    document.querySelectorAll('[data-page-content], #news-list, #new-models-grid').forEach((el) => {
+    document.querySelectorAll('[data-page-content], #news-list, #new-models-grid, #home-aihot-hot, #home-aihot-resets, #aihot-hot-list, #aihot-report-panel, #aihot-reset-grid').forEach((el) => {
       el.innerHTML = `<div class="empty-state empty-state--error" role="status"><p class="empty-title">${t(
         'ui.dataError.title'
       )}</p><p class="empty-desc">${t('ui.dataError.desc')}</p></div>`;
@@ -606,7 +608,10 @@ async function boot() {
   if (typeof init === 'function' && currentData) {
     try {
       init(currentData);
-      if (currentPage === 'index') initDashboard(currentData);
+      if (currentPage === 'index') {
+        initDashboard(currentData);
+        initHomeAihot(currentData);
+      }
     } catch (error) {
       if (window.__siteErrors) {
         window.__siteErrors.runtime.push(
