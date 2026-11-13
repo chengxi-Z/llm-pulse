@@ -66,9 +66,18 @@ Scope split: this directory hosts the **skill package itself** (`SKILL.md`,
 
 ## Install
 
+This repository ships the skill in two places:
+
+- `skills/one-sentence-project/` — the publishable package (documented by
+  `docs/SKILLS.md` and indexed by `data/skills.json`); this is the source of truth.
+- `.workbuddy/skills/one-sentence-project/` — a project-level copy so WorkBuddy
+  loads the playbook automatically when this workspace is open. Keep both in sync
+  when editing `SKILL.md`, `references/`, `scripts/` or `examples/`.
+
 1. Copy the `one-sentence-project/` directory into your agent's skills directory.
    The directory name must equal the frontmatter `name` value
    (`one-sentence-project`), otherwise the agent will not load it.
+   For WorkBuddy, the project-level target is `.workbuddy/skills/`.
 2. No dependencies: `node --version` must be >= 20 (scripts use ESM and built-in
    modules only).
 3. If your agent does not support a skills directory, point it at

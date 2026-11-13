@@ -2,7 +2,7 @@ import { t, getLang } from './i18n.js';
 import { intlNumber, intlDateTime, intlShortDate } from './render.js';
 import { escapeHtml as esc, safeHttpUrl } from './data.js';
 import { filterAihotNews, filterAihotSources, topicsForLang } from './aihot-scope.mjs';
-import { buildRankingIndex, collectCapabilityCostPointsForSource, median as medianOf } from './data-match.js';
+import { buildRankingIndex, collectCapabilityCostPointsBySource, median as medianOf } from './data-match.js';
 const COUNT_UP_MS = 900;
 const PRICE_TIERS = ['free', 'low', 'mid', 'high', 'premium'];
 const CAROUSEL_INTERVAL = 6500;
@@ -25,11 +25,35 @@ const SCATTER_SOURCES = [
   { key: 'gpqa', boardId: 'epoch-gpqa-diamond', labelKey: 'dashboard.scatter.metricGpqa' },
   { key: 'swe', boardId: 'epoch-swe-bench-verified', labelKey: 'dashboard.scatter.metricSwe' },
 ];
+/* Name matching is the expensive part of the dashboard build. It depends only
+   on the loaded data, not on the language, theme or selected metric, so build
+   the index and all source buckets once per dataset and reuse them. */
+let scatterCache = null;
+function scatterDataFor(data) {
+  if (scatterCache && scatterCache.data === data) return scatterCache;
+  const models = (data.models && data.models.models) || [];
+  const index = timed('buildIndex', () => buildRankingIndex(data.rankings, SCATTER_SOURCES));
+  const bySource = timed('matchModels', () => collectCapabilityCostPointsBySource(models, index, SCATTER_SOURCES.map((source) => source.key)));
+  scatterCache = { data, index, bySource };
+  return scatterCache;
+}
 let animated = false;
 let tooltipBound = false;
 let pieBound = false;
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+/* Render-phase telemetry (read by scripts/audit-ui.mjs). No-op when absent. */
+const timed = (name, fn) => {
+  const perf = window.__AIPULSE_PERF__;
+  if (!perf) return fn();
+  const phases = (perf.dashPhases ||= {});
+  const started = performance.now();
+  try {
+    return fn();
+  } finally {
+    phases[name] = Math.round((performance.now() - started) * 10) / 10;
+  }
+};
 function compactNumber(value) {
   const num = Number(value);
   if (!Number.isFinite(num) || num <= 0) return '—';
@@ -89,8 +113,10 @@ function computeMetrics(data) {
   const news = filterAihotNews(data.news && data.news.items, getLang());
   const sources = filterAihotSources(meta.sources, getLang());
   const generatedAt = meta.generatedAt ? new Date(meta.generatedAt) : new Date();
-  const orgCounts = new Map();
-  models.forEach((model) => orgCounts.set(model.org || '—', (orgCounts.get(model.org || '—') || 0) + 1));
+  // Parse release dates once: the 12-week trend used to construct ~5k Date
+  // objects on every render (and on every language / metric switch).
+  const releaseTimes = models.map((model) => Date.parse(model.releaseDate || ''));
+  const nowMs = generatedAt.getTime();
   const contextTotal = models.reduce((sum, model) => sum + (Number(model.contextWindow) || 0), 0);
   const usageWeeks = (data.usage && Array.isArray(data.usage.weeks) ? data.usage.weeks : []).slice(-12);
   // OpenRouter's public chart is weekly; its newest point is week-to-date and
@@ -108,11 +134,8 @@ function computeMetrics(data) {
   const usageMonthly = usageLast4.reduce((sum, point) => sum + (Number(point.tokens) || 0), 0)
     || (Number(data.usage && data.usage.monthlyTokens) || 0);
   const usageDays = usageLast4.length * 7 || (Number(data.usage && data.usage.monthlyDays) || 0);
-  const since7 = addDays(generatedAt, -7);
-  const newModels = models.filter((model) => {
-    const date = new Date(model.releaseDate || '');
-    return !Number.isNaN(date.getTime()) && date >= since7 && date <= generatedAt;
-  }).length;
+  const since7 = nowMs - 7 * 86400000;
+  const newModels = releaseTimes.filter((time) => Number.isFinite(time) && time >= since7 && time <= nowMs).length;
   const boardSources = new Set(boards.map((board) => board.sourceName).filter(Boolean));
   const okSources = sources.filter((source) => source.status === 'ok').length;
   const newsSources = new Set(news.map((item) => item.sourceName).filter(Boolean));
@@ -120,11 +143,9 @@ function computeMetrics(data) {
   const trend = [];
   for (let index = 11; index >= 0; index -= 1) {
     const weekStart = addDays(currentWeek, -7 * index);
-    const weekEnd = addDays(weekStart, 7);
-    const count = models.filter((model) => {
-      const date = new Date(model.releaseDate || '');
-      return !Number.isNaN(date.getTime()) && date >= weekStart && date < weekEnd;
-    }).length;
+    const start = weekStart.getTime();
+    const end = start + 7 * 86400000;
+    const count = releaseTimes.reduce((sum, time) => sum + (Number.isFinite(time) && time >= start && time < end ? 1 : 0), 0);
     trend.push({ date: weekStart, count });
   }
   const totalReleases = trend.reduce((sum, point) => sum + point.count, 0);
@@ -141,9 +162,9 @@ function computeMetrics(data) {
     else if (output < 15) tiers.high += 1;
     else tiers.premium += 1;
   });
-  const rankingIndex = buildRankingIndex(data.rankings, SCATTER_SOURCES);
+  const bySource = scatterDataFor(data).bySource;
   const capabilityOptions = SCATTER_SOURCES.map((source) => {
-    const points = collectCapabilityCostPointsForSource(models, rankingIndex, source.key);
+    const points = bySource[source.key] || [];
     if (points.length < 3) return null;
     return {
       key: source.key,
@@ -226,26 +247,31 @@ function usageTrendHtml(metrics) {
   const width = 248;
   const height = 78;
   const pad = 8;
-  // Scale from fully elapsed weeks only: a week-to-date point is not a full
-  // period and must not stretch the axis (that produced the false cliff).
-  const values = complete.map((point) => Number(point.tokens) || 0);
-  const max = Math.max(...values);
-  const min = Math.min(...values);
-  const span = max - min || 1;
+  // Week-by-week running total: the line only ever rises, and its slope is the
+  // weekly increment. A steeper segment means tokens grew faster that week;
+  // a flatter one means growth slowed, without the misleading week-on-week
+  // zig-zag of plotting raw weekly volumes.
+  const cumulative = [];
+  let running = 0;
+  complete.forEach((point) => {
+    running += Number(point.tokens) || 0;
+    cumulative.push(running);
+  });
+  const partialTotal = running + (Number(partial && partial.tokens) || 0);
+  const max = Math.max(1, partial ? partialTotal : running);
   const slots = complete.length + (partial ? 1 : 0);
   const xFor = (index) => pad + (index / (slots - 1)) * (width - pad * 2);
-  const yFor = (value) => height - pad - ((Number(value) - min) / span) * (height - pad * 2);
-  const clampY = (value) => Math.max(pad, Math.min(height - pad, yFor(value)));
-  const points = complete.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.tokens).toFixed(1)}`);
+  const yFor = (value) => height - pad - (Number(value) / max) * (height - pad * 2);
+  const points = cumulative.map((value, index) => `${xFor(index).toFixed(1)},${yFor(value).toFixed(1)}`);
   const lastX = xFor(complete.length - 1);
-  const lastY = yFor(complete[complete.length - 1].tokens);
+  const lastY = yFor(cumulative[cumulative.length - 1]);
   const area = `M${pad},${height - pad} L${points.join(' L')} L${lastX.toFixed(1)},${height - pad} Z`;
   const first = complete[0];
   const last = complete[complete.length - 1];
   let partialMarkup = '';
   if (partial) {
     const px = xFor(complete.length);
-    const py = clampY(partial.tokens);
+    const py = yFor(partialTotal);
     partialMarkup = `<line class="dash-trend-partial-line" x1="${lastX.toFixed(1)}" y1="${lastY.toFixed(1)}" x2="${px.toFixed(1)}" y2="${py.toFixed(1)}" />
       <circle class="dash-trend-partial-dot" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="2.6" />`;
   }
@@ -257,7 +283,7 @@ function usageTrendHtml(metrics) {
       ${partialMarkup}
       <circle class="dash-trend-dot" cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.6" />
     </svg>
-    <p class="dash-kpi-trend-note">${esc(t('dashboard.kpi.trendNote', { weeks: intlNumber(complete.length), start: intlShortDate(first.weekStart), end: intlShortDate(last.weekStart) }))}</p>
+    <p class="dash-kpi-trend-note">${esc(t('dashboard.kpi.trendNote', { weeks: intlNumber(complete.length), start: intlShortDate(first.weekStart), end: intlShortDate(last.weekStart), total: compactNumber(running) }))}</p>
     ${partial ? `<p class="dash-kpi-trend-partial">${esc(t('dashboard.kpi.trendPartial', { value: compactNumber(partial.tokens) }))}</p>` : ''}
   </div>`;
 }
@@ -270,7 +296,7 @@ function renderKpis(metrics) {
       const display = metrics.modelsCount ? formatKpiNumber(kpi, animated ? kpi.value : 0) : t('dashboard.kpi.noData');
       const unit = kpi.unit ? `<span class="dash-kpi-unit">${kpi.unit}</span>` : '';
       return `<div class="dash-kpi" data-kpi="${kpi.id}"${kpi.id === 'usage' ? ' tabindex="0"' : ''}>
-        <p class="dash-kpi-label">${kpi.label}</p>
+        <p class="dash-kpi-label" title="${esc(kpi.label)}">${esc(kpi.label)}</p>
         <p class="dash-kpi-value"><span class="dash-kpi-number" data-countup-value="${kpi.value}" data-countup-format="${kpi.format || 'number'}" data-countup-total="${kpi.total || ''}">${display}</span>${unit}</p>
         <p class="dash-kpi-note" title="${esc(kpi.hint)}">${kpi.hint}</p>
         ${kpi.id === 'usage' ? usageTrendHtml(metrics) : ''}
@@ -441,19 +467,20 @@ function bindPieHover() {
   });
 }
 function formatAxisPrice(value) {
-  if (!(Number(value) > 0)) return '$0';
-  if (value >= 100) return '$100';
-  if (value >= 10) return '$10';
-  if (value >= 1) return '$1';
-  if (value >= 0.1) return '$0.1';
-  return '$0.01';
+  const num = Number(value);
+  if (!(num > 0)) return '$0';
+  if (num >= 100) return '$' + Math.round(num);
+  if (num >= 10) return '$' + Number(num.toFixed(1));
+  if (num >= 1) return '$' + Number(num.toFixed(2));
+  return '$' + Number(num.toPrecision(2));
 }
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 function shortModelName(model) {
   let name = String((model && (model.name || model.id)) || '').replace(/^[^:]{1,40}:\s*/, '');
   name = name.replace(/\s*\([^)]*\)\s*$/, '').trim();
   return name.length > 22 ? name.slice(0, 21) + '\u2026' : name;
 }
-function representativePoints(points, metrics, xFor, yFor) {
+function representativePoints(points, metrics, xFor, yFor, centers) {
   const scoreMedian = metrics.scoreMedian;
   const priceMedian = metrics.priceMedian;
   const groups = {
@@ -472,19 +499,18 @@ function representativePoints(points, metrics, xFor, yFor) {
   });
   const picked = [];
   const seenNames = new Set();
+  // One label per quadrant: pick the model closest to that quadrant's geometric
+  // centre, so the four labels sit in the middle of their zones instead of
+  // clustering near the crosshair or drifting to the edges.
   ['survival', 'highCost', 'lowCapability', 'kill'].forEach((key) => {
     const group = groups[key];
     if (!group.length) return;
-    const pool =
-      key === 'survival'
-        ? group.filter((point) => /deepseek/i.test(`${point.model.name || ''} ${point.model.org || ''}`)) || []
-        : [];
-    const candidates = pool.length ? pool : group;
-    const cx = group.reduce((sum, point) => sum + xFor(point.price), 0) / group.length;
-    const cy = group.reduce((sum, point) => sum + yFor(point.score), 0) / group.length;
-    const ranked = candidates.slice().sort(
-      (a, b) => Math.hypot(xFor(a.price) - cx, yFor(a.score) - cy) - Math.hypot(xFor(b.price) - cx, yFor(b.score) - cy)
-    );
+    const center = centers[key];
+    const ranked = group.slice().sort((a, b) => {
+      const da = Math.hypot(xFor(a.price) - center.x, yFor(a.score) - center.y);
+      const db = Math.hypot(xFor(b.price) - center.x, yFor(b.score) - center.y);
+      return da - db;
+    });
     for (const point of ranked) {
       const name = shortModelName(point.model);
       if (!name || seenNames.has(name)) continue;
@@ -664,11 +690,17 @@ function initScatterSearch(metrics) {
   lastMetrics = metrics;
   bindScatterSearch();
 }
+const scoreFormatters = new Map();
 function formatScoreAxis(value) {
-  const locale = () => (getLang() === 'en' ? 'en-US' : 'zh-CN');
   const number = Number(value);
   if (!Number.isFinite(number)) return '—';
-  return new Intl.NumberFormat(locale(), { maximumFractionDigits: 1 }).format(number);
+  const lang = getLang() === 'en' ? 'en-US' : 'zh-CN';
+  let fmt = scoreFormatters.get(lang);
+  if (!fmt) {
+    fmt = new Intl.NumberFormat(lang, { maximumFractionDigits: 1 });
+    scoreFormatters.set(lang, fmt);
+  }
+  return fmt.format(number);
 }
 function renderScatter(metrics) {
   const container = $('#dash-scatter');
@@ -680,30 +712,61 @@ function renderScatter(metrics) {
     container.innerHTML = '<p class="u-muted">' + t('dashboard.scatter.empty') + '</p>';
     return;
   }
-  const pad = { top: 18, right: 18, bottom: 40, left: 58 };
+  // The two kill lines form a crosshair at the exact centre of the plot. Both
+  // axes are derived from the data but stretched symmetrically around their
+  // medians, so median price / median score always land at 50% of the axis.
+  const pad = { top: 28, right: 22, bottom: 44, left: 66 };
   const innerW = SCATTER_W - pad.left - pad.right;
   const innerH = SCATTER_H - pad.top - pad.bottom;
-  const prices = points.map((point) => point.price);
-  const maxPrice = Math.max(100, ...prices);
-  const logMin = Math.log10(X_LOG_MIN);
-  const logMax = Math.log10(maxPrice);
-  const xFor = (price) => pad.left + ((Math.log10(Math.max(price, X_LOG_MIN)) - logMin) / (logMax - logMin)) * innerW;
-  const rawScores = points.map((point) => Number(point.score) || 0);
-  const rawMin = Math.min(...rawScores);
-  const rawMax = Math.max(...rawScores);
-  const axisPad = (rawMax - rawMin || 1) * 0.08;
-  const yMin = Math.max(0, rawMin - axisPad);
-  const yMax = rawMax + axisPad;
-  const yFor = (score) => pad.top + innerH - ((Math.min(yMax, Math.max(yMin, score)) - yMin) / (yMax - yMin)) * innerH;
-  const priceX = xFor(metrics.priceMedian);
-  const scoreY = yFor(metrics.scoreMedian);
-  const xTicks = [0.01, 0.1, 1, 10, 100].map((value) => ({ value, x: xFor(value), label: formatAxisPrice(value) }));
-  const yTicks = [yMin, (yMin + yMax) / 2, yMax].map((value) => ({ value, y: yFor(value), label: formatScoreAxis(value) }));
+  const priceX = pad.left + innerW / 2;
+  const scoreY = pad.top + innerH / 2;
+  const logMedian = Math.log10(Math.max(metrics.priceMedian, X_LOG_MIN));
+  const logValues = points.map((point) => Math.log10(Math.max(point.price, X_LOG_MIN)));
+  const halfX = Math.max(
+    0.3,
+    (logMedian - Math.min(...logValues)) * 1.06,
+    (Math.max(...logValues) - logMedian) * 1.06
+  );
+  const logMin = logMedian - halfX;
+  const logMax = logMedian + halfX;
+  const xFor = (price) => pad.left + ((clamp(Math.log10(Math.max(price, X_LOG_MIN)), logMin, logMax) - logMin) / (logMax - logMin)) * innerW;
+  const scores = points.map((point) => Number(point.score) || 0);
+  const scoreMedian = metrics.scoreMedian;
+  let halfY = Math.max(1, (scoreMedian - Math.min(...scores)) * 1.08, (Math.max(...scores) - scoreMedian) * 1.08);
+  if (scoreMedian > 0) halfY = Math.min(halfY, scoreMedian); // keep yMin >= 0 while staying symmetric
+  const yMin = scoreMedian - halfY;
+  const yMax = scoreMedian + halfY;
+  const yFor = (score) => pad.top + innerH - ((clamp(score, yMin, yMax) - yMin) / (yMax - yMin)) * innerH;
+  // Adaptive log ticks: one per decade inside the visible range, plus half
+  // decades when the range is narrow. Positions are clamped inside the viewBox.
+  const decadeTicks = [];
+  for (let decade = Math.ceil(logMin - 0.001); decade <= Math.floor(logMax + 0.001); decade += 1) {
+    decadeTicks.push(Math.pow(10, decade));
+  }
+  if (decadeTicks.length < 3) {
+    for (let decade = Math.ceil(logMin - 0.001); decade <= Math.floor(logMax + 0.001); decade += 1) {
+      decadeTicks.push(3 * Math.pow(10, decade));
+    }
+  }
+  const xTicks = decadeTicks
+    .filter((value) => Math.log10(value) > logMin + 0.02 && Math.log10(value) < logMax - 0.02)
+    .slice(0, 7)
+    .sort((a, b) => a - b)
+    .map((value) => ({ value, x: xFor(value), label: formatAxisPrice(value) }));
+  const yTicks = [yMin, scoreMedian, yMax].map((value) => ({ value, y: yFor(value), label: formatScoreAxis(value) }));
+  const rightEdge = SCATTER_W - pad.right;
+  const bottomEdge = SCATTER_H - pad.bottom;
+  const centers = {
+    survival: { x: (pad.left + priceX) / 2, y: (pad.top + scoreY) / 2 },
+    highCost: { x: (priceX + rightEdge) / 2, y: (pad.top + scoreY) / 2 },
+    lowCapability: { x: (pad.left + priceX) / 2, y: (scoreY + bottomEdge) / 2 },
+    kill: { x: (priceX + rightEdge) / 2, y: (scoreY + bottomEdge) / 2 },
+  };
   const quadrants = [
     { key: 'survival', cls: 'is-survival', label: t('dashboard.scatter.quadSurvival'), x: pad.left, y: pad.top, w: priceX - pad.left, h: scoreY - pad.top },
-    { key: 'highCost', cls: 'is-highcost', label: t('dashboard.scatter.quadHighCost'), x: priceX, y: pad.top, w: SCATTER_W - pad.right - priceX, h: scoreY - pad.top },
-    { key: 'lowCapability', cls: 'is-lowability', label: t('dashboard.scatter.quadLowAbility'), x: pad.left, y: scoreY, w: priceX - pad.left, h: SCATTER_H - pad.bottom - scoreY },
-    { key: 'kill', cls: 'is-kill', label: t('dashboard.scatter.quadKilled'), x: priceX, y: scoreY, w: SCATTER_W - pad.right - priceX, h: SCATTER_H - pad.bottom - scoreY },
+    { key: 'highCost', cls: 'is-highcost', label: t('dashboard.scatter.quadHighCost'), x: priceX, y: pad.top, w: rightEdge - priceX, h: scoreY - pad.top },
+    { key: 'lowCapability', cls: 'is-lowability', label: t('dashboard.scatter.quadLowAbility'), x: pad.left, y: scoreY, w: priceX - pad.left, h: bottomEdge - scoreY },
+    { key: 'kill', cls: 'is-kill', label: t('dashboard.scatter.quadKilled'), x: priceX, y: scoreY, w: rightEdge - priceX, h: bottomEdge - scoreY },
   ];
   const rects = quadrants
     .map(
@@ -734,24 +797,30 @@ function renderScatter(metrics) {
     )
     .join('');
   const xLabels = xTicks
-    .map(
-      (tick, index) =>
-        '<text class="dash-axis-label' +
+    .map((tick, index) => {
+      // Keep the outermost ticks inside the viewBox: switch their anchor and
+      // clamp the x so a long label can never spill out of the chart.
+      const edgePad = 30;
+      const anchor = tick.x < pad.left + edgePad ? 'start' : tick.x > rightEdge - edgePad ? 'end' : 'middle';
+      const x = anchor === 'start' ? pad.left : anchor === 'end' ? rightEdge : tick.x;
+      return '<text class="dash-axis-label' +
         (index % 2 ? ' dash-axis-label--alt' : '') +
         '" x="' +
-        tick.x.toFixed(1) +
+        x.toFixed(1) +
         '" y="' +
-        (SCATTER_H - 14) +
-        '" text-anchor="middle">' +
+        (SCATTER_H - 28) +
+        '" text-anchor="' +
+        anchor +
+        '">' +
         esc(tick.label) +
-        '</text>'
-    )
+        '</text>';
+    })
     .join('');
   const yLabels = yTicks
     .map(
       (tick) =>
         '<text class="dash-axis-label" x="' +
-        (pad.left - 12) +
+        (pad.left - 10) +
         '" y="' +
         (tick.y + 4).toFixed(1) +
         '" text-anchor="end">' +
@@ -759,7 +828,7 @@ function renderScatter(metrics) {
         '</text>'
     )
     .join('');
-  const representative = representativePoints(points, metrics, xFor, yFor);
+  const representative = representativePoints(points, metrics, xFor, yFor, centers);
   const representativeIndex = new Map(representative.map((item) => [item.index, item.name]));
   const pointHtml = points
     .map((point, index) => {
@@ -799,7 +868,8 @@ function renderScatter(metrics) {
     .join('');
   const labelHtml = representative
     .map(({ point, name }) => {
-      const x = xFor(point.price);
+      // Centre each label over its dot but keep the whole text inside the plot.
+      const x = clamp(xFor(point.price), pad.left + 70, rightEdge - 70);
       const y = yFor(point.score);
       const ty = Math.max(pad.top + 12, y - 17);
       return (
@@ -840,7 +910,7 @@ function renderScatter(metrics) {
     '" x2="' +
     priceX.toFixed(1) +
     '" y2="' +
-    (SCATTER_H - pad.bottom) +
+    bottomEdge +
     '"></line>' +
     '<g class="dash-axis dash-axis-x">' +
     xLabels +
@@ -851,14 +921,14 @@ function renderScatter(metrics) {
     '<text class="dash-axis-label dash-scatter-axis-title" x="' +
     (SCATTER_W - pad.right) +
     '" y="' +
-    (SCATTER_H - 2) +
+    (SCATTER_H - 6) +
     '" text-anchor="end">' +
     esc(t('dashboard.scatter.xAxis')) +
     '</text>' +
     '<text class="dash-axis-label dash-scatter-axis-title" x="' +
     pad.left +
     '" y="' +
-    (pad.top - 6) +
+    (pad.top - 10) +
     '" text-anchor="start">' +
     esc(metrics.scoreMetricLabel || t('dashboard.scatter.yAxis')) +
     '</text>' +
@@ -870,10 +940,10 @@ function renderScatter(metrics) {
     esc(t('dashboard.scatter.abilityLine', { score: Number(metrics.scoreMedian.toFixed(1)) })) +
     '</text>' +
     '<text class="dash-axis-label dash-scatter-line-label" x="' +
-    (priceX + 6).toFixed(1) +
+    priceX.toFixed(1) +
     '" y="' +
-    (pad.top + 12) +
-    '" text-anchor="start">' +
+    (pad.top - 10) +
+    '" text-anchor="middle">' +
     esc(t('dashboard.scatter.priceLine', { price: '$' + formatPrice(metrics.priceMedian) })) +
     '</text>' +
     '<g class="dash-scatter-points">' +
@@ -917,22 +987,21 @@ function renderTopics(metrics) {
       if (!url) return '';
       const domain = String(item.domain || '').trim() || safeHttpUrl(item.hnUrl) || '';
       const summary = String(item.summary || '').trim().slice(0, 160);
+      // Two short facts only. Four squeezed spans produced fragments like
+      // "1,526 · 496 co… · gith… · 1…"; the rest stays available on hover.
       const meta = item.hot
         ? [
             t('dashboard.topics.hotSources', { count: intlNumber(item.sourceCount ?? item.comments) }),
             t('dashboard.topics.hotSignal', { count: intlNumber(item.signalCount ?? item.points) }),
-            'AIHOT',
-            intlShortDate(item.publishedAt),
           ]
         : [
             t('dashboard.topics.points', { count: intlNumber(item.points) }),
             t('dashboard.topics.comments', { count: intlNumber(item.comments) }),
-            domain,
-            intlShortDate(item.publishedAt),
           ]
         .filter(Boolean)
         .map((part) => '<span class="dash-topic-meta-item">' + esc(part) + '</span>')
         .join('<span class="dash-topic-meta-sep" aria-hidden="true">·</span>');
+      const metaTitle = [domain, intlShortDate(item.publishedAt)].filter(Boolean).join(' · ');
       return (
         '<li class="dash-topic"><a class="dash-topic-link" href="' +
         esc(url) +
@@ -944,7 +1013,9 @@ function renderTopics(metrics) {
         esc(title) +
         '</span>' +
         (summary ? '<span class="dash-topic-summary">' + esc(summary) + '</span>' : '') +
-        '<span class="dash-topic-meta">' +
+        '<span class="dash-topic-meta"' +
+        (metaTitle ? ' title="' + esc(metaTitle) + '"' : '') +
+        '>' +
         meta +
         '</span></span></a></li>'
       );
@@ -1207,6 +1278,17 @@ function setupAnimation(metrics) {
   );
   observer.observe(section);
 }
+let alignScheduled = false;
+function scheduleAlign() {
+  // Every render used to queue its own rAF + forced layout. Coalesce them:
+  // one getBoundingClientRect() per frame is enough to size the two cards.
+  if (alignScheduled) return;
+  alignScheduled = true;
+  window.requestAnimationFrame(() => {
+    alignScheduled = false;
+    alignDashboardCards();
+  });
+}
 function alignDashboardCards() {
   const left = $('#dash-killline-card');
   const right = $('#dash-topics-card');
@@ -1222,16 +1304,16 @@ function alignDashboardCards() {
 function bindDashboardAlign() {
   if (dashboardAlignBound) return;
   dashboardAlignBound = true;
-  window.addEventListener('resize', () => window.requestAnimationFrame(alignDashboardCards));
+  window.addEventListener('resize', scheduleAlign);
 }
 function renderAll(metrics) {
-  renderUpdated(metrics);
-  renderKpis(metrics);
-  renderReleases(metrics);
-  renderPricePie(metrics);
-  renderScatter(metrics);
-  renderTopics(metrics);
-  window.requestAnimationFrame(alignDashboardCards);
+  timed('updated', () => renderUpdated(metrics));
+  timed('kpis', () => renderKpis(metrics));
+  timed('releases', () => renderReleases(metrics));
+  timed('pie', () => renderPricePie(metrics));
+  timed('scatter', () => renderScatter(metrics));
+  timed('topics', () => renderTopics(metrics));
+  scheduleAlign();
 }
 function renderScatterMetricSelect(metrics) {
   const select = $('#dash-scatter-metric');
@@ -1258,7 +1340,7 @@ function initScatterMetric(metrics) {
     const next = computeMetrics(dataset || {});
     renderScatter(next);
     lastMetrics = next;
-    window.requestAnimationFrame(alignDashboardCards);
+    scheduleAlign();
     const status = $('#dash-scatter-search-status');
     if (status) status.textContent = '';
     const input = $('#dash-scatter-search');
@@ -1269,13 +1351,14 @@ function initScatterMetric(metrics) {
 
 export function initDashboard(data) {
   dataset = data || {};
-  const metrics = computeMetrics(dataset);
-  renderAll(metrics);
+  const metrics = timed('computeMetrics', () => computeMetrics(dataset));
+  if (window.__AIPULSE_PERF__) window.__AIPULSE_PERF__.metricsMs = window.__AIPULSE_PERF__.dashPhases?.computeMetrics || 0;
+  timed('renderAll', () => renderAll(metrics));
   initScatterSearch(metrics);
   initScatterMetric(metrics);
   initCarousel();
   bindDashboardAlign();
-  window.requestAnimationFrame(alignDashboardCards);
+  scheduleAlign();
   bindTooltip();
   setupAnimation(metrics);
 }

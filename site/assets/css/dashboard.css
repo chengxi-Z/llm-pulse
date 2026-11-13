@@ -280,3 +280,34 @@
 
 .dash-card-head-note,.dash-topic-meta-item,.dash-topic-meta-sep,.stat-label,.dash-quadrant-count,.dash-quadrant-legend li,.dash-scatter-metric,.dash-kpi-label{font-size:0.75rem}
 .dash-kpi-label{font-size:0.6875rem}
+
+/* v1.6.1 typography pass — align the KPI rows and clip long text on purpose.
+   Labels used to wrap to 1/2/3 lines, so the numbers underneath had different
+   baselines from card to card. A fixed two-line box fixes the rhythm; the full
+   label stays available via the title attribute. */
+.dash-kpi-label{display:-webkit-box;min-height:2.8em;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;align-self:stretch}
+.dash-kpi-note{display:-webkit-box;min-height:3.2em;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal;text-overflow:clip}
+.dash-kpi-value{flex:none}
+
+/* Section title block: the kicker is hidden site-wide, so drop its top offset,
+   keep the heading and the "Updated" aside on one baseline, and clip the
+   timestamp instead of letting it push the heading around. */
+#overview-dashboard .section-head{align-items:end;gap:clamp(12px,2vw,24px)}
+#overview-dashboard .section-head h2{margin-top:0;min-width:0;overflow-wrap:break-word}
+#overview-dashboard .section-head__aside{min-width:0;max-width:100%;padding-bottom:6px}
+#overview-dashboard #dashboard-updated{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Quadrant representatives are annotations, not data points: keep the dot
+   visible but fade the label so it never competes with the crosshair. */
+.dash-scatter-label.is-representative-label{fill:var(--muted);font-weight:400;font-size:12px;opacity:.55}
+.dash-scatter-halo{stroke:rgb(var(--rgb-gold)/.28)}
+.dash-scatter-svg .dash-scatter-line-label{opacity:.65}
+
+/* Small screens: the SVG viewBox is scaled down to ~0.4, so 24px axis text
+   physically spills out of the plot. Keep only the ticks, at a sane size. */
+@media (max-width:640px){
+  .dash-scatter-svg .dash-axis-label{font-size:18px}
+  .dash-scatter-svg .dash-scatter-axis-title,
+  .dash-scatter-svg .dash-scatter-line-label{display:none}
+  #dash-scatter-search{text-overflow:ellipsis}
+}

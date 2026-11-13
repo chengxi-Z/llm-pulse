@@ -555,6 +555,10 @@ function setupCopyButtons() {
 /* ---------- Boot ---------- */
 
 async function boot() {
+  // Lightweight, always-on render telemetry. The headless audit reads this to
+  // measure the synchronous DOM build (data fetch is reported separately).
+  const perf = { dataMs: 0, renderMs: 0, metricsMs: 0 };
+  window.__AIPULSE_PERF__ = perf;
   syncErrors();
   try {
     await initI18n();
@@ -602,6 +606,7 @@ async function boot() {
   }
 
   currentPage = document.body.dataset.page || '';
+  const dataStart = performance.now();
   try {
     currentData = await loadAll();
     window.__AIPULSE_DATA__ = currentData;
@@ -616,15 +621,27 @@ async function boot() {
     });
   }
 
+  perf.dataMs = performance.now() - dataStart;
   document.body.dataset.dataMode = currentData && currentData.meta && currentData.meta._fallback ? 'fallback' : 'live';
 
+  const renderStart = performance.now();
+  const phases = {};
+  perf.breakdown = phases;
+  const timed = (name, fn) => {
+    const started = performance.now();
+    try {
+      return fn();
+    } finally {
+      phases[name] = Math.round((performance.now() - started) * 10) / 10;
+    }
+  };
   const init = PAGE_INITS[currentPage];
   if (typeof init === 'function' && currentData) {
     try {
-      init(currentData);
+      timed('page', () => init(currentData));
       if (currentPage === 'index') {
-        initDashboard(currentData);
-        initHomeAihot(currentData);
+        timed('dashboard', () => initDashboard(currentData));
+        timed('homeAihot', () => initHomeAihot(currentData));
       }
     } catch (error) {
       if (window.__siteErrors) {
@@ -635,8 +652,9 @@ async function boot() {
     }
   }
 
-  setupChrome(currentData);
-  setupReveal();
+  timed('chrome', () => setupChrome(currentData));
+  timed('reveal', setupReveal);
+  perf.renderMs = Math.round((performance.now() - renderStart) * 10) / 10;
 
   window.requestAnimationFrame(() => {
     syncErrors();

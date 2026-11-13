@@ -69,10 +69,13 @@ description: Use when the user needs ... ; not for ...
 
 | Agent / 环境 | 推荐目录 | 说明 |
 | --- | --- | --- |
+| WorkBuddy（本项目） | `.workbuddy/skills/<skill-name>/` | **项目级技能**，打开本工作区即自动加载；仓库内已放置 `one-sentence-project` 副本 |
 | DeepSeek Harness / DSH | `~/.dsh/skills/<skill-name>/` | 目录名建议与 frontmatter `name` 一致 |
 | Claude Code 等 | `~/.claude/skills/<skill-name>/` | 个人级技能；项目级可用 `.claude/skills/` |
 | 通用 Agent skills 目录 | `~/.agents/skills/` 或产品文档指定目录 | 保持 `SKILL.md` 在技能目录根部 |
 | 仅阅读/引用 | 任意位置 | 指向 `SKILL.md` 让 Agent 按流程执行 |
+
+本项目采用「双份共存」约定：`skills/` 是对外发布的技能包（`data/skills.json` 索引与文档均指向它），`.workbuddy/skills/` 是 WorkBuddy 项目级加载副本；改动技能内容时两处需同步，勿删除发布包。
 
 ### 3.2 命令（Windows PowerShell / macOS-Linux）
 

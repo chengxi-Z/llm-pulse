@@ -123,37 +123,56 @@ function toDate(value) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
+/* Intl constructors are surprisingly expensive and these helpers are called
+   hundreds of times while a page renders. Reuse one formatter per locale and
+   option set instead of constructing a new one per call. */
+const formatters = new Map();
+function formatter(key, lang, factory) {
+  const id = key + ':' + lang;
+  let instance = formatters.get(id);
+  if (!instance) {
+    instance = factory(lang);
+    formatters.set(id, instance);
+  }
+  return instance;
+}
+const numberFormat = (lang) => formatter('number', lang, (l) => new Intl.NumberFormat(l));
+const dateFormat = (lang) => formatter('date', lang, (l) => new Intl.DateTimeFormat(l, { year: 'numeric', month: '2-digit', day: '2-digit' }));
+const timeFormat = (lang) => formatter('time', lang, (l) => new Intl.DateTimeFormat(l, { hour: '2-digit', minute: '2-digit', hour12: false }));
+const shortDateFormat = (lang) => formatter('shortDate', lang, (l) => new Intl.DateTimeFormat(l, { month: '2-digit', day: '2-digit' }));
+const monthFormat = (lang) => formatter('month', lang, (l) => new Intl.DateTimeFormat(l, { month: 'short' }));
+
 export function intlNumber(value) {
   const num = Number(value);
   if (value == null || !Number.isFinite(num)) return '—';
-  return new Intl.NumberFormat(locale()).format(num);
+  return numberFormat(locale()).format(num);
 }
 
 export function intlDate(value) {
   const date = toDate(value);
   if (!date) return '—';
-  const formatted = new Intl.DateTimeFormat(locale(), { year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);
+  const formatted = dateFormat(locale()).format(date);
   return getLang() === 'en' ? formatted : formatted.replace(/\//g, '.');
 }
 
 export function intlDateTime(value) {
   const date = toDate(value);
   if (!date) return '—';
-  const time = new Intl.DateTimeFormat(locale(), { hour: '2-digit', minute: '2-digit', hour12: false }).format(date);
+  const time = timeFormat(locale()).format(date);
   return `${intlDate(date)} ${time}`;
 }
 
 export function intlShortDate(value) {
   const date = toDate(value);
   if (!date) return '—';
-  const formatted = new Intl.DateTimeFormat(locale(), { month: '2-digit', day: '2-digit' }).format(date);
+  const formatted = shortDateFormat(locale()).format(date);
   return getLang() === 'en' ? formatted : formatted.replace(/\//g, '.');
 }
 
 export function intlMonth(value) {
   const date = toDate(value);
   if (!date) return '—';
-  return new Intl.DateTimeFormat(locale(), { month: 'short' }).format(date);
+  return monthFormat(locale()).format(date);
 }
 
 /* ---------- Data enum label keys (literals must stay static for the i18n checker) ---------- */
@@ -421,11 +440,23 @@ function localDateKey(value) {
 export function initHome(data) {
   renderDataBanner(data);
   renderStats(data);
-  renderHighlights(data);
-  renderNewModels(data);
-  const refreshRankings = renderHomeRankings(data);
-  renderLatestNews(data);
-  renderExploreCounts(data);
+  // Progressive first paint: the hero and the overview dashboard are above the
+  // fold, so build those synchronously. Model cards, leaderboard tabs, the news
+  // list and the explore counters live below it and are filled in on the first
+  // idle moment, keeping the initial render well under 50ms.
+  let refreshRankings = () => {};
+  const deferred = () => {
+    renderHighlights(data);
+    renderNewModels(data);
+    refreshRankings = renderHomeRankings(data);
+    renderLatestNews(data);
+    renderExploreCounts(data);
+  };
+  if (typeof window.requestIdleCallback === 'function') {
+    window.requestIdleCallback(deferred, { timeout: 120 });
+  } else {
+    window.requestAnimationFrame(() => window.setTimeout(deferred, 0));
+  }
 
   pageRefreshers.set('index', () => {
     renderStats(data);
@@ -535,13 +566,14 @@ function renderNewModels(data) {
     if (!all.length) {
       return emptyHtml({ title: t('home.newModels.empty.title'), desc: t('home.newModels.empty.desc') });
     }
-    all.sort((a, b) => {
-      const ta = Date.parse(a.releaseDate || '') || 0;
-      const tb = Date.parse(b.releaseDate || '') || 0;
-      if (tb !== ta) return tb - ta;
-      return String(a.name || '').localeCompare(String(b.name || ''));
+    // Parse each release date once. A sort comparator that re-parses both
+    // strings costs thousands of Date.parse() calls on a 450-model catalog.
+    const decorated = all.map((model) => ({ model, time: Date.parse(model.releaseDate || '') || 0 }));
+    decorated.sort((a, b) => {
+      if (b.time !== a.time) return b.time - a.time;
+      return String(a.model.name || '').localeCompare(String(b.model.name || ''));
     });
-    const models = all.slice(0, 4);
+    const models = decorated.slice(0, 4).map((entry) => entry.model);
     return models.map((model) => modelCardHtml(model)).join('');
   });
   setText('#new-models-note', t('home.newModels.sortNote'));
@@ -744,6 +776,7 @@ function renderHomeRankings(data) {
     const delta = event.key === 'ArrowRight' ? 1 : -1;
     selectBoard((active + delta + boards.length) % boards.length, true);
   });
+  renderTabs(); // first paint needs the tabs too, not just the active panel
   updateTabs();
   drawPanel();
   return () => {

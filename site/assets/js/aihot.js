@@ -24,12 +24,20 @@ const text = (value, max = 0) => {
   const s = String(value == null ? '' : value).trim();
   return max > 0 ? s.slice(0, max) : s;
 };
+const dateFormatters = new Map();
 const fmtDate = (value) => {
-  if (!value || !Number.isFinite(Date.parse(value))) return '';
+  const date = new Date(value);
+  if (!value || Number.isNaN(date.getTime())) return '';
   try {
-    return new Intl.DateTimeFormat(getLang() === 'zh' ? 'zh-CN' : 'en-US', {
-      month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
-    }).format(new Date(value));
+    const lang = getLang() === 'zh' ? 'zh-CN' : 'en-US';
+    let fmt = dateFormatters.get(lang);
+    if (!fmt) {
+      fmt = new Intl.DateTimeFormat(lang, {
+        month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
+      });
+      dateFormatters.set(lang, fmt);
+    }
+    return fmt.format(date);
   } catch { return ''; }
 };
 const bundleOf = (data) => (data && data.aihot && typeof data.aihot === 'object' ? data.aihot : null);

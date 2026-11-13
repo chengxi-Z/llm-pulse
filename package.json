@@ -13,6 +13,7 @@
     "feed": "node scripts/build-feed.mjs",
     "stage": "node scripts/stage-site.mjs",
     "validate": "node scripts/validate.mjs",
+    "audit:ui": "node scripts/audit-ui.mjs",
     "test": "node --test"
   },
   "keywords": [

@@ -16,6 +16,11 @@ export const SCORE_SOURCES = [
 
 const VARIANT_TOKENS = new Set(['high', 'low', 'medium', 'thinking', 'reasoning', 'instruct', 'base', 'preview']);
 
+/* Normalisation runs on every leaderboard entry and every catalogue model,
+   often on the very same strings. The regex pipeline is the dominant cost of
+   building the scatter data, so memoise by raw input. */
+const normalizeCache = new Map();
+
 /**
  * Lowercase, strip diacritics/parenthetical variants/vendor prefixes and
  * punctuation so "OpenAI: GPT-4o (High)" and "GPT-4o" can be compared.
@@ -23,7 +28,11 @@ const VARIANT_TOKENS = new Set(['high', 'low', 'medium', 'thinking', 'reasoning'
  * @returns {string}
  */
 export function normalizeModelName(name) {
-  let value = String(name == null ? '' : name).toLowerCase();
+  const raw = String(name == null ? '' : name);
+  const cacheKey = 'm:' + raw;
+  const cached = normalizeCache.get(cacheKey);
+  if (cached !== undefined) return cached;
+  let value = raw.toLowerCase();
   try {
     value = value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
   } catch (error) {
@@ -35,6 +44,7 @@ export function normalizeModelName(name) {
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
     .trim()
     .replace(/\s+/g, ' ');
+  normalizeCache.set(cacheKey, value);
   return value;
 }
 
@@ -45,16 +55,39 @@ export function normalizeModelName(name) {
  * @returns {string}
  */
 export function normalizeFullName(name) {
-  let value = String(name == null ? '' : name).toLowerCase();
+  const raw = String(name == null ? '' : name);
+  const cacheKey = 'f:' + raw;
+  const cached = normalizeCache.get(cacheKey);
+  if (cached !== undefined) return cached;
+  let value = raw.toLowerCase();
   try {
     value = value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
   } catch (error) {
     /* ignore */
   }
-  return value
+  const result = value
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
     .trim()
     .replace(/\s+/g, ' ');
+  normalizeCache.set(cacheKey, result);
+  return result;
+}
+
+/* Leaderboard entries and catalogue rows repeat the same names across boards.
+   Cache the candidate lists by (name, org) so a model is normalised once per
+   page instead of once per board lookup. */
+const candidatesCache = new Map();
+function cachedCandidates(kind, item) {
+  if (!item) return [];
+  const raw = String(item.name || '');
+  const org = String(item.org || '');
+  const key = kind + '\u0000' + raw + '\u0000' + org;
+  let value = candidatesCache.get(key);
+  if (!value) {
+    value = kind === 'exact' ? computeExactCandidates(raw, org) : computeNameCandidates(raw, org);
+    candidatesCache.set(key, value);
+  }
+  return value;
 }
 
 /**
@@ -63,9 +96,9 @@ export function normalizeFullName(name) {
  * @returns {string[]}
  */
 export function nameCandidates(item) {
-  if (!item) return [];
-  const raw = String(item.name || '');
-  const org = String(item.org || '');
+  return cachedCandidates('loose', item);
+}
+function computeNameCandidates(raw, org) {
   const values = new Set();
   const push = (value) => {
     const normalized = normalizeModelName(value);
@@ -95,9 +128,9 @@ export function nameCandidates(item) {
  * @returns {string[]}
  */
 function exactCandidates(item) {
-  if (!item) return [];
-  const raw = String(item.name || '');
-  const org = String(item.org || '');
+  return cachedCandidates('exact', item);
+}
+function computeExactCandidates(raw, org) {
   const values = new Set();
   const push = (value) => {
     const normalized = normalizeFullName(value);
@@ -176,7 +209,29 @@ export function matchModelScores(model, index) {
 }
 
 /**
- * Catalogue models paired with their AA score and output price (scatter data).
+ * Turn one matched leaderboard record into a capability x cost point.
+ * @returns {object|null}
+ */
+function pointFromRecord(model, output, record, sourceKey) {
+  if (!record) return null;
+  const displayRaw = record.scoreDisplay != null ? record.scoreDisplay : record.score;
+  const displayNumber = Number(String(displayRaw).replace(/[^0-9.-]/g, ''));
+  const score = Number.isFinite(displayNumber) ? displayNumber : Number(record.score);
+  if (!Number.isFinite(score)) return null;
+  return {
+    model,
+    score,
+    scoreDisplay: record.scoreDisplay || String(Number(score.toFixed(1))),
+    price: output,
+    org: model.org || '—',
+    scoreSource: record.source,
+    scoreMetric: record.metric,
+    scoreKey: sourceKey,
+  };
+}
+
+/**
+ * Catalogue models paired with their score and output price for one source.
  * @param {object[]} models
  * @param {Map<string, Record<string, object>>} index
  * @returns {{model:object, score:number, scoreDisplay:string, price:number, org:string}[]}
@@ -187,24 +242,35 @@ export function collectCapabilityCostPointsForSource(models, index, sourceKey = 
     const output = model && model.pricing && Number(model.pricing.output);
     if (!Number.isFinite(output)) return;
     const scores = matchModelScores(model, index);
-    const record = scores[sourceKey];
-    if (!record) return;
-    const displayRaw = record.scoreDisplay != null ? record.scoreDisplay : record.score;
-    const displayNumber = Number(String(displayRaw).replace(/[^0-9.-]/g, ''));
-    const score = Number.isFinite(displayNumber) ? displayNumber : Number(record.score);
-    if (!Number.isFinite(score)) return;
-    points.push({
-      model,
-      score,
-      scoreDisplay: record.scoreDisplay || String(Number(score.toFixed(1))),
-      price: output,
-      org: model.org || '—',
-      scoreSource: record.source,
-      scoreMetric: record.metric,
-      scoreKey: sourceKey,
-    });
+    const point = pointFromRecord(model, output, scores[sourceKey], sourceKey);
+    if (point) points.push(point);
   });
   return points;
+}
+
+/**
+ * Match every model once and bucket the resulting points by score source.
+ * Name normalisation is by far the most expensive part of the dashboard build;
+ * calling collectCapabilityCostPointsForSource() once per source repeated it
+ * N times for the same models.
+ * @param {object[]} models
+ * @param {Map<string, Record<string, object>>} index
+ * @param {string[]} sourceKeys
+ * @returns {Record<string, object[]>}
+ */
+export function collectCapabilityCostPointsBySource(models, index, sourceKeys = ['aa']) {
+  const groups = {};
+  sourceKeys.forEach((key) => { groups[key] = []; });
+  (Array.isArray(models) ? models : []).forEach((model) => {
+    const output = model && model.pricing && Number(model.pricing.output);
+    if (!Number.isFinite(output)) return;
+    const scores = matchModelScores(model, index);
+    for (const key of sourceKeys) {
+      const point = pointFromRecord(model, output, scores[key], key);
+      if (point) groups[key].push(point);
+    }
+  });
+  return groups;
 }
 
 export function collectCapabilityCostPoints(models, index) {
