@@ -715,28 +715,38 @@ function renderScatter(metrics) {
   // The two kill lines form a crosshair at the exact centre of the plot. Both
   // axes are derived from the data but stretched symmetrically around their
   // medians, so median price / median score always land at 50% of the axis.
+  // The quadrant blocks keep the full plot box while dots, halos and labels are
+  // drawn in an inset area: a dot at the extreme value must never touch or
+  // spill over a quadrant edge.
   const pad = { top: 28, right: 22, bottom: 44, left: 66 };
-  const innerW = SCATTER_W - pad.left - pad.right;
-  const innerH = SCATTER_H - pad.top - pad.bottom;
-  const priceX = pad.left + innerW / 2;
-  const scoreY = pad.top + innerH / 2;
+  const rightEdge = SCATTER_W - pad.right;
+  const bottomEdge = SCATTER_H - pad.bottom;
+  const inset = 22;
+  const plotLeft = pad.left + inset;
+  const plotRight = rightEdge - inset;
+  const plotTop = pad.top + inset;
+  const plotBottom = bottomEdge - inset;
+  const innerW = plotRight - plotLeft;
+  const innerH = plotBottom - plotTop;
+  const priceX = (pad.left + rightEdge) / 2;
+  const scoreY = (pad.top + bottomEdge) / 2;
   const logMedian = Math.log10(Math.max(metrics.priceMedian, X_LOG_MIN));
   const logValues = points.map((point) => Math.log10(Math.max(point.price, X_LOG_MIN)));
   const halfX = Math.max(
     0.3,
-    (logMedian - Math.min(...logValues)) * 1.06,
-    (Math.max(...logValues) - logMedian) * 1.06
+    (logMedian - Math.min(...logValues)) * 1.16,
+    (Math.max(...logValues) - logMedian) * 1.16
   );
   const logMin = logMedian - halfX;
   const logMax = logMedian + halfX;
-  const xFor = (price) => pad.left + ((clamp(Math.log10(Math.max(price, X_LOG_MIN)), logMin, logMax) - logMin) / (logMax - logMin)) * innerW;
+  const xFor = (price) => plotLeft + ((clamp(Math.log10(Math.max(price, X_LOG_MIN)), logMin, logMax) - logMin) / (logMax - logMin)) * innerW;
   const scores = points.map((point) => Number(point.score) || 0);
   const scoreMedian = metrics.scoreMedian;
-  let halfY = Math.max(1, (scoreMedian - Math.min(...scores)) * 1.08, (Math.max(...scores) - scoreMedian) * 1.08);
+  let halfY = Math.max(1, (scoreMedian - Math.min(...scores)) * 1.16, (Math.max(...scores) - scoreMedian) * 1.16);
   if (scoreMedian > 0) halfY = Math.min(halfY, scoreMedian); // keep yMin >= 0 while staying symmetric
   const yMin = scoreMedian - halfY;
   const yMax = scoreMedian + halfY;
-  const yFor = (score) => pad.top + innerH - ((clamp(score, yMin, yMax) - yMin) / (yMax - yMin)) * innerH;
+  const yFor = (score) => plotBottom - ((clamp(score, yMin, yMax) - yMin) / (yMax - yMin)) * innerH;
   // Adaptive log ticks: one per decade inside the visible range, plus half
   // decades when the range is narrow. Positions are clamped inside the viewBox.
   const decadeTicks = [];
@@ -754,8 +764,6 @@ function renderScatter(metrics) {
     .sort((a, b) => a - b)
     .map((value) => ({ value, x: xFor(value), label: formatAxisPrice(value) }));
   const yTicks = [yMin, scoreMedian, yMax].map((value) => ({ value, y: yFor(value), label: formatScoreAxis(value) }));
-  const rightEdge = SCATTER_W - pad.right;
-  const bottomEdge = SCATTER_H - pad.bottom;
   const centers = {
     survival: { x: (pad.left + priceX) / 2, y: (pad.top + scoreY) / 2 },
     highCost: { x: (priceX + rightEdge) / 2, y: (pad.top + scoreY) / 2 },

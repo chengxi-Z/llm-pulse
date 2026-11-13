@@ -145,11 +145,13 @@ function pageProbe() {
     .trim();
   // Wide tables, board tab strips and code blocks are intentionally scrollable;
   // their content reaching past the viewport is not a layout defect.
-  const inScrollable = (el) => {
+  const inScrollable = (el, axis = 'x') => {
     let node = el.parentElement;
     while (node && node !== document.body) {
       const cs = getComputedStyle(node);
-      if (/auto|scroll/.test(cs.overflowX) && node.scrollWidth > node.clientWidth + 1) return true;
+      const canX = /auto|scroll/.test(cs.overflowX) && node.scrollWidth > node.clientWidth + 1;
+      const canY = /auto|scroll/.test(cs.overflowY) && node.scrollHeight > node.clientHeight + 1;
+      if ((axis === 'x' && canX) || (axis === 'y' && canY) || (axis === 'both' && (canX || canY))) return true;
       node = node.parentElement;
     }
     return false;
@@ -247,7 +249,31 @@ function pageProbe() {
     }
   });
 
-  // 5. SVG text outside its own viewBox (chart labels are the usual offender).
+  // 5. Text painted outside a bordered card. Vertical overflow is invisible to
+  //    scrollWidth checks when the card has overflow:visible, so compare leaf
+  //    text boxes against the card rectangle directly.
+  document.querySelectorAll('.masthead-meta, .hero-panel, .dash-card, .panel').forEach((box) => {
+    const boxView = visible(box);
+    if (!boxView) return;
+    if (/hidden|auto|scroll/.test(boxView.cs.overflowX) || /hidden|auto|scroll/.test(boxView.cs.overflowY)) return;
+    const br = boxView.rect;
+    box.querySelectorAll('*').forEach((child) => {
+      if (child.children.length || inScrollable(child, 'both')) return;
+      const cv = visible(child);
+      if (!cv || cv.cs.position === 'absolute' || cv.cs.position === 'fixed') return;
+      const dy = cv.rect.bottom - br.bottom;
+      const dx = cv.rect.right - br.right;
+      if (dy > 3 || dx > 3) {
+        add('card-content-overflow', child, {
+          overflowPx: Math.round(Math.max(dx, dy)),
+          text: short(child.textContent),
+          box: pathOf(box),
+        });
+      }
+    });
+  });
+
+  // 6. SVG text outside its own viewBox (chart labels are the usual offender).
   document.querySelectorAll('svg[viewBox] text').forEach((node) => {
     const svg = node.ownerSVGElement || node.closest('svg');
     if (!svg || !visible(node)) return;
@@ -263,6 +289,52 @@ function pageProbe() {
     if (worst > 2) add('svg-label-outside', node, { overflowPx: Math.round(worst), text: short(node.textContent) });
   });
 
+  // 7. Scatter dots / halos must stay inside the four quadrant blocks with
+  //    visible breathing room, not sit on or spill over an edge.
+  const scatterSvg = document.querySelector('#dash-scatter svg.dash-scatter-svg');
+  if (scatterSvg) {
+    const blocks = Array.from(scatterSvg.querySelectorAll('rect.dash-quadrant'));
+    if (blocks.length) {
+      const nums = blocks.map((r) => ({
+        x: Number(r.getAttribute('x')), y: Number(r.getAttribute('y')),
+        w: Number(r.getAttribute('width')), h: Number(r.getAttribute('height')),
+      }));
+      const x0 = Math.min(...nums.map((r) => r.x));
+      const y0 = Math.min(...nums.map((r) => r.y));
+      const x1 = Math.max(...nums.map((r) => r.x + r.w));
+      const y1 = Math.max(...nums.map((r) => r.y + r.h));
+      scatterSvg.querySelectorAll('circle.dash-scatter-point, circle.dash-scatter-halo').forEach((dot) => {
+        const cx = Number(dot.getAttribute('cx'));
+        const cy = Number(dot.getAttribute('cy'));
+        const radius = Number(dot.getAttribute('r')) || 0;
+        const scaled = dot.classList.contains('is-search-hit') ? radius * 1.9 : radius;
+        const outside = Math.max(x0 - (cx - scaled), cx + scaled - x1, y0 - (cy - scaled), cy + scaled - y1, 0);
+        if (outside > 1) {
+          add('scatter-dot-outside', dot, { overflowPx: Math.round(outside), text: short(dot.getAttribute('data-dash-tip') || '') });
+        }
+      });
+    }
+  }
+
+  // Stress the overview card with the long source list seen on the live site
+  // (CI refreshes data daily, so the committed snapshot is shorter). The card
+  // must grow with the text instead of letting it paint below the border.
+  let stressLongSource = null;
+  const metaCard = document.querySelector('.masthead-meta');
+  const sourceEl = metaCard && metaCard.querySelector('strong[id$="-source"]');
+  if (metaCard && sourceEl) {
+    const original = sourceEl.textContent;
+    sourceEl.textContent = 'GitHub Releases+TechCrunch: AI (RSS) +Latent Space (RSS) +X: Rohan Paul (@rohanpaul_ai)+MIT News AI+DeepSeek+AWS ML Blog+X: Josh Woodward (@joshwoodward, Google Labs VP)+X: Gemini+OpenAI Blog+OpenRouter+Google DeepMind';
+    const boxRect = metaCard.getBoundingClientRect();
+    const textRect = sourceEl.getBoundingClientRect();
+    stressLongSource = {
+      overflowY: Math.round(textRect.bottom - boxRect.bottom),
+      overflowX: Math.round(textRect.right - boxRect.right),
+      cardHeight: Math.round(boxRect.height),
+    };
+    sourceEl.textContent = original;
+  }
+
   const perf = window.__AIPULSE_PERF__ || {};
   const audit = window.__AIPULSE_AUDIT__ || {};
   const paints = {};
@@ -271,6 +343,7 @@ function pageProbe() {
   return {
     issues,
     scrollableOverflow,
+    stressLongSource,
     deferredContent: {
       newModels: document.querySelectorAll('#new-models-grid .model-card').length,
       newsRows: document.querySelectorAll('#latest-news li').length,

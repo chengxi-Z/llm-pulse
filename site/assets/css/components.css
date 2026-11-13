@@ -3525,3 +3525,8 @@ html,body{overflow-x:clip}
 @media (min-width:961px) and (max-width:1180px){
   #rankings-tabs.board-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
+
+/* v1.6.2: the masthead overview card grows with its content. A fixed
+   percentage height made a long "Source ..." list paint below the border. */
+.masthead-meta{height:auto;min-height:0}
+.masthead-meta strong{max-width:100%;overflow-wrap:anywhere}

@@ -431,6 +431,27 @@ function setText(selector, value) {
   if (el) el.textContent = value;
 }
 
+/* Feed payloads concatenate every source with "+"; after a CI refresh that
+   string can be very long and used to paint outside the fixed-height masthead
+   overview card. Show a compact summary and keep the full list on hover. */
+function shortSourceLabel(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const parts = raw.split('+').map((part) => part.trim()).filter(Boolean);
+  let label = parts.length > 3 ? `${parts.slice(0, 3).join(' + ')} +${parts.length - 3}` : parts.join(' + ');
+  if (label.length > 68) label = `${label.slice(0, 67)}…`;
+  return label;
+}
+function setSourceText(selector, value, fallback) {
+  const el = $(selector);
+  if (!el) return;
+  const full = String(value || '').trim();
+  const label = full ? shortSourceLabel(full) : fallback;
+  el.textContent = label;
+  if (full && label !== full) el.title = full;
+  else el.removeAttribute('title');
+}
+
 function localDateKey(value) {
   return intlDate(value);
 }
@@ -879,7 +900,7 @@ export function initNews(data) {
 
   setText('#news-total', intlNumber(items.length));
   setText('#news-updated', intlDateTime(meta.generatedAt));
-  setText('#news-source', (data.news && data.news.source) || t('ui.publicSource'));
+  setSourceText('#news-source', data.news && data.news.source, t('ui.publicSource'));
 
   const kindCounts = items.reduce((acc, item) => {
     const key = item.kind || 'release';
@@ -1102,7 +1123,7 @@ export function initNews(data) {
   pageRefreshers.set('news', () => {
     setText('#news-total', intlNumber(items.length));
     setText('#news-updated', intlDateTime(meta.generatedAt));
-    setText('#news-source', (data.news && data.news.source) || t('ui.publicSource'));
+    setSourceText('#news-source', data.news && data.news.source, t('ui.publicSource'));
     renderKindChips();
     renderTagOptions();
     showTopicBanner();
@@ -1120,7 +1141,7 @@ export function initRankings(data) {
   const meta = data.meta || {};
   setText('#rankings-total', intlNumber(boards.length));
   setText('#rankings-updated', intlDateTime(meta.generatedAt));
-  setText('#rankings-source', (data.rankings && data.rankings.source) || t('ui.publicSource'));
+  setSourceText('#rankings-source', data.rankings && data.rankings.source, t('ui.publicSource'));
 
   const tabsEl = $('#rankings-tabs');
   const panelEl = $('#rankings-board');
@@ -1250,7 +1271,7 @@ export function initRankings(data) {
   pageRefreshers.set('rankings', () => {
     setText('#rankings-total', intlNumber(boards.length));
     setText('#rankings-updated', intlDateTime(meta.generatedAt));
-    setText('#rankings-source', (data.rankings && data.rankings.source) || t('ui.publicSource'));
+    setSourceText('#rankings-source', data.rankings && data.rankings.source, t('ui.publicSource'));
     renderTabs();
     drawPanel();
   });
@@ -1431,7 +1452,7 @@ export function initModels(data) {
   setText('#models-total', intlNumber(all.length));
   setText('#models-orgs', intlNumber(orgs.length));
   setText('#models-updated', intlDateTime(meta.generatedAt));
-  setText('#models-source', (data.models && data.models.source) || t('ui.publicSource'));
+  setSourceText('#models-source', data.models && data.models.source, t('ui.publicSource'));
 
   const searchEl = $('#models-search');
   const orgEl = $('#models-org');
@@ -1660,7 +1681,7 @@ export function initModels(data) {
     setText('#models-total', intlNumber(all.length));
     setText('#models-orgs', intlNumber(orgs.length));
     setText('#models-updated', intlDateTime(meta.generatedAt));
-    setText('#models-source', (data.models && data.models.source) || t('ui.publicSource'));
+    setSourceText('#models-source', data.models && data.models.source, t('ui.publicSource'));
     renderOrgOptions();
     render();
     compare.refresh();
@@ -1676,7 +1697,7 @@ export function initResources(data) {
   const meta = data.meta || {};
   setText('#resource-total', intlNumber(all.length));
   setText('#resources-updated', intlDateTime(meta.generatedAt));
-  setText('#resources-source', (data.resources && data.resources.source) || t('ui.curated'));
+  setSourceText('#resources-source', data.resources && data.resources.source, t('ui.curated'));
   setText('#resource-featured-total', intlNumber(all.filter((item) => item.featured).length));
 
   const grid = $('#resources-grid');
@@ -1871,7 +1892,7 @@ export function initResources(data) {
     setText('#resource-total', intlNumber(all.length));
     setText('#resource-featured-total', intlNumber(all.filter((item) => item.featured).length));
     setText('#resources-updated', intlDateTime(meta.generatedAt));
-    setText('#resources-source', (data.resources && data.resources.source) || t('ui.curated'));
+    setSourceText('#resources-source', data.resources && data.resources.source, t('ui.curated'));
     renderTypeChips();
     renderLevelOptions();
     renderLangOptions();
@@ -1891,7 +1912,7 @@ export function initProjects(data) {
   const community = all.filter((item) => item.sourceType !== 'self');
   setText('#project-total', intlNumber(all.length));
   setText('#projects-updated', intlDateTime(meta.generatedAt));
-  setText('#projects-source', (data.projects && data.projects.source) || t('ui.curated'));
+  setSourceText('#projects-source', data.projects && data.projects.source, t('ui.curated'));
 
   const selfGrid = $('#projects-self');
   const skillsGrid = $('#projects-skills');
@@ -2035,7 +2056,7 @@ export function initProjects(data) {
     setText('#project-total', intlNumber(all.length));
     renderProjectSkills();
     setText('#projects-updated', intlDateTime(meta.generatedAt));
-    setText('#projects-source', (data.projects && data.projects.source) || t('ui.curated'));
+    setSourceText('#projects-source', data.projects && data.projects.source, t('ui.curated'));
     renderSelfProjects();
     renderTagChips();
     render();
