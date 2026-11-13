@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T15:02:39.558Z",
+  "generatedAt": "2026-11-13T15:23:02.387Z",
   "pages": [
     "index",
     "news",
@@ -30,331 +30,331 @@
       "page": "index",
       "lang": "en",
       "width": 1440,
-      "ms": 44.7
+      "ms": 48.9
     },
     {
       "page": "index",
       "lang": "zh",
       "width": 1440,
-      "ms": 43.3
+      "ms": 33.3
     },
     {
       "page": "news",
       "lang": "en",
       "width": 1440,
-      "ms": 19.3
+      "ms": 20.1
     },
     {
       "page": "news",
       "lang": "zh",
       "width": 1440,
-      "ms": 13.7
+      "ms": 20.3
     },
     {
       "page": "rankings",
       "lang": "en",
       "width": 1440,
-      "ms": 9.5
+      "ms": 9.2
     },
     {
       "page": "rankings",
       "lang": "zh",
       "width": 1440,
-      "ms": 9.1
+      "ms": 14.2
     },
     {
       "page": "models",
       "lang": "en",
       "width": 1440,
-      "ms": 13.5
+      "ms": 14.2
     },
     {
       "page": "models",
       "lang": "zh",
       "width": 1440,
-      "ms": 10.9
+      "ms": 14.9
     },
     {
       "page": "resources",
       "lang": "en",
+      "width": 1440,
+      "ms": 4.1
+    },
+    {
+      "page": "resources",
+      "lang": "zh",
       "width": 1440,
       "ms": 3.9
     },
     {
-      "page": "resources",
+      "page": "projects",
+      "lang": "en",
+      "width": 1440,
+      "ms": 3.7
+    },
+    {
+      "page": "projects",
+      "lang": "zh",
+      "width": 1440,
+      "ms": 6.3
+    },
+    {
+      "page": "skills",
+      "lang": "en",
+      "width": 1440,
+      "ms": 4.4
+    },
+    {
+      "page": "skills",
       "lang": "zh",
       "width": 1440,
       "ms": 2.9
     },
     {
-      "page": "projects",
-      "lang": "en",
-      "width": 1440,
-      "ms": 3.3
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 1440,
-      "ms": 3.2
-    },
-    {
-      "page": "skills",
-      "lang": "en",
-      "width": 1440,
-      "ms": 3.3
-    },
-    {
-      "page": "skills",
-      "lang": "zh",
-      "width": 1440,
-      "ms": 3.1
-    },
-    {
       "page": "about",
       "lang": "en",
       "width": 1440,
-      "ms": 2.5
+      "ms": 4.3
     },
     {
       "page": "about",
       "lang": "zh",
       "width": 1440,
-      "ms": 4.8
+      "ms": 3.7
     },
     {
       "page": "deepseek",
       "lang": "en",
       "width": 1440,
-      "ms": 1.2
+      "ms": 0.5
     },
     {
       "page": "deepseek",
       "lang": "zh",
       "width": 1440,
-      "ms": 1.5
+      "ms": 2
     },
     {
       "page": "aihot",
       "lang": "zh",
       "width": 1440,
-      "ms": 6.8
+      "ms": 7
     },
     {
       "page": "index",
       "lang": "en",
       "width": 1024,
-      "ms": 24.6
+      "ms": 30.2
     },
     {
       "page": "index",
       "lang": "zh",
       "width": 1024,
-      "ms": 28.8
+      "ms": 30.4
     },
     {
       "page": "news",
       "lang": "en",
-      "width": 1024,
-      "ms": 15.5
-    },
-    {
-      "page": "news",
-      "lang": "zh",
       "width": 1024,
       "ms": 15.4
     },
     {
+      "page": "news",
+      "lang": "zh",
+      "width": 1024,
+      "ms": 24.4
+    },
+    {
       "page": "rankings",
       "lang": "en",
       "width": 1024,
-      "ms": 8
+      "ms": 9.7
     },
     {
       "page": "rankings",
       "lang": "zh",
       "width": 1024,
-      "ms": 7.2
+      "ms": 10
     },
     {
       "page": "models",
       "lang": "en",
       "width": 1024,
-      "ms": 12.4
+      "ms": 13
     },
     {
       "page": "models",
       "lang": "zh",
       "width": 1024,
-      "ms": 19.4
+      "ms": 15.8
     },
     {
       "page": "resources",
+      "lang": "en",
+      "width": 1024,
+      "ms": 4.8
+    },
+    {
+      "page": "resources",
+      "lang": "zh",
+      "width": 1024,
+      "ms": 4.9
+    },
+    {
+      "page": "projects",
+      "lang": "en",
+      "width": 1024,
+      "ms": 6.7
+    },
+    {
+      "page": "projects",
+      "lang": "zh",
+      "width": 1024,
+      "ms": 3.3
+    },
+    {
+      "page": "skills",
+      "lang": "en",
+      "width": 1024,
+      "ms": 2.7
+    },
+    {
+      "page": "skills",
+      "lang": "zh",
+      "width": 1024,
+      "ms": 2.7
+    },
+    {
+      "page": "about",
       "lang": "en",
       "width": 1024,
       "ms": 3.3
     },
     {
-      "page": "resources",
-      "lang": "zh",
-      "width": 1024,
-      "ms": 2.1
-    },
-    {
-      "page": "projects",
-      "lang": "en",
-      "width": 1024,
-      "ms": 2.1
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 1024,
-      "ms": 4.6
-    },
-    {
-      "page": "skills",
-      "lang": "en",
-      "width": 1024,
-      "ms": 4.1
-    },
-    {
-      "page": "skills",
-      "lang": "zh",
-      "width": 1024,
-      "ms": 2.6
-    },
-    {
-      "page": "about",
-      "lang": "en",
-      "width": 1024,
-      "ms": 2.8
-    },
-    {
       "page": "about",
       "lang": "zh",
       "width": 1024,
-      "ms": 2.8
+      "ms": 3.2
     },
     {
       "page": "deepseek",
       "lang": "en",
       "width": 1024,
-      "ms": 0.9
+      "ms": 0.6
     },
     {
       "page": "deepseek",
       "lang": "zh",
       "width": 1024,
-      "ms": 0.7
+      "ms": 0.5
     },
     {
       "page": "aihot",
       "lang": "zh",
       "width": 1024,
-      "ms": 2.6
+      "ms": 4.1
     },
     {
       "page": "index",
       "lang": "en",
       "width": 768,
-      "ms": 23.9
+      "ms": 30.8
     },
     {
       "page": "index",
       "lang": "zh",
       "width": 768,
-      "ms": 25.1
+      "ms": 21.7
     },
     {
       "page": "news",
       "lang": "en",
       "width": 768,
-      "ms": 14.9
+      "ms": 16.2
     },
     {
       "page": "news",
       "lang": "zh",
       "width": 768,
-      "ms": 23.4
+      "ms": 30.9
     },
     {
       "page": "rankings",
       "lang": "en",
       "width": 768,
-      "ms": 5.5
+      "ms": 10
     },
     {
       "page": "rankings",
+      "lang": "zh",
+      "width": 768,
+      "ms": 12.1
+    },
+    {
+      "page": "models",
+      "lang": "en",
+      "width": 768,
+      "ms": 17.5
+    },
+    {
+      "page": "models",
+      "lang": "zh",
+      "width": 768,
+      "ms": 16.8
+    },
+    {
+      "page": "resources",
+      "lang": "en",
+      "width": 768,
+      "ms": 5.8
+    },
+    {
+      "page": "resources",
       "lang": "zh",
       "width": 768,
       "ms": 4.7
     },
     {
-      "page": "models",
+      "page": "projects",
       "lang": "en",
       "width": 768,
-      "ms": 10.3
+      "ms": 4.1
     },
     {
-      "page": "models",
+      "page": "projects",
       "lang": "zh",
-      "width": 768,
-      "ms": 16
-    },
-    {
-      "page": "resources",
-      "lang": "en",
       "width": 768,
       "ms": 3.3
     },
     {
-      "page": "resources",
-      "lang": "zh",
+      "page": "skills",
+      "lang": "en",
       "width": 768,
       "ms": 2.7
     },
     {
-      "page": "projects",
-      "lang": "en",
-      "width": 768,
-      "ms": 4.3
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 768,
-      "ms": 6
-    },
-    {
-      "page": "skills",
-      "lang": "en",
-      "width": 768,
-      "ms": 3.5
-    },
-    {
       "page": "skills",
       "lang": "zh",
       "width": 768,
-      "ms": 5.2
+      "ms": 4.4
     },
     {
       "page": "about",
       "lang": "en",
+      "width": 768,
+      "ms": 2
+    },
+    {
+      "page": "about",
+      "lang": "zh",
       "width": 768,
       "ms": 3.2
-    },
-    {
-      "page": "about",
-      "lang": "zh",
-      "width": 768,
-      "ms": 3.3
     },
     {
       "page": "deepseek",
       "lang": "en",
       "width": 768,
-      "ms": 1
+      "ms": 1.4
     },
     {
       "page": "deepseek",
@@ -372,115 +372,115 @@
       "page": "index",
       "lang": "en",
       "width": 390,
-      "ms": 23.8
+      "ms": 31
     },
     {
       "page": "index",
       "lang": "zh",
       "width": 390,
-      "ms": 16.9
+      "ms": 28.9
     },
     {
       "page": "news",
       "lang": "en",
       "width": 390,
-      "ms": 10.9
+      "ms": 16.4
     },
     {
       "page": "news",
       "lang": "zh",
       "width": 390,
-      "ms": 20.7
+      "ms": 22.4
     },
     {
       "page": "rankings",
       "lang": "en",
       "width": 390,
-      "ms": 7.8
+      "ms": 8.6
     },
     {
       "page": "rankings",
       "lang": "zh",
       "width": 390,
-      "ms": 4.4
+      "ms": 4.9
     },
     {
       "page": "models",
       "lang": "en",
       "width": 390,
-      "ms": 12.8
+      "ms": 15.2
     },
     {
       "page": "models",
       "lang": "zh",
       "width": 390,
-      "ms": 13.7
+      "ms": 13.9
     },
     {
       "page": "resources",
       "lang": "en",
       "width": 390,
-      "ms": 5.2
+      "ms": 5.8
     },
     {
       "page": "resources",
       "lang": "zh",
       "width": 390,
-      "ms": 4.2
+      "ms": 4.1
     },
     {
       "page": "projects",
-      "lang": "en",
-      "width": 390,
-      "ms": 2.8
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 390,
-      "ms": 1.8
-    },
-    {
-      "page": "skills",
-      "lang": "en",
-      "width": 390,
-      "ms": 3.2
-    },
-    {
-      "page": "skills",
-      "lang": "zh",
-      "width": 390,
-      "ms": 3
-    },
-    {
-      "page": "about",
       "lang": "en",
       "width": 390,
       "ms": 3.3
     },
     {
+      "page": "projects",
+      "lang": "zh",
+      "width": 390,
+      "ms": 3.3
+    },
+    {
+      "page": "skills",
+      "lang": "en",
+      "width": 390,
+      "ms": 2.9
+    },
+    {
+      "page": "skills",
+      "lang": "zh",
+      "width": 390,
+      "ms": 3.9
+    },
+    {
+      "page": "about",
+      "lang": "en",
+      "width": 390,
+      "ms": 2
+    },
+    {
       "page": "about",
       "lang": "zh",
       "width": 390,
-      "ms": 1.4
+      "ms": 1.7
     },
     {
       "page": "deepseek",
       "lang": "en",
       "width": 390,
-      "ms": 0.9
+      "ms": 0.7
     },
     {
       "page": "deepseek",
       "lang": "zh",
       "width": 390,
-      "ms": 1
+      "ms": 0.7
     },
     {
       "page": "aihot",
       "lang": "zh",
       "width": 390,
-      "ms": 1.8
+      "ms": 2
     }
   ],
   "results": [
@@ -504,33 +504,33 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 44.7,
-        "metricsMs": 19.1,
-        "dataMs": 28.9,
+        "renderMs": 48.9,
+        "metricsMs": 22.4,
+        "dataMs": 32.7,
         "breakdown": {
-          "page": 20.9,
-          "dashboard": 23.5,
+          "page": 17,
+          "dashboard": 31.3,
           "homeAihot": 0,
-          "chrome": 0.2,
+          "chrome": 0.4,
           "reveal": 0
         },
         "dashPhases": {
-          "buildIndex": 3.1,
-          "matchModels": 13.6,
-          "computeMetrics": 19.1,
-          "updated": 0.1,
-          "kpis": 1,
-          "releases": 0.2,
-          "pie": 0,
-          "scatter": 1.8,
-          "topics": 0.6,
-          "renderAll": 3.8
+          "buildIndex": 3.3,
+          "matchModels": 16.8,
+          "computeMetrics": 22.4,
+          "updated": 0.2,
+          "kpis": 1.6,
+          "releases": 0.3,
+          "pie": 0.2,
+          "scatter": 4.4,
+          "topics": 1.1,
+          "renderAll": 7.9
         },
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 240.9,
-        "first-paint": 260,
-        "first-contentful-paint": 260
+        "domContentLoaded": 228.4,
+        "first-paint": 220,
+        "first-contentful-paint": 220
       },
       "consoleErrors": []
     },
@@ -554,117 +554,41 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 43.3,
-        "metricsMs": 27.8,
-        "dataMs": 48.6,
+        "renderMs": 33.3,
+        "metricsMs": 24,
+        "dataMs": 49.7,
         "breakdown": {
-          "page": 6.2,
-          "dashboard": 34.7,
-          "homeAihot": 1.9,
-          "chrome": 0.3,
-          "reveal": 0.1
-        },
-        "dashPhases": {
-          "buildIndex": 4,
-          "matchModels": 20.6,
-          "computeMetrics": 27.8,
-          "updated": 0.2,
-          "kpis": 1.2,
-          "releases": 0.2,
-          "pie": 0,
-          "scatter": 3.8,
-          "topics": 0.9,
-          "renderAll": 6.5
-        },
-        "longTasks": [
-          104,
-          56
-        ],
-        "longestTask": 104,
-        "domContentLoaded": 106,
-        "first-paint": 124,
-        "first-contentful-paint": 124
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "news",
-      "lang": "en",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -15,
-        "overflowX": -15,
-        "cardHeight": 281
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 19.3,
-        "metricsMs": 0,
-        "dataMs": 35.4,
-        "breakdown": {
-          "page": 18.1,
-          "chrome": 0.8,
-          "reveal": 0.2
-        },
-        "dashPhases": {},
-        "longTasks": [
-          60
-        ],
-        "longestTask": 60,
-        "domContentLoaded": 85.9,
-        "first-paint": 112,
-        "first-contentful-paint": 112
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "news",
-      "lang": "zh",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -15,
-        "overflowX": -15,
-        "cardHeight": 281
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 13.7,
-        "metricsMs": 0,
-        "dataMs": 31.4,
-        "breakdown": {
-          "page": 13.2,
-          "chrome": 0.3,
+          "page": 4.8,
+          "dashboard": 27.4,
+          "homeAihot": 1,
+          "chrome": 0.1,
           "reveal": 0
         },
-        "dashPhases": {},
+        "dashPhases": {
+          "buildIndex": 3.6,
+          "matchModels": 18.9,
+          "computeMetrics": 24,
+          "updated": 0.2,
+          "kpis": 0.7,
+          "releases": 0,
+          "pie": 0,
+          "scatter": 1.7,
+          "topics": 0.4,
+          "renderAll": 3.1
+        },
         "longTasks": [
-          126
+          166,
+          91
         ],
-        "longestTask": 126,
-        "domContentLoaded": 73.8,
-        "first-paint": 104,
-        "first-contentful-paint": 104
+        "longestTask": 166,
+        "domContentLoaded": 197.8,
+        "first-paint": 236,
+        "first-contentful-paint": 236
       },
       "consoleErrors": []
     },
     {
-      "page": "rankings",
+      "page": "news",
       "lang": "en",
       "width": 1440,
       "settle": "ok",
@@ -682,25 +606,27 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 9.5,
+        "renderMs": 20.1,
         "metricsMs": 0,
-        "dataMs": 59.3,
+        "dataMs": 51.8,
         "breakdown": {
-          "page": 9.3,
+          "page": 19.9,
           "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 97.3,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "longTasks": [
+          117
+        ],
+        "longestTask": 117,
+        "domContentLoaded": 129.7,
+        "first-paint": 148,
+        "first-contentful-paint": 148
       },
       "consoleErrors": []
     },
     {
-      "page": "rankings",
+      "page": "news",
       "lang": "zh",
       "width": 1440,
       "settle": "ok",
@@ -718,20 +644,94 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 9.1,
+        "renderMs": 20.3,
         "metricsMs": 0,
-        "dataMs": 38.6,
+        "dataMs": 36.2,
         "breakdown": {
-          "page": 8.9,
+          "page": 19.1,
+          "chrome": 0.9,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [
+          350
+        ],
+        "longestTask": 350,
+        "domContentLoaded": 94.4,
+        "first-paint": 120,
+        "first-contentful-paint": 120
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "rankings",
+      "lang": "en",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -15,
+        "overflowX": -15,
+        "cardHeight": 281
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 9.2,
+        "metricsMs": 0,
+        "dataMs": 35.1,
+        "breakdown": {
+          "page": 9.1,
           "chrome": 0.1,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 82.1,
-        "first-paint": 96,
-        "first-contentful-paint": 96
+        "domContentLoaded": 81.2,
+        "first-paint": 92,
+        "first-contentful-paint": 92
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "rankings",
+      "lang": "zh",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -15,
+        "overflowX": -15,
+        "cardHeight": 281
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 14.2,
+        "metricsMs": 0,
+        "dataMs": 38,
+        "breakdown": {
+          "page": 14,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 70.1,
+        "first-paint": 100,
+        "first-contentful-paint": 100
       },
       "consoleErrors": []
     },
@@ -754,20 +754,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 13.5,
+        "renderMs": 14.2,
         "metricsMs": 0,
-        "dataMs": 40.7,
+        "dataMs": 43.6,
         "breakdown": {
-          "page": 13.3,
+          "page": 14,
           "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 123.2,
-        "first-paint": 124,
-        "first-contentful-paint": 124
+        "domContentLoaded": 103.7,
+        "first-paint": 132,
+        "first-contentful-paint": 132
       },
       "consoleErrors": []
     },
@@ -790,20 +790,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 10.9,
+        "renderMs": 14.9,
         "metricsMs": 0,
-        "dataMs": 40.2,
+        "dataMs": 38.8,
         "breakdown": {
-          "page": 10.4,
-          "chrome": 0.4,
+          "page": 14.7,
+          "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 97,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "longTasks": [
+          61
+        ],
+        "longestTask": 61,
+        "domContentLoaded": 92.4,
+        "first-paint": 120,
+        "first-contentful-paint": 120
       },
       "consoleErrors": []
     },
@@ -818,6 +820,42 @@
         "overflowY": -15,
         "overflowX": -15,
         "cardHeight": 310
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 4.1,
+        "metricsMs": 0,
+        "dataMs": 34.3,
+        "breakdown": {
+          "page": 3.8,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 79.4,
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "resources",
+      "lang": "zh",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -15,
+        "overflowX": -15,
+        "cardHeight": 281
       },
       "deferredContent": {
         "newModels": 0,
@@ -828,23 +866,61 @@
       "perf": {
         "renderMs": 3.9,
         "metricsMs": 0,
-        "dataMs": 43.6,
+        "dataMs": 30.6,
         "breakdown": {
-          "page": 3.7,
+          "page": 3.2,
+          "chrome": 0.6,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [
+          51
+        ],
+        "longestTask": 51,
+        "domContentLoaded": 120.9,
+        "first-paint": 136,
+        "first-contentful-paint": 136
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
+      "lang": "en",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -15,
+        "overflowX": -15,
+        "cardHeight": 281
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 3.7,
+        "metricsMs": 0,
+        "dataMs": 30.9,
+        "breakdown": {
+          "page": 3.5,
           "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 84,
-        "first-paint": 120,
-        "first-contentful-paint": 120
+        "domContentLoaded": 81.6,
+        "first-paint": 108,
+        "first-contentful-paint": 108
       },
       "consoleErrors": []
     },
     {
-      "page": "resources",
+      "page": "projects",
       "lang": "zh",
       "width": 1440,
       "settle": "ok",
@@ -855,6 +931,70 @@
         "overflowX": -15,
         "cardHeight": 281
       },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 6.3,
+        "metricsMs": 0,
+        "dataMs": 38.4,
+        "breakdown": {
+          "page": 6.1,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 77.4,
+        "first-paint": 96,
+        "first-contentful-paint": 96
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "skills",
+      "lang": "en",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 4.4,
+        "metricsMs": 0,
+        "dataMs": 28.3,
+        "breakdown": {
+          "page": 4.2,
+          "chrome": 0.1,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 119.6,
+        "first-paint": 140,
+        "first-contentful-paint": 140
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "skills",
+      "lang": "zh",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
       "deferredContent": {
         "newModels": 0,
         "newsRows": 0,
@@ -864,186 +1004,50 @@
       "perf": {
         "renderMs": 2.9,
         "metricsMs": 0,
-        "dataMs": 32.4,
+        "dataMs": 31,
         "breakdown": {
           "page": 2.6,
+          "chrome": 0.3,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 98.6,
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "about",
+      "lang": "en",
+      "width": 1440,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 4.3,
+        "metricsMs": 0,
+        "dataMs": 37.7,
+        "breakdown": {
+          "page": 4,
           "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 74.7,
-        "first-paint": 108,
-        "first-contentful-paint": 108
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
-      "lang": "en",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -15,
-        "overflowX": -15,
-        "cardHeight": 281
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 3.3,
-        "metricsMs": 0,
-        "dataMs": 40.8,
-        "breakdown": {
-          "page": 3.2,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 119,
-        "first-paint": 148,
-        "first-contentful-paint": 148
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -15,
-        "overflowX": -15,
-        "cardHeight": 281
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 3.2,
-        "metricsMs": 0,
-        "dataMs": 29.5,
-        "breakdown": {
-          "page": 2.9,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 82.1,
-        "first-paint": 108,
-        "first-contentful-paint": 108
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "skills",
-      "lang": "en",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 3.3,
-        "metricsMs": 0,
-        "dataMs": 31.3,
-        "breakdown": {
-          "page": 3.2,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 114.1,
-        "first-paint": 136,
-        "first-contentful-paint": 136
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "skills",
-      "lang": "zh",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 3.1,
-        "metricsMs": 0,
-        "dataMs": 50.7,
-        "breakdown": {
-          "page": 3,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 83.5,
-        "first-paint": 128,
-        "first-contentful-paint": 128
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "about",
-      "lang": "en",
-      "width": 1440,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 2.5,
-        "metricsMs": 0,
-        "dataMs": 30.5,
-        "breakdown": {
-          "page": 2.4,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 169.9,
-        "first-paint": 128,
-        "first-contentful-paint": 128
+        "domContentLoaded": 171.8,
+        "first-paint": 168,
+        "first-contentful-paint": 168
       },
       "consoleErrors": []
     },
@@ -1062,22 +1066,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 4.8,
+        "renderMs": 3.7,
         "metricsMs": 0,
-        "dataMs": 48.2,
+        "dataMs": 35.2,
         "breakdown": {
-          "page": 4.2,
-          "chrome": 0.6,
+          "page": 3.4,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [
-          62
+          50
         ],
-        "longestTask": 62,
-        "domContentLoaded": 105.7,
-        "first-paint": 124,
-        "first-contentful-paint": 124
+        "longestTask": 50,
+        "domContentLoaded": 107,
+        "first-paint": 112,
+        "first-contentful-paint": 112
       },
       "consoleErrors": []
     },
@@ -1100,19 +1104,19 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1.2,
+        "renderMs": 0.5,
         "metricsMs": 0,
-        "dataMs": 78.1,
+        "dataMs": 64.5,
         "breakdown": {
-          "chrome": 1.1,
+          "chrome": 0.5,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 174,
-        "first-paint": 196,
-        "first-contentful-paint": 196
+        "domContentLoaded": 135.3,
+        "first-paint": 132,
+        "first-contentful-paint": 132
       },
       "consoleErrors": []
     },
@@ -1135,17 +1139,17 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1.5,
+        "renderMs": 2,
         "metricsMs": 0,
-        "dataMs": 46.7,
+        "dataMs": 30.3,
         "breakdown": {
-          "chrome": 1.4,
+          "chrome": 1.8,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 124.8,
+        "domContentLoaded": 121.7,
         "first-paint": 124,
         "first-contentful-paint": 124
       },
@@ -1166,22 +1170,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 6.8,
+        "renderMs": 7,
         "metricsMs": 0,
-        "dataMs": 49.3,
+        "dataMs": 30.3,
         "breakdown": {
           "page": 6.1,
-          "chrome": 0.6,
+          "chrome": 0.9,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [
-          64
+          51
         ],
-        "longestTask": 64,
-        "domContentLoaded": 150.1,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "longestTask": 51,
+        "domContentLoaded": 189.5,
+        "first-paint": 180,
+        "first-contentful-paint": 180
       },
       "consoleErrors": []
     },
@@ -1205,33 +1209,33 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 24.6,
-        "metricsMs": 19.7,
-        "dataMs": 31,
+        "renderMs": 30.2,
+        "metricsMs": 21.7,
+        "dataMs": 64.3,
         "breakdown": {
-          "page": 2.4,
-          "dashboard": 22.2,
+          "page": 2.2,
+          "dashboard": 26.3,
           "homeAihot": 0,
-          "chrome": 0,
+          "chrome": 1.7,
           "reveal": 0
         },
         "dashPhases": {
-          "buildIndex": 4.5,
-          "matchModels": 14.1,
-          "computeMetrics": 19.7,
-          "updated": 0.1,
-          "kpis": 0.7,
+          "buildIndex": 3.5,
+          "matchModels": 16.9,
+          "computeMetrics": 21.7,
+          "updated": 0,
+          "kpis": 0.8,
           "releases": 0,
           "pie": 0,
-          "scatter": 1.1,
-          "topics": 0.3,
-          "renderAll": 2.3
+          "scatter": 2.6,
+          "topics": 0.7,
+          "renderAll": 4.3
         },
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 153,
-        "first-paint": 140,
-        "first-contentful-paint": 140
+        "domContentLoaded": 175.9,
+        "first-paint": 180,
+        "first-contentful-paint": 180
       },
       "consoleErrors": []
     },
@@ -1255,77 +1259,41 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 28.8,
-        "metricsMs": 20.9,
-        "dataMs": 37.2,
+        "renderMs": 30.4,
+        "metricsMs": 22.4,
+        "dataMs": 30,
         "breakdown": {
           "page": 3.1,
-          "dashboard": 24.4,
-          "homeAihot": 0.8,
-          "chrome": 0.3,
+          "dashboard": 26.4,
+          "homeAihot": 0.6,
+          "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {
-          "buildIndex": 4.1,
-          "matchModels": 15.4,
-          "computeMetrics": 20.9,
+          "buildIndex": 5.3,
+          "matchModels": 15.6,
+          "computeMetrics": 22.4,
           "updated": 0.1,
-          "kpis": 0.5,
+          "kpis": 0.6,
           "releases": 0,
           "pie": 0,
-          "scatter": 1.8,
-          "topics": 0.5,
-          "renderAll": 3
+          "scatter": 2.5,
+          "topics": 0.6,
+          "renderAll": 3.8
         },
         "longTasks": [
-          54
+          58
         ],
-        "longestTask": 54,
-        "domContentLoaded": 124.1,
-        "first-paint": 132,
-        "first-contentful-paint": 132
+        "longestTask": 58,
+        "domContentLoaded": 163.3,
+        "first-paint": 124,
+        "first-contentful-paint": 124
       },
       "consoleErrors": []
     },
     {
       "page": "news",
       "lang": "en",
-      "width": 1024,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -13,
-        "overflowX": -13,
-        "cardHeight": 377
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 15.5,
-        "metricsMs": 0,
-        "dataMs": 45.3,
-        "breakdown": {
-          "page": 15,
-          "chrome": 0.4,
-          "reveal": 0.1
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 122.8,
-        "first-paint": 128,
-        "first-contentful-paint": 128
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "news",
-      "lang": "zh",
       "width": 1024,
       "settle": "ok",
       "issues": [],
@@ -1344,61 +1312,25 @@
       "perf": {
         "renderMs": 15.4,
         "metricsMs": 0,
-        "dataMs": 38.8,
+        "dataMs": 27.8,
         "breakdown": {
-          "page": 15.2,
-          "chrome": 0.2,
+          "page": 15.1,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [
-          131
+          99
         ],
-        "longestTask": 131,
-        "domContentLoaded": 106.7,
-        "first-paint": 116,
-        "first-contentful-paint": 116
+        "longestTask": 99,
+        "domContentLoaded": 123.9,
+        "first-paint": 132,
+        "first-contentful-paint": 132
       },
       "consoleErrors": []
     },
     {
-      "page": "rankings",
-      "lang": "en",
-      "width": 1024,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -13,
-        "overflowX": -13,
-        "cardHeight": 377
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 8,
-        "metricsMs": 0,
-        "dataMs": 42.5,
-        "breakdown": {
-          "page": 7.4,
-          "chrome": 0.4,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 87.8,
-        "first-paint": 96,
-        "first-contentful-paint": 96
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "rankings",
+      "page": "news",
       "lang": "zh",
       "width": 1024,
       "settle": "ok",
@@ -1416,25 +1348,27 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 7.2,
+        "renderMs": 24.4,
         "metricsMs": 0,
-        "dataMs": 42.8,
+        "dataMs": 39.9,
         "breakdown": {
-          "page": 6.8,
+          "page": 24,
           "chrome": 0.3,
-          "reveal": 0.1
+          "reveal": 0
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 96.3,
-        "first-paint": 116,
-        "first-contentful-paint": 116
+        "longTasks": [
+          169
+        ],
+        "longestTask": 169,
+        "domContentLoaded": 116.1,
+        "first-paint": 120,
+        "first-contentful-paint": 120
       },
       "consoleErrors": []
     },
     {
-      "page": "models",
+      "page": "rankings",
       "lang": "en",
       "width": 1024,
       "settle": "ok",
@@ -1443,7 +1377,7 @@
       "stressLongSource": {
         "overflowY": -13,
         "overflowX": -13,
-        "cardHeight": 406
+        "cardHeight": 377
       },
       "deferredContent": {
         "newModels": 0,
@@ -1452,56 +1386,128 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 12.4,
+        "renderMs": 9.7,
         "metricsMs": 0,
-        "dataMs": 42.7,
+        "dataMs": 34,
         "breakdown": {
-          "page": 12.2,
-          "chrome": 0.2,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 84.7,
-        "first-paint": 112,
-        "first-contentful-paint": 112
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "models",
-      "lang": "zh",
-      "width": 1024,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -13,
-        "overflowX": -13,
-        "cardHeight": 406
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 19.4,
-        "metricsMs": 0,
-        "dataMs": 47.6,
-        "breakdown": {
-          "page": 19.2,
+          "page": 9.4,
           "chrome": 0.1,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 95.3,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "domContentLoaded": 92.9,
+        "first-paint": 92,
+        "first-contentful-paint": 92
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "rankings",
+      "lang": "zh",
+      "width": 1024,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -13,
+        "overflowX": -13,
+        "cardHeight": 377
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 10,
+        "metricsMs": 0,
+        "dataMs": 37.2,
+        "breakdown": {
+          "page": 9.5,
+          "chrome": 0.4,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 119.8,
+        "first-paint": 144,
+        "first-contentful-paint": 144
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "models",
+      "lang": "en",
+      "width": 1024,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -13,
+        "overflowX": -13,
+        "cardHeight": 406
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 13,
+        "metricsMs": 0,
+        "dataMs": 41.2,
+        "breakdown": {
+          "page": 12.7,
+          "chrome": 0.3,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 113.1,
+        "first-paint": 132,
+        "first-contentful-paint": 132
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "models",
+      "lang": "zh",
+      "width": 1024,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -13,
+        "overflowX": -13,
+        "cardHeight": 406
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 15.8,
+        "metricsMs": 0,
+        "dataMs": 42.4,
+        "breakdown": {
+          "page": 15.6,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 99.2,
+        "first-paint": 132,
+        "first-contentful-paint": 132
       },
       "consoleErrors": []
     },
@@ -1524,18 +1530,18 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 3.3,
+        "renderMs": 4.8,
         "metricsMs": 0,
-        "dataMs": 32.4,
+        "dataMs": 35.2,
         "breakdown": {
-          "page": 3.1,
-          "chrome": 0.2,
+          "page": 4.3,
+          "chrome": 0.5,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 82.4,
+        "domContentLoaded": 89.3,
         "first-paint": 108,
         "first-contentful-paint": 108
       },
@@ -1560,56 +1566,56 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 2.1,
+        "renderMs": 4.9,
         "metricsMs": 0,
-        "dataMs": 68.9,
+        "dataMs": 41.4,
         "breakdown": {
-          "page": 1.9,
-          "chrome": 0.2,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 76.2,
-        "first-paint": 104,
-        "first-contentful-paint": 104
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
-      "lang": "en",
-      "width": 1024,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -13,
-        "overflowX": -13,
-        "cardHeight": 377
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 2.1,
-        "metricsMs": 0,
-        "dataMs": 46.5,
-        "breakdown": {
-          "page": 1.9,
-          "chrome": 0.1,
+          "page": 4.4,
+          "chrome": 0.3,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 80.2,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 96.5,
+        "first-paint": 136,
+        "first-contentful-paint": 136
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
+      "lang": "en",
+      "width": 1024,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -13,
+        "overflowX": -13,
+        "cardHeight": 377
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 6.7,
+        "metricsMs": 0,
+        "dataMs": 24.4,
+        "breakdown": {
+          "page": 6.3,
+          "chrome": 0.2,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 78,
+        "first-paint": 168,
+        "first-contentful-paint": 168
       },
       "consoleErrors": []
     },
@@ -1632,20 +1638,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 4.6,
+        "renderMs": 3.3,
         "metricsMs": 0,
-        "dataMs": 33.3,
+        "dataMs": 43.7,
         "breakdown": {
-          "page": 4.4,
-          "chrome": 0.2,
+          "page": 3.2,
+          "chrome": 0.1,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 74.8,
-        "first-paint": 84,
-        "first-contentful-paint": 84
+        "domContentLoaded": 94.7,
+        "first-paint": 108,
+        "first-contentful-paint": 108
       },
       "consoleErrors": []
     },
@@ -1664,41 +1670,9 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 4.1,
+        "renderMs": 2.7,
         "metricsMs": 0,
-        "dataMs": 25.3,
-        "breakdown": {
-          "page": 3.8,
-          "chrome": 0.3,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 151.7,
-        "first-paint": 152,
-        "first-contentful-paint": 152
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "skills",
-      "lang": "zh",
-      "width": 1024,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 2.6,
-        "metricsMs": 0,
-        "dataMs": 34.5,
+        "dataMs": 29.1,
         "breakdown": {
           "page": 2.4,
           "chrome": 0.2,
@@ -1707,15 +1681,15 @@
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 117,
-        "first-paint": 132,
-        "first-contentful-paint": 132
+        "domContentLoaded": 93.6,
+        "first-paint": 92,
+        "first-contentful-paint": 92
       },
       "consoleErrors": []
     },
     {
-      "page": "about",
-      "lang": "en",
+      "page": "skills",
+      "lang": "zh",
       "width": 1024,
       "settle": "ok",
       "issues": [],
@@ -1728,18 +1702,18 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 2.8,
+        "renderMs": 2.7,
         "metricsMs": 0,
-        "dataMs": 33.2,
+        "dataMs": 36.1,
         "breakdown": {
-          "page": 2.6,
-          "chrome": 0.2,
+          "page": 2.7,
+          "chrome": 0,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 184.6,
+        "domContentLoaded": 157.3,
         "first-paint": 136,
         "first-contentful-paint": 136
       },
@@ -1747,6 +1721,38 @@
     },
     {
       "page": "about",
+      "lang": "en",
+      "width": 1024,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 3.3,
+        "metricsMs": 0,
+        "dataMs": 34.8,
+        "breakdown": {
+          "page": 2.9,
+          "chrome": 0.4,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 98.1,
+        "first-paint": 108,
+        "first-contentful-paint": 108
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "about",
       "lang": "zh",
       "width": 1024,
       "settle": "ok",
@@ -1760,20 +1766,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 2.8,
+        "renderMs": 3.2,
         "metricsMs": 0,
-        "dataMs": 30.7,
+        "dataMs": 41.1,
         "breakdown": {
-          "page": 2.6,
+          "page": 2.9,
           "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 110.1,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "domContentLoaded": 176.6,
+        "first-paint": 120,
+        "first-contentful-paint": 120
       },
       "consoleErrors": []
     },
@@ -1796,17 +1802,17 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 0.9,
+        "renderMs": 0.6,
         "metricsMs": 0,
-        "dataMs": 49.3,
+        "dataMs": 65.7,
         "breakdown": {
-          "chrome": 0.9,
+          "chrome": 0.6,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 112.6,
+        "domContentLoaded": 133.5,
         "first-paint": 112,
         "first-contentful-paint": 112
       },
@@ -1831,19 +1837,19 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 0.7,
+        "renderMs": 0.5,
         "metricsMs": 0,
-        "dataMs": 45.8,
+        "dataMs": 55.2,
         "breakdown": {
-          "chrome": 0.7,
+          "chrome": 0.5,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 115.7,
-        "first-paint": 132,
-        "first-contentful-paint": 132
+        "domContentLoaded": 112.9,
+        "first-paint": 124,
+        "first-contentful-paint": 124
       },
       "consoleErrors": []
     },
@@ -1862,230 +1868,232 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 2.6,
+        "renderMs": 4.1,
         "metricsMs": 0,
-        "dataMs": 31.9,
+        "dataMs": 65.4,
         "breakdown": {
-          "page": 2.2,
+          "page": 3.3,
+          "chrome": 0.7,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 120.2,
+        "first-paint": 116,
+        "first-contentful-paint": 116
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "index",
+      "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 4,
+        "newsRows": 5,
+        "boardTabs": 4
+      },
+      "cumulativeTrend": {
+        "points": 11,
+        "rising": true,
+        "firstY": 66,
+        "lastY": 8.4
+      },
+      "perf": {
+        "renderMs": 30.8,
+        "metricsMs": 21.8,
+        "dataMs": 33.6,
+        "breakdown": {
+          "page": 0.9,
+          "dashboard": 29.4,
+          "homeAihot": 0,
+          "chrome": 0.4,
+          "reveal": 0
+        },
+        "dashPhases": {
+          "buildIndex": 4.1,
+          "matchModels": 16.9,
+          "computeMetrics": 21.8,
+          "updated": 0.2,
+          "kpis": 1.2,
+          "releases": 0,
+          "pie": 0,
+          "scatter": 4.1,
+          "topics": 1.2,
+          "renderAll": 6.9
+        },
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 166.6,
+        "first-paint": 124,
+        "first-contentful-paint": 124
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "index",
+      "lang": "zh",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 4,
+        "newsRows": 5,
+        "boardTabs": 4
+      },
+      "cumulativeTrend": {
+        "points": 11,
+        "rising": true,
+        "firstY": 66,
+        "lastY": 8.4
+      },
+      "perf": {
+        "renderMs": 21.7,
+        "metricsMs": 16.5,
+        "dataMs": 37.2,
+        "breakdown": {
+          "page": 1.9,
+          "dashboard": 19.2,
+          "homeAihot": 0.4,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {
+          "buildIndex": 3.3,
+          "matchModels": 12.1,
+          "computeMetrics": 16.5,
+          "updated": 0.2,
+          "kpis": 0.4,
+          "releases": 0,
+          "pie": 0,
+          "scatter": 1.5,
+          "topics": 0.3,
+          "renderAll": 2.4
+        },
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 126.8,
+        "first-paint": 124,
+        "first-contentful-paint": 124
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "news",
+      "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 16.2,
+        "metricsMs": 0,
+        "dataMs": 30.6,
+        "breakdown": {
+          "page": 16,
+          "chrome": 0.1,
+          "reveal": 0.1
+        },
+        "dashPhases": {},
+        "longTasks": [
+          52
+        ],
+        "longestTask": 52,
+        "domContentLoaded": 146.9,
+        "first-paint": 120,
+        "first-contentful-paint": 120
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "news",
+      "lang": "zh",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 30.9,
+        "metricsMs": 0,
+        "dataMs": 32.9,
+        "breakdown": {
+          "page": 29.2,
+          "chrome": 1.3,
+          "reveal": 0.3
+        },
+        "dashPhases": {},
+        "longTasks": [
+          137
+        ],
+        "longestTask": 137,
+        "domContentLoaded": 124.7,
+        "first-paint": 128,
+        "first-contentful-paint": 128
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "rankings",
+      "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 10,
+        "metricsMs": 0,
+        "dataMs": 27.1,
+        "breakdown": {
+          "page": 9.6,
           "chrome": 0.4,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 106.9,
-        "first-paint": 116,
-        "first-contentful-paint": 116
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "index",
-      "lang": "en",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 4,
-        "newsRows": 5,
-        "boardTabs": 4
-      },
-      "cumulativeTrend": {
-        "points": 11,
-        "rising": true,
-        "firstY": 66,
-        "lastY": 8.4
-      },
-      "perf": {
-        "renderMs": 23.9,
-        "metricsMs": 19.6,
-        "dataMs": 24.5,
-        "breakdown": {
-          "page": 1.5,
-          "dashboard": 22.2,
-          "homeAihot": 0,
-          "chrome": 0.1,
-          "reveal": 0.1
-        },
-        "dashPhases": {
-          "buildIndex": 4.1,
-          "matchModels": 14.3,
-          "computeMetrics": 19.6,
-          "updated": 0.1,
-          "kpis": 0.6,
-          "releases": 0,
-          "pie": 0,
-          "scatter": 1.3,
-          "topics": 0.3,
-          "renderAll": 2.5
-        },
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 109.2,
-        "first-paint": 116,
-        "first-contentful-paint": 116
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "index",
-      "lang": "zh",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 4,
-        "newsRows": 5,
-        "boardTabs": 4
-      },
-      "cumulativeTrend": {
-        "points": 11,
-        "rising": true,
-        "firstY": 66,
-        "lastY": 8.4
-      },
-      "perf": {
-        "renderMs": 25.1,
-        "metricsMs": 18.8,
-        "dataMs": 34.7,
-        "breakdown": {
-          "page": 1.2,
-          "dashboard": 23.1,
-          "homeAihot": 0.5,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {
-          "buildIndex": 5.6,
-          "matchModels": 10.5,
-          "computeMetrics": 18.8,
-          "updated": 0.3,
-          "kpis": 0.9,
-          "releases": 0,
-          "pie": 0,
-          "scatter": 2.4,
-          "topics": 0.3,
-          "renderAll": 4.1
-        },
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 133.6,
-        "first-paint": 112,
-        "first-contentful-paint": 112
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "news",
-      "lang": "en",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 14.9,
-        "metricsMs": 0,
-        "dataMs": 30.1,
-        "breakdown": {
-          "page": 14.7,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 124.4,
-        "first-paint": 112,
-        "first-contentful-paint": 112
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "news",
-      "lang": "zh",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 23.4,
-        "metricsMs": 0,
-        "dataMs": 68.3,
-        "breakdown": {
-          "page": 22.3,
-          "chrome": 1,
-          "reveal": 0.1
-        },
-        "dashPhases": {},
-        "longTasks": [
-          121
-        ],
-        "longestTask": 121,
-        "domContentLoaded": 112.5,
-        "first-paint": 108,
-        "first-contentful-paint": 108
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "rankings",
-      "lang": "en",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 5.5,
-        "metricsMs": 0,
-        "dataMs": 39.1,
-        "breakdown": {
-          "page": 5.4,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 70.3,
-        "first-paint": 88,
-        "first-contentful-paint": 88
+        "domContentLoaded": 89.2,
+        "first-paint": 96,
+        "first-contentful-paint": 96
       },
       "consoleErrors": []
     },
@@ -2108,20 +2116,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 4.7,
+        "renderMs": 12.1,
         "metricsMs": 0,
-        "dataMs": 32.3,
+        "dataMs": 47.8,
         "breakdown": {
-          "page": 4.5,
-          "chrome": 0.2,
+          "page": 11.7,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 77.5,
-        "first-paint": 88,
-        "first-contentful-paint": 88
+        "domContentLoaded": 101.9,
+        "first-paint": 112,
+        "first-contentful-paint": 112
       },
       "consoleErrors": []
     },
@@ -2144,20 +2152,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 10.3,
+        "renderMs": 17.5,
         "metricsMs": 0,
-        "dataMs": 58.4,
+        "dataMs": 31.6,
         "breakdown": {
-          "page": 10.1,
-          "chrome": 0.1,
-          "reveal": 0.1
+          "page": 17.2,
+          "chrome": 0.2,
+          "reveal": 0
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 84.9,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "longTasks": [
+          69
+        ],
+        "longestTask": 69,
+        "domContentLoaded": 72.9,
+        "first-paint": 172,
+        "first-contentful-paint": 172
       },
       "consoleErrors": []
     },
@@ -2180,18 +2190,56 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 16,
+        "renderMs": 16.8,
         "metricsMs": 0,
-        "dataMs": 29.9,
+        "dataMs": 32,
         "breakdown": {
-          "page": 15.8,
+          "page": 16.6,
           "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [
+          65
+        ],
+        "longestTask": 65,
+        "domContentLoaded": 73.7,
+        "first-paint": 140,
+        "first-contentful-paint": 140
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "resources",
+      "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 5.8,
+        "metricsMs": 0,
+        "dataMs": 29.4,
+        "breakdown": {
+          "page": 5.1,
+          "chrome": 0.7,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 81.7,
+        "domContentLoaded": 85.3,
         "first-paint": 96,
         "first-contentful-paint": 96
       },
@@ -2199,7 +2247,79 @@
     },
     {
       "page": "resources",
+      "lang": "zh",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 4.7,
+        "metricsMs": 0,
+        "dataMs": 43.5,
+        "breakdown": {
+          "page": 4.4,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 87.7,
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
       "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 156
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 4.1,
+        "metricsMs": 0,
+        "dataMs": 26.4,
+        "breakdown": {
+          "page": 3.8,
+          "chrome": 0.2,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 94.1,
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
+      "lang": "zh",
       "width": 768,
       "settle": "ok",
       "issues": [],
@@ -2218,124 +2338,16 @@
       "perf": {
         "renderMs": 3.3,
         "metricsMs": 0,
-        "dataMs": 35.1,
+        "dataMs": 33,
         "breakdown": {
-          "page": 3.2,
-          "chrome": 0.1,
+          "page": 3.1,
+          "chrome": 0.2,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 72.5,
-        "first-paint": 84,
-        "first-contentful-paint": 84
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "resources",
-      "lang": "zh",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 2.7,
-        "metricsMs": 0,
-        "dataMs": 43.1,
-        "breakdown": {
-          "page": 2.6,
-          "chrome": 0,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 78,
-        "first-paint": 92,
-        "first-contentful-paint": 92
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
-      "lang": "en",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 4.3,
-        "metricsMs": 0,
-        "dataMs": 36.8,
-        "breakdown": {
-          "page": 3.7,
-          "chrome": 0.4,
-          "reveal": 0.1
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 71,
-        "first-paint": 84,
-        "first-contentful-paint": 84
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
-      "lang": "zh",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 156
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 6,
-        "metricsMs": 0,
-        "dataMs": 38.1,
-        "breakdown": {
-          "page": 5.3,
-          "chrome": 0.5,
-          "reveal": 0.1
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 88.3,
+        "domContentLoaded": 94.5,
         "first-paint": 104,
         "first-contentful-paint": 104
       },
@@ -2356,20 +2368,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 3.5,
+        "renderMs": 2.7,
         "metricsMs": 0,
-        "dataMs": 82.3,
+        "dataMs": 25.1,
         "breakdown": {
-          "page": 3.2,
+          "page": 2.6,
           "chrome": 0.1,
-          "reveal": 0.1
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 91.6,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 115.1,
+        "first-paint": 120,
+        "first-contentful-paint": 120
       },
       "consoleErrors": []
     },
@@ -2388,26 +2400,58 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 5.2,
+        "renderMs": 4.4,
         "metricsMs": 0,
-        "dataMs": 28,
+        "dataMs": 39,
         "breakdown": {
-          "page": 4.8,
-          "chrome": 0.4,
+          "page": 4.1,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 80.6,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 234.7,
+        "first-paint": 204,
+        "first-contentful-paint": 204
       },
       "consoleErrors": []
     },
     {
       "page": "about",
       "lang": "en",
+      "width": 768,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": null,
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 2,
+        "metricsMs": 0,
+        "dataMs": 38.1,
+        "breakdown": {
+          "page": 1.8,
+          "chrome": 0.1,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 143.9,
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "about",
+      "lang": "zh",
       "width": 768,
       "settle": "ok",
       "issues": [],
@@ -2422,7 +2466,7 @@
       "perf": {
         "renderMs": 3.2,
         "metricsMs": 0,
-        "dataMs": 37,
+        "dataMs": 29.4,
         "breakdown": {
           "page": 3,
           "chrome": 0.2,
@@ -2431,41 +2475,9 @@
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 124,
-        "first-paint": 104,
-        "first-contentful-paint": 104
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "about",
-      "lang": "zh",
-      "width": 768,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": null,
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 3.3,
-        "metricsMs": 0,
-        "dataMs": 30.4,
-        "breakdown": {
-          "page": 3,
-          "chrome": 0.1,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 99.8,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 130.5,
+        "first-paint": 116,
+        "first-contentful-paint": 116
       },
       "consoleErrors": []
     },
@@ -2488,19 +2500,19 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1,
+        "renderMs": 1.4,
         "metricsMs": 0,
-        "dataMs": 49.4,
+        "dataMs": 54.1,
         "breakdown": {
-          "chrome": 1,
-          "reveal": 0
+          "chrome": 1.3,
+          "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 120.4,
-        "first-paint": 120,
-        "first-contentful-paint": 120
+        "domContentLoaded": 111.4,
+        "first-paint": 100,
+        "first-contentful-paint": 100
       },
       "consoleErrors": []
     },
@@ -2525,7 +2537,7 @@
       "perf": {
         "renderMs": 0.5,
         "metricsMs": 0,
-        "dataMs": 43.5,
+        "dataMs": 40.6,
         "breakdown": {
           "chrome": 0.5,
           "reveal": 0
@@ -2533,9 +2545,9 @@
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 68.6,
-        "first-paint": 80,
-        "first-contentful-paint": 80
+        "domContentLoaded": 103.1,
+        "first-paint": 112,
+        "first-contentful-paint": 112
       },
       "consoleErrors": []
     },
@@ -2556,18 +2568,18 @@
       "perf": {
         "renderMs": 4.2,
         "metricsMs": 0,
-        "dataMs": 21.6,
+        "dataMs": 35,
         "breakdown": {
-          "page": 2.6,
-          "chrome": 1.5,
-          "reveal": 0.1
+          "page": 3.4,
+          "chrome": 0.8,
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 62.4,
-        "first-paint": 68,
-        "first-contentful-paint": 68
+        "domContentLoaded": 109.4,
+        "first-paint": 100,
+        "first-contentful-paint": 100
       },
       "consoleErrors": []
     },
@@ -2591,33 +2603,33 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 23.8,
-        "metricsMs": 19.1,
-        "dataMs": 25.6,
+        "renderMs": 31,
+        "metricsMs": 21.4,
+        "dataMs": 33.6,
         "breakdown": {
-          "page": 1.5,
-          "dashboard": 22.2,
+          "page": 1.8,
+          "dashboard": 28.9,
           "homeAihot": 0,
-          "chrome": 0.1,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {
-          "buildIndex": 3.2,
-          "matchModels": 15,
-          "computeMetrics": 19.1,
-          "updated": 0.1,
-          "kpis": 0.5,
+          "buildIndex": 5.1,
+          "matchModels": 14.7,
+          "computeMetrics": 21.4,
+          "updated": 0.2,
+          "kpis": 2,
           "releases": 0,
           "pie": 0,
-          "scatter": 1.7,
-          "topics": 0.3,
-          "renderAll": 2.8
+          "scatter": 3.8,
+          "topics": 1,
+          "renderAll": 7
         },
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 76.2,
-        "first-paint": 80,
-        "first-contentful-paint": 80
+        "domContentLoaded": 155.8,
+        "first-paint": 124,
+        "first-contentful-paint": 124
       },
       "consoleErrors": []
     },
@@ -2641,33 +2653,33 @@
         "lastY": 8.4
       },
       "perf": {
-        "renderMs": 16.9,
-        "metricsMs": 13.1,
-        "dataMs": 28.4,
+        "renderMs": 28.9,
+        "metricsMs": 22,
+        "dataMs": 36,
         "breakdown": {
           "page": 1.2,
-          "dashboard": 15.2,
-          "homeAihot": 0.3,
-          "chrome": 0.2,
+          "dashboard": 26.5,
+          "homeAihot": 0.9,
+          "chrome": 0.3,
           "reveal": 0
         },
         "dashPhases": {
-          "buildIndex": 1.6,
-          "matchModels": 10.5,
-          "computeMetrics": 13.1,
-          "updated": 0,
-          "kpis": 0.4,
-          "releases": 0,
+          "buildIndex": 6.5,
+          "matchModels": 13.7,
+          "computeMetrics": 22,
+          "updated": 0.2,
+          "kpis": 0.9,
+          "releases": 0.1,
           "pie": 0,
-          "scatter": 1,
-          "topics": 0.3,
-          "renderAll": 1.8
+          "scatter": 2.3,
+          "topics": 0.6,
+          "renderAll": 4.1
         },
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 76.3,
-        "first-paint": 84,
-        "first-contentful-paint": 84
+        "domContentLoaded": 156.2,
+        "first-paint": 140,
+        "first-contentful-paint": 140
       },
       "consoleErrors": []
     },
@@ -2690,20 +2702,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 10.9,
+        "renderMs": 16.4,
         "metricsMs": 0,
-        "dataMs": 40.7,
+        "dataMs": 29.9,
         "breakdown": {
-          "page": 10.7,
-          "chrome": 0.1,
-          "reveal": 0.1
+          "page": 16.1,
+          "chrome": 0.2,
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [
-          53
+          106
         ],
-        "longestTask": 53,
-        "domContentLoaded": 129.1,
+        "longestTask": 106,
+        "domContentLoaded": 96.9,
         "first-paint": 92,
         "first-contentful-paint": 92
       },
@@ -2728,22 +2740,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 20.7,
+        "renderMs": 22.4,
         "metricsMs": 0,
-        "dataMs": 31.3,
+        "dataMs": 36.7,
         "breakdown": {
-          "page": 19.7,
-          "chrome": 0.9,
-          "reveal": 0.1
+          "page": 22.1,
+          "chrome": 0.3,
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [
-          167
+          299
         ],
-        "longestTask": 167,
-        "domContentLoaded": 85.8,
-        "first-paint": 88,
-        "first-contentful-paint": 88
+        "longestTask": 299,
+        "domContentLoaded": 130.4,
+        "first-paint": 104,
+        "first-contentful-paint": 104
       },
       "consoleErrors": []
     },
@@ -2766,20 +2778,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 7.8,
+        "renderMs": 8.6,
         "metricsMs": 0,
-        "dataMs": 25.8,
+        "dataMs": 34.4,
         "breakdown": {
-          "page": 7.6,
-          "chrome": 0.1,
+          "page": 8.3,
+          "chrome": 0.2,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 86.6,
-        "first-paint": 88,
-        "first-contentful-paint": 88
+        "domContentLoaded": 108.4,
+        "first-paint": 96,
+        "first-contentful-paint": 96
       },
       "consoleErrors": []
     },
@@ -2802,20 +2814,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 4.4,
+        "renderMs": 4.9,
         "metricsMs": 0,
-        "dataMs": 45.2,
+        "dataMs": 31.6,
         "breakdown": {
-          "page": 4.3,
-          "chrome": 0,
+          "page": 4.6,
+          "chrome": 0.2,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 102.8,
-        "first-paint": 84,
-        "first-contentful-paint": 84
+        "domContentLoaded": 115.2,
+        "first-paint": 104,
+        "first-contentful-paint": 104
       },
       "consoleErrors": []
     },
@@ -2838,20 +2850,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 12.8,
+        "renderMs": 15.2,
         "metricsMs": 0,
-        "dataMs": 42.2,
+        "dataMs": 37.9,
         "breakdown": {
-          "page": 12.4,
-          "chrome": 0.2,
+          "page": 14.5,
+          "chrome": 0.6,
           "reveal": 0.1
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 88.4,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "longTasks": [
+          77
+        ],
+        "longestTask": 77,
+        "domContentLoaded": 140.9,
+        "first-paint": 132,
+        "first-contentful-paint": 132
       },
       "consoleErrors": []
     },
@@ -2874,20 +2888,22 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 13.7,
+        "renderMs": 13.9,
         "metricsMs": 0,
-        "dataMs": 36.1,
+        "dataMs": 32.6,
         "breakdown": {
-          "page": 13.2,
-          "chrome": 0.4,
+          "page": 13.6,
+          "chrome": 0.2,
           "reveal": 0.1
         },
         "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 104,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "longTasks": [
+          69
+        ],
+        "longestTask": 69,
+        "domContentLoaded": 107.1,
+        "first-paint": 144,
+        "first-contentful-paint": 144
       },
       "consoleErrors": []
     },
@@ -2910,97 +2926,25 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 5.2,
+        "renderMs": 5.8,
         "metricsMs": 0,
-        "dataMs": 27,
+        "dataMs": 27.2,
         "breakdown": {
-          "page": 4.9,
-          "chrome": 0.3,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 72.5,
-        "first-paint": 80,
-        "first-contentful-paint": 80
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "resources",
-      "lang": "zh",
-      "width": 390,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 254
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 4.2,
-        "metricsMs": 0,
-        "dataMs": 40.2,
-        "breakdown": {
-          "page": 3.9,
+          "page": 5.5,
           "chrome": 0.2,
           "reveal": 0.1
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 78,
+        "domContentLoaded": 70.8,
         "first-paint": 72,
         "first-contentful-paint": 72
       },
       "consoleErrors": []
     },
     {
-      "page": "projects",
-      "lang": "en",
-      "width": 390,
-      "settle": "ok",
-      "issues": [],
-      "scrollableOverflow": 0,
-      "stressLongSource": {
-        "overflowY": -11,
-        "overflowX": -11,
-        "cardHeight": 254
-      },
-      "deferredContent": {
-        "newModels": 0,
-        "newsRows": 0,
-        "boardTabs": 0
-      },
-      "cumulativeTrend": null,
-      "perf": {
-        "renderMs": 2.8,
-        "metricsMs": 0,
-        "dataMs": 39.4,
-        "breakdown": {
-          "page": 2.6,
-          "chrome": 0.2,
-          "reveal": 0
-        },
-        "dashPhases": {},
-        "longTasks": [],
-        "longestTask": 0,
-        "domContentLoaded": 114.4,
-        "first-paint": 116,
-        "first-contentful-paint": 116
-      },
-      "consoleErrors": []
-    },
-    {
-      "page": "projects",
+      "page": "resources",
       "lang": "zh",
       "width": 390,
       "settle": "ok",
@@ -3018,20 +2962,92 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1.8,
+        "renderMs": 4.1,
         "metricsMs": 0,
-        "dataMs": 24.3,
+        "dataMs": 33.5,
         "breakdown": {
-          "page": 1.7,
+          "page": 4,
           "chrome": 0.1,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 109.9,
-        "first-paint": 112,
-        "first-contentful-paint": 112
+        "domContentLoaded": 75.8,
+        "first-paint": 76,
+        "first-contentful-paint": 76
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
+      "lang": "en",
+      "width": 390,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 254
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 3.3,
+        "metricsMs": 0,
+        "dataMs": 22.4,
+        "breakdown": {
+          "page": 3.2,
+          "chrome": 0.1,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 95.4,
+        "first-paint": 100,
+        "first-contentful-paint": 100
+      },
+      "consoleErrors": []
+    },
+    {
+      "page": "projects",
+      "lang": "zh",
+      "width": 390,
+      "settle": "ok",
+      "issues": [],
+      "scrollableOverflow": 0,
+      "stressLongSource": {
+        "overflowY": -11,
+        "overflowX": -11,
+        "cardHeight": 254
+      },
+      "deferredContent": {
+        "newModels": 0,
+        "newsRows": 0,
+        "boardTabs": 0
+      },
+      "cumulativeTrend": null,
+      "perf": {
+        "renderMs": 3.3,
+        "metricsMs": 0,
+        "dataMs": 33.2,
+        "breakdown": {
+          "page": 2.8,
+          "chrome": 0.5,
+          "reveal": 0
+        },
+        "dashPhases": {},
+        "longTasks": [],
+        "longestTask": 0,
+        "domContentLoaded": 78.4,
+        "first-paint": 84,
+        "first-contentful-paint": 84
       },
       "consoleErrors": []
     },
@@ -3050,20 +3066,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 3.2,
+        "renderMs": 2.9,
         "metricsMs": 0,
-        "dataMs": 26.4,
+        "dataMs": 33.6,
         "breakdown": {
-          "page": 3,
-          "chrome": 0.2,
+          "page": 2.7,
+          "chrome": 0.1,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 88.7,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 102.2,
+        "first-paint": 100,
+        "first-contentful-paint": 100
       },
       "consoleErrors": []
     },
@@ -3082,20 +3098,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 3,
+        "renderMs": 3.9,
         "metricsMs": 0,
-        "dataMs": 25.9,
+        "dataMs": 26.3,
         "breakdown": {
-          "page": 2.7,
-          "chrome": 0.2,
+          "page": 3.5,
+          "chrome": 0.4,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 71.8,
-        "first-paint": 76,
-        "first-contentful-paint": 76
+        "domContentLoaded": 93.5,
+        "first-paint": 112,
+        "first-contentful-paint": 112
       },
       "consoleErrors": []
     },
@@ -3114,20 +3130,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 3.3,
+        "renderMs": 2,
         "metricsMs": 0,
-        "dataMs": 21.6,
+        "dataMs": 27.2,
         "breakdown": {
-          "page": 3,
-          "chrome": 0.2,
+          "page": 1.9,
+          "chrome": 0.1,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 71.4,
-        "first-paint": 76,
-        "first-contentful-paint": 76
+        "domContentLoaded": 78.2,
+        "first-paint": 80,
+        "first-contentful-paint": 80
       },
       "consoleErrors": []
     },
@@ -3146,18 +3162,18 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1.4,
+        "renderMs": 1.7,
         "metricsMs": 0,
-        "dataMs": 27.2,
+        "dataMs": 30.9,
         "breakdown": {
-          "page": 1.2,
+          "page": 1.6,
           "chrome": 0.1,
-          "reveal": 0.1
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 76.7,
+        "domContentLoaded": 80.2,
         "first-paint": 76,
         "first-contentful-paint": 76
       },
@@ -3182,19 +3198,19 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 0.9,
+        "renderMs": 0.7,
         "metricsMs": 0,
-        "dataMs": 61.3,
+        "dataMs": 57.6,
         "breakdown": {
-          "chrome": 0.9,
+          "chrome": 0.7,
           "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 121.9,
-        "first-paint": 100,
-        "first-contentful-paint": 100
+        "domContentLoaded": 67.3,
+        "first-paint": 68,
+        "first-contentful-paint": 68
       },
       "consoleErrors": []
     },
@@ -3217,19 +3233,19 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1,
+        "renderMs": 0.7,
         "metricsMs": 0,
-        "dataMs": 46.1,
+        "dataMs": 58.8,
         "breakdown": {
-          "chrome": 0.9,
-          "reveal": 0.1
+          "chrome": 0.7,
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 89.8,
-        "first-paint": 92,
-        "first-contentful-paint": 92
+        "domContentLoaded": 115.3,
+        "first-paint": 96,
+        "first-contentful-paint": 96
       },
       "consoleErrors": []
     },
@@ -3248,20 +3264,20 @@
       },
       "cumulativeTrend": null,
       "perf": {
-        "renderMs": 1.8,
+        "renderMs": 2,
         "metricsMs": 0,
-        "dataMs": 28.3,
+        "dataMs": 29.8,
         "breakdown": {
-          "page": 1.4,
+          "page": 1.7,
           "chrome": 0.3,
-          "reveal": 0.1
+          "reveal": 0
         },
         "dashPhases": {},
         "longTasks": [],
         "longestTask": 0,
-        "domContentLoaded": 89.4,
-        "first-paint": 68,
-        "first-contentful-paint": 68
+        "domContentLoaded": 75.4,
+        "first-paint": 64,
+        "first-contentful-paint": 64
       },
       "consoleErrors": []
     }

@@ -511,13 +511,6 @@ function renderStats(data) {
   renderInto('#sources-status', () => {
     const sources = sourcesOf(meta);
     if (!sources.length) return `<p class="source-summary">${t('home.sources.unavailable')}</p>`;
-    const counts = sources.reduce(
-      (acc, source) => {
-        acc[source.status] = (acc[source.status] || 0) + 1;
-        return acc;
-      },
-      { ok: 0, degraded: 0, blocked: 0 }
-    );
     const dots = sources
       .map((source) => {
         const label = t('home.sources.dotTitle', {
@@ -529,11 +522,9 @@ function renderStats(data) {
         )}"><span class="u-visually-hidden">${esc(label)}</span></span>`;
       })
       .join('');
-    const parts = [t('home.sources.count', { n: intlNumber(sources.length) })];
-    if (counts.ok) parts.push(t('home.sources.ok', { n: intlNumber(counts.ok) }));
-    if (counts.degraded) parts.push(t('home.sources.degraded', { n: intlNumber(counts.degraded) }));
-      return `<div class="source-dots" role="list" aria-label="${t('home.sources.aria', { n: intlNumber(sources.length) })}">${dots}</div>
-      <p class="source-summary">${esc(parts.join(' · '))}</p>`;
+    // The "N data sources · M OK" summary line was removed: the dots plus their
+    // per-source titles carry the same information without the extra text.
+    return `<div class="source-dots" role="list" aria-label="${t('home.sources.aria', { n: intlNumber(sources.length) })}">${dots}</div>`;
   });
 
   const note = $('#data-mode-note');
