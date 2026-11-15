@@ -176,6 +176,7 @@ export function normalizeSharePayload(raw = {}, opts = {}) {
           rank: Number(entry?.rank) || index + 1,
           model: String(entry?.model || entry?.name || '').trim(),
           score: String(entry?.scoreDisplay ?? entry?.score ?? '').trim(),
+          org: String(entry?.org || '').trim(),
           releaseDate: String(entry?.releaseDate || entry?.release_date || '').trim(),
         }))
         .filter((entry) => entry.model),

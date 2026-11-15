@@ -35,6 +35,7 @@ const OUT = resolve(ROOT, flag('out', '_tmp/ui-audit.json'));
 const SHOTS = has('shots') ? (flag('shots', 'index@1440@en,index@390@zh') === 'all' ? '*' : new Set(flag('shots', 'index@1440@en,index@390@zh').split(',').map((v) => v.trim()))) : new Set();
 const SHOT_DIR = join(ROOT, '_tmp', 'shots');
 const SHOT_SCROLL = flag('shot-scroll', '');
+const SHARE_SHOT = flag('share-shot', '') ? resolve(ROOT, flag('share-shot', '')) : '';
 const PORT = Number(flag('port', '4173'));
 const CDP_PORT = Number(flag('cdp', '9229'));
 const QUIET = has('quiet');
@@ -349,6 +350,12 @@ function pageProbe() {
       newsRows: document.querySelectorAll('#latest-news li').length,
       boardTabs: document.querySelectorAll('#home-rankings-tabs .board-tab').length,
     },
+    rankMetaFonts: (() => {
+      const org = document.querySelector('.rank-org');
+      const release = document.querySelector('.rank-release');
+      if (!org || !release) return null;
+      return { org: getComputedStyle(org).fontSize, release: getComputedStyle(release).fontSize };
+    })(),
     cumulativeTrend: (() => {
       const line = document.querySelector('.dash-kpi-trend .dash-trend-line');
       if (!line) return null;
@@ -426,6 +433,7 @@ async function main() {
     await openSession();
 
     const results = [];
+    let shareShotDone = false;
     for (const width of WIDTHS) {
       currentWidth = width;
       await cdp.send('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false }, sessionId);
@@ -472,6 +480,27 @@ async function main() {
             const shot = await cdp.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }, sessionId);
             await mkdir(SHOT_DIR, { recursive: true });
             await writeFile(join(SHOT_DIR, `${shotKey}.png`), Buffer.from(shot.data, 'base64'));
+          }
+          // Optional: render the branded 1200x630 share card in-page and save
+          // the canvas, so the leaderboard row layout can be reviewed.
+          if (SHARE_SHOT && !shareShotDone && page === 'index') {
+            const shareExpr = `(async () => {
+              const share = await import('/assets/js/share.js');
+              const payload = share.boardPayloadFromData(window.__AIPULSE_DATA__, 'artificial-analysis-intelligence');
+              const canvas = document.createElement('canvas');
+              share.drawShareCard(canvas, payload, { lang: ${JSON.stringify(lang)}, dark: false, qrImage: null });
+              return canvas.toDataURL('image/png');
+            })()`;
+            const shareResult = await cdp.send('Runtime.evaluate', { expression: shareExpr, awaitPromise: true, returnByValue: true }, sessionId);
+            const dataUrl = shareResult.result?.value;
+            if (!shareResult.exceptionDetails && typeof dataUrl === 'string' && dataUrl.startsWith('data:image/png;base64,')) {
+              await mkdir(dirname(SHARE_SHOT), { recursive: true });
+              await writeFile(SHARE_SHOT, Buffer.from(dataUrl.split(',')[1], 'base64'));
+              shareShotDone = true;
+              if (!QUIET) console.log(`[audit] share card -> ${SHARE_SHOT}`);
+            } else if (!QUIET) {
+              console.log(`[audit] share card failed: ${shareResult.exceptionDetails?.text || 'no data url'}`);
+            }
           }
           if (!QUIET) {
             const n = data.issues.length;

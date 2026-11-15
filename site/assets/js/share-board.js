@@ -67,6 +67,18 @@ export function drawBoardSection(ctx, opts) {
 
   const startY = bodyY + 12;
   const rowH = Math.min(27, Math.floor((floor - startY) / rows.length));
+  const showDates = rows.some((item) => item.releaseDate);
+  const showOrg = rows.some((item) => item.org);
+  const nameX = padX + 44;
+  const dateX = right - 118;
+  // Company name sits immediately left of the date. Measure one full date so
+  // every row shares the same column edges and long names are ellipsised.
+  ctx.font = `500 12px ${fontSans}`;
+  const dateWidth = ctx.measureText('2026.11.09').width;
+  const orgRight = dateX - dateWidth - 14;
+  const orgWidth = 108;
+  const orgLeft = orgRight - orgWidth;
+  const nameRight = showOrg ? orgLeft - 14 : showDates ? dateX - 24 : right - 90;
   rows.forEach((row, index) => {
     const rank = row.rank || index + 1;
     const cy = startY + index * rowH + rowH / 2 - 2;
@@ -80,13 +92,16 @@ export function drawBoardSection(ctx, opts) {
       ctx.fillText(String(rank).padStart(2, '0'), padX + 2, cy + 5);
     }
 
-    const nameX = padX + 44;
-    const showDates = rows.some((item) => item.releaseDate);
-    const dateX = right - 118;
-    const nameRight = showDates ? dateX - 24 : right - 90;
     ctx.fillStyle = P.ink;
     ctx.font = `500 19px ${fontSans}`;
     ctx.fillText(fitOneLine(ctx, row.model, nameRight - nameX), nameX, cy + 6);
+    if (showOrg) {
+      ctx.textAlign = 'right';
+      ctx.fillStyle = P.muted;
+      ctx.font = `500 12px ${fontSans}`;
+      ctx.fillText(fitOneLine(ctx, row.org || '—', orgWidth), orgRight, cy + 5);
+      ctx.textAlign = 'left';
+    }
     if (showDates) {
       const release = row.releaseDate ? String(row.releaseDate).slice(0, 10).replace(/-/g, '.') : '—';
       ctx.textAlign = 'right';

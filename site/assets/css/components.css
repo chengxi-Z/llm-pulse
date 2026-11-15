@@ -3515,7 +3515,8 @@ html,body{overflow-x:clip}
 /* Ranking rows: organization first, release date after it */
 .rank-meta{display:flex;align-items:baseline;justify-content:flex-start;gap:6px;margin-top:3px}
 .rank-meta .rank-org{display:block;flex:0 0 calc(var(--rank-org-ch,8) * 1ch);min-width:0;margin-top:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left}
-.rank-release{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+/* Match the org label (0.75rem) instead of inheriting the 0.9375rem cell font. */
+.rank-release{color:var(--muted);font-family:var(--font-sans);font-size:0.75rem;font-variant-numeric:tabular-nums;white-space:nowrap}
 
 /* Rankings tabs: align pills into equal columns on desktop */
 @media (min-width:961px){
