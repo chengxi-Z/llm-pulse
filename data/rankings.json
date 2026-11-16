@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T09:56:12.598Z",
+  "generatedAt": "2026-11-16T09:54:35.035Z",
   "source": "Artificial Analysis+OpenRouter+Epoch AI+LiveBench+LMArena",
   "boards": [
     {
@@ -9,7 +9,7 @@
       "description": "AA Intelligence Index v5 综合智能指数全量榜（/leaderboards/models 页内嵌 initialModels 解析），分数越高越好",
       "sourceName": "Artificial Analysis",
       "sourceUrl": "https://artificialanalysis.ai/leaderboards/models",
-      "updatedAt": "2026-11-09T09:56:12.598Z",
+      "updatedAt": "2026-11-16T09:54:35.035Z",
       "metric": {
         "name": "AA Intelligence Index",
         "unit": "index",
@@ -18,6 +18,36 @@
       "entries": [
         {
           "rank": 1,
+          "model": "Claude Fable 5.2 (Max, Default Fallback)",
+          "org": "Anthropic",
+          "score": 64.56,
+          "scoreDisplay": "64.6",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 2,
+          "model": "Claude Fable 5.2 (Xhigh, Default Fallback)",
+          "org": "Anthropic",
+          "score": 62.22,
+          "scoreDisplay": "62.2",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 3,
+          "model": "Claude Fable 5.2 (High, Default Fallback)",
+          "org": "Anthropic",
+          "score": 61.82,
+          "scoreDisplay": "61.8",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 4,
           "model": "Gemini 4 Carbon (High)",
           "org": "Google",
           "score": 60.03,
@@ -27,7 +57,7 @@
           "delta": null
         },
         {
-          "rank": 2,
+          "rank": 5,
           "model": "Claude Opus 5.5 (Max, Default Fallback)",
           "org": "Anthropic",
           "score": 59.11,
@@ -37,7 +67,7 @@
           "delta": null
         },
         {
-          "rank": 3,
+          "rank": 6,
           "model": "Gemini 4 Carbon (Medium)",
           "org": "Google",
           "score": 58.26,
@@ -47,7 +77,7 @@
           "delta": null
         },
         {
-          "rank": 4,
+          "rank": 7,
           "model": "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "org": "Anthropic",
           "score": 57.44,
@@ -57,7 +87,7 @@
           "delta": null
         },
         {
-          "rank": 5,
+          "rank": 8,
           "model": "GPT-6 Astra (Max)",
           "org": "OpenAI",
           "score": 56.85,
@@ -67,7 +97,17 @@
           "delta": null
         },
         {
-          "rank": 6,
+          "rank": 9,
+          "model": "Claude Fable 5.2 (Medium, Default Fallback)",
+          "org": "Anthropic",
+          "score": 56.41,
+          "scoreDisplay": "56.4",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 10,
           "model": "GPT-6 Astra (Xhigh)",
           "org": "OpenAI",
           "score": 55.31,
@@ -77,7 +117,7 @@
           "delta": null
         },
         {
-          "rank": 7,
+          "rank": 11,
           "model": "GPT-6 Astra (High)",
           "org": "OpenAI",
           "score": 54.85,
@@ -87,7 +127,7 @@
           "delta": null
         },
         {
-          "rank": 8,
+          "rank": 12,
           "model": "GPT-6.1 Sol (Max)",
           "org": "OpenAI",
           "score": 54.61,
@@ -97,7 +137,7 @@
           "delta": null
         },
         {
-          "rank": 9,
+          "rank": 13,
           "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
           "org": "Anthropic",
           "score": 54.54,
@@ -107,7 +147,7 @@
           "delta": null
         },
         {
-          "rank": 10,
+          "rank": 14,
           "model": "Gemini 4 Carbon (Low)",
           "org": "Google",
           "score": 54.22,
@@ -117,7 +157,27 @@
           "delta": null
         },
         {
-          "rank": 11,
+          "rank": 15,
+          "model": "Claude Fable 5.2 (Low, Default Fallback)",
+          "org": "Anthropic",
+          "score": 53.92,
+          "scoreDisplay": "53.9",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 16,
+          "model": "Gemini 4 Hydrogen (Xhigh)",
+          "org": "Google",
+          "score": 53.92,
+          "scoreDisplay": "53.9",
+          "releaseDate": "2026-11-12",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 17,
           "model": "GPT-6.1 Sol (Xhigh)",
           "org": "OpenAI",
           "score": 52.46,
@@ -127,7 +187,7 @@
           "delta": null
         },
         {
-          "rank": 12,
+          "rank": 18,
           "model": "Claude Opus 5.5 (High, Default Fallback)",
           "org": "Anthropic",
           "score": 51.84,
@@ -137,7 +197,7 @@
           "delta": null
         },
         {
-          "rank": 13,
+          "rank": 19,
           "model": "GPT-6 Astra (Medium)",
           "org": "OpenAI",
           "score": 51.55,
@@ -147,7 +207,7 @@
           "delta": null
         },
         {
-          "rank": 14,
+          "rank": 20,
           "model": "GPT-6.1 Terra (Max)",
           "org": "OpenAI",
           "score": 51.33,
@@ -157,7 +217,17 @@
           "delta": null
         },
         {
-          "rank": 15,
+          "rank": 21,
+          "model": "Gemini 4 Hydrogen (High)",
+          "org": "Google",
+          "score": 50.79,
+          "scoreDisplay": "50.8",
+          "releaseDate": "2026-11-12",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 22,
           "model": "Gemini 4 Argon (High)",
           "org": "Google",
           "score": 50.41,
@@ -167,7 +237,7 @@
           "delta": null
         },
         {
-          "rank": 16,
+          "rank": 23,
           "model": "GPT-6.1 Sol (High)",
           "org": "OpenAI",
           "score": 50.33,
@@ -177,7 +247,7 @@
           "delta": null
         },
         {
-          "rank": 17,
+          "rank": 24,
           "model": "Muse Wonder Full (Max)",
           "org": "Meta",
           "score": 50.08,
@@ -187,17 +257,7 @@
           "delta": null
         },
         {
-          "rank": 18,
-          "model": "Claude Fable 5.1 (Xhigh, Default Fallback)",
-          "org": "Anthropic",
-          "score": 50.02,
-          "scoreDisplay": "50.0",
-          "releaseDate": "2026-09-01",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 19,
+          "rank": 25,
           "model": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
           "org": "Anthropic",
           "score": 49.92,
@@ -207,17 +267,7 @@
           "delta": null
         },
         {
-          "rank": 20,
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "org": "Anthropic",
-          "score": 49.16,
-          "scoreDisplay": "49.2",
-          "releaseDate": "2026-09-01",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 21,
+          "rank": 26,
           "model": "Claude Opus 5.5 (Medium, Default Fallback)",
           "org": "Anthropic",
           "score": 48.21,
@@ -227,17 +277,17 @@
           "delta": null
         },
         {
-          "rank": 22,
-          "model": "Claude Fable 5.1 (High, Default Fallback)",
-          "org": "Anthropic",
-          "score": 47.17,
-          "scoreDisplay": "47.2",
-          "releaseDate": "2026-09-01",
+          "rank": 27,
+          "model": "Gemini 4 Argon (Medium)",
+          "org": "Google",
+          "score": 47.6,
+          "scoreDisplay": "47.6",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 23,
+          "rank": 28,
           "model": "Kimi K3.1 Pro",
           "org": "Kimi",
           "score": 46.45,
@@ -247,7 +297,7 @@
           "delta": null
         },
         {
-          "rank": 24,
+          "rank": 29,
           "model": "GPT-6.1 Sol (Medium)",
           "org": "OpenAI",
           "score": 46.35,
@@ -257,7 +307,7 @@
           "delta": null
         },
         {
-          "rank": 25,
+          "rank": 30,
           "model": "GPT-6.1 Terra (Xhigh)",
           "org": "OpenAI",
           "score": 45.25,
@@ -267,7 +317,7 @@
           "delta": null
         },
         {
-          "rank": 26,
+          "rank": 31,
           "model": "Muse Wonder (Max)",
           "org": "Meta",
           "score": 43.57,
@@ -277,7 +327,7 @@
           "delta": null
         },
         {
-          "rank": 27,
+          "rank": 32,
           "model": "GPT-6 Astra (Low)",
           "org": "OpenAI",
           "score": 43.33,
@@ -287,17 +337,17 @@
           "delta": null
         },
         {
-          "rank": 28,
-          "model": "Claude Fable 5.1 (Medium, Default Fallback)",
-          "org": "Anthropic",
-          "score": 43.17,
-          "scoreDisplay": "43.2",
-          "releaseDate": "2026-09-01",
+          "rank": 33,
+          "model": "Qwen4 Max",
+          "org": "Alibaba",
+          "score": 42.89,
+          "scoreDisplay": "42.9",
+          "releaseDate": "2026-11-16",
           "votes": null,
           "delta": null
         },
         {
-          "rank": 29,
+          "rank": 34,
           "model": "GPT-6.1 Terra (High)",
           "org": "OpenAI",
           "score": 42.43,
@@ -307,7 +357,7 @@
           "delta": null
         },
         {
-          "rank": 30,
+          "rank": 35,
           "model": "Claude Sonnet 5.5 (High, Default Fallback)",
           "org": "Anthropic",
           "score": 41.52,
@@ -317,7 +367,17 @@
           "delta": null
         },
         {
-          "rank": 31,
+          "rank": 36,
+          "model": "Gemini 4 Hydrogen (Medium)",
+          "org": "Google",
+          "score": 41.23,
+          "scoreDisplay": "41.2",
+          "releaseDate": "2026-11-12",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 37,
           "model": "Muse Wonder (High)",
           "org": "Meta",
           "score": 40.53,
@@ -327,17 +387,7 @@
           "delta": null
         },
         {
-          "rank": 32,
-          "model": "Claude Fable 5.1 (Low, Default Fallback)",
-          "org": "Anthropic",
-          "score": 38.68,
-          "scoreDisplay": "38.7",
-          "releaseDate": "2026-09-01",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 33,
+          "rank": 38,
           "model": "GPT-6.1 Terra (Medium)",
           "org": "OpenAI",
           "score": 38.17,
@@ -347,7 +397,7 @@
           "delta": null
         },
         {
-          "rank": 34,
+          "rank": 39,
           "model": "Claude Haiku 5.5 (Max)",
           "org": "Anthropic",
           "score": 36.48,
@@ -357,7 +407,17 @@
           "delta": null
         },
         {
-          "rank": 35,
+          "rank": 40,
+          "model": "Muse Ember (Max)",
+          "org": "Meta",
+          "score": 36.02,
+          "scoreDisplay": "36.0",
+          "releaseDate": "2026-11-09",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 41,
           "model": "Grok 4.7 (Xhigh)",
           "org": "SpaceXAI",
           "score": 35.49,
@@ -367,7 +427,7 @@
           "delta": null
         },
         {
-          "rank": 36,
+          "rank": 42,
           "model": "Grok 4.7 (High)",
           "org": "SpaceXAI",
           "score": 35.21,
@@ -377,7 +437,7 @@
           "delta": null
         },
         {
-          "rank": 37,
+          "rank": 43,
           "model": "GPT-6.1 Sol (Low)",
           "org": "OpenAI",
           "score": 34.8,
@@ -387,7 +447,7 @@
           "delta": null
         },
         {
-          "rank": 38,
+          "rank": 44,
           "model": "Claude Opus 5.5 (Low, Default Fallback)",
           "org": "Anthropic",
           "score": 34.75,
@@ -397,7 +457,7 @@
           "delta": null
         },
         {
-          "rank": 39,
+          "rank": 45,
           "model": "Claude Haiku 5.5 (Xhigh)",
           "org": "Anthropic",
           "score": 34.64,
@@ -407,7 +467,7 @@
           "delta": null
         },
         {
-          "rank": 40,
+          "rank": 46,
           "model": "Tencent Hy4",
           "org": "Tencent",
           "score": 34.56,
@@ -417,17 +477,17 @@
           "delta": null
         },
         {
-          "rank": 41,
-          "model": "Qwen3.8 Max (0902)",
-          "org": "Alibaba",
-          "score": 33.65,
-          "scoreDisplay": "33.6",
-          "releaseDate": "2026-09-02",
+          "rank": 47,
+          "model": "Muse Ember (Xhigh)",
+          "org": "Meta",
+          "score": 34.11,
+          "scoreDisplay": "34.1",
+          "releaseDate": "2026-11-09",
           "votes": null,
           "delta": null
         },
         {
-          "rank": 42,
+          "rank": 48,
           "model": "DeepSeek V4.1 Flash 1017 (Max)",
           "org": "DeepSeek",
           "score": 32.59,
@@ -437,7 +497,7 @@
           "delta": null
         },
         {
-          "rank": 43,
+          "rank": 49,
           "model": "GLM-5.3 (Max)",
           "org": "Z AI",
           "score": 31.65,
@@ -447,7 +507,7 @@
           "delta": null
         },
         {
-          "rank": 44,
+          "rank": 50,
           "model": "Grok 4.7 (Low)",
           "org": "SpaceXAI",
           "score": 31.13,
@@ -457,17 +517,17 @@
           "delta": null
         },
         {
-          "rank": 45,
+          "rank": 51,
           "model": "Gemini 3.8 Flash (High)",
           "org": "Google",
           "score": 30.85,
           "scoreDisplay": "30.9",
-          "releaseDate": "2026-09-02",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 46,
+          "rank": 52,
           "model": "Claude Sonnet 5.5 (Medium, Default Fallback)",
           "org": "Anthropic",
           "score": 30.82,
@@ -477,7 +537,7 @@
           "delta": null
         },
         {
-          "rank": 47,
+          "rank": 53,
           "model": "Inkling 2 Small",
           "org": "Thinking Machines",
           "score": 30.63,
@@ -487,7 +547,7 @@
           "delta": null
         },
         {
-          "rank": 48,
+          "rank": 54,
           "model": "GPT-6.1 Terra (Non-reasoning)",
           "org": "OpenAI",
           "score": 30.52,
@@ -497,17 +557,17 @@
           "delta": null
         },
         {
-          "rank": 49,
+          "rank": 55,
           "model": "Gemini 3.8 Flash (Medium)",
           "org": "Google",
           "score": 30.08,
           "scoreDisplay": "30.1",
-          "releaseDate": "2026-09-02",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 50,
+          "rank": 56,
           "model": "MiMo-V2.6-Pro",
           "org": "Xiaomi",
           "score": 29.89,
@@ -517,7 +577,7 @@
           "delta": null
         },
         {
-          "rank": 51,
+          "rank": 57,
           "model": "Claude Haiku 5.5 (High)",
           "org": "Anthropic",
           "score": 29.87,
@@ -527,7 +587,7 @@
           "delta": null
         },
         {
-          "rank": 52,
+          "rank": 58,
           "model": "Ling 3.1 Flash 1019",
           "org": "InclusionAI",
           "score": 29.57,
@@ -537,7 +597,7 @@
           "delta": null
         },
         {
-          "rank": 53,
+          "rank": 59,
           "model": "GPT-6.1 Terra (Low)",
           "org": "OpenAI",
           "score": 29.42,
@@ -547,17 +607,17 @@
           "delta": null
         },
         {
-          "rank": 54,
+          "rank": 60,
           "model": "MiniMax-M3.1-Flash",
           "org": "MiniMax",
           "score": 29.06,
           "scoreDisplay": "29.1",
-          "releaseDate": "2026-10-19",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 55,
+          "rank": 61,
           "model": "DeepSeek V4.1 Flash 1017 (High)",
           "org": "DeepSeek",
           "score": 28.64,
@@ -567,7 +627,17 @@
           "delta": null
         },
         {
-          "rank": 56,
+          "rank": 62,
+          "model": "Qwen3.8-Flash-Next",
+          "org": "Alibaba",
+          "score": 28.58,
+          "scoreDisplay": "28.6",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 63,
           "model": "Step 5 Preview",
           "org": "StepFun",
           "score": 28.53,
@@ -577,7 +647,7 @@
           "delta": null
         },
         {
-          "rank": 57,
+          "rank": 64,
           "model": "GPT-6 Luna (Max)",
           "org": "OpenAI",
           "score": 27.86,
@@ -587,7 +657,7 @@
           "delta": null
         },
         {
-          "rank": 58,
+          "rank": 65,
           "model": "GLM-5.3-Flash",
           "org": "Z AI",
           "score": 27.8,
@@ -597,7 +667,17 @@
           "delta": null
         },
         {
-          "rank": 59,
+          "rank": 66,
+          "model": "Gemini 4 Hydrogen (Low)",
+          "org": "Google",
+          "score": 26.89,
+          "scoreDisplay": "26.9",
+          "releaseDate": "2026-11-12",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 67,
           "model": "MiMo-V2.6-Flash",
           "org": "Xiaomi",
           "score": 26.73,
@@ -607,7 +687,7 @@
           "delta": null
         },
         {
-          "rank": 60,
+          "rank": 68,
           "model": "Mistral Large 4 (High)",
           "org": "Mistral",
           "score": 26.12,
@@ -617,7 +697,7 @@
           "delta": null
         },
         {
-          "rank": 61,
+          "rank": 69,
           "model": "Claude Sonnet 5.5 (Low, Default Fallback)",
           "org": "Anthropic",
           "score": 25.65,
@@ -627,17 +707,17 @@
           "delta": null
         },
         {
-          "rank": 62,
+          "rank": 70,
           "model": "Muse Spark Open (Xhigh)",
           "org": "Meta",
           "score": 24.88,
           "scoreDisplay": "24.9",
-          "releaseDate": "2026-10-15",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 63,
+          "rank": 71,
           "model": "Claude Haiku 5.5 (Medium)",
           "org": "Anthropic",
           "score": 24.6,
@@ -647,7 +727,7 @@
           "delta": null
         },
         {
-          "rank": 64,
+          "rank": 72,
           "model": "Agnes 2.5 Pro Theta",
           "org": "Sapiens AI",
           "score": 24.03,
@@ -657,7 +737,7 @@
           "delta": null
         },
         {
-          "rank": 65,
+          "rank": 73,
           "model": "GPT-6 Luna (Xhigh)",
           "org": "OpenAI",
           "score": 23.45,
@@ -667,7 +747,7 @@
           "delta": null
         },
         {
-          "rank": 66,
+          "rank": 74,
           "model": "Mistral Large 4 (Medium)",
           "org": "Mistral",
           "score": 23.13,
@@ -677,7 +757,7 @@
           "delta": null
         },
         {
-          "rank": 67,
+          "rank": 75,
           "model": "GLM-5.3 (Low)",
           "org": "Z AI",
           "score": 23.11,
@@ -687,7 +767,7 @@
           "delta": null
         },
         {
-          "rank": 68,
+          "rank": 76,
           "model": "DeepSeek V4 Pro 0813 (Max)",
           "org": "DeepSeek",
           "score": 23.06,
@@ -697,17 +777,17 @@
           "delta": null
         },
         {
-          "rank": 69,
+          "rank": 77,
           "model": "Gemini 3.8 Flash (Low)",
           "org": "Google",
           "score": 22.55,
           "scoreDisplay": "22.6",
-          "releaseDate": "2026-09-02",
+          "releaseDate": null,
           "votes": null,
           "delta": null
         },
         {
-          "rank": 70,
+          "rank": 78,
           "model": "GPT-6 Luna (High)",
           "org": "OpenAI",
           "score": 21.43,
@@ -717,7 +797,17 @@
           "delta": null
         },
         {
-          "rank": 71,
+          "rank": 79,
+          "model": "DeepSeek V4 Pro 0813 (High)",
+          "org": "DeepSeek",
+          "score": 20.8,
+          "scoreDisplay": "20.8",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 80,
           "model": "Nanbeige4.3-33B",
           "org": "Nanbeige",
           "score": 20.41,
@@ -727,7 +817,7 @@
           "delta": null
         },
         {
-          "rank": 72,
+          "rank": 81,
           "model": "Qwen3.8 27B (Xhigh)",
           "org": "Alibaba",
           "score": 20.11,
@@ -737,7 +827,17 @@
           "delta": null
         },
         {
-          "rank": 73,
+          "rank": 82,
+          "model": "JT-4.1 Flash 236B A21B",
+          "org": "China Mobile",
+          "score": 18.95,
+          "scoreDisplay": "18.9",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 83,
           "model": "MiniMax-M3",
           "org": "MiniMax",
           "score": 18.88,
@@ -747,7 +847,7 @@
           "delta": null
         },
         {
-          "rank": 74,
+          "rank": 84,
           "model": "Claude Haiku 5.5 (Low)",
           "org": "Anthropic",
           "score": 18.62,
@@ -757,7 +857,7 @@
           "delta": null
         },
         {
-          "rank": 75,
+          "rank": 85,
           "model": "DeepSeek V4.1 Flash 1017 (Non-reasoning)",
           "org": "DeepSeek",
           "score": 18.51,
@@ -767,7 +867,7 @@
           "delta": null
         },
         {
-          "rank": 76,
+          "rank": 86,
           "model": "GPT-6 Luna (Medium)",
           "org": "OpenAI",
           "score": 18.45,
@@ -777,7 +877,7 @@
           "delta": null
         },
         {
-          "rank": 77,
+          "rank": 87,
           "model": "K2 Horizon 375B A23B",
           "org": "Institute of Foundation Models",
           "score": 17.82,
@@ -787,7 +887,7 @@
           "delta": null
         },
         {
-          "rank": 78,
+          "rank": 88,
           "model": "Beam 1.0",
           "org": "Reflection",
           "score": 17.73,
@@ -797,7 +897,7 @@
           "delta": null
         },
         {
-          "rank": 79,
+          "rank": 89,
           "model": "Qwen3.8 27B (Medium)",
           "org": "Alibaba",
           "score": 17.48,
@@ -807,7 +907,7 @@
           "delta": null
         },
         {
-          "rank": 80,
+          "rank": 90,
           "model": "Qwen3.8 27B (Low)",
           "org": "Alibaba",
           "score": 15.69,
@@ -817,7 +917,27 @@
           "delta": null
         },
         {
-          "rank": 81,
+          "rank": 91,
+          "model": "Solar Pro 4",
+          "org": "Upstage",
+          "score": 14.16,
+          "scoreDisplay": "14.2",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 92,
+          "model": "Apodex 1.1",
+          "org": "Apodex",
+          "score": 13.67,
+          "scoreDisplay": "13.7",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 93,
           "model": "Nemotron 3.5 Super VL",
           "org": "NVIDIA",
           "score": 13.62,
@@ -827,7 +947,7 @@
           "delta": null
         },
         {
-          "rank": 82,
+          "rank": 94,
           "model": "Inkling Small",
           "org": "Thinking Machines",
           "score": 12.91,
@@ -837,7 +957,7 @@
           "delta": null
         },
         {
-          "rank": 83,
+          "rank": 95,
           "model": "DeepSeek V4 Pro 0813 (Non-reasoning)",
           "org": "DeepSeek",
           "score": 12.57,
@@ -847,7 +967,7 @@
           "delta": null
         },
         {
-          "rank": 84,
+          "rank": 96,
           "model": "Inkling (Xhigh)",
           "org": "Thinking Machines",
           "score": 12.48,
@@ -857,7 +977,7 @@
           "delta": null
         },
         {
-          "rank": 85,
+          "rank": 97,
           "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "org": "NVIDIA",
           "score": 11.76,
@@ -867,7 +987,7 @@
           "delta": null
         },
         {
-          "rank": 86,
+          "rank": 98,
           "model": "Gemini 3.5 Flash-Lite",
           "org": "Google",
           "score": 11.66,
@@ -877,7 +997,7 @@
           "delta": null
         },
         {
-          "rank": 87,
+          "rank": 99,
           "model": "Qwen3.8 27B (Non-reasoning)",
           "org": "Alibaba",
           "score": 10.03,
@@ -887,7 +1007,7 @@
           "delta": null
         },
         {
-          "rank": 88,
+          "rank": 100,
           "model": "GPT-6 Luna (Low)",
           "org": "OpenAI",
           "score": 9.67,
@@ -897,7 +1017,7 @@
           "delta": null
         },
         {
-          "rank": 89,
+          "rank": 101,
           "model": "GPT-6 Luna (Non-reasoning)",
           "org": "OpenAI",
           "score": 9.44,
@@ -907,7 +1027,7 @@
           "delta": null
         },
         {
-          "rank": 90,
+          "rank": 102,
           "model": "K-EXAONE 2.0",
           "org": "LG AI Research",
           "score": 7.56,
@@ -917,7 +1037,7 @@
           "delta": null
         },
         {
-          "rank": 91,
+          "rank": 103,
           "model": "Muse Glimmer (High)",
           "org": "Meta",
           "score": 6.34,
@@ -927,7 +1047,7 @@
           "delta": null
         },
         {
-          "rank": 92,
+          "rank": 104,
           "model": "Command A+",
           "org": "Cohere",
           "score": 6.24,
@@ -937,7 +1057,7 @@
           "delta": null
         },
         {
-          "rank": 93,
+          "rank": 105,
           "model": "Nemotron 3.5 Lightning",
           "org": "NVIDIA",
           "score": 5.53,
@@ -947,7 +1067,7 @@
           "delta": null
         },
         {
-          "rank": 94,
+          "rank": 106,
           "model": "Granite 4.2 8B",
           "org": "IBM",
           "score": 5.1,
@@ -957,7 +1077,7 @@
           "delta": null
         },
         {
-          "rank": 95,
+          "rank": 107,
           "model": "Granite 4.2 3B",
           "org": "IBM",
           "score": 4.72,
@@ -967,7 +1087,7 @@
           "delta": null
         },
         {
-          "rank": 96,
+          "rank": 108,
           "model": "Mistral Medium 3.5",
           "org": "Mistral",
           "score": 4.65,
@@ -977,7 +1097,7 @@
           "delta": null
         },
         {
-          "rank": 97,
+          "rank": 109,
           "model": "Gemma 4 31B (Reasoning)",
           "org": "Google",
           "score": 4.38,
@@ -987,7 +1107,7 @@
           "delta": null
         },
         {
-          "rank": 98,
+          "rank": 110,
           "model": "Mistral Small 4 (Reasoning)",
           "org": "Mistral",
           "score": 4.3,
@@ -997,7 +1117,17 @@
           "delta": null
         },
         {
-          "rank": 99,
+          "rank": 111,
+          "model": "gpt-oss-120b (High)",
+          "org": "OpenAI",
+          "score": 3.82,
+          "scoreDisplay": "3.8",
+          "releaseDate": null,
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 112,
           "model": "North Mini Code",
           "org": "Cohere",
           "score": 3.42,
@@ -1007,7 +1137,7 @@
           "delta": null
         },
         {
-          "rank": 100,
+          "rank": 113,
           "model": "NVIDIA Nemotron 3 Nano 4B",
           "org": "NVIDIA",
           "score": 1.82,
@@ -1024,7 +1154,7 @@
       "description": "按 API 支持的最大上下文长度排序（由 OpenRouter 目录派生，非质量排名）",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
-      "updatedAt": "2026-11-09T09:56:12.598Z",
+      "updatedAt": "2026-11-16T09:54:35.035Z",
       "metric": {
         "name": "上下文窗口",
         "unit": "tokens",
@@ -1129,7 +1259,7 @@
       "description": "Epoch Capabilities Index（由多个基准合成的通用能力指数），数值越高越强；取官方 benchmark_data.zip 的 eci_scores.csv",
       "sourceName": "Epoch AI",
       "sourceUrl": "https://epoch.ai/data/ai-benchmarking-dashboard",
-      "updatedAt": "2026-10-29T00:00:00.000Z",
+      "updatedAt": "2026-11-09T00:00:00.000Z",
       "metric": {
         "name": "ECI",
         "unit": "index",
@@ -1138,96 +1268,114 @@
       "entries": [
         {
           "rank": 1,
-          "model": "GPT-6 Astra",
-          "org": "OpenAI",
-          "score": 169.07,
-          "scoreDisplay": "169.1",
+          "model": "Claude Fable 5.2",
+          "org": "Anthropic",
+          "score": 173.44,
+          "scoreDisplay": "173.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 2,
-          "model": "GPT-6.1 Sol",
-          "org": "OpenAI",
-          "score": 168.94,
-          "scoreDisplay": "168.9",
+          "model": "Gemini 4 Carbon",
+          "org": "Google DeepMind",
+          "score": 169.76,
+          "scoreDisplay": "169.8",
           "votes": null,
           "delta": null
         },
         {
           "rank": 3,
-          "model": "Claude Opus 5.5",
-          "org": "Anthropic",
-          "score": 168.36,
-          "scoreDisplay": "168.4",
+          "model": "GPT-6 Astra",
+          "org": "OpenAI",
+          "score": 169,
+          "scoreDisplay": "169.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 4,
-          "model": "GPT-6.1 Terra",
-          "org": "OpenAI",
-          "score": 167.82,
-          "scoreDisplay": "167.8",
+          "model": "Claude Opus 5.5",
+          "org": "Anthropic",
+          "score": 168.54,
+          "scoreDisplay": "168.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 5,
-          "model": "Claude Fable 5.1",
-          "org": "Anthropic",
-          "score": 166.9,
-          "scoreDisplay": "166.9",
+          "model": "GPT-6.1 Sol",
+          "org": "OpenAI",
+          "score": 168.48,
+          "scoreDisplay": "168.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 6,
-          "model": "Gemini 4 Argon",
-          "org": "Google DeepMind",
-          "score": 166.45,
-          "scoreDisplay": "166.4",
+          "model": "GPT-6.1 Terra",
+          "org": "OpenAI",
+          "score": 167.67,
+          "scoreDisplay": "167.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 7,
-          "model": "Claude Sonnet 5.5",
+          "model": "Claude Fable 5.1",
           "org": "Anthropic",
-          "score": 166.24,
-          "scoreDisplay": "166.2",
+          "score": 166.99,
+          "scoreDisplay": "167.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 8,
-          "model": "Claude Opus 5",
+          "model": "Claude Sonnet 5.5",
           "org": "Anthropic",
-          "score": 164.45,
-          "scoreDisplay": "164.4",
+          "score": 166.56,
+          "scoreDisplay": "166.6",
           "votes": null,
           "delta": null
         },
         {
           "rank": 9,
-          "model": "Claude Fable 5",
-          "org": "Anthropic",
-          "score": 164.19,
-          "scoreDisplay": "164.2",
+          "model": "Gemini 4 Argon",
+          "org": "Google DeepMind",
+          "score": 166.48,
+          "scoreDisplay": "166.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 10,
-          "model": "GPT-6 Sol",
-          "org": "OpenAI",
-          "score": 164.06,
-          "scoreDisplay": "164.1",
+          "model": "Claude Opus 5",
+          "org": "Anthropic",
+          "score": 164.68,
+          "scoreDisplay": "164.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 11,
+          "model": "Claude Fable 5",
+          "org": "Anthropic",
+          "score": 164.13,
+          "scoreDisplay": "164.1",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 12,
+          "model": "GPT-6 Sol",
+          "org": "OpenAI",
+          "score": 163.75,
+          "scoreDisplay": "163.8",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 13,
           "model": "GPT-5.6 Sol",
           "org": "OpenAI",
           "score": 162.99,
@@ -1236,263 +1384,245 @@
           "delta": null
         },
         {
-          "rank": 12,
+          "rank": 14,
           "model": "GPT-5.5 Pro",
           "org": "OpenAI",
-          "score": 162.67,
+          "score": 162.7,
           "scoreDisplay": "162.7",
           "votes": null,
           "delta": null
         },
         {
-          "rank": 13,
+          "rank": 15,
           "model": "Muse Wonder",
           "org": "Meta AI",
-          "score": 162.02,
-          "scoreDisplay": "162.0",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 14,
-          "model": "GPT-5.6 Terra",
-          "org": "OpenAI",
-          "score": 160.89,
-          "scoreDisplay": "160.9",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 15,
-          "model": "Claude Haiku 5.5",
-          "org": "Anthropic",
-          "score": 160.22,
-          "scoreDisplay": "160.2",
+          "score": 161.68,
+          "scoreDisplay": "161.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 16,
-          "model": "GPT-5.4 Pro",
-          "org": "OpenAI",
-          "score": 160.21,
-          "scoreDisplay": "160.2",
+          "model": "Kimi K3.1 Pro",
+          "org": "Moonshot",
+          "score": 161.37,
+          "scoreDisplay": "161.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 17,
-          "model": "GPT-5.5",
+          "model": "GPT-5.6 Terra",
           "org": "OpenAI",
-          "score": 160.04,
-          "scoreDisplay": "160.0",
+          "score": 160.73,
+          "scoreDisplay": "160.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 18,
-          "model": "Claude Opus 4.8",
+          "model": "Claude Haiku 5.5",
           "org": "Anthropic",
-          "score": 159.89,
-          "scoreDisplay": "159.9",
+          "score": 160.43,
+          "scoreDisplay": "160.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 19,
-          "model": "DeepSeek V4.1 Flash 1017",
-          "org": "DeepSeek",
-          "score": 159.31,
-          "scoreDisplay": "159.3",
+          "model": "GPT-5.4 Pro",
+          "org": "OpenAI",
+          "score": 160.24,
+          "scoreDisplay": "160.2",
           "votes": null,
           "delta": null
         },
         {
           "rank": 20,
-          "model": "Gemini 3.8 Flash",
-          "org": "Google DeepMind",
-          "score": 158.63,
-          "scoreDisplay": "158.6",
+          "model": "GPT-5.5",
+          "org": "OpenAI",
+          "score": 160.1,
+          "scoreDisplay": "160.1",
           "votes": null,
           "delta": null
         },
         {
           "rank": 21,
-          "model": "Kimi K3",
-          "org": "Moonshot",
-          "score": 158.51,
-          "scoreDisplay": "158.5",
+          "model": "Claude Opus 4.8",
+          "org": "Anthropic",
+          "score": 159.94,
+          "scoreDisplay": "159.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 22,
-          "model": "Gemini 3.7 Flash",
-          "org": "Google DeepMind",
-          "score": 158.4,
-          "scoreDisplay": "158.4",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "org": "DeepSeek",
+          "score": 159.41,
+          "scoreDisplay": "159.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 23,
-          "model": "Muse Spark 1.3",
-          "org": "Meta AI",
-          "score": 157.98,
-          "scoreDisplay": "158.0",
+          "model": "Gemini 3.8 Flash",
+          "org": "Google DeepMind",
+          "score": 158.79,
+          "scoreDisplay": "158.8",
           "votes": null,
           "delta": null
         },
         {
           "rank": 24,
-          "model": "Grok 4.6",
-          "org": "xAI",
-          "score": 157.92,
-          "scoreDisplay": "157.9",
+          "model": "Kimi K3",
+          "org": "Moonshot",
+          "score": 158.58,
+          "scoreDisplay": "158.6",
           "votes": null,
           "delta": null
         },
         {
           "rank": 25,
-          "model": "GPT-5.4",
-          "org": "OpenAI",
-          "score": 157.82,
-          "scoreDisplay": "157.8",
+          "model": "Gemini 3.7 Flash",
+          "org": "Google DeepMind",
+          "score": 158.36,
+          "scoreDisplay": "158.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 26,
-          "model": "Claude Opus 4.7",
-          "org": "Anthropic",
-          "score": 157.55,
-          "scoreDisplay": "157.6",
+          "model": "Muse Spark 1.3",
+          "org": "Meta AI",
+          "score": 158.24,
+          "scoreDisplay": "158.2",
           "votes": null,
           "delta": null
         },
         {
           "rank": 27,
-          "model": "Qwen 3.8 Max",
-          "org": "Alibaba",
-          "score": 157.43,
-          "scoreDisplay": "157.4",
+          "model": "GPT-5.4",
+          "org": "OpenAI",
+          "score": 157.85,
+          "scoreDisplay": "157.8",
           "votes": null,
           "delta": null
         },
         {
           "rank": 28,
-          "model": "GPT-5.2 Pro",
-          "org": "OpenAI",
-          "score": 157.22,
-          "scoreDisplay": "157.2",
+          "model": "Grok 4.6",
+          "org": "xAI",
+          "score": 157.79,
+          "scoreDisplay": "157.8",
           "votes": null,
           "delta": null
         },
         {
           "rank": 29,
-          "model": "GLM-5.3",
-          "org": "Z.ai (Zhipu AI)",
-          "score": 156.91,
-          "scoreDisplay": "156.9",
+          "model": "Qwen 3.8 Max",
+          "org": "Alibaba",
+          "score": 157.59,
+          "scoreDisplay": "157.6",
           "votes": null,
           "delta": null
         },
         {
           "rank": 30,
-          "model": "GPT-5.6 Luna",
-          "org": "OpenAI",
-          "score": 156.79,
-          "scoreDisplay": "156.8",
+          "model": "Claude Opus 4.7",
+          "org": "Anthropic",
+          "score": 157.44,
+          "scoreDisplay": "157.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 31,
-          "model": "Claude Sonnet 5",
-          "org": "Anthropic",
-          "score": 156.71,
-          "scoreDisplay": "156.7",
+          "model": "GPT-5.2 Pro",
+          "org": "OpenAI",
+          "score": 157.27,
+          "scoreDisplay": "157.3",
           "votes": null,
           "delta": null
         },
         {
           "rank": 32,
-          "model": "GPT-6 Luna",
-          "org": "OpenAI",
-          "score": 156.68,
-          "scoreDisplay": "156.7",
+          "model": "GLM-5.3",
+          "org": "Z.ai (Zhipu AI)",
+          "score": 157.1,
+          "scoreDisplay": "157.1",
           "votes": null,
           "delta": null
         },
         {
           "rank": 33,
-          "model": "DeepSeek V4.1 Flash",
-          "org": "DeepSeek",
-          "score": 156.49,
-          "scoreDisplay": "156.5",
+          "model": "Claude Sonnet 5",
+          "org": "Anthropic",
+          "score": 156.94,
+          "scoreDisplay": "156.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 34,
-          "model": "Claude Opus 4.6",
-          "org": "Anthropic",
-          "score": 156.3,
-          "scoreDisplay": "156.3",
+          "model": "DeepSeek V4.1 Flash",
+          "org": "DeepSeek",
+          "score": 156.7,
+          "scoreDisplay": "156.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 35,
-          "model": "Gemini 3.1 Pro",
-          "org": "Google DeepMind",
-          "score": 156.24,
-          "scoreDisplay": "156.2",
+          "model": "GPT-5.6 Luna",
+          "org": "OpenAI",
+          "score": 156.67,
+          "scoreDisplay": "156.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 36,
-          "model": "Grok 4.7",
-          "org": "xAI",
-          "score": 156.07,
-          "scoreDisplay": "156.1",
+          "model": "GPT-6 Luna",
+          "org": "OpenAI",
+          "score": 156.41,
+          "scoreDisplay": "156.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 37,
-          "model": "DeepSeek V4 Pro 0813",
-          "org": "DeepSeek",
-          "score": 155.87,
-          "scoreDisplay": "155.9",
+          "model": "Claude Opus 4.6",
+          "org": "Anthropic",
+          "score": 156.34,
+          "scoreDisplay": "156.3",
           "votes": null,
           "delta": null
         },
         {
           "rank": 38,
-          "model": "Qwen3.8 Max (0902)",
-          "org": "Alibaba",
-          "score": 155.85,
-          "scoreDisplay": "155.8",
+          "model": "Gemini 3.1 Pro",
+          "org": "Google DeepMind",
+          "score": 156.18,
+          "scoreDisplay": "156.2",
           "votes": null,
           "delta": null
         },
         {
           "rank": 39,
-          "model": "Muse Spark Open",
-          "org": "Meta AI",
-          "score": 155.42,
-          "scoreDisplay": "155.4",
+          "model": "Grok 4.7",
+          "org": "xAI",
+          "score": 156.18,
+          "scoreDisplay": "156.2",
           "votes": null,
           "delta": null
         },
         {
           "rank": 40,
-          "model": "Gemini 3.5 Flash",
-          "org": "Google DeepMind",
-          "score": 155.24,
-          "scoreDisplay": "155.2",
+          "model": "Qwen3.8 Max (0902)",
+          "org": "Alibaba",
+          "score": 155.97,
+          "scoreDisplay": "156.0",
           "votes": null,
           "delta": null
         }
@@ -1504,7 +1634,7 @@
       "description": "Epoch AI 复评的 GPQA Diamond 正确率（0–100，%），研究生级科学问答。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。",
       "sourceName": "Epoch AI",
       "sourceUrl": "https://epoch.ai/data/ai-benchmarking-dashboard",
-      "updatedAt": "2026-11-09T09:56:12.598Z",
+      "updatedAt": "2026-11-16T09:54:35.035Z",
       "metric": {
         "name": "accuracy",
         "unit": "score",
@@ -1513,6 +1643,15 @@
       "entries": [
         {
           "rank": 1,
+          "model": "Gemini-4 Carbon",
+          "org": "Google DeepMind",
+          "score": 0.9653,
+          "scoreDisplay": "96.5",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 2,
           "model": "Gemini-4 Argon",
           "org": "Google DeepMind",
           "score": 0.964,
@@ -1521,7 +1660,16 @@
           "delta": null
         },
         {
-          "rank": 2,
+          "rank": 3,
+          "model": "Claude Fable 5.2 Fallback",
+          "org": "Anthropic",
+          "score": 0.9602,
+          "scoreDisplay": "96.0",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 4,
           "model": "GPT-6 Astra",
           "org": "OpenAI",
           "score": 0.9577,
@@ -1530,7 +1678,7 @@
           "delta": null
         },
         {
-          "rank": 3,
+          "rank": 5,
           "model": "Claude Sonnet 5.5",
           "org": "Anthropic",
           "score": 0.9558,
@@ -1539,7 +1687,7 @@
           "delta": null
         },
         {
-          "rank": 4,
+          "rank": 6,
           "model": "Gemini-3.8 Flash",
           "org": "Google DeepMind",
           "score": 0.9539,
@@ -1548,7 +1696,7 @@
           "delta": null
         },
         {
-          "rank": 5,
+          "rank": 7,
           "model": "GPT-6.1 SOL",
           "org": "OpenAI",
           "score": 0.9539,
@@ -1557,7 +1705,7 @@
           "delta": null
         },
         {
-          "rank": 6,
+          "rank": 8,
           "model": "Gemini-3.7 Flash",
           "org": "Google DeepMind",
           "score": 0.9482,
@@ -1566,7 +1714,7 @@
           "delta": null
         },
         {
-          "rank": 7,
+          "rank": 9,
           "model": "GPT-5.4 Pro 2026.03.05",
           "org": "OpenAI",
           "score": 0.946,
@@ -1575,7 +1723,7 @@
           "delta": null
         },
         {
-          "rank": 8,
+          "rank": 10,
           "model": "Gemini-3.1 Pro Preview",
           "org": "Google DeepMind",
           "score": 0.9444,
@@ -1584,7 +1732,7 @@
           "delta": null
         },
         {
-          "rank": 9,
+          "rank": 11,
           "model": "GPT-6 SOL",
           "org": "OpenAI",
           "score": 0.9432,
@@ -1593,7 +1741,7 @@
           "delta": null
         },
         {
-          "rank": 10,
+          "rank": 12,
           "model": "GPT-6.1 Terra",
           "org": "OpenAI",
           "score": 0.9432,
@@ -1602,7 +1750,7 @@
           "delta": null
         },
         {
-          "rank": 11,
+          "rank": 13,
           "model": "Kimi K3.1 Pro Together",
           "org": "Moonshot",
           "score": 0.9419,
@@ -1611,7 +1759,7 @@
           "delta": null
         },
         {
-          "rank": 12,
+          "rank": 14,
           "model": "Gemini-3.6 Flash",
           "org": "Google DeepMind",
           "score": 0.9413,
@@ -1620,7 +1768,7 @@
           "delta": null
         },
         {
-          "rank": 13,
+          "rank": 15,
           "model": "Gemini-3.1 Pro Preview",
           "org": "Google DeepMind",
           "score": 0.941,
@@ -1629,7 +1777,16 @@
           "delta": null
         },
         {
-          "rank": 14,
+          "rank": 16,
+          "model": "Claude Opus 5.5 Fallback",
+          "org": "Anthropic",
+          "score": 0.9407,
+          "scoreDisplay": "94.1",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 17,
           "model": "GPT-5.5 PRE Release",
           "org": "OpenAI",
           "score": 0.94,
@@ -1638,7 +1795,7 @@
           "delta": null
         },
         {
-          "rank": 15,
+          "rank": 18,
           "model": "Grok-4.6",
           "org": "xAI",
           "score": 0.94,
@@ -1647,7 +1804,7 @@
           "delta": null
         },
         {
-          "rank": 16,
+          "rank": 19,
           "model": "GPT-5.5 Pro PRE Release",
           "org": "OpenAI",
           "score": 0.9392,
@@ -1656,7 +1813,25 @@
           "delta": null
         },
         {
-          "rank": 17,
+          "rank": 20,
+          "model": "Claude Fable 5.2",
+          "org": "Anthropic",
+          "score": 0.9388,
+          "scoreDisplay": "93.9",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 21,
+          "model": "Claude Fable 5 Fallback",
+          "org": "Anthropic",
+          "score": 0.9388,
+          "scoreDisplay": "93.9",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 22,
           "model": "Claude Opus 5",
           "org": "Anthropic",
           "score": 0.9388,
@@ -1665,7 +1840,7 @@
           "delta": null
         },
         {
-          "rank": 18,
+          "rank": 23,
           "model": "GPT-5.6 SOL",
           "org": "OpenAI",
           "score": 0.935,
@@ -1674,7 +1849,7 @@
           "delta": null
         },
         {
-          "rank": 19,
+          "rank": 24,
           "model": "Grok-4.5",
           "org": "xAI",
           "score": 0.9343,
@@ -1683,56 +1858,11 @@
           "delta": null
         },
         {
-          "rank": 20,
+          "rank": 25,
           "model": "GPT-5.6 Terra",
           "org": "OpenAI",
           "score": 0.9331,
           "scoreDisplay": "93.3",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 21,
-          "model": "GPT-5.4.2026.03.05",
-          "org": "OpenAI",
-          "score": 0.933,
-          "scoreDisplay": "93.3",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 22,
-          "model": "DeepSeek V4.1 Flash 1017",
-          "org": "DeepSeek",
-          "score": 0.9318,
-          "scoreDisplay": "93.2",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 23,
-          "model": "Grok-4.6",
-          "org": "xAI",
-          "score": 0.9318,
-          "scoreDisplay": "93.2",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 24,
-          "model": "Doubao Seed Evolving",
-          "org": "ByteDance",
-          "score": 0.9312,
-          "scoreDisplay": "93.1",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 25,
-          "model": "Kimi K3",
-          "org": "Moonshot",
-          "score": 0.9312,
-          "scoreDisplay": "93.1",
           "votes": null,
           "delta": null
         }
@@ -1744,7 +1874,7 @@
       "description": "Epoch AI 复评的 SWE-bench Verified 通过率（0–100，%），衡量真实代码修复能力。仅收录 Epoch 已完成复评的模型，未收录不代表能力低；更多模型可查看 ECI 指数榜。",
       "sourceName": "Epoch AI",
       "sourceUrl": "https://epoch.ai/data/ai-benchmarking-dashboard",
-      "updatedAt": "2026-11-09T09:56:12.598Z",
+      "updatedAt": "2026-11-16T09:54:35.035Z",
       "metric": {
         "name": "pass rate",
         "unit": "score",
@@ -1984,7 +2114,7 @@
       "description": "LiveBench 2.0 七大赛道加权均分（权重取自官方 categories.json，站点本地复算 Overall），0-100 越高越好",
       "sourceName": "LiveBench",
       "sourceUrl": "https://livebench.ai/",
-      "updatedAt": "2026-10-25T00:00:00.000Z",
+      "updatedAt": "2026-11-06T00:00:00.000Z",
       "metric": {
         "name": "LiveBench 2.0 Overall",
         "unit": "score",
@@ -1993,10 +2123,10 @@
       "entries": [
         {
           "rank": 1,
-          "model": "Claude Fable 5.1",
+          "model": "Claude Fable 5.2",
           "org": "Anthropic",
-          "score": 85.69,
-          "scoreDisplay": "85.7",
+          "score": 84.88,
+          "scoreDisplay": "84.9",
           "votes": null,
           "delta": null
         },
@@ -2004,44 +2134,44 @@
           "rank": 2,
           "model": "GPT-6 Astra",
           "org": "OpenAI",
-          "score": 85.64,
-          "scoreDisplay": "85.6",
+          "score": 84.45,
+          "scoreDisplay": "84.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 3,
-          "model": "Claude Opus 5.5",
+          "model": "Claude Fable 5.1",
           "org": "Anthropic",
-          "score": 85.14,
-          "scoreDisplay": "85.1",
+          "score": 83.96,
+          "scoreDisplay": "84.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 4,
-          "model": "GPT-6.1 SOL",
-          "org": "OpenAI",
-          "score": 84.07,
-          "scoreDisplay": "84.1",
+          "model": "Gemini-4 Carbon",
+          "org": "Google",
+          "score": 83.53,
+          "scoreDisplay": "83.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 5,
-          "model": "Claude Sonnet 5.5",
+          "model": "Claude Opus 5.5",
           "org": "Anthropic",
-          "score": 80.04,
-          "scoreDisplay": "80.0",
+          "score": 83.44,
+          "scoreDisplay": "83.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 6,
-          "model": "Gemini-4 Argon",
-          "org": "Google",
-          "score": 79.3,
-          "scoreDisplay": "79.3",
+          "model": "GPT-6.1 SOL",
+          "org": "OpenAI",
+          "score": 81.37,
+          "scoreDisplay": "81.4",
           "votes": null,
           "delta": null
         },
@@ -2049,134 +2179,134 @@
           "rank": 7,
           "model": "GPT-6.1 Terra",
           "org": "OpenAI",
-          "score": 77.79,
-          "scoreDisplay": "77.8",
+          "score": 78.77,
+          "scoreDisplay": "78.8",
           "votes": null,
           "delta": null
         },
         {
           "rank": 8,
-          "model": "Muse Wonder 1.0",
-          "org": "Other",
-          "score": 74.15,
-          "scoreDisplay": "74.2",
+          "model": "Gemini-4 Argon",
+          "org": "Google",
+          "score": 77.69,
+          "scoreDisplay": "77.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 9,
-          "model": "DeepSeek V4.1 Flash 1017",
-          "org": "DeepSeek",
-          "score": 72.87,
-          "scoreDisplay": "72.9",
+          "model": "Gemini-4 Hydrogen",
+          "org": "Google",
+          "score": 77,
+          "scoreDisplay": "77.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 10,
-          "model": "Kimi K3.1 Pro",
-          "org": "Moonshot AI",
-          "score": 71.29,
-          "scoreDisplay": "71.3",
+          "model": "Claude Sonnet 5.5",
+          "org": "Anthropic",
+          "score": 76.99,
+          "scoreDisplay": "77.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 11,
-          "model": "Grok-4.7",
-          "org": "xAI",
-          "score": 70.14,
-          "scoreDisplay": "70.1",
+          "model": "Muse Wonder 1.0",
+          "org": "Other",
+          "score": 70.7,
+          "scoreDisplay": "70.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 12,
-          "model": "Claude Haiku 5.5",
-          "org": "Anthropic",
-          "score": 69.85,
-          "scoreDisplay": "69.8",
+          "model": "DeepSeek V4.1 Flash 1017",
+          "org": "DeepSeek",
+          "score": 70.26,
+          "scoreDisplay": "70.3",
           "votes": null,
           "delta": null
         },
         {
           "rank": 13,
-          "model": "MiMo V2.6 Pro",
-          "org": "Xiaomi",
-          "score": 68.48,
-          "scoreDisplay": "68.5",
+          "model": "Claude Haiku 5.5",
+          "org": "Anthropic",
+          "score": 68.94,
+          "scoreDisplay": "68.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 14,
-          "model": "GPT-5.6 Terra",
-          "org": "OpenAI",
-          "score": 67.79,
-          "scoreDisplay": "67.8",
+          "model": "Kimi K3.1 Pro",
+          "org": "Moonshot AI",
+          "score": 68.65,
+          "scoreDisplay": "68.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 15,
-          "model": "Grok-4.6",
-          "org": "xAI",
-          "score": 67.75,
-          "scoreDisplay": "67.8",
+          "model": "Muse Spark 1.3",
+          "org": "Other",
+          "score": 68.59,
+          "scoreDisplay": "68.6",
           "votes": null,
           "delta": null
         },
         {
           "rank": 16,
-          "model": "MiniMax M3.1 Flash",
-          "org": "MiniMax",
-          "score": 66.89,
-          "scoreDisplay": "66.9",
+          "model": "Grok-4.7",
+          "org": "xAI",
+          "score": 67.91,
+          "scoreDisplay": "67.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 17,
-          "model": "GPT-6 Luna",
+          "model": "GPT-5.6 Terra",
           "org": "OpenAI",
-          "score": 64.59,
-          "scoreDisplay": "64.6",
+          "score": 67.15,
+          "scoreDisplay": "67.2",
           "votes": null,
           "delta": null
         },
         {
           "rank": 18,
-          "model": "Kimi K3",
-          "org": "Moonshot AI",
-          "score": 64.57,
-          "scoreDisplay": "64.6",
+          "model": "MiMo V2.6 Pro",
+          "org": "Xiaomi",
+          "score": 66.11,
+          "scoreDisplay": "66.1",
           "votes": null,
           "delta": null
         },
         {
           "rank": 19,
-          "model": "Mistral Large 4.0",
-          "org": "Mistral AI",
-          "score": 63.49,
-          "scoreDisplay": "63.5",
+          "model": "Kimi K3",
+          "org": "Moonshot AI",
+          "score": 64.98,
+          "scoreDisplay": "65.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 20,
-          "model": "Muse Spark 1.3",
-          "org": "Other",
-          "score": 63.03,
-          "scoreDisplay": "63.0",
+          "model": "MiniMax M3.1 Flash",
+          "org": "MiniMax",
+          "score": 63.67,
+          "scoreDisplay": "63.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 21,
-          "model": "GLM-5.3 Flash",
-          "org": "Z.ai",
-          "score": 62.07,
-          "scoreDisplay": "62.1",
+          "model": "Grok-4.6",
+          "org": "xAI",
+          "score": 63.51,
+          "scoreDisplay": "63.5",
           "votes": null,
           "delta": null
         },
@@ -2184,98 +2314,125 @@
           "rank": 22,
           "model": "Qwen3.8 Max",
           "org": "Other",
-          "score": 61.56,
-          "scoreDisplay": "61.6",
+          "score": 60.92,
+          "scoreDisplay": "60.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 23,
-          "model": "Gemini-3.8 Flash",
-          "org": "Google",
-          "score": 59.21,
-          "scoreDisplay": "59.2",
+          "model": "GLM-5.3 Flash",
+          "org": "Z.ai",
+          "score": 60.67,
+          "scoreDisplay": "60.7",
           "votes": null,
           "delta": null
         },
         {
           "rank": 24,
-          "model": "Step-5 Preview",
-          "org": "StepFun",
-          "score": 58.61,
-          "scoreDisplay": "58.6",
+          "model": "GPT-6 Luna",
+          "org": "OpenAI",
+          "score": 60.42,
+          "scoreDisplay": "60.4",
           "votes": null,
           "delta": null
         },
         {
           "rank": 25,
-          "model": "Qwen3.8 27B",
-          "org": "Other",
-          "score": 58.38,
-          "scoreDisplay": "58.4",
+          "model": "Mistral Large 4.0",
+          "org": "Mistral AI",
+          "score": 60.27,
+          "scoreDisplay": "60.3",
           "votes": null,
           "delta": null
         },
         {
           "rank": 26,
-          "model": "Muse Spark Open",
-          "org": "Other",
-          "score": 51.63,
-          "scoreDisplay": "51.6",
+          "model": "Gemini-3.8 Flash",
+          "org": "Google",
+          "score": 57.26,
+          "scoreDisplay": "57.3",
           "votes": null,
           "delta": null
         },
         {
           "rank": 27,
-          "model": "Smaug Nemotron-3.5 Nvfp4",
-          "org": "NVIDIA",
-          "score": 50.31,
-          "scoreDisplay": "50.3",
+          "model": "Step-5 Preview",
+          "org": "StepFun",
+          "score": 54.89,
+          "scoreDisplay": "54.9",
           "votes": null,
           "delta": null
         },
         {
           "rank": 28,
-          "model": "Nemotron Super VL 3.5",
-          "org": "NVIDIA",
-          "score": 50.23,
-          "scoreDisplay": "50.2",
+          "model": "Qwen3.8 27B",
+          "org": "Other",
+          "score": 54.05,
+          "scoreDisplay": "54.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 29,
-          "model": "Inkling",
-          "org": "Thinking Machines Lab",
-          "score": 47.05,
-          "scoreDisplay": "47.0",
+          "model": "Muse Spark Open",
+          "org": "Other",
+          "score": 48.53,
+          "scoreDisplay": "48.5",
           "votes": null,
           "delta": null
         },
         {
           "rank": 30,
-          "model": "Nemotron Super VL 3.5 Nvfp4",
+          "model": "Smaug Nemotron-3.5 Nvfp4",
           "org": "NVIDIA",
-          "score": 46.5,
-          "scoreDisplay": "46.5",
+          "score": 47.04,
+          "scoreDisplay": "47.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 31,
-          "model": "Mistral Large 4",
-          "org": "Mistral AI",
-          "score": 43.9,
-          "scoreDisplay": "43.9",
+          "model": "Nemotron Super VL 3.5",
+          "org": "NVIDIA",
+          "score": 47.01,
+          "scoreDisplay": "47.0",
           "votes": null,
           "delta": null
         },
         {
           "rank": 32,
+          "model": "Inkling",
+          "org": "Thinking Machines Lab",
+          "score": 44.32,
+          "scoreDisplay": "44.3",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 33,
+          "model": "Nemotron Super VL 3.5 Nvfp4",
+          "org": "NVIDIA",
+          "score": 42.27,
+          "scoreDisplay": "42.3",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 34,
+          "model": "Mistral Large 4",
+          "org": "Mistral AI",
+          "score": 40.87,
+          "scoreDisplay": "40.9",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 35,
           "model": "Gemma 4 31B",
           "org": "Google",
-          "score": 38.72,
-          "scoreDisplay": "38.7",
+          "score": 32.43,
+          "scoreDisplay": "32.4",
           "votes": null,
           "delta": null
         }
@@ -2287,7 +2444,7 @@
       "description": "人类盲测偏好的 Arena Score 排名（HF 数据集 text/latest 快照，11 个字段）",
       "sourceName": "LMArena",
       "sourceUrl": "https://lmarena.ai/leaderboard",
-      "updatedAt": "2026-11-09T04:07:44.000Z",
+      "updatedAt": "2026-11-16T04:02:23.000Z",
       "metric": {
         "name": "Arena Score",
         "unit": "elo",
@@ -2298,900 +2455,900 @@
           "rank": 1,
           "model": "Gemini 4 Carbon (High)",
           "org": "google",
-          "score": 1538.92,
-          "scoreDisplay": "1539",
-          "votes": 4281,
+          "score": 1538.38,
+          "scoreDisplay": "1538",
+          "votes": 4273,
           "delta": null
         },
         {
           "rank": 2,
           "model": "Gemini 4 Argon (High)",
           "org": "google",
-          "score": 1529.81,
-          "scoreDisplay": "1530",
-          "votes": 18850,
+          "score": 1529.46,
+          "scoreDisplay": "1529",
+          "votes": 20779,
           "delta": null
         },
         {
           "rank": 3,
-          "model": "Claude Fable 5.1 (Max)",
+          "model": "Claude Opus 5.5 (High)",
           "org": "anthropic",
-          "score": 1512.73,
-          "scoreDisplay": "1513",
-          "votes": 19755,
+          "score": 1513.66,
+          "scoreDisplay": "1514",
+          "votes": 15793,
           "delta": null
         },
         {
           "rank": 4,
-          "model": "Claude Opus 5.5 (High)",
+          "model": "Claude Fable 5.1 (Max)",
           "org": "anthropic",
-          "score": 1512.71,
-          "scoreDisplay": "1513",
-          "votes": 14815,
+          "score": 1512.04,
+          "scoreDisplay": "1512",
+          "votes": 20511,
           "delta": null
         },
         {
           "rank": 5,
           "model": "Claude Opus 5 (Max)",
           "org": "anthropic",
-          "score": 1506.24,
-          "scoreDisplay": "1506",
-          "votes": 35712,
+          "score": 1506.5,
+          "scoreDisplay": "1507",
+          "votes": 35670,
           "delta": null
         },
         {
           "rank": 6,
           "model": "Muse Wonder (Max)",
           "org": "meta",
-          "score": 1504.26,
-          "scoreDisplay": "1504",
-          "votes": 11483,
+          "score": 1502.97,
+          "scoreDisplay": "1503",
+          "votes": 12696,
           "delta": null
         },
         {
           "rank": 7,
           "model": "Claude Opus 5 (High)",
           "org": "anthropic",
-          "score": 1502.42,
+          "score": 1502.21,
           "scoreDisplay": "1502",
-          "votes": 73730,
+          "votes": 73632,
           "delta": null
         },
         {
           "rank": 8,
-          "model": "Claude Opus 4.6 (High)",
-          "org": "anthropic",
-          "score": 1501.59,
+          "model": "Gemini 4 Hydrogen (High)",
+          "org": "google",
+          "score": 1502.12,
           "scoreDisplay": "1502",
-          "votes": 84428,
+          "votes": 4741,
           "delta": null
         },
         {
           "rank": 9,
-          "model": "Gemini 3.8 Flash (High)",
-          "org": "google",
-          "score": 1500.41,
-          "scoreDisplay": "1500",
-          "votes": 59624,
+          "model": "Claude Opus 4.6 (High)",
+          "org": "anthropic",
+          "score": 1501.48,
+          "scoreDisplay": "1501",
+          "votes": 84375,
           "delta": null
         },
         {
           "rank": 10,
-          "model": "Claude Opus 4.6",
-          "org": "anthropic",
-          "score": 1496.77,
-          "scoreDisplay": "1497",
-          "votes": 89224,
+          "model": "Gemini 3.8 Flash (High)",
+          "org": "google",
+          "score": 1499.58,
+          "scoreDisplay": "1500",
+          "votes": 62675,
           "delta": null
         },
         {
           "rank": 11,
-          "model": "MiMo-V2.6-Pro",
-          "org": "xiaomi",
-          "score": 1491.69,
-          "scoreDisplay": "1492",
-          "votes": 4069,
+          "model": "Claude Opus 4.6",
+          "org": "anthropic",
+          "score": 1496.74,
+          "scoreDisplay": "1497",
+          "votes": 89177,
           "delta": null
         },
         {
           "rank": 12,
           "model": "Claude Fable 5 (High)",
           "org": "anthropic",
-          "score": 1491.46,
-          "scoreDisplay": "1491",
-          "votes": 45562,
+          "score": 1491.66,
+          "scoreDisplay": "1492",
+          "votes": 45469,
           "delta": null
         },
         {
           "rank": 13,
           "model": "Muse Spark 1.3 (Max)",
           "org": "meta",
-          "score": 1491.16,
-          "scoreDisplay": "1491",
-          "votes": 25563,
+          "score": 1491.64,
+          "scoreDisplay": "1492",
+          "votes": 26806,
           "delta": null
         },
         {
           "rank": 14,
-          "model": "Claude Opus 4.7 (High)",
-          "org": "anthropic",
-          "score": 1489.63,
-          "scoreDisplay": "1490",
-          "votes": 64295,
+          "model": "MiMo-V2.6-Pro",
+          "org": "xiaomi",
+          "score": 1491.6,
+          "scoreDisplay": "1492",
+          "votes": 4064,
           "delta": null
         },
         {
           "rank": 15,
-          "model": "Gemini 3.7 Flash (High)",
-          "org": "google",
-          "score": 1488.77,
-          "scoreDisplay": "1489",
-          "votes": 33306,
+          "model": "Claude Opus 4.7 (High)",
+          "org": "anthropic",
+          "score": 1489.77,
+          "scoreDisplay": "1490",
+          "votes": 64260,
           "delta": null
         },
         {
           "rank": 16,
-          "model": "Qwen3.8-Max",
-          "org": "alibaba",
-          "score": 1485.47,
-          "scoreDisplay": "1485",
-          "votes": 35805,
+          "model": "Gemini 3.7 Flash (High)",
+          "org": "google",
+          "score": 1488.71,
+          "scoreDisplay": "1489",
+          "votes": 33251,
           "delta": null
         },
         {
           "rank": 17,
-          "model": "Muse Spark 1.2 (xHigh)",
-          "org": "meta",
-          "score": 1484.4,
-          "scoreDisplay": "1484",
-          "votes": 14561,
+          "model": "Qwen3.8-Max",
+          "org": "alibaba",
+          "score": 1485.28,
+          "scoreDisplay": "1485",
+          "votes": 36936,
           "delta": null
         },
         {
           "rank": 18,
-          "model": "Claude Opus 4.7",
-          "org": "anthropic",
-          "score": 1483.1,
+          "model": "Muse Spark 1.2 (xHigh)",
+          "org": "meta",
+          "score": 1483.44,
           "scoreDisplay": "1483",
-          "votes": 65387,
+          "votes": 15563,
           "delta": null
         },
         {
           "rank": 19,
-          "model": "Gemini 3.5 Flash (High)",
-          "org": "google",
-          "score": 1482.79,
+          "model": "Claude Opus 4.7",
+          "org": "anthropic",
+          "score": 1483.23,
           "scoreDisplay": "1483",
-          "votes": 47646,
+          "votes": 65309,
           "delta": null
         },
         {
           "rank": 20,
-          "model": "Gemini 3.1 Pro Preview",
+          "model": "Gemini 3.5 Flash (High)",
           "org": "google",
-          "score": 1480.09,
-          "scoreDisplay": "1480",
-          "votes": 132347,
+          "score": 1482.92,
+          "scoreDisplay": "1483",
+          "votes": 47588,
           "delta": null
         },
         {
           "rank": 21,
-          "model": "Gemini 3 Pro",
+          "model": "Gemini 3.1 Pro Preview",
           "org": "google",
-          "score": 1479.52,
+          "score": 1480.06,
           "scoreDisplay": "1480",
-          "votes": 41839,
+          "votes": 132181,
           "delta": null
         },
         {
           "rank": 22,
-          "model": "Gemini 3.6 Flash (High)",
+          "model": "Gemini 3 Pro",
           "org": "google",
-          "score": 1479.42,
-          "scoreDisplay": "1479",
-          "votes": 35428,
+          "score": 1479.51,
+          "scoreDisplay": "1480",
+          "votes": 41803,
           "delta": null
         },
         {
           "rank": 23,
-          "model": "Muse Spark 1.1",
-          "org": "meta",
-          "score": 1478.61,
+          "model": "Gemini 3.6 Flash (High)",
+          "org": "google",
+          "score": 1479.41,
           "scoreDisplay": "1479",
-          "votes": 45555,
+          "votes": 35362,
           "delta": null
         },
         {
           "rank": 24,
-          "model": "Gemini 3.5 Flash (Medium)",
-          "org": "google",
-          "score": 1477.84,
-          "scoreDisplay": "1478",
-          "votes": 46403,
+          "model": "Muse Spark 1.1",
+          "org": "meta",
+          "score": 1478.86,
+          "scoreDisplay": "1479",
+          "votes": 45519,
           "delta": null
         },
         {
           "rank": 25,
-          "model": "GLM-5.3 (Max)",
-          "org": "zai",
-          "score": 1475.97,
-          "scoreDisplay": "1476",
-          "votes": 30524,
+          "model": "Gemini 3.5 Flash (Medium)",
+          "org": "google",
+          "score": 1477.82,
+          "scoreDisplay": "1478",
+          "votes": 46329,
           "delta": null
         },
         {
           "rank": 26,
-          "model": "Qwen3.7-Max-Preview",
-          "org": "alibaba",
-          "score": 1474.75,
+          "model": "GLM-5.3 (Max)",
+          "org": "zai",
+          "score": 1474.93,
           "scoreDisplay": "1475",
-          "votes": 3901,
+          "votes": 31604,
           "delta": null
         },
         {
           "rank": 27,
-          "model": "Kimi K3 (Max)",
-          "org": "moonshot",
-          "score": 1474.52,
+          "model": "Qwen3.7-Max-Preview",
+          "org": "alibaba",
+          "score": 1474.72,
           "scoreDisplay": "1475",
-          "votes": 40409,
+          "votes": 3896,
           "delta": null
         },
         {
           "rank": 28,
-          "model": "Muse Spark",
-          "org": "meta",
-          "score": 1474.05,
-          "scoreDisplay": "1474",
-          "votes": 14008,
+          "model": "Kimi K3 (Max)",
+          "org": "moonshot",
+          "score": 1474.59,
+          "scoreDisplay": "1475",
+          "votes": 41402,
           "delta": null
         },
         {
           "rank": 29,
-          "model": "GLM-5.3-Flash",
-          "org": "zai",
-          "score": 1471.17,
-          "scoreDisplay": "1471",
-          "votes": 49384,
+          "model": "Muse Spark",
+          "org": "meta",
+          "score": 1474.22,
+          "scoreDisplay": "1474",
+          "votes": 13985,
           "delta": null
         },
         {
           "rank": 30,
-          "model": "GPT-5.5 (High)",
-          "org": "openai",
-          "score": 1471.11,
-          "scoreDisplay": "1471",
-          "votes": 68361,
+          "model": "GLM-5.3-Flash",
+          "org": "zai",
+          "score": 1471.72,
+          "scoreDisplay": "1472",
+          "votes": 51019,
           "delta": null
         },
         {
           "rank": 31,
-          "model": "Qwen3.5-Max-Preview",
-          "org": "alibaba",
-          "score": 1470.89,
+          "model": "GPT-5.5 (High)",
+          "org": "openai",
+          "score": 1471.15,
           "scoreDisplay": "1471",
-          "votes": 22422,
+          "votes": 68294,
           "delta": null
         },
         {
           "rank": 32,
-          "model": "GLM-5.2 (Max)",
-          "org": "zai",
-          "score": 1469.44,
-          "scoreDisplay": "1469",
-          "votes": 54195,
+          "model": "Qwen3.5-Max-Preview",
+          "org": "alibaba",
+          "score": 1470.86,
+          "scoreDisplay": "1471",
+          "votes": 22401,
           "delta": null
         },
         {
           "rank": 33,
-          "model": "GPT-5.4 (High)",
-          "org": "openai",
-          "score": 1469.09,
+          "model": "GLM-5.2 (Max)",
+          "org": "zai",
+          "score": 1469.38,
           "scoreDisplay": "1469",
-          "votes": 64118,
+          "votes": 54143,
           "delta": null
         },
         {
           "rank": 34,
           "model": "Claude Sonnet 5.5 (xHigh)",
           "org": "anthropic",
-          "score": 1468.1,
-          "scoreDisplay": "1468",
-          "votes": 13389,
+          "score": 1469.13,
+          "scoreDisplay": "1469",
+          "votes": 14355,
           "delta": null
         },
         {
           "rank": 35,
-          "model": "ERNIE 5.1",
-          "org": "baidu",
-          "score": 1467.85,
-          "scoreDisplay": "1468",
-          "votes": 39038,
+          "model": "GPT-5.4 (High)",
+          "org": "openai",
+          "score": 1469.01,
+          "scoreDisplay": "1469",
+          "votes": 64067,
           "delta": null
         },
         {
           "rank": 36,
-          "model": "GPT-5.5",
-          "org": "openai",
-          "score": 1466.26,
-          "scoreDisplay": "1466",
-          "votes": 69960,
+          "model": "ERNIE 5.1",
+          "org": "baidu",
+          "score": 1467.79,
+          "scoreDisplay": "1468",
+          "votes": 39018,
           "delta": null
         },
         {
           "rank": 37,
-          "model": "Gemini 3 Flash",
-          "org": "google",
-          "score": 1465.9,
+          "model": "GPT-5.5",
+          "org": "openai",
+          "score": 1466.2,
           "scoreDisplay": "1466",
-          "votes": 31144,
+          "votes": 69859,
           "delta": null
         },
         {
           "rank": 38,
-          "model": "MiMo-V2.5-Pro",
-          "org": "xiaomi",
-          "score": 1464.06,
-          "scoreDisplay": "1464",
-          "votes": 76826,
+          "model": "Gemini 3 Flash",
+          "org": "google",
+          "score": 1465.98,
+          "scoreDisplay": "1466",
+          "votes": 31126,
           "delta": null
         },
         {
           "rank": 39,
-          "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
-          "org": "deepseek",
-          "score": 1463.38,
-          "scoreDisplay": "1463",
-          "votes": 13579,
+          "model": "MiMo-V2.5-Pro",
+          "org": "xiaomi",
+          "score": 1463.95,
+          "scoreDisplay": "1464",
+          "votes": 76747,
           "delta": null
         },
         {
           "rank": 40,
-          "model": "GLM-5.1",
-          "org": "zai",
-          "score": 1462.56,
-          "scoreDisplay": "1463",
-          "votes": 67089,
+          "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
+          "org": "deepseek",
+          "score": 1463.56,
+          "scoreDisplay": "1464",
+          "votes": 13547,
           "delta": null
         },
         {
           "rank": 41,
-          "model": "Claude Opus 4.8 (High)",
-          "org": "anthropic",
-          "score": 1461.58,
+          "model": "GLM-5.1",
+          "org": "zai",
+          "score": 1462.45,
           "scoreDisplay": "1462",
-          "votes": 63145,
+          "votes": 67009,
           "delta": null
         },
         {
           "rank": 42,
-          "model": "Gemini 2.5 Pro",
-          "org": "google",
-          "score": 1457.86,
-          "scoreDisplay": "1458",
-          "votes": 124804,
+          "model": "Claude Opus 4.8 (High)",
+          "org": "anthropic",
+          "score": 1461.52,
+          "scoreDisplay": "1462",
+          "votes": 63082,
           "delta": null
         },
         {
           "rank": 43,
-          "model": "Claude Sonnet 4.6",
-          "org": "anthropic",
-          "score": 1457.8,
-          "scoreDisplay": "1458",
-          "votes": 70016,
+          "model": "Kimi K3.1 Pro (Max)",
+          "org": "moonshot",
+          "score": 1459.14,
+          "scoreDisplay": "1459",
+          "votes": 3995,
           "delta": null
         },
         {
           "rank": 44,
-          "model": "GPT-5.6 Sol (xHigh)",
-          "org": "openai",
-          "score": 1457.15,
-          "scoreDisplay": "1457",
-          "votes": 44005,
+          "model": "Claude Sonnet 4.6",
+          "org": "anthropic",
+          "score": 1457.93,
+          "scoreDisplay": "1458",
+          "votes": 69975,
           "delta": null
         },
         {
           "rank": 45,
-          "model": "Kimi K2.6",
-          "org": "moonshot",
-          "score": 1455.42,
-          "scoreDisplay": "1455",
-          "votes": 39576,
+          "model": "Gemini 2.5 Pro",
+          "org": "google",
+          "score": 1457.83,
+          "scoreDisplay": "1458",
+          "votes": 124742,
           "delta": null
         },
         {
           "rank": 46,
-          "model": "Qwen3.7-Plus",
-          "org": "alibaba",
-          "score": 1454.32,
-          "scoreDisplay": "1454",
-          "votes": 41343,
+          "model": "GPT-5.6 Sol (xHigh)",
+          "org": "openai",
+          "score": 1457.33,
+          "scoreDisplay": "1457",
+          "votes": 43925,
           "delta": null
         },
         {
           "rank": 47,
-          "model": "Claude Opus 4.8",
-          "org": "anthropic",
-          "score": 1453.79,
-          "scoreDisplay": "1454",
-          "votes": 64213,
+          "model": "Kimi K2.6",
+          "org": "moonshot",
+          "score": 1455.41,
+          "scoreDisplay": "1455",
+          "votes": 39551,
           "delta": null
         },
         {
           "rank": 48,
-          "model": "GPT-5.4",
-          "org": "openai",
-          "score": 1452.47,
-          "scoreDisplay": "1452",
-          "votes": 67125,
+          "model": "Qwen3.7-Plus",
+          "org": "alibaba",
+          "score": 1454.26,
+          "scoreDisplay": "1454",
+          "votes": 41289,
           "delta": null
         },
         {
           "rank": 49,
-          "model": "DeepSeek-V4-Pro",
-          "org": "deepseek",
-          "score": 1451.37,
-          "scoreDisplay": "1451",
-          "votes": 56904,
+          "model": "Claude Opus 4.8",
+          "org": "anthropic",
+          "score": 1453.9,
+          "scoreDisplay": "1454",
+          "votes": 64116,
           "delta": null
         },
         {
           "rank": 50,
-          "model": "Grok 4.20 Beta (Reasoning, 0309)",
-          "org": "xai",
-          "score": 1451.19,
-          "scoreDisplay": "1451",
-          "votes": 65716,
+          "model": "GPT-5.4",
+          "org": "openai",
+          "score": 1452.51,
+          "scoreDisplay": "1453",
+          "votes": 67055,
           "delta": null
         },
         {
           "rank": 51,
-          "model": "Claude Opus 4.5 (20251101)",
-          "org": "anthropic",
-          "score": 1450.97,
+          "model": "DeepSeek-V4-Pro",
+          "org": "deepseek",
+          "score": 1451.26,
           "scoreDisplay": "1451",
-          "votes": 72317,
+          "votes": 56857,
           "delta": null
         },
         {
           "rank": 52,
-          "model": "Grok 4.20 Multi-Agent Beta (0309)",
+          "model": "Grok 4.20 Beta (Reasoning, 0309)",
           "org": "xai",
-          "score": 1450.93,
+          "score": 1451.14,
           "scoreDisplay": "1451",
-          "votes": 64243,
+          "votes": 65690,
           "delta": null
         },
         {
           "rank": 53,
-          "model": "MiMo-V2.6-Flash",
-          "org": "xiaomi",
-          "score": 1450.62,
+          "model": "Grok 4.20 Multi-Agent Beta (0309)",
+          "org": "xai",
+          "score": 1451.07,
           "scoreDisplay": "1451",
-          "votes": 21592,
+          "votes": 64196,
           "delta": null
         },
         {
           "rank": 54,
-          "model": "GPT-5.6 Terra (xHigh)",
-          "org": "openai",
-          "score": 1448.78,
-          "scoreDisplay": "1449",
-          "votes": 48861,
+          "model": "Claude Opus 4.5 (20251101)",
+          "org": "anthropic",
+          "score": 1451.02,
+          "scoreDisplay": "1451",
+          "votes": 72235,
           "delta": null
         },
         {
           "rank": 55,
-          "model": "amazon-nova-experimental-chat (26-02-10)",
-          "org": "amazon",
-          "score": 1448.71,
-          "scoreDisplay": "1449",
-          "votes": 3509,
+          "model": "MiMo-V2.6-Flash",
+          "org": "xiaomi",
+          "score": 1450.84,
+          "scoreDisplay": "1451",
+          "votes": 23252,
           "delta": null
         },
         {
           "rank": 56,
-          "model": "Dola Seed 2.0 Pro",
-          "org": "bytedance",
-          "score": 1448.6,
+          "model": "GPT-5.6 Terra (xHigh)",
+          "org": "openai",
+          "score": 1448.83,
           "scoreDisplay": "1449",
-          "votes": 78230,
+          "votes": 48778,
           "delta": null
         },
         {
           "rank": 57,
-          "model": "Claude Opus 4.5 (High, 32K, 20251101)",
-          "org": "anthropic",
-          "score": 1448.34,
-          "scoreDisplay": "1448",
-          "votes": 37259,
+          "model": "amazon-nova-experimental-chat (26-02-10)",
+          "org": "amazon",
+          "score": 1448.63,
+          "scoreDisplay": "1449",
+          "votes": 3504,
           "delta": null
         },
         {
           "rank": 58,
-          "model": "Grok 4.5",
-          "org": "xai",
-          "score": 1448.04,
+          "model": "Dola Seed 2.0 Pro",
+          "org": "bytedance",
+          "score": 1448.48,
           "scoreDisplay": "1448",
-          "votes": 39169,
+          "votes": 78156,
           "delta": null
         },
         {
           "rank": 59,
-          "model": "GLM-5",
-          "org": "zai",
-          "score": 1446.19,
-          "scoreDisplay": "1446",
-          "votes": 29018,
+          "model": "Claude Opus 4.5 (High, 32K, 20251101)",
+          "org": "anthropic",
+          "score": 1448.32,
+          "scoreDisplay": "1448",
+          "votes": 37245,
           "delta": null
         },
         {
           "rank": 60,
-          "model": "Qwen3.6-Max-Preview",
-          "org": "alibaba",
-          "score": 1446.12,
-          "scoreDisplay": "1446",
-          "votes": 5386,
+          "model": "Grok 4.5",
+          "org": "xai",
+          "score": 1448.02,
+          "scoreDisplay": "1448",
+          "votes": 39122,
           "delta": null
         },
         {
           "rank": 61,
-          "model": "GPT-6.1 Sol (Max)",
-          "org": "openai",
-          "score": 1445.51,
+          "model": "Qwen3.6-Max-Preview",
+          "org": "alibaba",
+          "score": 1446.31,
           "scoreDisplay": "1446",
-          "votes": 12564,
+          "votes": 5380,
           "delta": null
         },
         {
           "rank": 62,
-          "model": "DeepSeek-V4-Pro Preview (High)",
-          "org": "deepseek",
-          "score": 1445.12,
-          "scoreDisplay": "1445",
-          "votes": 54245,
+          "model": "GLM-5",
+          "org": "zai",
+          "score": 1446.04,
+          "scoreDisplay": "1446",
+          "votes": 28979,
           "delta": null
         },
         {
           "rank": 63,
           "model": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)",
           "org": "nvidia",
-          "score": 1445.1,
+          "score": 1445.04,
           "scoreDisplay": "1445",
-          "votes": 11409,
+          "votes": 11392,
           "delta": null
         },
         {
           "rank": 64,
-          "model": "DeepSeek-V4-Pro (High, 20260813)",
+          "model": "DeepSeek-V4-Pro Preview (High)",
           "org": "deepseek",
-          "score": 1444.87,
+          "score": 1445,
           "scoreDisplay": "1445",
-          "votes": 9593,
+          "votes": 54224,
           "delta": null
         },
         {
           "rank": 65,
-          "model": "Kimi K2.5 (Thinking)",
-          "org": "moonshot",
-          "score": 1444.75,
+          "model": "DeepSeek-V4-Pro (High, 20260813)",
+          "org": "deepseek",
+          "score": 1444.86,
           "scoreDisplay": "1445",
-          "votes": 73887,
+          "votes": 9573,
           "delta": null
         },
         {
           "rank": 66,
-          "model": "Grok 4.20 Beta 1",
-          "org": "xai",
-          "score": 1444.5,
-          "scoreDisplay": "1444",
-          "votes": 27679,
+          "model": "GPT-6.1 Sol (Max)",
+          "org": "openai",
+          "score": 1444.75,
+          "scoreDisplay": "1445",
+          "votes": 13498,
           "delta": null
         },
         {
           "rank": 67,
-          "model": "ERNIE 5.0 (0110)",
-          "org": "baidu",
-          "score": 1444.28,
-          "scoreDisplay": "1444",
-          "votes": 36180,
+          "model": "Kimi K2.5 (Thinking)",
+          "org": "moonshot",
+          "score": 1444.67,
+          "scoreDisplay": "1445",
+          "votes": 73820,
           "delta": null
         },
         {
           "rank": 68,
-          "model": "Inkling",
-          "org": "thinky",
-          "score": 1443.3,
-          "scoreDisplay": "1443",
-          "votes": 49613,
+          "model": "Grok 4.20 Beta 1",
+          "org": "xai",
+          "score": 1444.46,
+          "scoreDisplay": "1444",
+          "votes": 27653,
           "delta": null
         },
         {
           "rank": 69,
-          "model": "Step 5 Preview",
-          "org": "stepfun",
-          "score": 1443.1,
-          "scoreDisplay": "1443",
-          "votes": 12369,
+          "model": "ERNIE 5.0 (0110)",
+          "org": "baidu",
+          "score": 1444.27,
+          "scoreDisplay": "1444",
+          "votes": 36162,
           "delta": null
         },
         {
           "rank": 70,
-          "model": "GPT-5.1 (High)",
-          "org": "openai",
-          "score": 1442.58,
+          "model": "Step 5 Preview",
+          "org": "stepfun",
+          "score": 1443.34,
           "scoreDisplay": "1443",
-          "votes": 41414,
+          "votes": 12345,
           "delta": null
         },
         {
           "rank": 71,
-          "model": "Gemini 3 Flash (Minimal)",
-          "org": "google",
-          "score": 1442.58,
+          "model": "Inkling",
+          "org": "thinky",
+          "score": 1443.04,
           "scoreDisplay": "1443",
-          "votes": 90114,
+          "votes": 50718,
           "delta": null
         },
         {
           "rank": 72,
-          "model": "Gemma 4 31B",
-          "org": "google",
-          "score": 1442.55,
+          "model": "ERNIE-5.0-Preview (1203)",
+          "org": "baidu",
+          "score": 1442.56,
           "scoreDisplay": "1443",
-          "votes": 6125,
+          "votes": 9727,
           "delta": null
         },
         {
           "rank": 73,
-          "model": "ERNIE-5.0-Preview (1203)",
-          "org": "baidu",
-          "score": 1442.51,
+          "model": "Gemma 4 31B",
+          "org": "google",
+          "score": 1442.54,
           "scoreDisplay": "1443",
-          "votes": 9737,
+          "votes": 6130,
           "delta": null
         },
         {
           "rank": 74,
-          "model": "Claude Sonnet 5 (High)",
-          "org": "anthropic",
-          "score": 1441.99,
-          "scoreDisplay": "1442",
-          "votes": 53045,
+          "model": "GPT-5.1 (High)",
+          "org": "openai",
+          "score": 1442.51,
+          "scoreDisplay": "1443",
+          "votes": 41389,
           "delta": null
         },
         {
           "rank": 75,
-          "model": "GLM-4.6",
-          "org": "zai",
-          "score": 1440.23,
-          "scoreDisplay": "1440",
-          "votes": 35660,
+          "model": "Gemini 3 Flash (Minimal)",
+          "org": "google",
+          "score": 1442.35,
+          "scoreDisplay": "1442",
+          "votes": 90063,
           "delta": null
         },
         {
           "rank": 76,
-          "model": "GPT-6 Astra (Max)",
-          "org": "openai",
-          "score": 1440.03,
-          "scoreDisplay": "1440",
-          "votes": 17951,
+          "model": "Claude Sonnet 5 (High)",
+          "org": "anthropic",
+          "score": 1441.87,
+          "scoreDisplay": "1442",
+          "votes": 52963,
           "delta": null
         },
         {
           "rank": 77,
-          "model": "Qwen3-Max-Preview",
-          "org": "alibaba",
-          "score": 1439.08,
-          "scoreDisplay": "1439",
-          "votes": 27313,
+          "model": "GLM-4.6",
+          "org": "zai",
+          "score": 1440.3,
+          "scoreDisplay": "1440",
+          "votes": 35631,
           "delta": null
         },
         {
           "rank": 78,
-          "model": "Hy3",
-          "org": "tencent",
-          "score": 1438.65,
-          "scoreDisplay": "1439",
-          "votes": 14995,
+          "model": "GPT-6 Astra (Max)",
+          "org": "openai",
+          "score": 1439.61,
+          "scoreDisplay": "1440",
+          "votes": 18745,
           "delta": null
         },
         {
           "rank": 79,
-          "model": "GPT-5.2 Chat (20260210)",
-          "org": "openai",
-          "score": 1438.62,
+          "model": "Qwen3-Max-Preview",
+          "org": "alibaba",
+          "score": 1439.1,
           "scoreDisplay": "1439",
-          "votes": 35711,
+          "votes": 27294,
           "delta": null
         },
         {
           "rank": 80,
-          "model": "Claude Sonnet 4.5 (20250929)",
-          "org": "anthropic",
-          "score": 1438.55,
+          "model": "Hy3",
+          "org": "tencent",
+          "score": 1438.62,
           "scoreDisplay": "1439",
-          "votes": 82115,
+          "votes": 15178,
           "delta": null
         },
         {
           "rank": 81,
-          "model": "GLM-5V-Turbo",
-          "org": "zai",
-          "score": 1437.71,
-          "scoreDisplay": "1438",
-          "votes": 10294,
+          "model": "Claude Sonnet 4.5 (20250929)",
+          "org": "anthropic",
+          "score": 1438.61,
+          "scoreDisplay": "1439",
+          "votes": 82053,
           "delta": null
         },
         {
           "rank": 82,
-          "model": "Qwen3.5-397B-A17B",
-          "org": "alibaba",
-          "score": 1437.52,
+          "model": "GPT-5.2 Chat (20260210)",
+          "org": "openai",
+          "score": 1438.49,
           "scoreDisplay": "1438",
-          "votes": 97699,
+          "votes": 35669,
           "delta": null
         },
         {
           "rank": 83,
-          "model": "Grok 4.1 (Thinking)",
-          "org": "xai",
-          "score": 1436.71,
-          "scoreDisplay": "1437",
-          "votes": 66085,
+          "model": "Qwen3.5-397B-A17B",
+          "org": "alibaba",
+          "score": 1437.51,
+          "scoreDisplay": "1438",
+          "votes": 97583,
           "delta": null
         },
         {
           "rank": 84,
-          "model": "MiMo-V2-Pro",
-          "org": "xiaomi",
-          "score": 1436.69,
+          "model": "Grok 4.1 (Thinking)",
+          "org": "xai",
+          "score": 1436.7,
           "scoreDisplay": "1437",
-          "votes": 25239,
+          "votes": 66050,
           "delta": null
         },
         {
           "rank": 85,
           "model": "Qwen3.8-27B",
           "org": "alibaba",
-          "score": 1436.31,
-          "scoreDisplay": "1436",
-          "votes": 32122,
+          "score": 1436.56,
+          "scoreDisplay": "1437",
+          "votes": 33323,
           "delta": null
         },
         {
           "rank": 86,
-          "model": "Qwen3.6-Plus",
-          "org": "alibaba",
-          "score": 1436.22,
+          "model": "MiMo-V2-Pro",
+          "org": "xiaomi",
+          "score": 1436.42,
           "scoreDisplay": "1436",
-          "votes": 47604,
+          "votes": 25219,
           "delta": null
         },
         {
           "rank": 87,
           "model": "Grok 4.1",
           "org": "xai",
-          "score": 1436.17,
+          "score": 1436.27,
           "scoreDisplay": "1436",
-          "votes": 68204,
+          "votes": 68162,
           "delta": null
         },
         {
           "rank": 88,
-          "model": "GLM-4.7",
-          "org": "zai",
-          "score": 1435.49,
-          "scoreDisplay": "1435",
-          "votes": 12169,
+          "model": "Qwen3.6-Plus",
+          "org": "alibaba",
+          "score": 1436.1,
+          "scoreDisplay": "1436",
+          "votes": 47569,
           "delta": null
         },
         {
           "rank": 89,
-          "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
-          "org": "anthropic",
-          "score": 1434.52,
+          "model": "GLM-4.7",
+          "org": "zai",
+          "score": 1435.43,
           "scoreDisplay": "1435",
-          "votes": 83392,
+          "votes": 12153,
           "delta": null
         },
         {
           "rank": 90,
           "model": "Gemini 3.5 Flash-Lite",
           "org": "google",
-          "score": 1434.49,
-          "scoreDisplay": "1434",
-          "votes": 35133,
+          "score": 1434.67,
+          "scoreDisplay": "1435",
+          "votes": 35094,
           "delta": null
         },
         {
           "rank": 91,
-          "model": "Gemma 4 26B A4B",
-          "org": "google",
-          "score": 1434.08,
+          "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
+          "org": "anthropic",
+          "score": 1434.35,
           "scoreDisplay": "1434",
-          "votes": 6075,
+          "votes": 83310,
           "delta": null
         },
         {
           "rank": 92,
-          "model": "DeepSeek-V4-Flash",
-          "org": "deepseek",
-          "score": 1432.1,
-          "scoreDisplay": "1432",
-          "votes": 51369,
+          "model": "Gemma 4 26B A4B",
+          "org": "google",
+          "score": 1434.08,
+          "scoreDisplay": "1434",
+          "votes": 6069,
           "delta": null
         },
         {
           "rank": 93,
-          "model": "GPT-5.6 Luna (xHigh)",
-          "org": "openai",
-          "score": 1431.09,
-          "scoreDisplay": "1431",
-          "votes": 40661,
+          "model": "DeepSeek-V4-Flash",
+          "org": "deepseek",
+          "score": 1432.02,
+          "scoreDisplay": "1432",
+          "votes": 51336,
           "delta": null
         },
         {
           "rank": 94,
+          "model": "GPT-5.6 Luna (xHigh)",
+          "org": "openai",
+          "score": 1431.05,
+          "scoreDisplay": "1431",
+          "votes": 40598,
+          "delta": null
+        },
+        {
+          "rank": 95,
           "model": "GLM-4.5",
           "org": "zai",
-          "score": 1430.13,
+          "score": 1430.15,
           "scoreDisplay": "1430",
           "votes": 23746,
           "delta": null
         },
         {
-          "rank": 95,
+          "rank": 96,
           "model": "Grok 4.6 (High)",
           "org": "xai",
-          "score": 1429.75,
+          "score": 1430.02,
           "scoreDisplay": "1430",
-          "votes": 34637,
-          "delta": null
-        },
-        {
-          "rank": 96,
-          "model": "ERNIE-5.0-Preview (1022)",
-          "org": "baidu",
-          "score": 1429.69,
-          "scoreDisplay": "1430",
-          "votes": 4741,
+          "votes": 34582,
           "delta": null
         },
         {
           "rank": 97,
-          "model": "Mistral Large 3",
-          "org": "mistral",
-          "score": 1428.68,
-          "scoreDisplay": "1429",
-          "votes": 88677,
+          "model": "ERNIE-5.0-Preview (1022)",
+          "org": "baidu",
+          "score": 1429.65,
+          "scoreDisplay": "1430",
+          "votes": 4736,
           "delta": null
         },
         {
           "rank": 98,
-          "model": "ChatGPT-4o Latest (20250326)",
-          "org": "openai",
-          "score": 1428.52,
+          "model": "Mistral Large 3",
+          "org": "mistral",
+          "score": 1428.66,
           "scoreDisplay": "1429",
-          "votes": 81673,
+          "votes": 88567,
           "delta": null
         },
         {
           "rank": 99,
-          "model": "MiniMax-M3",
-          "org": "minimax",
-          "score": 1428.31,
-          "scoreDisplay": "1428",
-          "votes": 72449,
+          "model": "ChatGPT-4o Latest (20250326)",
+          "org": "openai",
+          "score": 1428.52,
+          "scoreDisplay": "1429",
+          "votes": 81638,
           "delta": null
         },
         {
           "rank": 100,
-          "model": "DeepSeek-R1 (0528)",
-          "org": "deepseek",
-          "score": 1427.7,
+          "model": "MiniMax-M3",
+          "org": "minimax",
+          "score": 1428.07,
           "scoreDisplay": "1428",
-          "votes": 18152,
+          "votes": 73579,
           "delta": null
         }
       ]
@@ -3202,7 +3359,7 @@
       "description": "按 OpenRouter 输出价格从低到高排序（由目录价格派生，非质量排名）",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
-      "updatedAt": "2026-11-09T09:56:12.598Z",
+      "updatedAt": "2026-11-16T09:54:35.035Z",
       "metric": {
         "name": "输出价格",
         "unit": "USD/1M tokens",
@@ -3256,6 +3413,24 @@
         },
         {
           "rank": 6,
+          "model": "GLM 5.3 Flash",
+          "org": "Z.ai",
+          "score": 0.0784,
+          "scoreDisplay": "$0.0784 / 1M",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 7,
+          "model": "GLM Flash Latest",
+          "org": "Z.ai",
+          "score": 0.0784,
+          "scoreDisplay": "$0.0784 / 1M",
+          "votes": null,
+          "delta": null
+        },
+        {
+          "rank": 8,
           "model": "Mistral Small 3",
           "org": "Mistral",
           "score": 0.08,
@@ -3264,36 +3439,18 @@
           "delta": null
         },
         {
-          "rank": 7,
-          "model": "GLM 5.3 Flash",
-          "org": "Z.ai",
-          "score": 0.083,
-          "scoreDisplay": "$0.083 / 1M",
-          "votes": null,
-          "delta": null
-        },
-        {
-          "rank": 8,
-          "model": "GLM Flash Latest",
-          "org": "Z.ai",
-          "score": 0.083,
-          "scoreDisplay": "$0.083 / 1M",
-          "votes": null,
-          "delta": null
-        },
-        {
           "rank": 9,
-          "model": "Gemma 3 4B",
-          "org": "Google",
-          "score": 0.1,
-          "scoreDisplay": "$0.1 / 1M",
+          "model": "Qwen3.5-9B",
+          "org": "Qwen",
+          "score": 0.089,
+          "scoreDisplay": "$0.089 / 1M",
           "votes": null,
           "delta": null
         },
         {
           "rank": 10,
-          "model": "Ministral 3 3B 2512",
-          "org": "Mistral",
+          "model": "Gemma 3 4B",
+          "org": "Google",
           "score": 0.1,
           "scoreDisplay": "$0.1 / 1M",
           "votes": null,

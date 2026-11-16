@@ -1,60 +1,72 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T09:56:12.598Z",
+  "generatedAt": "2026-11-16T09:54:35.035Z",
   "source": "openrouter-rankings",
   "sourceLabel": "OpenRouter token volume",
   "granularity": "week",
   "weeks": [
     {
-      "weekStart": "2026-08-24",
-      "tokens": 112996824136069
-    },
-    {
       "weekStart": "2026-08-31",
-      "tokens": 115463303706156
+      "tokens": 115463303706156,
+      "complete": true
     },
     {
       "weekStart": "2026-09-07",
-      "tokens": 126763022044183
+      "tokens": 126763022044183,
+      "complete": true
     },
     {
       "weekStart": "2026-09-14",
-      "tokens": 128895269979077
+      "tokens": 128895269979077,
+      "complete": true
     },
     {
       "weekStart": "2026-09-21",
-      "tokens": 145845105335054
+      "tokens": 145845105335054,
+      "complete": true
     },
     {
       "weekStart": "2026-09-28",
-      "tokens": 165856049857563
+      "tokens": 165856049857563,
+      "complete": true
     },
     {
       "weekStart": "2026-10-05",
-      "tokens": 171842501724714
+      "tokens": 171842501724714,
+      "complete": true
     },
     {
       "weekStart": "2026-10-12",
-      "tokens": 164043985914931
+      "tokens": 164043985914931,
+      "complete": true
     },
     {
       "weekStart": "2026-10-19",
-      "tokens": 188039304051712
+      "tokens": 188039304051712,
+      "complete": true
     },
     {
       "weekStart": "2026-10-26",
-      "tokens": 193593270018919
+      "tokens": 193593270018919,
+      "complete": true
     },
     {
       "weekStart": "2026-11-02",
-      "tokens": 209517413463749
+      "tokens": 209517521188141,
+      "complete": true
     },
     {
       "weekStart": "2026-11-09",
-      "tokens": 11571954383344
+      "tokens": 211281198265769,
+      "complete": true
+    },
+    {
+      "weekStart": "2026-11-16",
+      "tokens": 10804609335693,
+      "complete": false
     }
   ],
-  "monthlyTokens": 602721941917724,
+  "monthlyTokens": 802431293524541,
   "monthlyDays": 28,
-  "note": "OpenRouter public rankings chart: weekly tokens processed across its API."
+  "note": "OpenRouter public rankings chart: weekly tokens processed across its API. The in-progress week is flagged complete=false and excluded from totals."
 }

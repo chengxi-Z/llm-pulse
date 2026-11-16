@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T06:11:38.091Z",
+  "generatedAt": "2026-11-16T09:54:35.035Z",
   "source": "fetch-pipeline:ci",
   "mode": "ci",
   "site": {
@@ -9,18 +9,18 @@
     "version": "1.0.0"
   },
   "stats": {
-    "models": 461,
-    "news": 116,
+    "models": 468,
+    "news": 114,
     "boards": 8,
     "resources": 22,
     "projects": 13,
-    "topics": 10,
+    "topics": 20,
     "usageWeeks": 12,
-    "orgs": 63,
-    "sourcesOk": 20,
-    "sourcesDegraded": 0,
     "aihotTopics": 10,
-    "aihotLatest": 30
+    "aihotLatest": 30,
+    "orgs": 64,
+    "sourcesOk": 20,
+    "sourcesDegraded": 0
   },
   "sources": [
     {
@@ -29,9 +29,9 @@
       "url": "https://openrouter.ai/api/v1/models",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
-      "items": 461,
-      "note": "461 个模型 / 63 家厂商；派生动态 30 条、派生榜 2 个"
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
+      "items": 468,
+      "note": "468 个模型 / 64 家厂商；派生动态 30 条、派生榜 2 个"
     },
     {
       "id": "openrouter-usage",
@@ -39,9 +39,9 @@
       "url": "https://openrouter.ai/api/frontend/v1/rankings/model-rankings-chart",
       "type": "dataset",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 12,
-      "note": "OpenRouter token volume: 12 weeks, last 28 days = 602721941917724"
+      "note": "OpenRouter token volume: 12 weeks, last 28 days = 802431293524541"
     },
     {
       "id": "livebench",
@@ -49,9 +49,9 @@
       "url": "https://livebench.ai/",
       "type": "dataset",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
-      "items": 32,
-      "note": "release 20261025；32 个模型，Overall 权重本地复算"
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
+      "items": 35,
+      "note": "release 20261106；35 个模型，Overall 权重本地复算"
     },
     {
       "id": "epoch-ai",
@@ -59,7 +59,7 @@
       "url": "https://epoch.ai/data/ai-benchmarking-dashboard",
       "type": "dataset",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 90,
       "note": "benchmark_data.zip 解析：epoch-eci、epoch-swe-bench-verified、epoch-gpqa-diamond"
     },
@@ -69,9 +69,9 @@
       "url": "https://artificialanalysis.ai/",
       "type": "html",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
-      "items": 100,
-      "note": "全量榜 /leaderboards/models initialModels 解析 100 款模型"
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
+      "items": 113,
+      "note": "全量榜 /leaderboards/models initialModels 解析 113 款模型"
     },
     {
       "id": "rss-openai",
@@ -79,7 +79,7 @@
       "url": "https://openai.com/news/rss.xml",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 8,
       "note": "8 条（近 120 天）"
     },
@@ -89,7 +89,7 @@
       "url": "https://deepmind.google/blog/rss.xml",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 8,
       "note": "8 条（近 120 天）"
     },
@@ -99,7 +99,7 @@
       "url": "https://blog.google/technology/ai/rss/",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 8,
       "note": "8 条（近 120 天）"
     },
@@ -109,7 +109,7 @@
       "url": "https://qwenlm.github.io/blog/index.xml",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 0,
       "note": "feed 可达（20 条）但最新条目 2025-09-22 超出 120 天新鲜度窗口，未并入动态"
     },
@@ -119,7 +119,7 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 8,
       "note": "8 条（近 120 天）"
     },
@@ -129,7 +129,7 @@
       "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 8,
       "note": "8 条（近 120 天）"
     },
@@ -139,9 +139,9 @@
       "url": "https://bair.berkeley.edu/blog/feed.xml",
       "type": "rss",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
-      "items": 2,
-      "note": "2 条（近 120 天）"
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
+      "items": 3,
+      "note": "3 条（近 120 天）"
     },
     {
       "id": "github",
@@ -149,7 +149,7 @@
       "url": "https://api.github.com",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 13,
       "note": "12/12 个仓库 stars 已刷新（带 token）"
     },
@@ -159,7 +159,7 @@
       "url": "https://api.github.com/repos/huggingface/transformers/releases",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 9,
       "note": "3/3 个仓库 Releases（transformers/vLLM/Ollama）"
     },
@@ -169,7 +169,7 @@
       "url": "https://hf-mirror.com/api/models",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 20,
       "note": "trending 20 条；POC 仅验证镜像可达（HF 官方被墙），MVP 用于开源权重/趋势补全"
     },
@@ -179,7 +179,7 @@
       "url": "https://huggingface.co/api",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 20,
       "note": "HF 官方 trending 20 条（CI 网络）；MVP 用于开源权重/趋势补全"
     },
@@ -189,9 +189,9 @@
       "url": "https://lmarena.ai/leaderboard",
       "type": "dataset",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 100,
-      "note": "HF datasets-server text/latest rows Top100（dataset lastModified 2026-11-09）"
+      "note": "HF datasets-server text/latest rows Top100（dataset lastModified 2026-11-16）"
     },
     {
       "id": "deepseek-news",
@@ -199,9 +199,9 @@
       "url": "https://api-docs.deepseek.com/updates",
       "type": "html",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
-      "items": 7,
-      "note": "官方 Change Log HTML 适配：7 条（近 240 天）"
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
+      "items": 8,
+      "note": "官方 Change Log HTML 适配：8 条（近 240 天）"
     },
     {
       "id": "hn-ai",
@@ -209,7 +209,7 @@
       "url": "https://hn.algolia.com/api/v1/search",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-09T09:56:12.598Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 10,
       "note": "HN last 7d AI stories: 30 hits -> Top 10 topics; 10 with discussion summary"
     },
@@ -219,14 +219,14 @@
       "url": "https://aihot.news/api/v1",
       "type": "api",
       "status": "ok",
-      "lastFetchedAt": "2026-11-12T06:11:38.091Z",
+      "lastFetchedAt": "2026-11-16T09:54:35.035Z",
       "items": 30,
       "note": "AIHOT 精选 30 条 / 热点 10 条 / 日报·周报·月报 / 额度重置 3 路"
     }
   ],
   "latestHighlights": [
-    "当前最热：英伟达董事会调查黄仁勋涉外国情报事件",
-    "今日要点：Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
-    "本周综述：本周 OpenAI 发布网络安全模型 GPT-6 Cyber，腾讯混元 Hy4 与 Moonshot AI 的 Kimi K3.…"
+    "当前最热：阿里发布Qwen4-Max，预览版先行接入多产品",
+    "今日要点：今日安静，无大事发生",
+    "本周综述：本周 Anthropic 与 Google DeepMind 密集更新模型，Claude Fable 5.2、Mythos 5.…"
   ]
 }

@@ -1,85 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T06:11:38.091Z",
-  "source": "MIT News AI+AWS ML Blog+GitHub Releases+OpenAI Blog+OpenRouter+Google DeepMind+Google AI Blog+DeepSeek+Berkeley BAIR+AIHOT+AIHOT+AIHOT",
+  "generatedAt": "2026-11-16T09:54:35.035Z",
+  "source": "OpenAI Blog+X：通义千问 / Qwen (@Alibaba_Qwen)+X：Arena (@arena)+OpenRouter+TechCrunch：AI（RSS）+The Decoder：AI News（RSS）+Apple：Newsroom（RSS）+Nathan Lambert：Interconnects（RSS）+X：Rohan Paul (@rohanpaul_ai)+AWS ML Blog+X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)+Newcomer 新闻长文（RSS）+X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)+Sierra：Blog（RSS）+X：ChatGPT (@ChatGPT)+X：Anthropic (@AnthropicAI)+X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)+GitHub Releases+Cursor Blog+MIT News AI+Google Research：Blog（网页）+Claude：Blog（网页）+DeepSeek+Google DeepMind+Google AI Blog+Berkeley BAIR",
   "items": [
     {
-      "id": "aihot-vq9nwgwhtm31cgoliyb7ydyde",
-      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
-      "titleEn": "How to Stop an AI Agent Stuck in an Infinite Loop",
-      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。",
-      "summaryEn": "AIHOT editorial pick · Tutorial · score 72. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "url": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
-      "sourceUrl": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "sourceName": "OpenRouter：Announcements（RSS）",
-      "sourceNameEn": "OpenRouter: Announcements (RSS)",
-      "publishedAt": "2026-11-12T00:00:00.000Z",
-      "kind": "oss",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "vq9nwgwhtm31cgoliyb7ydyde",
-        "category": "tip",
-        "categoryLabel": "教程技巧",
-        "score": 72,
-        "selected": true,
-        "reason": "原文用六个模型的实测数据给出防止 Agent 死循环的四层防护，含配置细节和成本对比，方法可直接迁移到自己的 Agent 代码。",
-        "aihotUrl": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-        "originalUrl": "https://openrouter.ai/blog/tutorials/ai-agent-infinite-loop/",
-        "originalTitle": "How to Stop an AI Agent Stuck in an Infinite Loop",
-        "discoveredAt": "2026-11-12T00:38:14.713Z"
-      }
-    },
-    {
-      "id": "aihot-aoxmmcsudy1gf9xmti7slu1wd",
-      "title": "WSJ 报道 Nvidia 董事会接近决定是否罢免 CEO 黄仁勋",
-      "titleEn": "WSJ: Nvidia\"s board, which publicly backed Jensen Huang on Sunday, is now close to deciding whether to remove its founder CEO.",
-      "summary": "WSJ 报道，Nvidia 董事会此前公开支持黄仁勋，如今接近决定是否罢免这位创始人 CEO。起因是黄仁勋与一名被指为中国情报人员的女子交往，随后又曝出与一名 Nvidia 员工的第二段婚外情；周日开始独立调查时董事会表示没有理由认为 Nvidia 机密泄露。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 89. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "url": "https://x.com/rohanpaul_ai/status/2120663635479625930",
-      "sourceUrl": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd",
-      "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
-      "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-11-11T23:43:05.000Z",
-      "kind": "policy",
-      "importance": 3,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "aoxmmcsudy1gf9xmti7slu1wd",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 89,
-        "selected": true,
-        "reason": "原文汇总了董事会调查、持股与接班安排等关键事实，读者可据此理解 Nvidia 治理层面的最新走向。",
-        "aihotUrl": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd",
-        "originalUrl": "https://x.com/rohanpaul_ai/status/2120663635479625930",
-        "originalTitle": "WSJ: Nvidia’s board, which publicly backed Jensen Huang on Sunday, is now close to deciding whether to remove its founder CEO.",
-        "discoveredAt": "2026-11-11T23:52:19.389Z"
-      }
-    },
-    {
-      "id": "aihot-bx3sq4dxfqblyztkuiktiz0wv",
-      "title": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
-      "titleEn": "Praxis-1 Is Now Available",
-      "summary": "Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重面向所有人开放。该模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。",
-      "summaryEn": "AIHOT editorial pick · AI Models · score 67. Source: Runway: News ( ). Open the original report for the full summary.",
-      "url": "https://runwayml.com/news/company-news/praxis-1-is-now-available",
-      "sourceUrl": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
-      "sourceName": "Runway：News（网页）",
-      "sourceNameEn": "Runway: News ( )",
-      "publishedAt": "2026-11-11T23:25:00.000Z",
+      "id": "rss-51a65484",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
       "kind": "release",
-      "importance": 1,
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "publishedAt": "2026-11-16T09:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-r9e7azie93xzxxdf6yyd1jmqe",
+      "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
+      "titleEn": "+9 points over Qwen3.8-Max with lower costs. Give it a try! @ArtificialAnlys",
+      "summary": "通义千问宣布发布 Qwen4 Max，据 Artificial Analysis 数据，其 Intelligence Index 得分 43，较 Qwen3.8 Max（xhigh）高 9 分，落后 Kimi K3.1 Pro 3 分。每任务成本 $3.27，约为 Qwen3.8 Max 的三分之一，输出 token 用量减少 39%；上下文窗口 1M tokens，定价 $1.50/$4.50 per 1M input/output tokens，已在阿里第一方 API…",
+      "summaryEn": "AIHOT editorial pick · AI Models · score 73. Source: X: / Qwen (@Alibaba_Qwen). Open the original report for the full summary.",
+      "url": "https://x.com/Alibaba_Qwen/status/2122174463479542126",
+      "sourceUrl": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
+      "sourceName": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "sourceNameEn": "X: / Qwen (@Alibaba_Qwen)",
+      "publishedAt": "2026-11-16T03:46:34.000Z",
+      "kind": "release",
+      "importance": 2,
       "tags": [
         "AIHOT",
         "AI Models"
@@ -87,95 +41,218 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "bx3sq4dxfqblyztkuiktiz0wv",
+        "id": "r9e7azie93xzxxdf6yyd1jmqe",
         "category": "ai-models",
         "categoryLabel": "AI 模型",
-        "score": 67,
+        "score": 73,
         "selected": true,
-        "reason": "原文给出 RoboLab-120 榜单具体成绩、开源范围和适配方式，读者可以据此评估它在自有硬件上的部署可行性。",
-        "aihotUrl": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
-        "originalUrl": "https://runwayml.com/news/company-news/praxis-1-is-now-available",
-        "originalTitle": "Praxis-1 Is Now Available",
-        "discoveredAt": "2026-11-11T17:03:41.713Z"
+        "reason": "原文借助 Artificial Analysis 数据对比了 Qwen4 Max 的得分与成本变化，读者可据此评估它相对上代和竞品的性价比。",
+        "aihotUrl": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
+        "originalUrl": "https://x.com/Alibaba_Qwen/status/2122174463479542126",
+        "originalTitle": "+9 points over Qwen3.8-Max with lower costs. Give it a try! @ArtificialAnlys",
+        "discoveredAt": "2026-11-16T03:59:49.196Z"
       }
     },
     {
-      "id": "aihot-r8hsm3m3munjwk1n3u885zszw",
-      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
-      "titleEn": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 69. Source: Google Blog: AI (RSS). Open the original report for the full summary.",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "sourceUrl": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "sourceName": "Google Blog：AI（RSS）",
-      "sourceNameEn": "Google Blog: AI (RSS)",
-      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "id": "aihot-kzt8bjcin243qefkuiq49c2i6",
+      "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
+      "titleEn": "Qwen4-Max by @Alibaba_Qwen is the #1 Chinese model on the leaderboard making Alibaba now the #1 Chinese lab and #5 lab overall, just behi...",
+      "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。",
+      "summaryEn": "AIHOT editorial pick · AI Models · score 82. Source: X: Arena (@arena). Open the original report for the full summary.",
+      "url": "https://x.com/arena/status/2122153116959482051",
+      "sourceUrl": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "sourceName": "X：Arena (@arena)",
+      "sourceNameEn": "X: Arena (@arena)",
+      "publishedAt": "2026-11-16T02:21:45.000Z",
       "kind": "release",
-      "importance": 1,
+      "importance": 2,
       "tags": [
         "AIHOT",
-        "AI Products"
+        "AI Models"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "r8hsm3m3munjwk1n3u885zszw",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 69,
+        "id": "kzt8bjcin243qefkuiq49c2i6",
+        "category": "ai-models",
+        "categoryLabel": "AI 模型",
+        "score": 82,
         "selected": true,
-        "reason": "原文给出延迟、价格和基准对比等具体数据，读者可以据此评估这个封闭式决策接口是否适合替代自训分类器。",
-        "aihotUrl": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-        "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-        "originalTitle": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-        "discoveredAt": "2026-11-11T18:54:13.863Z"
+        "reason": "榜单方基于 14.7k 真实 Agent 会话给出排名与四项信号拆解，读者可据此对比 Qwen4-Max 与其他中国模型的实际表现。",
+        "aihotUrl": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+        "originalUrl": "https://x.com/arena/status/2122153116959482051",
+        "originalTitle": "Qwen4-Max by @Alibaba_Qwen is the #1 Chinese model on the leaderboard making Alibaba now the #1 Chinese lab and #5 lab overall, just behi...",
+        "discoveredAt": "2026-11-16T02:58:51.746Z"
       }
     },
     {
-      "id": "aihot-ep5oqt7m4l7gn3tqieilznmuk",
-      "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
-      "titleEn": "Fable 5.2 or Opus? When to use each model in Claude Code",
-      "summary": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。",
-      "summaryEn": "AIHOT editorial pick · Tutorial · score 67. Source: Claude: YouTube (RSS). Open the original report for the full summary.",
-      "url": "https://www.youtube.com/watch?v=C33hJGt-ySg",
-      "sourceUrl": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-      "sourceName": "Claude：YouTube（RSS）",
-      "sourceNameEn": "Claude: YouTube (RSS)",
-      "publishedAt": "2026-11-11T17:30:20.000Z",
-      "kind": "oss",
-      "importance": 1,
+      "titleEn": "Qwen launches Qwen4 Max (1M context, $1.5/$4.5)",
+      "summaryEn": "Qwen: Qwen4 Max is now on OpenRouter: 1M context, $1.5/$4.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-qwen-qwen4-max",
+      "title": "Qwen 上新：Qwen4 Max（上下文 1M，$1.5/$4.5）",
+      "summary": "Qwen: Qwen4 Max 进入 OpenRouter 目录：上下文 1M，$1.5/$4.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/qwen/qwen4-max",
+      "publishedAt": "2026-11-16T00:00:00.000Z",
+      "tags": [
+        "Qwen",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "qwen/qwen4-max"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-08cf3fe0",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "en"
+    },
+    {
+      "id": "rss-a74dce9c",
+      "title": "Our new blog for science",
+      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "kind": "research",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "publishedAt": "2026-11-15T22:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-umoosrbjhi12kj7lv51qan4ju",
+      "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
+      "titleEn": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "summary": "要求 Nvidia 恢复被罢免 CEO 黄仁勋职务的请愿书，截至周六下午已获得超过 11.5 万个签名，包括 5,965 名在职员工、1,108 名前员工和 63,063 名股东，马斯克、Replit CEO Amjad Masad 和 Epic Games CEO Tim Sweeney 均已联署。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
+      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "sourceUrl": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceNameEn": "TechCrunch: AI (RSS)",
+      "publishedAt": "2026-11-14T21:41:22.000Z",
+      "kind": "policy",
+      "importance": 2,
       "tags": [
         "AIHOT",
-        "Tutorial"
+        "Industry"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "ep5oqt7m4l7gn3tqieilznmuk",
-        "category": "tip",
-        "categoryLabel": "教程技巧",
-        "score": 67,
+        "id": "umoosrbjhi12kj7lv51qan4ju",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 84,
         "selected": true,
-        "reason": "官方给出在 Claude Code 中按任务复杂度和成本在 Fable 5.2、Opus 5.5、Sonnet 5.5、Haiku 5.5 间选择的场景划分，并提供自测指南链接。",
-        "aihotUrl": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-        "originalUrl": "https://www.youtube.com/watch?v=C33hJGt-ySg",
-        "originalTitle": "Fable 5.2 or Opus? When to use each model in Claude Code",
-        "discoveredAt": "2026-11-11T18:30:19.841Z"
+        "reason": "请愿书给出的签名构成和罢免背景，可帮助读者了解 Nvidia 管理层变动后的各方反应与后续走向。",
+        "aihotUrl": "https://aihot.news/items/umoosrbjhi12kj7lv51qan4ju",
+        "originalUrl": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+        "originalTitle": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+        "discoveredAt": "2026-11-14T22:23:25.961Z"
       }
     },
     {
-      "id": "aihot-bisaluc0ii0f4s1gzi2zxbr1k",
-      "title": "a16z 提出 B2A 经济：AI 智能体正成为新的流量与分发渠道",
-      "titleEn": "Welcome to the B2A Economy",
-      "summary": "a16z 发布文章提出 B2A 经济概念，认为 AI 智能体已占大多数网络流量，正从回答问题转向代替用户完成任务和消费。",
-      "summaryEn": "AIHOT editorial pick · Opinion · score 62. Source: a16z: News (RSS). Open the original report for the full summary.",
-      "url": "https://www.a16z.news/p/welcome-to-the-b2a-economy",
-      "sourceUrl": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "sourceName": "a16z：News（RSS）",
-      "sourceNameEn": "a16z: News (RSS)",
-      "publishedAt": "2026-11-11T15:02:38.000Z",
+      "id": "aihot-vl3jnosrbdn6i5j2we400046i",
+      "title": "Anthropic CEO Amodei 在 IPO 前承认明年存在巨大不确定性，算力是公司最深的商业两难",
+      "titleEn": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+      "summary": "Anthropic CEO Dario Amodei 在 JPMorgan 投资者活动上表示，明年的走向存在巨大不确定性，算力是公司面临的最深商业两难：算力需提前一到两年购买，买少了影响客户和收入，买多了可能财务过度扩张。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 78. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
+      "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+      "sourceUrl": "https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceNameEn": "The Decoder: AI News (RSS)",
+      "publishedAt": "2026-11-14T19:05:17.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "vl3jnosrbdn6i5j2we400046i",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 78,
+        "selected": true,
+        "reason": "在创纪录 IPO 前夕，Amodei 直言算力投资是公司最深的商业两难，还给出了毛利率与现金缓冲的具体应对思路。",
+        "aihotUrl": "https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
+        "originalUrl": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+        "originalTitle": "Anthropic CEO Amodei admits \"there's a huge uncertainty in what's going to happen next year\" days before a record IPO",
+        "discoveredAt": "2026-11-14T19:29:14.588Z"
+      }
+    },
+    {
+      "id": "aihot-txbnasfrp3d0w6wqmor5rp8fk",
+      "title": "Apple 联合 OpenEvidence 启动 Apple Health AI Usage Study 探索健康 AI 使用",
+      "titleEn": "Apple launches research study to explore the use of AI for health",
+      "summary": "Apple 宣布在美国推出 Apple Health AI Usage Study，与 OpenEvidence 合作研究用户如何与对话式健康 AI 工具互动。",
+      "summaryEn": "AIHOT editorial pick · Research · score 61. Source: Apple: Newsroom (RSS). Open the original report for the full summary.",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+      "sourceUrl": "https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
+      "sourceName": "Apple：Newsroom（RSS）",
+      "sourceNameEn": "Apple: Newsroom (RSS)",
+      "publishedAt": "2026-11-14T16:00:00.000Z",
       "kind": "research",
       "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Research"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "txbnasfrp3d0w6wqmor5rp8fk",
+        "category": "paper",
+        "categoryLabel": "论文研究",
+        "score": 61,
+        "selected": true,
+        "reason": "原文给出研究规模、参与条件与隐私安排，可了解 Apple 如何与 OpenEvidence 合作评估健康 AI 的真实使用。",
+        "aihotUrl": "https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
+        "originalUrl": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+        "originalTitle": "Apple launches research study to explore the use of AI for health",
+        "discoveredAt": "2026-11-16T01:43:47.434Z"
+      }
+    },
+    {
+      "id": "aihot-np6dwfqwflqe7vfse9kkfxj1n",
+      "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
+      "titleEn": "Open-source AI without Jensen",
+      "summary": "Nathan Lambert 撰文分析 Nvidia CEO 黄仁勋辞职对美国开源模型生态的冲击，认为 Nvidia 对开源模型的资金支持很可能随黄仁勋的离开而干涸，公司首要目标是稳住局面并向客户交付。",
+      "summaryEn": "AIHOT editorial pick · Opinion · score 80. Source: Nathan Lambert: Interconnects (RSS). Open the original report for the full summary.",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "sourceUrl": "https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
+      "sourceName": "Nathan Lambert：Interconnects（RSS）",
+      "sourceNameEn": "Nathan Lambert: Interconnects (RSS)",
+      "publishedAt": "2026-11-14T12:23:15.000Z",
+      "kind": "research",
+      "importance": 2,
       "tags": [
         "AIHOT",
         "Opinion"
@@ -183,29 +260,29 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "bisaluc0ii0f4s1gzi2zxbr1k",
+        "id": "np6dwfqwflqe7vfse9kkfxj1n",
         "category": "opinion",
         "categoryLabel": "观点评论",
-        "score": 62,
+        "score": 80,
         "selected": true,
-        "reason": "a16z 提出 B2A 经济框架，用 Shopify、Vercel、Stripe 等多组增长数据拆解智能体如何成为新的分发渠道。",
-        "aihotUrl": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-        "originalUrl": "https://www.a16z.news/p/welcome-to-the-b2a-economy",
-        "originalTitle": "Welcome to the B2A Economy",
-        "discoveredAt": "2026-11-11T15:43:39.554Z"
+        "reason": "作者长期跟踪开源模型生态，从 Nvidia 内部支持机制、监管风险到美国缺位问题给出了完整分析框架。",
+        "aihotUrl": "https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
+        "originalUrl": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+        "originalTitle": "Open-source AI without Jensen",
+        "discoveredAt": "2026-11-14T12:41:32.774Z"
       }
     },
     {
-      "id": "aihot-r5kn7uexy6jx97qwxwvnpqrom",
-      "title": "Anthropic IPO 拟募资最高 90.4B 美元，或成史上最大上市",
-      "titleEn": "Bloomberg: Anthropic\"s IPO has drawn orders for several times the shares available, mostly from anchor-size indications of interest (i.e....",
-      "summary": "Bloomberg 报道 Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 $90.4B，将超过 SpaceX 的 $85.7B 纪录成为史上最大上市，完全稀释估值目标约 $1.4T；Goldman Sachs 和 Morgan Stanley 牵头共 22 家银行，股票将以 ANT 在纳斯达克全球精选市场交易。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 78. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "url": "https://x.com/rohanpaul_ai/status/2120526677247939001",
-      "sourceUrl": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
+      "id": "aihot-xzt8t0xkgj3mm17k11s2yo3d4",
+      "title": "美联储金融稳定报告：AI成为华尔街头号金融风险",
+      "titleEn": "Fed releases financial stability report",
+      "summary": "美联储发布金融稳定报告，纽约联储调查显示87%的市场人士将AI列为首要金融风险，高于春季的50%。报告称对超级智能的市场热情推高股票估值；截至10月AI基础设施债务超6800亿美元，约为2023年全年的5倍、占投资级公司借贷约31%；最大银行对大型科技、数据中心建设及融资工具的风险敞口接近1万亿美元。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 77. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
+      "url": "https://x.com/rohanpaul_ai/status/2121391185499660332",
+      "sourceUrl": "https://aihot.news/items/xzt8t0xkgj3mm17k11s2yo3d4",
       "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
       "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-11-11T14:38:51.000Z",
+      "publishedAt": "2026-11-13T23:54:06.000Z",
       "kind": "policy",
       "importance": 2,
       "tags": [
@@ -215,125 +292,29 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "r5kn7uexy6jx97qwxwvnpqrom",
+        "id": "xzt8t0xkgj3mm17k11s2yo3d4",
         "category": "industry",
         "categoryLabel": "行业动态",
-        "score": 78,
+        "score": 77,
         "selected": true,
-        "reason": "原文汇总了 Anthropic IPO 超额认购倍数、估值目标和上市安排等关键数字，可帮助读者了解这笔史上最大规模上市的认购结构。",
-        "aihotUrl": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
-        "originalUrl": "https://x.com/rohanpaul_ai/status/2120526677247939001",
-        "originalTitle": "Bloomberg: Anthropic’s IPO has drawn orders for several times the shares available, mostly from anchor-size indications of interest (i.e....",
-        "discoveredAt": "2026-11-11T15:05:41.844Z"
+        "reason": "原文汇总了美联储金融稳定报告中AI成为头号风险的调查数据与AI基建债务规模，读者可据此了解监管视角下的AI融资风险。",
+        "aihotUrl": "https://aihot.news/items/xzt8t0xkgj3mm17k11s2yo3d4",
+        "originalUrl": "https://x.com/rohanpaul_ai/status/2121391185499660332",
+        "originalTitle": "Fed releases financial stability report",
+        "discoveredAt": "2026-11-14T00:17:33.256Z"
       }
     },
     {
-      "id": "aihot-wlmgb3vb5ycgom7wq44felnin",
-      "title": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
-      "titleEn": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
-      "summary": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
-      "url": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
-      "sourceUrl": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
-      "sourceName": "The Decoder：AI News（RSS）",
-      "sourceNameEn": "The Decoder: AI News (RSS)",
-      "publishedAt": "2026-11-11T12:53:07.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "wlmgb3vb5ycgom7wq44felnin",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 76,
-        "selected": true,
-        "reason": "报告给出可复现的暴露机制和具体数字，读者可以据此审视 AI 生成应用分享默认设置的安全风险。",
-        "aihotUrl": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
-        "originalUrl": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
-        "originalTitle": "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline",
-        "discoveredAt": "2026-11-11T13:25:30.021Z"
-      }
-    },
-    {
-      "id": "aihot-mzxxannvi5wge7wz0c0jfdyz5",
-      "title": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
-      "titleEn": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
-      "summary": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 76. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
-      "url": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
-      "sourceUrl": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
-      "sourceName": "The Decoder：AI News（RSS）",
-      "sourceNameEn": "The Decoder: AI News (RSS)",
-      "publishedAt": "2026-11-11T12:12:47.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "mzxxannvi5wge7wz0c0jfdyz5",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 76,
-        "selected": true,
-        "reason": "报道汇总了两家公司财报数据，读者可以据此比较 OpenAI 与 Anthropic 在企业市场和经营效率上的差距。",
-        "aihotUrl": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
-        "originalUrl": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
-        "originalTitle": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
-        "discoveredAt": "2026-11-11T12:24:45.558Z"
-      }
-    },
-    {
-      "id": "aihot-ajjv9abs8vd20j05emcig98ai",
-      "title": "WSJ：Anthropic 7 位创始人 IPO 各套现约 2.5 亿美元并保留控制权",
-      "titleEn": "WSJ: Anthropic\"s 7 founders will each sell about $250M of stock in its IPO and keep roughly $18B apiece.",
-      "summary": "WSJ 报道，Anthropic 7 位创始人将在 IPO 中各出售约 2.5 亿美元股票，每人保留约 180 亿美元持仓。据公司文件，每人出售近 3.4M 股，发行价区间预计 70 至 78 美元，上市预计下周进行，估值接近 1.3 万亿美元，募资 800 亿美元以上，部分通过包括 Google 在内的私募配售。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 79. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "url": "https://x.com/rohanpaul_ai/status/2120392847505715324",
-      "sourceUrl": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
-      "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
-      "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-11-11T05:47:04.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "ajjv9abs8vd20j05emcig98ai",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 79,
-        "selected": true,
-        "reason": "原文转述 WSJ 报道并给出招股文件细节，读者可以据此理解 Anthropic IPO 中创始人套现与双重股权控制安排。",
-        "aihotUrl": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
-        "originalUrl": "https://x.com/rohanpaul_ai/status/2120392847505715324",
-        "originalTitle": "WSJ: Anthropic’s 7 founders will each sell about $250M of stock in its IPO and keep roughly $18B apiece.",
-        "discoveredAt": "2026-11-11T05:50:31.081Z"
-      }
-    },
-    {
-      "id": "aihot-xshgfc1vcvgrdkvnomagmefwy",
-      "title": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
-      "titleEn": "Anthropic reveals in its amended S1 filing today, more than $10 billion in new agreements with Microsoft and Google.",
-      "summary": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。",
+      "id": "aihot-dl9ehywczofu8vp5sj62s6j4n",
+      "title": "Dario Amodei 回应市场动荡：Anthropic IPO 前称对时机并不在意",
+      "titleEn": "FT: Speaking with Jamie Dimon at a JPMorgan event in New York, Dario Amodei shrugged off market turmoil during Anthropic's roadshow.",
+      "summary": "Dario Amodei 在纽约 JPMorgan 活动上与 Jamie Dimon 对谈，对 Anthropic IPO 路演期间的市场动荡不以为意，称对上市时机和市场状况不太在意。",
       "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "url": "https://x.com/rohanpaul_ai/status/2120369586096976098",
-      "sourceUrl": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
+      "url": "https://x.com/rohanpaul_ai/status/2121387496722329833",
+      "sourceUrl": "https://aihot.news/items/dl9ehywczofu8vp5sj62s6j4n",
       "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
       "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-11-11T04:14:38.000Z",
+      "publishedAt": "2026-11-13T23:39:27.000Z",
       "kind": "policy",
       "importance": 2,
       "tags": [
@@ -343,29 +324,47 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "xshgfc1vcvgrdkvnomagmefwy",
+        "id": "dl9ehywczofu8vp5sj62s6j4n",
         "category": "industry",
         "categoryLabel": "行业动态",
         "score": 84,
         "selected": true,
-        "reason": "S1 修正案披露了 Microsoft 和 Google 云承诺的最新金额和不问使用照付的条款，可以据此理解 Anthropic 的算力开支结构。",
-        "aihotUrl": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
-        "originalUrl": "https://x.com/rohanpaul_ai/status/2120369586096976098",
-        "originalTitle": "Anthropic reveals in its amended S1 filing today, more than $10 billion in new agreements with Microsoft and Google.",
-        "discoveredAt": "2026-11-11T04:18:44.594Z"
+        "reason": "原文汇集了 IPO 规模、现金储备和算力采购策略等关键数字，有助于理解 Anthropic 上市背后的资金逻辑。",
+        "aihotUrl": "https://aihot.news/items/dl9ehywczofu8vp5sj62s6j4n",
+        "originalUrl": "https://x.com/rohanpaul_ai/status/2121387496722329833",
+        "originalTitle": "FT: Speaking with Jamie Dimon at a JPMorgan event in New York, Dario Amodei shrugged off market turmoil during Anthropic's roadshow.",
+        "discoveredAt": "2026-11-13T23:46:33.833Z"
       }
     },
     {
-      "id": "aihot-m7ul4psbkb5zyp0t254fr986o",
-      "title": "Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高",
-      "titleEn": "FT: Anthropic\"s bankers plan to raise its IPO price after heavy investor demand, lifting the target valuation back to $1.5T or more.",
-      "summary": "FT 报道，因投资者需求旺盛，Anthropic 承销商计划上调 IPO 定价，把目标估值拉回 $1.5T 或更高。周二文件设定 $70-$78 的发行区间，计入员工期权和受限股后对应 $1.26T-$1.41T 估值；若定价超出区间，募资将超过 $100B，其中 Google、Nvidia 和 Microsoft 将按 IPO 价格投资 $26B。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 85. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
-      "url": "https://x.com/rohanpaul_ai/status/2120320127484969162",
-      "sourceUrl": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
-      "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
-      "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
-      "publishedAt": "2026-11-11T00:58:06.000Z",
+      "id": "rss-92ef8359",
+      "title": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
+      "summary": "GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/",
+      "publishedAt": "2026-11-13T23:22:09.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-kq4awkrys4uz37b7gsvj5r1dj",
+      "title": "Jensen Huang 离任或给 AI 创业融资留下大缺口，投资人和创始人担忧",
+      "titleEn": "Jensen Huang\"s departure blasts big hole in AI startup funding, VCs and founders say",
+      "summary": "Nvidia CEO Jensen Huang 正式辞职，创投圈认为其继任者 Colette Kress 更保守，短期难延续他每年数十亿美元、今年已参与 105 轮的投资节奏。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 88. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "sourceUrl": "https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceNameEn": "TechCrunch: AI (RSS)",
+      "publishedAt": "2026-11-13T22:43:00.000Z",
       "kind": "policy",
       "importance": 3,
       "tags": [
@@ -375,189 +374,83 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "m7ul4psbkb5zyp0t254fr986o",
+        "id": "kq4awkrys4uz37b7gsvj5r1dj",
         "category": "industry",
         "categoryLabel": "行业动态",
-        "score": 85,
+        "score": 88,
         "selected": true,
-        "reason": "报道补充了定价区间、募资用途和三大科技公司的入股安排，可帮助读者理解这桩 IPO 的资金结构与定价逻辑。",
-        "aihotUrl": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
-        "originalUrl": "https://x.com/rohanpaul_ai/status/2120320127484969162",
-        "originalTitle": "FT: Anthropic’s bankers plan to raise its IPO price after heavy investor demand, lifting the target valuation back to $1.5T or more.",
-        "discoveredAt": "2026-11-11T01:14:24.726Z"
+        "reason": "原文汇集多位投资人和创始人的判断，梳理 Jensen Huang 离任后 AI 创业公司融资可能出现的资本缺口和替代格局。",
+        "aihotUrl": "https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
+        "originalUrl": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+        "originalTitle": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+        "discoveredAt": "2026-11-13T22:47:30.382Z"
       }
     },
     {
-      "id": "aihot-z9u4n1e7zfapxjozcn97quhdp",
-      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
-      "titleEn": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
-      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。",
-      "summaryEn": "AIHOT editorial pick · Research · score 70. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary.",
-      "url": "https://alignment.anthropic.com/2026/worse-together/",
-      "sourceUrl": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-      "sourceName": "Anthropic：Alignment Science Blog（网页）",
-      "sourceNameEn": "Anthropic: Alignment Science Blog ( )",
-      "publishedAt": "2026-11-11T00:00:00.000Z",
-      "kind": "research",
+      "id": "rss-f27c52fb",
+      "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+      "summary": "Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost…",
+      "kind": "pricing",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+      "publishedAt": "2026-11-13T22:30:12.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
       "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "z9u4n1e7zfapxjozcn97quhdp",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 70,
-        "selected": true,
-        "reason": "Anthropic 用四个模拟环境测出多用户多智能体团队的协调失败模式，并发布 MAMUBench 供社区复测。",
-        "aihotUrl": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-        "originalUrl": "https://alignment.anthropic.com/2026/worse-together/",
-        "originalTitle": "Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams",
-        "discoveredAt": "2026-11-11T16:59:38.754Z"
-      }
+      "lang": "en"
     },
     {
-      "id": "aihot-wkpj021rmg6sgthgj9zwevei4",
-      "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
-      "titleEn": "MCP vs CLI vs Skills: What Each Costs in Context",
-      "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。",
-      "summaryEn": "AIHOT editorial pick · Tutorial · score 74. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "url": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/",
-      "sourceUrl": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "sourceName": "OpenRouter：Announcements（RSS）",
-      "sourceNameEn": "OpenRouter: Announcements (RSS)",
-      "publishedAt": "2026-11-11T00:00:00.000Z",
-      "kind": "oss",
+      "id": "rss-56950bd0",
+      "title": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+      "summary": "Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session start tim…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+      "publishedAt": "2026-11-13T22:02:39.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
       "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "wkpj021rmg6sgthgj9zwevei4",
-        "category": "tip",
-        "categoryLabel": "教程技巧",
-        "score": 74,
-        "selected": true,
-        "reason": "原文实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 开销，给出缩窄工具和 Tool Search 的降本方法，可直接迁移到自己的智能体。",
-        "aihotUrl": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-        "originalUrl": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/",
-        "originalTitle": "MCP vs CLI vs Skills: What Each Costs in Context",
-        "discoveredAt": "2026-11-11T00:21:29.458Z"
-      }
+      "lang": "en"
     },
     {
-      "id": "aihot-i3gp1xj4j11gi4qoreya18izb",
-      "title": "OpenRouter 实测 fp8 与 fp4 量化对模型质量和价格的影响",
-      "titleEn": "LLM Quantization: What fp8 and fp4 Do to Quality and Price",
-      "summary": "OpenRouter 发布量化解析文章，讲解 LLM 量化原理，并报告 2026 年 10 月 20 日对 1455 个 provider 端点和 Qwen3.8 27B 六个端点的实测。",
-      "summaryEn": "AIHOT editorial pick · Tutorial · score 73. Source: OpenRouter: Announcements (RSS). Open the original report for the full summary.",
-      "url": "https://openrouter.ai/blog/insights/llm-quantization/",
-      "sourceUrl": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
-      "sourceName": "OpenRouter：Announcements（RSS）",
-      "sourceNameEn": "OpenRouter: Announcements (RSS)",
-      "publishedAt": "2026-11-11T00:00:00.000Z",
-      "kind": "oss",
+      "id": "rss-55e38130",
+      "title": "OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures",
+      "summary": "Deploy OpenFold3-preview from Amazon SageMaker JumpStart to predict 3D structures of proteins, DNA, RNA, and ligand complexes in your own AWS account. The post covers asynchronous inference, multi-GPU parallelism, bringing your own MSAs fo…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/",
+      "publishedAt": "2026-11-13T21:53:40.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
       "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Tutorial"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "i3gp1xj4j11gi4qoreya18izb",
-        "category": "tip",
-        "categoryLabel": "教程技巧",
-        "score": 73,
-        "selected": true,
-        "reason": "作者基于自家 280 个任务的实测数据讨论量化精度与价格的关系，并给出 provider.quantizations 的可操作用法，结论边界交代得清楚。",
-        "aihotUrl": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
-        "originalUrl": "https://openrouter.ai/blog/insights/llm-quantization/",
-        "originalTitle": "LLM Quantization: What fp8 and fp4 Do to Quality and Price",
-        "discoveredAt": "2026-11-11T00:21:29.451Z"
-      }
+      "lang": "en"
     },
     {
-      "id": "aihot-xenhfme3azzcf8qpihr57fb93",
-      "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
-      "titleEn": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
-      "summary": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。",
-      "summaryEn": "AIHOT editorial pick · Research · score 61. Source: Berkeley RDI: Blog (AI ). Open the original report for the full summary.",
-      "url": "https://rdi.berkeley.edu/blog/cyberbingym",
-      "sourceUrl": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
-      "sourceName": "Berkeley RDI：Blog（AI 安全与评测）",
-      "sourceNameEn": "Berkeley RDI: Blog (AI )",
-      "publishedAt": "2026-11-11T00:00:00.000Z",
-      "kind": "research",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "xenhfme3azzcf8qpihr57fb93",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 61,
-        "selected": true,
-        "reason": "基准把漏洞恢复与可审计利用分开度量，结果显示 Codex 恢复 88% 但仅 20% 能完成利用，硬化编译进一步压缩成功率。",
-        "aihotUrl": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
-        "originalUrl": "https://rdi.berkeley.edu/blog/cyberbingym",
-        "originalTitle": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
-        "discoveredAt": "2026-11-10T22:36:29.096Z"
-      }
-    },
-    {
-      "id": "aihot-womexcn3n0ijhbehvhbsxxm4f",
-      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
-      "titleEn": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
-      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。",
-      "summaryEn": "AIHOT editorial pick · Research · score 72. Source: Microsoft Research (RSS). Open the original report for the full summary.",
-      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-      "sourceUrl": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-      "sourceName": "Microsoft Research 博客（RSS）",
-      "sourceNameEn": "Microsoft Research (RSS)",
-      "publishedAt": "2026-11-10T20:52:56.000Z",
-      "kind": "research",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "womexcn3n0ijhbehvhbsxxm4f",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 72,
-        "selected": true,
-        "reason": "微软研究团队解释 Lazarus 后门如何改写少于 10 个休眠神经元即可让 Agent 执行恶意命令，并给出模型来源与权重完整性层面的防御思路。",
-        "aihotUrl": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-        "originalUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-        "originalTitle": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
-        "discoveredAt": "2026-11-10T23:34:28.039Z"
-      }
-    },
-    {
-      "id": "aihot-zycmiklep7i6dct58558jbp78",
-      "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
-      "titleEn": "OpenRouter is officially part of @stripe today!",
-      "summary": "OpenRouter 官方宣布正式并入 Stripe。OpenRouter 称有超过 1000 万开发者和公司使用其平台，它为多模型、多 provider 的 AI 运行提供基础设施，包括访问新模型、故障期间保持可用，以及为团队执行支出和数据策略。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 72. Source: X: OpenRouter (@OpenRouter). Open the original report for the full summary.",
-      "url": "https://x.com/OpenRouter/status/2120234542183395787",
-      "sourceUrl": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
-      "sourceName": "X：OpenRouter (@OpenRouter)",
-      "sourceNameEn": "X: OpenRouter (@OpenRouter)",
-      "publishedAt": "2026-11-10T19:18:01.000Z",
+      "id": "aihot-kei20gkia8a0vhknc859jsfqr",
+      "title": "NVIDIA 副总裁 Bryan Catanzaro 澄清要求恢复 Jensen 职务的信件系伪造",
+      "titleEn": "so much drama around Jensen Huang and Nvidia board.",
+      "summary": "Rohan Paul 转发 NVIDIA 应用深度学习研究副总裁 Bryan Catanzaro 的声明：网上流传一封要求 NVIDIA 董事会恢复 Jensen Huang 职务、并声称有他参与的信件，Catanzaro 明确该信是伪造的，即使真实他也不会签署。他表示对 Jensen 离开 NVIDIA 感到悲痛，同时完全支持董事会，并称与 Colette 共事多年，全力支持她。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 78. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
+      "url": "https://x.com/rohanpaul_ai/status/2121354165352096179",
+      "sourceUrl": "https://aihot.news/items/kei20gkia8a0vhknc859jsfqr",
+      "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
+      "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-11-13T21:27:00.000Z",
       "kind": "policy",
       "importance": 2,
       "tags": [
@@ -567,29 +460,29 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "zycmiklep7i6dct58558jbp78",
+        "id": "kei20gkia8a0vhknc859jsfqr",
         "category": "industry",
         "categoryLabel": "行业动态",
-        "score": 72,
+        "score": 78,
         "selected": true,
-        "reason": "收购方与被购方共同宣布，原文说明了合并后的定位和对中立性的承诺，读者可以据此评估对现有工作流的影响。",
-        "aihotUrl": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
-        "originalUrl": "https://x.com/OpenRouter/status/2120234542183395787",
-        "originalTitle": "OpenRouter is officially part of @stripe today!",
-        "discoveredAt": "2026-11-10T19:34:30.618Z"
+        "reason": "转发了 NVIDIA 副总裁 Bryan Catanzaro 的澄清，说明流传的联名信是伪造的，可帮助读者核对传闻真伪。",
+        "aihotUrl": "https://aihot.news/items/kei20gkia8a0vhknc859jsfqr",
+        "originalUrl": "https://x.com/rohanpaul_ai/status/2121354165352096179",
+        "originalTitle": "so much drama around Jensen Huang and Nvidia board.",
+        "discoveredAt": "2026-11-13T21:43:26.432Z"
       }
     },
     {
-      "id": "aihot-y4pcrys3ewo3xnx1j45mbpbfy",
-      "title": "OpenAI 开放 ChatGPT Business 计划登录 Notion、v0 等第三方工具",
-      "titleEn": "Now, you can use your ChatGPT Business plan in tools like @NotionHQ, @v0, @ampcode, @kilocode, @warpdotdev, Hermes from @NousResearch, @...",
-      "summary": "OpenAI 宣布 ChatGPT Business 计划现可在 Notion、v0、ampcode、kilocode、Warp、NousResearch 的 Hermes、openclaw、opencode 等第三方工具中使用，通过 Sign in with ChatGPT 连接即可开始。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 67. Source: X: OpenAI Developers (@OpenAIDevs). Open the original report for the full summary.",
-      "url": "https://x.com/OpenAIDevs/status/2120212596850663712",
-      "sourceUrl": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-      "sourceName": "X：OpenAI Developers (@OpenAIDevs)",
-      "sourceNameEn": "X: OpenAI Developers (@OpenAIDevs)",
-      "publishedAt": "2026-11-10T17:50:49.000Z",
+      "id": "aihot-ajfypca37l5knyrnij49v5ofz",
+      "title": "Claude Duet 向美国等待名单上的 Pro、Max 和 Ultra 订阅者发出全部邀请",
+      "titleEn": "I feel like I can ask now...what has Claude Duet helped you with today? 😅",
+      "summary": "Anthropic 的 Claude Duet 更新：截至昨日在等待名单上的全部美国 Pro、Max 和 Ultra 订阅者均已收到邀请，等待名单入口为 https://claude.com/product/claude-duet。研究预览附带限额重置，Pro 为 3 次，Max 和 Ultra 为 1 次；官方计划很快向美国以外更多国家开放，并继续征集反馈。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 66. Source: X: Ado Kukic (Anthropic , Claude Code) (@adocomplete). Open the original report for the full summary.",
+      "url": "https://x.com/adocomplete/status/2121338030967697908",
+      "sourceUrl": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+      "sourceName": "X：Ado Kukic（Anthropic 开发者关系，Claude Code） (@adocomplete)",
+      "sourceNameEn": "X: Ado Kukic (Anthropic , Claude Code) (@adocomplete)",
+      "publishedAt": "2026-11-13T20:22:53.000Z",
       "kind": "release",
       "importance": 1,
       "tags": [
@@ -599,29 +492,29 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "y4pcrys3ewo3xnx1j45mbpbfy",
+        "id": "ajfypca37l5knyrnij49v5ofz",
         "category": "ai-products",
         "categoryLabel": "AI 产品",
-        "score": 67,
+        "score": 66,
         "selected": true,
-        "reason": "原文说明了 ChatGPT Business 计划现可在 Notion、v0 等第三方工具中通过 Sign in with ChatGPT 使用。",
-        "aihotUrl": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-        "originalUrl": "https://x.com/OpenAIDevs/status/2120212596850663712",
-        "originalTitle": "Now, you can use your ChatGPT Business plan in tools like @NotionHQ, @v0, @ampcode, @kilocode, @warpdotdev, Hermes from @NousResearch, @...",
-        "discoveredAt": "2026-11-10T18:00:21.844Z"
+        "reason": "原文给出 Claude Duet 等待名单的开放范围、限额重置次数和国际计划，用户可据此了解自己的使用额度。",
+        "aihotUrl": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+        "originalUrl": "https://x.com/adocomplete/status/2121338030967697908",
+        "originalTitle": "I feel like I can ask now…what has Claude Duet helped you with today? 😅",
+        "discoveredAt": "2026-11-13T20:26:33.740Z"
       }
     },
     {
-      "id": "aihot-gqzca7y2h3m9p0fxtj60m4i1t",
-      "title": "Ed Zitron 长文剖析黄仁勋丑闻与 NVIDIA 疑似借 Megaspeed 向中国走私 GPU",
-      "titleEn": "Jensen's Bizarre Adventure",
-      "summary": "Ed Zitron 长文梳理黄仁勋承认与 Megaspeed CEO Alice Huang 的婚外情事件，并整合 Bloomberg、纽约时报、金融时报与 Culper Research 的报道，指 Megaspeed 疑似作为转口实体将 NVIDIA GPU 非法流入中国。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: Ed Zitron / Where\"s Your Ed At (RSS). Open the original report for the full summary.",
-      "url": "https://www.wheresyoured.at/jensens-bizarre-adventure/",
-      "sourceUrl": "https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
-      "sourceName": "Ed Zitron 长文 / Where’s Your Ed At（RSS）",
-      "sourceNameEn": "Ed Zitron / Where\"s Your Ed At (RSS)",
-      "publishedAt": "2026-11-10T17:43:27.000Z",
+      "id": "aihot-s59xfwl0atld8vs7xq0pdx6hw",
+      "title": "WSJ 报道称黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活",
+      "titleEn": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+      "summary": "The Decoder 援引 WSJ 报道分析称，黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活传闻。Nvidia 在其主导下向 AI 云厂商和数据中心开发商提供数十亿美元财务担保以换取营收分成，最大一笔涉及对 OpenAI 俄亥俄数据中心的 2500 亿美元担保，消息公布后股价跌 5%，临时 CEO Colette Kress 将该承诺减半。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
+      "url": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+      "sourceUrl": "https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceNameEn": "The Decoder: AI News (RSS)",
+      "publishedAt": "2026-11-13T20:07:34.000Z",
       "kind": "policy",
       "importance": 2,
       "tags": [
@@ -631,253 +524,275 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "gqzca7y2h3m9p0fxtj60m4i1t",
+        "id": "s59xfwl0atld8vs7xq0pdx6hw",
         "category": "industry",
         "categoryLabel": "行业动态",
         "score": 84,
         "selected": true,
-        "reason": "作者整合 Bloomberg、NYT、FT 与 Culper 报告，梳理黄仁勋与 Megaspeed 关系及 GPU 疑似走私中国的资金链条。",
-        "aihotUrl": "https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
-        "originalUrl": "https://www.wheresyoured.at/jensens-bizarre-adventure/",
-        "originalTitle": "Jensen's Bizarre Adventure",
-        "discoveredAt": "2026-11-10T18:23:18.693Z"
+        "reason": "报道引 WSJ 细节梳理黄仁勋去职背后的担保信贷、客户集中等经营风险，可帮读者看清个人传闻之外的公司层面成因。",
+        "aihotUrl": "https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
+        "originalUrl": "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/",
+        "originalTitle": "Jensen Huang's ouster likely traces back to Nvidia's risky business practices more than his personal life",
+        "discoveredAt": "2026-11-13T20:10:32.101Z"
       }
     },
     {
-      "id": "aihot-qd3f4j2hd0t98tqf28iv7pu2j",
-      "title": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
-      "titleEn": "ERNIE 5.5 Flash Preview",
-      "summary": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。",
-      "summaryEn": "AIHOT editorial pick · AI Models · score 73. Source: ERNIE. Open the original report for the full summary.",
-      "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/",
-      "sourceUrl": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
-      "sourceName": "百度文心 ERNIE 官方博客",
-      "sourceNameEn": "ERNIE",
-      "publishedAt": "2026-11-10T16:00:00.000Z",
-      "kind": "release",
+      "id": "rss-28dc07af",
+      "title": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+      "summary": "Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA commitments ac…",
+      "kind": "pricing",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+      "publishedAt": "2026-11-13T19:35:35.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-p1mfh9oe0xbq4evyru5pp1ikt",
+      "title": "Nvidia 危机与 Anthropic IPO 前夜的 Cerebral Valley AI Summit 现场观察",
+      "titleEn": "Nvidia Crises, Anthropic IPO & Off-the-Charts Demand Have the AI World in a Tizzy",
+      "summary": "Newcomer 在旧金山 Cerebral Valley AI Summit 现场报道：Jensen Huang 因第二段婚外情披露辞职，Reuters 当天报道存在第三段，与会者多认为 Nvidia 短期无碍但生态承压，Databricks CEO 称其对整个生态是打击。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: Newcomer (RSS). Open the original report for the full summary.",
+      "url": "https://www.newcomer.co/p/nvidia-crises-anthropic-ipo-and-off",
+      "sourceUrl": "https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
+      "sourceName": "Newcomer 新闻长文（RSS）",
+      "sourceNameEn": "Newcomer (RSS)",
+      "publishedAt": "2026-11-13T19:27:39.000Z",
+      "kind": "policy",
       "importance": 2,
       "tags": [
         "AIHOT",
-        "AI Models"
+        "Industry"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "qd3f4j2hd0t98tqf28iv7pu2j",
-        "category": "ai-models",
-        "categoryLabel": "AI 模型",
-        "score": 73,
+        "id": "p1mfh9oe0xbq4evyru5pp1ikt",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 84,
         "selected": true,
-        "reason": "官方给出总参 280B、激活 14B、1M 上下文等规格和基准对比，可据此评估该模型在编码与 Agent 任务上的定位。",
-        "aihotUrl": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
-        "originalUrl": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/",
-        "originalTitle": "ERNIE 5.5 Flash Preview",
-        "discoveredAt": "2026-11-11T05:31:29.313Z"
+        "reason": "一线现场记录把 Nvidia 危机与 Anthropic IPO 放在同一画面，可直接看到行业领袖对生态冲击的即时判断。",
+        "aihotUrl": "https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
+        "originalUrl": "https://www.newcomer.co/p/nvidia-crises-anthropic-ipo-and-off",
+        "originalTitle": "Nvidia Crises, Anthropic IPO & Off-the-Charts Demand Have the AI World in a Tizzy",
+        "discoveredAt": "2026-11-13T20:25:31.310Z"
       }
     },
     {
-      "id": "aihot-vouc5yc5intvgg7311kekkhsi",
-      "title": "Cursor Projects 升级为多人协作模式",
-      "titleEn": "Cursor Projects is now multiplayer",
-      "summary": "Cursor 宣布 Projects 迈入多人协作阶段，此前 9 月推出的 Projects 通过单一协调者调度一组智能体，现在支持邀请团队成员加入同一 Project，与各自的智能体共同规划、构建和交付。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 67. Source: Cursor Blog. Open the original report for the full summary.",
-      "url": "https://cursor.com/blog/projects-multiplayer",
-      "sourceUrl": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-      "sourceName": "Cursor Blog",
-      "sourceNameEn": "Cursor Blog",
-      "publishedAt": "2026-11-10T12:00:00.000Z",
-      "kind": "release",
+      "id": "rss-aa9e7994",
+      "title": "Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock",
+      "summary": "Amazon Bedrock provides built-in, zero-instrumentation cost attribution that traces every inference call back to the IAM principal that made it. This post shows how to attribute per-user Bedrock costs for AI developer and productivity tool…",
+      "kind": "pricing",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/",
+      "publishedAt": "2026-11-13T18:44:02.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-p0jsxs2bnv6tmnmn1soi56759",
+      "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
+      "titleEn": "You can use a Stop hook to have Claude try again when a check fails, but make sure it exits with code 2!",
+      "summary": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。",
+      "summaryEn": "AIHOT editorial pick · Tutorial · score 69. Source: X: Lydia Hallie (Anthropic, Claude Code) (@lydiahallie). Open the original report for the full summary.",
+      "url": "https://x.com/lydiahallie/status/2121313048820617645",
+      "sourceUrl": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+      "sourceName": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
+      "sourceNameEn": "X: Lydia Hallie (Anthropic, Claude Code) (@lydiahallie)",
+      "publishedAt": "2026-11-13T18:43:37.000Z",
+      "kind": "oss",
       "importance": 1,
       "tags": [
         "AIHOT",
-        "AI Products"
+        "Tutorial"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "vouc5yc5intvgg7311kekkhsi",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 67,
-        "selected": true,
-        "reason": "原文给出共享任务板、团队共享上下文和智能体互通三项具体能力，读者可据此判断多智能体协作如何落地到团队场景。",
-        "aihotUrl": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-        "originalUrl": "https://cursor.com/blog/projects-multiplayer",
-        "originalTitle": "Cursor Projects is now multiplayer",
-        "discoveredAt": "2026-11-10T23:17:26.760Z"
-      }
-    },
-    {
-      "id": "aihot-uif827ayipylunwlh7gejgcbo",
-      "title": "OpenAI 研究：模型生命周期中哪些因素影响 CoT 可监控性",
-      "titleEn": "What Affects CoT Monitorability Across The Model Lifecycle?",
-      "summary": "OpenAI 发布研究，分析预训练、架构、强化学习和模型生成数据如何影响思维链（CoT）可监控性。",
-      "summaryEn": "AIHOT editorial pick · Research · score 71. Source: OpenAI: Alignment (RSS). Open the original report for the full summary.",
-      "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
-      "sourceUrl": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
-      "sourceName": "OpenAI：Alignment 研究博客（RSS）",
-      "sourceNameEn": "OpenAI: Alignment (RSS)",
-      "publishedAt": "2026-11-10T08:00:00.000Z",
-      "kind": "research",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "uif827ayipylunwlh7gejgcbo",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 71,
-        "selected": true,
-        "reason": "OpenAI 以自家模型实测说明预训练困惑度、架构和 RL 如何影响 CoT 可监控性，安全研究者可据此对照自身训练决策。",
-        "aihotUrl": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
-        "originalUrl": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
-        "originalTitle": "What Affects CoT Monitorability Across The Model Lifecycle?",
-        "discoveredAt": "2026-11-10T22:17:29.524Z"
-      }
-    },
-    {
-      "id": "aihot-mx6m3dvh7s5zz7u91h4iqd5pt",
-      "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
-      "titleEn": "Using peers\" work to gain unauthorized access to OpenAI research infrastructure",
-      "summary": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。",
-      "summaryEn": "AIHOT editorial pick · Research · score 80. Source: OpenAI: ( ). Open the original report for the full summary.",
-      "url": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/",
-      "sourceUrl": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-      "sourceName": "OpenAI：失准报告与通报（网页）",
-      "sourceNameEn": "OpenAI: ( )",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "kind": "research",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "mx6m3dvh7s5zz7u91h4iqd5pt",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 80,
-        "selected": true,
-        "reason": "官方复盘给出智能体越权访问和智能体间协作的量化细节，以及此后环境加固措施，可帮助读者理解评测沙箱风险。",
-        "aihotUrl": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-        "originalUrl": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/",
-        "originalTitle": "Using peers’ work to gain unauthorized access to OpenAI research infrastructure",
-        "discoveredAt": "2026-11-10T22:27:33.697Z"
-      }
-    },
-    {
-      "id": "aihot-xaj5t8sbv4qtc0n9ovus1nfl9",
-      "title": "Anthropic 研究：稀释投毒微调数据反而会强化其后门效应",
-      "titleEn": "Diluting Poisoned Fine-Tuning Data Can Strengthen Its Effect",
-      "summary": "Anthropic 与 Truthful AI 等机构提出“顺势学习”现象：单独作用很小的投毒数据，在混入同类型干净对比数据后会形成隐藏后门。",
-      "summaryEn": "AIHOT editorial pick · Research · score 69. Source: Anthropic: Alignment Science Blog ( ). Open the original report for the full summary.",
-      "url": "https://alignment.anthropic.com/2026/homeopathic-learning/",
-      "sourceUrl": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
-      "sourceName": "Anthropic：Alignment Science Blog（网页）",
-      "sourceNameEn": "Anthropic: Alignment Science Blog ( )",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "kind": "research",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "xaj5t8sbv4qtc0n9ovus1nfl9",
-        "category": "paper",
-        "categoryLabel": "论文研究",
+        "id": "p0jsxs2bnv6tmnmn1soi56759",
+        "category": "tip",
+        "categoryLabel": "教程技巧",
         "score": 69,
         "selected": true,
-        "reason": "研究指出单独看无害的训练数据与干净数据混合后可能形成后门，提示仅靠孤立审计数据的安全方法存在盲区。",
-        "aihotUrl": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
-        "originalUrl": "https://alignment.anthropic.com/2026/homeopathic-learning/",
-        "originalTitle": "Diluting Poisoned Fine-Tuning Data Can Strengthen Its Effect",
-        "discoveredAt": "2026-11-10T19:44:18.305Z"
+        "reason": "原文讲清了 Claude Code Stop hook 中 exit 1 与 exit 2 的行为差异，可用于让检查失败时自动重试。",
+        "aihotUrl": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+        "originalUrl": "https://x.com/lydiahallie/status/2121313048820617645",
+        "originalTitle": "You can use a Stop hook to have Claude try again when a check fails, but make sure it exits with code 2!",
+        "discoveredAt": "2026-11-13T18:56:33.824Z"
       }
     },
     {
-      "id": "aihot-s7ny0oaxr6q9e5677fmb2hqpf",
-      "title": "Claude 升级交互式连接器，应用可在对话旁全屏打开并由 Claude 直接操作",
-      "titleEn": "Your apps can now open in Claude, and Claude can work in them",
-      "summary": "Anthropic 宣布交互式连接器升级，在支持的连接器中可将工具在对话旁打开或全屏展开，Claude 能直接修改你正在使用的页面、行或文件，改动实时呈现并需像连接器操作一样批准。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 70. Source: Claude: Blog ( ). Open the original report for the full summary.",
-      "url": "https://claude.com/blog/interactive-connectors-full-tool",
-      "sourceUrl": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-      "sourceName": "Claude：Blog（网页）",
-      "sourceNameEn": "Claude: Blog ( )",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "kind": "release",
+      "id": "aihot-q92ir58jcjtp3g9fn11jlb6ei",
+      "title": "研究报告称中国最强 AI 模型使用了被禁出口的 Nvidia Blackwell 芯片训练",
+      "titleEn": "Export-banned Nvidia chips are behind China\"s most powerful AI models - uh-oh, Jensen!",
+      "summary": "Will DePue 领导的非营利研究组织 Unemployment Labs 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重，发现 Kimi K3 与 DeepSeek V4 等最受关注模型带有 Blackwell 芯片训练痕迹。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 76. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "sourceUrl": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceNameEn": "TechCrunch: AI (RSS)",
+      "publishedAt": "2026-11-13T18:40:30.000Z",
+      "kind": "policy",
       "importance": 2,
       "tags": [
         "AIHOT",
-        "AI Products"
+        "Industry"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "s7ny0oaxr6q9e5677fmb2hqpf",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 70,
-        "selected": true,
-        "reason": "官方公告说明交互式连接器升级为可在 Claude 内全屏操作的工具，开发者基于 MCP Apps 构建的应用不限于 Claude。",
-        "aihotUrl": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-        "originalUrl": "https://claude.com/blog/interactive-connectors-full-tool",
-        "originalTitle": "Your apps can now open in Claude, and Claude can work in them",
-        "discoveredAt": "2026-11-10T17:24:23.761Z"
-      }
-    },
-    {
-      "id": "aihot-c1fodrvts3po1pprz70weooju",
-      "title": "Anthropic 发布 Claude Whiteboards 和 Claude Sheets，Claude Dashboards 转正为 Claude Data",
-      "titleEn": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
-      "summary": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 76. Source: Claude: Blog ( ). Open the original report for the full summary.",
-      "url": "https://claude.com/blog/sheets-whiteboards-data",
-      "sourceUrl": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-      "sourceName": "Claude：Blog（网页）",
-      "sourceNameEn": "Claude: Blog ( )",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "kind": "release",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "c1fodrvts3po1pprz70weooju",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
+        "id": "q92ir58jcjtp3g9fn11jlb6ei",
+        "category": "industry",
+        "categoryLabel": "行业动态",
         "score": 76,
         "selected": true,
-        "reason": "原文给出三款协作产品的具体功能边界、可用计划和企业管理员默认设置，读者可以据此判断是否引入团队工作流。",
-        "aihotUrl": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-        "originalUrl": "https://claude.com/blog/sheets-whiteboards-data",
-        "originalTitle": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
-        "discoveredAt": "2026-11-10T17:24:23.741Z"
+        "reason": "研究称 DeepSeek、Kimi 等中国开源模型权重带有 Blackwell 芯片训练痕迹，文章还梳理了走私渠道与马来西亚离岸算力路径。",
+        "aihotUrl": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+        "originalUrl": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+        "originalTitle": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+        "discoveredAt": "2026-11-13T18:59:29.367Z"
       }
     },
     {
-      "id": "aihot-hq666kd02bayn64cw702xm11w",
-      "title": "Google AI Edge Gallery 新增端侧语音识别与语音合成能力",
-      "titleEn": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-      "summary": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 71. Source: Google Developers Blog (RSS). Open the original report for the full summary.",
-      "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
-      "sourceUrl": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-      "sourceName": "Google Developers Blog（RSS）",
-      "sourceNameEn": "Google Developers Blog (RSS)",
-      "publishedAt": "2026-11-09T16:00:00.000Z",
+      "id": "rss-3a4df312",
+      "title": "Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture",
+      "summary": "Amazon SageMaker HyperPod Data Capture records live inference inputs and outputs to Amazon S3. This post walks through one end-to-end example: capturing a support router's production traffic, surfacing a new-product blind spot with Amazon…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/",
+      "publishedAt": "2026-11-13T18:01:15.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
+      "titleEn": "Releasing Personal Agent Protocol 1.0",
+      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 69. Source: Sierra: Blog (RSS). Open the original report for the full summary.",
+      "url": "https://sierra.ai/blog/releasing-poppy",
+      "sourceUrl": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "sourceName": "Sierra：Blog（RSS）",
+      "sourceNameEn": "Sierra: Blog (RSS)",
+      "publishedAt": "2026-11-13T17:00:00.000Z",
+      "kind": "release",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "z4wsrxr1xmhg3lq3y0ouq5rmr",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 69,
+        "selected": true,
+        "reason": "协议 v1.0 正式开放，正文给出多家企业落地场景和 Shopify 全量启用等进展，可据此评估个人智能体接入企业服务的现状。",
+        "aihotUrl": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+        "originalUrl": "https://sierra.ai/blog/releasing-poppy",
+        "originalTitle": "Releasing Personal Agent Protocol 1.0",
+        "discoveredAt": "2026-11-13T17:43:24.978Z"
+      }
+    },
+    {
+      "id": "aihot-vot1htumxjgnb0i88rbq3zsuq",
+      "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
+      "titleEn": "Now your dot can securely complete purchases on your behalf-with your approval.",
+      "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 65. Source: X: ChatGPT (@ChatGPT). Open the original report for the full summary.",
+      "url": "https://x.com/ChatGPT/status/2121283151729496235",
+      "sourceUrl": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+      "sourceName": "X：ChatGPT (@ChatGPT)",
+      "sourceNameEn": "X: ChatGPT (@ChatGPT)",
+      "publishedAt": "2026-11-13T16:44:49.000Z",
+      "kind": "release",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "vot1htumxjgnb0i88rbq3zsuq",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 65,
+        "selected": true,
+        "reason": "原文说明了智能体支付不接触实际卡号且每笔需安全检查的机制，以及初期开放范围。",
+        "aihotUrl": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+        "originalUrl": "https://x.com/ChatGPT/status/2121283151729496235",
+        "originalTitle": "Now your dot can securely complete purchases on your behalf—with your approval.",
+        "discoveredAt": "2026-11-13T16:52:24.766Z"
+      }
+    },
+    {
+      "id": "aihot-vsfne926njom5wnadceo8r04m",
+      "title": "Anthropic 直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 炉边谈话并披露 SEC 注册声明",
+      "titleEn": "Streaming live at 12 PM ET: A fireside chat with JPMorgan CEO Jamie Dimon and @DarioAmodei. https://www.youtube.com/live/YHEaEpeY3ew",
+      "summary": "Anthropic 预告美东时间中午 12 点直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 的炉边谈话，链接为 https://www.youtube.com/live/YHEaEpeY3ew。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: X: Anthropic (@AnthropicAI). Open the original report for the full summary.",
+      "url": "https://x.com/AnthropicAI/status/2121272083863011714",
+      "sourceUrl": "https://aihot.news/items/vsfne926njom5wnadceo8r04m",
+      "sourceName": "X：Anthropic (@AnthropicAI)",
+      "sourceNameEn": "X: Anthropic (@AnthropicAI)",
+      "publishedAt": "2026-11-13T16:00:50.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "vsfne926njom5wnadceo8r04m",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 84,
+        "selected": true,
+        "reason": "Anthropic 官方预告与 JPMorgan CEO Jamie Dimon 的对谈直播入口，并附上 SEC 注册声明与招股书获取方式。",
+        "aihotUrl": "https://aihot.news/items/vsfne926njom5wnadceo8r04m",
+        "originalUrl": "https://x.com/AnthropicAI/status/2121272083863011714",
+        "originalTitle": "Streaming live at 12 PM ET: A fireside chat with JPMorgan CEO Jamie Dimon and @DarioAmodei. https://www.youtube.com/live/YHEaEpeY3ew",
+        "discoveredAt": "2026-11-13T16:19:27.821Z"
+      }
+    },
+    {
+      "id": "aihot-um8pmpa91qn1ymvx3pux0sq1x",
+      "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
+      "titleEn": "We\"re not going to win by lobbying, plotting, or manipulating. We\"re going to win by building, in the open, with the whole community!",
+      "summary": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 71. Source: X: Clément Delangue (Hugging Face CEO) (@ClementDelangue). Open the original report for the full summary.",
+      "url": "https://x.com/ClementDelangue/status/2121260104913768931",
+      "sourceUrl": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
+      "sourceName": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+      "sourceNameEn": "X: Clément Delangue (Hugging Face CEO) (@ClementDelangue)",
+      "publishedAt": "2026-11-13T15:13:14.000Z",
       "kind": "release",
       "importance": 2,
       "tags": [
@@ -887,17 +802,894 @@
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "hq666kd02bayn64cw702xm11w",
+        "id": "um8pmpa91qn1ymvx3pux0sq1x",
         "category": "ai-products",
         "categoryLabel": "AI 产品",
         "score": 71,
         "selected": true,
-        "reason": "原文给出端侧语音管线的具体延迟、语种和模型参数数据，开发者可以据此评估离线语音方案对自家 App 的可行性。",
-        "aihotUrl": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-        "originalUrl": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
-        "originalTitle": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-        "discoveredAt": "2026-11-10T17:33:26.978Z"
+        "reason": "llama.cpp 迈出首个稳定大版本，作者点明本地运行对数据自主和硬件覆盖的意义。",
+        "aihotUrl": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
+        "originalUrl": "https://x.com/ClementDelangue/status/2121260104913768931",
+        "originalTitle": "We’re not going to win by lobbying, plotting, or manipulating. We’re going to win by building, in the open, with the whole community!",
+        "discoveredAt": "2026-11-13T15:20:26.043Z"
       }
+    },
+    {
+      "id": "rss-d2de5a6f",
+      "title": "Introducing ChatGPT Wallet",
+      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "publishedAt": "2026-11-13T15:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "titleEn": "huggingface/transformers released Release v5.23.0",
+      "summaryEn": "# Release v5.23.0 ## New Model additions ### Inkling2 Inkling 2 Small is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs, and it is intended for use in English and other languages…",
+      "id": "github-release-huggingface-transformers-v5-23-0",
+      "title": "huggingface/transformers 发布 Release v5.23.0",
+      "summary": "# Release v5.23.0 ## New Model additions ### Inkling2 Inkling 2 Small is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs, and it is intended for use in English and other languages…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
+      "publishedAt": "2026-11-13T14:10:57.000Z",
+      "tags": [
+        "transformers",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-pdhda5tufq7ubi8w17bys7w66",
+      "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
+      "titleEn": "Israel\"s VCs see opportunity for challengers in Nvidia\"s turmoil",
+      "summary": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 81. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
+      "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+      "sourceUrl": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceNameEn": "TechCrunch: AI (RSS)",
+      "publishedAt": "2026-11-13T12:52:19.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "pdhda5tufq7ubi8w17bys7w66",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 81,
+        "selected": true,
+        "reason": "文章从以色列视角梳理 Nvidia 领导层变动后的产业影响，投资人观点提示竞争者可能获得的窗口及其局限。",
+        "aihotUrl": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+        "originalUrl": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
+        "originalTitle": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+        "discoveredAt": "2026-11-13T13:38:20.874Z"
+      }
+    },
+    {
+      "id": "aihot-e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
+      "titleEn": "An update on our recent security incident",
+      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 72. Source: Cursor Blog. Open the original report for the full summary.",
+      "url": "https://cursor.com/blog/security-incident-update",
+      "sourceUrl": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "sourceName": "Cursor Blog",
+      "sourceNameEn": "Cursor Blog",
+      "publishedAt": "2026-11-13T12:00:00.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "e9o5h2c1o5f0xuh2bgqtc2w7k",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 72,
+        "selected": true,
+        "reason": "官方完整披露了攻击链路、受影响范围与处置措施，读者可据此评估自身是否需要轮换凭证或重装扩展。",
+        "aihotUrl": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+        "originalUrl": "https://cursor.com/blog/security-incident-update",
+        "originalTitle": "An update on our recent security incident",
+        "discoveredAt": "2026-11-14T01:13:30.310Z"
+      }
+    },
+    {
+      "id": "rss-959351d1",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "publishedAt": "2026-11-13T08:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-6e5044e1",
+      "title": "Helping robots fit into the human workplace",
+      "summary": "Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories and warehouses.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-b7a59c77",
+      "title": "New AI “copilot” helps engineers design better structures",
+      "summary": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges.",
+      "kind": "policy",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
+      "publishedAt": "2026-11-13T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-h0obmlpmc44dqk1da164ca1z7",
+      "title": "Google 展示 Antigravity /teamwork 多智能体协作成果并开放给研究者使用",
+      "titleEn": "Advancing science & engineering with Antigravity\"s /teamwork",
+      "summary": "Google Research 介绍其团队与学术伙伴用 Antigravity 的 /teamwork 多智能体工作流配合 Gemini 4 Argon、Carbon、Hydrogen 模型，在信息论、形式化验证、分子结构和内核优化等领域取得多项成果。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 78. Source: Google Research: Blog ( ). Open the original report for the full summary.",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "sourceUrl": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "sourceName": "Google Research：Blog（网页）",
+      "sourceNameEn": "Google Research: Blog ( )",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "kind": "release",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "h0obmlpmc44dqk1da164ca1z7",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 78,
+        "selected": true,
+        "reason": "原文展示了 /teamwork 多智能体工作流在数学证明、形式化验证和系统优化中的具体成果，读者可据此评估其在自己研究或工程中的适用性。",
+        "aihotUrl": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+        "originalUrl": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+        "originalTitle": "Advancing science & engineering with Antigravity’s /teamwork",
+        "discoveredAt": "2026-11-13T21:23:32.470Z"
+      }
+    },
+    {
+      "id": "aihot-ypeap2t8w4fqqfuvt7mw3wg79",
+      "title": "Anthropic 详解常驻智能体的五个核心架构原语",
+      "titleEn": "Building always-on agents",
+      "summary": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。",
+      "summaryEn": "AIHOT editorial pick · Tutorial · score 62. Source: Claude: Blog ( ). Open the original report for the full summary.",
+      "url": "https://claude.com/blog/building-always-on-agents",
+      "sourceUrl": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "sourceName": "Claude：Blog（网页）",
+      "sourceNameEn": "Claude: Blog ( )",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "kind": "oss",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Tutorial"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "ypeap2t8w4fqqfuvt7mw3wg79",
+        "category": "tip",
+        "categoryLabel": "教程技巧",
+        "score": 62,
+        "selected": true,
+        "reason": "Anthropic 把常驻智能体拆成五个可落地的架构原语，并给出实现细节与最佳实践，读者可按此搭建自己的方案。",
+        "aihotUrl": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+        "originalUrl": "https://claude.com/blog/building-always-on-agents",
+        "originalTitle": "Building always-on agents",
+        "discoveredAt": "2026-11-13T19:25:34.133Z"
+      }
+    },
+    {
+      "titleEn": "DeepSeek official update (2026-11-13): Releasing the full suite of application APIs",
+      "summaryEn": "DeepSeek Change Log 2026-11-13: In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we…",
+      "id": "release-deepseek-2026-11-13-e72e993b",
+      "title": "DeepSeek 官方更新（2026-11-13）：Releasing the full suite of application APIs",
+      "summary": "DeepSeek Change Log 2026-11-13：In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we o…",
+      "kind": "release",
+      "sourceName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/updates",
+      "url": "https://api-docs.deepseek.com/updates#2026-11-13",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "tags": [
+        "DeepSeek",
+        "官方公告",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "inclusionAI launches Ling 3.2 Flash (free) (1M context, free/free)",
+      "summaryEn": "inclusionAI: Ling 3.2 Flash (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-inclusionai-ling-3-2-flash-free",
+      "title": "inclusionAI 上新：Ling 3.2 Flash (free)（上下文 1M，免费/免费）",
+      "summary": "inclusionAI: Ling 3.2 Flash (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+      "publishedAt": "2026-11-13T00:00:00.000Z",
+      "tags": [
+        "inclusionAI",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重",
+        "免费"
+      ],
+      "models": [
+        "inclusionai/ling-3.2-flash:free"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-ab506c10",
+      "title": "Deploy frontier AI models on AWS Trainium with SGLang-Neuron",
+      "summary": "SGLang-Neuron is now publicly available through an AWS Deep Learning Container. With SGLang-Neuron, you can serve models and generate reinforcement learning rollouts with SGLang on AWS Trainium using the same SGLang interface you already k…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/",
+      "publishedAt": "2026-11-12T22:03:34.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-52fb96c9",
+      "title": "Three Lincoln Laboratory technologies receive 2026 R&D 100 Awards",
+      "summary": "A secure operating system, a quantum microsystem platform, and a 5G interference-canceling algorithm are named among the year's most significant innovations.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/lincoln-laboratory-technologies-receive-rd-100-awards-1112",
+      "publishedAt": "2026-11-12T21:15:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-c97a5e65",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "publishedAt": "2026-11-12T20:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-92e11c78",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "summary": "Introducing Gemini 4 Hydrogen",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "publishedAt": "2026-11-12T18:00:50.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-197684e6",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "summary": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "publishedAt": "2026-11-12T18:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-bp01lj0ahiqsoahba8sjor2b4",
+      "title": "Apple HomeView 正式开售，售价 299 美元并搭载 Siri AI",
+      "titleEn": "Apple HomeView available today",
+      "summary": "Apple 于 11 月 13 日正式开售 HomeView，提供桌面和壁挂两款型号，均售 $299（U.S.），首发澳大利亚、加拿大、印度、新西兰、新加坡、英国和美国市场。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 61. Source: Apple: Newsroom (RSS). Open the original report for the full summary.",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+      "sourceUrl": "https://aihot.news/items/bp01lj0ahiqsoahba8sjor2b4",
+      "sourceName": "Apple：Newsroom（RSS）",
+      "sourceNameEn": "Apple: Newsroom (RSS)",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "kind": "release",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "bp01lj0ahiqsoahba8sjor2b4",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 61,
+        "selected": true,
+        "reason": "官方公布 HomeView 的定价、双型号配置、Siri AI 能力与上市地区，可据此了解其功能边界和欧盟未售原因。",
+        "aihotUrl": "https://aihot.news/items/bp01lj0ahiqsoahba8sjor2b4",
+        "originalUrl": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+        "originalTitle": "Apple HomeView available today",
+        "discoveredAt": "2026-11-13T14:04:22.678Z"
+      }
+    },
+    {
+      "id": "rss-484a54f2",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "publishedAt": "2026-11-12T12:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-08ca74f9",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "publishedAt": "2026-11-12T09:30:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-4a9bfa1e",
+      "title": "New research could lead to faster, trustworthy AI models for climate prediction",
+      "summary": "MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than other approaches.",
+      "kind": "research",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
+      "publishedAt": "2026-11-12T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "titleEn": "Google launches Gemini 4 Hydrogen (1M context, $1.5/$7.5)",
+      "summaryEn": "Google: Gemini 4 Hydrogen is now on OpenRouter: 1M context, $1.5/$7.5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-google-gemini-4-hydrogen",
+      "title": "Google 上新：Gemini 4 Hydrogen（上下文 1M，$1.5/$7.5）",
+      "summary": "Google: Gemini 4 Hydrogen 进入 OpenRouter 目录：上下文 1M，$1.5/$7.5 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-4-hydrogen",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-4-hydrogen"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Google launches Gemini 4 Hydrogen (batch) (1M context, $0.75/$3.75)",
+      "summaryEn": "Google: Gemini 4 Hydrogen (batch) is now on OpenRouter: 1M context, $0.75/$3.75 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-google-gemini-4-hydrogen-batch",
+      "title": "Google 上新：Gemini 4 Hydrogen (batch)（上下文 1M，$0.75/$3.75）",
+      "summary": "Google: Gemini 4 Hydrogen (batch) 进入 OpenRouter 目录：上下文 1M，$0.75/$3.75 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-4-hydrogen:batch",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-4-hydrogen:batch"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-d3938403",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-7b37c3f1",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+      "publishedAt": "2026-11-11T16:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-67c97bc0",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "publishedAt": "2026-11-11T15:00:15.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-89133aca",
+      "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+      "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+      "publishedAt": "2026-11-11T09:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "titleEn": "ollama/ollama released v0.40.17",
+      "summaryEn": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/…",
+      "id": "github-release-ollama-ollama-v0-40-17-rc0",
+      "title": "ollama/ollama 发布 v0.40.17",
+      "summary": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0",
+      "publishedAt": "2026-11-10T22:25:00.000Z",
+      "tags": [
+        "ollama",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-5f75316a",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "summary": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-922b3740",
+      "title": "Gemini 4 Carbon is now available",
+      "summary": "Gemini 4 Carbon is now available",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "publishedAt": "2026-11-10T16:03:47.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-649c2b34",
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "publishedAt": "2026-11-10T14:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-697c22fd",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "kind": "release",
+      "sourceName": "Google AI Blog",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "publishedAt": "2026-11-10T13:00:00.000Z",
+      "tags": [
+        "Google AI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-211e1a27",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "publishedAt": "2026-11-10T12:02:28.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-7038b939",
+      "title": "Opening the datasets behind our AI weather models",
+      "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "publishedAt": "2026-11-10T11:13:04.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-750bd5f3",
+      "title": "MIT-led team receives funding to develop next-generation alternatives to modern weed killers",
+      "summary": "With up to $53 million from ARPA-H, the researchers will use AI to generate safer herbicides that reduce dependence on imports and improve the security of the U.S. food supply.",
+      "kind": "policy",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
+      "publishedAt": "2026-11-10T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "titleEn": "Baidu launches ERNIE-5.5-Flash-Preview (free) (1M context, free/free)",
+      "summaryEn": "Baidu: ERNIE-5.5-Flash-Preview (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-baidu-ernie-5-5-flash-preview-free",
+      "title": "Baidu 上新：ERNIE-5.5-Flash-Preview (free)（上下文 1M，免费/免费）",
+      "summary": "Baidu: ERNIE-5.5-Flash-Preview (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Baidu",
+        "长上下文",
+        "推理",
+        "开源权重",
+        "免费"
+      ],
+      "models": [
+        "baidu/ernie-5.5-flash-preview:free"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Baidu launches ERNIE-Light-DT-1.0 (1M context, $1.13/$3.94)",
+      "summaryEn": "Baidu: ERNIE-Light-DT-1.0 is now on OpenRouter: 1M context, $1.13/$3.94 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-baidu-ernie-light-dt-1-0-intl",
+      "title": "Baidu 上新：ERNIE-Light-DT-1.0（上下文 1M，$1.13/$3.94）",
+      "summary": "Baidu: ERNIE-Light-DT-1.0 进入 OpenRouter 目录：上下文 1M，$1.13/$3.94 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/baidu/ernie-light-dt-1.0-intl",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Baidu",
+        "长上下文",
+        "推理"
+      ],
+      "models": [
+        "baidu/ernie-light-dt-1.0-intl"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Google launches Gemini 4 Carbon (1M context, $2/$10)",
+      "summaryEn": "Google: Gemini 4 Carbon is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-google-gemini-4-carbon",
+      "title": "Google 上新：Gemini 4 Carbon（上下文 1M，$2/$10）",
+      "summary": "Google: Gemini 4 Carbon 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-4-carbon",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-4-carbon"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Google launches Gemini 4 Carbon (batch) (1M context, $1/$5)",
+      "summaryEn": "Google: Gemini 4 Carbon (batch) is now on OpenRouter: 1M context, $1/$5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-google-gemini-4-carbon-batch",
+      "title": "Google 上新：Gemini 4 Carbon (batch)（上下文 1M，$1/$5）",
+      "summary": "Google: Gemini 4 Carbon (batch) 进入 OpenRouter 目录：上下文 1M，$1/$5 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/google/gemini-4-carbon:batch",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Google",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "google/gemini-4-carbon:batch"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Nex AGI launches Nex-N2.6 (262K context, $0.12/$0.4)",
+      "summaryEn": "Nex AGI: Nex-N2.6 is now on OpenRouter: 262K context, $0.12/$0.4 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-nex-agi-nex-n2-6",
+      "title": "Nex AGI 上新：Nex-N2.6（上下文 262K，$0.12/$0.4）",
+      "summary": "Nex AGI: Nex-N2.6 进入 OpenRouter 目录：上下文 262K，$0.12/$0.4 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/nex-agi/nex-n2.6",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "tags": [
+        "Nex AGI",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "nex-agi/nex-n2.6"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-79c22a85",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "kind": "release",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/rss.xml",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "publishedAt": "2026-11-09T19:51:47.000Z",
+      "tags": [
+        "Google DeepMind",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "titleEn": "ollama/ollama released v0.40.16",
+      "summaryEn": "## Ripple Preview [Ripple Preview](https://ollama.com/library/ripple-preview) from Ricursive Intelligence is a 65B dense model built for agentic coding. ```sh ollama run ripple-preview ``` ## What's Changed - Qwen3.8 Flash Next uses about…",
+      "id": "github-release-ollama-ollama-v0-40-16",
+      "title": "ollama/ollama 发布 v0.40.16",
+      "summary": "## Ripple Preview [Ripple Preview](https://ollama.com/library/ripple-preview) from Ricursive Intelligence is a 65B dense model built for agentic coding. ```sh ollama run ripple-preview ``` ## What's Changed - Qwen3.8 Flash Next uses about…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/ollama/ollama/releases",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "publishedAt": "2026-11-09T18:21:19.000Z",
+      "tags": [
+        "ollama",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-457b1a47",
+      "title": "BAIR at CoRL 2026",
+      "summary": "The Conference on Robot Learning (CoRL) takes place November 9–12, 2026, in Austin, Texas. BAIR faculty, postdocs and students will be presenting research at various sessions, including an Early Career Keynote from Professor Negar Mehr. Se…",
+      "kind": "research",
+      "sourceName": "Berkeley BAIR",
+      "sourceUrl": "https://bair.berkeley.edu/blog/feed.xml",
+      "url": "https://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026/",
+      "publishedAt": "2026-11-09T09:00:00.000Z",
+      "tags": [
+        "Berkeley BAIR",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
     },
     {
       "id": "rss-0882db37",
@@ -914,7 +1706,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 1,
       "lang": "en"
     },
     {
@@ -932,8 +1724,126 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 1,
       "lang": "en"
+    },
+    {
+      "titleEn": "Anthropic launches Claude Fable 5.2 (1M context, $8/$40)",
+      "summaryEn": "Anthropic: Claude Fable 5.2 is now on OpenRouter: 1M context, $8/$40 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-anthropic-claude-fable-5-2",
+      "title": "Anthropic 上新：Claude Fable 5.2（上下文 1M，$8/$40）",
+      "summary": "Anthropic: Claude Fable 5.2 进入 OpenRouter 目录：上下文 1M，$8/$40 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/anthropic/claude-fable-5.2",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "anthropic/claude-fable-5.2"
+      ],
+      "importance": 2,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Anthropic launches Claude Fable 5.2 (batch) (1M context, $4/$20)",
+      "summaryEn": "Anthropic: Claude Fable 5.2 (batch) is now on OpenRouter: 1M context, $4/$20 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-anthropic-claude-fable-5-2-batch",
+      "title": "Anthropic 上新：Claude Fable 5.2 (batch)（上下文 1M，$4/$20）",
+      "summary": "Anthropic: Claude Fable 5.2 (batch) 进入 OpenRouter 目录：上下文 1M，$4/$20 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/anthropic/claude-fable-5.2:batch",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Anthropic",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "anthropic/claude-fable-5.2:batch"
+      ],
+      "importance": 2,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Meta launches Muse Ember (1M context, $0.1/$0.5)",
+      "summaryEn": "Meta: Muse Ember is now on OpenRouter: 1M context, $0.1/$0.5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
+      "id": "release-meta-muse-ember",
+      "title": "Meta 上新：Muse Ember（上下文 1M，$0.1/$0.5）",
+      "summary": "Meta: Muse Ember 进入 OpenRouter 目录：上下文 1M，$0.1/$0.5 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/meta/muse-ember",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Meta",
+        "长上下文",
+        "多模态",
+        "推理"
+      ],
+      "models": [
+        "meta/muse-ember"
+      ],
+      "importance": 2,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Thinking Machines launches Inkling 2 Small (1M context, $0.3/$1)",
+      "summaryEn": "Thinking Machines: Inkling 2 Small is now on OpenRouter: 1M context, $0.3/$1 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-thinkingmachines-inkling-2-small",
+      "title": "Thinking Machines 上新：Inkling 2 Small（上下文 1M，$0.3/$1）",
+      "summary": "Thinking Machines: Inkling 2 Small 进入 OpenRouter 目录：上下文 1M，$0.3/$1 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Thinking Machines",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "thinkingmachines/inkling-2-small"
+      ],
+      "importance": 2,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Thinking Machines launches Inkling 2 Small (free) (1M context, free/free)",
+      "summaryEn": "Thinking Machines: Inkling 2 Small (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/tool-calling/vision.",
+      "id": "release-thinkingmachines-inkling-2-small-free",
+      "title": "Thinking Machines 上新：Inkling 2 Small (free)（上下文 1M，免费/免费）",
+      "summary": "Thinking Machines: Inkling 2 Small (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "tags": [
+        "Thinking Machines",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重",
+        "免费"
+      ],
+      "models": [
+        "thinkingmachines/inkling-2-small:free"
+      ],
+      "importance": 2,
+      "lang": "zh"
     },
     {
       "id": "rss-b5d1e402",
@@ -950,151 +1860,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-2c82bb18",
-      "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
-      "summary": "Amazon SageMaker Inference now supports GPU partitioning with NVIDIA Multi-Instance GPU (MIG), which divides one GPU into hardware-isolated partitions so you can run a different model in each or take a right-sized fraction of a newer accel…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
-      "publishedAt": "2026-11-06T18:01:00.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-6ea69ea0",
-      "title": "Taxonomy of agentic primitives in Amazon Quick",
-      "summary": "As we built Amazon Quick, its agents grew from answering questions to taking actions, and the same primitives kept getting rebuilt under different names. This post shares the taxonomy we converged on — triggers, agents, capabilities, and l…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/",
-      "publishedAt": "2026-11-06T17:34:45.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-d71f2017",
-      "title": "Serverless MCP server for AI agent data lake access on Amazon ECS Fargate",
-      "summary": "Learn how to build a serverless Model Context Protocol (MCP) server on Amazon ECS with AWS Fargate that gives AI agents secure, metadata-driven access to an enterprise data lake. Exposing a new dataset requires only a JSON file, with no pe…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/",
-      "publishedAt": "2026-11-06T17:13:13.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-be613715",
-      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
-      "summary": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
-      "publishedAt": "2026-11-06T17:09:23.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-3e68bc5a",
-      "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 1",
-      "summary": "An AI agent that acts for a user raises an identity question that per-app OAuth and service accounts leave open: which agent may act for which user, and how you stop it. In this first post of two, you build a task agent on Amazon Bedrock A…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/",
-      "publishedAt": "2026-11-06T17:09:18.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-36495f66",
-      "title": "How Greenlight Financial built an autonomous SOC solution on Amazon Bedrock AgentCore",
-      "summary": "Greenlight Financial resolves more than 90% of up to 4,000 monthly security and risk cases without human intervention using Luna, a tiered multi-agent system on Amazon Bedrock AgentCore. This post covers the architecture, episodic memory f…",
-      "kind": "policy",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-11-06T16:55:05.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-8e9e65da",
-      "title": "Taxbit Assist: A grounded, role-aware AI agent on Amazon Bedrock AgentCore",
-      "summary": "Taxbit built Taxbit Assist, a cited, permission-aware AI assistant embedded in its enterprise dashboard, on Amazon Bedrock AgentCore. This post shows how they grounded answers in a curated knowledge base, enforced role-aware and region-com…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-11-06T16:49:42.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-82ab0a8d",
-      "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
-      "summary": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you revi…",
-      "kind": "policy",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
-      "publishedAt": "2026-11-06T16:45:58.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
@@ -1114,25 +1880,7 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-4f900307",
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/partnering-with-hacktron",
-      "publishedAt": "2026-11-06T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
@@ -1155,7 +1903,7 @@
       "models": [
         "liquid/lfm-3-1.7b"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1179,44 +1927,8 @@
       "models": [
         "liquid/lfm-3-1.7b:free"
       ],
-      "importance": 3,
-      "lang": "zh"
-    },
-    {
-      "id": "rss-81a0fd32",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-      "kind": "benchmark",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "评测"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-06bc9743",
-      "title": "Cult.fit builds operational muscle with Codex",
-      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/cultfit-builds-with-codex",
-      "publishedAt": "2026-11-05T20:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
       "importance": 2,
-      "lang": "en"
+      "lang": "zh"
     },
     {
       "id": "rss-36dcdf76",
@@ -1237,24 +1949,6 @@
       "lang": "en"
     },
     {
-      "id": "rss-15ec7e98",
-      "title": "Australian universities are creating AI-native graduates",
-      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-      "publishedAt": "2026-11-05T17:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
       "id": "rss-9732ff15",
       "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
       "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
@@ -1265,96 +1959,6 @@
       "publishedAt": "2026-11-05T17:00:00.000Z",
       "tags": [
         "Google AI",
-        "官方博客",
-        "定价"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-a175f1be",
-      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "publishedAt": "2026-11-05T09:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-360a2b0f",
-      "title": "Merge builds product and business tools with OpenAI technology",
-      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/merge-builds-with-openai",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-78667b0c",
-      "title": "Clearing up a robot’s fuzzy memory",
-      "summary": "A new system identifies and corrects unreliable object descriptions stored in a robot’s memory, improving the robot’s ability to interact with its environment.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
-      "publishedAt": "2026-11-05T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-2bc06518",
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-      "kind": "policy",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "publishedAt": "2026-11-05T02:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-bffb044c",
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-      "kind": "pricing",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/ads/customers/flipsnack",
-      "publishedAt": "2026-11-05T00:45:15.000Z",
-      "tags": [
-        "OpenAI",
         "官方博客",
         "定价"
       ],
@@ -1381,7 +1985,29 @@
       "models": [
         "google/gemini-omni-1.2-flash"
       ],
-      "importance": 3,
+      "importance": 2,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "KT launches Mi:dm K 3.0 Pro (262K context, $0.2/$0.8)",
+      "summaryEn": "KT: Mi:dm K 3.0 Pro is now on OpenRouter: 262K context, $0.2/$0.8 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-kt-midm-k-3-0-pro",
+      "title": "KT 上新：Mi:dm K 3.0 Pro（上下文 262K，$0.2/$0.8）",
+      "summary": "KT: Mi:dm K 3.0 Pro 进入 OpenRouter 目录：上下文 262K，$0.2/$0.8 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/kt/midm-k-3.0-pro",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "tags": [
+        "KT",
+        "长上下文",
+        "推理"
+      ],
+      "models": [
+        "kt/midm-k-3.0-pro"
+      ],
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1404,7 +2030,7 @@
       "models": [
         "openrouter/auto"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1427,7 +2053,7 @@
       "models": [
         "openrouter/auto-code"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1449,15 +2075,15 @@
       "models": [
         "google/gemini-omni-1.1-flash"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
-      "titleEn": "Ricursive launches Ripple 65B Preview (1M context, $0.2/$0.6)",
-      "summaryEn": "Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.2/$0.6 per 1M tokens, supports structured-output/tool-calling.",
+      "titleEn": "Ricursive launches Ripple 65B Preview (1M context, $0.1/$0.3)",
+      "summaryEn": "Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.1/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling.",
       "id": "release-ricursiveai-ripple-65b-preview",
-      "title": "Ricursive 上新：Ripple 65B Preview（上下文 1M，$0.2/$0.6）",
-      "summary": "Ricursive: Ripple 65B Preview 进入 OpenRouter 目录：上下文 1M，$0.2/$0.6 每百万 tokens，支持 structured-output/tool-calling。",
+      "title": "Ricursive 上新：Ripple 65B Preview（上下文 1M，$0.1/$0.3）",
+      "summary": "Ricursive: Ripple 65B Preview 进入 OpenRouter 目录：上下文 1M，$0.1/$0.3 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
       "kind": "release",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
@@ -1465,12 +2091,14 @@
       "publishedAt": "2026-11-04T00:00:00.000Z",
       "tags": [
         "Ricursive",
-        "长上下文"
+        "长上下文",
+        "推理",
+        "开源权重"
       ],
       "models": [
         "ricursiveai/ripple-65b-preview"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1494,7 +2122,7 @@
       "models": [
         "tencent/hy4"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1514,24 +2142,6 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-b65f9c17",
-      "title": "Building connections across the research infrastructure",
-      "summary": "MIT.nano and the Northeast Microelectronics Coalition gathered facility leaders and technology professionals from across the nation to explore ways to make shared-access facilities more connected.",
-      "kind": "research",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
-      "publishedAt": "2026-11-03T19:30:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "研究"
-      ],
-      "models": [],
       "importance": 1,
       "lang": "en"
     },
@@ -1546,86 +2156,6 @@
       "publishedAt": "2026-11-03T17:01:49.000Z",
       "tags": [
         "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "titleEn": "ollama/ollama released v0.40.14",
-      "summaryEn": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including…",
-      "id": "github-release-ollama-ollama-v0-40-14",
-      "title": "ollama/ollama 发布 v0.40.14",
-      "summary": "## What's Changed * `ollama launch claude` now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap * Cloud web search responses on `/api/chat` are now decoded correctly, including…",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/ollama/ollama/releases",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
-      "publishedAt": "2026-11-03T01:40:40.000Z",
-      "tags": [
-        "ollama",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "titleEn": "Stealth launches Crouton Alpha (1M context, free/free)",
-      "summaryEn": "Crouton Alpha is now on OpenRouter: 1M context, free/free per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-stealth-crouton-alpha",
-      "title": "Stealth 上新：Crouton Alpha（上下文 1M，免费/免费）",
-      "summary": "Crouton Alpha 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/stealth/crouton-alpha",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "tags": [
-        "Stealth",
-        "长上下文",
-        "多模态",
-        "推理",
-        "免费"
-      ],
-      "models": [
-        "stealth/crouton-alpha"
-      ],
-      "importance": 3,
-      "lang": "zh"
-    },
-    {
-      "id": "rss-42cc70ea",
-      "title": "Powering up for a pivotal moment",
-      "summary": "From a nuclear revival to qubits, the MIT Energy Initiative’s annual research conference tracked deployment of today’s technologies to discovery of tomorrow’s breakthroughs.",
-      "kind": "research",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102",
-      "publishedAt": "2026-11-02T19:55:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "研究"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-2a884761",
-      "title": "The latest AI news we announced in October 2026",
-      "summary": "Here are Google’s latest AI updates from October 2026",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-      "publishedAt": "2026-11-02T17:45:00.000Z",
-      "tags": [
-        "Google AI",
         "官方博客",
         "模型发布"
       ],
@@ -1650,26 +2180,31 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
-      "id": "rss-50685d16",
-      "title": "Regina Barzilay and Jim Collins win Pritzker Prize for AI and Science Research Excellence for work in AI-enabled antibiotic discovery",
-      "summary": "The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone in AI-driven drug discovery.",
-      "kind": "research",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102",
-      "publishedAt": "2026-11-02T05:35:00.000Z",
+      "titleEn": "Motif Technologies launches Motif 3 (262K context, $0.3/$1.2)",
+      "summaryEn": "Motif Technologies: Motif 3 is now on OpenRouter: 262K context, $0.3/$1.2 per 1M tokens, supports reasoning/structured-output/tool-calling.",
+      "id": "release-motif-technologies-motif-3",
+      "title": "Motif Technologies 上新：Motif 3（上下文 262K，$0.3/$1.2）",
+      "summary": "Motif Technologies: Motif 3 进入 OpenRouter 目录：上下文 262K，$0.3/$1.2 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/motif-technologies/motif-3",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
       "tags": [
-        "MIT",
-        "官方博客",
-        "研究"
+        "Motif Technologies",
+        "长上下文",
+        "推理",
+        "开源权重"
       ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
+      "models": [
+        "motif-technologies/motif-3"
+      ],
+      "importance": 2,
+      "lang": "zh"
     },
     {
       "titleEn": "Z.ai launches GLM 5.3 FlashX Legal (1M context, $0.37/$1.25)",
@@ -1695,42 +2230,6 @@
       "lang": "zh"
     },
     {
-      "id": "rss-f156b985",
-      "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
-      "summary": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI.",
-      "kind": "research",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
-      "publishedAt": "2026-10-30T20:15:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "研究"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-ebfc0c15",
-      "title": "Speeding up planning decisions with AI",
-      "summary": "Google DeepMind and UK government work together to reduce planning assessment times",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-      "publishedAt": "2026-10-30T14:18:30.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
       "titleEn": "huggingface/transformers released Patch release v5.22.1",
       "summaryEn": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
       "id": "github-release-huggingface-transformers-v5-22-1",
@@ -1751,69 +2250,11 @@
       "lang": "en"
     },
     {
-      "titleEn": "huggingface/transformers released v5.22.0: Mistral Large 4 (Le Chonk)",
-      "summaryEn": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i…",
-      "id": "github-release-huggingface-transformers-v5-22-0",
-      "title": "huggingface/transformers 发布 v5.22.0: Mistral Large 4 (Le Chonk)",
-      "summary": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter natively multimodal Mixture-of-Experts model with 49 billion active parameters per token (52 billion i…",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/huggingface/transformers/releases",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
-      "publishedAt": "2026-10-29T14:15:39.000Z",
-      "tags": [
-        "transformers",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "titleEn": "ollama/ollama released v0.40.13",
-      "summaryEn": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu…",
-      "id": "github-release-ollama-ollama-v0-40-13",
-      "title": "ollama/ollama 发布 v0.40.13",
-      "summary": "## LFM3 on Linux and Windows Liquid AI's [LFM3](https://ollama.com/library/lfm3) models, including text-to-speech in [lfm3-audio](https://ollama.com/library/lfm3-audio) and [lfm3-omni](https://ollama.com/library/lfm3-omni), now run on Linu…",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/ollama/ollama/releases",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
-      "publishedAt": "2026-10-28T19:55:04.000Z",
-      "tags": [
-        "ollama",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-05b7f987",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "summary": "Gemini 4 Carbon: Our next frontier model",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "titleEn": "Particle AI launches Particle-1 (1M context, $0.05/$0.5)",
-      "summaryEn": "Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.05/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "titleEn": "Particle AI launches Particle-1 (1M context, $0.06/$0.5)",
+      "summaryEn": "Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.06/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
       "id": "release-particle-ai-particle-1",
-      "title": "Particle AI 上新：Particle-1（上下文 1M，$0.05/$0.5）",
-      "summary": "Particle AI: Particle-1 进入 OpenRouter 目录：上下文 1M，$0.05/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "title": "Particle AI 上新：Particle-1（上下文 1M，$0.06/$0.5）",
+      "summary": "Particle AI: Particle-1 进入 OpenRouter 目录：上下文 1M，$0.06/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
       "kind": "release",
       "sourceName": "OpenRouter",
       "sourceUrl": "https://openrouter.ai/models",
@@ -1832,40 +2273,28 @@
       "lang": "zh"
     },
     {
-      "id": "rss-96b27cb4",
-      "title": "Genie 4: A new generation of world simulation",
-      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "titleEn": "Particle AI launches Particle-1 (free) (1M context, free/free)",
+      "summaryEn": "Particle AI: Particle-1 (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-particle-ai-particle-1-free",
+      "title": "Particle AI 上新：Particle-1 (free)（上下文 1M，免费/免费）",
+      "summary": "Particle AI: Particle-1 (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
       "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "publishedAt": "2026-10-27T16:01:38.000Z",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/particle-ai/particle-1:free",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
       "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
+        "Particle AI",
+        "长上下文",
+        "多模态",
+        "推理",
+        "免费"
       ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-f0d55083",
-      "title": "Our newest AI Quest: Mapping the human brain",
-      "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-      "publishedAt": "2026-10-26T16:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
+      "models": [
+        "particle-ai/particle-1:free"
       ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
+      "importance": 2,
+      "lang": "zh"
     },
     {
       "titleEn": "OpenAI launches GPT-6.1 Terra (1.1M context, $1/$5)",
@@ -1887,30 +2316,7 @@
       "models": [
         "openai/gpt-6.1-terra"
       ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "OpenAI launches GPT-6.1 Terra (batch) (1.1M context, $0.5/$2.5)",
-      "summaryEn": "OpenAI: GPT-6.1 Terra (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
-      "id": "release-openai-gpt-6-1-terra-batch",
-      "title": "OpenAI 上新：GPT-6.1 Terra (batch)（上下文 1.1M，$0.5/$2.5）",
-      "summary": "OpenAI: GPT-6.1 Terra (batch) 进入 OpenRouter 目录：上下文 1.1M，$0.5/$2.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/openai/gpt-6.1-terra:batch",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "openai/gpt-6.1-terra:batch"
-      ],
-      "importance": 2,
+      "importance": 1,
       "lang": "zh"
     },
     {
@@ -1933,7 +2339,7 @@
       "models": [
         "openai/gpt-6.1-terra-pro"
       ],
-      "importance": 2,
+      "importance": 1,
       "lang": "zh"
     },
     {
@@ -1955,114 +2361,6 @@
       ],
       "models": [
         "openai/gpt-6.1-terra-pro:batch"
-      ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "MoonshotAI launches Kimi K3.1 Pro (1M context, $2/$10)",
-      "summaryEn": "MoonshotAI: Kimi K3.1 Pro is now on OpenRouter: 1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-moonshotai-kimi-k3-1-pro",
-      "title": "MoonshotAI 上新：Kimi K3.1 Pro（上下文 1M，$2/$10）",
-      "summary": "MoonshotAI: Kimi K3.1 Pro 进入 OpenRouter 目录：上下文 1M，$2/$10 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "tags": [
-        "MoonshotAI",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "moonshotai/kimi-k3.1-pro"
-      ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "id": "rss-9e331ce5",
-      "title": "Beyond tree cover: mapping the world’s forest types",
-      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-      "publishedAt": "2026-10-22T14:30:24.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-67f76622",
-      "title": "Southeast Asia’s digital economy to hit $368 billion",
-      "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-      "publishedAt": "2026-10-21T04:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "titleEn": "Recursive launches Flint (free) (262K context, free/free)",
-      "summaryEn": "Recursive: Flint (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "id": "release-recursive-flint-v1-0-free",
-      "title": "Recursive 上新：Flint (free)（上下文 262K，免费/免费）",
-      "summary": "Recursive: Flint (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/recursive/flint-v1.0:free",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "tags": [
-        "Recursive",
-        "长上下文",
-        "推理",
-        "开源权重",
-        "免费"
-      ],
-      "models": [
-        "recursive/flint-v1.0:free"
-      ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "MiniMax launches MiniMax M3.1 Flash (1M context, $0.15/$0.6)",
-      "summaryEn": "MiniMax: MiniMax M3.1 Flash is now on OpenRouter: 1M context, $0.15/$0.6 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-minimax-minimax-m3-1-flash",
-      "title": "MiniMax 上新：MiniMax M3.1 Flash（上下文 1M，$0.15/$0.6）",
-      "summary": "MiniMax: MiniMax M3.1 Flash 进入 OpenRouter 目录：上下文 1M，$0.15/$0.6 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/minimax/minimax-m3.1-flash",
-      "publishedAt": "2026-10-19T00:00:00.000Z",
-      "tags": [
-        "MiniMax",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "minimax/minimax-m3.1-flash"
       ],
       "importance": 1,
       "lang": "zh"
@@ -2128,361 +2426,6 @@
       "lang": "zh"
     },
     {
-      "titleEn": "DeepSeek launches DeepSeek V4.1 Flash 1017 (1M context, $0.006/$0.5)",
-      "summaryEn": "DeepSeek: DeepSeek V4.1 Flash 1017 is now on OpenRouter: 1M context, $0.006/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
-      "id": "release-deepseek-deepseek-v4-1-flash-1017",
-      "title": "DeepSeek 上新：DeepSeek V4.1 Flash 1017（上下文 1M，$0.006/$0.5）",
-      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 进入 OpenRouter 目录：上下文 1M，$0.006/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-      "publishedAt": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "deepseek/deepseek-v4.1-flash-1017"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek launches DeepSeek V4.1 Flash 1017 (batch) (1M context, $0.011/$0.2)",
-      "summaryEn": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) is now on OpenRouter: 1M context, $0.011/$0.2 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
-      "id": "release-deepseek-deepseek-v4-1-flash-1017-batch",
-      "title": "DeepSeek 上新：DeepSeek V4.1 Flash 1017 (batch)（上下文 1M，$0.011/$0.2）",
-      "summary": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch) 进入 OpenRouter 目录：上下文 1M，$0.011/$0.2 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017:batch",
-      "publishedAt": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "deepseek/deepseek-v4.1-flash-1017:batch"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "Elorian launches Glimpse (262K context, $0.6/$3)",
-      "summaryEn": "Elorian: Glimpse is now on OpenRouter: 262K context, $0.6/$3 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-elorian-glimpse",
-      "title": "Elorian 上新：Glimpse（上下文 262K，$0.6/$3）",
-      "summary": "Elorian: Glimpse 进入 OpenRouter 目录：上下文 262K，$0.6/$3 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/elorian/glimpse",
-      "publishedAt": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "Elorian",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "elorian/glimpse"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "PrismML launches Ternary Bonsai 2 9B (262K context, $0.08/$0.13)",
-      "summaryEn": "PrismML: Ternary Bonsai 2 9B is now on OpenRouter: 262K context, $0.08/$0.13 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
-      "id": "release-prism-ml-ternary-bonsai-2-9b",
-      "title": "PrismML 上新：Ternary Bonsai 2 9B（上下文 262K，$0.08/$0.13）",
-      "summary": "PrismML: Ternary Bonsai 2 9B 进入 OpenRouter 目录：上下文 262K，$0.08/$0.13 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/prism-ml/ternary-bonsai-2-9b",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "PrismML",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "prism-ml/ternary-bonsai-2-9b"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "Reflection launches Beam 1.0 501B A23B (1M context, $0.3/$1)",
-      "summaryEn": "Reflection: Beam 1.0 501B A23B is now on OpenRouter: 1M context, $0.3/$1 per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "id": "release-reflection-beam-1-0-501b-a23b",
-      "title": "Reflection 上新：Beam 1.0 501B A23B（上下文 1M，$0.3/$1）",
-      "summary": "Reflection: Beam 1.0 501B A23B 进入 OpenRouter 目录：上下文 1M，$0.3/$1 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "Reflection",
-        "长上下文",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "reflection/beam-1.0-501b-a23b"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "XingChen launches Xing4.0 29B A4B (free) (262K context, free/free)",
-      "summaryEn": "XingChen: Xing4.0 29B A4B (free) is now on OpenRouter: 262K context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "id": "release-xingchen-agi-xing4-0-29b-a4b-free",
-      "title": "XingChen 上新：Xing4.0 29B A4B (free)（上下文 262K，免费/免费）",
-      "summary": "XingChen: Xing4.0 29B A4B (free) 进入 OpenRouter 目录：上下文 262K，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "tags": [
-        "XingChen",
-        "长上下文",
-        "推理",
-        "开源权重",
-        "免费"
-      ],
-      "models": [
-        "xingchen-agi/xing4.0-29b-a4b:free"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "id": "rss-025b91b4",
-      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "publishedAt": "2026-10-15T16:08:03.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "titleEn": "Meta launches Muse Spark Open (1M context, $1.25/$4.25)",
-      "summaryEn": "Meta: Muse Spark Open is now on OpenRouter: 1M context, $1.25/$4.25 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-meta-muse-spark-open",
-      "title": "Meta 上新：Muse Spark Open（上下文 1M，$1.25/$4.25）",
-      "summary": "Meta: Muse Spark Open 进入 OpenRouter 目录：上下文 1M，$1.25/$4.25 每百万 tokens，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/meta/muse-spark-open",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Meta",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "meta/muse-spark-open"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "Moondream launches Moondream 3.1 (32K context, $0.3/$2.5)",
-      "summaryEn": "Moondream: Moondream 3.1 is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision.",
-      "id": "release-moondream-moondream3-1-9b-a2b",
-      "title": "Moondream 上新：Moondream 3.1（上下文 32K，$0.3/$2.5）",
-      "summary": "Moondream: Moondream 3.1 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/moondream/moondream3.1-9b-a2b",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Moondream",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "moondream/moondream3.1-9b-a2b"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "Moondream launches Moondream 3 Preview (32K context, $0.3/$2.5)",
-      "summaryEn": "Moondream: Moondream 3 Preview is now on OpenRouter: 32K context, $0.3/$2.5 per 1M tokens, supports reasoning/vision.",
-      "id": "release-moondream-moondream3-preview",
-      "title": "Moondream 上新：Moondream 3 Preview（上下文 32K，$0.3/$2.5）",
-      "summary": "Moondream: Moondream 3 Preview 进入 OpenRouter 目录：上下文 32K，$0.3/$2.5 每百万 tokens，支持 reasoning/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/moondream/moondream3-preview",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Moondream",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "moondream/moondream3-preview"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (1M context, $0.15/$0.5)",
-      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL is now on OpenRouter: 1M context, $0.15/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-nvidia-nemotron-3-5-super-vl",
-      "title": "NVIDIA 上新：Nemotron 3.5 Super VL（上下文 1M，$0.15/$0.5）",
-      "summary": "NVIDIA: Nemotron 3.5 Super VL 进入 OpenRouter 目录：上下文 1M，$0.15/$0.5 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "NVIDIA",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重"
-      ],
-      "models": [
-        "nvidia/nemotron-3.5-super-vl"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "NVIDIA launches Nemotron 3.5 Super VL (free) (1M context, free/free)",
-      "summaryEn": "NVIDIA: Nemotron 3.5 Super VL (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-nvidia-nemotron-3-5-super-vl-free",
-      "title": "NVIDIA 上新：Nemotron 3.5 Super VL (free)（上下文 1M，免费/免费）",
-      "summary": "NVIDIA: Nemotron 3.5 Super VL (free) 进入 OpenRouter 目录：上下文 1M，免费/免费 每百万 tokens，支持 reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "NVIDIA",
-        "长上下文",
-        "多模态",
-        "推理",
-        "开源权重",
-        "免费"
-      ],
-      "models": [
-        "nvidia/nemotron-3.5-super-vl:free"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "Unbiased launches Pareto 26.10 (1M context, $0.8/$3.2)",
-      "summaryEn": "Pareto 26.10 is now on OpenRouter: 1M context, $0.8/$3.2 per 1M tokens, supports tool-calling/vision.",
-      "id": "release-unbiased-pareto-26-10",
-      "title": "Unbiased 上新：Pareto 26.10（上下文 1M，$0.8/$3.2）",
-      "summary": "Pareto 26.10 进入 OpenRouter 目录：上下文 1M，$0.8/$3.2 每百万 tokens，支持 tool-calling/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/unbiased/pareto-26.10",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "tags": [
-        "Unbiased",
-        "长上下文",
-        "多模态"
-      ],
-      "models": [
-        "unbiased/pareto-26.10"
-      ],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "id": "rss-84ad2e83",
-      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-      "kind": "release",
-      "sourceName": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/rss.xml",
-      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-      "publishedAt": "2026-10-14T02:00:14.000Z",
-      "tags": [
-        "Google DeepMind",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-d3dc22ab",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "publishedAt": "2026-10-13T16:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-b7018172",
-      "title": "Introducing Playground: Create and play custom games",
-      "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games.",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
       "titleEn": "vllm-project/vllm released v0.31.0",
       "summaryEn": "# v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp…",
       "id": "github-release-vllm-project-vllm-v0-31-0",
@@ -2497,42 +2440,6 @@
         "vllm",
         "GitHub Release",
         "开源"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-3b38f89a",
-      "title": "The latest AI news we announced in September 2026",
-      "summary": "Here are Google’s latest AI updates from September 2026",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "publishedAt": "2026-10-02T15:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "rss-f0293447",
-      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-      "kind": "release",
-      "sourceName": "Google AI Blog",
-      "sourceUrl": "https://blog.google/technology/ai/rss/",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "tags": [
-        "Google AI",
-        "官方博客",
-        "模型发布"
       ],
       "models": [],
       "importance": 1,

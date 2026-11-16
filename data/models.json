@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T09:56:12.598Z",
+  "generatedAt": "2026-11-16T09:54:35.035Z",
   "source": "openrouter",
-  "count": 461,
+  "count": 468,
   "models": [
     {
       "id": "aion-labs/aion-2.0",
@@ -185,7 +185,7 @@
         "text"
       ],
       "capabilities": [],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.8,
@@ -196,7 +196,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/aion-labs/aion-rp-llama-3.1-8b",
-        "hf": null
+        "hf": "https://huggingface.co/aion-labs/Aion-RP-Llama-3.1-8B"
       },
       "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying…",
       "sourceIds": [
@@ -510,6 +510,78 @@
         "hf": null
       },
       "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running ag…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "org": "Anthropic",
+      "releaseDate": "2026-11-09",
+      "contextWindow": 1000000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/anthropic/claude-fable-5.2",
+        "hf": null
+      },
+      "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "anthropic/claude-fable-5.2:batch",
+      "name": "Anthropic: Claude Fable 5.2 (batch)",
+      "org": "Anthropic",
+      "releaseDate": "2026-11-09",
+      "contextWindow": 1000000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 4,
+        "output": 20,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/anthropic/claude-fable-5.2:batch",
+        "hf": null
+      },
+      "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in…",
       "sourceIds": [
         "openrouter"
       ],
@@ -1487,76 +1559,68 @@
       "benchmarks": null
     },
     {
-      "id": "bytedance-seed/seed-1.6",
-      "name": "ByteDance Seed: Seed 1.6",
-      "org": "ByteDance Seed",
-      "releaseDate": "2025-12-23",
-      "contextWindow": 262144,
-      "maxOutput": 32768,
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "org": "Baidu",
+      "releaseDate": "2026-11-10",
+      "contextWindow": 1024000,
+      "maxOutput": 921600,
       "modalities": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "capabilities": [
         "reasoning",
         "structured-output",
-        "tool-calling",
-        "video",
-        "vision"
+        "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.25,
-        "output": 2,
+        "input": 0,
+        "output": 0,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
       "links": {
         "official": null,
-        "api": "https://openrouter.ai/bytedance-seed/seed-1.6",
-        "hf": null
+        "api": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+        "hf": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
       },
-      "description": "Seed 1.6 is a general-purpose model released by the ByteDance Seed team. It incorporates multimodal capabilities and ad…",
+      "description": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding,…",
       "sourceIds": [
         "openrouter"
       ],
       "benchmarks": null
     },
     {
-      "id": "bytedance-seed/seed-1.6-flash",
-      "name": "ByteDance Seed: Seed 1.6 Flash",
-      "org": "ByteDance Seed",
-      "releaseDate": "2025-12-23",
-      "contextWindow": 262144,
-      "maxOutput": 32768,
+      "id": "baidu/ernie-light-dt-1.0-intl",
+      "name": "Baidu: ERNIE-Light-DT-1.0",
+      "org": "Baidu",
+      "releaseDate": "2026-11-10",
+      "contextWindow": 1024000,
+      "maxOutput": 131072,
       "modalities": [
-        "text",
-        "image",
-        "video"
+        "text"
       ],
       "capabilities": [
         "reasoning",
         "structured-output",
-        "tool-calling",
-        "video",
-        "vision"
+        "tool-calling"
       ],
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.075,
-        "output": 0.3,
+        "input": 1.13,
+        "output": 3.94,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
       "links": {
         "official": null,
-        "api": "https://openrouter.ai/bytedance-seed/seed-1.6-flash",
+        "api": "https://openrouter.ai/baidu/ernie-light-dt-1.0-intl",
         "hf": null
       },
-      "description": "Seed 1.6 Flash is an ultra-fast multimodal deep thinking model by ByteDance Seed, supporting both text and visual under…",
+      "description": "ERNIE-Light-DT-1.0 is based on open-source GLM models and includes research findings from Baidu Search's Lightning larg…",
       "sourceIds": [
         "openrouter"
       ],
@@ -1595,44 +1659,6 @@
         "hf": null
       },
       "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "bytedance-seed/seed-2.0-code",
-      "name": "ByteDance Seed: Seed-2.0-Code",
-      "org": "ByteDance Seed",
-      "releaseDate": "2026-08-12",
-      "contextWindow": 262144,
-      "maxOutput": 131072,
-      "modalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling",
-        "video",
-        "vision"
-      ],
-      "openWeights": false,
-      "license": null,
-      "pricing": {
-        "input": 0.5,
-        "output": 3,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/bytedance-seed/seed-2.0-code",
-        "hf": null
-      },
-      "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multi…",
       "sourceIds": [
         "openrouter"
       ],
@@ -1830,7 +1856,7 @@
         "tool-calling",
         "vision"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.3,
@@ -1841,7 +1867,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/cohere/command-a-plus",
-        "hf": null
+        "hf": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16"
       },
       "description": "Command A+ is Cohere's flagship model for enterprise agentic workflows. It accepts text and image inputs with a 192K co…",
       "sourceIds": [
@@ -1863,7 +1889,7 @@
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.15,
@@ -1874,7 +1900,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/cohere/command-r-08-2024",
-        "hf": null
+        "hf": "https://huggingface.co/CohereLabs/c4ai-command-r-08-2024"
       },
       "description": "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual…",
       "sourceIds": [
@@ -1896,7 +1922,7 @@
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 2.5,
@@ -1907,7 +1933,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/cohere/command-r-plus-08-2024",
-        "hf": null
+        "hf": "https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024"
       },
       "description": "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughp…",
       "sourceIds": [
@@ -1929,7 +1955,7 @@
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.0375,
@@ -1940,7 +1966,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/cohere/command-r7b-12-2024",
-        "hf": null
+        "hf": "https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024"
       },
       "description": "Command R7B (12-2024) is a small, fast update of the Command R+ model, delivered in December 2024. It excels at RAG, to…",
       "sourceIds": [
@@ -1987,7 +2013,7 @@
       "org": "DeepSeek",
       "releaseDate": "2024-12-26",
       "contextWindow": 163840,
-      "maxOutput": 16384,
+      "maxOutput": 16000,
       "modalities": [
         "text"
       ],
@@ -1998,8 +2024,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.32,
-        "output": 0.89,
+        "input": 0.2574,
+        "output": 1.0287,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2223,7 +2249,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-04-24",
       "contextWindow": 1048576,
-      "maxOutput": 943717,
+      "maxOutput": 393216,
       "modalities": [
         "text"
       ],
@@ -2235,8 +2261,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.091,
-        "output": 0.182,
+        "input": 0.09,
+        "output": 0.18,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2257,7 +2283,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-07-31",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 384000,
       "modalities": [
         "text"
       ],
@@ -2269,8 +2295,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.0434,
-        "output": 0.3,
+        "input": 0.06,
+        "output": 0.18,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2361,7 +2387,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-04-24",
       "contextWindow": 1048576,
-      "maxOutput": 384000,
+      "maxOutput": 393216,
       "modalities": [
         "text"
       ],
@@ -2373,8 +2399,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.95526,
-        "output": 1.91052,
+        "input": 0.9,
+        "output": 1.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2429,7 +2455,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-09-10",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 393216,
       "modalities": [
         "text",
         "image"
@@ -2443,8 +2469,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.051,
-        "output": 0.567,
+        "input": 0.14,
+        "output": 0.42,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2465,7 +2491,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-10-17",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 393216,
       "modalities": [
         "text",
         "image"
@@ -2479,8 +2505,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.006,
-        "output": 0.5,
+        "input": 0.3,
+        "output": 1.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2515,8 +2541,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.011,
-        "output": 0.2,
+        "input": 0.037,
+        "output": 0.325,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2537,7 +2563,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-09-10",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 131072,
       "modalities": [
         "text",
         "image"
@@ -2551,8 +2577,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.011,
-        "output": 0.2,
+        "input": 0.112,
+        "output": 0.336,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2584,7 +2610,7 @@
         "tool-calling",
         "vision"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0,
@@ -2595,7 +2621,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-        "hf": null
+        "hf": "https://huggingface.co/dots-studio/dots3-note-prev"
       },
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B…",
       "sourceIds": [
@@ -3846,6 +3872,166 @@
       "benchmarks": null
     },
     {
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "org": "Google",
+      "releaseDate": "2026-11-10",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-carbon",
+        "hf": null
+      },
+      "description": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text,…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "google/gemini-4-carbon:batch",
+      "name": "Google: Gemini 4 Carbon (batch)",
+      "org": "Google",
+      "releaseDate": "2026-11-10",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-carbon:batch",
+        "hf": null
+      },
+      "description": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text,…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "org": "Google",
+      "releaseDate": "2026-11-12",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1.5,
+        "output": 7.5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-hydrogen",
+        "hf": null
+      },
+      "description": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "google/gemini-4-hydrogen:batch",
+      "name": "Google: Gemini 4 Hydrogen (batch)",
+      "org": "Google",
+      "releaseDate": "2026-11-12",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 0.75,
+        "output": 3.75,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-hydrogen:batch",
+        "hf": null
+      },
+      "description": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "name": "Google: Nano Banana 2.1",
       "org": "Google",
@@ -4040,7 +4226,7 @@
       "license": null,
       "pricing": {
         "input": 0.08,
-        "output": 0.45,
+        "output": 0.35,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4364,7 +4550,7 @@
       "license": null,
       "pricing": {
         "input": 0.06,
-        "output": 0.25,
+        "output": 0.15,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4497,10 +4683,9 @@
       ],
       "capabilities": [
         "reasoning",
-        "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.045,
@@ -4511,9 +4696,45 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-        "hf": null
+        "hf": "https://huggingface.co/inclusionAI/Ling-3.1-flash"
       },
       "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "org": "inclusionAI",
+      "releaseDate": "2026-11-13",
+      "contextWindow": 1048576,
+      "maxOutput": 262144,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+        "hf": "https://huggingface.co/inclusionAI/Ling-3.2-flash"
+      },
+      "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context…",
       "sourceIds": [
         "openrouter"
       ],
@@ -4584,12 +4805,12 @@
       "benchmarks": null
     },
     {
-      "id": "liquid/lfm-2.5-2.6b",
-      "name": "LiquidAI: LFM2.5-2.6B",
-      "org": "LiquidAI",
-      "releaseDate": "2026-08-11",
-      "contextWindow": 128000,
-      "maxOutput": 8192,
+      "id": "kt/midm-k-3.0-pro",
+      "name": "KT: Mi:dm K 3.0 Pro",
+      "org": "KT",
+      "releaseDate": "2026-11-05",
+      "contextWindow": 261795,
+      "maxOutput": 235615,
       "modalities": [
         "text"
       ],
@@ -4598,54 +4819,20 @@
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": true,
+      "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.35,
-        "output": 0.5,
+        "input": 0.2,
+        "output": 0.8,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
       "links": {
         "official": null,
-        "api": "https://openrouter.ai/liquid/lfm-2.5-2.6b",
-        "hf": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
+        "api": "https://openrouter.ai/kt/midm-k-3.0-pro",
+        "hf": null
       },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and lo…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "org": "LiquidAI",
-      "releaseDate": "2026-08-11",
-      "contextWindow": 65536,
-      "maxOutput": 8192,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
-        "hf": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
-      },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and lo…",
+      "description": "Mi:dm K 3.0 Pro is a Mixture-of-Experts reasoning model from KT, with 120B total and 12B active parameters. It uses a h…",
       "sourceIds": [
         "openrouter"
       ],
@@ -4769,8 +4956,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.4,
-        "output": 0.75,
+        "input": 0.3,
+        "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4828,7 +5015,9 @@
       "modalities": [
         "text"
       ],
-      "capabilities": [],
+      "capabilities": [
+        "tool-calling"
+      ],
       "openWeights": true,
       "license": null,
       "pricing": {
@@ -4917,7 +5106,7 @@
       "org": "Meta",
       "releaseDate": "2024-09-25",
       "contextWindow": 131072,
-      "maxOutput": 117964,
+      "maxOutput": 72000,
       "modalities": [
         "text"
       ],
@@ -4927,8 +5116,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.05,
-        "output": 0.33,
+        "input": 0.0509,
+        "output": 0.335,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4949,7 +5138,7 @@
       "org": "Meta",
       "releaseDate": "2024-12-06",
       "contextWindow": 131072,
-      "maxOutput": 32768,
+      "maxOutput": 115200,
       "modalities": [
         "text"
       ],
@@ -4960,8 +5149,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.59,
-        "output": 0.79,
+        "input": 0.71,
+        "output": 0.71,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -5074,6 +5263,46 @@
         "hf": "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
       },
       "description": "Llama Guard 4 is a Llama 4 Scout-derived multimodal pretrained model, fine-tuned for content safety classification. Sim…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "meta/muse-ember",
+      "name": "Meta: Muse Ember",
+      "org": "Meta",
+      "releaseDate": "2026-11-09",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 0.1,
+        "output": 0.5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/meta/muse-ember",
+        "hf": null
+      },
+      "description": "Muse Ember is the smallest and most efficient model from Meta that’s designed for complex reasoning execution and the w…",
       "sourceIds": [
         "openrouter"
       ],
@@ -5347,7 +5576,7 @@
       "org": "Meta",
       "releaseDate": "2026-10-15",
       "contextWindow": 1048576,
-      "maxOutput": 131072,
+      "maxOutput": 943718,
       "modalities": [
         "text",
         "image",
@@ -5454,45 +5683,12 @@
       "benchmarks": null
     },
     {
-      "id": "minimax/minimax-m1",
-      "name": "MiniMax: MiniMax M1",
-      "org": "MiniMax",
-      "releaseDate": "2025-06-17",
-      "contextWindow": 1000000,
-      "maxOutput": 40000,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling"
-      ],
-      "openWeights": false,
-      "license": null,
-      "pricing": {
-        "input": 0.55,
-        "output": 2.2,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/minimax/minimax-m1",
-        "hf": null
-      },
-      "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. I…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "org": "MiniMax",
       "releaseDate": "2026-02-12",
-      "contextWindow": 204800,
-      "maxOutput": 58982,
+      "contextWindow": 198000,
+      "maxOutput": 176947,
       "modalities": [
         "text"
       ],
@@ -5504,7 +5700,7 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.3,
+        "input": 0.295,
         "output": 1.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -5525,7 +5721,7 @@
       "name": "MiniMax: MiniMax M2.7",
       "org": "MiniMax",
       "releaseDate": "2026-03-18",
-      "contextWindow": 204800,
+      "contextWindow": 196608,
       "maxOutput": 176947,
       "modalities": [
         "text"
@@ -5886,7 +6082,7 @@
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 2,
@@ -5897,7 +6093,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/mistralai/mistral-large-2407",
-        "hf": null
+        "hf": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407"
       },
       "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available…",
       "sourceIds": [
@@ -5921,7 +6117,7 @@
         "tool-calling",
         "vision"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.5,
@@ -5932,7 +6128,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/mistralai/mistral-large-2512",
-        "hf": null
+        "hf": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512"
       },
       "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 4…",
       "sourceIds": [
@@ -6028,7 +6224,7 @@
         "tool-calling",
         "vision"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 1.5,
@@ -6039,7 +6235,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/mistralai/mistral-medium-3-5",
-        "hf": null
+        "hf": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
       },
       "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with…",
       "sourceIds": [
@@ -6064,7 +6260,7 @@
         "tool-calling",
         "vision"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
         "input": 0.75,
@@ -6075,7 +6271,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/mistralai/mistral-medium-3-5:batch",
-        "hf": null
+        "hf": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
       },
       "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with…",
       "sourceIds": [
@@ -6293,7 +6489,7 @@
       "org": "Mistral",
       "releaseDate": "2025-06-20",
       "contextWindow": 256000,
-      "maxOutput": 16384,
+      "maxOutput": 26214,
       "modalities": [
         "text",
         "image"
@@ -6306,8 +6502,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.075,
-        "output": 0.2,
+        "input": 0.1,
+        "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6563,7 +6759,7 @@
       "org": "MoonshotAI",
       "releaseDate": "2026-01-27",
       "contextWindow": 262144,
-      "maxOutput": 65536,
+      "maxOutput": 235929,
       "modalities": [
         "text",
         "image"
@@ -6577,8 +6773,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.532,
-        "output": 3.325,
+        "input": 0.5,
+        "output": 2.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6725,8 +6921,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 2,
-        "output": 10,
+        "input": 0.2403,
+        "output": 8.4023,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6742,12 +6938,48 @@
       "benchmarks": null
     },
     {
+      "id": "moonshotai/kimi-k3.1-pro:batch",
+      "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+      "org": "MoonshotAI",
+      "releaseDate": "2026-10-23",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "capabilities": [
+        "reasoning",
+        "video",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.7,
+        "output": 6,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/moonshotai/kimi-k3.1-pro:batch",
+        "hf": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+      },
+      "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3,…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "org": "MoonshotAI",
       "releaseDate": "2026-07-16",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 16384,
       "modalities": [
         "text",
         "image",
@@ -6763,8 +6995,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.917,
-        "output": 6,
+        "input": 2.28,
+        "output": 11.4,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6906,6 +7138,40 @@
       "benchmarks": null
     },
     {
+      "id": "motif-technologies/motif-3",
+      "name": "Motif Technologies: Motif 3",
+      "org": "Motif Technologies",
+      "releaseDate": "2026-11-02",
+      "contextWindow": 262144,
+      "maxOutput": 235929,
+      "modalities": [
+        "text"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.3,
+        "output": 1.2,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/motif-technologies/motif-3",
+        "hf": "https://huggingface.co/Motif-Technologies/Motif-3"
+      },
+      "description": "Motif 3 is a Mixture-of-Experts language model from Motif Technologies, with 314B total and 13.2B active parameters. It…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "nex-agi/nex-n2.5-mini",
       "name": "Nex AGI: Nex-N2.5-Mini",
       "org": "Nex AGI",
@@ -6971,6 +7237,42 @@
         "hf": "https://huggingface.co/nex-agi/Nex-N2.5-Pro"
       },
       "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding w…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "nex-agi/nex-n2.6",
+      "name": "Nex AGI: Nex-N2.6",
+      "org": "Nex AGI",
+      "releaseDate": "2026-11-10",
+      "contextWindow": 262144,
+      "maxOutput": 235929,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.12,
+        "output": 0.4,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/nex-agi/nex-n2.6",
+        "hf": "https://huggingface.co/nex-agi/Nex-N2.6"
+      },
+      "description": "Nex-N2.6 is an agentic model from Nex AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)…",
       "sourceIds": [
         "openrouter"
       ],
@@ -7087,7 +7389,7 @@
       "name": "NVIDIA: Nemotron 3 Super",
       "org": "NVIDIA",
       "releaseDate": "2026-03-11",
-      "contextWindow": 1048576,
+      "contextWindow": 262144,
       "maxOutput": 16384,
       "modalities": [
         "text"
@@ -7290,7 +7592,7 @@
       "org": "NVIDIA",
       "releaseDate": "2026-10-15",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 235929,
       "modalities": [
         "text",
         "image",
@@ -7314,7 +7616,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
-        "hf": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL"
+        "hf": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
       },
       "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out…",
       "sourceIds": [
@@ -7352,7 +7654,7 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
-        "hf": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL"
+        "hf": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
       },
       "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out…",
       "sourceIds": [
@@ -10596,7 +10898,7 @@
       "org": "OpenAI",
       "releaseDate": "2025-08-05",
       "contextWindow": 131072,
-      "maxOutput": 117964,
+      "maxOutput": 65536,
       "modalities": [
         "text"
       ],
@@ -10608,8 +10910,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.03,
-        "output": 0.13,
+        "input": 0.075,
+        "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -10911,7 +11213,7 @@
       "org": "OpenRouter",
       "releaseDate": "2026-07-17",
       "contextWindow": 2000000,
-      "maxOutput": 65536,
+      "maxOutput": 64000,
       "modalities": [
         "text",
         "image",
@@ -10946,7 +11248,7 @@
       "org": "OpenRouter",
       "releaseDate": "2026-11-05",
       "contextWindow": 2000000,
-      "maxOutput": 65536,
+      "maxOutput": 64000,
       "modalities": [
         "text",
         "image",
@@ -11110,7 +11412,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.05,
+        "input": 0.06,
         "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -11118,6 +11420,42 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/particle-ai/particle-1",
+        "hf": null
+      },
+      "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suite…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
+      "org": "Particle AI",
+      "releaseDate": "2026-10-28",
+      "contextWindow": 1048576,
+      "maxOutput": 131072,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/particle-ai/particle-1:free",
         "hf": null
       },
       "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suite…",
@@ -11476,39 +11814,6 @@
       "benchmarks": null
     },
     {
-      "id": "qwen/qwen-2.5-7b-instruct",
-      "name": "Qwen: Qwen2.5 7B Instruct",
-      "org": "Qwen",
-      "releaseDate": "2024-10-16",
-      "contextWindow": 32768,
-      "maxOutput": 29491,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "structured-output",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.1,
-        "output": 0.2,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/qwen/qwen-2.5-7b-instruct",
-        "hf": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
-      },
-      "description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: -…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
       "name": "Qwen2.5 Coder 32B Instruct",
       "org": "Alibaba",
@@ -11852,7 +12157,6 @@
         "text"
       ],
       "capabilities": [
-        "structured-output",
         "tool-calling"
       ],
       "openWeights": true,
@@ -12044,42 +12348,6 @@
       "benchmarks": null
     },
     {
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-      "org": "Qwen",
-      "releaseDate": "2025-10-06",
-      "contextWindow": 262144,
-      "maxOutput": 235929,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling",
-        "vision"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.29,
-        "output": 1,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/qwen/qwen3-vl-30b-a3b-thinking",
-        "hf": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking"
-      },
-      "description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for image…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "org": "Qwen",
@@ -12234,7 +12502,7 @@
       "org": "Qwen",
       "releaseDate": "2026-02-16",
       "contextWindow": 262144,
-      "maxOutput": 64000,
+      "maxOutput": 81920,
       "modalities": [
         "text",
         "image",
@@ -12250,8 +12518,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.6,
-        "output": 3.6,
+        "input": 0.45,
+        "output": 3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -12272,7 +12540,7 @@
       "org": "Qwen",
       "releaseDate": "2026-03-10",
       "contextWindow": 262144,
-      "maxOutput": 235929,
+      "maxOutput": 40960,
       "modalities": [
         "text",
         "image",
@@ -12288,8 +12556,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.17,
-        "output": 0.25,
+        "input": 0.061,
+        "output": 0.089,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -12901,6 +13169,44 @@
       "benchmarks": null
     },
     {
+      "id": "qwen/qwen3.8-max-0902:batch",
+      "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+      "org": "Qwen",
+      "releaseDate": "2026-09-03",
+      "contextWindow": 262144,
+      "maxOutput": 131072,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1.15,
+        "output": 3.45,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/qwen/qwen3.8-max-0902:batch",
+        "hf": null
+      },
+      "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "qwen/qwen3.8-max-prime",
       "name": "Qwen: Qwen3.8 Max Prime",
       "org": "Qwen",
@@ -12973,6 +13279,44 @@
         "hf": null
       },
       "description": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilitie…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "qwen/qwen4-max",
+      "name": "Qwen: Qwen4 Max",
+      "org": "Qwen",
+      "releaseDate": "2026-11-16",
+      "contextWindow": 1000000,
+      "maxOutput": 131072,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1.5,
+        "output": 4.5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/qwen/qwen4-max",
+        "hf": null
+      },
+      "description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, wi…",
       "sourceIds": [
         "openrouter"
       ],
@@ -13190,21 +13534,22 @@
         "text"
       ],
       "capabilities": [
+        "reasoning",
         "structured-output",
         "tool-calling"
       ],
-      "openWeights": false,
+      "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.2,
-        "output": 0.6,
+        "input": 0.1,
+        "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
       "links": {
         "official": null,
         "api": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
-        "hf": null
+        "hf": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
       },
       "description": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
       "sourceIds": [
@@ -13487,79 +13832,6 @@
       "benchmarks": null
     },
     {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "org": "Stealth",
-      "releaseDate": "2026-11-03",
-      "contextWindow": 1048576,
-      "maxOutput": 943718,
-      "modalities": [
-        "text",
-        "image",
-        "audio",
-        "video"
-      ],
-      "capabilities": [
-        "audio",
-        "reasoning",
-        "structured-output",
-        "tool-calling",
-        "video",
-        "vision"
-      ],
-      "openWeights": false,
-      "license": null,
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/stealth/crouton-alpha",
-        "hf": null
-      },
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for execu…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "stepfun/step-3.5-flash",
-      "name": "StepFun: Step 3.5 Flash",
-      "org": "StepFun",
-      "releaseDate": "2026-01-29",
-      "contextWindow": 262144,
-      "maxOutput": 65536,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.1,
-        "output": 0.3,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/stepfun/step-3.5-flash",
-        "hf": "https://huggingface.co/stepfun-ai/Step-3.5-Flash"
-      },
-      "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) archi…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "name": "StepFun: Step 3.7 Flash",
       "org": "StepFun",
@@ -13602,7 +13874,7 @@
       "name": "StepFun: Step 5 Preview",
       "org": "StepFun",
       "releaseDate": "2026-10-08",
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "maxOutput": 64000,
       "modalities": [
         "text",
@@ -13630,39 +13902,6 @@
         "hf": "https://huggingface.co/stepfun-ai/Step-5-Preview"
       },
       "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B act…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "tencent/hunyuan-a13b-instruct",
-      "name": "Tencent: Hunyuan A13B Instruct",
-      "org": "Tencent",
-      "releaseDate": "2025-07-08",
-      "contextWindow": 131072,
-      "maxOutput": 117964,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.14,
-        "output": 0.57,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/tencent/hunyuan-a13b-instruct",
-        "hf": "https://huggingface.co/tencent/Hunyuan-A13B-Instruct"
-      },
-      "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total param…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14033,6 +14272,77 @@
       "benchmarks": null
     },
     {
+      "id": "thinkingmachines/inkling-2-small",
+      "name": "Thinking Machines: Inkling 2 Small",
+      "org": "Thinking Machines",
+      "releaseDate": "2026-11-09",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.3,
+        "output": 1,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/thinkingmachines/inkling-2-small",
+        "hf": "https://huggingface.co/thinkingmachines/Inkling-2-Small"
+      },
+      "description": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B ac…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "org": "Thinking Machines",
+      "releaseDate": "2026-11-09",
+      "contextWindow": 1048576,
+      "maxOutput": 131072,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0,
+        "output": 0,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+        "hf": "https://huggingface.co/thinkingmachines/Inkling-2-Small"
+      },
+      "description": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B ac…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "thinkingmachines/inkling-small",
       "name": "Thinking Machines: Inkling Small",
       "org": "Thinking Machines",
@@ -14112,7 +14422,7 @@
       "org": "TypeSafe",
       "releaseDate": "2026-09-25",
       "contextWindow": 1000000,
-      "maxOutput": 65536,
+      "maxOutput": 64000,
       "modalities": [
         "text",
         "image",
@@ -14176,6 +14486,41 @@
       "benchmarks": null
     },
     {
+      "id": "unbiased/pareto-26.10-preview",
+      "name": "Pareto 26.10 Preview",
+      "org": "Unbiased",
+      "releaseDate": "2026-10-01",
+      "contextWindow": 1048576,
+      "maxOutput": 131072,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 0.8,
+        "output": 3.2,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/unbiased/pareto-26.10-preview",
+        "hf": null
+      },
+      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-lev…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "unbiased/pareto-26.9",
       "name": "Pareto 26.9",
       "org": "Unbiased",
@@ -14226,8 +14571,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.35,
-        "output": 0.65,
+        "input": 0.3,
+        "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -14744,8 +15089,8 @@
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "org": "Xiaomi",
       "releaseDate": "2026-04-22",
-      "contextWindow": 1050000,
-      "maxOutput": 235929,
+      "contextWindow": 1024000,
+      "maxOutput": 131072,
       "modalities": [
         "text"
       ],
@@ -14757,8 +15102,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.48,
-        "output": 1.8,
+        "input": 0.435,
+        "output": 0.87,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -14888,40 +15233,6 @@
         "hf": null
       },
       "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
-      "org": "XingChen",
-      "releaseDate": "2026-10-16",
-      "contextWindow": 262144,
-      "maxOutput": 235929,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
-        "hf": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B"
-      },
-      "description": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the succe…",
       "sourceIds": [
         "openrouter"
       ],
@@ -15120,8 +15431,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.6,
-        "output": 2.2,
+        "input": 0.4,
+        "output": 1.75,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15244,7 +15555,7 @@
       "org": "Z.ai",
       "releaseDate": "2026-04-07",
       "contextWindow": 204800,
-      "maxOutput": 131072,
+      "maxOutput": 182476,
       "modalities": [
         "text"
       ],
@@ -15290,7 +15601,7 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.006,
+        "input": 0.007,
         "output": 6.8,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -15298,40 +15609,6 @@
       "links": {
         "official": null,
         "api": "https://openrouter.ai/z-ai/glm-5.2",
-        "hf": "https://huggingface.co/zai-org/GLM-5.2"
-      },
-      "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, a…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "z-ai/glm-5.2:batch",
-      "name": "Z.ai: GLM 5.2 (batch)",
-      "org": "Z.ai",
-      "releaseDate": "2026-06-16",
-      "contextWindow": 1048576,
-      "maxOutput": 943718,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.623,
-        "output": 1.271,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/z-ai/glm-5.2:batch",
         "hf": "https://huggingface.co/zai-org/GLM-5.2"
       },
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, a…",
@@ -15396,8 +15673,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.0335,
-        "output": 0.083,
+        "input": 0.0399,
+        "output": 0.0784,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15652,8 +15929,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 10,
-        "output": 50,
+        "input": 8,
+        "output": 40,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15796,7 +16073,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.006,
+        "input": 0.036,
         "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -15886,7 +16163,7 @@
       "org": "Google",
       "releaseDate": "2026-04-27",
       "contextWindow": 1048576,
-      "maxOutput": 65536,
+      "maxOutput": 943718,
       "modalities": [
         "text",
         "image",
@@ -15904,8 +16181,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.75,
-        "output": 3.75,
+        "input": 1.5,
+        "output": 7.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15983,7 +16260,7 @@
       "license": null,
       "pricing": {
         "input": 0.1824,
-        "output": 10.1489,
+        "output": 11.0055,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -16270,8 +16547,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.0335,
-        "output": 0.083,
+        "input": 0.0399,
+        "output": 0.0784,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
