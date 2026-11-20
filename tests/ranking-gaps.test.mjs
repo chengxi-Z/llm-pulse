@@ -29,6 +29,7 @@ const boards = [
 test("matchesModelNames ignores parenthetical variants and date suffixes", () => {
   assert.equal(matchesModelNames("Claude Opus 4.7 (Max)", "Claude Opus 4.7"), true);
   assert.equal(matchesModelNames("Claude Opus 4.5.20251101", "Claude Opus 4.5"), true);
+  assert.equal(matchesModelNames("DeepSeek V4 Pro", "DeepSeek V4 Pro 0423"), true);
   assert.equal(matchesModelNames("Claude Opus 4.7", "Claude Opus 4.6"), false);
   assert.equal(matchesModelNames("Claude Opus 4", "Claude Opus 4.7"), false);
 });

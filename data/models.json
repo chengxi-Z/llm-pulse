@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T09:54:35.035Z",
+  "generatedAt": "2026-11-20T08:30:21.552Z",
   "source": "openrouter",
-  "count": 468,
+  "count": 477,
   "models": [
     {
       "id": "aion-labs/aion-2.0",
@@ -1975,39 +1975,6 @@
       "benchmarks": null
     },
     {
-      "id": "cohere/north-mini-code:free",
-      "name": "Cohere: North Mini Code (free)",
-      "org": "Cohere",
-      "releaseDate": "2026-06-17",
-      "contextWindow": 256000,
-      "maxOutput": 64000,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/cohere/north-mini-code:free",
-        "hf": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
-      },
-      "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts m…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "org": "DeepSeek",
@@ -2113,7 +2080,7 @@
       "org": "DeepSeek",
       "releaseDate": "2025-05-28",
       "contextWindow": 163840,
-      "maxOutput": 32768,
+      "maxOutput": 32000,
       "modalities": [
         "text"
       ],
@@ -2125,8 +2092,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.5,
-        "output": 2.15,
+        "input": 0.571,
+        "output": 2.286,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2283,7 +2250,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-07-31",
       "contextWindow": 1048576,
-      "maxOutput": 384000,
+      "maxOutput": 943718,
       "modalities": [
         "text"
       ],
@@ -2295,8 +2262,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.06,
-        "output": 0.18,
+        "input": 0.047,
+        "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2433,8 +2400,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.111,
-        "output": 4.44,
+        "input": 1.32,
+        "output": 3.96,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2455,7 +2422,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-09-10",
       "contextWindow": 1048576,
-      "maxOutput": 393216,
+      "maxOutput": 943718,
       "modalities": [
         "text",
         "image"
@@ -2469,8 +2436,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.14,
-        "output": 0.42,
+        "input": 0.3,
+        "output": 1.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2541,8 +2508,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.037,
-        "output": 0.325,
+        "input": 0.035,
+        "output": 0.149,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2563,7 +2530,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-09-10",
       "contextWindow": 1048576,
-      "maxOutput": 131072,
+      "maxOutput": 384000,
       "modalities": [
         "text",
         "image"
@@ -2577,8 +2544,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.112,
-        "output": 0.336,
+        "input": 0.05,
+        "output": 0.15,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4032,6 +3999,86 @@
       "benchmarks": null
     },
     {
+      "id": "google/gemini-4-neon",
+      "name": "Google: Gemini 4 Neon",
+      "org": "Google",
+      "releaseDate": "2026-11-18",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-neon",
+        "hf": null
+      },
+      "description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "google/gemini-4-neon:batch",
+      "name": "Google: Gemini 4 Neon (batch)",
+      "org": "Google",
+      "releaseDate": "2026-11-18",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "audio",
+        "video"
+      ],
+      "capabilities": [
+        "audio",
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "video",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1.5,
+        "output": 7.5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/google/gemini-4-neon:batch",
+        "hf": null
+      },
+      "description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "name": "Google: Nano Banana 2.1",
       "org": "Google",
@@ -4212,7 +4259,7 @@
       "org": "Google",
       "releaseDate": "2025-03-12",
       "contextWindow": 131072,
-      "maxOutput": 117964,
+      "maxOutput": 16384,
       "modalities": [
         "text",
         "image"
@@ -4226,7 +4273,7 @@
       "license": null,
       "pricing": {
         "input": 0.08,
-        "output": 0.35,
+        "output": 0.16,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -5071,42 +5118,12 @@
       "benchmarks": null
     },
     {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "org": "Meta",
-      "releaseDate": "2024-09-25",
-      "contextWindow": 60000,
-      "maxOutput": 54000,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.027,
-        "output": 0.201,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/meta-llama/llama-3.2-1b-instruct",
-        "hf": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
-      },
-      "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct",
       "org": "Meta",
       "releaseDate": "2024-09-25",
       "contextWindow": 131072,
-      "maxOutput": 72000,
+      "maxOutput": 117964,
       "modalities": [
         "text"
       ],
@@ -5116,8 +5133,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.0509,
-        "output": 0.335,
+        "input": 0.05,
+        "output": 0.33,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -5314,7 +5331,7 @@
       "org": "Meta",
       "releaseDate": "2026-08-09",
       "contextWindow": 131072,
-      "maxOutput": 16384,
+      "maxOutput": 117964,
       "modalities": [
         "text",
         "image"
@@ -5328,8 +5345,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.35,
+        "output": 1.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6191,8 +6208,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.4,
-        "output": 2,
+        "input": 0.44,
+        "output": 2.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6298,8 +6315,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.4,
-        "output": 2,
+        "input": 0.44,
+        "output": 2.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6489,7 +6506,7 @@
       "org": "Mistral",
       "releaseDate": "2025-06-20",
       "contextWindow": 256000,
-      "maxOutput": 26214,
+      "maxOutput": 16384,
       "modalities": [
         "text",
         "image"
@@ -6502,8 +6519,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.1,
-        "output": 0.3,
+        "input": 0.075,
+        "output": 0.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6546,6 +6563,39 @@
         "hf": "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1"
       },
       "description": "Mistral's official instruct fine-tuned version of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b). It uses 39B active…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "mistralai/pixtral-large-2502",
+      "name": "Mistral: Pixtral Large 2502",
+      "org": "Mistral",
+      "releaseDate": "2026-11-20",
+      "contextWindow": 128000,
+      "maxOutput": 102400,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 2,
+        "output": 6,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/mistralai/pixtral-large-2502",
+        "hf": null
+      },
+      "description": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](…",
       "sourceIds": [
         "openrouter"
       ],
@@ -6846,7 +6896,7 @@
       "license": null,
       "pricing": {
         "input": 0.6,
-        "output": 3.5,
+        "output": 3,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6921,8 +6971,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.2403,
-        "output": 8.4023,
+        "input": 0.253,
+        "output": 8.8,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6951,14 +7001,16 @@
       ],
       "capabilities": [
         "reasoning",
+        "structured-output",
+        "tool-calling",
         "video",
         "vision"
       ],
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.7,
-        "output": 6,
+        "input": 0.372,
+        "output": 5.583,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -7424,7 +7476,7 @@
       "org": "NVIDIA",
       "releaseDate": "2026-06-04",
       "contextWindow": 262144,
-      "maxOutput": 182520,
+      "maxOutput": 16384,
       "modalities": [
         "text"
       ],
@@ -7436,8 +7488,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.6,
-        "output": 2.4,
+        "input": 0.5,
+        "output": 2.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -7524,7 +7576,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "org": "NVIDIA",
       "releaseDate": "2026-08-11",
-      "contextWindow": 262144,
+      "contextWindow": 1048576,
       "maxOutput": 235929,
       "modalities": [
         "text"
@@ -10720,6 +10772,294 @@
       "benchmarks": null
     },
     {
+      "id": "openai/gpt-6.2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-astra",
+        "hf": null
+      },
+      "description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-astra-pro",
+      "name": "OpenAI: GPT-6.2 Astra Pro",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 8,
+        "output": 40,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-astra-pro",
+        "hf": null
+      },
+      "description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served w…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-astra-pro:batch",
+      "name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 4,
+        "output": 20,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-astra-pro:batch",
+        "hf": null
+      },
+      "description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served w…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-astra:batch",
+      "name": "OpenAI: GPT-6.2 Astra (batch)",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 4,
+        "output": 20,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-astra:batch",
+        "hf": null
+      },
+      "description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-sol",
+        "hf": null
+      },
+      "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-sol-pro",
+      "name": "OpenAI: GPT-6.2 Sol Pro",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 2,
+        "output": 10,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-sol-pro",
+        "hf": null
+      },
+      "description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `r…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-sol-pro:batch",
+      "name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-sol-pro:batch",
+        "hf": null
+      },
+      "description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `r…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "openai/gpt-6.2-sol:batch",
+      "name": "OpenAI: GPT-6.2 Sol (batch)",
+      "org": "OpenAI",
+      "releaseDate": "2026-11-17",
+      "contextWindow": 1050000,
+      "maxOutput": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": false,
+      "license": null,
+      "pricing": {
+        "input": 1,
+        "output": 5,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/openai/gpt-6.2-sol:batch",
+        "hf": null
+      },
+      "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "openai/gpt-audio",
       "name": "OpenAI: GPT Audio",
       "org": "OpenAI",
@@ -10830,7 +11170,7 @@
       "org": "OpenAI",
       "releaseDate": "2025-08-05",
       "contextWindow": 131072,
-      "maxOutput": 65536,
+      "maxOutput": 117964,
       "modalities": [
         "text"
       ],
@@ -10842,8 +11182,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.09,
+        "output": 0.36,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -10898,7 +11238,7 @@
       "org": "OpenAI",
       "releaseDate": "2025-08-05",
       "contextWindow": 131072,
-      "maxOutput": 65536,
+      "maxOutput": 117964,
       "modalities": [
         "text"
       ],
@@ -10910,8 +11250,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.075,
-        "output": 0.3,
+        "input": 0.018,
+        "output": 0.09,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -11213,7 +11553,7 @@
       "org": "OpenRouter",
       "releaseDate": "2026-07-17",
       "contextWindow": 2000000,
-      "maxOutput": 64000,
+      "maxOutput": 128000,
       "modalities": [
         "text",
         "image",
@@ -11248,7 +11588,7 @@
       "org": "OpenRouter",
       "releaseDate": "2026-11-05",
       "contextWindow": 2000000,
-      "maxOutput": 64000,
+      "maxOutput": 128000,
       "modalities": [
         "text",
         "image",
@@ -11412,7 +11752,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.06,
+        "input": 0.07,
         "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -12157,6 +12497,7 @@
         "text"
       ],
       "capabilities": [
+        "structured-output",
         "tool-calling"
       ],
       "openWeights": true,
@@ -12250,7 +12591,7 @@
       "org": "Qwen",
       "releaseDate": "2025-09-11",
       "contextWindow": 262144,
-      "maxOutput": 16384,
+      "maxOutput": 235929,
       "modalities": [
         "text"
       ],
@@ -12261,7 +12602,7 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.09,
+        "input": 0.1,
         "output": 1.1,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -12540,7 +12881,7 @@
       "org": "Qwen",
       "releaseDate": "2026-03-10",
       "contextWindow": 262144,
-      "maxOutput": 40960,
+      "maxOutput": 235929,
       "modalities": [
         "text",
         "image",
@@ -12556,8 +12897,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.061,
-        "output": 0.089,
+        "input": 0.17,
+        "output": 0.25,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13038,8 +13379,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.15,
-        "output": 1.875,
+        "input": 0.06,
+        "output": 2.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13306,8 +13647,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 1.5,
-        "output": 4.5,
+        "input": 1.425,
+        "output": 4.275,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13362,7 +13703,7 @@
       "org": "Reflection",
       "releaseDate": "2026-10-16",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 131072,
       "modalities": [
         "text"
       ],
@@ -13374,7 +13715,7 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.3,
+        "input": 0.25,
         "output": 1,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -14105,6 +14446,42 @@
       "benchmarks": null
     },
     {
+      "id": "tencent/hy4-flash",
+      "name": "Tencent: Hy4 flash",
+      "org": "Tencent",
+      "releaseDate": "2026-11-16",
+      "contextWindow": 1048576,
+      "maxOutput": 65536,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.035,
+        "output": 0.1405,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/tencent/hy4-flash",
+        "hf": "https://huggingface.co/tencent/Hy4-flash"
+      },
+      "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a q…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "org": "Tencent",
@@ -14308,41 +14685,6 @@
       "benchmarks": null
     },
     {
-      "id": "thinkingmachines/inkling-2-small:free",
-      "name": "Thinking Machines: Inkling 2 Small (free)",
-      "org": "Thinking Machines",
-      "releaseDate": "2026-11-09",
-      "contextWindow": 1048576,
-      "maxOutput": 131072,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling",
-        "vision"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0,
-        "output": 0,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
-        "hf": "https://huggingface.co/thinkingmachines/Inkling-2-Small"
-      },
-      "description": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B ac…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
       "id": "thinkingmachines/inkling-small",
       "name": "Thinking Machines: Inkling Small",
       "org": "Thinking Machines",
@@ -14422,7 +14764,7 @@
       "org": "TypeSafe",
       "releaseDate": "2026-09-25",
       "contextWindow": 1000000,
-      "maxOutput": 64000,
+      "maxOutput": 128000,
       "modalities": [
         "text",
         "image",
@@ -14687,8 +15029,8 @@
     },
     {
       "id": "x-ai/grok-4.20",
-      "name": "SpaceXAI: Grok 4.20",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.20",
+      "org": "SpaceXSI",
       "releaseDate": "2026-03-31",
       "contextWindow": 2000000,
       "maxOutput": 1800000,
@@ -14715,7 +15057,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.20",
         "hf": null
       },
-      "description": "Grok 4.20 is a reasoning model from SpaceXAI with industry-leading speed and agentic tool calling capabilities. It comb…",
+      "description": "Grok 4.20 is a reasoning model from SpaceXSI with industry-leading speed and agentic tool calling capabilities. It comb…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14723,8 +15065,8 @@
     },
     {
       "id": "x-ai/grok-4.20-multi-agent",
-      "name": "SpaceXAI: Grok 4.20 Multi-Agent",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.20 Multi-Agent",
+      "org": "SpaceXSI",
       "releaseDate": "2026-03-31",
       "contextWindow": 2000000,
       "maxOutput": 1800000,
@@ -14750,7 +15092,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.20-multi-agent",
         "hf": null
       },
-      "description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple…",
+      "description": "Grok 4.20 Multi-Agent is a variant of SpaceXSI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14758,8 +15100,8 @@
     },
     {
       "id": "x-ai/grok-4.3",
-      "name": "SpaceXAI: Grok 4.3",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.3",
+      "org": "SpaceXSI",
       "releaseDate": "2026-04-30",
       "contextWindow": 1000000,
       "maxOutput": 900000,
@@ -14786,7 +15128,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.3",
         "hf": null
       },
-      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agent…",
+      "description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agent…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14794,8 +15136,8 @@
     },
     {
       "id": "x-ai/grok-4.3:batch",
-      "name": "SpaceXAI: Grok 4.3 (batch)",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.3 (batch)",
+      "org": "SpaceXSI",
       "releaseDate": "2026-04-30",
       "contextWindow": 1000000,
       "maxOutput": 900000,
@@ -14822,7 +15164,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.3:batch",
         "hf": null
       },
-      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agent…",
+      "description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agent…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14830,8 +15172,8 @@
     },
     {
       "id": "x-ai/grok-4.5",
-      "name": "SpaceXAI: Grok 4.5",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.5",
+      "org": "SpaceXSI",
       "releaseDate": "2026-07-08",
       "contextWindow": 500000,
       "maxOutput": 450000,
@@ -14858,7 +15200,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.5",
         "hf": null
       },
-      "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
+      "description": "Grok 4.5 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM.",
       "sourceIds": [
         "openrouter"
       ],
@@ -14866,8 +15208,8 @@
     },
     {
       "id": "x-ai/grok-4.6",
-      "name": "SpaceXAI: Grok 4.6",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.6",
+      "org": "SpaceXSI",
       "releaseDate": "2026-08-12",
       "contextWindow": 500000,
       "maxOutput": 450000,
@@ -14894,7 +15236,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.6",
         "hf": null
       },
-      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Gr…",
+      "description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Gr…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14902,8 +15244,8 @@
     },
     {
       "id": "x-ai/grok-4.6:batch",
-      "name": "SpaceXAI: Grok 4.6 (batch)",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.6 (batch)",
+      "org": "SpaceXSI",
       "releaseDate": "2026-08-12",
       "contextWindow": 500000,
       "maxOutput": 450000,
@@ -14930,7 +15272,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.6:batch",
         "hf": null
       },
-      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Gr…",
+      "description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Gr…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14938,8 +15280,8 @@
     },
     {
       "id": "x-ai/grok-4.7",
-      "name": "SpaceXAI: Grok 4.7",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.7",
+      "org": "SpaceXSI",
       "releaseDate": "2026-09-21",
       "contextWindow": 500000,
       "maxOutput": 450000,
@@ -14966,7 +15308,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.7",
         "hf": null
       },
-      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particu…",
+      "description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particu…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14974,8 +15316,8 @@
     },
     {
       "id": "x-ai/grok-4.7:batch",
-      "name": "SpaceXAI: Grok 4.7 (batch)",
-      "org": "SpaceXAI",
+      "name": "SpaceXSI: Grok 4.7 (batch)",
+      "org": "SpaceXSI",
       "releaseDate": "2026-09-21",
       "contextWindow": 500000,
       "maxOutput": 450000,
@@ -15002,43 +15344,7 @@
         "api": "https://openrouter.ai/x-ai/grok-4.7:batch",
         "hf": null
       },
-      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particu…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "x-ai/grok-build-0.1",
-      "name": "SpaceXAI: Grok Build 0.1",
-      "org": "SpaceXAI",
-      "releaseDate": "2026-05-20",
-      "contextWindow": 256000,
-      "maxOutput": 230400,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "capabilities": [
-        "reasoning",
-        "structured-output",
-        "tool-calling",
-        "vision"
-      ],
-      "openWeights": false,
-      "license": null,
-      "pricing": {
-        "input": 1,
-        "output": 2,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/x-ai/grok-build-0.1",
-        "hf": null
-      },
-      "description": "Grok Build 0.1 is SpaceXAI’s fast coding model trained specifically for agentic software engineering workflows. It supp…",
+      "description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particu…",
       "sourceIds": [
         "openrouter"
       ],
@@ -15089,8 +15395,8 @@
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "org": "Xiaomi",
       "releaseDate": "2026-04-22",
-      "contextWindow": 1024000,
-      "maxOutput": 131072,
+      "contextWindow": 262144,
+      "maxOutput": 235929,
       "modalities": [
         "text"
       ],
@@ -15102,8 +15408,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.435,
-        "output": 0.87,
+        "input": 0.48,
+        "output": 1.8,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15555,7 +15861,7 @@
       "org": "Z.ai",
       "releaseDate": "2026-04-07",
       "contextWindow": 204800,
-      "maxOutput": 182476,
+      "maxOutput": 131072,
       "modalities": [
         "text"
       ],
@@ -15567,8 +15873,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 1.4,
-        "output": 4.4,
+        "input": 1.19,
+        "output": 3.74,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15601,14 +15907,48 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.007,
-        "output": 6.8,
+        "input": 0.62,
+        "output": 2.42,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
       "links": {
         "official": null,
         "api": "https://openrouter.ai/z-ai/glm-5.2",
+        "hf": "https://huggingface.co/zai-org/GLM-5.2"
+      },
+      "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, a…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "z-ai/glm-5.2:batch",
+      "name": "Z.ai: GLM 5.2 (batch)",
+      "org": "Z.ai",
+      "releaseDate": "2026-06-16",
+      "contextWindow": 1048576,
+      "maxOutput": 943718,
+      "modalities": [
+        "text"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.322,
+        "output": 0.989,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/z-ai/glm-5.2:batch",
         "hf": "https://huggingface.co/zai-org/GLM-5.2"
       },
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, a…",
@@ -15695,7 +16035,7 @@
       "org": "Z.ai",
       "releaseDate": "2026-08-26",
       "contextWindow": 1048576,
-      "maxOutput": 131072,
+      "maxOutput": 943717,
       "modalities": [
         "text",
         "image",
@@ -15711,8 +16051,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.05,
-        "output": 0.18,
+        "input": 0.023,
+        "output": 0.068,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15821,8 +16161,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 2.8,
-        "output": 8.8,
+        "input": 1.68,
+        "output": 5.28,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15843,7 +16183,7 @@
       "org": "Z.ai",
       "releaseDate": "2026-08-18",
       "contextWindow": 1048576,
-      "maxOutput": 131072,
+      "maxOutput": 943717,
       "modalities": [
         "text"
       ],
@@ -15855,8 +16195,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.45,
-        "output": 2,
+        "input": 0.28,
+        "output": 1.249,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -16107,7 +16447,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.0999,
+        "input": 0.2565,
         "output": 8,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -16141,7 +16481,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.0434,
+        "input": 0.047,
         "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -16259,7 +16599,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.1824,
+        "input": 0.1805,
         "output": 11.0055,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -16295,8 +16635,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 10,
-        "output": 50,
+        "input": 8,
+        "output": 40,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T09:54:35.035Z",
+  "generatedAt": "2026-11-20T08:30:21.552Z",
   "source": "openrouter-rankings",
   "sourceLabel": "OpenRouter token volume",
   "granularity": "week",
@@ -27,46 +27,46 @@
     },
     {
       "weekStart": "2026-09-28",
-      "tokens": 165856049857563,
+      "tokens": 165847003742447,
       "complete": true
     },
     {
       "weekStart": "2026-10-05",
-      "tokens": 171842501724714,
+      "tokens": 171839359685430,
       "complete": true
     },
     {
       "weekStart": "2026-10-12",
-      "tokens": 164043985914931,
+      "tokens": 163830896595589,
       "complete": true
     },
     {
       "weekStart": "2026-10-19",
-      "tokens": 188039304051712,
+      "tokens": 188012184445530,
       "complete": true
     },
     {
       "weekStart": "2026-10-26",
-      "tokens": 193593270018919,
+      "tokens": 193583878704232,
       "complete": true
     },
     {
       "weekStart": "2026-11-02",
-      "tokens": 209517521188141,
+      "tokens": 209479742661067,
       "complete": true
     },
     {
       "weekStart": "2026-11-09",
-      "tokens": 211281198265769,
+      "tokens": 211280142506486,
       "complete": true
     },
     {
       "weekStart": "2026-11-16",
-      "tokens": 10804609335693,
+      "tokens": 214935483905095,
       "complete": false
     }
   ],
-  "monthlyTokens": 802431293524541,
+  "monthlyTokens": 802355948317315,
   "monthlyDays": 28,
   "note": "OpenRouter public rankings chart: weekly tokens processed across its API. The in-progress week is flagged complete=false and excluded from totals."
 }

@@ -5,8 +5,8 @@
     <link>https://chengxi-z.github.io/llm-pulse/</link>
     <description>Tracking frontier LLMs: model catalog, vendor updates, public leaderboards, learning resources and AI projects. Refreshed by GitHub Actions; RSS / JSON Feed.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 09:54:35 GMT</lastBuildDate>
-    <pubDate>Mon, 16 Nov 2026 09:54:35 GMT</pubDate>
+    <lastBuildDate>Fri, 20 Nov 2026 08:30:21 GMT</lastBuildDate>
+    <pubDate>Fri, 20 Nov 2026 08:30:21 GMT</pubDate>
     <generator>AI Pulse build-feed.mjs</generator>
     <atom:link href="https://chengxi-z.github.io/llm-pulse/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
@@ -15,22 +15,482 @@
       <link>https://chengxi-z.github.io/llm-pulse/</link>
     </image>
     <item>
-      <title>LVMH’s Media Division announces strategic partnership with OpenAI</title>
-      <link>https://openai.com/index/lvmh-media-division-partnership</link>
-      <guid isPermaLink="false">rss-51a65484</guid>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 GMT</pubDate>
-      <description>LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT. — Source: OpenAI Blog</description>
+      <title>Amazon SageMaker Inference: 2026 launches in review, part 2</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/</link>
+      <guid isPermaLink="false">rss-1ffd426b</guid>
+      <pubDate>Fri, 20 Nov 2026 00:34:07 GMT</pubDate>
+      <description>This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Use Kimi Code CLI with models on Amazon Bedrock</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/</link>
+      <guid isPermaLink="false">rss-9746991a</guid>
+      <pubDate>Fri, 20 Nov 2026 00:33:30 GMT</pubDate>
+      <description>Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This p… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Mistral launches Pixtral Large 2502 (128K context, $2/$6)</title>
+      <link>https://openrouter.ai/mistralai/pixtral-large-2502</link>
+      <guid isPermaLink="false">release-mistralai-pixtral-large-2502</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Mistral: Pixtral Large 2502 is now on OpenRouter: 128K context, $2/$6 per 1M tokens, supports vision. — Source: OpenRouter</description>
+      <category>Mistral</category>
+      <category>Multimodal</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/</link>
+      <guid isPermaLink="false">rss-84be4d63</guid>
+      <pubDate>Thu, 19 Nov 2026 23:02:16 GMT</pubDate>
+      <description>Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer&apos;s AWS bill, with no stablecoin wallets or API keys. This post wal… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>How the BMW Group governs hundreds of agents across thousands of developers</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/</link>
+      <guid isPermaLink="false">rss-c19276bc</guid>
+      <pubDate>Thu, 19 Nov 2026 22:20:23 GMT</pubDate>
+      <description>When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&amp;D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Run your whole selling business in AWS Quick</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/</link>
+      <guid isPermaLink="false">rss-791430e0</guid>
+      <pubDate>Thu, 19 Nov 2026 22:16:22 GMT</pubDate>
+      <description>Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it. — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>AI helps researchers investigate how thousands of medical studies share code</title>
+      <link>https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119</link>
+      <guid isPermaLink="false">rss-518f2326</guid>
+      <pubDate>Thu, 19 Nov 2026 22:15:00 GMT</pubDate>
+      <description>An MIT and Dana-Farber Institute-led team used large language models to examine nearly 4,000 studies and hundreds of code repositories, revealing gaps in the information needed to scrutinize and reuse published research. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Research</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/</link>
+      <guid isPermaLink="false">rss-6fc2dd85</guid>
+      <pubDate>Thu, 19 Nov 2026 21:28:18 GMT</pubDate>
+      <description>Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding thr… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Pricing</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Inside Amazon Connect Talent: The science of structured AI interviews</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/</link>
+      <guid isPermaLink="false">rss-d93a8061</guid>
+      <pubDate>Thu, 19 Nov 2026 21:23:20 GMT</pubDate>
+      <description>For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hir… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/</link>
+      <guid isPermaLink="false">rss-f20c41b6</guid>
+      <pubDate>Thu, 19 Nov 2026 20:01:06 GMT</pubDate>
+      <description>Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hook… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Open source</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Introducing Tool Retrieval in the Gemini API</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/</link>
+      <guid isPermaLink="false">rss-58131ea1</guid>
+      <pubDate>Thu, 19 Nov 2026 18:00:00 GMT</pubDate>
+      <description>Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API. — Source: Google AI Blog</description>
+      <category>Google AI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
+    </item>
+    <item>
+      <title>Walter Isaacson on curiosity and creativity in the AI age.</title>
+      <link>https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/</link>
+      <guid isPermaLink="false">rss-b25ba451</guid>
+      <pubDate>Thu, 19 Nov 2026 17:00:00 GMT</pubDate>
+      <description>Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode. — Source: Google AI Blog</description>
+      <category>Google AI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
+    </item>
+    <item>
+      <title>Study reveals data centers’ long-distance damage to air quality</title>
+      <link>https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119</link>
+      <guid isPermaLink="false">rss-abb7bf48</guid>
+      <pubDate>Thu, 19 Nov 2026 14:00:00 GMT</pubDate>
+      <description>Researchers find air pollution from data center electricity use can affect communities far from the facilities, with some of the highest impacts in the Midwest. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Research</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>How OpenAI’s Performance Factory keeps ChatGPT fast</title>
+      <link>https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast</link>
+      <guid isPermaLink="false">rss-9d9cc194</guid>
+      <pubDate>Thu, 19 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast. — Source: OpenAI Blog</description>
       <category>OpenAI</category>
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
-      <title>Qwen launches Qwen4 Max (1M context, $1.5/$4.5)</title>
+      <title>Explore the Codex Security Plugin</title>
+      <link>https://openai.com/business/learn/codex-security-plugin-demo</link>
+      <guid isPermaLink="false">rss-002d13b4</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>See PR scans in action</title>
+      <link>https://openai.com/business/learn/pr-scans-demo</link>
+      <guid isPermaLink="false">rss-08e06f3b</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>Get started with Daybreak Blue</title>
+      <link>https://openai.com/business/learn/daybreak-blue-onboarding-demo</link>
+      <guid isPermaLink="false">rss-9712b78e</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>Deploying Daybreak Red</title>
+      <link>https://openai.com/business/learn/deploying-daybreak-red</link>
+      <guid isPermaLink="false">rss-9763621f</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>Introducing Gemini 4 Neon</title>
+      <link>https://deepmind.google/blog/introducing-gemini-4-neon/</link>
+      <guid isPermaLink="false">rss-613708bc</guid>
+      <pubDate>Wed, 18 Nov 2026 21:35:43 GMT</pubDate>
+      <description>Introducing Gemini 4 Neon — Source: Google DeepMind</description>
+      <category>Google DeepMind</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
+    </item>
+    <item>
+      <title>This featherweight, flying robot carries its own sensors and computers</title>
+      <link>https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118</link>
+      <guid isPermaLink="false">rss-a151df9e</guid>
+      <pubDate>Wed, 18 Nov 2026 19:00:00 GMT</pubDate>
+      <description>The speedy microrobot flies without an attached motion-capture system, moving it closer to applications like agriculture or industrial surveillance. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Genie 4 is now available</title>
+      <link>https://deepmind.google/blog/genie-4-is-now-available/</link>
+      <guid isPermaLink="false">rss-6c2b80d1</guid>
+      <pubDate>Wed, 18 Nov 2026 18:13:42 GMT</pubDate>
+      <description>Genie 4 is now available — Source: Google DeepMind</description>
+      <category>Google DeepMind</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
+    </item>
+    <item>
+      <title>The Gemini app is now available on lower-memory Android devices.</title>
+      <link>https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/</link>
+      <guid isPermaLink="false">rss-153429dc</guid>
+      <pubDate>Wed, 18 Nov 2026 17:00:00 GMT</pubDate>
+      <description>The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today. — Source: Google AI Blog</description>
+      <category>Google AI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
+    </item>
+    <item>
+      <title>The Silent Consensus</title>
+      <link>https://openai.com/index/the-silent-consensus</link>
+      <guid isPermaLink="false">rss-c90f0c50</guid>
+      <pubDate>Wed, 18 Nov 2026 10:00:00 GMT</pubDate>
+      <description>Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>Research acceleration: The jagged frontier</title>
+      <link>https://openai.com/index/research-acceleration-jagged-frontier</link>
+      <guid isPermaLink="false">rss-0648a466</guid>
+      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
+      <description>OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Research</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise</title>
+      <link>https://openai.com/business/customer-stories/sumitomo-life</link>
+      <guid isPermaLink="false">rss-fcc24d74</guid>
+      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
+      <description>Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Research</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>Helping AI text detectors keep up with changing conditions</title>
+      <link>https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118</link>
+      <guid isPermaLink="false">rss-f65d3f07</guid>
+      <pubDate>Wed, 18 Nov 2026 05:00:00 GMT</pubDate>
+      <description>A more flexible training method can make AI text detectors more robust when new models emerge or AI-generated text is disguised to appear human. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Google launches Gemini 4 Neon (1M context, $3/$15)</title>
+      <link>https://openrouter.ai/google/gemini-4-neon</link>
+      <guid isPermaLink="false">release-google-gemini-4-neon</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Google: Gemini 4 Neon is now on OpenRouter: 1M context, $3/$15 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
+      <category>Google</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>Google launches Gemini 4 Neon (batch) (1M context, $1.5/$7.5)</title>
+      <link>https://openrouter.ai/google/gemini-4-neon:batch</link>
+      <guid isPermaLink="false">release-google-gemini-4-neon-batch</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Google: Gemini 4 Neon (batch) is now on OpenRouter: 1M context, $1.5/$7.5 per 1M tokens, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
+      <category>Google</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>Putting a spotlight on AI, society, and humanity</title>
+      <link>https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117</link>
+      <guid isPermaLink="false">rss-338e81f8</guid>
+      <pubDate>Tue, 17 Nov 2026 20:40:00 GMT</pubDate>
+      <description>Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Put Gemini to work for you</title>
+      <link>https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/</link>
+      <guid isPermaLink="false">rss-8b572679</guid>
+      <pubDate>Tue, 17 Nov 2026 17:00:00 GMT</pubDate>
+      <description>Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf. — Source: Google AI Blog</description>
+      <category>Google AI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
+    </item>
+    <item>
+      <title>Q&amp;A: Why building math muscles remains important in the AI era</title>
+      <link>https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117</link>
+      <guid isPermaLink="false">rss-47abc027</guid>
+      <pubDate>Tue, 17 Nov 2026 05:00:00 GMT</pubDate>
+      <description>Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Learning the language of machine learning</title>
+      <link>https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117</link>
+      <guid isPermaLink="false">rss-5585f89b</guid>
+      <pubDate>Tue, 17 Nov 2026 05:00:00 GMT</pubDate>
+      <description>By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate effectively with humans. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Astra (1.1M context, $8/$40)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-astra</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-astra</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Astra is now on OpenRouter: 1.1M context, $8/$40 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Astra (batch) (1.1M context, $4/$20)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-astra:batch</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-astra-batch</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Astra (batch) is now on OpenRouter: 1.1M context, $4/$20 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Astra Pro (1.1M context, $8/$40)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-astra-pro</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-astra-pro</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Astra Pro is now on OpenRouter: 1.1M context, $8/$40 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Astra Pro (batch) (1.1M context, $4/$20)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-astra-pro:batch</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-astra-pro-batch</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Astra Pro (batch) is now on OpenRouter: 1.1M context, $4/$20 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Sol (1.1M context, $2/$10)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-sol</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-sol</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Sol is now on OpenRouter: 1.1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Sol (batch) (1.1M context, $1/$5)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-sol:batch</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-sol-batch</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Sol (batch) is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Sol Pro (1.1M context, $2/$10)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-sol-pro</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-sol-pro</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Sol Pro is now on OpenRouter: 1.1M context, $2/$10 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT-6.2 Sol Pro (batch) (1.1M context, $1/$5)</title>
+      <link>https://openrouter.ai/openai/gpt-6.2-sol-pro:batch</link>
+      <guid isPermaLink="false">release-openai-gpt-6-2-sol-pro-batch</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI: GPT-6.2 Sol Pro (batch) is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>OpenAI</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>vllm-project/vllm released v0.34.0</title>
+      <link>https://github.com/vllm-project/vllm/releases/tag/v0.34.0</link>
+      <guid isPermaLink="false">github-release-vllm-project-vllm-v0-34-0</guid>
+      <pubDate>Mon, 16 Nov 2026 23:22:00 GMT</pubDate>
+      <description># v0.34.0 **1,061 commits from 412 contributors (120 new).** Thank you! ## TL;DR - **10 new models** (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!) - **Extensible KV cache is on by default:** vLLM sizes the KV ca… — Source: GitHub Releases</description>
+      <category>vllm</category>
+      <category>GitHub Release</category>
+      <category>Open source</category>
+      <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
+    </item>
+    <item>
+      <title>New Ask Maps features to help with holiday travel and prep</title>
+      <link>https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/</link>
+      <guid isPermaLink="false">rss-9dff25c8</guid>
+      <pubDate>Mon, 16 Nov 2026 14:00:00 GMT</pubDate>
+      <description>Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features. — Source: Google AI Blog</description>
+      <category>Google AI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
+    </item>
+    <item>
+      <title>Qwen launches Qwen4 Max (1M context, $1.43/$4.28)</title>
       <link>https://openrouter.ai/qwen/qwen4-max</link>
       <guid isPermaLink="false">release-qwen-qwen4-max</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Qwen: Qwen4 Max is now on OpenRouter: 1M context, $1.5/$4.5 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
+      <description>Qwen: Qwen4 Max is now on OpenRouter: 1M context, $1.43/$4.28 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
       <category>Qwen</category>
       <category>Long context</category>
       <category>Multimodal</category>
@@ -38,114 +498,17 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>A step toward defining the Standard Model on a lattice</title>
-      <link>https://openai.com/index/step-toward-defining-the-standard-model</link>
-      <guid isPermaLink="false">rss-08cf3fe0</guid>
-      <pubDate>Sun, 15 Nov 2026 22:00:01 GMT</pubDate>
-      <description>Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Our new blog for science</title>
-      <link>https://openai.com/index/our-new-blog-for-science</link>
-      <guid isPermaLink="false">rss-a74dce9c</guid>
-      <pubDate>Sun, 15 Nov 2026 22:00:00 GMT</pubDate>
-      <description>The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Research</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/</link>
-      <guid isPermaLink="false">rss-92ef8359</guid>
-      <pubDate>Fri, 13 Nov 2026 23:22:09 GMT</pubDate>
-      <description>GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers&apos; no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/</link>
-      <guid isPermaLink="false">rss-f27c52fb</guid>
-      <pubDate>Fri, 13 Nov 2026 22:30:12 GMT</pubDate>
-      <description>Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/</link>
-      <guid isPermaLink="false">rss-56950bd0</guid>
-      <pubDate>Fri, 13 Nov 2026 22:02:39 GMT</pubDate>
-      <description>Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session start tim… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/</link>
-      <guid isPermaLink="false">rss-55e38130</guid>
-      <pubDate>Fri, 13 Nov 2026 21:53:40 GMT</pubDate>
-      <description>Deploy OpenFold3-preview from Amazon SageMaker JumpStart to predict 3D structures of proteins, DNA, RNA, and ligand complexes in your own AWS account. The post covers asynchronous inference, multi-GPU parallelism, bringing your own MSAs fo… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/</link>
-      <guid isPermaLink="false">rss-28dc07af</guid>
-      <pubDate>Fri, 13 Nov 2026 19:35:35 GMT</pubDate>
-      <description>Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA commitments ac… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/</link>
-      <guid isPermaLink="false">rss-aa9e7994</guid>
-      <pubDate>Fri, 13 Nov 2026 18:44:02 GMT</pubDate>
-      <description>Amazon Bedrock provides built-in, zero-instrumentation cost attribution that traces every inference call back to the IAM principal that made it. This post shows how to attribute per-user Bedrock costs for AI developer and productivity tool… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/</link>
-      <guid isPermaLink="false">rss-3a4df312</guid>
-      <pubDate>Fri, 13 Nov 2026 18:01:15 GMT</pubDate>
-      <description>Amazon SageMaker HyperPod Data Capture records live inference inputs and outputs to Amazon S3. This post walks through one end-to-end example: capturing a support router&apos;s production traffic, surfacing a new-product blind spot with Amazon… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Introducing ChatGPT Wallet</title>
-      <link>https://openai.com/index/introducing-chatgpt-wallet</link>
-      <guid isPermaLink="false">rss-d2de5a6f</guid>
-      <pubDate>Fri, 13 Nov 2026 15:00:00 GMT</pubDate>
-      <description>Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+      <title>Tencent launches Hy4 flash (1M context, $0.035/$0.141)</title>
+      <link>https://openrouter.ai/tencent/hy4-flash</link>
+      <guid isPermaLink="false">release-tencent-hy4-flash</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Tencent: Hy4 flash is now on OpenRouter: 1M context, $0.035/$0.141 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>Tencent</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
       <title>huggingface/transformers released Release v5.23.0</title>
@@ -157,28 +520,6 @@
       <category>GitHub Release</category>
       <category>Open source</category>
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
-    </item>
-    <item>
-      <title>Shield helps technicians hand off legacy portal work with OpenAI</title>
-      <link>https://openai.com/business/customer-stories/shield</link>
-      <guid isPermaLink="false">rss-959351d1</guid>
-      <pubDate>Fri, 13 Nov 2026 08:00:00 GMT</pubDate>
-      <description>Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Helping robots fit into the human workplace</title>
-      <link>https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113</link>
-      <guid isPermaLink="false">rss-6e5044e1</guid>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 GMT</pubDate>
-      <description>Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories and warehouses. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
       <title>New AI “copilot” helps engineers design better structures</title>
@@ -217,39 +558,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Deploy frontier AI models on AWS Trainium with SGLang-Neuron</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/</link>
-      <guid isPermaLink="false">rss-ab506c10</guid>
-      <pubDate>Thu, 12 Nov 2026 22:03:34 GMT</pubDate>
-      <description>SGLang-Neuron is now publicly available through an AWS Deep Learning Container. With SGLang-Neuron, you can serve models and generate reinforcement learning rollouts with SGLang on AWS Trainium using the same SGLang interface you already k… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Three Lincoln Laboratory technologies receive 2026 R&amp;D 100 Awards</title>
-      <link>https://news.mit.edu/2026/lincoln-laboratory-technologies-receive-rd-100-awards-1112</link>
-      <guid isPermaLink="false">rss-52fb96c9</guid>
-      <pubDate>Thu, 12 Nov 2026 21:15:00 GMT</pubDate>
-      <description>A secure operating system, a quantum microsystem platform, and a 5G interference-canceling algorithm are named among the year&apos;s most significant innovations. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
-      <title>How Amplitude ships product improvements in 1–2 days with OpenAI</title>
-      <link>https://openai.com/business/customer-stories/amplitude</link>
-      <guid isPermaLink="false">rss-c97a5e65</guid>
-      <pubDate>Thu, 12 Nov 2026 20:00:00 GMT</pubDate>
-      <description>Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
       <title>Introducing Gemini 4 Hydrogen</title>
       <link>https://deepmind.google/blog/introducing-gemini-4-hydrogen/</link>
       <guid isPermaLink="false">rss-92e11c78</guid>
@@ -270,39 +578,6 @@
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>Gondola doubles revenue as its team builds more with Codex</title>
-      <link>https://openai.com/business/customer-stories/gondola</link>
-      <guid isPermaLink="false">rss-484a54f2</guid>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
-      <description>Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Holiday Extras is rethinking what it can build with Codex</title>
-      <link>https://openai.com/business/customer-stories/holidays-extras-codex</link>
-      <guid isPermaLink="false">rss-08ca74f9</guid>
-      <pubDate>Thu, 12 Nov 2026 09:30:00 GMT</pubDate>
-      <description>With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>New research could lead to faster, trustworthy AI models for climate prediction</title>
-      <link>https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112</link>
-      <guid isPermaLink="false">rss-4a9bfa1e</guid>
-      <pubDate>Thu, 12 Nov 2026 05:00:00 GMT</pubDate>
-      <description>MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than other approaches. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Research</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
       <title>Google launches Gemini 4 Hydrogen (1M context, $1.5/$7.5)</title>
@@ -362,37 +637,15 @@
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
-      <title>Experience the art and legacy of Dr. Esther Mahlangu</title>
-      <link>https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/</link>
-      <guid isPermaLink="false">rss-89133aca</guid>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 GMT</pubDate>
-      <description>A new online archive of Esther Mahlangu’s life and art is now on Google Arts &amp; Culture. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
       <title>ollama/ollama released v0.40.17</title>
-      <link>https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0</link>
-      <guid isPermaLink="false">github-release-ollama-ollama-v0-40-17-rc0</guid>
+      <link>https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2</link>
+      <guid isPermaLink="false">github-release-ollama-ollama-v0-40-17-rc2</guid>
       <pubDate>Tue, 10 Nov 2026 22:25:00 GMT</pubDate>
       <description>## What&apos;s Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/… — Source: GitHub Releases</description>
       <category>ollama</category>
       <category>GitHub Release</category>
       <category>Open source</category>
       <source url="https://github.com/ollama/ollama/releases">GitHub Releases</source>
-    </item>
-    <item>
-      <title>Gemini Intelligence: New features, on more devices</title>
-      <link>https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/</link>
-      <guid isPermaLink="false">rss-5f75316a</guid>
-      <pubDate>Tue, 10 Nov 2026 19:00:00 GMT</pubDate>
-      <description>Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
       <title>Gemini 4 Carbon is now available</title>
@@ -404,28 +657,6 @@
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
-    </item>
-    <item>
-      <title>We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.</title>
-      <link>https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/</link>
-      <guid isPermaLink="false">rss-649c2b34</guid>
-      <pubDate>Tue, 10 Nov 2026 14:00:00 GMT</pubDate>
-      <description>Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>Google Cloud launches Gemini for healthcare.</title>
-      <link>https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/</link>
-      <guid isPermaLink="false">rss-697c22fd</guid>
-      <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
-      <description>Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
       <title>Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</title>
@@ -448,17 +679,6 @@
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
-    </item>
-    <item>
-      <title>MIT-led team receives funding to develop next-generation alternatives to modern weed killers</title>
-      <link>https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110</link>
-      <guid isPermaLink="false">rss-750bd5f3</guid>
-      <pubDate>Tue, 10 Nov 2026 05:00:00 GMT</pubDate>
-      <description>With up to $53 million from ARPA-H, the researchers will use AI to generate safer herbicides that reduce dependence on imports and improve the security of the U.S. food supply. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Policy &amp; safety</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
       <title>Baidu launches ERNIE-5.5-Flash-Preview (free) (1M context, free/free)</title>
@@ -555,28 +775,6 @@
       <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
     </item>
     <item>
-      <title>A single AI model simulates the behavior of many substances, from sliding sand to folding proteins</title>
-      <link>https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109</link>
-      <guid isPermaLink="false">rss-0882db37</guid>
-      <pubDate>Mon, 09 Nov 2026 05:00:00 GMT</pubDate>
-      <description>By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
-      <title>AI-assisted learning platform helps robots reason beyond literal commands</title>
-      <link>https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109</link>
-      <guid isPermaLink="false">rss-cf56baa8</guid>
-      <pubDate>Mon, 09 Nov 2026 05:00:00 GMT</pubDate>
-      <description>The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
       <title>Anthropic launches Claude Fable 5.2 (1M context, $8/$40)</title>
       <link>https://openrouter.ai/anthropic/claude-fable-5.2</link>
       <guid isPermaLink="false">release-anthropic-claude-fable-5-2</guid>
@@ -626,31 +824,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Thinking Machines launches Inkling 2 Small (free) (1M context, free/free)</title>
-      <link>https://openrouter.ai/thinkingmachines/inkling-2-small:free</link>
-      <guid isPermaLink="false">release-thinkingmachines-inkling-2-small-free</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Thinking Machines: Inkling 2 Small (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/tool-calling/vision. — Source: OpenRouter</description>
-      <category>Thinking Machines</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <category>Free</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>How to predict the behavior of molecules from scant data</title>
-      <link>https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106</link>
-      <guid isPermaLink="false">rss-b5d1e402</guid>
-      <pubDate>Fri, 06 Nov 2026 19:00:00 GMT</pubDate>
-      <description>A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive experimentation. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
       <title>huggingface/transformers released Patch release v5.22.2</title>
       <link>https://github.com/huggingface/transformers/releases/tag/v5.22.2</link>
       <guid isPermaLink="false">github-release-huggingface-transformers-v5-22-2</guid>
@@ -687,28 +860,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</title>
-      <link>https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/</link>
-      <guid isPermaLink="false">rss-36dcdf76</guid>
-      <pubDate>Thu, 05 Nov 2026 17:05:16 GMT</pubDate>
-      <description>Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips — Source: Google DeepMind</description>
-      <category>Google DeepMind</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
-    </item>
-    <item>
-      <title>Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/</link>
-      <guid isPermaLink="false">rss-9732ff15</guid>
-      <pubDate>Thu, 05 Nov 2026 17:00:00 GMT</pubDate>
-      <description>Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing. — Source: Google AI Blog</description>
-      <category>Google AI</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
       <title>Google launches Gemini Omni 1.2 Flash (131K context, $1.5/$9)</title>
       <link>https://openrouter.ai/google/gemini-omni-1.2-flash</link>
       <guid isPermaLink="false">release-google-gemini-omni-1-2-flash</guid>
@@ -743,54 +894,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>OpenRouter launches Auto Code (2M context, pricing TBA)</title>
-      <link>https://openrouter.ai/openrouter/auto-code</link>
-      <guid isPermaLink="false">release-openrouter-auto-code</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Auto Code is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
-      <category>OpenRouter</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Google launches Gemini Omni 1.1 Flash (131K context, $1.5/$9)</title>
-      <link>https://openrouter.ai/google/gemini-omni-1.1-flash</link>
-      <guid isPermaLink="false">release-google-gemini-omni-1-1-flash</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Google: Gemini Omni 1.1 Flash is now on OpenRouter: 131K context, $1.5/$9 per 1M tokens, supports reasoning/video/vision. — Source: OpenRouter</description>
-      <category>Google</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Ricursive launches Ripple 65B Preview (1M context, $0.1/$0.3)</title>
-      <link>https://openrouter.ai/ricursiveai/ripple-65b-preview</link>
-      <guid isPermaLink="false">release-ricursiveai-ripple-65b-preview</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Ricursive: Ripple 65B Preview is now on OpenRouter: 1M context, $0.1/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
-      <category>Ricursive</category>
-      <category>Long context</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Tencent launches Hy4 (1M context, $0.417/$1.25)</title>
-      <link>https://openrouter.ai/tencent/hy4</link>
-      <guid isPermaLink="false">release-tencent-hy4</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Tencent: Hy4 is now on OpenRouter: 1M context, $0.417/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>Tencent</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
       <title>ollama/ollama released v0.40.15</title>
       <link>https://github.com/ollama/ollama/releases/tag/v0.40.15</link>
       <guid isPermaLink="false">github-release-ollama-ollama-v0-40-15</guid>
@@ -800,17 +903,6 @@
       <category>GitHub Release</category>
       <category>Open source</category>
       <source url="https://github.com/ollama/ollama/releases">GitHub Releases</source>
-    </item>
-    <item>
-      <title>Agentic cheminformatics with Google Antigravity</title>
-      <link>https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/</link>
-      <guid isPermaLink="false">rss-1be868b2</guid>
-      <pubDate>Tue, 03 Nov 2026 17:01:49 GMT</pubDate>
-      <description>Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles. — Source: Google DeepMind</description>
-      <category>Google DeepMind</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://deepmind.google/blog/rss.xml">Google DeepMind</source>
     </item>
     <item>
       <title>vllm-project/vllm released v0.33.0</title>
@@ -824,30 +916,6 @@
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>Motif Technologies launches Motif 3 (262K context, $0.3/$1.2)</title>
-      <link>https://openrouter.ai/motif-technologies/motif-3</link>
-      <guid isPermaLink="false">release-motif-technologies-motif-3</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Motif Technologies: Motif 3 is now on OpenRouter: 262K context, $0.3/$1.2 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
-      <category>Motif Technologies</category>
-      <category>Long context</category>
-      <category>Reasoning</category>
-      <category>Open weights</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Z.ai launches GLM 5.3 FlashX Legal (1M context, $0.37/$1.25)</title>
-      <link>https://openrouter.ai/z-ai/glm-5.3-flashx-legal</link>
-      <guid isPermaLink="false">release-z-ai-glm-5-3-flashx-legal</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Z.ai: GLM 5.3 FlashX Legal is now on OpenRouter: 1M context, $0.37/$1.25 per 1M tokens, supports reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
-      <category>Z.ai</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
       <title>huggingface/transformers released Patch release v5.22.1</title>
       <link>https://github.com/huggingface/transformers/releases/tag/v5.22.1</link>
       <guid isPermaLink="false">github-release-huggingface-transformers-v5-22-1</guid>
@@ -857,67 +925,6 @@
       <category>GitHub Release</category>
       <category>Open source</category>
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
-    </item>
-    <item>
-      <title>Particle AI launches Particle-1 (1M context, $0.06/$0.5)</title>
-      <link>https://openrouter.ai/particle-ai/particle-1</link>
-      <guid isPermaLink="false">release-particle-ai-particle-1</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Particle AI: Particle-1 is now on OpenRouter: 1M context, $0.06/$0.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>Particle AI</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>Particle AI launches Particle-1 (free) (1M context, free/free)</title>
-      <link>https://openrouter.ai/particle-ai/particle-1:free</link>
-      <guid isPermaLink="false">release-particle-ai-particle-1-free</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Particle AI: Particle-1 (free) is now on OpenRouter: 1M context, free/free per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>Particle AI</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <category>Free</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>OpenAI launches GPT-6.1 Terra (1.1M context, $1/$5)</title>
-      <link>https://openrouter.ai/openai/gpt-6.1-terra</link>
-      <guid isPermaLink="false">release-openai-gpt-6-1-terra</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>OpenAI</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>OpenAI launches GPT-6.1 Terra Pro (1.1M context, $1/$5)</title>
-      <link>https://openrouter.ai/openai/gpt-6.1-terra-pro</link>
-      <guid isPermaLink="false">release-openai-gpt-6-1-terra-pro</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra Pro is now on OpenRouter: 1.1M context, $1/$5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>OpenAI</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>OpenAI launches GPT-6.1 Terra Pro (batch) (1.1M context, $0.5/$2.5)</title>
-      <link>https://openrouter.ai/openai/gpt-6.1-terra-pro:batch</link>
-      <guid isPermaLink="false">release-openai-gpt-6-1-terra-pro-batch</guid>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <description>OpenAI: GPT-6.1 Terra Pro (batch) is now on OpenRouter: 1.1M context, $0.5/$2.5 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
-      <category>OpenAI</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
       <title>vllm-project/vllm released v0.32.0</title>
@@ -951,17 +958,6 @@
       <category>Official update</category>
       <category>Model release</category>
       <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>vllm-project/vllm released v0.31.0</title>
-      <link>https://github.com/vllm-project/vllm/releases/tag/v0.31.0</link>
-      <guid isPermaLink="false">github-release-vllm-project-vllm-v0-31-0</guid>
-      <pubDate>Mon, 05 Oct 2026 06:44:55 GMT</pubDate>
-      <description># v0.31.0 ## Highlights This release features 717 commits from 307 contributors (96 new)! * **DeepSeek-V4.1-Flash performance**: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#56935); DeepGEMM sp… — Source: GitHub Releases</description>
-      <category>vllm</category>
-      <category>GitHub Release</category>
-      <category>Open source</category>
-      <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
       <title>DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release</title>

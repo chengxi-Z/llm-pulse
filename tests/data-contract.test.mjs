@@ -224,14 +224,20 @@ test('topics：真实热榜 schema / count / 排序 / 纯文本摘要', (t) => {
     }
     assert.ok(Array.isArray(topic.tags), `${tag} tags 应为数组`);
   }
-  // Stable ordering: AIHOT keeps its editorial rank; HN stays points desc / id asc.
-  const aihotBoard = topics.items.some((topic) => topic.hot);
+  // Stable ordering: AIHOT keeps its editorial rank; HN stays points desc / id
+  // asc. A mixed board can carry both blocks, so check each block on its own
+  // terms and require the AIHOT block to come first.
+  const hotFlags = topics.items.map((topic) => !!topic.hot);
+  const firstHn = hotFlags.indexOf(false);
+  if (firstHn >= 0) {
+    assert.ok(hotFlags.slice(firstHn).every((flag) => !flag), 'AIHOT topics 应排在 HN topics 之前');
+  }
   for (let i = 1; i < topics.items.length; i++) {
     const prev = topics.items[i - 1];
     const cur = topics.items[i];
-    if (aihotBoard) {
+    if (prev.hot && cur.hot) {
       assert.ok(prev.rank <= cur.rank, `AIHOT topics 排序应 rank asc @${i}`);
-    } else {
+    } else if (!prev.hot && !cur.hot) {
       assert.ok(prev.points > cur.points || (prev.points === cur.points && prev.id < cur.id), `topics 排序应 points desc / id asc @${i}`);
     }
   }

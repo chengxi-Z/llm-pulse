@@ -16,8 +16,10 @@ const MODIFIER_TOKENS = new Set([
   'max', 'high', 'low', 'medium', 'xhigh', 'default', 'fallback', 'preview',
   'thinking', 'reasoning', 'instruct', 'base', 'customtools', 'batch',
 ]);
-/* Date-like suffixes are kept: "Opus 4.5.20251101" is the same model as "Opus 4.5". */
-const DATE_TOKEN = /^\d{6,}$/;
+/* Date-like suffixes are kept: "Opus 4.5.20251101" is the same model as
+   "Opus 4.5", and a 4-digit build tag ("DeepSeek V4 Pro 0423") is the same
+   model as "DeepSeek V4 Pro". */
+const DATE_TOKEN = /^(?:\d{4}|\d{6,})$/;
 
 /** Reference board used to discover models that are missing from a benchmark. */
 export const GAP_REFERENCE = Object.freeze({

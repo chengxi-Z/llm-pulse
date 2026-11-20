@@ -35,6 +35,8 @@ const OUT = resolve(ROOT, flag('out', '_tmp/ui-audit.json'));
 const SHOTS = has('shots') ? (flag('shots', 'index@1440@en,index@390@zh') === 'all' ? '*' : new Set(flag('shots', 'index@1440@en,index@390@zh').split(',').map((v) => v.trim()))) : new Set();
 const SHOT_DIR = join(ROOT, '_tmp', 'shots');
 const SHOT_SCROLL = flag('shot-scroll', '');
+const SHOT_CLICK = flag('shot-click', '');
+const SHOT_CLICK_TEXT = flag('shot-click-text', '');
 const SHARE_SHOT = flag('share-shot', '') ? resolve(ROOT, flag('share-shot', '')) : '';
 const PORT = Number(flag('port', '4173'));
 const CDP_PORT = Number(flag('cdp', '9229'));
@@ -350,6 +352,20 @@ function pageProbe() {
       newsRows: document.querySelectorAll('#latest-news li').length,
       boardTabs: document.querySelectorAll('#home-rankings-tabs .board-tab').length,
     },
+    rankingProbe: (() => {
+      const rows = Array.from(document.querySelectorAll('.rank-table tbody tr'));
+      const pick = (needle) => {
+        const row = rows.find((r) => (r.textContent || '').includes(needle));
+        if (!row) return null;
+        const model = row.querySelector('.rank-model');
+        const release = row.querySelector('.rank-release');
+        return {
+          model: model ? model.textContent.trim() : null,
+          release: release ? release.textContent.trim() : null,
+        };
+      };
+      return { claude: pick('Opus 4.5'), deepseek: pick('V4 Pro') };
+    })(),
     rankMetaFonts: (() => {
       const org = document.querySelector('.rank-org');
       const release = document.querySelector('.rank-release');
@@ -460,6 +476,18 @@ async function main() {
             awaitPromise: true,
             returnByValue: true,
           }, sessionId);
+          if (SHOT_CLICK) {
+            const clickExpr = `(() => {
+              const nodes = Array.from(document.querySelectorAll(${JSON.stringify(SHOT_CLICK)}));
+              const el = ${SHOT_CLICK_TEXT ? `nodes.find(n => (n.textContent || '').includes(${JSON.stringify(SHOT_CLICK_TEXT)}))` : 'nodes[0]'};
+              if (!el) return false;
+              el.click();
+              return true;
+            })()`;
+            const clicked = await cdp.send('Runtime.evaluate', { expression: clickExpr, returnByValue: true }, sessionId);
+            if (!QUIET) console.log(`[audit] click ${SHOT_CLICK} "${SHOT_CLICK_TEXT}": ${clicked.result?.value}`);
+            await sleep(220);
+          }
           const expression = `(${pageProbe.toString()})()`;
           const evaluation = await cdp.send('Runtime.evaluate', { expression, returnByValue: true, awaitPromise: true }, sessionId);
           if (evaluation.exceptionDetails) {

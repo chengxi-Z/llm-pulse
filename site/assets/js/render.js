@@ -670,7 +670,23 @@ function rankingReleaseDate(entry) {
     const date = rankingReleaseIndex.get(key);
     if (date) return date;
   }
+  // Loose, date/build-aware lookup: the board may attach a compact date
+  // ("Claude Opus 4.5.20251101") or omit a build tag the catalog carries
+  // ("DeepSeek V4 Pro" vs "DeepSeek V4 Pro 0423"). Use the oldest matching
+  // catalog date when a base name maps to several builds.
+  const loose = [];
+  for (const [key, date] of rankingReleaseIndex) {
+    if (matchesModelNames(entry.model || '', key)) loose.push(date);
+  }
+  if (loose.length) return loose.sort()[0];
   return '';
+}
+
+/** Board names sometimes carry a compact date suffix. Show it as the release
+ *  tag below the name instead of gluing it to the model name. */
+function rankingDisplayName(entry) {
+  const raw = String((entry && entry.model) || '—');
+  return raw.replace(/[.\-_]?\d{6,8}$/, '').trim() || raw;
 }
 
 /** Format a date as [YYYY.MM.DD] for the org line. */
@@ -698,7 +714,7 @@ function rankPanelHtml(board) {
     .map(
       (entry) => `<tr>
       <td class="rank-no">${esc(String(entry.rank).padStart(2, '0'))}</td>
-      <td><span class="rank-model">${esc(entry.model)}</span>${rankingOrgHtml(entry)}</td>
+      <td><span class="rank-model">${esc(rankingDisplayName(entry))}</span>${rankingOrgHtml(entry)}</td>
       <td class="rank-score">${esc(entry.scoreDisplay || intlNumber(entry.score))}${
         entry.delta ? `<span class="rank-delta">${entry.delta > 0 ? '↑' : '↓'} ${esc(Math.abs(entry.delta))}</span>` : ''
       }</td>
@@ -1316,7 +1332,7 @@ function rankingsBoardHtml(board, index, expanded = false, boards = []) {
           : esc(String(rank).padStart(2, '0'))
       }</td>
       <td>
-        <span class="rank-model">${esc(entry.model || '—')}</span>
+        <span class="rank-model">${esc(rankingDisplayName(entry))}</span>
         ${rankingOrgHtml(entry)}
       </td>
       <td class="rank-score">${esc(entry.scoreDisplay || intlNumber(entry.score))}</td>
