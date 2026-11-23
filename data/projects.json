@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T08:30:21.552Z",
+  "generatedAt": "2026-11-23T10:54:59.087Z",
   "source": "curated+github",
   "items": [
     {
@@ -21,8 +21,8 @@
       "highlightEn": "The simplest way to run models locally",
       "sourceType": "community",
       "license": "MIT",
-      "stars": 187705,
-      "updatedAt": "2026-11-19T23:44:00.000Z",
+      "stars": 187905,
+      "updatedAt": "2026-11-22T10:10:02.000Z",
       "why": "离线/隐私场景的 AI 助手底座。",
       "whyEn": "A foundation for offline and privacy-first AI assistants."
     },
@@ -44,8 +44,8 @@
       "highlightEn": "The backbone of the open-model ecosystem",
       "sourceType": "community",
       "license": "Apache-2.0",
-      "stars": 169307,
-      "updatedAt": "2026-11-20T08:24:15.000Z",
+      "stars": 169405,
+      "updatedAt": "2026-11-23T10:53:34.000Z",
       "why": "理解模型接口与生态标准。",
       "whyEn": "Understand model interfaces and ecosystem standards."
     },
@@ -67,8 +67,8 @@
       "highlightEn": "Build production AI apps with low code",
       "sourceType": "community",
       "license": null,
-      "stars": 161553,
-      "updatedAt": "2026-11-20T08:28:40.000Z",
+      "stars": 161726,
+      "updatedAt": "2026-11-23T10:53:51.000Z",
       "why": "企业级 AI 应用编排的最佳开源参考。",
       "whyEn": "A leading open-source reference for enterprise AI orchestration."
     },
@@ -90,8 +90,8 @@
       "highlightEn": "One of the most active self-hosted LLM frontends",
       "sourceType": "community",
       "license": null,
-      "stars": 159128,
-      "updatedAt": "2026-11-20T07:22:56.000Z",
+      "stars": 159322,
+      "updatedAt": "2026-11-23T10:38:40.000Z",
       "why": "适合作为 AI 助手与聊天 UI 的参考实现。",
       "whyEn": "A reference implementation for chat UIs and assistants."
     },
@@ -113,8 +113,8 @@
       "highlightEn": "The de facto standard for LLM app frameworks",
       "sourceType": "community",
       "license": "MIT",
-      "stars": 149951,
-      "updatedAt": "2026-11-20T08:10:44.000Z",
+      "stars": 149986,
+      "updatedAt": "2026-11-23T08:20:50.000Z",
       "why": "学习 Agent/工具调用工程化。",
       "whyEn": "Learn production engineering for agents and tool use."
     },
@@ -136,8 +136,8 @@
       "highlightEn": "The benchmark for generative visual workflows",
       "sourceType": "community",
       "license": "GPL-3.0",
-      "stars": 147740,
-      "updatedAt": "2026-11-20T08:27:04.000Z",
+      "stars": 148220,
+      "updatedAt": "2026-11-23T10:05:38.000Z",
       "why": "研究多模态生成与节点编排。",
       "whyEn": "Study multimodal generation and node orchestration."
     },
@@ -159,8 +159,8 @@
       "highlightEn": "A leading browser-agent project",
       "sourceType": "community",
       "license": "MIT",
-      "stars": 121558,
-      "updatedAt": "2026-11-20T03:57:10.000Z",
+      "stars": 121811,
+      "updatedAt": "2026-11-22T03:44:56.000Z",
       "why": "研究 Agent 与真实环境交互。",
       "whyEn": "Study agents interacting with real environments."
     },
@@ -182,8 +182,8 @@
       "highlightEn": "A production standard for inference acceleration",
       "sourceType": "community",
       "license": "Apache-2.0",
-      "stars": 97246,
-      "updatedAt": "2026-11-20T08:11:57.000Z",
+      "stars": 97393,
+      "updatedAt": "2026-11-23T10:20:32.000Z",
       "why": "研究推理性能与部署优化。",
       "whyEn": "Study inference performance and deployment optimization."
     },
@@ -205,8 +205,8 @@
       "highlightEn": "Document understanding plus traceable citations",
       "sourceType": "community",
       "license": "Apache-2.0",
-      "stars": 94466,
-      "updatedAt": "2026-11-20T07:50:19.000Z",
+      "stars": 94584,
+      "updatedAt": "2026-11-23T10:48:37.000Z",
       "why": "研究 RAG 工程质量标杆。",
       "whyEn": "A quality benchmark for RAG engineering."
     },
@@ -228,7 +228,7 @@
       "highlightEn": "Standardizing the agent tool ecosystem",
       "sourceType": "community",
       "license": null,
-      "stars": 92128,
+      "stars": 92179,
       "updatedAt": "2026-11-19T16:41:29.000Z",
       "why": "理解 MCP 生态与工具接入。",
       "whyEn": "Understand MCP and tool integration."
@@ -251,8 +251,8 @@
       "highlightEn": "A beautifully designed multi-model chat UI",
       "sourceType": "community",
       "license": null,
-      "stars": 85908,
-      "updatedAt": "2026-11-20T08:29:28.000Z",
+      "stars": 86031,
+      "updatedAt": "2026-11-23T10:50:06.000Z",
       "why": "轻奢视觉与交互设计的参考。",
       "whyEn": "A reference for light-luxury visual and interaction design."
     },
@@ -274,8 +274,8 @@
       "highlightEn": "An approachable multi-agent framework",
       "sourceType": "community",
       "license": "MIT",
-      "stars": 61121,
-      "updatedAt": "2026-11-20T04:19:30.000Z",
+      "stars": 61191,
+      "updatedAt": "2026-11-23T10:36:09.000Z",
       "why": "学习多 Agent 协作范式。",
       "whyEn": "Learn multi-agent collaboration patterns."
     },
@@ -298,7 +298,7 @@
       "sourceType": "self",
       "license": "MIT",
       "stars": null,
-      "updatedAt": "2026-11-20T08:30:21.552Z",
+      "updatedAt": "2026-11-23T10:54:59.087Z",
       "why": "个人 AI 项目成果展示位：把「持续跟踪 + 个人作品集」做成可持续运营的公域产品。",
       "whyEn": "A personal AI showcase: turn continuous tracking and a portfolio into a sustainable public product."
     }

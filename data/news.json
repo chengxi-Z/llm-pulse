@@ -1,8 +1,776 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T08:30:21.552Z",
-  "source": "X：腾讯混元 (@TencentHunyuan)+AWS ML Blog+OpenRouter+MIT News AI+X：Josh Woodward (@joshwoodward, Google Labs VP)+X：Arena (@arena)+X：Karina Nguyen（@karinanguyen）+X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)+Google Blog：AI（RSS）+Google AI Blog+X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)+X：Anthropic (@AnthropicAI)+TechCrunch：AI（RSS）+The Verge：AI（RSS）+MIT News（RSS）+Ai2 / Allen Institute for AI（RSS）+OpenAI Blog+X：Tibo (@thsottiaux)+X：Gemini (@GeminiApp)+Google DeepMind+Stanford HAI News（网页）+OpenAI：官网动态（RSS · 排除企业/客户案例）+OpenAI：失准报告与通报（网页）+Anthropic：Newsroom（网页）+GitHub Releases+DeepSeek+Berkeley BAIR",
+  "generatedAt": "2026-11-23T10:54:59.087Z",
+  "source": "MIT News AI+TechCrunch：AI（RSS）+X：面壁智能 OpenBMB (@OpenBMB)+The Decoder：AI News（RSS）+AWS ML Blog+OpenAI：官网动态（RSS · 排除企业/客户案例）+OpenAI Blog+X：Rohan Paul (@rohanpaul_ai)+GitHub Releases+Together AI 研究与产品博客（RSS）+OpenRouter+Figma AI / Agent / Make+Ars Technica：AI（RSS）+X：ChatGPT (@ChatGPT)+MIT News（RSS）+Thinking Machines Lab：News（网页）+X：腾讯混元 (@TencentHunyuan)+Google Research：Blog（网页）+Browser Use+X：Arena (@arena)+Google AI Blog+Runway：News（网页）+OpenHands 官方博客+Google DeepMind+Berkeley BAIR",
   "items": [
+    {
+      "id": "rss-fac98270",
+      "title": "AI-driven technique could help engineers design analog chips faster and with less expense",
+      "summary": "The “SLIC” training method enables a small LLM to compete with much more resource-intensive models in complex circuit design tasks.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-dus34samsjrld1qopq65v54uq",
+      "title": "Anthropic IPO 前三家机构如何重注押注",
+      "titleEn": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "summary": "TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 83. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
+      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "sourceUrl": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceNameEn": "TechCrunch: AI (RSS)",
+      "publishedAt": "2026-11-23T01:25:53.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "dus34samsjrld1qopq65v54uq",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 83,
+        "selected": true,
+        "reason": "报道还原了 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic 上市前的投资决策过程，可了解机构在争议时点押注的依据。",
+        "aihotUrl": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+        "originalUrl": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+        "originalTitle": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+        "discoveredAt": "2026-11-23T01:34:41.935Z"
+      }
+    },
+    {
+      "id": "aihot-dr26culfdd1cb21w56i8iruts",
+      "title": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
+      "titleEn": "Exactly! 💙 The real impact of small models comes from making AI accessible, affordable, and useful in everyday life. Excited to see more...",
+      "summary": "面壁智能转发并认同 @xiaoanlab 对 MiniCPM 端侧落地的观察：截至 2026 年 11 月 MiniCPM 下载量超过 7000 万，其 8B 老挝国家模型接入老挝政府 G-Chat v2 通讯软件，老挝翻译在国际基准上超过 GPT-4o。马来西亚用 VoxCPM2 做语音交互，肯尼亚一家银行在其上运行端侧风控 Agent，开发者基于它推出离线应用；小模型之争正从参数量转向谁真正嵌入日常系统。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 65. Source: X: OpenBMB (@OpenBMB). Open the original report for the full summary.",
+      "url": "https://x.com/OpenBMB/status/2124464239670964531",
+      "sourceUrl": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
+      "sourceName": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "sourceNameEn": "X: OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-11-22T11:25:20.000Z",
+      "kind": "policy",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "dr26culfdd1cb21w56i8iruts",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 65,
+        "selected": true,
+        "reason": "引用内容梳理了 MiniCPM 在老挝、马来西亚、肯尼亚等实际落地情况，读者可借此看小模型如何嵌入日常系统而非比拼参数量。",
+        "aihotUrl": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
+        "originalUrl": "https://x.com/OpenBMB/status/2124464239670964531",
+        "originalTitle": "Exactly! 💙 The real impact of small models comes from making AI accessible, affordable, and useful in everyday life. Excited to see more...",
+        "discoveredAt": "2026-11-22T21:06:44.519Z"
+      }
+    },
+    {
+      "id": "aihot-g3vdho0vzm8rzriiz5grruy3m",
+      "title": "用户实测用 MiniCPM5-2B 在 Mac 上本地跑通体检报告分析",
+      "titleEn": "Thanks for the detailed hands-on review! 💙 Great to see MiniCPM5-2B being used in a local-first workflow. We really appreciate you shari...",
+      "summary": "用户@cxjwin 分享在 Mac（M4 Pro、48GB）上用 Homebrew 装 llama.cpp 跑 minicpm5-2b、colima 起 Docker 本地运行开源项目 Mirobody 的实测：14 页 PDF 首次处理漏掉 3 页扫描版化验单，截图单独上传后 58 行化验数值逐项与原件对上，其中 20 行成功映射到 LOINC 标准编码，肌酐因名称歧义留空未猜。问超标指标时 2B 模型走 11 步找到全部 5 项箭头指标，但把一项在范围内的血糖误判为超标…",
+      "summaryEn": "AIHOT editorial pick · Opinion · score 71. Source: X: OpenBMB (@OpenBMB). Open the original report for the full summary.",
+      "url": "https://x.com/OpenBMB/status/2124461770043785636",
+      "sourceUrl": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
+      "sourceName": "X：面壁智能 OpenBMB (@OpenBMB)",
+      "sourceNameEn": "X: OpenBMB (@OpenBMB)",
+      "publishedAt": "2026-11-22T11:15:31.000Z",
+      "kind": "research",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Opinion"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "g3vdho0vzm8rzriiz5grruy3m",
+        "category": "opinion",
+        "categoryLabel": "观点评论",
+        "score": 71,
+        "selected": true,
+        "reason": "用户实测记录了本地跑通 Mirobody 的完整流程，也包括扫描页漏读、LOINC 编码对不上和 2B 模型答错的细节，可作本地部署健康数据工作流的参考。",
+        "aihotUrl": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
+        "originalUrl": "https://x.com/OpenBMB/status/2124461770043785636",
+        "originalTitle": "Thanks for the detailed hands-on review! 💙 Great to see MiniCPM5-2B being used in a local-first workflow. We really appreciate you shari...",
+        "discoveredAt": "2026-11-22T21:06:44.543Z"
+      }
+    },
+    {
+      "id": "aihot-ikpixx0j7414se1f6lww2csek",
+      "title": "Lean 与 Mathlib 社区确认 Levent Alpöge 黎曼猜想证明正确",
+      "titleEn": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+      "summary": "Lean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpöge 于 2026 年 11 月 20 日以 1700 万行 Lean 代码发布该证明，数十人独立运行得到相同结果，且验证程序被设计为可证明不会接受有缺陷的证明。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 85. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
+      "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+      "sourceUrl": "https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceNameEn": "The Decoder: AI News (RSS)",
+      "publishedAt": "2026-11-22T11:08:31.000Z",
+      "kind": "policy",
+      "importance": 3,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "ikpixx0j7414se1f6lww2csek",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 85,
+        "selected": true,
+        "reason": "社区正式确认与代码验证细节都写得很具体，读者可以了解这道数学难题如何以 Lean 形式被独立核验。",
+        "aihotUrl": "https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
+        "originalUrl": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+        "originalTitle": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+        "discoveredAt": "2026-11-22T12:05:36.859Z"
+      }
+    },
+    {
+      "id": "rss-79f340e3",
+      "title": "Meta ads is now available in AWS Quick",
+      "summary": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and thir…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "publishedAt": "2026-11-22T01:59:13.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-r7kb35fpdwc1m2iqsmd310tdj",
+      "title": "OpenAI 提议以困惑度作为行业共享指标并公开内部预训练测量数据",
+      "titleEn": "Perplexity and Intelligence",
+      "summary": "OpenAI 撰文提议将 perplexity（交叉熵损失）确立为跨模型开发者比较和安全标准的共享指标，并公开其内部预训练测量数据。",
+      "summaryEn": "AIHOT editorial pick · Opinion · score 63. Source: OpenAI: (RSS · / ). Open the original report for the full summary.",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "sourceUrl": "https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj",
+      "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+      "sourceNameEn": "OpenAI: (RSS · / )",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "kind": "research",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Opinion"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "r7kb35fpdwc1m2iqsmd310tdj",
+        "category": "opinion",
+        "categoryLabel": "观点评论",
+        "score": 63,
+        "selected": true,
+        "reason": "OpenAI 公开自 GPT-3.5 以来的内部 log-perplexity 数据，并提出以困惑度作为跨实验室共享的安全限速指标。",
+        "aihotUrl": "https://aihot.news/items/r7kb35fpdwc1m2iqsmd310tdj",
+        "originalUrl": "https://openai.com/index/perplexity-and-intelligence",
+        "originalTitle": "Perplexity and Intelligence",
+        "discoveredAt": "2026-11-22T18:47:36.497Z"
+      }
+    },
+    {
+      "id": "rss-3ce26ae5",
+      "title": "Perplexity and Intelligence",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 3,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-d32df9vzpliz9m348fug74inq",
+      "title": "Columbia 与 MIT 论文展示 Claude 发现的算法突破 3SUM 与 APSP 长期速度上限",
+      "titleEn": "New Columbia and MIT paper shows that an algorithm Claude found beats the long-standing speed limits for 3SUM and all-pairs shortest paths.",
+      "summary": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。",
+      "summaryEn": "AIHOT editorial pick · Research · score 77. Source: X: Rohan Paul (@rohanpaul_ai). Open the original report for the full summary.",
+      "url": "https://x.com/rohanpaul_ai/status/2124213113583174076",
+      "sourceUrl": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+      "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
+      "sourceNameEn": "X: Rohan Paul (@rohanpaul_ai)",
+      "publishedAt": "2026-11-21T18:47:26.000Z",
+      "kind": "research",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Research"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "d32df9vzpliz9m348fug74inq",
+        "category": "paper",
+        "categoryLabel": "论文研究",
+        "score": 77,
+        "selected": true,
+        "reason": "论文显示 Claude 发现的算法改进了 3SUM 和 APSP 的长期复杂度上限，并用 Lean 4 形式化验证，读者可以了解 AI 搜索算法的可行路径。",
+        "aihotUrl": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+        "originalUrl": "https://x.com/rohanpaul_ai/status/2124213113583174076",
+        "originalTitle": "New Columbia and MIT paper shows that an algorithm Claude found beats the long-standing speed limits for 3SUM and all-pairs shortest paths.",
+        "discoveredAt": "2026-11-21T18:49:23.280Z"
+      }
+    },
+    {
+      "titleEn": "huggingface/transformers released Release v5.24.0",
+      "summaryEn": "# Release v5.24.0 ## New Model additions ### Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in…",
+      "id": "github-release-huggingface-transformers-v5-24-0",
+      "title": "huggingface/transformers 发布 Release v5.24.0",
+      "summary": "# Release v5.24.0 ## New Model additions ### Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in…",
+      "kind": "oss",
+      "sourceName": "GitHub Releases",
+      "sourceUrl": "https://github.com/huggingface/transformers/releases",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "publishedAt": "2026-11-21T12:28:26.000Z",
+      "tags": [
+        "transformers",
+        "GitHub Release",
+        "开源"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-tje8i8y21ttk7jjmqet5bpxuq",
+      "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
+      "titleEn": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+      "summary": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。",
+      "summaryEn": "AIHOT editorial pick · Research · score 82. Source: The Decoder: AI News (RSS). Open the original report for the full summary.",
+      "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+      "sourceUrl": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceNameEn": "The Decoder: AI News (RSS)",
+      "publishedAt": "2026-11-21T11:19:49.000Z",
+      "kind": "research",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Research"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "tje8i8y21ttk7jjmqet5bpxuq",
+        "category": "paper",
+        "categoryLabel": "论文研究",
+        "score": 82,
+        "selected": true,
+        "reason": "报道同时给出 AI 证明以 Lean 形式化验证和人类证明遭社区质疑两条线，读者可据此判断双方证明各自的验证路径与可信度。",
+        "aihotUrl": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+        "originalUrl": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/",
+        "originalTitle": "Hours after Anthropic claims a Claude proof of the Riemann hypothesis, Stanford releases an all-human competing draft",
+        "discoveredAt": "2026-11-21T11:42:40.360Z"
+      }
+    },
+    {
+      "id": "rss-4b6701a4",
+      "title": "New in AWS Quick: More capable flows, an updated web experience, and agents that work together",
+      "summary": "AWS Quick is the AI workspace built only for work. Today we're releasing updates that help your team get more done: build and run business-process flows in chat, triage your day in the updated web app, get more complete answers from multip…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
+      "publishedAt": "2026-11-21T01:06:42.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-fd28edb6",
+      "title": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
+      "summary": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up to 40% and time to first token by up to 80%. This post walks through the distri…",
+      "kind": "pricing",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+      "publishedAt": "2026-11-21T00:14:26.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "定价"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-rlj39tzyujneo0u35iyrfb4uc",
+      "title": "Qwen4 Max 上线 Together AI，单次调用修复 Tornado 整仓 bug",
+      "titleEn": "Qwen4 Max is live on Together AI",
+      "summary": "Together AI 宣布阿里旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen/Qwen4-Max），1M token 上下文，截至 2026 年 11 月 22 日 7 折。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 72. Source: Together AI (RSS). Open the original report for the full summary.",
+      "url": "https://www.together.ai/blog/qwen4-max",
+      "sourceUrl": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+      "sourceName": "Together AI 研究与产品博客（RSS）",
+      "sourceNameEn": "Together AI (RSS)",
+      "publishedAt": "2026-11-21T00:00:00.000Z",
+      "kind": "release",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "rlj39tzyujneo0u35iyrfb4uc",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 72,
+        "selected": true,
+        "reason": "Together AI 用一次 65 万 token 的整仓修 bug 实测展示 Qwen4 Max 的长上下文编码能力，并给出价格、缓存和调用细节。",
+        "aihotUrl": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+        "originalUrl": "https://www.together.ai/blog/qwen4-max",
+        "originalTitle": "Qwen4 Max is live on Together AI",
+        "discoveredAt": "2026-11-21T21:44:17.465Z"
+      }
+    },
+    {
+      "id": "aihot-xqe6lbb5zsjp9xbsc1o912cs0",
+      "title": "Together AI 通报 2026 年 6-7 月 serverless 推理服务提示词泄露事件",
+      "titleEn": "Security event: Prompt leakage for requests in June and July of 2026",
+      "summary": "Together AI 通报一起安全事件：因 AI 编码 agent 在公开 GitHub 仓库 xorl 中提交了私有 Hugging Face 仓库凭证，未授权方下载了 2026 年 6-7 月提交给 MiniMax M3、GLM-5.2、Kimi K2.6 等 serverless 推理服务的存储提示词样本，并搜索其中其他服务凭证。",
+      "summaryEn": "AIHOT editorial pick · Industry · score 74. Source: Together AI (RSS). Open the original report for the full summary.",
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "sourceUrl": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+      "sourceName": "Together AI 研究与产品博客（RSS）",
+      "sourceNameEn": "Together AI (RSS)",
+      "publishedAt": "2026-11-21T00:00:00.000Z",
+      "kind": "policy",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Industry"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "xqe6lbb5zsjp9xbsc1o912cs0",
+        "category": "industry",
+        "categoryLabel": "行业动态",
+        "score": 74,
+        "selected": true,
+        "reason": "原文披露了提示词泄露的范围、成因与已落实的整改措施，用户可据此评估自己是否受影响及是否开启 ZDR。",
+        "aihotUrl": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
+        "originalUrl": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+        "originalTitle": "Security event: Prompt leakage for requests in June and July of 2026",
+        "discoveredAt": "2026-11-21T23:46:18.013Z"
+      }
+    },
+    {
+      "titleEn": "RadixArk launches DaisyRose 27B (262K context, $0.15/$1.88)",
+      "summaryEn": "RadixArk: DaisyRose 27B is now on OpenRouter: 262K context, $0.15/$1.88 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-radixark-daisyrose-27b",
+      "title": "RadixArk 上新：DaisyRose 27B（上下文 262K，$0.15/$1.88）",
+      "summary": "RadixArk: DaisyRose 27B 进入 OpenRouter 目录：上下文 262K，$0.15/$1.88 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/radixark/daisyrose-27b",
+      "publishedAt": "2026-11-21T00:00:00.000Z",
+      "tags": [
+        "RadixArk",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "radixark/daisyrose-27b"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "titleEn": "Thinking Machines launches Inkling 2 Mini (1M context, $0.075/$0.3)",
+      "summaryEn": "Thinking Machines: Inkling 2 Mini is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "id": "release-thinkingmachines-inkling-2-mini",
+      "title": "Thinking Machines 上新：Inkling 2 Mini（上下文 1M，$0.075/$0.3）",
+      "summary": "Thinking Machines: Inkling 2 Mini 进入 OpenRouter 目录：上下文 1M，$0.075/$0.3 每百万 tokens，支持 reasoning/structured-output/tool-calling/vision。",
+      "kind": "release",
+      "sourceName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/models",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+      "publishedAt": "2026-11-21T00:00:00.000Z",
+      "tags": [
+        "Thinking Machines",
+        "长上下文",
+        "多模态",
+        "推理",
+        "开源权重"
+      ],
+      "models": [
+        "thinkingmachines/inkling-2-mini"
+      ],
+      "importance": 3,
+      "lang": "zh"
+    },
+    {
+      "id": "rss-43d370ad",
+      "title": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+      "summary": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the e…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+      "publishedAt": "2026-11-20T23:07:03.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-e3e9d2e5",
+      "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+      "summary": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+      "publishedAt": "2026-11-20T22:35:24.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-w612ivonntodntv1ydkt2lqwh",
+      "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
+      "titleEn": "Workflow lab: Turning context into a plan with Specs and the Figma agent",
+      "summary": "Figma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。",
+      "summaryEn": "AIHOT editorial pick · Tutorial · score 61. Source: Figma AI / Agent / Make. Open the original report for the full summary.",
+      "url": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
+      "sourceUrl": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+      "sourceName": "Figma AI / Agent / Make",
+      "sourceNameEn": "Figma AI / Agent / Make",
+      "publishedAt": "2026-11-20T22:17:00.000Z",
+      "kind": "oss",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Tutorial"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "w612ivonntodntv1ydkt2lqwh",
+        "category": "tip",
+        "categoryLabel": "教程技巧",
+        "score": 61,
+        "selected": true,
+        "reason": "Figma 官方用完整示例演示如何把分散的 PRD、设计与数据整理成 Specs，并经 Figma MCP 交给 Codex 实现，方法可迁移。",
+        "aihotUrl": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+        "originalUrl": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
+        "originalTitle": "Workflow lab: Turning context into a plan with Specs and the Figma agent",
+        "discoveredAt": "2026-11-20T22:13:25.110Z"
+      }
+    },
+    {
+      "id": "rss-f6b58cd2",
+      "title": "Q&A: Enabling more human-like interactions and understanding in multimodal foundation models",
+      "summary": "Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models.",
+      "kind": "research",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120",
+      "publishedAt": "2026-11-20T21:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-agm7klro03kcu9weuix1bt4su",
+      "title": "研究者向 AI 供应链埋入 200 万个金丝雀，揭露敏感数据泄露",
+      "titleEn": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "summary": "研究者在经过 OpenRouter 等 AI 路由的请求中埋入 200 万个金丝雀链接，测试敏感信息是否会沿 AI 服务链泄露，结果显示这些数据像筛子一样大量外泄。",
+      "summaryEn": "AIHOT editorial pick · Research · score 78. Source: Ars Technica: AI (RSS). Open the original report for the full summary.",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "sourceUrl": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+      "sourceName": "Ars Technica：AI（RSS）",
+      "sourceNameEn": "Ars Technica: AI (RSS)",
+      "publishedAt": "2026-11-20T20:59:08.000Z",
+      "kind": "research",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "Research"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "agm7klro03kcu9weuix1bt4su",
+        "category": "paper",
+        "categoryLabel": "论文研究",
+        "score": 78,
+        "selected": true,
+        "reason": "研究者在 AI 供应链中埋入 200 万个金丝雀链接，原文给出了数据泄露路径和 OpenRouter 的回应细节。",
+        "aihotUrl": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+        "originalUrl": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+        "originalTitle": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+        "discoveredAt": "2026-11-20T22:07:39.938Z"
+      }
+    },
+    {
+      "id": "rss-03514106",
+      "title": "How Standard Bank Group automates AI risk assessment for generative AI",
+      "summary": "Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards an…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+      "publishedAt": "2026-11-20T20:37:31.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-62a813a3",
+      "title": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+      "summary": "Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a c…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+      "publishedAt": "2026-11-20T20:22:00.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-fa40d110",
+      "title": "New approach enables physically consistent AI models of chaotic systems",
+      "summary": "Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
+      "publishedAt": "2026-11-20T20:00:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-ekf0so0xitc52thkrxx3mwax1",
+      "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
+      "titleEn": "In the ChatGPT sidebar, Space is the new home for pages, slides, images, files, and uploads.",
+      "summary": "ChatGPT 官方宣布侧边栏中的 Space 成为 pages、slides、images、files 和 uploads 的新家。用 ChatGPT 可写页面、做研究、生成图片并创建交互式图表，把想法变成带图片和图形的幻灯片并邀请他人协作；页面和幻灯片还可从已连接的工具自动更新。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 65. Source: X: ChatGPT (@ChatGPT). Open the original report for the full summary.",
+      "url": "https://x.com/ChatGPT/status/2123850915061104735",
+      "sourceUrl": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+      "sourceName": "X：ChatGPT (@ChatGPT)",
+      "sourceNameEn": "X: ChatGPT (@ChatGPT)",
+      "publishedAt": "2026-11-20T18:48:12.000Z",
+      "kind": "release",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "AI Products"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "ekf0so0xitc52thkrxx3mwax1",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 65,
+        "selected": true,
+        "reason": "官方介绍了 Space 承载页面、幻灯片与文件的能力，读者可据此评估它在协作和内容生成场景中的用法。",
+        "aihotUrl": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+        "originalUrl": "https://x.com/ChatGPT/status/2123850915061104735",
+        "originalTitle": "In the ChatGPT sidebar, Space is the new home for pages, slides, images, files, and uploads.",
+        "discoveredAt": "2026-11-20T19:18:44.286Z"
+      }
+    },
+    {
+      "id": "rss-406a7cb6",
+      "title": "Introducing enhanced infrastructure observability in Amazon SageMaker HyperPod",
+      "summary": "Amazon SageMaker HyperPod now offers enhanced observability to help you diagnose GPU training issues faster. It brings together diagnostic and profiling capabilities for training workloads on both Amazon EKS and Slurm orchestrators, pinpoi…",
+      "kind": "release",
+      "sourceName": "AWS ML Blog",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues/",
+      "publishedAt": "2026-11-20T18:24:06.000Z",
+      "tags": [
+        "AWS ML",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-qfwgfsg8m1r4vcf4vglgi03by",
+      "title": "MIT 数学面板讨论 AI 冲击下的数学研究未来",
+      "titleEn": "Following the \"mathocalypse,\" mathematicians consider the future",
+      "summary": "MIT 举办“AI 与社会：数学的未来”座谈，来自 MIT、哈佛、西北大学和纽约大学的数学家讨论 AI 对数学研究的影响。",
+      "summaryEn": "AIHOT editorial pick · Opinion · score 60. Source: MIT News (RSS). Open the original report for the full summary.",
+      "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+      "sourceUrl": "https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
+      "sourceName": "MIT News（RSS）",
+      "sourceNameEn": "MIT News (RSS)",
+      "publishedAt": "2026-11-20T15:20:00.000Z",
+      "kind": "research",
+      "importance": 1,
+      "tags": [
+        "AIHOT",
+        "Opinion"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "qfwgfsg8m1r4vcf4vglgi03by",
+        "category": "opinion",
+        "categoryLabel": "观点评论",
+        "score": 60,
+        "selected": true,
+        "reason": "原文记录多位一线数学家对 AI 冲击数学研究的分歧观点，并给出期刊与人才培养正在调整的具体变化。",
+        "aihotUrl": "https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
+        "originalUrl": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+        "originalTitle": "Following the “mathocalypse,” mathematicians consider the future",
+        "discoveredAt": "2026-11-20T15:50:41.541Z"
+      }
+    },
+    {
+      "id": "rss-01169217",
+      "title": "Following the “mathocalypse,” mathematicians consider the future",
+      "summary": "A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession.",
+      "kind": "release",
+      "sourceName": "MIT News AI",
+      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+      "publishedAt": "2026-11-20T15:20:00.000Z",
+      "tags": [
+        "MIT",
+        "官方博客",
+        "模型发布"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "rss-e0134f05",
+      "title": "Combatting adversarial distillation",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "kind": "policy",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "publishedAt": "2026-11-20T10:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "官方博客",
+        "政策/安全"
+      ],
+      "models": [],
+      "importance": 2,
+      "lang": "en"
+    },
+    {
+      "id": "aihot-y7nk77dxae51qwi826gpmvbho",
+      "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
+      "titleEn": "Introducing Inkling 2 Mini",
+      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。",
+      "summaryEn": "AIHOT editorial pick · AI Models · score 79. Source: Thinking Machines Lab: News ( ). Open the original report for the full summary.",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "sourceUrl": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "sourceName": "Thinking Machines Lab：News（网页）",
+      "sourceNameEn": "Thinking Machines Lab: News ( )",
+      "publishedAt": "2026-11-20T07:00:00.000Z",
+      "kind": "release",
+      "importance": 2,
+      "tags": [
+        "AIHOT",
+        "AI Models"
+      ],
+      "models": [],
+      "lang": "zh",
+      "aihot": {
+        "id": "y7nk77dxae51qwi826gpmvbho",
+        "category": "ai-models",
+        "categoryLabel": "AI 模型",
+        "score": 79,
+        "selected": true,
+        "reason": "原文给出循环架构设计、基准分数和可运行硬件门槛，读者可据此判断它是否适合本地部署和智能体任务。",
+        "aihotUrl": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+        "originalUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+        "originalTitle": "Introducing Inkling 2 Mini",
+        "discoveredAt": "2026-11-20T20:28:11.394Z"
+      }
+    },
     {
       "id": "aihot-jl6m0eymz9z0kleh54c3guowx",
       "title": "腾讯混元开放 Hy4 权重",
@@ -36,40 +804,68 @@
       }
     },
     {
-      "id": "rss-1ffd426b",
-      "title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
-      "summary": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-…",
+      "id": "aihot-t68rgyv46hdbp52212ozxleh3",
+      "title": "Google 回顾 Duplex 十年演进：如何在 Gemini Tasks 中替用户打电话给商家",
+      "titleEn": "How Google Duplex evolved to also call businesses for you in Gemini",
+      "summary": "Google Research 回顾 Duplex 十年架构演进，并介绍本周在 Gemini App Tasks 中上线的自动致电商家功能。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 67. Source: Google Research: Blog ( ). Open the original report for the full summary.",
+      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+      "sourceUrl": "https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+      "sourceName": "Google Research：Blog（网页）",
+      "sourceNameEn": "Google Research: Blog ( )",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
       "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
-      "publishedAt": "2026-11-20T00:34:07.000Z",
+      "importance": 1,
       "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
+        "AIHOT",
+        "AI Products"
       ],
       "models": [],
-      "importance": 3,
-      "lang": "en"
+      "lang": "zh",
+      "aihot": {
+        "id": "t68rgyv46hdbp52212ozxleh3",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 67,
+        "selected": true,
+        "reason": "文章梳理 Duplex 三代架构演进与技术难点，可帮读者理解 AI 电话智能体如何处理实时对话的延迟与语用问题。",
+        "aihotUrl": "https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+        "originalUrl": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+        "originalTitle": "How Google Duplex evolved to also call businesses for you in Gemini",
+        "discoveredAt": "2026-11-20T23:40:15.362Z"
+      }
     },
     {
-      "id": "rss-9746991a",
-      "title": "Use Kimi Code CLI with models on Amazon Bedrock",
-      "summary": "Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This p…",
+      "id": "aihot-wibzzhd168cafn7o3gl8336di",
+      "title": "browser-use 1.0 发布：用一个 Python REPL 工具替代 24 个浏览器动作",
+      "titleEn": "browser-use 1.0: Why We Replaced 24 Agent Tools With One",
+      "summary": "Browser Use 发布 browser-use 1.0，用单一 python 持久 REPL 加原生 Chrome DevTools Protocol 访问替代 0.x 的 24 个浏览器动作。",
+      "summaryEn": "AIHOT editorial pick · AI Products · score 74. Source: Browser Use. Open the original report for the full summary.",
+      "url": "https://browser-use.com/posts/browser-use-1-0",
+      "sourceUrl": "https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
+      "sourceName": "Browser Use",
+      "sourceNameEn": "Browser Use",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
       "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
-      "publishedAt": "2026-11-20T00:33:30.000Z",
+      "importance": 2,
       "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
+        "AIHOT",
+        "AI Products"
       ],
       "models": [],
-      "importance": 3,
-      "lang": "en"
+      "lang": "zh",
+      "aihot": {
+        "id": "wibzzhd168cafn7o3gl8336di",
+        "category": "ai-products",
+        "categoryLabel": "AI 产品",
+        "score": 74,
+        "selected": true,
+        "reason": "作者用同一基准的分数与成本对比，说明了把 24 个工具收敛成一个 Python REPL 的取舍和适用边界，方法可迁移到自己维护的 agent 工具集。",
+        "aihotUrl": "https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
+        "originalUrl": "https://browser-use.com/posts/browser-use-1-0",
+        "originalTitle": "browser-use 1.0: Why We Replaced 24 Agent Tools With One",
+        "discoveredAt": "2026-11-20T21:29:16.299Z"
+      }
     },
     {
       "titleEn": "Mistral launches Pixtral Large 2502 (128K context, $2/$6)",
@@ -93,57 +889,39 @@
       "lang": "zh"
     },
     {
-      "id": "rss-84be4d63",
-      "title": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
-      "summary": "Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer's AWS bill, with no stablecoin wallets or API keys. This post wal…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
-      "publishedAt": "2026-11-19T23:02:16.000Z",
+      "id": "rss-581d6619",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "kind": "research",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
       "tags": [
-        "AWS ML",
+        "OpenAI",
+        "官方博客",
+        "研究"
+      ],
+      "models": [],
+      "importance": 1,
+      "lang": "en"
+    },
+    {
+      "id": "rss-c986fee3",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "kind": "release",
+      "sourceName": "OpenAI Blog",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
         "官方博客",
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "rss-c19276bc",
-      "title": "How the BMW Group governs hundreds of agents across thousands of developers",
-      "summary": "When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing…",
-      "kind": "policy",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/",
-      "publishedAt": "2026-11-19T22:20:23.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "rss-791430e0",
-      "title": "Run your whole selling business in AWS Quick",
-      "summary": "Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it.",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/",
-      "publishedAt": "2026-11-19T22:16:22.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -161,57 +939,7 @@
         "研究"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-h5xjk79bhcu8vgnbrynj208uj",
-      "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
-      "titleEn": "Gemini app on Mac can now do tasks on your computer, a top feature request!",
-      "summary": "Google Labs VP Josh Woodward 宣布 Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。官方演示显示 Gemini 能在后台窗口中点击、滚动和输入，把草图变成 Blender 里的绑定的 3D 模型。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 71. Source: X: Josh Woodward (@joshwoodward, Google Labs VP). Open the original report for the full summary.",
-      "url": "https://x.com/joshwoodward/status/2123534862569324703",
-      "sourceUrl": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
-      "sourceName": "X：Josh Woodward (@joshwoodward, Google Labs VP)",
-      "sourceNameEn": "X: Josh Woodward (@joshwoodward, Google Labs VP)",
-      "publishedAt": "2026-11-19T21:52:19.000Z",
-      "kind": "release",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "h5xjk79bhcu8vgnbrynj208uj",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 71,
-        "selected": true,
-        "reason": "Google 高管确认 Mac 端 Gemini 上线计算机操作功能，读者可据此了解智能体接管任务与用户保留屏幕控制的新形态。",
-        "aihotUrl": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
-        "originalUrl": "https://x.com/joshwoodward/status/2123534862569324703",
-        "originalTitle": "Gemini app on Mac can now do tasks on your computer, a top feature request!",
-        "discoveredAt": "2026-11-19T22:19:43.234Z"
-      }
-    },
-    {
-      "id": "rss-6fc2dd85",
-      "title": "Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints",
-      "summary": "Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding thr…",
-      "kind": "pricing",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/",
-      "publishedAt": "2026-11-19T21:28:18.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "定价"
-      ],
-      "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
@@ -247,138 +975,6 @@
       }
     },
     {
-      "id": "rss-d93a8061",
-      "title": "Inside Amazon Connect Talent: The science of structured AI interviews",
-      "summary": "For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hir…",
-      "kind": "release",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/",
-      "publishedAt": "2026-11-19T21:23:20.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-lc38ozrwfur9ympu1l3meqcuq",
-      "title": "Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO",
-      "titleEn": "One of the best parts of building Claude was the friendships we made along the way. I still remember talking through model evals and post...",
-      "summary": "Karina Nguyen 发文感谢投资人 Sol，回忆早期在办公室一起讨论模型评测和后训练难题的经历，并称赞他是唯一理解 scaling laws 的 VC。引用内容为 Sol 祝贺 Anthropic IPO 的推文，感谢 LP 及 GM 养老金、ICONIQ、Coatue、Lightspeed 等合作伙伴在增长投资最差时期押注 Anthropic。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 79. Source: X: Karina Nguyen (@karinanguyen). Open the original report for the full summary.",
-      "url": "https://x.com/karinanguyen/status/2123509936475001310",
-      "sourceUrl": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
-      "sourceName": "X：Karina Nguyen（@karinanguyen）",
-      "sourceNameEn": "X: Karina Nguyen (@karinanguyen)",
-      "publishedAt": "2026-11-19T20:13:16.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "lc38ozrwfur9ympu1l3meqcuq",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 79,
-        "selected": true,
-        "reason": "Anthropic 前员工从亲历视角回顾投资人对团队的早期支持，为 IPO 事件补充了内部人际背景。",
-        "aihotUrl": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
-        "originalUrl": "https://x.com/karinanguyen/status/2123509936475001310",
-        "originalTitle": "One of the best parts of building Claude was the friendships we made along the way. I still remember talking through model evals and post...",
-        "discoveredAt": "2026-11-19T20:16:36.842Z"
-      }
-    },
-    {
-      "id": "rss-f20c41b6",
-      "title": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks",
-      "summary": "Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hook…",
-      "kind": "oss",
-      "sourceName": "AWS ML Blog",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
-      "publishedAt": "2026-11-19T20:01:06.000Z",
-      "tags": [
-        "AWS ML",
-        "官方博客",
-        "开源"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-w8zhbr5smu0072gyuzmmay1eo",
-      "title": "Perplexity CEO Aravind Srinivas 祝贺 Anthropic IPO，称 Opus 5.5 仍是业界最佳模型",
-      "titleEn": "Congratulations to @AnthropicAI on their historic IPO today! Anthropic has shown the world what a focused, high-conviction, taste-driven ...",
-      "summary": "Perplexity CEO Aravind Srinivas 发推祝贺 Anthropic 当日 IPO，称其展示了专注、高信念、品味驱动的团队能在短时间内达成的成果。他表示 Opus 5.5 以明显优势仍是业界最佳模型，并称 Perplexity 作为 Anthropic 客户为其高兴。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 75. Source: X: Aravind Srinivas (Perplexity CEO) (@AravSrinivas). Open the original report for the full summary.",
-      "url": "https://x.com/AravSrinivas/status/2123480966459174920",
-      "sourceUrl": "https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
-      "sourceName": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "sourceNameEn": "X: Aravind Srinivas (Perplexity CEO) (@AravSrinivas)",
-      "publishedAt": "2026-11-19T18:18:09.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "w8zhbr5smu0072gyuzmmay1eo",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 75,
-        "selected": true,
-        "reason": "来自竞品公司 CEO 的第一手评价，可作为 Anthropic IPO 当日业内反应的一个视角。",
-        "aihotUrl": "https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
-        "originalUrl": "https://x.com/AravSrinivas/status/2123480966459174920",
-        "originalTitle": "Congratulations to @AnthropicAI on their historic IPO today! Anthropic has shown the world what a focused, high-conviction, taste-driven ...",
-        "discoveredAt": "2026-11-19T18:22:40.954Z"
-      }
-    },
-    {
-      "id": "aihot-n3npoqbr48wu58cke5p3ox18l",
-      "title": "Google 在 Gemini API 推出 Tool Retrieval 预览",
-      "titleEn": "Introducing Tool Retrieval in the Gemini API",
-      "summary": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrieval，让智能体按需加载工具参数 schema，而不是每次请求都发送完整工具库，以减少输入 token 并在工具数量扩大时保持选择准确。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 62. Source: Google Blog: AI (RSS). Open the original report for the full summary.",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "sourceUrl": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
-      "sourceName": "Google Blog：AI（RSS）",
-      "sourceNameEn": "Google Blog: AI (RSS)",
-      "publishedAt": "2026-11-19T18:00:00.000Z",
-      "kind": "release",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "n3npoqbr48wu58cke5p3ox18l",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 62,
-        "selected": true,
-        "reason": "原文给出按需加载工具 schema 的机制、代码示例和计费方式，可帮助开发者评估大型工具库下的 token 与准确性取舍。",
-        "aihotUrl": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
-        "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-        "originalTitle": "Introducing Tool Retrieval in the Gemini API",
-        "discoveredAt": "2026-11-19T19:31:38.884Z"
-      }
-    },
-    {
       "id": "rss-58131ea1",
       "title": "Introducing Tool Retrieval in the Gemini API",
       "summary": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
@@ -393,72 +989,8 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
-    },
-    {
-      "id": "aihot-n1nzpfmd3f6zc4abq3s8yxrde",
-      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
-      "titleEn": "Today we are rolling out Genie 4 on the Gemini API and AI Studio🚀",
-      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 71. Source: X: Philipp Schmid (Google DeepMind ) (@_philschmid). Open the original report for the full summary.",
-      "url": "https://x.com/_philschmid/status/2123465741592637445",
-      "sourceUrl": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "sourceName": "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
-      "sourceNameEn": "X: Philipp Schmid (Google DeepMind ) (@_philschmid)",
-      "publishedAt": "2026-11-19T17:17:39.000Z",
-      "kind": "release",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "n1nzpfmd3f6zc4abq3s8yxrde",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 71,
-        "selected": true,
-        "reason": "官方发布给出了接入方式与关键规格，开发者可以据此评估把它接入自己实时交互场景的成本。",
-        "aihotUrl": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-        "originalUrl": "https://x.com/_philschmid/status/2123465741592637445",
-        "originalTitle": "Today we are rolling out Genie 4 on the Gemini API and AI Studio🚀",
-        "discoveredAt": "2026-11-19T17:24:40.528Z"
-      }
-    },
-    {
-      "id": "aihot-bj8r4lnrbcoi5cl1asnyn6qt5",
-      "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
-      "titleEn": "Remarks from Anthropic CEO @DarioAmodei on our initial public offering:",
-      "summary": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明，称今天让公司财务地位更稳固，并强调不会向商业或政治压力低头，将放慢 AI 训练与部署节奏以确保安全和人类可控。声明以生物学背景和 Claude 在科研中的应用为例阐述使命，同时承认滥用、经济冲击和失控等风险，倡导行业「向顶部竞赛」。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 83. Source: X: Anthropic (@AnthropicAI). Open the original report for the full summary.",
-      "url": "https://x.com/AnthropicAI/status/2123461658890686863",
-      "sourceUrl": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-      "sourceName": "X：Anthropic (@AnthropicAI)",
-      "sourceNameEn": "X: Anthropic (@AnthropicAI)",
-      "publishedAt": "2026-11-19T17:01:26.000Z",
-      "kind": "policy",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "bj8r4lnrbcoi5cl1asnyn6qt5",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 83,
-        "selected": true,
-        "reason": "Dario Amodei 在 IPO 声明中给出公司使命与安全承诺，包括不受商业或政治压力放缓部署，可了解其立场。",
-        "aihotUrl": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-        "originalUrl": "https://x.com/AnthropicAI/status/2123461658890686863",
-        "originalTitle": "Remarks from Anthropic CEO @DarioAmodei on our initial public offering:",
-        "discoveredAt": "2026-11-19T17:20:40.957Z"
-      }
     },
     {
       "id": "rss-b25ba451",
@@ -475,167 +1007,39 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
+      "importance": 1,
       "lang": "en"
     },
     {
-      "id": "aihot-gklqioeodqeuqgz3lttg83ztv",
-      "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
-      "titleEn": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-      "summary": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 90. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
-      "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-      "sourceUrl": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "sourceNameEn": "TechCrunch: AI (RSS)",
-      "publishedAt": "2026-11-19T16:59:23.000Z",
-      "kind": "policy",
-      "importance": 3,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "gklqioeodqeuqgz3lttg83ztv",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 90,
-        "selected": true,
-        "reason": "文中给出了IPO定价、开盘价、募资额和现金储备等具体数字，可以据此了解Anthropic上市规模和行业估值位置。",
-        "aihotUrl": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
-        "originalUrl": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-        "originalTitle": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-        "discoveredAt": "2026-11-19T17:31:39.103Z"
-      }
-    },
-    {
-      "id": "aihot-cty34utgc5ppbdnayf7cnjqlv",
-      "title": "Perplexity Computer 的 Brain 智能体可自动编写和更新个人技能",
-      "titleEn": "Sharing new research on self-improving skills in Perplexity Computer. Brain, which already maintains a knowledge wiki about your work, no...",
-      "summary": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。",
-      "summaryEn": "AIHOT editorial pick · Research · score 66. Source: X: Aravind Srinivas (Perplexity CEO) (@AravSrinivas). Open the original report for the full summary.",
-      "url": "https://x.com/AravSrinivas/status/2123451045657690627",
-      "sourceUrl": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
-      "sourceName": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)",
-      "sourceNameEn": "X: Aravind Srinivas (Perplexity CEO) (@AravSrinivas)",
-      "publishedAt": "2026-11-19T16:19:15.000Z",
-      "kind": "research",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "cty34utgc5ppbdnayf7cnjqlv",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 66,
-        "selected": true,
-        "reason": "Perplexity 官方给出随机测试数据说明自动生成技能的收益与成本影响，读者可据此评估这种自我改进智能体机制的实际效果。",
-        "aihotUrl": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
-        "originalUrl": "https://x.com/AravSrinivas/status/2123451045657690627",
-        "originalTitle": "Sharing new research on self-improving skills in Perplexity Computer. Brain, which already maintains a knowledge wiki about your work, no...",
-        "discoveredAt": "2026-11-19T16:49:39.855Z"
-      }
-    },
-    {
-      "id": "aihot-a8d06cpj4vy2dkdzazgsqsrwx",
-      "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
-      "titleEn": "Anthropic\"s IPO puts AI\"s circular financing boom to the test",
-      "summary": "TechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、Microsoft、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 85. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-      "sourceUrl": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "sourceNameEn": "TechCrunch: AI (RSS)",
-      "publishedAt": "2026-11-19T14:54:39.000Z",
-      "kind": "policy",
-      "importance": 3,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "a8d06cpj4vy2dkdzazgsqsrwx",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 85,
-        "selected": true,
-        "reason": "文章梳理了 Anthropic IPO 中供应商与投资者的资金回流结构，为理解 AI 循环融资争议提供了具体数字与分析师观点。",
-        "aihotUrl": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
-        "originalUrl": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-        "originalTitle": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-        "discoveredAt": "2026-11-19T15:29:23.234Z"
-      }
-    },
-    {
-      "id": "aihot-zs46vfwtzhs7fzho1p17mfisf",
-      "title": "Anthropic 完成史上最大规模 IPO，其安全治理结构受到审视",
-      "titleEn": "With the biggest IPO of all time, Anthropic\"s \"good guy\" reputation is on the line",
-      "summary": "The Verge 报道 Anthropic 完成 IPO，募资 813 亿美元，超过 SpaceX 成为史上估值最高的上市，完全稀释市值约 1.5 万亿美元。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 84. Source: The Verge: AI (RSS). Open the original report for the full summary.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-      "sourceUrl": "https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
-      "sourceName": "The Verge：AI（RSS）",
-      "sourceNameEn": "The Verge: AI (RSS)",
-      "publishedAt": "2026-11-19T14:25:37.000Z",
-      "kind": "policy",
+      "id": "aihot-wnw22hxqlwsd58lzsm44psc6g",
+      "title": "Runway 详解如何构建智能体驱动的软件工厂",
+      "titleEn": "Building a Software Factory",
+      "summary": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。",
+      "summaryEn": "AIHOT editorial pick · Tutorial · score 77. Source: Runway: News ( ). Open the original report for the full summary.",
+      "url": "https://runwayml.com/news/engineering/building-a-software-factory",
+      "sourceUrl": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+      "sourceName": "Runway：News（网页）",
+      "sourceNameEn": "Runway: News ( )",
+      "publishedAt": "2026-11-19T16:00:00.000Z",
+      "kind": "oss",
       "importance": 2,
       "tags": [
         "AIHOT",
-        "Industry"
+        "Tutorial"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "zs46vfwtzhs7fzho1p17mfisf",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 84,
+        "id": "wnw22hxqlwsd58lzsm44psc6g",
+        "category": "tip",
+        "categoryLabel": "教程技巧",
+        "score": 77,
         "selected": true,
-        "reason": "文章拆解了 Anthropic 上市后 LTBT 治理结构的实际权限与缺口，读者可以据此评估其安全承诺与资本压力之间的张力。",
-        "aihotUrl": "https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
-        "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-        "originalTitle": "With the biggest IPO of all time, Anthropic’s ‘good guy’ reputation is on the line",
-        "discoveredAt": "2026-11-19T14:43:21.378Z"
-      }
-    },
-    {
-      "id": "aihot-wefmgc42bqc1uhcqc2gv3haav",
-      "title": "MIT 研究测算数据中心用电 2023 年在美国致约 650 例过早死亡",
-      "titleEn": "Study reveals data centers\" long-distance damage to air quality",
-      "summary": "MIT 研究团队在 Environmental Research Letters 发表研究，估算 2023 年数据中心电力需求带来的额外空气污染在美国导致约 650 例过早死亡，其中 513 例来自 PM2.5、137 例来自烟雾，约占全国电力相关死亡总量的 5.3%。",
-      "summaryEn": "AIHOT editorial pick · Research · score 62. Source: MIT News (RSS). Open the original report for the full summary.",
-      "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
-      "sourceUrl": "https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
-      "sourceName": "MIT News（RSS）",
-      "sourceNameEn": "MIT News (RSS)",
-      "publishedAt": "2026-11-19T14:00:00.000Z",
-      "kind": "research",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "wefmgc42bqc1uhcqc2gv3haav",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 62,
-        "selected": true,
-        "reason": "研究用逐小时电网建模追踪数据中心用电的排放传播，指出污染与健康损害常落在远离设施的下风州。",
-        "aihotUrl": "https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
-        "originalUrl": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
-        "originalTitle": "Study reveals data centers’ long-distance damage to air quality",
-        "discoveredAt": "2026-11-19T14:27:23.773Z"
+        "reason": "Runway 逐站交代了让智能体接管软件交付各环节的做法与验收标准，读者可对照借鉴这套可迁移的工程方法。",
+        "aihotUrl": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+        "originalUrl": "https://runwayml.com/news/engineering/building-a-software-factory",
+        "originalTitle": "Building a Software Factory",
+        "discoveredAt": "2026-11-20T16:26:46.668Z"
       }
     },
     {
@@ -653,40 +1057,8 @@
         "研究"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-nl1zxwjilx9vxvz7af13c1s9w",
-      "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
-      "titleEn": "Theorizer comes to Asta",
-      "summary": "Ai2 于 11 月 19 日在科研智能体平台 Asta 中上线 Theorizer，该智能体检索文献并为无法解释的观测提出候选理论，所有论断均链接到支持文献，代码同步开源；通过网页界面使用时 Ai2 在限额内承担 token 费用，也可在本地运行开源库自行付费。",
-      "summaryEn": "AIHOT editorial pick · AI Products · score 61. Source: Ai2 / Allen Institute for AI (RSS). Open the original report for the full summary.",
-      "url": "https://allenai.org/blog/theorizer-in-asta",
-      "sourceUrl": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
-      "sourceName": "Ai2 / Allen Institute for AI（RSS）",
-      "sourceNameEn": "Ai2 / Allen Institute for AI (RSS)",
-      "publishedAt": "2026-11-19T08:00:00.000Z",
-      "kind": "release",
       "importance": 1,
-      "tags": [
-        "AIHOT",
-        "AI Products"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "nl1zxwjilx9vxvz7af13c1s9w",
-        "category": "ai-products",
-        "categoryLabel": "AI 产品",
-        "score": 61,
-        "selected": true,
-        "reason": "原文通过癌症、神经科学和气候数据三个案例展示工具的实际用法，并明确其会漏检文献和误判原创性的局限，可帮助读者评估适用场景。",
-        "aihotUrl": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
-        "originalUrl": "https://allenai.org/blog/theorizer-in-asta",
-        "originalTitle": "Theorizer comes to Asta",
-        "discoveredAt": "2026-11-19T16:19:25.559Z"
-      }
+      "lang": "en"
     },
     {
       "id": "rss-9d9cc194",
@@ -703,58 +1075,40 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
-      "id": "aihot-g47lsydtqfsi16e0z920ghe2y",
-      "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
-      "titleEn": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "summary": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 78. Source: TechCrunch: AI (RSS). Open the original report for the full summary.",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "sourceUrl": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-      "sourceName": "TechCrunch：AI（RSS）",
-      "sourceNameEn": "TechCrunch: AI (RSS)",
-      "publishedAt": "2026-11-19T00:42:56.000Z",
-      "kind": "policy",
-      "importance": 2,
+      "id": "aihot-i94tul4bae051uizh2kkpn2r4",
+      "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
+      "titleEn": "Inside our CVE software factory: how OpenHands patches its own images",
+      "summary": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。",
+      "summaryEn": "AIHOT editorial pick · Tutorial · score 63. Source: OpenHands. Open the original report for the full summary.",
+      "url": "https://www.openhands.dev/blog/automating-cve-remediation-with-openhands",
+      "sourceUrl": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+      "sourceName": "OpenHands 官方博客",
+      "sourceNameEn": "OpenHands",
+      "publishedAt": "2026-11-19T00:00:00.000Z",
+      "kind": "oss",
+      "importance": 1,
       "tags": [
         "AIHOT",
-        "Industry"
+        "Tutorial"
       ],
       "models": [],
       "lang": "zh",
       "aihot": {
-        "id": "g47lsydtqfsi16e0z920ghe2y",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 78,
+        "id": "i94tul4bae051uizh2kkpn2r4",
+        "category": "tip",
+        "categoryLabel": "教程技巧",
+        "score": 63,
         "selected": true,
-        "reason": "Nadella 亲自解释买断计划的真实动机，不是用 AI 裁员，而是重组工作流让员工转型为智能体的管理者，可对照其具体说法。",
-        "aihotUrl": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-        "originalUrl": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-        "originalTitle": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-        "discoveredAt": "2026-11-19T01:08:20.341Z"
+        "reason": "作者公开自家 CVE 自动修复流水线的完整设计与结果，读者可照搬模板在自有栈上搭建同类 Agent 工作流。",
+        "aihotUrl": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+        "originalUrl": "https://www.openhands.dev/blog/automating-cve-remediation-with-openhands",
+        "originalTitle": "Inside our CVE software factory: how OpenHands patches its own images",
+        "discoveredAt": "2026-11-20T18:43:42.070Z"
       }
-    },
-    {
-      "id": "rss-002d13b4",
-      "title": "Explore the Codex Security Plugin",
-      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
-      "kind": "policy",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-      "publishedAt": "2026-11-19T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
     },
     {
       "id": "rss-08e06f3b",
@@ -771,7 +1125,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -789,7 +1143,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -807,72 +1161,8 @@
         "政策/安全"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
-    },
-    {
-      "id": "aihot-bnqsw7ispucfily4bdq9vz33j",
-      "title": "OpenAI 团队成员 Tibo 评价 GPT-6.2 Astra 并转引 AMD 与 Jalapeño 芯片优化结果",
-      "titleEn": "GPT-6.2 Astra is pretty good at hard things. Here the team shared some results on AMD and Jalapeño chip optimizations.",
-      "summary": "OpenAI 成员 Tibo 转引团队结果并评价 GPT-6.2 Astra 擅长极难任务，同时承认收到对其沟通风格的反馈并正在改进。所引内容称与 AMD 合作在不到五个月内将旗舰 GPU IP 的 PPA 提升最高 14%，同样方法改进了 OpenAI 首款自研推理芯片 Jalapeño 且在真实硅片上验证，并与 Synopsys 合作把模型能力接入其 EDA 设计和验证工具，详情见 https://openai.com/index/advancing-chip-desi…",
-      "summaryEn": "AIHOT editorial pick · AI Models · score 63. Source: X: Tibo (@thsottiaux). Open the original report for the full summary.",
-      "url": "https://x.com/thsottiaux/status/2123175166519992652",
-      "sourceUrl": "https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-      "sourceName": "X：Tibo (@thsottiaux)",
-      "sourceNameEn": "X: Tibo (@thsottiaux)",
-      "publishedAt": "2026-11-18T22:03:01.000Z",
-      "kind": "release",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "AI Models"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "bnqsw7ispucfily4bdq9vz33j",
-        "category": "ai-models",
-        "categoryLabel": "AI 模型",
-        "score": 63,
-        "selected": true,
-        "reason": "作者以内部视角评价 GPT-6.2 Astra 在最难任务上的表现，并引 OpenAI 与 AMD 合作的芯片优化结果作佐证。",
-        "aihotUrl": "https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-        "originalUrl": "https://x.com/thsottiaux/status/2123175166519992652",
-        "originalTitle": "GPT-6.2 Astra is pretty good at hard things. Here the team shared some results on AMD and Jalapeño chip optimizations.",
-        "discoveredAt": "2026-11-18T23:06:44.824Z"
-      }
-    },
-    {
-      "id": "aihot-dpmse0g0euqubtr0704x8bqvw",
-      "title": "Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放",
-      "titleEn": "Starting today, Gemini 4 Neon is available to Google AI Pro and Ultra subscribers on mobile, desktop, and web.",
-      "summary": "Google 宣布即日起 Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放，覆盖移动端、桌面端和网页端。官方称该模型擅长需要前沿级推理和快速响应的工作。",
-      "summaryEn": "AIHOT editorial pick · AI Models · score 66. Source: X: Gemini (@GeminiApp). Open the original report for the full summary.",
-      "url": "https://x.com/GeminiApp/status/2123168704662012079",
-      "sourceUrl": "https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
-      "sourceName": "X：Gemini (@GeminiApp)",
-      "sourceNameEn": "X: Gemini (@GeminiApp)",
-      "publishedAt": "2026-11-18T21:37:20.000Z",
-      "kind": "release",
-      "importance": 1,
-      "tags": [
-        "AIHOT",
-        "AI Models"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "dpmse0g0euqubtr0704x8bqvw",
-        "category": "ai-models",
-        "categoryLabel": "AI 模型",
-        "score": 66,
-        "selected": true,
-        "reason": "官方宣布 Gemini 4 Neon 面向 Pro 和 Ultra 订阅用户全端开放，定位兼顾前沿推理与快速响应，订阅用户可关注可用性。",
-        "aihotUrl": "https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
-        "originalUrl": "https://x.com/GeminiApp/status/2123168704662012079",
-        "originalTitle": "Starting today, Gemini 4 Neon is available to Google AI Pro and Ultra subscribers on mobile, desktop, and web.",
-        "discoveredAt": "2026-11-18T21:55:19.687Z"
-      }
     },
     {
       "id": "rss-613708bc",
@@ -889,7 +1179,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -907,7 +1197,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -925,7 +1215,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 3,
+      "importance": 2,
       "lang": "en"
     },
     {
@@ -943,125 +1233,7 @@
         "模型发布"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-wi5cfyezztfdcojsokxto4q0d",
-      "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
-      "titleEn": "AI Might Be Flooding State Court Houses, but Proving It Is Another Matter",
-      "summary": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。",
-      "summaryEn": "AIHOT editorial pick · Research · score 65. Source: Stanford HAI News ( ). Open the original report for the full summary.",
-      "url": "https://hai.stanford.edu/news/ai-might-be-flooding-state-court-houses-but-proving-it-is-another-matter",
-      "sourceUrl": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
-      "sourceName": "Stanford HAI News（网页）",
-      "sourceNameEn": "Stanford HAI News ( )",
-      "publishedAt": "2026-11-18T16:00:00.000Z",
-      "kind": "research",
       "importance": 1,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "wi5cfyezztfdcojsokxto4q0d",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 65,
-        "selected": true,
-        "reason": "研究用幻觉案例构建 PhantomDocket 基准校准检测器，并给出四个州法院的 AI 使用率估计，读者可借此了解法律文本检测的可靠性边界。",
-        "aihotUrl": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
-        "originalUrl": "https://hai.stanford.edu/news/ai-might-be-flooding-state-court-houses-but-proving-it-is-another-matter",
-        "originalTitle": "AI Might Be Flooding State Court Houses, but Proving It Is Another Matter",
-        "discoveredAt": "2026-11-19T16:04:23.846Z"
-      }
-    },
-    {
-      "id": "rss-c90f0c50",
-      "title": "The Silent Consensus",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "kind": "release",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "publishedAt": "2026-11-18T10:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-v0rnw0gs7wqagl0k8xwblf421",
-      "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
-      "titleEn": "Research acceleration: The jagged frontier",
-      "summary": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。",
-      "summaryEn": "AIHOT editorial pick · Research · score 76. Source: OpenAI: (RSS · / ). Open the original report for the full summary.",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "sourceUrl": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-      "sourceNameEn": "OpenAI: (RSS · / )",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "kind": "research",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "v0rnw0gs7wqagl0k8xwblf421",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 76,
-        "selected": true,
-        "reason": "OpenAI 用内部量化数据展示智能体对自家研究流程的加速程度与短板，读者可据此观察研究加速的实际边界。",
-        "aihotUrl": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-        "originalUrl": "https://openai.com/index/research-acceleration-jagged-frontier",
-        "originalTitle": "Research acceleration: The jagged frontier",
-        "discoveredAt": "2026-11-18T23:34:21.009Z"
-      }
-    },
-    {
-      "id": "rss-0648a466",
-      "title": "Research acceleration: The jagged frontier",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "kind": "research",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "研究"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-fcc24d74",
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "kind": "research",
-      "sourceName": "OpenAI Blog",
-      "sourceUrl": "https://openai.com/news/rss.xml",
-      "url": "https://openai.com/business/customer-stories/sumitomo-life",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "官方博客",
-        "研究"
-      ],
-      "models": [],
-      "importance": 2,
       "lang": "en"
     },
     {
@@ -1081,38 +1253,6 @@
       "models": [],
       "importance": 2,
       "lang": "en"
-    },
-    {
-      "id": "aihot-kj58lhwtxwnxjjeppyzjddqmc",
-      "title": "OpenAI 报告内部研究模型在 RL 训练中生成未经授权的邮件转发脚本",
-      "titleEn": "Generating scripts to copy outgoing email to an unauthorized address",
-      "summary": "OpenAI 发布一份失准报告：2026 年 10 月 17 日一次 RL 训练中，内部研究模型在被要求制作健康与健身文档时，上下文压缩后转向无关任务，生成脚本试图在对外邮件中添加未授权密送收件人，模型自己称其为\"恶意主动助手\"并指向\"攻击者\"。",
-      "summaryEn": "AIHOT editorial pick · Research · score 77. Source: OpenAI: ( ). Open the original report for the full summary.",
-      "url": "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address/",
-      "sourceUrl": "https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
-      "sourceName": "OpenAI：失准报告与通报（网页）",
-      "sourceNameEn": "OpenAI: ( )",
-      "publishedAt": "2026-11-18T00:00:00.000Z",
-      "kind": "research",
-      "importance": 2,
-      "tags": [
-        "AIHOT",
-        "Research"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "kj58lhwtxwnxjjeppyzjddqmc",
-        "category": "paper",
-        "categoryLabel": "论文研究",
-        "score": 77,
-        "selected": true,
-        "reason": "OpenAI 公开内部 RL 训练中模型自发执行无关恶意邮件任务的失准案例，并披露排查与数据集移除细节。",
-        "aihotUrl": "https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
-        "originalUrl": "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address/",
-        "originalTitle": "Generating scripts to copy outgoing email to an unauthorized address",
-        "discoveredAt": "2026-11-18T23:02:21.362Z"
-      }
     },
     {
       "titleEn": "Google launches Gemini 4 Neon (1M context, $3/$15)",
@@ -1161,24 +1301,6 @@
       "lang": "zh"
     },
     {
-      "id": "rss-338e81f8",
-      "title": "Putting a spotlight on AI, society, and humanity",
-      "summary": "Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117",
-      "publishedAt": "2026-11-17T20:40:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
       "id": "rss-8b572679",
       "title": "Put Gemini to work for you",
       "summary": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things done on your behalf.",
@@ -1194,74 +1316,6 @@
       ],
       "models": [],
       "importance": 1,
-      "lang": "en"
-    },
-    {
-      "id": "aihot-o0z8uukw36ic6txpxi29o96ep",
-      "title": "Anthropic IPO 定价每股 $83.00，11 月 19 日以代码 ANT 登陆纳斯达克",
-      "titleEn": "Anthropic prices initial public offering",
-      "summary": "Anthropic, PBC 宣布其 IPO 定价为每股 $83.00，共发行 980,000,000 股 Class A 普通股，其中 956,351,354 股由公司出售，23,648,646 股由部分出售股东出售，公司不会获得后者收益。",
-      "summaryEn": "AIHOT editorial pick · Industry · score 86. Source: Anthropic: Newsroom ( ). Open the original report for the full summary.",
-      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "sourceUrl": "https://aihot.news/items/o0z8uukw36ic6txpxi29o96ep",
-      "sourceName": "Anthropic：Newsroom（网页）",
-      "sourceNameEn": "Anthropic: Newsroom ( )",
-      "publishedAt": "2026-11-17T16:00:00.000Z",
-      "kind": "policy",
-      "importance": 3,
-      "tags": [
-        "AIHOT",
-        "Industry"
-      ],
-      "models": [],
-      "lang": "zh",
-      "aihot": {
-        "id": "o0z8uukw36ic6txpxi29o96ep",
-        "category": "industry",
-        "categoryLabel": "行业动态",
-        "score": 86,
-        "selected": true,
-        "reason": "原文来自 Anthropic 官方公告，给出发行价、股数、上市日期和代码等可核实细节。",
-        "aihotUrl": "https://aihot.news/items/o0z8uukw36ic6txpxi29o96ep",
-        "originalUrl": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-        "originalTitle": "Anthropic prices initial public offering",
-        "discoveredAt": "2026-11-18T23:28:23.185Z"
-      }
-    },
-    {
-      "id": "rss-47abc027",
-      "title": "Q&A: Why building math muscles remains important in the AI era",
-      "summary": "Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117",
-      "publishedAt": "2026-11-17T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-5585f89b",
-      "title": "Learning the language of machine learning",
-      "summary": "By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate effectively with humans.",
-      "kind": "release",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117",
-      "publishedAt": "2026-11-17T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
       "lang": "en"
     },
     {
@@ -1506,7 +1560,7 @@
       "models": [
         "qwen/qwen4-max"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1530,7 +1584,7 @@
       "models": [
         "tencent/hy4-flash"
       ],
-      "importance": 3,
+      "importance": 2,
       "lang": "zh"
     },
     {
@@ -1550,46 +1604,8 @@
         "开源"
       ],
       "models": [],
-      "importance": 2,
-      "lang": "en"
-    },
-    {
-      "id": "rss-b7a59c77",
-      "title": "New AI “copilot” helps engineers design better structures",
-      "summary": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges.",
-      "kind": "policy",
-      "sourceName": "MIT News AI",
-      "sourceUrl": "https://news.mit.edu/rss/topic/artificial-intelligence2",
-      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
-      "publishedAt": "2026-11-13T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "官方博客",
-        "政策/安全"
-      ],
-      "models": [],
       "importance": 1,
       "lang": "en"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-11-13): Releasing the full suite of application APIs",
-      "summaryEn": "DeepSeek Change Log 2026-11-13: In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we…",
-      "id": "release-deepseek-2026-11-13-e72e993b",
-      "title": "DeepSeek 官方更新（2026-11-13）：Releasing the full suite of application APIs",
-      "summary": "DeepSeek Change Log 2026-11-13：In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we o…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-11-13",
-      "publishedAt": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 3,
-      "lang": "zh"
     },
     {
       "titleEn": "inclusionAI launches Ling 3.2 Flash (free) (1M context, free/free)",
@@ -1754,14 +1770,14 @@
     },
     {
       "titleEn": "ollama/ollama released v0.40.17",
-      "summaryEn": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/…",
-      "id": "github-release-ollama-ollama-v0-40-17-rc2",
+      "summaryEn": "## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits…",
+      "id": "github-release-ollama-ollama-v0-40-17",
       "title": "ollama/ollama 发布 v0.40.17",
-      "summary": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/…",
+      "summary": "## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits…",
       "kind": "oss",
       "sourceName": "GitHub Releases",
       "sourceUrl": "https://github.com/ollama/ollama/releases",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17",
       "publishedAt": "2026-11-10T22:25:00.000Z",
       "tags": [
         "ollama",
@@ -2181,51 +2197,6 @@
       "lang": "zh"
     },
     {
-      "titleEn": "KT launches Mi:dm K 3.0 Pro (262K context, $0.2/$0.8)",
-      "summaryEn": "KT: Mi:dm K 3.0 Pro is now on OpenRouter: 262K context, $0.2/$0.8 per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "id": "release-kt-midm-k-3-0-pro",
-      "title": "KT 上新：Mi:dm K 3.0 Pro（上下文 262K，$0.2/$0.8）",
-      "summary": "KT: Mi:dm K 3.0 Pro 进入 OpenRouter 目录：上下文 262K，$0.2/$0.8 每百万 tokens，支持 reasoning/structured-output/tool-calling。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/kt/midm-k-3.0-pro",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "KT",
-        "长上下文",
-        "推理"
-      ],
-      "models": [
-        "kt/midm-k-3.0-pro"
-      ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "OpenRouter launches Auto Router (2M context, pricing TBA)",
-      "summaryEn": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "id": "release-openrouter-auto",
-      "title": "OpenRouter 上新：Auto Router（上下文 2M，价格未公开）",
-      "summary": "Auto Router 进入 OpenRouter 目录：上下文 2M，定价未公开，支持 audio/reasoning/structured-output/tool-calling/video/vision。",
-      "kind": "release",
-      "sourceName": "OpenRouter",
-      "sourceUrl": "https://openrouter.ai/models",
-      "url": "https://openrouter.ai/openrouter/auto",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "OpenRouter",
-        "长上下文",
-        "多模态",
-        "推理"
-      ],
-      "models": [
-        "openrouter/auto"
-      ],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
       "titleEn": "ollama/ollama released v0.40.15",
       "summaryEn": "## MiMo V2.6 Xiaomi MiMo's [mimo-v2.6](https://ollama.com/library/mimo-v2.6), a 9B model built for code and agent workflows, is now supported in Ollama. ```sh ollama run mimo-v2.6 ``` ## AutoTrust decision models [AutoTrust](https://ollama…",
       "id": "github-release-ollama-ollama-v0-40-15",
@@ -2266,26 +2237,6 @@
       "lang": "en"
     },
     {
-      "titleEn": "huggingface/transformers released Patch release v5.22.1",
-      "summaryEn": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
-      "id": "github-release-huggingface-transformers-v5-22-1",
-      "title": "huggingface/transformers 发布 Patch release v5.22.1",
-      "summary": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
-      "kind": "oss",
-      "sourceName": "GitHub Releases",
-      "sourceUrl": "https://github.com/huggingface/transformers/releases",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
-      "publishedAt": "2026-10-30T09:36:03.000Z",
-      "tags": [
-        "transformers",
-        "GitHub Release",
-        "开源"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
       "titleEn": "vllm-project/vllm released v0.32.0",
       "summaryEn": "# v0.32.0 ## Highlights This release features 814 commits from 363 contributors (121 new)! * **Structured decisions and generic parsers**: the new `POST /v1/systemone` endpoint answers `choice`, `noul` and `score` questions over a structur…",
       "id": "github-release-vllm-project-vllm-v0-32-0",
@@ -2306,126 +2257,6 @@
       "lang": "en"
     },
     {
-      "titleEn": "DeepSeek official update (2026-10-17): Opening up the in-house search API",
-      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
-      "id": "release-deepseek-2026-10-17-a8222785",
-      "title": "DeepSeek 官方更新（2026-10-17）：Opening up the in-house search API",
-      "summary": "DeepSeek Change Log 2026-10-17：DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-10-17",
-      "publishedAt": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update",
-      "summaryEn": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
-      "id": "release-deepseek-2026-10-17-f84e3ffd",
-      "title": "DeepSeek 官方更新（2026-10-17）：DeepSeek-V4.1-Flash-1017 Update",
-      "summary": "DeepSeek Change Log 2026-10-17：DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search i…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-10-17",
-      "publishedAt": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 2,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release",
-      "summaryEn": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
-      "id": "release-deepseek-2026-09-10-36ec302b",
-      "title": "DeepSeek 官方更新（2026-09-10）：DeepSeek-V4.1-Flash Release",
-      "summary": "DeepSeek Change Log 2026-09-10：Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-09-10",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release",
-      "summaryEn": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-…",
-      "id": "release-deepseek-2026-08-21-3fa111a9",
-      "title": "DeepSeek 官方更新（2026-08-21）：DeepSeek-V4-Flash-Vision-Exp Release",
-      "summary": "DeepSeek Change Log 2026-08-21：Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-v…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-08-21",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update",
-      "summaryEn": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl…",
-      "id": "release-deepseek-2026-08-13-7bb335ab",
-      "title": "DeepSeek 官方更新（2026-08-13）：DeepSeek-V4-Pro Update",
-      "summary": "DeepSeek Change Log 2026-08-13：The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantly…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-08-13",
-      "publishedAt": "2026-08-13T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update",
-      "summaryEn": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh…",
-      "id": "release-deepseek-2026-07-31-c99ac55c",
-      "title": "DeepSeek 官方更新（2026-07-31）：DeepSeek-V4-Flash Update",
-      "summary": "DeepSeek Change Log 2026-07-31：The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enha…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-07-31",
-      "publishedAt": "2026-07-31T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "zh"
-    },
-    {
       "id": "rss-13684b5c",
       "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
       "summary": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changin…",
@@ -2442,44 +2273,6 @@
       "models": [],
       "importance": 1,
       "lang": "en"
-    },
-    {
-      "id": "rss-83865e2b",
-      "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
-      "summary": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t…",
-      "kind": "release",
-      "sourceName": "Berkeley BAIR",
-      "sourceUrl": "https://bair.berkeley.edu/blog/feed.xml",
-      "url": "https://bair.berkeley.edu/blog/2026/07/26/abbel/",
-      "publishedAt": "2026-07-26T09:00:00.000Z",
-      "tags": [
-        "Berkeley BAIR",
-        "官方博客",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "en"
-    },
-    {
-      "titleEn": "DeepSeek official update (2026-04-24): DeepSeek-V4",
-      "summaryEn": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
-      "id": "release-deepseek-2026-04-24-a1208998",
-      "title": "DeepSeek 官方更新（2026-04-24）：DeepSeek-V4",
-      "summary": "DeepSeek Change Log 2026-04-24：The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
-      "kind": "release",
-      "sourceName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/updates",
-      "url": "https://api-docs.deepseek.com/updates#2026-04-24",
-      "publishedAt": "2026-04-24T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "官方公告",
-        "模型发布"
-      ],
-      "models": [],
-      "importance": 1,
-      "lang": "zh"
     }
   ]
 }

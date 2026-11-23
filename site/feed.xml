@@ -5,8 +5,8 @@
     <link>https://chengxi-z.github.io/llm-pulse/</link>
     <description>Tracking frontier LLMs: model catalog, vendor updates, public leaderboards, learning resources and AI projects. Refreshed by GitHub Actions; RSS / JSON Feed.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 08:30:21 GMT</lastBuildDate>
-    <pubDate>Fri, 20 Nov 2026 08:30:21 GMT</pubDate>
+    <lastBuildDate>Mon, 23 Nov 2026 10:54:59 GMT</lastBuildDate>
+    <pubDate>Mon, 23 Nov 2026 10:54:59 GMT</pubDate>
     <generator>AI Pulse build-feed.mjs</generator>
     <atom:link href="https://chengxi-z.github.io/llm-pulse/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
@@ -15,26 +15,195 @@
       <link>https://chengxi-z.github.io/llm-pulse/</link>
     </image>
     <item>
-      <title>Amazon SageMaker Inference: 2026 launches in review, part 2</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/</link>
-      <guid isPermaLink="false">rss-1ffd426b</guid>
-      <pubDate>Fri, 20 Nov 2026 00:34:07 GMT</pubDate>
-      <description>This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-… — Source: AWS ML Blog</description>
+      <title>AI-driven technique could help engineers design analog chips faster and with less expense</title>
+      <link>https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123</link>
+      <guid isPermaLink="false">rss-fac98270</guid>
+      <pubDate>Mon, 23 Nov 2026 05:00:00 GMT</pubDate>
+      <description>The “SLIC” training method enables a small LLM to compete with much more resource-intensive models in complex circuit design tasks. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Meta ads is now available in AWS Quick</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/</link>
+      <guid isPermaLink="false">rss-79f340e3</guid>
+      <pubDate>Sun, 22 Nov 2026 01:59:13 GMT</pubDate>
+      <description>AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and thir… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
-      <title>Use Kimi Code CLI with models on Amazon Bedrock</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/</link>
-      <guid isPermaLink="false">rss-9746991a</guid>
-      <pubDate>Fri, 20 Nov 2026 00:33:30 GMT</pubDate>
-      <description>Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This p… — Source: AWS ML Blog</description>
+      <title>Perplexity and Intelligence</title>
+      <link>https://openai.com/index/perplexity-and-intelligence</link>
+      <guid isPermaLink="false">rss-3ce26ae5</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description>How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
+    </item>
+    <item>
+      <title>huggingface/transformers released Release v5.24.0</title>
+      <link>https://github.com/huggingface/transformers/releases/tag/v5.24.0</link>
+      <guid isPermaLink="false">github-release-huggingface-transformers-v5-24-0</guid>
+      <pubDate>Sat, 21 Nov 2026 12:28:26 GMT</pubDate>
+      <description># Release v5.24.0 ## New Model additions ### Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in… — Source: GitHub Releases</description>
+      <category>transformers</category>
+      <category>GitHub Release</category>
+      <category>Open source</category>
+      <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
+    </item>
+    <item>
+      <title>New in AWS Quick: More capable flows, an updated web experience, and agents that work together</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/</link>
+      <guid isPermaLink="false">rss-4b6701a4</guid>
+      <pubDate>Sat, 21 Nov 2026 01:06:42 GMT</pubDate>
+      <description>AWS Quick is the AI workspace built only for work. Today we&apos;re releasing updates that help your team get more done: build and run business-process flows in chat, triage your day in the updated web app, get more complete answers from multip… — Source: AWS ML Blog</description>
       <category>AWS ML</category>
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Cut self-hosted LLM cost and latency with the distributed KV caching agent skill</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/</link>
+      <guid isPermaLink="false">rss-fd28edb6</guid>
+      <pubDate>Sat, 21 Nov 2026 00:14:26 GMT</pubDate>
+      <description>Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up to 40% and time to first token by up to 80%. This post walks through the distri… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Pricing</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>RadixArk launches DaisyRose 27B (262K context, $0.15/$1.88)</title>
+      <link>https://openrouter.ai/radixark/daisyrose-27b</link>
+      <guid isPermaLink="false">release-radixark-daisyrose-27b</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <description>RadixArk: DaisyRose 27B is now on OpenRouter: 262K context, $0.15/$1.88 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>RadixArk</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>Thinking Machines launches Inkling 2 Mini (1M context, $0.075/$0.3)</title>
+      <link>https://openrouter.ai/thinkingmachines/inkling-2-mini</link>
+      <guid isPermaLink="false">release-thinkingmachines-inkling-2-mini</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Thinking Machines: Inkling 2 Mini is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter</description>
+      <category>Thinking Machines</category>
+      <category>Long context</category>
+      <category>Multimodal</category>
+      <category>Reasoning</category>
+      <category>Open weights</category>
+      <source url="https://openrouter.ai/models">OpenRouter</source>
+    </item>
+    <item>
+      <title>Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/</link>
+      <guid isPermaLink="false">rss-43d370ad</guid>
+      <pubDate>Fri, 20 Nov 2026 23:07:03 GMT</pubDate>
+      <description>Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the e… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/</link>
+      <guid isPermaLink="false">rss-e3e9d2e5</guid>
+      <pubDate>Fri, 20 Nov 2026 22:35:24 GMT</pubDate>
+      <description>Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Q&amp;A: Enabling more human-like interactions and understanding in multimodal foundation models</title>
+      <link>https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120</link>
+      <guid isPermaLink="false">rss-f6b58cd2</guid>
+      <pubDate>Fri, 20 Nov 2026 21:00:00 GMT</pubDate>
+      <description>Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Research</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>How Standard Bank Group automates AI risk assessment for generative AI</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/</link>
+      <guid isPermaLink="false">rss-03514106</guid>
+      <pubDate>Fri, 20 Nov 2026 20:37:31 GMT</pubDate>
+      <description>Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards an… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Announcing Amazon Textract Insights: Verifiable generative AI for documents</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/</link>
+      <guid isPermaLink="false">rss-62a813a3</guid>
+      <pubDate>Fri, 20 Nov 2026 20:22:00 GMT</pubDate>
+      <description>Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a c… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>New approach enables physically consistent AI models of chaotic systems</title>
+      <link>https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120</link>
+      <guid isPermaLink="false">rss-fa40d110</guid>
+      <pubDate>Fri, 20 Nov 2026 20:00:00 GMT</pubDate>
+      <description>Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Introducing enhanced infrastructure observability in Amazon SageMaker HyperPod</title>
+      <link>https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues/</link>
+      <guid isPermaLink="false">rss-406a7cb6</guid>
+      <pubDate>Fri, 20 Nov 2026 18:24:06 GMT</pubDate>
+      <description>Amazon SageMaker HyperPod now offers enhanced observability to help you diagnose GPU training issues faster. It brings together diagnostic and profiling capabilities for training workloads on both Amazon EKS and Slurm orchestrators, pinpoi… — Source: AWS ML Blog</description>
+      <category>AWS ML</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+    </item>
+    <item>
+      <title>Following the “mathocalypse,” mathematicians consider the future</title>
+      <link>https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120</link>
+      <guid isPermaLink="false">rss-01169217</guid>
+      <pubDate>Fri, 20 Nov 2026 15:20:00 GMT</pubDate>
+      <description>A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession. — Source: MIT News AI</description>
+      <category>MIT</category>
+      <category>Official blog</category>
+      <category>Model release</category>
+      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
+    </item>
+    <item>
+      <title>Combatting adversarial distillation</title>
+      <link>https://openai.com/index/combatting-adversarial-distillation</link>
+      <guid isPermaLink="false">rss-e0134f05</guid>
+      <pubDate>Fri, 20 Nov 2026 10:00:00 GMT</pubDate>
+      <description>OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
+      <category>Official blog</category>
+      <category>Policy &amp; safety</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
       <title>Mistral launches Pixtral Large 2502 (128K context, $2/$6)</title>
@@ -47,37 +216,26 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/</link>
-      <guid isPermaLink="false">rss-84be4d63</guid>
-      <pubDate>Thu, 19 Nov 2026 23:02:16 GMT</pubDate>
-      <description>Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer&apos;s AWS bill, with no stablecoin wallets or API keys. This post wal… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
+      <title>Hebbia sees improvements in financial research with GPT-6 Astra</title>
+      <link>https://openai.com/business/customer-stories/hebbia</link>
+      <guid isPermaLink="false">rss-581d6619</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
       <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+      <category>Research</category>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
-      <title>How the BMW Group governs hundreds of agents across thousands of developers</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/</link>
-      <guid isPermaLink="false">rss-c19276bc</guid>
-      <pubDate>Thu, 19 Nov 2026 22:20:23 GMT</pubDate>
-      <description>When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&amp;D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Policy &amp; safety</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Run your whole selling business in AWS Quick</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/</link>
-      <guid isPermaLink="false">rss-791430e0</guid>
-      <pubDate>Thu, 19 Nov 2026 22:16:22 GMT</pubDate>
-      <description>Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it. — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
+      <title>Can AI help scientists identify promising drug candidates?</title>
+      <link>https://openai.com/index/introducing-medchembench</link>
+      <guid isPermaLink="false">rss-c986fee3</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery. — Source: OpenAI Blog</description>
+      <category>OpenAI</category>
       <category>Official blog</category>
       <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
+      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
       <title>AI helps researchers investigate how thousands of medical studies share code</title>
@@ -89,39 +247,6 @@
       <category>Official blog</category>
       <category>Research</category>
       <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
-      <title>Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/</link>
-      <guid isPermaLink="false">rss-6fc2dd85</guid>
-      <pubDate>Thu, 19 Nov 2026 21:28:18 GMT</pubDate>
-      <description>Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding thr… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Pricing</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Inside Amazon Connect Talent: The science of structured AI interviews</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/</link>
-      <guid isPermaLink="false">rss-d93a8061</guid>
-      <pubDate>Thu, 19 Nov 2026 21:23:20 GMT</pubDate>
-      <description>For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hir… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
-    </item>
-    <item>
-      <title>Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks</title>
-      <link>https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/</link>
-      <guid isPermaLink="false">rss-f20c41b6</guid>
-      <pubDate>Thu, 19 Nov 2026 20:01:06 GMT</pubDate>
-      <description>Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hook… — Source: AWS ML Blog</description>
-      <category>AWS ML</category>
-      <category>Official blog</category>
-      <category>Open source</category>
-      <source url="https://aws.amazon.com/blogs/machine-learning/feed/">AWS ML Blog</source>
     </item>
     <item>
       <title>Introducing Tool Retrieval in the Gemini API</title>
@@ -165,17 +290,6 @@
       <category>OpenAI</category>
       <category>Official blog</category>
       <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Explore the Codex Security Plugin</title>
-      <link>https://openai.com/business/learn/codex-security-plugin-demo</link>
-      <guid isPermaLink="false">rss-002d13b4</guid>
-      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Policy &amp; safety</category>
       <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
     </item>
     <item>
@@ -256,39 +370,6 @@
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
     </item>
     <item>
-      <title>The Silent Consensus</title>
-      <link>https://openai.com/index/the-silent-consensus</link>
-      <guid isPermaLink="false">rss-c90f0c50</guid>
-      <pubDate>Wed, 18 Nov 2026 10:00:00 GMT</pubDate>
-      <description>Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>Research acceleration: The jagged frontier</title>
-      <link>https://openai.com/index/research-acceleration-jagged-frontier</link>
-      <guid isPermaLink="false">rss-0648a466</guid>
-      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
-      <description>OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Research</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
-      <title>How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise</title>
-      <link>https://openai.com/business/customer-stories/sumitomo-life</link>
-      <guid isPermaLink="false">rss-fcc24d74</guid>
-      <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
-      <description>Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption. — Source: OpenAI Blog</description>
-      <category>OpenAI</category>
-      <category>Official blog</category>
-      <category>Research</category>
-      <source url="https://openai.com/news/rss.xml">OpenAI Blog</source>
-    </item>
-    <item>
       <title>Helping AI text detectors keep up with changing conditions</title>
       <link>https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118</link>
       <guid isPermaLink="false">rss-f65d3f07</guid>
@@ -324,17 +405,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>Putting a spotlight on AI, society, and humanity</title>
-      <link>https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117</link>
-      <guid isPermaLink="false">rss-338e81f8</guid>
-      <pubDate>Tue, 17 Nov 2026 20:40:00 GMT</pubDate>
-      <description>Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
       <title>Put Gemini to work for you</title>
       <link>https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/</link>
       <guid isPermaLink="false">rss-8b572679</guid>
@@ -344,28 +414,6 @@
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://blog.google/technology/ai/rss/">Google AI Blog</source>
-    </item>
-    <item>
-      <title>Q&amp;A: Why building math muscles remains important in the AI era</title>
-      <link>https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117</link>
-      <guid isPermaLink="false">rss-47abc027</guid>
-      <pubDate>Tue, 17 Nov 2026 05:00:00 GMT</pubDate>
-      <description>Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
-      <title>Learning the language of machine learning</title>
-      <link>https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117</link>
-      <guid isPermaLink="false">rss-5585f89b</guid>
-      <pubDate>Tue, 17 Nov 2026 05:00:00 GMT</pubDate>
-      <description>By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate effectively with humans. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
     </item>
     <item>
       <title>OpenAI launches GPT-6.2 Astra (1.1M context, $8/$40)</title>
@@ -522,28 +570,6 @@
       <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>New AI “copilot” helps engineers design better structures</title>
-      <link>https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113</link>
-      <guid isPermaLink="false">rss-b7a59c77</guid>
-      <pubDate>Fri, 13 Nov 2026 05:00:00 GMT</pubDate>
-      <description>The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges. — Source: MIT News AI</description>
-      <category>MIT</category>
-      <category>Official blog</category>
-      <category>Policy &amp; safety</category>
-      <source url="https://news.mit.edu/rss/topic/artificial-intelligence2">MIT News AI</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-11-13): Releasing the full suite of application APIs</title>
-      <link>https://api-docs.deepseek.com/updates#2026-11-13</link>
-      <guid isPermaLink="false">release-deepseek-2026-11-13-e72e993b</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-11-13: In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
       <title>inclusionAI launches Ling 3.2 Flash (free) (1M context, free/free)</title>
       <link>https://openrouter.ai/inclusionai/ling-3.2-flash:free</link>
       <guid isPermaLink="false">release-inclusionai-ling-3-2-flash-free</guid>
@@ -638,10 +664,10 @@
     </item>
     <item>
       <title>ollama/ollama released v0.40.17</title>
-      <link>https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2</link>
-      <guid isPermaLink="false">github-release-ollama-ollama-v0-40-17-rc2</guid>
+      <link>https://github.com/ollama/ollama/releases/tag/v0.40.17</link>
+      <guid isPermaLink="false">github-release-ollama-ollama-v0-40-17</guid>
       <pubDate>Tue, 10 Nov 2026 22:25:00 GMT</pubDate>
-      <description>## What&apos;s Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/… — Source: GitHub Releases</description>
+      <description>## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits… — Source: GitHub Releases</description>
       <category>ollama</category>
       <category>GitHub Release</category>
       <category>Open source</category>
@@ -871,29 +897,6 @@
       <source url="https://openrouter.ai/models">OpenRouter</source>
     </item>
     <item>
-      <title>KT launches Mi:dm K 3.0 Pro (262K context, $0.2/$0.8)</title>
-      <link>https://openrouter.ai/kt/midm-k-3.0-pro</link>
-      <guid isPermaLink="false">release-kt-midm-k-3-0-pro</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>KT: Mi:dm K 3.0 Pro is now on OpenRouter: 262K context, $0.2/$0.8 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter</description>
-      <category>KT</category>
-      <category>Long context</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
-      <title>OpenRouter launches Auto Router (2M context, pricing TBA)</title>
-      <link>https://openrouter.ai/openrouter/auto</link>
-      <guid isPermaLink="false">release-openrouter-auto</guid>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter</description>
-      <category>OpenRouter</category>
-      <category>Long context</category>
-      <category>Multimodal</category>
-      <category>Reasoning</category>
-      <source url="https://openrouter.ai/models">OpenRouter</source>
-    </item>
-    <item>
       <title>ollama/ollama released v0.40.15</title>
       <link>https://github.com/ollama/ollama/releases/tag/v0.40.15</link>
       <guid isPermaLink="false">github-release-ollama-ollama-v0-40-15</guid>
@@ -916,17 +919,6 @@
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>huggingface/transformers released Patch release v5.22.1</title>
-      <link>https://github.com/huggingface/transformers/releases/tag/v5.22.1</link>
-      <guid isPermaLink="false">github-release-huggingface-transformers-v5-22-1</guid>
-      <pubDate>Fri, 30 Oct 2026 09:36:03 GMT</pubDate>
-      <description># Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or — Source: GitHub Releases</description>
-      <category>transformers</category>
-      <category>GitHub Release</category>
-      <category>Open source</category>
-      <source url="https://github.com/huggingface/transformers/releases">GitHub Releases</source>
-    </item>
-    <item>
       <title>vllm-project/vllm released v0.32.0</title>
       <link>https://github.com/vllm-project/vllm/releases/tag/v0.32.0</link>
       <guid isPermaLink="false">github-release-vllm-project-vllm-v0-32-0</guid>
@@ -938,72 +930,6 @@
       <source url="https://github.com/vllm-project/vllm/releases">GitHub Releases</source>
     </item>
     <item>
-      <title>DeepSeek official update (2026-10-17): Opening up the in-house search API</title>
-      <link>https://api-docs.deepseek.com/updates#2026-10-17</link>
-      <guid isPermaLink="false">release-deepseek-2026-10-17-a8222785</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-10-17: DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update</title>
-      <link>https://api-docs.deepseek.com/updates#2026-10-17</link>
-      <guid isPermaLink="false">release-deepseek-2026-10-17-f84e3ffd</guid>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-10-17: DeepSeek&apos;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release</title>
-      <link>https://api-docs.deepseek.com/updates#2026-09-10</link>
-      <guid isPermaLink="false">release-deepseek-2026-09-10-36ec302b</guid>
-      <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release</title>
-      <link>https://api-docs.deepseek.com/updates#2026-08-21</link>
-      <guid isPermaLink="false">release-deepseek-2026-08-21-3fa111a9</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model=&apos;deepseek-… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update</title>
-      <link>https://api-docs.deepseek.com/updates#2026-08-13</link>
-      <guid isPermaLink="false">release-deepseek-2026-08-13-7bb335ab</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update</title>
-      <link>https://api-docs.deepseek.com/updates#2026-07-31</link>
-      <guid isPermaLink="false">release-deepseek-2026-07-31-c99ac55c</guid>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
-    </item>
-    <item>
       <title>From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon</title>
       <link>https://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/</link>
       <guid isPermaLink="false">rss-13684b5c</guid>
@@ -1013,28 +939,6 @@
       <category>Official blog</category>
       <category>Model release</category>
       <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
-    </item>
-    <item>
-      <title>Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction</title>
-      <link>https://bair.berkeley.edu/blog/2026/07/26/abbel/</link>
-      <guid isPermaLink="false">rss-83865e2b</guid>
-      <pubDate>Sun, 26 Jul 2026 09:00:00 GMT</pubDate>
-      <description>Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — Source: Berkeley BAIR</description>
-      <category>Berkeley BAIR</category>
-      <category>Official blog</category>
-      <category>Model release</category>
-      <source url="https://bair.berkeley.edu/blog/feed.xml">Berkeley BAIR</source>
-    </item>
-    <item>
-      <title>DeepSeek official update (2026-04-24): DeepSeek-V4</title>
-      <link>https://api-docs.deepseek.com/updates#2026-04-24</link>
-      <guid isPermaLink="false">release-deepseek-2026-04-24-a1208998</guid>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — Source: DeepSeek</description>
-      <category>DeepSeek</category>
-      <category>Official update</category>
-      <category>Model release</category>
-      <source url="https://api-docs.deepseek.com/updates">DeepSeek</source>
     </item>
   </channel>
 </rss>

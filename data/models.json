@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T08:30:21.552Z",
+  "generatedAt": "2026-11-23T10:54:59.087Z",
   "source": "openrouter",
   "count": 477,
   "models": [
@@ -2013,7 +2013,7 @@
       "org": "DeepSeek",
       "releaseDate": "2025-03-24",
       "contextWindow": 163840,
-      "maxOutput": 115200,
+      "maxOutput": 147456,
       "modalities": [
         "text"
       ],
@@ -2024,8 +2024,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.29,
-        "output": 1.14,
+        "input": 0.25,
+        "output": 1,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2262,7 +2262,7 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.047,
+        "input": 0.0434,
         "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -2318,7 +2318,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-08-21",
       "contextWindow": 1048576,
-      "maxOutput": 943717,
+      "maxOutput": 262144,
       "modalities": [
         "text",
         "image"
@@ -2332,8 +2332,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.44,
-        "output": 1.32,
+        "input": 0.2156,
+        "output": 0.6468,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2422,7 +2422,7 @@
       "org": "DeepSeek",
       "releaseDate": "2026-09-10",
       "contextWindow": 1048576,
-      "maxOutput": 943718,
+      "maxOutput": 393216,
       "modalities": [
         "text",
         "image"
@@ -2436,8 +2436,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.0498,
+        "output": 0.1992,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -2472,8 +2472,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.15,
+        "output": 0.6,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4294,7 +4294,7 @@
       "org": "Google",
       "releaseDate": "2025-03-13",
       "contextWindow": 131072,
-      "maxOutput": 16384,
+      "maxOutput": 117964,
       "modalities": [
         "text",
         "image"
@@ -4306,8 +4306,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.05,
-        "output": 0.1,
+        "input": 0.04,
+        "output": 0.05,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4552,7 +4552,7 @@
       "org": "Gryphe",
       "releaseDate": "2023-07-02",
       "contextWindow": 8192,
-      "maxOutput": 3686,
+      "maxOutput": 7372,
       "modalities": [
         "text"
       ],
@@ -4562,8 +4562,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.08,
-        "output": 0.11,
+        "input": 0.3,
+        "output": 0.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -4723,20 +4723,21 @@
       "name": "inclusionAI: Ling 3.1 Flash",
       "org": "inclusionAI",
       "releaseDate": "2026-10-02",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "maxOutput": 262144,
       "modalities": [
         "text"
       ],
       "capabilities": [
         "reasoning",
+        "structured-output",
         "tool-calling"
       ],
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.045,
-        "output": 0.135,
+        "input": 0.06,
+        "output": 0.18,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -5014,39 +5015,6 @@
         "hf": null
       },
       "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "meituan/longcat-2.0",
-      "name": "Meituan: LongCat 2.0",
-      "org": "Meituan",
-      "releaseDate": "2026-07-20",
-      "contextWindow": 1048756,
-      "maxOutput": 262144,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.3,
-        "output": 1.2,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/meituan/longcat-2.0",
-        "hf": "https://huggingface.co/meituan-longcat/LongCat-2.0"
-      },
-      "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. I…",
       "sourceIds": [
         "openrouter"
       ],
@@ -5705,7 +5673,7 @@
       "org": "MiniMax",
       "releaseDate": "2026-02-12",
       "contextWindow": 198000,
-      "maxOutput": 176947,
+      "maxOutput": 32768,
       "modalities": [
         "text"
       ],
@@ -5717,8 +5685,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.295,
-        "output": 1.2,
+        "input": 0.27,
+        "output": 0.95,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -5739,20 +5707,19 @@
       "org": "MiniMax",
       "releaseDate": "2026-03-18",
       "contextWindow": 196608,
-      "maxOutput": 176947,
+      "maxOutput": 131072,
       "modalities": [
         "text"
       ],
       "capabilities": [
         "reasoning",
-        "structured-output",
         "tool-calling"
       ],
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.21,
-        "output": 0.84,
+        "input": 0.6,
+        "output": 1.8,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -6971,8 +6938,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.253,
-        "output": 8.8,
+        "input": 0.2403,
+        "output": 8.4023,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -7644,7 +7611,7 @@
       "org": "NVIDIA",
       "releaseDate": "2026-10-15",
       "contextWindow": 1048576,
-      "maxOutput": 235929,
+      "maxOutput": 943718,
       "modalities": [
         "text",
         "image",
@@ -7661,7 +7628,7 @@
       "license": null,
       "pricing": {
         "input": 0.15,
-        "output": 0.5,
+        "output": 0.47,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -11182,8 +11149,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.09,
-        "output": 0.36,
+        "input": 0.05,
+        "output": 0.25,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -11250,8 +11217,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.018,
-        "output": 0.09,
+        "input": 0.03,
+        "output": 0.13,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -12503,8 +12470,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.07,
+        "output": 0.28,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13087,8 +13054,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.1,
-        "output": 0.9,
+        "input": 0.05,
+        "output": 0.7,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13329,7 +13296,7 @@
       "org": "Qwen",
       "releaseDate": "2026-08-12",
       "contextWindow": 1048576,
-      "maxOutput": 131072,
+      "maxOutput": 65536,
       "modalities": [
         "text"
       ],
@@ -13363,7 +13330,7 @@
       "org": "Qwen",
       "releaseDate": "2026-08-14",
       "contextWindow": 1024000,
-      "maxOutput": 235929,
+      "maxOutput": 131072,
       "modalities": [
         "text",
         "image",
@@ -13379,8 +13346,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.06,
-        "output": 2.2,
+        "input": 0.035,
+        "output": 1.5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -13658,6 +13625,42 @@
         "hf": null
       },
       "description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, wi…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "radixark/daisyrose-27b",
+      "name": "RadixArk: DaisyRose 27B",
+      "org": "RadixArk",
+      "releaseDate": "2026-11-21",
+      "contextWindow": 262144,
+      "maxOutput": 235929,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.15,
+        "output": 1.875,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/radixark/daisyrose-27b",
+        "hf": "https://huggingface.co/RadixArk/DaisyRose-27B"
+      },
+      "description": "DaisyRose 27B is an open-weight multimodal reasoning model from RadixArk, trained from [Qwen3.8 27B](https://openrouter…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14348,7 +14351,7 @@
       "org": "Tencent",
       "releaseDate": "2026-07-06",
       "contextWindow": 262144,
-      "maxOutput": 128000,
+      "maxOutput": 235929,
       "modalities": [
         "text"
       ],
@@ -14360,8 +14363,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.14,
+        "output": 0.58,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -14371,39 +14374,6 @@
         "hf": "https://huggingface.co/tencent/Hy3"
       },
       "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for re…",
-      "sourceIds": [
-        "openrouter"
-      ],
-      "benchmarks": null
-    },
-    {
-      "id": "tencent/hy3-preview",
-      "name": "Tencent: Hy3 preview",
-      "org": "Tencent",
-      "releaseDate": "2026-04-22",
-      "contextWindow": 262144,
-      "maxOutput": 235929,
-      "modalities": [
-        "text"
-      ],
-      "capabilities": [
-        "reasoning",
-        "tool-calling"
-      ],
-      "openWeights": true,
-      "license": null,
-      "pricing": {
-        "input": 0.18,
-        "output": 0.6,
-        "currency": "USD",
-        "unit": "per_1m_tokens"
-      },
-      "links": {
-        "official": null,
-        "api": "https://openrouter.ai/tencent/hy3-preview",
-        "hf": "https://huggingface.co/tencent/Hy3-preview"
-      },
-      "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production us…",
       "sourceIds": [
         "openrouter"
       ],
@@ -14643,6 +14613,42 @@
         "hf": "https://huggingface.co/thinkingmachines/Inkling"
       },
       "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters ou…",
+      "sourceIds": [
+        "openrouter"
+      ],
+      "benchmarks": null
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "name": "Thinking Machines: Inkling 2 Mini",
+      "org": "Thinking Machines",
+      "releaseDate": "2026-11-21",
+      "contextWindow": 1048576,
+      "maxOutput": 65536,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "capabilities": [
+        "reasoning",
+        "structured-output",
+        "tool-calling",
+        "vision"
+      ],
+      "openWeights": true,
+      "license": null,
+      "pricing": {
+        "input": 0.075,
+        "output": 0.3,
+        "currency": "USD",
+        "unit": "per_1m_tokens"
+      },
+      "links": {
+        "official": null,
+        "api": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+        "hf": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+      },
+      "description": "Inkling 2 Mini is an open-weight multimodal looped transformer from Thinking Machines Lab, with 3.4B active parameters…",
       "sourceIds": [
         "openrouter"
       ],
@@ -15429,7 +15435,7 @@
       "name": "Xiaomi: MiMo-V2.6-Flash",
       "org": "Xiaomi",
       "releaseDate": "2026-09-21",
-      "contextWindow": 1050000,
+      "contextWindow": 1048576,
       "maxOutput": 131072,
       "modalities": [
         "text",
@@ -15469,7 +15475,7 @@
       "name": "Xiaomi: MiMo-V2.6-Pro",
       "org": "Xiaomi",
       "releaseDate": "2026-09-21",
-      "contextWindow": 1050000,
+      "contextWindow": 1048576,
       "maxOutput": 131072,
       "modalities": [
         "text",
@@ -15737,8 +15743,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 0.4,
-        "output": 1.75,
+        "input": 0.6,
+        "output": 2.2,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -15873,8 +15879,8 @@
       "openWeights": true,
       "license": null,
       "pricing": {
-        "input": 1.19,
-        "output": 3.74,
+        "input": 1.4,
+        "output": 4.4,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -16447,8 +16453,8 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.2565,
-        "output": 8,
+        "input": 0.0999,
+        "output": 5,
         "currency": "USD",
         "unit": "per_1m_tokens"
       },
@@ -16481,7 +16487,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.047,
+        "input": 0.0434,
         "output": 0.3,
         "currency": "USD",
         "unit": "per_1m_tokens"
@@ -16599,7 +16605,7 @@
       "openWeights": false,
       "license": null,
       "pricing": {
-        "input": 0.1805,
+        "input": 0.1824,
         "output": 11.0055,
         "currency": "USD",
         "unit": "per_1m_tokens"

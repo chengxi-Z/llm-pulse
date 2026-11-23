@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T08:30:21.552Z",
+  "generatedAt": "2026-11-23T10:54:59.087Z",
   "source": "hn-ai",
   "count": 20,
   "items": [
     {
-      "id": "aihot-xywgx35ocbe6mzl2pnajw8ruu",
-      "title": "Anthropic 上市：83 美元定价，首日收涨 17%",
-      "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
-      "hnUrl": "https://aihot.news/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
+      "id": "aihot-w6aesnkh72hkkxhr4ptrhddd9",
+      "title": "OpenAI 提议以困惑度设共同安全上限，微软公布可比数据",
+      "url": "https://aihot.news/items/w6aesnkh72hkkxhr4ptrhddd9",
+      "hnUrl": "https://aihot.news/story/c5ab5cf5-6316-4ad6-9d74-f0b378a2b064",
       "domain": "aihot.news",
-      "points": 82,
-      "comments": 11,
-      "publishedAt": "2026-11-20T01:37:44.000Z",
-      "summary": "多源事件：Platformer（热点 RSS） / TechCrunch：AI（RSS） / X：Rohan Paul (@rohanpaul_ai) 等 11 家信源",
+      "points": 30,
+      "comments": 7,
+      "publishedAt": "2026-11-23T01:00:23.127Z",
+      "summary": "多源事件：IT之家·人工智能 / X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman) / X：indigo (@indigox) 等 7 家信源",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -21,33 +21,32 @@
       ],
       "hot": true,
       "rank": 1,
-      "sourceCount": 11,
-      "signalCount": 82,
-      "participantCount": 93,
-      "storyUrl": "https://aihot.news/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
+      "sourceCount": 7,
+      "signalCount": 30,
+      "participantCount": 37,
+      "storyUrl": "https://aihot.news/story/c5ab5cf5-6316-4ad6-9d74-f0b378a2b064",
       "sourceNames": [
-        "Platformer（热点 RSS）",
-        "TechCrunch：AI（RSS）",
-        "X：Rohan Paul (@rohanpaul_ai)",
         "IT之家·人工智能",
-        "Gary Marcus：The Road to AI We Can Trust（RSS）",
-        "Newcomer 新闻长文（RSS）",
+        "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)",
         "X：indigo (@indigox)",
-        "X：Anthropic (@AnthropicAI)"
+        "TechCrunch：AI（RSS）",
+        "X：Mark Chen（OpenAI 首席研究官，@markchen90）",
+        "X：Dan Hendrycks (@hendrycks)",
+        "X：Noam Brown (@polynoamial)"
       ],
-      "originalUrl": "https://www.anthropic.com/news/s1-sec",
-      "sourceName": "Anthropic：Newsroom（网页）"
+      "originalUrl": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "sourceName": "TechCrunch：AI（RSS）"
     },
     {
-      "id": "aihot-lp0snt9lfrx5ju7mg3wma6hnw",
-      "title": "Google 发布 Gemini 4 Neon，API 可直传 Office 文件",
-      "url": "https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
-      "hnUrl": "https://aihot.news/story/74578987-a1ed-4ce0-96b8-658226459865",
+      "id": "aihot-vu6fw8wmrs3xcln4u9gwzf1f4",
+      "title": "Lean 社区确认阿尔波格黎曼猜想证明正确",
+      "url": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4",
+      "hnUrl": "https://aihot.news/story/647b0945-9244-4f55-b509-0f3fa0f6fe51",
       "domain": "aihot.news",
-      "points": 91,
-      "comments": 17,
-      "publishedAt": "2026-11-20T04:52:33.000Z",
-      "summary": "多源事件：X：OpenClaw (@openclaw) / X：Google (@Google) / X：Arena (@arena) 等 17 家信源",
+      "points": 46,
+      "comments": 5,
+      "publishedAt": "2026-11-22T18:37:02.000Z",
+      "summary": "多源事件：Gary Marcus：The Road to AI We Can Trust（RSS） / The Decoder：AI News（RSS） / IT之家·人工智能 等 5 家信源",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -55,33 +54,30 @@
       ],
       "hot": true,
       "rank": 2,
-      "sourceCount": 17,
-      "signalCount": 91,
-      "participantCount": 108,
-      "storyUrl": "https://aihot.news/story/74578987-a1ed-4ce0-96b8-658226459865",
+      "sourceCount": 5,
+      "signalCount": 46,
+      "participantCount": 51,
+      "storyUrl": "https://aihot.news/story/647b0945-9244-4f55-b509-0f3fa0f6fe51",
       "sourceNames": [
-        "X：OpenClaw (@openclaw)",
-        "X：Google (@Google)",
-        "X：Arena (@arena)",
+        "Gary Marcus：The Road to AI We Can Trust（RSS）",
         "The Decoder：AI News（RSS）",
-        "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
-        "MarkTechPost（RSS）",
-        "X：卡尔的 AI 沃茨 (@aiwarts)",
-        "Simon Willison 博客"
+        "IT之家·人工智能",
+        "X：Saito 硬地骇客 (@SaitoWu)",
+        "X：Elon Musk (@elonmusk, xAI)"
       ],
-      "originalUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-      "sourceName": "Google DeepMind：Blog（RSS）"
+      "originalUrl": "https://mp.weixin.qq.com/s/8Zi3nfwddzFy6cZsK2_KxA",
+      "sourceName": "公众号：数字生命卡兹克"
     },
     {
-      "id": "aihot-h5xjk79bhcu8vgnbrynj208uj",
-      "title": "Google 为 Mac 版 Gemini 上线电脑操作功能",
-      "url": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
-      "hnUrl": "https://aihot.news/story/2442138c-3137-45fd-9a2a-9c1b159c49ae",
+      "id": "aihot-d4hhqnlmrclsx7d6idtvq95wz",
+      "title": "智谱发布GLM-5.4旗舰模型并上线Coding Plan",
+      "url": "https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz",
+      "hnUrl": "https://aihot.news/story/fc5a905b-54af-4de4-9c7c-a366a60a9f84",
       "domain": "aihot.news",
-      "points": 18,
-      "comments": 4,
-      "publishedAt": "2026-11-19T21:52:19.000Z",
-      "summary": "多源事件：X：Josh Woodward (@joshwoodward, Google Labs VP) / X：Gemini (@GeminiApp) / The Verge：AI（RSS） 等 4 家信源",
+      "points": 11,
+      "comments": 2,
+      "publishedAt": "2026-11-23T10:27:11.000Z",
+      "summary": "多源事件：X：智谱 Z.ai (@Zai_org) / IT之家·人工智能",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -89,29 +85,27 @@
       ],
       "hot": true,
       "rank": 3,
-      "sourceCount": 4,
-      "signalCount": 18,
-      "participantCount": 22,
-      "storyUrl": "https://aihot.news/story/2442138c-3137-45fd-9a2a-9c1b159c49ae",
+      "sourceCount": 2,
+      "signalCount": 11,
+      "participantCount": 13,
+      "storyUrl": "https://aihot.news/story/fc5a905b-54af-4de4-9c7c-a366a60a9f84",
       "sourceNames": [
-        "X：Josh Woodward (@joshwoodward, Google Labs VP)",
-        "X：Gemini (@GeminiApp)",
-        "The Verge：AI（RSS）",
-        "TechCrunch：AI（RSS）"
+        "X：智谱 Z.ai (@Zai_org)",
+        "IT之家·人工智能"
       ],
-      "originalUrl": "https://x.com/joshwoodward/status/2123534862569324703",
-      "sourceName": "X：Josh Woodward (@joshwoodward, Google Labs VP)"
+      "originalUrl": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
+      "sourceName": "公众号：智谱（GLM）"
     },
     {
-      "id": "aihot-pbsmf70cnjk0h578776eylwm1",
-      "title": "苹果被曝加速Siri智能体化并招聘工程师",
-      "url": "https://aihot.news/items/pbsmf70cnjk0h578776eylwm1",
-      "hnUrl": "https://aihot.news/story/a1b6af96-fbdf-4779-80a9-0ca55270818c",
+      "id": "aihot-y7nk77dxae51qwi826gpmvbho",
+      "title": "Thinking Machines 开源循环模型 Inkling 2 Mini",
+      "url": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "hnUrl": "https://aihot.news/story/0cf0f02a-0464-43db-b253-ed1878937b74",
       "domain": "aihot.news",
-      "points": 10,
-      "comments": 2,
-      "publishedAt": "2026-11-20T00:56:01.000Z",
-      "summary": "多源事件：TechCrunch：AI（RSS） / The Verge：AI（RSS）",
+      "points": 21,
+      "comments": 3,
+      "publishedAt": "2026-11-23T06:55:25.030Z",
+      "summary": "多源事件：IT之家·人工智能 / X：Clément Delangue（Hugging Face CEO） (@ClementDelangue) / MarkTechPost（RSS）",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -119,27 +113,28 @@
       ],
       "hot": true,
       "rank": 4,
-      "sourceCount": 2,
-      "signalCount": 10,
-      "participantCount": 12,
-      "storyUrl": "https://aihot.news/story/a1b6af96-fbdf-4779-80a9-0ca55270818c",
+      "sourceCount": 3,
+      "signalCount": 21,
+      "participantCount": 24,
+      "storyUrl": "https://aihot.news/story/0cf0f02a-0464-43db-b253-ed1878937b74",
       "sourceNames": [
-        "TechCrunch：AI（RSS）",
-        "The Verge：AI（RSS）"
+        "IT之家·人工智能",
+        "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+        "MarkTechPost（RSS）"
       ],
-      "originalUrl": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "sourceName": "TechCrunch：AI（RSS）"
+      "originalUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "sourceName": "Thinking Machines Lab：News（网页）"
     },
     {
-      "id": "aihot-l74eacnb38ytvm5hm8om7h7cs",
-      "title": "Google 将 Genie 4 开放给 AI Ultra 订阅者并上线 API",
-      "url": "https://aihot.news/items/l74eacnb38ytvm5hm8om7h7cs",
-      "hnUrl": "https://aihot.news/story/d9a88c5c-1b99-4e5b-af6c-dec4f752f180",
+      "id": "aihot-xriwds9rtl5niekinxe2uwxsu",
+      "title": "特斯拉FSD v15下月推送，马斯克介绍天空箭头导航",
+      "url": "https://aihot.news/items/xriwds9rtl5niekinxe2uwxsu",
+      "hnUrl": "https://aihot.news/story/fcbdc9a0-bdf5-473c-9f26-7a51a8deb2e3",
       "domain": "aihot.news",
-      "points": 12,
-      "comments": 6,
-      "publishedAt": "2026-11-19T21:12:59.000Z",
-      "summary": "多源事件：X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid) / X：Logan Kilpatrick (@OfficialLoganK) / X：Sundar Pichai (@sundarpichai) 等 6 家信源",
+      "points": 17,
+      "comments": 3,
+      "publishedAt": "2026-11-22T23:40:36.000Z",
+      "summary": "多源事件：X：Dash (@dashhuang) / X：Elon Musk (@elonmusk, xAI) / X：indigo (@indigox)",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -147,31 +142,28 @@
       ],
       "hot": true,
       "rank": 5,
-      "sourceCount": 6,
-      "signalCount": 12,
-      "participantCount": 18,
-      "storyUrl": "https://aihot.news/story/d9a88c5c-1b99-4e5b-af6c-dec4f752f180",
+      "sourceCount": 3,
+      "signalCount": 17,
+      "participantCount": 20,
+      "storyUrl": "https://aihot.news/story/fcbdc9a0-bdf5-473c-9f26-7a51a8deb2e3",
       "sourceNames": [
-        "X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid)",
-        "X：Logan Kilpatrick (@OfficialLoganK)",
-        "X：Sundar Pichai (@sundarpichai)",
-        "IT之家·人工智能",
-        "The Decoder：AI News（RSS）",
-        "X：Josh Woodward (@joshwoodward, Google Labs VP)"
+        "X：Dash (@dashhuang)",
+        "X：Elon Musk (@elonmusk, xAI)",
+        "X：indigo (@indigox)"
       ],
-      "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "sourceName": "Google DeepMind：Blog（RSS）"
+      "originalUrl": "https://x.com/indigox/status/2124264257273643371",
+      "sourceName": "X：indigo (@indigox)"
     },
     {
-      "id": "aihot-f6lqwdjk5x80bwats1fvxagsu",
-      "title": "OpenAI报告：编码智能体加速研发但进展不均",
-      "url": "https://aihot.news/items/f6lqwdjk5x80bwats1fvxagsu",
-      "hnUrl": "https://aihot.news/story/7208f05f-6fa1-4aec-9c4a-84bd96219f87",
+      "id": "aihot-q0jpjfgyy1mkaupvp0j18y127",
+      "title": "蚂蚁开源首个多模态医疗大模型 LingSante-3.1-air-VL",
+      "url": "https://aihot.news/items/q0jpjfgyy1mkaupvp0j18y127",
+      "hnUrl": "https://aihot.news/story/7a64c34c-2019-47e0-9ceb-2faff7425307",
       "domain": "aihot.news",
-      "points": 10,
-      "comments": 3,
-      "publishedAt": "2026-11-19T13:08:35.000Z",
-      "summary": "多源事件：The Decoder：AI News（RSS） / X：Rohan Paul (@rohanpaul_ai) / X：OpenAI (@OpenAI)",
+      "points": 7,
+      "comments": 5,
+      "publishedAt": "2026-11-23T03:00:00.000Z",
+      "summary": "多源事件：公众号：蚂蚁百灵（Ling） / IT之家·人工智能 / X：Rohan Paul (@rohanpaul_ai) 等 5 家信源",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -179,28 +171,30 @@
       ],
       "hot": true,
       "rank": 6,
-      "sourceCount": 3,
-      "signalCount": 10,
-      "participantCount": 13,
-      "storyUrl": "https://aihot.news/story/7208f05f-6fa1-4aec-9c4a-84bd96219f87",
+      "sourceCount": 5,
+      "signalCount": 7,
+      "participantCount": 12,
+      "storyUrl": "https://aihot.news/story/7a64c34c-2019-47e0-9ceb-2faff7425307",
       "sourceNames": [
-        "The Decoder：AI News（RSS）",
+        "公众号：蚂蚁百灵（Ling）",
+        "IT之家·人工智能",
         "X：Rohan Paul (@rohanpaul_ai)",
-        "X：OpenAI (@OpenAI)"
+        "X：蚂蚁百灵 (@AntLingAGI)",
+        "蚂蚁百灵：Developer Blog（网页）"
       ],
-      "originalUrl": "https://x.com/OpenAI/status/2123191365983248653",
-      "sourceName": "X：OpenAI (@OpenAI)"
+      "originalUrl": "https://developer.ant-ling.com/zh-CN/blogs/lingsante-3.1-air-vl",
+      "sourceName": "蚂蚁百灵：Developer Blog（网页）"
     },
     {
-      "id": "aihot-ol8ctywbqhvlrp8kulkz2qome",
-      "title": "谷歌联手蓝色起源2029年发射AI服务器卫星",
-      "url": "https://aihot.news/items/ol8ctywbqhvlrp8kulkz2qome",
-      "hnUrl": "https://aihot.news/story/96cb1044-2367-4e11-a021-d0ceccdc6520",
+      "id": "aihot-hzy9ajwl8139dnxk4sh56kjon",
+      "title": "蚂蚁开源560B医疗MoE模型LingSante-3.1-flash",
+      "url": "https://aihot.news/items/hzy9ajwl8139dnxk4sh56kjon",
+      "hnUrl": "https://aihot.news/story/5e931c88-3e7c-4f18-be7f-6c6902aa59b2",
       "domain": "aihot.news",
-      "points": 10,
-      "comments": 1,
-      "publishedAt": "2026-11-19T14:26:06.037Z",
-      "summary": "多源事件：IT之家·人工智能",
+      "points": 5,
+      "comments": 5,
+      "publishedAt": "2026-11-23T03:00:00.000Z",
+      "summary": "多源事件：公众号：蚂蚁百灵（Ling） / X：Rohan Paul (@rohanpaul_ai) / X：蚂蚁百灵 (@AntLingAGI) 等 5 家信源",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -208,26 +202,30 @@
       ],
       "hot": true,
       "rank": 7,
-      "sourceCount": 1,
-      "signalCount": 10,
-      "participantCount": 11,
-      "storyUrl": "https://aihot.news/story/96cb1044-2367-4e11-a021-d0ceccdc6520",
+      "sourceCount": 5,
+      "signalCount": 5,
+      "participantCount": 10,
+      "storyUrl": "https://aihot.news/story/5e931c88-3e7c-4f18-be7f-6c6902aa59b2",
       "sourceNames": [
-        "IT之家·人工智能"
+        "公众号：蚂蚁百灵（Ling）",
+        "X：Rohan Paul (@rohanpaul_ai)",
+        "X：蚂蚁百灵 (@AntLingAGI)",
+        "蚂蚁 inclusionAI：HuggingFace 新模型",
+        "蚂蚁百灵：Developer Blog（网页）"
       ],
-      "originalUrl": "https://www.ithome.com/1/029/695.htm",
-      "sourceName": "IT之家·人工智能"
+      "originalUrl": "https://developer.ant-ling.com/zh-CN/blogs/lingsante-3.1-flash",
+      "sourceName": "蚂蚁百灵：Developer Blog（网页）"
     },
     {
-      "id": "aihot-si654l26i1u1jqoilpr9og075",
-      "title": "Meta Muse Charm 据报定价 300 美元",
-      "url": "https://aihot.news/items/si654l26i1u1jqoilpr9og075",
-      "hnUrl": "https://aihot.news/story/2463d589-e0e9-4642-b52b-8056a255d3e2",
+      "id": "aihot-xywgx35ocbe6mzl2pnajw8ruu",
+      "title": "Anthropic 上市首日收涨 17%，次日回落",
+      "url": "https://aihot.news/items/xywgx35ocbe6mzl2pnajw8ruu",
+      "hnUrl": "https://aihot.news/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
       "domain": "aihot.news",
-      "points": 7,
-      "comments": 2,
-      "publishedAt": "2026-11-19T21:58:06.000Z",
-      "summary": "多源事件：TechCrunch：AI（RSS） / The Verge：AI（RSS）",
+      "points": 11,
+      "comments": 1,
+      "publishedAt": "2026-11-21T15:00:00.000Z",
+      "summary": "多源事件：The Verge：AI（RSS）",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -235,27 +233,26 @@
       ],
       "hot": true,
       "rank": 8,
-      "sourceCount": 2,
-      "signalCount": 7,
-      "participantCount": 9,
-      "storyUrl": "https://aihot.news/story/2463d589-e0e9-4642-b52b-8056a255d3e2",
+      "sourceCount": 1,
+      "signalCount": 11,
+      "participantCount": 12,
+      "storyUrl": "https://aihot.news/story/82c796c0-3bf1-4c3a-8368-56913b4bf85d",
       "sourceNames": [
-        "TechCrunch：AI（RSS）",
         "The Verge：AI（RSS）"
       ],
-      "originalUrl": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-      "sourceName": "The Verge：AI（RSS）"
+      "originalUrl": "https://www.anthropic.com/news/s1-sec",
+      "sourceName": "Anthropic：Newsroom（网页）"
     },
     {
-      "id": "aihot-qoekdl4jf95kwb6cau1i3mltn",
-      "title": "OpenAI 向 Plus 与 Business 用户测试 dots",
-      "url": "https://aihot.news/items/qoekdl4jf95kwb6cau1i3mltn",
-      "hnUrl": "https://aihot.news/story/9ba36bba-3cd1-40c9-b311-35e022a99425",
+      "id": "aihot-eg97pyuem4incr7vpqsklw36v",
+      "title": "亚马逊深入谈判收购Decart，估值约75亿美元",
+      "url": "https://aihot.news/items/eg97pyuem4incr7vpqsklw36v",
+      "hnUrl": "https://aihot.news/story/51379310-d375-40d8-88e1-a8112bca2c10",
       "domain": "aihot.news",
-      "points": 6,
+      "points": 7,
       "comments": 2,
-      "publishedAt": "2026-11-20T01:20:21.430Z",
-      "summary": "多源事件：IT之家·人工智能 / X：Tibo (@thsottiaux)",
+      "publishedAt": "2026-11-23T03:35:46.710Z",
+      "summary": "多源事件：IT之家·人工智能 / X：Rohan Paul (@rohanpaul_ai)",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -264,26 +261,26 @@
       "hot": true,
       "rank": 9,
       "sourceCount": 2,
-      "signalCount": 6,
-      "participantCount": 8,
-      "storyUrl": "https://aihot.news/story/9ba36bba-3cd1-40c9-b311-35e022a99425",
+      "signalCount": 7,
+      "participantCount": 9,
+      "storyUrl": "https://aihot.news/story/51379310-d375-40d8-88e1-a8112bca2c10",
       "sourceNames": [
         "IT之家·人工智能",
-        "X：Tibo (@thsottiaux)"
+        "X：Rohan Paul (@rohanpaul_ai)"
       ],
-      "originalUrl": "https://x.com/thsottiaux/status/2123556256392847657",
-      "sourceName": "X：Tibo (@thsottiaux)"
+      "originalUrl": "https://x.com/rohanpaul_ai/status/2124294348712092061",
+      "sourceName": "X：Rohan Paul (@rohanpaul_ai)"
     },
     {
-      "id": "aihot-j153xl6d8vlixu134iv0qj1it",
-      "title": "GPT-Live API 新增 Standby 待机配置",
-      "url": "https://aihot.news/items/j153xl6d8vlixu134iv0qj1it",
-      "hnUrl": "https://aihot.news/story/bd906d4a-88f7-4195-a4c5-f2b8f27bc122",
+      "id": "aihot-mlq0765aqqnxa1s33hpvy5orh",
+      "title": "蚂蚁阿福App升级实时视频问诊与全家健康管理",
+      "url": "https://aihot.news/items/mlq0765aqqnxa1s33hpvy5orh",
+      "hnUrl": "https://aihot.news/story/f5daa3a4-bfe7-426d-b5a1-71276d708522",
       "domain": "aihot.news",
-      "points": 7,
+      "points": 5,
       "comments": 1,
-      "publishedAt": "2026-11-19T20:00:39.000Z",
-      "summary": "多源事件：X：OpenAI Developers (@OpenAIDevs)",
+      "publishedAt": "2026-11-23T03:25:38.927Z",
+      "summary": "多源事件：IT之家·人工智能",
       "source": "AIHOT",
       "tags": [
         "AIHOT",
@@ -292,44 +289,14 @@
       "hot": true,
       "rank": 10,
       "sourceCount": 1,
-      "signalCount": 7,
-      "participantCount": 8,
-      "storyUrl": "https://aihot.news/story/bd906d4a-88f7-4195-a4c5-f2b8f27bc122",
+      "signalCount": 5,
+      "participantCount": 6,
+      "storyUrl": "https://aihot.news/story/f5daa3a4-bfe7-426d-b5a1-71276d708522",
       "sourceNames": [
-        "X：OpenAI Developers (@OpenAIDevs)"
+        "IT之家·人工智能"
       ],
-      "originalUrl": "https://x.com/OpenAIDevs/status/2123506763144245744",
-      "sourceName": "X：OpenAI Developers (@OpenAIDevs)"
-    },
-    {
-      "id": "hn-50507303",
-      "title": "All AI-generated code should be Open Source",
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50507303",
-      "domain": "jakub.jankiewicz.org",
-      "points": 1285,
-      "comments": 673,
-      "publishedAt": "2026-11-15T14:46:58.000Z",
-      "summary": "If AI generated code is not copyrightable, releasing it under an open source license is meaningless.",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "hn-50493251",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "hnUrl": "https://news.ycombinator.com/item?id=50493251",
-      "domain": "techpowerup.com",
-      "points": 1114,
-      "comments": 651,
-      "publishedAt": "2026-11-14T02:52:59.000Z",
-      "summary": "so if this is true... we should finally get some gpus right?",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
+      "originalUrl": "https://www.ithome.com/1/030/794.htm",
+      "sourceName": "IT之家·人工智能"
     },
     {
       "id": "hn-50542705",
@@ -337,8 +304,8 @@
       "url": "https://nicolasbouliane.com/blog/death-by-ai",
       "hnUrl": "https://news.ycombinator.com/item?id=50542705",
       "domain": "nicolasbouliane.com",
-      "points": 806,
-      "comments": 710,
+      "points": 821,
+      "comments": 713,
       "publishedAt": "2026-11-18T06:47:26.000Z",
       "summary": "Oh, you're right! AI is killing a lot of stuff.",
       "source": "Hacker News",
@@ -352,8 +319,8 @@
       "url": "https://revscope.co/blog/search-seo-geo-2026/",
       "hnUrl": "https://news.ycombinator.com/item?id=50540178",
       "domain": "revscope.co",
-      "points": 709,
-      "comments": 563,
+      "points": 713,
+      "comments": 565,
       "publishedAt": "2026-11-18T00:17:58.000Z",
       "summary": "Those poor websites^H^H^H^Hcontent sources",
       "source": "Hacker News",
@@ -363,13 +330,28 @@
       ]
     },
     {
+      "id": "hn-50572503",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "hnUrl": "https://news.ycombinator.com/item?id=50572503",
+      "domain": "architectlabs.com",
+      "points": 682,
+      "comments": 364,
+      "publishedAt": "2026-11-20T10:01:41.000Z",
+      "summary": "My prediction: In the AI/AGI/ASI era, the 4 most valuable things will be: - Model - Compute (chips/energy) - Manufacturers - Materials You can already see it b…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
       "id": "hn-50562262",
       "title": "Fuck Your AI Safeguards",
       "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
       "hnUrl": "https://news.ycombinator.com/item?id=50562262",
       "domain": "ounapuu.ee",
-      "points": 538,
-      "comments": 217,
+      "points": 617,
+      "comments": 250,
       "publishedAt": "2026-11-19T16:30:18.000Z",
       "summary": "i totally feel you, I get annoyed by this as well - even with daybreak (blue) you can do shit. I want to fix my environment but can't because of \"safeguards\" t…",
       "source": "Hacker News",
@@ -378,34 +360,52 @@
       ]
     },
     {
-      "id": "hn-50484658",
-      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "hnUrl": "https://news.ycombinator.com/item?id=50484658",
-      "domain": "youtube.com",
-      "points": 495,
-      "comments": 752,
-      "publishedAt": "2026-11-13T15:08:44.000Z",
-      "summary": "It is not the same, it is worst. Nothing seems functional nowadays",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "hn-50481187",
-      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-      "url": "https://status.claude.com/incidents/nn11wk485zfn",
-      "hnUrl": "https://news.ycombinator.com/item?id=50481187",
-      "domain": "status.claude.com",
-      "points": 494,
-      "comments": 396,
-      "publishedAt": "2026-11-13T10:18:13.000Z",
-      "summary": "Yep, one instance can't connect, and one instance seems to have crashed but is pretending to keep working (Toulouse, France) 3 minutes later... I can reconnect…",
+      "id": "hn-50572348",
+      "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50572348",
+      "domain": "signal.org",
+      "points": 581,
+      "comments": 348,
+      "publishedAt": "2026-11-20T09:42:16.000Z",
+      "summary": "I am not sure why signal doesn't allow crypto payment (like monero) for their account creation when not using a phone number. To register you either need a pho…",
       "source": "Hacker News",
       "tags": [
         "AI",
-        "Anthropic"
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50574383",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "hnUrl": "https://news.ycombinator.com/item?id=50574383",
+      "domain": "theguardian.com",
+      "points": 530,
+      "comments": 924,
+      "publishedAt": "2026-11-20T13:29:59.000Z",
+      "summary": "It looks like a bad time to be an OpenAI late investor or employee... How did they miss IPOing first? SpaceX being first and Anthropic second wasn't on my bing…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Economics"
+      ]
+    },
+    {
+      "id": "hn-50603845",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "hnUrl": "https://news.ycombinator.com/item?id=50603845",
+      "domain": "gpupartner.com",
+      "points": 529,
+      "comments": 223,
+      "publishedAt": "2026-11-22T21:01:16.000Z",
+      "summary": "how much vram do you need before qwen stops feeling sluggish on a normal laptop",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Alibaba"
       ]
     },
     {
@@ -414,8 +414,8 @@
       "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
       "hnUrl": "https://news.ycombinator.com/item?id=50547777",
       "domain": "europeanbusinessmagazine.com",
-      "points": 490,
-      "comments": 259,
+      "points": 500,
+      "comments": 265,
       "publishedAt": "2026-11-18T15:49:34.000Z",
       "summary": "I suspect this says more about KPMG accountants than AI.",
       "source": "Hacker News",
@@ -425,75 +425,47 @@
       ]
     },
     {
-      "id": "hn-50486748",
-      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-      "hnUrl": "https://news.ycombinator.com/item?id=50486748",
-      "domain": "theguardian.com",
-      "points": 445,
-      "comments": 113,
-      "publishedAt": "2026-11-13T17:30:10.000Z",
-      "summary": "Nice timing for the IPO. Cooked Nvidia numbers on the 17th are still missing, and the 19th will go well! The AI was of course trained on existing pre-AI transc…",
+      "id": "hn-50538303",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50538303",
+      "domain": "complexdiscovery.com",
+      "points": 331,
+      "comments": 467,
+      "publishedAt": "2026-11-17T21:16:12.000Z",
+      "summary": "I've submitted the original paper ( https://fion.ac/jellyfish.pdf ), but others already have to little engagement, likely due to the paper's terrible title.",
       "source": "Hacker News",
       "tags": [
-        "AI"
+        "AI",
+        "Agent"
       ]
     },
     {
-      "id": "hn-50481870",
-      "title": "AI is destroying the trust between writers and readers",
-      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50481870",
-      "domain": "theatlantic.com",
-      "points": 373,
-      "comments": 239,
-      "publishedAt": "2026-11-13T11:13:46.000Z",
-      "summary": "http://archive.today/8sikZ",
+      "id": "hn-50577901",
+      "title": "Google workers tell their employer not to punish schools that don't want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50577901",
+      "domain": "motherjones.com",
+      "points": 284,
+      "comments": 229,
+      "publishedAt": "2026-11-20T16:59:27.000Z",
+      "summary": "I did a little research on this and it reminded me that even though Google generally stays out of the news (for bad things at least) they are still a giant cor…",
       "source": "Hacker News",
       "tags": [
-        "AI"
+        "AI",
+        "Google"
       ]
     }
   ],
   "hnItems": [
     {
-      "id": "hn-50507303",
-      "title": "All AI-generated code should be Open Source",
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50507303",
-      "domain": "jakub.jankiewicz.org",
-      "points": 1285,
-      "comments": 673,
-      "publishedAt": "2026-11-15T14:46:58.000Z",
-      "summary": "If AI generated code is not copyrightable, releasing it under an open source license is meaningless.",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "hn-50493251",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "hnUrl": "https://news.ycombinator.com/item?id=50493251",
-      "domain": "techpowerup.com",
-      "points": 1114,
-      "comments": 651,
-      "publishedAt": "2026-11-14T02:52:59.000Z",
-      "summary": "so if this is true... we should finally get some gpus right?",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
       "id": "hn-50542705",
       "title": "AI is killing All About Berlin",
       "url": "https://nicolasbouliane.com/blog/death-by-ai",
       "hnUrl": "https://news.ycombinator.com/item?id=50542705",
       "domain": "nicolasbouliane.com",
-      "points": 806,
-      "comments": 710,
+      "points": 821,
+      "comments": 713,
       "publishedAt": "2026-11-18T06:47:26.000Z",
       "summary": "Oh, you're right! AI is killing a lot of stuff.",
       "source": "Hacker News",
@@ -507,8 +479,8 @@
       "url": "https://revscope.co/blog/search-seo-geo-2026/",
       "hnUrl": "https://news.ycombinator.com/item?id=50540178",
       "domain": "revscope.co",
-      "points": 709,
-      "comments": 563,
+      "points": 713,
+      "comments": 565,
       "publishedAt": "2026-11-18T00:17:58.000Z",
       "summary": "Those poor websites^H^H^H^Hcontent sources",
       "source": "Hacker News",
@@ -518,13 +490,28 @@
       ]
     },
     {
+      "id": "hn-50572503",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "hnUrl": "https://news.ycombinator.com/item?id=50572503",
+      "domain": "architectlabs.com",
+      "points": 682,
+      "comments": 364,
+      "publishedAt": "2026-11-20T10:01:41.000Z",
+      "summary": "My prediction: In the AI/AGI/ASI era, the 4 most valuable things will be: - Model - Compute (chips/energy) - Manufacturers - Materials You can already see it b…",
+      "source": "Hacker News",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
       "id": "hn-50562262",
       "title": "Fuck Your AI Safeguards",
       "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
       "hnUrl": "https://news.ycombinator.com/item?id=50562262",
       "domain": "ounapuu.ee",
-      "points": 538,
-      "comments": 217,
+      "points": 617,
+      "comments": 250,
       "publishedAt": "2026-11-19T16:30:18.000Z",
       "summary": "i totally feel you, I get annoyed by this as well - even with daybreak (blue) you can do shit. I want to fix my environment but can't because of \"safeguards\" t…",
       "source": "Hacker News",
@@ -533,34 +520,52 @@
       ]
     },
     {
-      "id": "hn-50484658",
-      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "hnUrl": "https://news.ycombinator.com/item?id=50484658",
-      "domain": "youtube.com",
-      "points": 495,
-      "comments": 752,
-      "publishedAt": "2026-11-13T15:08:44.000Z",
-      "summary": "It is not the same, it is worst. Nothing seems functional nowadays",
-      "source": "Hacker News",
-      "tags": [
-        "AI"
-      ]
-    },
-    {
-      "id": "hn-50481187",
-      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-      "url": "https://status.claude.com/incidents/nn11wk485zfn",
-      "hnUrl": "https://news.ycombinator.com/item?id=50481187",
-      "domain": "status.claude.com",
-      "points": 494,
-      "comments": 396,
-      "publishedAt": "2026-11-13T10:18:13.000Z",
-      "summary": "Yep, one instance can't connect, and one instance seems to have crashed but is pretending to keep working (Toulouse, France) 3 minutes later... I can reconnect…",
+      "id": "hn-50572348",
+      "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50572348",
+      "domain": "signal.org",
+      "points": 581,
+      "comments": 348,
+      "publishedAt": "2026-11-20T09:42:16.000Z",
+      "summary": "I am not sure why signal doesn't allow crypto payment (like monero) for their account creation when not using a phone number. To register you either need a pho…",
       "source": "Hacker News",
       "tags": [
         "AI",
-        "Anthropic"
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50574383",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "hnUrl": "https://news.ycombinator.com/item?id=50574383",
+      "domain": "theguardian.com",
+      "points": 530,
+      "comments": 924,
+      "publishedAt": "2026-11-20T13:29:59.000Z",
+      "summary": "It looks like a bad time to be an OpenAI late investor or employee... How did they miss IPOing first? SpaceX being first and Anthropic second wasn't on my bing…",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "Economics"
+      ]
+    },
+    {
+      "id": "hn-50603845",
+      "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+      "hnUrl": "https://news.ycombinator.com/item?id=50603845",
+      "domain": "gpupartner.com",
+      "points": 529,
+      "comments": 223,
+      "publishedAt": "2026-11-22T21:01:16.000Z",
+      "summary": "how much vram do you need before qwen stops feeling sluggish on a normal laptop",
+      "source": "Hacker News",
+      "tags": [
+        "AI",
+        "Alibaba"
       ]
     },
     {
@@ -569,8 +574,8 @@
       "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
       "hnUrl": "https://news.ycombinator.com/item?id=50547777",
       "domain": "europeanbusinessmagazine.com",
-      "points": 490,
-      "comments": 259,
+      "points": 500,
+      "comments": 265,
       "publishedAt": "2026-11-18T15:49:34.000Z",
       "summary": "I suspect this says more about KPMG accountants than AI.",
       "source": "Hacker News",
@@ -580,33 +585,35 @@
       ]
     },
     {
-      "id": "hn-50486748",
-      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-      "hnUrl": "https://news.ycombinator.com/item?id=50486748",
-      "domain": "theguardian.com",
-      "points": 445,
-      "comments": 113,
-      "publishedAt": "2026-11-13T17:30:10.000Z",
-      "summary": "Nice timing for the IPO. Cooked Nvidia numbers on the 17th are still missing, and the 19th will go well! The AI was of course trained on existing pre-AI transc…",
+      "id": "hn-50538303",
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50538303",
+      "domain": "complexdiscovery.com",
+      "points": 331,
+      "comments": 467,
+      "publishedAt": "2026-11-17T21:16:12.000Z",
+      "summary": "I've submitted the original paper ( https://fion.ac/jellyfish.pdf ), but others already have to little engagement, likely due to the paper's terrible title.",
       "source": "Hacker News",
       "tags": [
-        "AI"
+        "AI",
+        "Agent"
       ]
     },
     {
-      "id": "hn-50481870",
-      "title": "AI is destroying the trust between writers and readers",
-      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-      "hnUrl": "https://news.ycombinator.com/item?id=50481870",
-      "domain": "theatlantic.com",
-      "points": 373,
-      "comments": 239,
-      "publishedAt": "2026-11-13T11:13:46.000Z",
-      "summary": "http://archive.today/8sikZ",
+      "id": "hn-50577901",
+      "title": "Google workers tell their employer not to punish schools that don't want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "hnUrl": "https://news.ycombinator.com/item?id=50577901",
+      "domain": "motherjones.com",
+      "points": 284,
+      "comments": 229,
+      "publishedAt": "2026-11-20T16:59:27.000Z",
+      "summary": "I did a little research on this and it reminded me that even though Google generally stays out of the news (for bad things at least) they are still a giant cor…",
       "source": "Hacker News",
       "tags": [
-        "AI"
+        "AI",
+        "Google"
       ]
     }
   ],

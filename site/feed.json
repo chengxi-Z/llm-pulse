@@ -13,18 +13,38 @@
   ],
   "items": [
     {
-      "id": "rss-1ffd426b",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
-      "title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
-      "content_text": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-… — Source: AWS ML Blog",
-      "date_published": "2026-11-20T00:34:07.000Z",
+      "id": "rss-fac98270",
+      "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+      "title": "AI-driven technique could help engineers design analog chips faster and with less expense",
+      "content_text": "The “SLIC” training method enables a small LLM to compete with much more resource-intensive models in complex circuit design tasks. — Source: MIT News AI",
+      "date_published": "2026-11-23T05:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "The “SLIC” training method enables a small LLM to compete with much more resource-intensive models in complex circuit design tasks.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-79f340e3",
+      "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "title": "Meta ads is now available in AWS Quick",
+      "content_text": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and thir… — Source: AWS ML Blog",
+      "date_published": "2026-11-22T01:59:13.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-…",
+      "summary": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and thir…",
       "authors": [
         {
           "name": "AWS ML Blog",
@@ -33,22 +53,306 @@
       ]
     },
     {
-      "id": "rss-9746991a",
-      "url": "https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/",
-      "title": "Use Kimi Code CLI with models on Amazon Bedrock",
-      "content_text": "Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This p… — Source: AWS ML Blog",
-      "date_published": "2026-11-20T00:33:30.000Z",
+      "id": "rss-3ce26ae5",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "title": "Perplexity and Intelligence",
+      "content_text": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities. — Source: OpenAI Blog",
+      "date_published": "2026-11-22T00:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
+        }
+      ]
+    },
+    {
+      "id": "github-release-huggingface-transformers-v5-24-0",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "title": "huggingface/transformers released Release v5.24.0",
+      "content_text": "# Release v5.24.0 ## New Model additions ### Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in… — Source: GitHub Releases",
+      "date_published": "2026-11-21T12:28:26.000Z",
+      "tags": [
+        "transformers",
+        "GitHub Release",
+        "Open source"
+      ],
+      "language": "en",
+      "summary": "# Release v5.24.0 ## New Model additions ### Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in…",
+      "authors": [
+        {
+          "name": "GitHub Releases",
+          "url": "https://github.com/huggingface/transformers/releases"
+        }
+      ]
+    },
+    {
+      "id": "rss-4b6701a4",
+      "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
+      "title": "New in AWS Quick: More capable flows, an updated web experience, and agents that work together",
+      "content_text": "AWS Quick is the AI workspace built only for work. Today we're releasing updates that help your team get more done: build and run business-process flows in chat, triage your day in the updated web app, get more complete answers from multip… — Source: AWS ML Blog",
+      "date_published": "2026-11-21T01:06:42.000Z",
       "tags": [
         "AWS ML",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Kimi Code CLI v2.7.0 adds a native Amazon Bedrock provider, so you can connect the open source coding agent to models like Kimi K3.1 Pro using your standard AWS credential chain (named profiles or SSO) instead of a separate API key. This p…",
+      "summary": "AWS Quick is the AI workspace built only for work. Today we're releasing updates that help your team get more done: build and run business-process flows in chat, triage your day in the updated web app, get more complete answers from multip…",
       "authors": [
         {
           "name": "AWS ML Blog",
           "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-fd28edb6",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+      "title": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
+      "content_text": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up to 40% and time to first token by up to 80%. This post walks through the distri… — Source: AWS ML Blog",
+      "date_published": "2026-11-21T00:14:26.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Pricing"
+      ],
+      "language": "en",
+      "summary": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up to 40% and time to first token by up to 80%. This post walks through the distri…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "release-radixark-daisyrose-27b",
+      "url": "https://openrouter.ai/radixark/daisyrose-27b",
+      "title": "RadixArk launches DaisyRose 27B (262K context, $0.15/$1.88)",
+      "content_text": "RadixArk: DaisyRose 27B is now on OpenRouter: 262K context, $0.15/$1.88 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
+      "date_published": "2026-11-21T00:00:00.000Z",
+      "tags": [
+        "RadixArk",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "RadixArk: DaisyRose 27B is now on OpenRouter: 262K context, $0.15/$1.88 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "release-thinkingmachines-inkling-2-mini",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
+      "title": "Thinking Machines launches Inkling 2 Mini (1M context, $0.075/$0.3)",
+      "content_text": "Thinking Machines: Inkling 2 Mini is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/vision. — Source: OpenRouter",
+      "date_published": "2026-11-21T00:00:00.000Z",
+      "tags": [
+        "Thinking Machines",
+        "Long context",
+        "Multimodal",
+        "Reasoning",
+        "Open weights"
+      ],
+      "language": "en",
+      "summary": "Thinking Machines: Inkling 2 Mini is now on OpenRouter: 1M context, $0.075/$0.3 per 1M tokens, supports reasoning/structured-output/tool-calling/vision.",
+      "authors": [
+        {
+          "name": "OpenRouter",
+          "url": "https://openrouter.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "rss-43d370ad",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+      "title": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+      "content_text": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the e… — Source: AWS ML Blog",
+      "date_published": "2026-11-20T23:07:03.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the e…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e3e9d2e5",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+      "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+      "content_text": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and… — Source: AWS ML Blog",
+      "date_published": "2026-11-20T22:35:24.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f6b58cd2",
+      "url": "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120",
+      "title": "Q&A: Enabling more human-like interactions and understanding in multimodal foundation models",
+      "content_text": "Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models. — Source: MIT News AI",
+      "date_published": "2026-11-20T21:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Research"
+      ],
+      "language": "en",
+      "summary": "Senior Research Scientist Jim Glass discusses how his MIT-IBM Computing Research Lab collaboration connects perception and language, and addresses the shortcoming of current models.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-03514106",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+      "title": "How Standard Bank Group automates AI risk assessment for generative AI",
+      "content_text": "Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards an… — Source: AWS ML Blog",
+      "date_published": "2026-11-20T20:37:31.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards an…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-62a813a3",
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+      "title": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+      "content_text": "Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a c… — Source: AWS ML Blog",
+      "date_published": "2026-11-20T20:22:00.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a c…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-fa40d110",
+      "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
+      "title": "New approach enables physically consistent AI models of chaotic systems",
+      "content_text": "Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows. — Source: MIT News AI",
+      "date_published": "2026-11-20T20:00:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-406a7cb6",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues/",
+      "title": "Introducing enhanced infrastructure observability in Amazon SageMaker HyperPod",
+      "content_text": "Amazon SageMaker HyperPod now offers enhanced observability to help you diagnose GPU training issues faster. It brings together diagnostic and profiling capabilities for training workloads on both Amazon EKS and Slurm orchestrators, pinpoi… — Source: AWS ML Blog",
+      "date_published": "2026-11-20T18:24:06.000Z",
+      "tags": [
+        "AWS ML",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "Amazon SageMaker HyperPod now offers enhanced observability to help you diagnose GPU training issues faster. It brings together diagnostic and profiling capabilities for training workloads on both Amazon EKS and Slurm orchestrators, pinpoi…",
+      "authors": [
+        {
+          "name": "AWS ML Blog",
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-01169217",
+      "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+      "title": "Following the “mathocalypse,” mathematicians consider the future",
+      "content_text": "A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession. — Source: MIT News AI",
+      "date_published": "2026-11-20T15:20:00.000Z",
+      "tags": [
+        "MIT",
+        "Official blog",
+        "Model release"
+      ],
+      "language": "en",
+      "summary": "A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession.",
+      "authors": [
+        {
+          "name": "MIT News AI",
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        }
+      ]
+    },
+    {
+      "id": "rss-e0134f05",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "title": "Combatting adversarial distillation",
+      "content_text": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction. — Source: OpenAI Blog",
+      "date_published": "2026-11-20T10:00:00.000Z",
+      "tags": [
+        "OpenAI",
+        "Official blog",
+        "Policy & safety"
+      ],
+      "language": "en",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "authors": [
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
         }
       ]
     },
@@ -72,62 +376,42 @@
       ]
     },
     {
-      "id": "rss-84be4d63",
-      "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
-      "title": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
-      "content_text": "Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer's AWS bill, with no stablecoin wallets or API keys. This post wal… — Source: AWS ML Blog",
-      "date_published": "2026-11-19T23:02:16.000Z",
+      "id": "rss-581d6619",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "content_text": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality. — Source: OpenAI Blog",
+      "date_published": "2026-11-20T00:00:00.000Z",
       "tags": [
-        "AWS ML",
+        "OpenAI",
         "Official blog",
-        "Model release"
+        "Research"
       ],
       "language": "en",
-      "summary": "Amazon Bedrock AgentCore payments now supports AWS Marketplace, so agents can discover and buy x402-enabled products, APIs, data, and content and pay in USD on the developer's AWS bill, with no stablecoin wallets or API keys. This post wal…",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
       "authors": [
         {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
         }
       ]
     },
     {
-      "id": "rss-c19276bc",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/",
-      "title": "How the BMW Group governs hundreds of agents across thousands of developers",
-      "content_text": "When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing… — Source: AWS ML Blog",
-      "date_published": "2026-11-19T22:20:23.000Z",
+      "id": "rss-c986fee3",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "content_text": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery. — Source: OpenAI Blog",
+      "date_published": "2026-11-20T00:00:00.000Z",
       "tags": [
-        "AWS ML",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "When hundreds of agents serve thousands of developers, governance cannot be an afterthought. The BMW Group shares the practices and patterns its R&D teams use to build, govern, and operate AI agents at enterprise scale without sacrificing…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
-        }
-      ]
-    },
-    {
-      "id": "rss-791430e0",
-      "url": "https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/",
-      "title": "Run your whole selling business in AWS Quick",
-      "content_text": "Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it. — Source: AWS ML Blog",
-      "date_published": "2026-11-19T22:16:22.000Z",
-      "tags": [
-        "AWS ML",
+        "OpenAI",
         "Official blog",
         "Model release"
       ],
       "language": "en",
-      "summary": "Most sellers do not need another AI product to learn. They need the tools and information they already use brought together, so they can see what is happening in their business and act on it.",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
       "authors": [
         {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/news/rss.xml"
         }
       ]
     },
@@ -148,66 +432,6 @@
         {
           "name": "MIT News AI",
           "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "rss-6fc2dd85",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/",
-      "title": "Amazon SageMaker AI now detects latency drift, idle GPUs, and missed optimizations on your inference endpoints",
-      "content_text": "Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding thr… — Source: AWS ML Blog",
-      "date_published": "2026-11-19T21:28:18.000Z",
-      "tags": [
-        "AWS ML",
-        "Official blog",
-        "Pricing"
-      ],
-      "language": "en",
-      "summary": "Amazon SageMaker AI now monitors your generative AI inference endpoints by default and tells you when a change could improve performance or lower cost. It tracks latency, GPU utilization, and serving configuration, then sends a finding thr…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
-        }
-      ]
-    },
-    {
-      "id": "rss-d93a8061",
-      "url": "https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/",
-      "title": "Inside Amazon Connect Talent: The science of structured AI interviews",
-      "content_text": "For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hir… — Source: AWS ML Blog",
-      "date_published": "2026-11-19T21:23:20.000Z",
-      "tags": [
-        "AWS ML",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "For organizations hiring hundreds or thousands of people, every interview presents the same challenge: How do you give candidates a consistent opportunity to demonstrate their skills while gathering the evidence needed to make informed hir…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
-        }
-      ]
-    },
-    {
-      "id": "rss-f20c41b6",
-      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
-      "title": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks",
-      "content_text": "Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hook… — Source: AWS ML Blog",
-      "date_published": "2026-11-19T20:01:06.000Z",
-      "tags": [
-        "AWS ML",
-        "Official blog",
-        "Open source"
-      ],
-      "language": "en",
-      "summary": "Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hook…",
-      "authors": [
-        {
-          "name": "AWS ML Blog",
-          "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
         }
       ]
     },
@@ -284,26 +508,6 @@
       ],
       "language": "en",
       "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-002d13b4",
-      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-      "title": "Explore the Codex Security Plugin",
-      "content_text": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording. — Source: OpenAI Blog",
-      "date_published": "2026-11-19T00:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
       "authors": [
         {
           "name": "OpenAI Blog",
@@ -452,66 +656,6 @@
       ]
     },
     {
-      "id": "rss-c90f0c50",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "title": "The Silent Consensus",
-      "content_text": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions. — Source: OpenAI Blog",
-      "date_published": "2026-11-18T10:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-0648a466",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "title": "Research acceleration: The jagged frontier",
-      "content_text": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement. — Source: OpenAI Blog",
-      "date_published": "2026-11-18T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-fcc24d74",
-      "url": "https://openai.com/business/customer-stories/sumitomo-life",
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "content_text": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption. — Source: OpenAI Blog",
-      "date_published": "2026-11-18T08:00:00.000Z",
-      "tags": [
-        "OpenAI",
-        "Official blog",
-        "Research"
-      ],
-      "language": "en",
-      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "authors": [
-        {
-          "name": "OpenAI Blog",
-          "url": "https://openai.com/news/rss.xml"
-        }
-      ]
-    },
-    {
       "id": "rss-f65d3f07",
       "url": "https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118",
       "title": "Helping AI text detectors keep up with changing conditions",
@@ -574,26 +718,6 @@
       ]
     },
     {
-      "id": "rss-338e81f8",
-      "url": "https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117",
-      "title": "Putting a spotlight on AI, society, and humanity",
-      "content_text": "Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education. — Source: MIT News AI",
-      "date_published": "2026-11-17T20:40:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
       "id": "rss-8b572679",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
       "title": "Put Gemini to work for you",
@@ -610,46 +734,6 @@
         {
           "name": "Google AI Blog",
           "url": "https://blog.google/technology/ai/rss/"
-        }
-      ]
-    },
-    {
-      "id": "rss-47abc027",
-      "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117",
-      "title": "Q&A: Why building math muscles remains important in the AI era",
-      "content_text": "Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools. — Source: MIT News AI",
-      "date_published": "2026-11-17T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Assistant Professor John Urschel explains why learning the fundamental skills of mathematics is still essential despite the evolution of AI tools.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "rss-5585f89b",
-      "url": "https://news.mit.edu/2026/learning-language-of-machine-learning-jacob-andreas-1117",
-      "title": "Learning the language of machine learning",
-      "content_text": "By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate effectively with humans. — Source: MIT News AI",
-      "date_published": "2026-11-17T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "By studying the computational foundations of language learning, Associate Professor Jacob Andreas builds intelligent systems that can communicate effectively with humans.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
         }
       ]
     },
@@ -925,46 +1009,6 @@
       ]
     },
     {
-      "id": "rss-b7a59c77",
-      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
-      "title": "New AI “copilot” helps engineers design better structures",
-      "content_text": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges. — Source: MIT News AI",
-      "date_published": "2026-11-13T05:00:00.000Z",
-      "tags": [
-        "MIT",
-        "Official blog",
-        "Policy & safety"
-      ],
-      "language": "en",
-      "summary": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges.",
-      "authors": [
-        {
-          "name": "MIT News AI",
-          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-11-13-e72e993b",
-      "url": "https://api-docs.deepseek.com/updates#2026-11-13",
-      "title": "DeepSeek official update (2026-11-13): Releasing the full suite of application APIs",
-      "content_text": "DeepSeek Change Log 2026-11-13: In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we… — Source: DeepSeek",
-      "date_published": "2026-11-13T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-11-13: In the DeepSeek App (including the web version), web search, file input, URL reading, voice interaction and safety work together with model inference to form the conversation experience users know. Today we…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
       "id": "release-inclusionai-ling-3-2-flash-free",
       "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
       "title": "inclusionAI launches Ling 3.2 Flash (free) (1M context, free/free)",
@@ -1130,10 +1174,10 @@
       ]
     },
     {
-      "id": "github-release-ollama-ollama-v0-40-17-rc2",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc2",
+      "id": "github-release-ollama-ollama-v0-40-17",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17",
       "title": "ollama/ollama released v0.40.17",
-      "content_text": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/… — Source: GitHub Releases",
+      "content_text": "## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits… — Source: GitHub Releases",
       "date_published": "2026-11-10T22:25:00.000Z",
       "tags": [
         "ollama",
@@ -1141,7 +1185,7 @@
         "Open source"
       ],
       "language": "en",
-      "summary": "## What's Changed * Improve ChatGPT CLI restore and graceful restart by @hoyyeva in https://github.com/ollama/ollama/pull/19583 * cmd/launch: use thinking metadata for OpenCode settings by @hoyyeva in https://github.com/ollama/ollama/pull/…",
+      "summary": "## Inkling 2 Mini [Inkling 2 Mini](https://ollama.com/library/inkling-2-mini) from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits…",
       "authors": [
         {
           "name": "GitHub Releases",
@@ -1544,47 +1588,6 @@
       ]
     },
     {
-      "id": "release-kt-midm-k-3-0-pro",
-      "url": "https://openrouter.ai/kt/midm-k-3.0-pro",
-      "title": "KT launches Mi:dm K 3.0 Pro (262K context, $0.2/$0.8)",
-      "content_text": "KT: Mi:dm K 3.0 Pro is now on OpenRouter: 262K context, $0.2/$0.8 per 1M tokens, supports reasoning/structured-output/tool-calling. — Source: OpenRouter",
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "KT",
-        "Long context",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "KT: Mi:dm K 3.0 Pro is now on OpenRouter: 262K context, $0.2/$0.8 per 1M tokens, supports reasoning/structured-output/tool-calling.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
-      "id": "release-openrouter-auto",
-      "url": "https://openrouter.ai/openrouter/auto",
-      "title": "OpenRouter launches Auto Router (2M context, pricing TBA)",
-      "content_text": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision. — Source: OpenRouter",
-      "date_published": "2026-11-05T00:00:00.000Z",
-      "tags": [
-        "OpenRouter",
-        "Long context",
-        "Multimodal",
-        "Reasoning"
-      ],
-      "language": "en",
-      "summary": "Auto Router is now on OpenRouter: 2M context, pricing not published, supports audio/reasoning/structured-output/tool-calling/video/vision.",
-      "authors": [
-        {
-          "name": "OpenRouter",
-          "url": "https://openrouter.ai/models"
-        }
-      ]
-    },
-    {
       "id": "github-release-ollama-ollama-v0-40-15",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
       "title": "ollama/ollama released v0.40.15",
@@ -1625,26 +1628,6 @@
       ]
     },
     {
-      "id": "github-release-huggingface-transformers-v5-22-1",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
-      "title": "huggingface/transformers released Patch release v5.22.1",
-      "content_text": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or — Source: GitHub Releases",
-      "date_published": "2026-10-30T09:36:03.000Z",
-      "tags": [
-        "transformers",
-        "GitHub Release",
-        "Open source"
-      ],
-      "language": "en",
-      "summary": "# Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 (https://github.com/huggingface/transformers/pull/50124) from @remi-or",
-      "authors": [
-        {
-          "name": "GitHub Releases",
-          "url": "https://github.com/huggingface/transformers/releases"
-        }
-      ]
-    },
-    {
       "id": "github-release-vllm-project-vllm-v0-32-0",
       "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
       "title": "vllm-project/vllm released v0.32.0",
@@ -1665,126 +1648,6 @@
       ]
     },
     {
-      "id": "release-deepseek-2026-10-17-a8222785",
-      "url": "https://api-docs.deepseek.com/updates#2026-10-17",
-      "title": "DeepSeek official update (2026-10-17): Opening up the in-house search API",
-      "content_text": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek",
-      "date_published": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-10-17-f84e3ffd",
-      "url": "https://api-docs.deepseek.com/updates#2026-10-17",
-      "title": "DeepSeek official update (2026-10-17): DeepSeek-V4.1-Flash-1017 Update",
-      "content_text": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search… — Source: DeepSeek",
-      "date_published": "2026-10-17T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-10-17: DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-09-10-36ec302b",
-      "url": "https://api-docs.deepseek.com/updates#2026-09-10",
-      "title": "DeepSeek official update (2026-09-10): DeepSeek-V4.1-Flash Release",
-      "content_text": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher… — Source: DeepSeek",
-      "date_published": "2026-09-10T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-09-10: Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-08-21-3fa111a9",
-      "url": "https://api-docs.deepseek.com/updates#2026-08-21",
-      "title": "DeepSeek official update (2026-08-21): DeepSeek-V4-Flash-Vision-Exp Release",
-      "content_text": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-… — Source: DeepSeek",
-      "date_published": "2026-08-21T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-08-21: Today, the new multimodal vision understanding model DeepSeek-V4-Flash-Vision-Exp is now available on the DeepSeek API platform. This is an experimental model that can be accessed by setting model='deepseek-…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-08-13-7bb335ab",
-      "url": "https://api-docs.deepseek.com/updates#2026-08-13",
-      "title": "DeepSeek official update (2026-08-13): DeepSeek-V4-Pro Update",
-      "content_text": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl… — Source: DeepSeek",
-      "date_published": "2026-08-13T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-08-13: The GA release of DeepSeek-V4-Pro has been rolled out on the APP, Web, and API. The API calling method remains unchanged — simply set the model name to deepseek-v4-pro to use the latest version. Significantl…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-07-31-c99ac55c",
-      "url": "https://api-docs.deepseek.com/updates#2026-07-31",
-      "title": "DeepSeek official update (2026-07-31): DeepSeek-V4-Flash Update",
-      "content_text": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh… — Source: DeepSeek",
-      "date_published": "2026-07-31T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-07-31: The official release of the DeepSeek-V4-Flash API is now in public beta. The API calling method remains unchanged — simply set the model name to deepseek-v4-flash to use the latest version. Significantly enh…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
-        }
-      ]
-    },
-    {
       "id": "rss-13684b5c",
       "url": "https://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
       "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
@@ -1801,46 +1664,6 @@
         {
           "name": "Berkeley BAIR",
           "url": "https://bair.berkeley.edu/blog/feed.xml"
-        }
-      ]
-    },
-    {
-      "id": "rss-83865e2b",
-      "url": "https://bair.berkeley.edu/blog/2026/07/26/abbel/",
-      "title": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
-      "content_text": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t… — Source: Berkeley BAIR",
-      "date_published": "2026-07-26T09:00:00.000Z",
-      "tags": [
-        "Berkeley BAIR",
-        "Official blog",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "Overview of ABBEL compared to traditional recursive summarization. Beliefs replace the full interaction history as the agent’s working context, and belief grading improves performance by supervising the contents of each belief state.. As t…",
-      "authors": [
-        {
-          "name": "Berkeley BAIR",
-          "url": "https://bair.berkeley.edu/blog/feed.xml"
-        }
-      ]
-    },
-    {
-      "id": "release-deepseek-2026-04-24-a1208998",
-      "url": "https://api-docs.deepseek.com/updates#2026-04-24",
-      "title": "DeepSeek official update (2026-04-24): DeepSeek-V4",
-      "content_text": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model… — Source: DeepSeek",
-      "date_published": "2026-04-24T00:00:00.000Z",
-      "tags": [
-        "DeepSeek",
-        "Official update",
-        "Model release"
-      ],
-      "language": "en",
-      "summary": "DeepSeek Change Log 2026-04-24: The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model…",
-      "authors": [
-        {
-          "name": "DeepSeek",
-          "url": "https://api-docs.deepseek.com/updates"
         }
       ]
     }
